@@ -18,4 +18,4 @@ design:
 
 <br>
 
-Hans Rutger Bosker heads the **Speech Perception in Audiovisual Communication [SPEAC]** research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](www.ru.nl), Nijmegen.
+Hans Rutger Bosker heads the **Speech Perception in Audiovisual Communication [SPEAC]** research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen.
