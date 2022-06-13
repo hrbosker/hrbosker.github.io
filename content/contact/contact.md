@@ -54,4 +54,4 @@ design:
   columns: '1'
 ---
 
-Feel free to get in touch via email (BothFirstNames.Surname@ru.nl).
+**Feel free to get in touch via email**.
