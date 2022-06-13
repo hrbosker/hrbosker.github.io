@@ -18,13 +18,13 @@ content:
   email: BothFirstNames.Surname@ru.nl
   phone: +31 (0)24 3521373
   address:
-    street: Postbus 9104
+    street: '**Postal address**: Postbus 9104'
     city: Nijmegen
     region: 
     postcode: '6500 HE'
     country: Netherlands
     country_code: NL
-  directions: '*Visiting address*: Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
+  directions: '**Visiting address**: Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
   coordinates:
     latitude: '51.81918627589622'
     longitude: '5.861970553750626'
