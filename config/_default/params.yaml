@@ -15,10 +15,10 @@ appearance:
 
 marketing:
   seo:
-    site_type: Organization
+    site_type: Research Group
     local_business_type: ''
-    org_name: ''
-    description: ''
+    org_name: 'SPEAC Research Group'
+    description: 'Hans Rutger Bosker heads the Speech Perception in Audiovisual Communication research group at Radboud University Nijmegen'
     twitter: ''
   analytics:
     google_analytics: ''
