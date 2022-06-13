@@ -4,6 +4,9 @@ widget: pages
 headless: true
 weight: 20
 
+# Activate this widget? true/false
+active: false
+
 title: Latest News
 subtitle:
 
