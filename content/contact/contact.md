@@ -18,7 +18,14 @@ content:
   email: BothFirstNames.Surname@ru.nl
   phone: +31 (0)24 3521373
   address:
-    street: Thomas van Aquinostraat 4
+    street: BLA | Thomas van Aquinostraat 4
+    city: Nijmegen
+#    region: Gelderland
+    postcode: '6525 GD'
+    country: Netherlands
+    country_code: NL
+  address:
+    street: BLA | Thomas van Aquinostraat 4
     city: Nijmegen
     region: Gelderland
     postcode: '6525 GD'
