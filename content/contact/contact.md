@@ -24,7 +24,7 @@ content:
     postcode: '6500 HE'
     country: Netherlands
     country_code: NL
-  directions: Visiting address: Thomas van Aquinostraat 4, 6525 GD, Nijmegen
+  directions: '*Visiting address*: Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
   coordinates:
     latitude: '51.81918627589622'
     longitude: '5.861970553750626'
