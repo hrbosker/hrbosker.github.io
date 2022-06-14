@@ -20,23 +20,43 @@ On 12th Dec, 2019, **Merel Maslowski** successfully defended her PhD thesis, ent
 
 ## Interns
 - 2022
+
 Cansel Sert, MSc intern, Radboud University
+
 Ivy Mok, MA thesis, Radboud University
+
 Eleni Zimianiti, MA thesis, Utrecht University
+
 - 2021
+
 Christina Papoutsi, MA intern, Radboud University
+
 - 2020
+
 Nora Kennis, BA intern, Radboud University
+
 Myriam Weiß, MA intern, Heidelberg University
+
 - 2019
+
 Giulio Severijnen, MSc thesis, Radboud University
+
 Marie Stadtbäumer, MA intern
+
 Vilde Reksnes, MSc intern
+
 - 2018
+
 Jeonga Kim, MA intern
+
 Marjolein van Os, MA thesis, Radboud University
+
 Rebecca Wogan, MSc thesis, Radboud University
+
 - 2017
+
 Rik Does, MA intern
+
 Wibke Naumann, BA intern
+
 Anna Ravenschlag, MSc intern
