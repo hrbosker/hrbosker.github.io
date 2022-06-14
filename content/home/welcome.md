@@ -22,10 +22,7 @@ Hans Rutger Bosker heads the **Speech Perception in Audiovisual Communication [S
 
 <br />
 <br />
-<br />
-<br />
 
 |       |       |       |       |       |
 |:-----:|:-----:|:-----:|:-----:|:-----:|
-|       |       |       |       |       |
 <a href="https://www.ru.nl/"><img src="https://www.ru.nl/views/ru-baseline/images/logos/ru_nl.svg" alt="Radboud University logo" width="200"/></a>|<pre>   </pre>|<a href="https://www.ru.nl/donders"><img src="https://www.dcc.ru.nl/babybrain/wp-content/uploads/2021/10/DONDERS_LOGO_RGB_large-1024x340.jpg" alt="Donders Institute logo" width="200"/></a>|<pre>   </pre>|<a href="https://erc.europa.eu/"><img src="https://erc.europa.eu/sites/default/files/LOGO_ERC-FLAG_EU_.jpg" alt="European Research Counsil logo" width="200"/></a>
