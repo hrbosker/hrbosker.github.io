@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Giulio Severijnen
+title: Orhun Uluşahin
 
 # Username (this should match the folder name)
 authors:
-  - giulio-severijnen
+  - orhun-ulusahin
 
 # Is this the primary user of the site?
 superuser: false
@@ -14,26 +14,26 @@ role: PhD student
 
 # Organizations/Affiliations
 organizations:
-  - name: Radboud University Nijmegen
+  - name: Max Planck Institute for Psycholinguistics
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include between-talker variability, speech perception, and prosody.
+bio: My research interests include the production-perception interface, phonetic convergence, and talker familiarity.
 
 interests:
   - Speech Perception
   - Speech Production
-  - Prosody
-  - Lexical Stress
+  - Phonetic Convergence
+  - Talker Familiarity
 
 education:
   courses:
     - course: MSc in Cognitive Neuroscience
       institution: Radboud University Nijmegen
       year: 2020
-    - course: BSc in Psychology
-      institution: Radboud University Nijmegen
-      year: 2017
+#    - course: BSc in Psychology
+#      institution: Radboud University Nijmegen
+#      year: 2017
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,22 +42,22 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:g.severijnen@donders.ru.nl'
-  - icon: orcid
-    icon_pack: ai
-    link: https://orcid.org/0000-0003-1322-9202
+    link: 'mailto:orhun.ulusahin@mpi.nl'
+#  - icon: orcid
+#    icon_pack: ai
+#    link: https://orcid.org/0000-0003-1322-9202
   - icon: osf
     icon_pack: ai
-    link: https://osf.io/dvshc/
+    link: https://osf.io/47nr5/
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
 #  - icon: google-scholar
 #    icon_pack: ai
 #    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-#  - icon: github
-#    icon_pack: fab
-#    link: https://github.com/gcushen
+  - icon: github
+    icon_pack: fab
+    link: https://github.com/orhunulusahin/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
 # - icon: cv
@@ -73,4 +73,4 @@ user_groups:
   - PhD students
 ---
 
-Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker](https://www.hrbosker.netlify.app). His project investigates between-talker and within-talker variability in prosody production, with a specific focus on lexical stress. Moreover, he also tests how listeners flexibly adapt to this variability in order to successfully comprehend different talkers.
+Orhun Uluşahin is a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors are [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje), [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/), and [Dr. Hans Rutger Bosker](https://www.hrbosker.netlify.app). His project targets the production-perception interface, using phonetic convergence as the main paradigm. Specifically, he tests whether familiarity with a talker modulates the extent to which interlocutors converge towards each other on a phonetic level.

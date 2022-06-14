@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Giulio Severijnen
+title: Ronny Bujok
 
 # Username (this should match the folder name)
 authors:
-  - giulio-severijnen
+  - ronny-bujok
 
 # Is this the primary user of the site?
 superuser: false
@@ -14,15 +14,15 @@ role: PhD student
 
 # Organizations/Affiliations
 organizations:
-  - name: Radboud University Nijmegen
+  - name: Max Planck Institute for Psycholinguistics
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include between-talker variability, speech perception, and prosody.
+bio: My research interests include audiovisual speech perception, gestures, and lexical stress.
 
 interests:
   - Speech Perception
-  - Speech Production
+  - Beat Gestures
   - Prosody
   - Lexical Stress
 
@@ -32,7 +32,7 @@ education:
       institution: Radboud University Nijmegen
       year: 2020
     - course: BSc in Psychology
-      institution: Radboud University Nijmegen
+      institution: Bielefeld University
       year: 2017
 
 # Social/Academic Networking
@@ -42,13 +42,13 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:g.severijnen@donders.ru.nl'
+    link: 'mailto:ronny.bujok@mpi.nl'
   - icon: orcid
     icon_pack: ai
-    link: https://orcid.org/0000-0003-1322-9202
+    link: https://orcid.org/0000-0001-6557-9808
   - icon: osf
     icon_pack: ai
-    link: https://osf.io/dvshc/
+    link: https://osf.io/uh3xd/
 #  - icon: twitter
 #    icon_pack: fab
 #    link: https://twitter.com/GeorgeCushen
@@ -73,4 +73,4 @@ user_groups:
   - PhD students
 ---
 
-Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker](https://www.hrbosker.netlify.app). His project investigates between-talker and within-talker variability in prosody production, with a specific focus on lexical stress. Moreover, he also tests how listeners flexibly adapt to this variability in order to successfully comprehend different talkers.
+Ronny Bujok is a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors are [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje) and [Dr. Hans Rutger Bosker](https://www.hrbosker.netlify.app). His project investigates how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception.
