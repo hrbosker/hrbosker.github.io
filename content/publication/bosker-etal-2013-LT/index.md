@@ -31,7 +31,10 @@ abstract: The oral fluency level of an L2 speaker is often used as a measure in 
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - Source Themes
+  - perceived fluency
+  - utterance fluency
+  - fluency ratings
+  - language proficiency
 featured: false
 
 # links:
