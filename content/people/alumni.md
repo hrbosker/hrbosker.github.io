@@ -20,7 +20,6 @@ On 12th Dec, 2019, **Merel Maslowski** successfully defended her PhD thesis, ent
 
 ## Interns
 - 2022<br/>
-**Cansel Sert**, MSc intern, Radboud University<br/>
 **Ivy Mok**, MA thesis, Radboud University<br/>
 **Eleni Zimianiti**, MA thesis, Utrecht University<br/>
 - 2021<br/>
