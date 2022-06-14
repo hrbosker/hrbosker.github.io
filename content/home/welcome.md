@@ -20,4 +20,5 @@ design:
 
 Hans Rutger Bosker heads the **Speech Perception in Audiovisual Communication [SPEAC]** research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen.
 
-This is [![Radboud University logo](https://www.ru.nl/views/ru-baseline/images/logos/ru_nl.svg)](https://www.ru.nl) something.
+
+<img src="https://www.ru.nl/views/ru-baseline/images/logos/ru_nl.svg" alt="Radboud University logo" width="20"/>
