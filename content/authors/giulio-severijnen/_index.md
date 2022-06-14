@@ -73,4 +73,4 @@ user_groups:
   - PhD students
 ---
 
-Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker]({{< ref "people/admin/_index.md" >}}).
+Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker](https://www.hrbosker.netlify.app).
