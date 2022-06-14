@@ -78,7 +78,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Principal Investigators
+  - Principal Investigator
 ---
 
-Hans Rutger Bosker is Assistant Professor at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He is Principal Investigator of the ERC Starting Grant 'HearingHands' [101040276] that started in September 2022. This research grant investigates the contribution of simple up-and-down hand movements ('beat gestures') to audiovisual speech perception. Hans Rutger Bosker is also Senior Investigator at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl), Nijmegen.
+Hans Rutger Bosker is Assistant Professor at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He leads the *Speech Perception in Audiovisual Communication* [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276] that started in September 2022. This research grant investigates the contribution of simple up-and-down hand movements ('beat gestures') to audiovisual speech perception. Hans Rutger Bosker is also Senior Investigator at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl), Nijmegen.
