@@ -54,9 +54,9 @@ social:
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0002-2628-7738
-#  - icon: osf
-#    icon_pack: ai
-#    link: https://osf.io/h93n8/
+  - icon: osf
+    icon_pack: ai
+    link: https://osf.io/h93n8/
   - icon: researchgate
     icon_pack: ai
     link: https://www.researchgate.net/profile/Hans-Bosker
