@@ -51,6 +51,15 @@ social:
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.nl/citations?user=ENQ_ky0AAAAJ&hl=en
+  - icon: orcid
+    icon_pack: ai
+    link: https://orcid.org/0000-0002-2628-7738
+#  - icon: osf
+#    icon_pack: ai
+#    link: https://osf.io/h93n8/
+  - icon: researchgate
+    icon_pack: ai
+    link: https://www.researchgate.net/profile/Hans-Bosker
   - icon: github
     icon_pack: fab
     link: https://github.com/hrbosker
