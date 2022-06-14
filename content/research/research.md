@@ -11,6 +11,8 @@ title: '**[This website is *under construction*]**'
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
   columns: '1'
+  view: 5  # For older versions prior to v5.5, use the numeric IDs above
+  flip_alt_rows: true # Flip alternate rows when in Showcase view?
   # Add custom styles
   css_style:
   css_class:
