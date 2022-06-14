@@ -2,7 +2,10 @@
 title: 'What makes speech sound fluent? The contributions of pauses, speed and repairs'
 authors:
   - admin
-  - Robert Ford
+  - Anne-France Pinget
+  - Hugo Quené
+  - Ted Sanders
+  - Nivja H. de Jong
 #author_notes:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
