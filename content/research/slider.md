@@ -22,7 +22,7 @@ content:
         position: right
         color: '#666'
         brightness: 0.7
-        media: coders.jpg
+        media: 'Fig1_Bosker_2018_JASAEL.jpg'
     - title: Slide 2
       content: 'Testing gestures'
       align: left
