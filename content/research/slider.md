@@ -9,36 +9,36 @@ design:
   slide_height: ''
   is_fullscreen: true
   # Automatically transition through slides?
-  loop: false
+  loop: true
   # Duration of transition between slides (in ms)
-  interval: 2000
+  interval: 4000
 
 content:
   slides:
     - title: 👋 Welcome to the group
-      content: Take a look at what we're working on...
+      content: Testing speech...
       align: center
       background:
         position: right
         color: '#666'
         brightness: 0.7
-        media: coders.jpg
-    - title: Lunch & Learn ☕️
-      content: 'Share your knowledge with the group and explore exciting new topics together!'
+        media: Fig1_Bosker_2018_JASAEL.jpg
+    - title: Slide 2
+      content: 'Testing gestures'
       align: left
       background:
         position: center
         color: '#555'
         brightness: 0.7
-        media: contact.jpg
-    - title: World-Class Semiconductor Lab
-      content: 'Just opened last month!'
+        media: beat_gestures_double.png
+    - title: Slide 3
+      content: 'Testing stock image'
       align: right
       background:
         position: center
         color: '#333'
         brightness: 0.5
-        media: welcome.jpg
+        media: coders.jpg
       link:
         icon: graduation-cap
         icon_pack: fas
