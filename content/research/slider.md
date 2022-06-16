@@ -30,7 +30,7 @@ content:
         position: center
         color: '#555'
         brightness: 0.7
-        media: coders.jpg
+        media: 'beat_gesture_double.png'
     - title: Slide 3
       content: 'Testing stock image'
       align: right
