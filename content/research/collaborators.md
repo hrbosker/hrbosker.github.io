@@ -21,7 +21,7 @@ The SPEAC research group is funded by the ERC Starting Grant 'HearingHands' [101
 
 ## Collaboration
 
-We collaborate with multiple researchers with labs around the world, including:
+We collaborate with multiple researchers from labs around the world, including:
 
 - [Rebecca Frost](https://research.edgehill.ac.uk/en/persons/rebecca-frost) (Edge Hill University, UK)
 - [Chris Heffner](http://www.acsu.buffalo.edu/~ccheffne/) (University at Buffalo, USA)
