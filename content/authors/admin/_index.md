@@ -84,7 +84,7 @@ user_groups:
 Hans Rutger Bosker is Assistant Professor at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He leads the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276] that started in September 2022. This research grant investigates the contribution of simple up-and-down hand movements ('beat gestures') to audiovisual speech perception. Hans Rutger Bosker is also Senior Investigator at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl), Nijmegen.
 
 {{% callout note %}}
-*Wondering how to pronounce my name?* I have a double first name "Hans Rutger" (no hyphen), the surname is "Bosker". It's pronounced /ɦɑns ˈʀʏt.xəɹ ˈbɔs.kəɹ/ but for the less phonetically savvy among us, here's Google pronouncing my name. But feel free to simply call me "Hans".
+*Wondering how to pronounce my name?* I have a double first name "Hans Rutger" (no hyphen), the surname is "Bosker". It's pronounced /ɦɑns ˈʀʏt.xəɹ ˈbɔs.kəɹ/ but for the less phonetically savvy among us, here's Google pronouncing my name (with rather depressed prosody). But feel free to simply call me "Hans".
 {{< audio src="HRB_Google_TTS.mp3" >}}
 {{% /callout %}}
 
