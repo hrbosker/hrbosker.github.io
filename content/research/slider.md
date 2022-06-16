@@ -24,7 +24,7 @@ content:
         brightness: 0.5
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
      - title: Audiovisual integration
-       content: 'We don't only listen with our ears but also with *our eyes*, using lip movements, facial expressions, and hand gestures to perceive speech.'
+       content: 'We don't only listen with our ears but also with our eyes, using lip movements, facial expressions, and hand gestures to perceive speech.'
        align: center
        background:
          position: center
