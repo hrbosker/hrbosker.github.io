@@ -26,7 +26,7 @@ content:
     - title: Audiovisual integration
     # - title: Audiovisual integration
     #   content: 'We do not only listen with our ears but also with our eyes, using lip movements, facial expressions, and hand gestures to perceive speech.'
-      content: 'Test body'
+      content: 'Test body with, a comma'
       align: center
       background:
         position: center
