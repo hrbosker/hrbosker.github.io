@@ -27,7 +27,7 @@ year = date.getFullYear();
 month = date.getMonth() + 1;
 day = date.getDate();
 document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-</script>(m/d/y)
+</script> (m/d/y)
 
 # **This list is under construction**.
 
