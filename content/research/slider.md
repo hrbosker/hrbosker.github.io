@@ -1,6 +1,6 @@
 ---
 widget: slider
-weight: 1
+weight: 10
 active: true
 headless: true
 
@@ -48,7 +48,7 @@ content:
       content: 'We use behavioral, eye-tracking, virtual reality, and neuroimaging methods in our experiments.'
       align: left
       background:
-        position: center
+        position: right
         color: '#333'
         brightness: 0.5
         media: 'FigS1_Kosem_2018_CurrBiol.jpg'
