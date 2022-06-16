@@ -2,8 +2,9 @@
 title: Corpora
 linkTitle: Corpora
 summary: Open collections of speech recordings.
-#date: '2021-01-24'
 type: book
+weight: 10
+#date: '2021-01-24'
 #tags:
 #  - current
 ---

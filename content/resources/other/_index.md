@@ -6,6 +6,7 @@ date: '2021-01-24'
 type: book
 tags:
   - previous
+weight: 20
 ---
 
 {{< figure src="featured.jpg" >}}
