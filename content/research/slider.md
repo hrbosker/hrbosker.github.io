@@ -15,33 +15,60 @@ design:
 
 content:
   slides:
-    - title: 👋 Welcome to the group
-      content: Testing speech...
+    - title: Speech perception
+      content: 'We investigate how the human brain perceives sounds and words from speech.'
       align: center
       background:
         position: right
         color: '#666'
-        brightness: 0.7
+        brightness: 0.5
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
-    - title: Slide 2
-      content: 'Testing gestures'
-      align: left
+    - title: Audiovisual integration
+      content: 'We don't only listen with our ears but also with *our eyes*, using lip movements, facial expressions, and hand gestures to perceive speech.'
+      align: center
       background:
         position: center
         color: '#555'
-        brightness: 0.7
+        brightness: 0.3
         media: 'beat_gesture_double.png'
-    - title: Slide 3
-      content: 'Testing stock image'
+    - title: Gesture-speech coupling
+      content: 'A key question concerns how the temporal alignment between gesture and speech shapes *what we hear*.'
+      align: right
+      background:
+        position: center
+        color: '#333'
+        brightness: 0.7
+        media: 'motion_tracking_still.jpg'
+      #link:
+      #  icon: graduation-cap
+      #  icon_pack: fas
+      #  text: Join Us
+      #  url: ../contact/
+    - title: Methods
+      content: 'We use behavioral, eye-tracking, virtual reality, and neuroimaging methods in our experiments.'
+      align: left
+      background:
+        position: center
+        color: '#333'
+        brightness: 0.5
+        media: 'FigS1_Kosem_2018_CurrBiol.jpg'
+      #link:
+      #  icon: graduation-cap
+      #  icon_pack: fas
+      #  text: Join Us
+      #  url: ../contact/
+    - title: Research tools
+      content: 'We also develop and openly distribute research tools that support and speed up data collection, annotation, and analysis.'
       align: right
       background:
         position: center
         color: '#333'
         brightness: 0.5
-        media: coders.jpg
-      link:
-        icon: graduation-cap
-        icon_pack: fas
-        text: Join Us
-        url: ../contact/
+        media: 'tokensortratio.jpg'
+      #link:
+      #  icon: graduation-cap
+      #  icon_pack: fas
+      #  text: Join Us
+      #  url: ../contact/
 ---
+
