@@ -20,14 +20,14 @@ All our publications are published open access. Most are openly available from t
 Since 2018, all our papers have open data available from the Open Science Framework (OSF; see [https://osf.io/h93n8](https://osf.io/h93n8)) or other data repositories. See the **[Dataset]** links below.
 
 ## **Last update**
-(m/d/y) <div id="current_date"></p>
+<div id="current_date"></p>
 <script>
 date = new Date();
 year = date.getFullYear();
 month = date.getMonth() + 1;
 day = date.getDate();
 document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-</script>
+</script>(m/d/y)
 
 # **This list is under construction**.
 
