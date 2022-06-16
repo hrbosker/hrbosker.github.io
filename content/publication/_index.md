@@ -5,7 +5,7 @@ title: Publications
 view: citation
 
 # Show the last-updated date?
-show_date = true
+show_date: true
 
 # Optional banner image (relative to `assets/media/` folder).
 banner:
