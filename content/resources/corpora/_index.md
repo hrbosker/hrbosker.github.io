@@ -1,6 +1,6 @@
 ---
 title: Corpora
-linkTitle: Corpora
+linkTitle: corpora
 summary: Open collections of speech recordings.
 type: book
 weight: 10
@@ -11,7 +11,7 @@ weight: 10
 
 {{< figure src="featured.jpg" >}}
 
-{{< toc hide_on="xl" >}}
+<!-- {{< toc hide_on="xl" >}} -->
 
 ## What you will learn
 
