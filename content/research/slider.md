@@ -27,7 +27,7 @@ content:
       content: 'We do not only listen with our ears but also with our eyes, using lip movements, facial expressions, and hand gestures to perceive speech.'
       align: center
       background:
-        position: center
+        position: right
         color: '#555'
         brightness: 0.3
         media: 'beat_gesture_double.jpg'
