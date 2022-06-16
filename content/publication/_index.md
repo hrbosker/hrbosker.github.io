@@ -14,10 +14,10 @@ banner:
 ---
 
 ## **Fulltexts**
-All our publications are published open access. Most are openly available from the publisher's website (*gold open access*), others are available here in an author's version (i.e., before copy-editing; *green open access*). See the **[PDF]** / **[DOI]** / **[Source Document]** / **[Custom link]** links below.
+All our publications are freely accessible to all. Most are openly available from the publisher's website (*gold open access*; see **[DOI]** links below]), the remainder is made available here (*green open access*; see **[PDF]** links below). In some cases, only the author's version can be shared (i.e., before copy-editing).
 
 ## **Open Data**
-Since 2018, all our papers have open data available from the Open Science Framework (OSF; see [https://osf.io/h93n8](https://osf.io/h93n8)) or other data repositories. See the **[Dataset]** links below.
+Since 2018, all our papers have open data, materials, and analysis scripts available from the Open Science Framework (OSF; see [https://osf.io/h93n8](https://osf.io/h93n8)) or other data repositories. See the **[Dataset]** links below.
 
 ## **Last update**
 <div id="current_date"></p>
