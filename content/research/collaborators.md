@@ -23,12 +23,13 @@ The SPEAC research group is funded by the ERC Starting Grant 'HearingHands' [101
 
 We collaborate with multiple researchers with labs around the world, including:
 
-- [Rebecca Frost](https://research.edgehill.ac.uk/en/persons/rebecca-frost) (Edge Hill University)
-- [Chris Heffner](http://www.acsu.buffalo.edu/~ccheffne/) (University at Buffalo)
-- [Marieke Hoetjes](https://www.ru.nl/en/people/hoetjes-m) (Radboud University)
-- [Lieke van Maastricht](https://www.ru.nl/en/people/maastricht-l-van) (Radboud University)
-- [James McQueen](https://www.ru.nl/personen/mcqueen-j) (Radboud University)
+- [Rebecca Frost](https://research.edgehill.ac.uk/en/persons/rebecca-frost) (Edge Hill University, UK)
+- [Chris Heffner](http://www.acsu.buffalo.edu/~ccheffne/) (University at Buffalo, USA)
+- [Marieke Hoetjes](https://www.ru.nl/en/people/hoetjes-m) (Radboud University, NL)
+- [Lieke van Maastricht](https://www.ru.nl/en/people/maastricht-l-van) (Radboud University, NL)
+- [James McQueen](https://www.ru.nl/personen/mcqueen-j) (Radboud University, NL)
 - [Jonathan Peelle](http://jonathanpeelle.net/) (Washington University in Saint Louis, USA)
-- [David Peeters](https://www.tilburguniversity.edu/staff/d-g-t-peeters) (Tilburg University)
-- [Wim Pouw](http://www.wimpouw.com/) (Radboud University)
-- [Lars Riecke](https://www.maastrichtuniversity.nl/l.riecke) (Maastricht University)
+- [David Peeters](https://www.tilburguniversity.edu/staff/d-g-t-peeters) (Tilburg University, NL)
+- [Wim Pouw](http://www.wimpouw.com/) (Radboud University, NL)
+- [Eva Reinisch](https://www.evareinisch.info) (Austrian Academy of Sciences, Austria)
+- [Lars Riecke](https://www.maastrichtuniversity.nl/l.riecke) (Maastricht University, NL)
