@@ -23,7 +23,7 @@ content:
         color: '#666'
         brightness: 0.5
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
-    - title: Title
+    - title: Audiovisual integration
     # - title: Audiovisual integration
     #   content: 'We do not only listen with our ears but also with our eyes, using lip movements, facial expressions, and hand gestures to perceive speech.'
       content: 'Test body'
