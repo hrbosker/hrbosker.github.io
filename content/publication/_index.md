@@ -4,6 +4,9 @@ title: Publications
 # Listing view
 view: citation
 
+# Show the last-updated date?
+show_date = true
+
 # Optional banner image (relative to `assets/media/` folder).
 banner:
   caption: ''
@@ -15,6 +18,8 @@ All our publications are published open access. Most are openly available from t
 
 ## **Open Data**.
 Since 2018, all our papers have open data available from the Open Science Framework (OSF; see [https://osf.io/h93n8](https://osf.io/h93n8)) or other data repositories. See the **[Dataset]** links below.
+
+## Last update
 
 # **This list is under construction**.
 
