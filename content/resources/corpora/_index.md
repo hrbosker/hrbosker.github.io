@@ -14,11 +14,15 @@ toc: false
 
 <!-- {{< toc hide_on="xl" >}} -->
 
-## What you will learn
-
-- Fundamental {{<hl>}}Python programming skills{{</hl>}}
-- {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}Plotly{{</hl>}} and data wrangling with {{<hl>}}Pandas{{</hl>}}
+## Nijmegen Corpus of Lombard Speech [NiCLS]
+> cite Bosker & Cooke 2020
+- [https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6](https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6)
+- Language: Dutch
+- 42 talkers (37 F/5 M) each reading a folk story of 56 utterances
+- in both plain speech (read in quiet) and Lombard speech (read in noise over headphones)
+- 3968 wav files (1984 Lombard-plain pairs) + automated forced-alignment TextGrids
+- CC BY-NC-ND 4.0 license
+- **Note**. *Voice recordings are privacy-sensitive data; please use them respectfully and for academic purposes only*.
 
 ## Program overview
 
