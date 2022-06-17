@@ -39,7 +39,7 @@ participant | trial | item | condition | target | response | TSR_score
 <img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example" width="600"/>
 
 - [https://github.com/orhunulusahin/praatvscode](https://github.com/orhunulusahin/praatvscode)
-- Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself (see screenshot below). Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
+- Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code (see screenshot) that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
 - **How to install:**
   - Download and install [Visual Studio Code](https://code.visualstudio.com/).
   - Under *View* > *Extensions*, search for PraatVSCode, and click install.
