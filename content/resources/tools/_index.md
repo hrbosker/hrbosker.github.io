@@ -18,22 +18,12 @@ toc: true
 {{< toc hide_on="xl" >}}
 
 ## TSR
+*Table showing example TSR scores for various responses*
+{{< figure src="tokensortratio_table.jpg" >}}
+
 > cite Bosker 2021
 - [https://tokensortratio.netlify.app](https://tokensortratio.netlify.app)
 - The **Token Sort Ratio [TSR]** score is a fuzzy string matching metric that – at the most basic level – quantifies the orthographic match between a target string and a response string (value between 0 = no match and 100 = perfect match). The TSR score has been shown to strongly correlate with human-generated scores of percentage words correct (Bosker, 2021). It is an efficient, reliable, and accurate tool for use in speech perception research (e.g., studies that examine the perception of speech in adverse listening conditions, or degraded speech) or for generating listener intelligibility measures in clinical disciplines such as speech-language pathology or audiology.
-
-*Example TSR scores for various response types*
-|       |       |       |       |       |       |       |
-|:------|:------|:------|:------|:------|:------|:------|
-participant | trial | item | condition | target | response | TSR_score
-1 | 1 | 1 | clear | the dog bit the man | the dog bit teh man | 95
-1 | 2 | 1 | degraded | the dog bit the man | the dog ? | 54
-1 | 3 | 2 | clear | the child was happy | the child was happy | 100
-1 | 4 | 2 | degraded | the child was happy | child | 42
-2 | 1 | 1 | clear | the dog bit the man | the dog bit the man | 100
-2 | 2 | 1 | degraded | the dog bit the man | dog bites man | 69
-2 | 3 | 2 | clear | the child was happy | the chidl was happy | 95
-2 | 4 | 2 | degraded | the child was happy | happy | 42
 
 ## PraatVSCode
 <img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example" width="600"/>
