@@ -4,7 +4,10 @@ linkTitle: Corpora
 summary: Open collections of speech recordings.
 type: book
 weight: 10
-toc: false
+
+# display table-of-contents for this particular page on the right-hand side?
+toc: true
+
 #date: '2021-01-24'
 #tags:
 #  - current
@@ -38,5 +41,4 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - CC BY 4.0 license
 
 ## Other corpora
-
 Many other speech, video, and picture corpora are publicly available nowadays. Please see [Other resources](https://hrbosker.netlify.app/resources/other-resources) for some examples that we ourselves have used in the past.
