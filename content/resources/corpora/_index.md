@@ -15,7 +15,7 @@ toc: true
 
 {{< figure src="featured.jpg" >}}
 
-<!-- {{< toc hide_on="xl" >}} -->
+{{< toc hide_on="xl" >}}
 
 {{% callout note %}}
 Voice recordings are privacy-sensitive data; please use them respectfully and for academic purposes only.
