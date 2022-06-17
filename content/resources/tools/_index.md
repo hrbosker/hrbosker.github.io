@@ -33,7 +33,7 @@ toc: true
 - **How to install:**
   - Download and install [Visual Studio Code](https://code.visualstudio.com/).
   - Under *View* > *Extensions*, search for PraatVSCode, and click install.
-- *MIT license.*
+  - *MIT license.*
 
 ## POnSS
 > Rodd. J., Decuyper, C., Bosker, H. R., & ten Bosch, L. (2021). A tool for efficient and accurate segmentation of speech data: Announcing POnSS. Behavior Research Methods 53, 744-756. doi:10.3758/s13428-020-01449-6.
