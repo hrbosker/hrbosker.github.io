@@ -23,7 +23,7 @@ toc: true
 - The **Token Sort Ratio [TSR]** score is a fuzzy string matching metric that – at the most basic level – quantifies the orthographic match between a target string and a response string (value between 0 = no match and 100 = perfect match). The TSR score has been shown to strongly correlate with human-generated scores of percentage words correct (Bosker, 2021). It is an efficient, reliable, and accurate tool for use in speech perception research (e.g., studies that examine the perception of speech in adverse listening conditions, or degraded speech) or for generating listener intelligibility measures in clinical disciplines such as speech-language pathology or audiology.
 
 ## PraatVSCode
-<img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example"/ width="400">
+<img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example" width="400"/>
 - [https://github.com/orhunulusahin/praatvscode](https://github.com/orhunulusahin/praatvscode)
 - Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself (see screenshot below). Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
 - **How to install:**
