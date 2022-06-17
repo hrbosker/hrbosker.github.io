@@ -21,8 +21,9 @@ toc: true
 Voice recordings are privacy-sensitive data; please use them respectfully and for academic purposes only.
 {{% /callout %}}
 
-## Nijmegen Corpus of Lombard Speech [NiCLS]
+## NiCLS
 > cite Bosker & Cooke 2020
+- **Nijmegen Corpus of Lombard Speech [NiCLS]**
 - [https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6](https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6)
 - Language: Dutch
 - 42 talkers (37 F/5 M) each reading a folk story of 56 utterances
@@ -30,8 +31,9 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - 3968 wav files (1984 Lombard-plain pairs) + automated forced-alignment TextGrids
 - CC BY-NC-ND 4.0 license
 
-## Picture Naming at Cued Rates [PiNCeR] corpus
+## PiNCeR
 > cite Rodd et al. preprint 2019 -- Rodd, J., Bosker, H. R., Ernestus, M., Ten Bosch, L., & Meyer, A. S. (2019). PiNCeR: a corpus of cued-rate multiple picture naming in Dutch. PsyArXiv. doi:10.31234/osf.io/wyc6h.
+- **Picture Naming at Cued Rates [PiNCeR] corpus**
 - [https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c](https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c)
 - Language: Dutch
 - 25 talkers (21 F/4 M) naming disyllabic pictures arranged on a 'clock face'
