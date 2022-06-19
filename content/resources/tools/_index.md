@@ -58,9 +58,19 @@ toc: true
 - Moreover, you may want to verify they wearing them 'the right way around': [L] in their left ear, [R] in their right ear.
 - This is particularly important when testing multitalker listening conditions and/or virtual auditory environments.
 - Several tools exist to verify whether participants are using headphones (as instructed) or not, based on different psychoacoustic binaural phenomena.
-  - Tone attenuation based on phase-cancellation
-  > cite Woords
-  - Huggins Pitch illusion
-  > cite Milne
+  - **Tone attenuation based on phase-cancellation**
+  > Woods, K. J. P., Siegel, M. H., Traer, J., & McDermott, J. H. (2017). Headphone screening to facilitate web-based auditory experiments. *Attention, Perception, & Psychophysics, 79*(7), 2064–2072. doi:[10.3758/s13414-017-1361-2](https://doi.org/10.3758/s13414-017-1361-2)
+  - General idea: binaural tones are played and participants are asked to indicate which tone out of three is quietest. Some binaural tones are played 180° out-of-phase, attenuating perceived loudness if using speakers, but not when using headphones/in-ear buds.
+  - 3min test, available from [Github](https://github.com/mcdermottLab/HeadphoneCheck)
+  - We have also implemented this headphone screening test on *Gorilla* and *PsyToolkit*. Send us [an email](https://hrbosker.netlify.app/contact) and we'd be happy to share!
+  - **Huggins Pitch illusion**
+  > Milne, A. E., Bianco, R., Poole, K. C., Zhao, S., Oxenham, A. J., Billig, A. J., & Chait, M. (2021). An online headphone screening test based on dichotic pitch. *Behavior Research Methods, 53*(4), 1551–1562. doi:[10.3758/s13428-020-01514-0](https://doi.org/10.3758/s13428-020-01514-0)
+  - General idea: participants are played white noise in one ear and the same white noise but with a phase shift of 180° over a narrow frequency band to the other ear. This results in the perception of a faint tone embedded in the noise but only when using headphones/in-ear buds. Otherwise, listeners only perceive white noise (i.e., without the faint embedded tone).
+  - 3min test, available on [Gorilla](https://app.gorilla.sc/openmaterials/100917)
+  - We have also implemented this headphone screening test on *PsyToolkit*. Send us [an email](https://hrbosker.netlify.app/contact) and we'd be happy to share!
 - In addition, we have created an in-house screening test to check that participants are wearing their headphones/in-ear buds 'the right way around'.
-  - ITD and ILD manipulations
+  - **ITD and ILD manipulations**
+  - General idea: participants are played six trials of three binaural white noise sounds. Interaural time differences (ITDs) and interaural level differences (ILDs) are applied to the binaural stimuli such that two noise sounds are perceived as coming from the left, and one as coming from the right. Participants indicate which out of the three white noise sounds comes from the right, which can only be successfully perceived when using headphones/in-ear buds.
+  - 3min test, implemented on *Gorilla* and *PsyToolkit*. Send us [an email](https://hrbosker.netlify.app/contact) and we'd be happy to share!
+
+
