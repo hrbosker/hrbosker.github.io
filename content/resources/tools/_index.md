@@ -54,4 +54,13 @@ toc: true
 
 
 ## Headphone screening tests
-- demo text.
+- When running experiments online, you may want your participants to use headphones or in-ear buds (i.e., no speakers).
+- Moreover, you may want to verify they wearing them 'the right way around': [L] in their left ear, [R] in their right ear.
+- This is particularly important when testing multitalker listening conditions and/or virtual auditory environments.
+- Several tools exist to verify whether participants are using headphones (as instructed) or not, based on different psychoacoustic binaural phenomena.
+  - Tone attenuation based on phase-cancellation
+  > cite Woords
+  - Huggins Pitch illusion
+  > cite Milne
+- In addition, we have created an in-house screening test to check that participants are wearing their headphones/in-ear buds 'the right way around'.
+  - ITD and ILD manipulations
