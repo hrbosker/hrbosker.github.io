@@ -19,6 +19,6 @@ On 24th Sept, 2020, **Joe Rodd** successfully defended his PhD thesis, entitled 
 On 12th Dec, 2019, **Merel Maslowski** successfully defended her PhD thesis, entitled [Fast speech can sound slow: effects of contextual speech rate on word recognition](https://pure.mpg.de/rest/items/item_3169875_4/component/file_3169876/content), after which she took up a position at Royal Dutch Kentalis.
 
 ## Interns
-<!-- These are the names of bright BA and MA students who wrote their thesis in the group or who did an internship with us. You will find some of their names appear as authors on [our publications]({{< ref "publication" >}}). -->
+<!-- These are the names of bright BA and MA students who wrote their thesis in the group or who did an internship with us. You will find some of their names appear as authors on [our publications]({{< ref "./publication" >}}). -->
 
 **Ivy Mok**, **Eleni Zimianiti**, **Christina Papoutsi**, **Nora Kennis**, **Myriam Weiß**, **Giulio Severijnen**, **Marie Stadtbäumer**, **Vilde Reksnes**, **Jeonga Kim**, **Marjolein van Os**, **Rebecca Wogan**, **Rik Does**, **Wibke Naumann**, **Anna Ravenschlag**.
