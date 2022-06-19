@@ -73,4 +73,4 @@ user_groups:
   - PhD students
 ---
 
-Ronny Bujok is a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors are [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje) and [Dr. Hans Rutger Bosker]({{< ref "authors/admin/_index.md" >}}). His project investigates how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception.
+<!-- Ronny Bujok is a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors are [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje) and [Dr. Hans Rutger Bosker]({{< ref "authors/admin/_index.md" >}}). His project investigates how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception. -->
