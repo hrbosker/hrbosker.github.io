@@ -6,7 +6,7 @@
 widget: hero # See https://wowchemy.com/docs/page-builder/
 headless: true # This file represents a page section.
 weight: 10 # Order that this section will appear.
-title: '**[This website is *under construction*]**'
+title: 'Speech Perception in Audiovisual Communication'
 hero_media: welcome.jpg
 design:
   # Choose how many columns the section has. Valid values: 1 or 2.
@@ -18,7 +18,7 @@ design:
 
 <br>
 
-Hans Rutger Bosker heads the **Speech Perception in Audiovisual Communication [SPEAC]** research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
+Hans Rutger Bosker heads the SPEAC research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
 
 <br />
 <br />
