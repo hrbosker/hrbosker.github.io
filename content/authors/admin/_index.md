@@ -28,7 +28,7 @@ interests:
 education:
   courses:
     - course: PhD in Psycholinguistics
-      institution: Utrecht University, *with distinction*
+      institution: Utrecht University, *with distinction*<br />test
       year: 2014
     - course: MA in Linguistics
       institution: Leiden University, *with distinction*
