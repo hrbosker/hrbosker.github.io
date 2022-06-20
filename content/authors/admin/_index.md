@@ -18,17 +18,17 @@ bio: My research interests include speech perception, audiovisual integration, a
 
 interests:
   - Speech Perception
+  - Audiovisual Integration
   - Prosody
   - Gestures
   - Lexical Stress
   - Speech Rate
   - Speech in Noise
-  - Disfluencies
 
 education:
   courses:
     - course: PhD in Psycholinguistics
-      institution: Utrecht University, *with distinction*<br />test
+      institution: Utrecht University, *with distinction*
       year: 2014
     - course: MA in Linguistics
       institution: Leiden University, *with distinction*
