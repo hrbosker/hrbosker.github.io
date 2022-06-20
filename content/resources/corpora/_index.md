@@ -29,7 +29,7 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - {{< icon name="language" pack="fas" >}} Dutch
 - {{< icon name="comments" pack="fas" >}} 42 talkers (37 F/5 M); each reading a folk story of 56 utterances; in both plain speech (read in quiet) and Lombard speech (read in noise over headphones)
 - {{< icon name="folder" pack="fas" >}} 3968 wav files (1984 Lombard-plain pairs) + forced-alignment TextGrids
-- {{< icon name="creative-commons" pack="fab" >}} CC BY-NC-ND 4.0 license
+- {{< icon name="creative-commons" pack="fab" >}} [CC BY-NC-ND 4.0 license](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ## PiNCeR
 > Rodd, J., Bosker, H. R., Ernestus, M., Ten Bosch, L., & Meyer, A. S. (2019). PiNCeR: a corpus of cued-rate multiple picture naming in Dutch. *PsyArXiv*. doi:[10.31234/osf.io/wyc6h](https://doi.org/10.31234/osf.io/wyc6h).
@@ -39,7 +39,7 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - {{< icon name="language" pack="fas" >}} Dutch
 - {{< icon name="comments" pack="fas" >}} 25 talkers (21 F/4 M) naming disyllabic pictures arranged on a 'clock face'; produced at three different cued rates: fast, medium, slow
 - {{< icon name="folder" pack="fas" >}} with (manual) word-level and (forced-aligned) syllable-level annotations; with eye-tracking data
-- {{< icon name="creative-commons" pack="fab" >}} CC BY 4.0 license
+- {{< icon name="creative-commons" pack="fab" >}} [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
 ## Other corpora
 Many other speech, video, and picture corpora are publicly available nowadays. Please see the page on **Other resources** for some examples that we ourselves have used in the past.

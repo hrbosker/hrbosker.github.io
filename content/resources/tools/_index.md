@@ -37,7 +37,7 @@ toc: true
 - {{< icon name="download" pack="fas" >}} **How to install:**
   - Download and install [Visual Studio Code](https://code.visualstudio.com/).
   - Under *View* > *Extensions*, search for PraatVSCode, and click install.
-- {{< icon name="creative-commons" pack="fab" >}} *MIT license*
+- {{< icon name="creative-commons" pack="fab" >}} [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms)
 
 
 
@@ -49,7 +49,7 @@ toc: true
 - {{< icon name="user" pack="fas" >}} Lead author: Joe Rodd.
 - {{< icon name="link" pack="fas" >}} [https://git.io/Jexj3](https://git.io/Jexj3)
 - {{< icon name="circle-info" pack="fas" >}} POnSS is a browser-based system that is specialized for the task of segmenting the onsets and offsets of words, that combines automatic speech recognition (WebMAUS) with limited human input.
-- {{< icon name="creative-commons" pack="fab" >}} *MIT license*
+- {{< icon name="creative-commons" pack="fab" >}} [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms)
 
 
 
