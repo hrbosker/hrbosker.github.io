@@ -2,7 +2,7 @@
 title: Publications
 
 # Listing view
-view: showcase
+view: citation
 
 # Show the last-updated date?
 show_date: true
