@@ -26,10 +26,10 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - **Nijmegen Corpus of Lombard Speech [NiCLS]**
 - {{< icon name="user" pack="fas" >}} Lead author: {{< mention "admin" >}}.
 - {{< icon name="link" pack="fas" >}} [https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6](https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6)
-- {{< icon name="language" pack="fas" >}} Language: Dutch
+- {{< icon name="language" pack="fas" >}} Dutch
 - {{< icon name="comments" pack="fas" >}} 42 talkers (37 F/5 M); each reading a folk story of 56 utterances; in both plain speech (read in quiet) and Lombard speech (read in noise over headphones)
-- {{< icon name="folder-grid" pack="fas" >}} 3968 wav files (1984 Lombard-plain pairs) + forced-alignment TextGrids
-- {{< icon name="file-certificate" pack="fas" >}} CC BY-NC-ND 4.0 license
+- {{< icon name="folder-grid" pack="fab" >}} 3968 wav files (1984 Lombard-plain pairs) + forced-alignment TextGrids
+- {{< icon name="file-certificate" pack="fab" >}} CC BY-NC-ND 4.0 license
 
 ## PiNCeR
 > Rodd, J., Bosker, H. R., Ernestus, M., Ten Bosch, L., & Meyer, A. S. (2019). PiNCeR: a corpus of cued-rate multiple picture naming in Dutch. *PsyArXiv*. doi:[10.31234/osf.io/wyc6h](https://doi.org/10.31234/osf.io/wyc6h).
