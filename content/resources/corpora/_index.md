@@ -22,7 +22,7 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 {{% /callout %}}
 
 ## NiCLS
-> Bosker, H. R., & Cooke, M. (2020). Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech. *The Journal of the Acoustical Society of America, 147*: 721. doi:[10.1121/10.0000646](https://doi.org/10.1121/10.0000646).
+> Bosker, H. R., & Cooke, M. (2020). Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech. *The Journal of the Acoustical Society of America, 147*: 721. doi:[10.1121/10.0000646](https://doi.org/10.1121/10.0000646). [［PDF］](https://pure.mpg.de/rest/items/item_3186181_3/component/file_3193680/content)
 - **Nijmegen Corpus of Lombard Speech [NiCLS]**
 - Lead author: {{< mention "admin" >}}.
 - [https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6](https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6)
