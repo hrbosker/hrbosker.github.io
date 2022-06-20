@@ -2,7 +2,7 @@
 title: Publications
 
 # Listing view
-view: citation
+view: compact
 
 # Show the last-updated date?
 show_date: true
