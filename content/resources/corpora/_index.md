@@ -38,9 +38,8 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - {{< icon name="link" pack="fas" >}} [https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c](https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c)
 - {{< icon name="language" pack="fas" >}} Dutch
 - {{< icon name="comments" pack="fas" >}} 25 talkers (21 F/4 M) naming disyllabic pictures arranged on a 'clock face'; produced at three different cued rates: fast, medium, slow
-- with (manual) word-level and (forced-aligned) syllable-level annotations
-- with eye-tracking data
-- CC BY 4.0 license
+- {{< icon name="folder" pack="fas" >}} with (manual) word-level and (forced-aligned) syllable-level annotations; with eye-tracking data
+- {{< icon name="creative-commons" pack="fas" >}} CC BY 4.0 license
 
 ## Other corpora
 Many other speech, video, and picture corpora are publicly available nowadays. Please see the page on **Other resources** for some examples that we ourselves have used in the past.
