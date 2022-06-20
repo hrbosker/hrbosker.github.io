@@ -34,10 +34,10 @@ toc: true
 - {{< icon name="user" pack="fas" >}} Author: {{< mention "orhun-ulusahin" >}}.
 - {{< icon name="link" pack="fas" >}} [https://github.com/orhunulusahin/praatvscode](https://github.com/orhunulusahin/praatvscode)
 - {{< icon name="circle-info" pack="fas" >}} Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code (see screenshot) that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
-- **How to install:**
+- {{< icon name="download" pack="fas" >}} **How to install:**
   - Download and install [Visual Studio Code](https://code.visualstudio.com/).
   - Under *View* > *Extensions*, search for PraatVSCode, and click install.
-  - *MIT license*
+- {{< icon name="creative-commons" pack="fab" >}} *MIT license*
 
 
 
@@ -49,7 +49,7 @@ toc: true
 - {{< icon name="user" pack="fas" >}} Lead author: Joe Rodd.
 - {{< icon name="link" pack="fas" >}} [https://git.io/Jexj3](https://git.io/Jexj3)
 - {{< icon name="circle-info" pack="fas" >}} POnSS is a browser-based system that is specialized for the task of segmenting the onsets and offsets of words, that combines automatic speech recognition (WebMAUS) with limited human input.
-- *MIT license*
+- {{< icon name="creative-commons" pack="fab" >}} *MIT license*
 
 
 
