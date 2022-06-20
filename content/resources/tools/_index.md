@@ -20,7 +20,7 @@ toc: true
 ## TSR
 *Table showing example TSR scores for various responses*
 {{< figure src="tokensortratio_table.jpg" >}}
-> Bosker, H. R. (2021). Using fuzzy string matching for automated assessment of listener transcripts in speech intelligibility studies. *Behavior Research Methods, 53*(5), 1945-1953. doi:[10.3758/s13428-021-01542-4](https://doi.org/10.3758/s13428-021-01542-4).
+> Bosker, H. R. (2021). Using fuzzy string matching for automated assessment of listener transcripts in speech intelligibility studies. *Behavior Research Methods, 53*(5), 1945-1953. doi:[10.3758/s13428-021-01542-4](https://doi.org/10.3758/s13428-021-01542-4). [［PDF］](https://pure.mpg.de/rest/items/item_3277028_4/component/file_3356415/content)
 - **Token Sort Ratio**: automatically quantifying response accuracy for speech intelligiblity experiments.
 - Author: {{< mention "admin" >}}.
 - [https://tokensortratio.netlify.app](https://tokensortratio.netlify.app)
@@ -44,7 +44,7 @@ toc: true
 ## POnSS
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13428-020-01449-6/MediaObjects/13428_2020_1449_Fig2_HTML.png?as=webp" alt="POnSS screenshot example" width="600"/>
 
-> Rodd. J., Decuyper, C., Bosker, H. R., & ten Bosch, L. (2021). A tool for efficient and accurate segmentation of speech data: Announcing POnSS. Behavior Research Methods 53, 744-756. doi:10.3758/s13428-020-01449-6.
+> Rodd. J., Decuyper, C., Bosker, H. R., & ten Bosch, L. (2021). A tool for efficient and accurate segmentation of speech data: Announcing POnSS. *Behavior Research Methods 53*, 744-756. doi:[10.3758/s13428-020-01449-6](https://doi.org/10.3758/s13428-020-01449-6). [［PDF］](https://pure.mpg.de/rest/items/item_3240668_6/component/file_3318713/content)
 - **Pipeline for Online Speech Segmentation [POnSS]**
 - Lead author: Joe Rodd.
 - [https://git.io/Jexj3](https://git.io/Jexj3)
