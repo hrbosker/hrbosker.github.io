@@ -23,6 +23,7 @@ content:
         color: '#666'
         brightness: 0.3
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
+        fit: contain
     - title: Audiovisual integration
       content: 'We do not only listen with our ears but also with our eyes, using lip movements, facial expressions, and hand gestures to perceive speech.'
       align: center
@@ -31,6 +32,7 @@ content:
         color: '#555'
         brightness: 0.5
         media: 'beat_gesture_double.jpg'
+        fit: contain
     - title: Gesture-speech coupling
       content: 'A key question in our group concerns how the temporal alignment between gesture and speech shapes what we hear.'
       align: right
@@ -39,6 +41,7 @@ content:
         color: '#333'
         brightness: 0.7
         media: 'motion_tracking_still.jpg'
+        fit: contain
       #link:
       #  icon: graduation-cap
       #  icon_pack: fas
@@ -52,6 +55,7 @@ content:
         color: '#333'
         brightness: 0.5
         media: 'FigS1_Kosem_2018_CurrBiol.jpg'
+        fit: contain
       #link:
       #  icon: graduation-cap
       #  icon_pack: fas
@@ -65,6 +69,7 @@ content:
         color: '#333'
         brightness: 0.3
         media: 'tokensortratio.jpg'
+        fit: contain
       #link:
       #  icon: graduation-cap
       #  icon_pack: fas
