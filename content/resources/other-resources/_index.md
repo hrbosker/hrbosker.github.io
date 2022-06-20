@@ -22,7 +22,7 @@ toc: true
 - {{< icon name="waveform-lines" pack="fas" >}} **Praat**
   - [praat.org](https://www.praat.org)
   - the *number 1* speech-editing software in academia
-  - supports speech measurements, annotation in TextGrids, manipulation, synthesis
+  - test. supports speech measurements, annotation in TextGrids, manipulation, synthesis
   - scripting interface supports batch processing
   - recommended scripting interface: [PraatVSCode]({{< ref "../tools" >}})
 - {{< icon name="waveform-lines" pack="fas" >}} **ffmpeg**
