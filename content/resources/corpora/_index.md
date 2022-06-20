@@ -42,4 +42,4 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - {{< icon name="creative-commons" pack="fab" >}} [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
 ## Other corpora
-Many other speech, video, and picture corpora are publicly available nowadays. Please see the page on **Other resources** for some examples that we ourselves have used in the past.
+Many other speech, video, and picture corpora are publicly available nowadays. Please see our [Other resources]({{< ref "../other-resources" >}}) for some examples that we ourselves have used in the past.
