@@ -24,7 +24,7 @@ toc: true
   - the *number 1* speech-editing software in academia
   - supports speech measurements, annotation in TextGrids, manipulation, synthesis
   - scripting interface supports batch processing
-  - recommended scripting interface: [PraatVSCode]({{< ref "../tools" >}})
+  - recommended scripting interface: [PraatVSCode]({{< ref "../tools/#PraatVSCode" >}})
 - {{< icon name="waveform-lines" pack="fas" >}} **ffmpeg**
   - link
 - {{< icon name="waveform-lines" pack="fas" >}} **WebMAUS**
