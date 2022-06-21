@@ -20,9 +20,11 @@ toc: true
 ## Scripting in Praat
 
 Over the years, Praat has had three types of syntax:
-- three types of syntax: `some code`
-- use PraatVSCode
-- how-to will follow soon
+- `Extract part... 0 0.1 rectangular 1 no` (before Praat 5.3.44, Apr 2013)
+- `do("Extract part", 0, 0.1, "rectangular", 1, "no")` (before Praat 5.3.63, Jan 2014)
+- `Extract part: 0, 0.1, "rectangular, 1, "no"` (*current*)
+Current Praat versions are fully compatible with older and newer syntax types. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax.
+
 ```
 this is a block of code
 and a second line
