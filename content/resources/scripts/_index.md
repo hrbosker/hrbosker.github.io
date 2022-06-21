@@ -19,6 +19,7 @@ toc: true
 
 ## Scripting in Praat
 
+Over the years, Praat has had three types of syntax:
 - three types of syntax: `some code`
 - use PraatVSCode
 - how-to will follow soon
@@ -27,16 +28,16 @@ this is a block of code
 and a second line
 ```
 
+*Not finding what you were looking for?* There are various other webpages with really useful Praat scripts available online. Three particularly useful ones are:
+- Vocal plugin
+- Matt Winn
+- Holger Mitterer
+
 ## List of available scripts
 
 {{< list_children >}}
 
-## Other useful scripts
-
-- Matt Winn
-- Holger Mitterer
-
-## FAQs
+## License
 
 {{< spoiler text="Are there prerequisites?" >}}
 There are no prerequisites for the first course.

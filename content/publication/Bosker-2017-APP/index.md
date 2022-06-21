@@ -26,6 +26,12 @@ abstract: The perception of temporal contrasts in speech is known to be influenc
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
+tags:
+  - Speech rate 
+  - Rate-dependent perception 
+  - Rate normalization 
+  - Durational contrast 
+  - Neural entrainment
 featured: false
 
 # links:
