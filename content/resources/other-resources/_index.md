@@ -44,6 +44,11 @@ toc: true
 
 ## Corpora
 - {{< icon name="album-collection" pack="fab" >}} **Multipic**
+  - [https://www.bcbl.eu/databases/multipic/](https://www.bcbl.eu/databases/multipic/)
+  - standardized set of 750 drawings with multilingual name agreement and visual complexity norms
+  - in color; 300 x 300 pixels; DPI=96 pixels/inch
+  - Spanish, English (British), German, Italian, French, Dutch (Belgium), Dutch (Netherlands)
+  - also useful when looking for 'imageable' words
 - {{< icon name="album-collection" pack="fas" >}} **Subtlex**
 - {{< icon name="album-collection" pack="fas" >}} **ANW**
 - {{< icon name="album-collection" pack="fas" >}} **Severens**
@@ -52,9 +57,8 @@ toc: true
 - {{< icon name="album-collection" pack="fas" >}} **Lombard speech corpus Marcoux**
 
 ## Writing
-<!-- alternative icon: file-pen -->
-- {{< icon name="typewriter" pack="fab" >}} **Thesaurus**
-- {{< icon name="typewriter" pack="fas" >}} **Zotero**
+- {{< icon name="file-pen" pack="fab" >}} **Thesaurus**
+- {{< icon name="file-pen" pack="fas" >}} **Zotero**
 - {{< icon name="typewriter" pack="fas" >}} **Overleaf**
 
 ## Online experimenting
