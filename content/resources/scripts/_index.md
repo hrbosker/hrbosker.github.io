@@ -37,7 +37,9 @@ Current Praat versions are compatible with older and newer syntax types, and mix
 ## Other labs
 
 *Not finding what you were looking for?* There are various other webpages with really useful Praat scripts available online. Three particularly useful ones are:
-- [Vocal Toolkit plugin](http://www.praatvocaltoolkit.com/) is a plugin for Praat. When installed, its scripts 'live' here: [WINDOWS] "C:\Users\\*(Username)*\Praat\plugin_VocalToolkit", or [MAC] "/Users/*(UserName)*/Library/Preferences/Praat Prefs/"
+- [Vocal Toolkit plugin](http://www.praatvocaltoolkit.com/) is a plugin for Praat. When installed, its scripts 'live' here:
+  - [WINDOWS] "C:\Users\\*(Username)*\Praat\plugin_VocalToolkit"
+  - [MAC] "/Users/*(UserName)*/Library/Preferences/Praat Prefs/"
 - [Matt Winn's Listen Lab](http://www.mattwinn.com/praat.html) with some really fun [Youtube Praat tutorials](https://www.youtube.com/playlist?list=PL6niCBwOhjHga4bCS83VJ2uKzQ8ZjEVeG)
 - [Holger Mitterer's website](http://holgermitterer.eu/research.html)
 
