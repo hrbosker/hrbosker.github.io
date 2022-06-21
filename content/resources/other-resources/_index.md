@@ -55,7 +55,7 @@ toc: true
   - in color; 300 x 300 pixels; DPI=96 pixels/inch
   - Spanish, English (British), German, Italian, French, Dutch (Belgium), Dutch (Netherlands)
   - also useful when looking for 'imageable' words
-- {{< icon name="box-archive" pack="fas" >}} **Severens**
+- {{< icon name="box-archive" pack="fas" >}} **Severens et al.**
   - [https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/pnn/overview.htm](https://www.ugent.be/pp/experimentele-psychologie/en/research/documents/pnn/overview.htm)
   - timed naming norms for 590 pictures in Belgian Dutch
   - black-and-white line drawings
@@ -81,13 +81,14 @@ toc: true
   - [thesaurus.com](https://www.thesaurus.com/) for looking up synonyms
   - [indispensable](https://www.thesaurus.com/browse/indispensable) [gizmo](https://www.thesaurus.com/browse/gizmo) when [scribbling](https://www.thesaurus.com/browse/scribbling) [palimpsests](https://www.thesaurus.com/browse/palimpsest), particularly useful for L2 writers of English like myself
   - also gives antonyms, example sentences, and related words
-  - see also definitions at [dictionary.com](https://www.dictionary.com/)
+  - links to definitions at [dictionary.com](https://www.dictionary.com/)
 - {{< icon name="pen" pack="fas" >}} **Zotero**
   - [zotero.org](https://www.zotero.org/) reference manager
   - use the Zotero Connector in your browser to store a paper, including fulltext and all bibliographic specs
   - use the Zotero Word Plugin to cite papers in a Word document, automatically generating a bibliography at the end of the document
   - easily change bibliography styles (from author-year in APA to numbered-lists in IEEE)
   - supports open fulltext search, notes and tags, organize in folders, etc.
+  - preferred over other reference managers because Zotero is institute-independent, free, open-source, and very flexible.
 - {{< icon name="pen" pack="fas" >}} **Overleaf**
   - [Overleaf Online LaTeX editor](https://www.overleaf.com/)
   - it's like Google Docs but then in LaTeX
@@ -95,7 +96,7 @@ toc: true
 
 ## Online experimenting
 - {{< icon name="microscope" pack="fas" >}} **Prolific**
-  - [online participant pool](https://www.prolific.co)
+  - [Prolific online participant pool](https://www.prolific.co)
   - [representative human sample](https://www.prolific.co/#audience), supporting very precise in/exclusion criteria (gender, language, speech disorders, etc.)
   - very fast: data collection typically a matter of days, first participant a matter of hours
 - {{< icon name="microscope" pack="fas" >}} **Gorilla**
@@ -103,12 +104,13 @@ toc: true
   - {{< icon name="circle-plus" pack="fas" >}} graphical interface so easy to use, no scripting or code, supports video stimuli, reliable audiovisual synchrony, [headphone screening tests](../tools/#headphone-screening-tests), great support, validated reaction times, build for free
   - {{< icon name="circle-minus" pack="fas" >}} graphical interface is less efficient for tweaking and copy-pasting (compared to code, so prepare for lots of clicking...), pay for data collection per participant (paid tokens), some institutes including RU and MPI have institution licenses ('free' tokens) but many do not, whether you can use Gorilla depends to a large extent on what institute you're at.
 - {{< icon name="microscope" pack="fas" >}} **PsyToolkit**
+  - [psytoolkit.org](https://www.psytoolkit.org/)
   - {{< icon name="circle-plus" pack="fas" >}} free to build, free to run, code-based so efficient, works well with audio stimuli, extensive documentation and how-to's, [headphone screening tests](../tools/#headphone-screening-tests), institute-independent
   - {{< icon name="circle-minus" pack="fas" >}} code-based so steep learning curve, not great with audiovisual stimuli, little support
-- {{< icon name="microscope" pack="fas" >}} I have also used **FindingFive** (used to be free, now paid, so I prefer Gorilla) and **Testable** (paid but free tokens for new users, has its own online participant pool) but I prefer the tools above.
+- {{< icon name="microscope" pack="fas" >}} I have also used **FindingFive** (used to be free, now paid) and **Testable** (paid but free tokens for new users, has its own online participant pool) but I prefer the tools above.
 
 ## Mailing lists
-Did you know there was life before Twitter? In those days, people shraed conference announcements, job opportunities, and new research tools with each other by means of mailing lists. And what's more: did you know they still exist? Sign up and receive daily/weekly emails with announcements from your peers.
+*Did you know there was life before Twitter?* In those days, people shared conference announcements, job opportunities, and new research tools with each other by means of mailing lists. And what's more: did you know they still exist? Sign up and receive daily/weekly emails with announcements from your peers.
 - {{< icon name="at" pack="fas" >}} **amlap-list**
   - [http://www.amlap.org/amlap-list.html](http://www.amlap.org/amlap-list.html)
   - mostly EU-focused
@@ -116,7 +118,7 @@ Did you know there was life before Twitter? In those days, people shraed confere
 - {{< icon name="at" pack="fas" >}} **sentproc**
   - [https://lists.qc.cuny.edu/mailman/listinfo/sentproc](https://lists.qc.cuny.edu/mailman/listinfo/sentproc)
   - mostly US-focused
-  - associated with the annual HSP conference (what used to be CUNY in the olden days)
+  - associated with the annual HSP conference (Human Sentence Processing; what used to be CUNY in the olden days)
 - {{< icon name="at" pack="fas" >}} **sprosig**
   - [Speech Prosody Special Interest Group](http://sprosig.org/index.html)
   - international
