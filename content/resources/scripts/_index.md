@@ -3,27 +3,37 @@ title: Scripts
 linkTitle: Scripts
 summary: Open Praat scripts for speech analysis, manipulation, and synthesis
 type: book
-date: '2021-01-24'
-toc: false
-tags:
-  - previous
+weight: 30
+
+# display table-of-contents for this particular page on the right-hand side?
+toc: true
+
+#date: '2021-01-24'
+#tags:
+#  - previous
 ---
 
 {{< figure src="featured.jpg" >}}
 
 {{< toc hide_on="xl" >}}
 
-## What you will learn
+## Scripting in Praat
 
-- Something
+- three types of syntax: `some code`
+- use PraatVSCode
+- how-to will follow soon
+```
+is this a block of code
+```
 
-## Program overview
-
-Demo text.
-
-## Courses in this program
+## List of available scripts
 
 {{< list_children >}}
+
+## Other useful scripts
+
+- Matt Winn
+- Holger Mitterer
 
 ## FAQs
 
