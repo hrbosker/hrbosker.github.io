@@ -1,5 +1,5 @@
 ---
-title: 'Accounting for rate-dependent category boundary shifts in speech perception.'
+title: 'Accounting for rate-dependent category boundary shifts in speech perception'
 authors:
   - admin
 #author_notes:
