@@ -94,9 +94,18 @@ toc: true
   - collaborative writing, commenting, track changes
 
 ## Online experimenting
+- {{< icon name="microscope" pack="fas" >}} **Prolific**
+  - [online participant pool](https://www.prolific.co)
+  - [representative human sample](https://www.prolific.co/#audience), allowing setting precise in/exclusion criteria (gender, language, speech disorders, etc.)
+  - very fast: data collection typically a matter of days, first participant a matter of hours
 - {{< icon name="microscope" pack="fas" >}} **Gorilla**
+  - [Gorilla Experiment Builder](https://gorilla.sc/)
+  - {{< icon name="circle-plus" pack="fas" >}} easy-to-use graphical interface, no scripting or code, supports video stimuli, reliable audiovisual synchrony, headphone screening tests, great support, validated reaction times, build for free
+  - {{< icon name="circle-minus" pack="fas" >}} pay for data collection per participant (paid tokens), some institutes (RU, MPI) have institution licenses ('free' tokens) but others do not
 - {{< icon name="microscope" pack="fas" >}} **PsyToolkit**
-- {{< icon name="microscope" pack="fas" >}} Testable, FindingFive less suitable
+  - {{< icon name="circle-plus" pack="fas" >}} free to build, free to run, works well with audio stimuli, extensive documentation and how-to's, headphone screening tests, institute-independent
+  - {{< icon name="circle-minus" pack="fas" >}} code based, not great with audiovisual stimuli, little support
+- {{< icon name="microscope" pack="fas" >}} I have also used **FindingFive** (used to be free, now paid, so I prefer Gorilla) and **Testable** (paid but free tokens for new users, has its own online participant pool) but I prefer the tools above.
 
 ## Mailing lists
 - {{< icon name="at" pack="fas" >}} **amlap**
