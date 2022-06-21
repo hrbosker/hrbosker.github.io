@@ -21,7 +21,7 @@ publication_types: ['2']
 publication: '*Attention, Perception & Psychophysics, 79*'
 publication_short: ''
 
-abstract: The perception of temporal contrasts in speech is known to be influenced by the speech rate in the surrounding context. This rate-dependent perception is suggested to involve general auditory processes because it is also elicited by non-speech contexts, such as pure tone sequences. Two general auditory mechanisms have been proposed to underlie rate-dependent perception: durational contrast and neural entrainment. This study compares the predictions of these two accounts of rate-dependent speech perception by means of four experiments, in which participants heard tone sequences followed by Dutch target words ambiguous between /ɑs/ 'ash' and /a:s/ 'bait'. Tone sequences varied in the duration of tones (short vs. long) and in the presentation rate of the tones (fast vs. slow). Results show that the duration of preceding tones did not influence target perception in any of the experiments, thus challenging durational contrast as explanatory mechanism behind rate-dependent perception. Instead, the 
+abstract: The perception of temporal contrasts in speech is known to be influenced by the speech rate in the surrounding context. This rate-dependent perception is suggested to involve general auditory processes because it is also elicited by non-speech contexts, such as pure tone sequences. Two general auditory mechanisms have been proposed to underlie rate-dependent perception, durational contrast and neural entrainment. This study compares the predictions of these two accounts of rate-dependent speech perception by means of four experiments, in which participants heard tone sequences followed by Dutch target words ambiguous between /ɑs/ 'ash' and /a:s/ 'bait'. Tone sequences varied in the duration of tones (short vs. long) and in the presentation rate of the tones (fast vs. slow). Results show that the duration of preceding tones did not influence target perception in any of the experiments, thus challenging durational contrast as explanatory mechanism behind rate-dependent perception. Instead, the 
 presentation rate consistently elicited a category boundary shift, with faster presentation rates inducing more /a:s/ responses, but only if the tone sequence was isochronous. Therefore, this study proposes an alternative, neurobiologically plausible account of rate-dependent perception involving neural entrainment of endogenous oscillations to the rate of a rhythmic stimulus
 
 # Summary. An optional shortened abstract.
@@ -61,3 +61,19 @@ url_video: ''
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects: []'
+
+# Slides (optional).
+#   Associate this publication with Markdown slides.
+#   Simply enter your slide deck's filename without extension.
+#   E.g. `slides: "example"` references `content/slides/example/index.md`.
+#   Otherwise, set `slides: ""`.
+slides:
+---
+
+<!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+{{% callout note %}}
+Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+{{% /callout %}}
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+-->
