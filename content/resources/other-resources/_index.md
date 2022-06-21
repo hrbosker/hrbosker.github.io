@@ -18,14 +18,13 @@ toc: true
 {{< toc hide_on="xl" >}}
 
 ## Video/audio editing
-<!-- alternative icon: waveform -->
-- {{< icon name="waveform-lines" pack="fab" >}} **Praat**
+- {{< icon name="waveform" pack="fab" >}} **Praat**
   - [praat.org](https://www.praat.org)
   - the *number 1* speech-editing software in academia
   - supports speech measurements, annotation in TextGrids, manipulation, synthesis
   - scripting interface supports batch processing
   - recommended scripting interface: [PraatVSCode]({{< ref "../tools/#praatvscode" >}})
-- {{< icon name="waveform-lines" pack="fas" >}} **ffmpeg**
+- {{< icon name="waveform" pack="fas" >}} **ffmpeg**
   - [ffmpeg.org](https://ffmpeg.org/)
   - a command line tool for batch video processing
   - 'lives' in the terminal (e.g., command prompt)
