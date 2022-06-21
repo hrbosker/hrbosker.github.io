@@ -76,7 +76,7 @@ toc: true
   - [RaLoCo](https://zenodo.org/record/4040685): Dutch; 78 talkers; 48 sentences; speech-shaped noise; Shen (2022, PhD thesis). [Additional info](https://zenodo.org/record/5645385), including human listening effort ratings and HEGP scores (spectral glimpsing metric of intelligibility).
   - Also see our very own [NiCLS corpus of Lombard speech](../corpora/#nicls).
 
-## Writing
+## Writing tools
 - {{< icon name="pen" pack="fas" >}} **Thesaurus**
   - [thesaurus.com](https://www.thesaurus.com/) for looking up synonyms
   - [indispensable](https://www.thesaurus.com/browse/indispensable) [gizmo](https://www.thesaurus.com/browse/gizmo) when [scribbling](https://www.thesaurus.com/browse/scribbling) [palimpsests](https://www.thesaurus.com/browse/palimpsest), particularly useful for L2 writers of English like myself
