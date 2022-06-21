@@ -29,6 +29,12 @@ toc: true
   - a command line tool for batch video processing
   - 'lives' in the terminal (e.g., command prompt)
   - Adobe Premiere Pro is a great video-editor when working on individual files, but is not the best solution for batch processing. ffmpeg is great at efficiently and quickly extracting the audio channels from a large set of video files, converting mpg to mp4, manipulating audio/video temporal alignment (asynchrony), etc.
+- {{< icon name="circle-play" pack="fas" >}} **MediaPipe**
+  - [mediapipe.dev](https://mediapipe.dev/)
+  - 2D video motion-tracking tool in Python, developed by Google
+  - input: video file of a single person ([OpenPose](https://cmu-perceptual-computing-lab.github.io/openpose/web/html/doc/) is preferred for multi-person tracking).
+  - output: x, y, (estimated) z coordinates of body landsmarks + video with superimposed tracking skeleton.
+  - here's a great tutorial by Wim Pouw and James Trujillo at [Envision Bootcamp](https://wimpouw.github.io/EnvisionBootcamp2021/).
 - {{< icon name="circle-play" pack="fas" >}} **WebMAUS**
   - [https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic](https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic)
   - forced-alignment tool taking wav files and txt files with orthographic transcripts as input, providing TextGrids as output
@@ -61,26 +67,31 @@ toc: true
   - reliable predictor of lexical decision reaction times, outperforming Google Books Ngram=1 ([Brysbaert et al., 2011](https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00027/full))
 - {{< icon name="box-archive" pack="fas" >}} **ANW**
   - [Algemeen Nederlands Woordenboek](https://anw.ivdnt.org/search?type=feature)
-  - Dutch dictionary
-  - allows searching with regular expressions ("spraa*")
-  - allows searching for particular word characteristics (number of syllables, stress on syllable n, etc.)
-  - **NOTE** The word list is *not exhaustive*. Failure to find certain words in ANW does not necessarily mean they do not exist.
+  - Dutch word list, allowing searching with regular expressions ("spraa*") and with particular word characteristics (number of syllables, stress on syllable *n*, etc.)
+  - **NOTE.** I've found that the search lists are *not exhaustive*. Failure to find certain words in ANW does not necessarily mean they do not exist.
 - {{< icon name="box-archive" pack="fas" >}} **Lombard speech corpora**
-  - [Acted clear speech corpus](https://datashare.ed.ac.uk/handle/10283/343): English; 1 male talker; 'normal' sentences; 25 items; babble-modulated noise; Mayo et al. (2012), doi:[10.7488/ds/138](https://datashare.ed.ac.uk/handle/10283/343)
-  - [Hurricane natural speech corpus](https://datashare.ed.ac.uk/handle/10283/347): English; 1 male talker; Harvard sentences (720 items) and MRT sentences (300 items); speech-modulated noise; Cooke et al. (2013), doi:[10.7488/ds/140](https://datashare.ed.ac.uk/handle/10283/347)
-  - [DELNN](https://datashare.ed.ac.uk/handle/10283/3012): L1 Dutch and L2 English from 30 native speakers of Dutch (+9 native speakers of US English as control); speech-shaped noise
+  - [Acted clear speech corpus](https://datashare.ed.ac.uk/handle/10283/343): English; 1 male talker; 'normal' sentences; 25 items; babble-modulated noise; Mayo et al. (2012), doi:[10.7488/ds/138](https://datashare.ed.ac.uk/handle/10283/343).
+  - [Hurricane natural speech corpus](https://datashare.ed.ac.uk/handle/10283/347): English; 1 male talker; Harvard sentences (720 items) and MRT sentences (300 items); speech-modulated noise; Cooke et al. (2013), doi:[10.7488/ds/140](https://datashare.ed.ac.uk/handle/10283/347).
+  - [DELNN](https://datashare.ed.ac.uk/handle/10283/3012): L1 Dutch and L2 English from 30 native speakers of Dutch (+9 native speakers of US English as control); speech-shaped noise; Marcoux (2022, PhD thesis).
   - [RaLoCo](https://zenodo.org/record/4040685): Dutch; 78 talkers; 48 sentences; speech-shaped noise; Shen (2022, PhD thesis). [Additional info](https://zenodo.org/record/5645385), including human listening effort ratings and HEGP scores (spectral glimpsing metric of intelligibility).
-  - Also see our very own [NiCLS corpus of Lombard speech](../corpora/#nicls)
+  - Also see our very own [NiCLS corpus of Lombard speech](../corpora/#nicls).
 
 ## Writing
 - {{< icon name="pen" pack="fas" >}} **Thesaurus**
+  - [thesaurus.com](https://www.thesaurus.com/) for looking up synonyms
+  - [indispensable](https://www.thesaurus.com/browse/indispensable) [gizmo](https://www.thesaurus.com/browse/gizmo) when [scribbling](https://www.thesaurus.com/browse/scribbling) [palimpsests](https://www.thesaurus.com/browse/palimpsest), particularly useful for L2 writers of English like myself
+  - also gives antonyms, example sentences, and related words
+  - see also definitions at [dictionary.com](https://www.dictionary.com/)
 - {{< icon name="pen" pack="fas" >}} **Zotero**
+  - [zotero.org](https://www.zotero.org/) reference manager
+  - use the Zotero Connector in your browser to store a paper, including fulltext and all bibliographic specs
+  - use the Zotero Word Plugin to cite papers in a Word document, automatically generating a bibliography at the end of the document
+  - easily change bibliography styles (from author-year in APA to numbered-lists in IEEE)
+  - supports open fulltext search, notes and tags, organize in folders, etc.
 - {{< icon name="pen" pack="fas" >}} **Overleaf**
-- {{< icon name="pen" pack="fas" >}} **Other**
-- {{< icon name="pen" pack="fas" >}} **Other**
-- {{< icon name="pen" pack="fas" >}} **Other**
-- {{< icon name="pen" pack="fas" >}} **Other**
-- {{< icon name="pen" pack="fas" >}} **Other**
+  - [Overleaf Online LaTeX editor](https://www.overleaf.com/)
+  - it's like Google Docs but then in LaTeX
+  - collaborative writing, commenting, track changes
 
 ## Online experimenting
 - {{< icon name="microscope" pack="fas" >}} **Gorilla**
