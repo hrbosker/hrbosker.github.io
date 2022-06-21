@@ -48,6 +48,8 @@ toc: true
   - French, English, Spanish, Brazilian Portuguese, Taiwan Min
   - annotations at word-level, syllable-level and phone-level
 
+<br />
+
 ## Corpora
 - {{< icon name="box-archive" pack="fas" >}} **MultiPic**
   - [https://www.bcbl.eu/databases/multipic/](https://www.bcbl.eu/databases/multipic/)
@@ -76,6 +78,8 @@ toc: true
   - [RaLoCo](https://zenodo.org/record/4040685): Dutch; 78 talkers; 48 sentences; speech-shaped noise; Shen (2022, PhD thesis). [Additional info](https://zenodo.org/record/5645385), including human listening effort ratings and HEGP scores (spectral glimpsing metric of intelligibility).
   - Also see our very own [NiCLS corpus of Lombard speech](../corpora/#nicls).
 
+<br />
+
 ## Writing tools
 - {{< icon name="pen" pack="fas" >}} **Thesaurus**
   - [thesaurus.com](https://www.thesaurus.com/) for looking up synonyms
@@ -94,6 +98,8 @@ toc: true
   - it's like Google Docs but then in LaTeX
   - collaborative writing, commenting, track changes
 
+<br />
+
 ## Online experimenting
 - {{< icon name="microscope" pack="fas" >}} **Prolific**
   - [Prolific online participant pool](https://www.prolific.co)
@@ -108,6 +114,8 @@ toc: true
   - {{< icon name="circle-plus" pack="fas" >}} free to build, free to run, code-based so efficient, works well with audio stimuli, extensive documentation and how-to's, [headphone screening tests](../tools/#headphone-screening-tests), institute-independent
   - {{< icon name="circle-minus" pack="fas" >}} code-based so steep learning curve, not great with audiovisual stimuli, little support
 - {{< icon name="microscope" pack="fas" >}} I have also used **FindingFive** (used to be free, now paid) and **Testable** (paid but free tokens for new users, has its own online participant pool) but I prefer the tools above.
+
+<br />
 
 ## Mailing lists
 *Did you know there was life before Twitter?* In those days, people shared conference announcements, job opportunities, and new research tools with each other by means of mailing lists. And what's more: did you know they still exist? Sign up and receive daily/weekly emails with announcements from your peers.

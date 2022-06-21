@@ -26,7 +26,7 @@ toc: true
 - {{< icon name="link" pack="fas" >}} [https://tokensortratio.netlify.app](https://tokensortratio.netlify.app)
 - {{< icon name="circle-info" pack="fas" >}} The **Token Sort Ratio [TSR]** score is a fuzzy string matching metric that – at the most basic level – quantifies the orthographic match between a target string and a response string (value between 0 = no match and 100 = perfect match). The TSR score has been shown to strongly correlate with human-generated scores of percentage words correct (Bosker, 2021). It is an efficient, reliable, and accurate tool for use in speech perception research (e.g., studies that examine the perception of speech in adverse listening conditions, or degraded speech) or for generating listener intelligibility measures in clinical disciplines such as speech-language pathology or audiology.
 
-
+<br />
 
 ## PraatVSCode
 <img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example" width="600"/>
@@ -39,7 +39,7 @@ toc: true
   - Under *View* > *Extensions*, search for PraatVSCode, and click install.
 - {{< icon name="creative-commons" pack="fab" >}} [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms)
 
-
+<br />
 
 ## POnSS
 <img src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13428-020-01449-6/MediaObjects/13428_2020_1449_Fig2_HTML.png?as=webp" alt="POnSS screenshot example" width="600"/>
@@ -51,7 +51,7 @@ toc: true
 - {{< icon name="circle-info" pack="fas" >}} POnSS is a browser-based system that is specialized for the task of segmenting the onsets and offsets of words, that combines automatic speech recognition (WebMAUS) with limited human input.
 - {{< icon name="creative-commons" pack="fab" >}} [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms)
 
-
+<br />
 
 ## Headphone screening tests
 - When running experiments online, you may want your participants to use headphones or in-ear buds (i.e., no speakers). Moreover, you may want to verify that they are wearing them 'the right way around': [L] in their left ear, [R] in their right ear. This is particularly important when testing multitalker listening conditions and/or virtual auditory environments. Several tools exist to verify whether participants are using headphones (as instructed) or not (exclude 'm!), based on different psychoacoustic binaural phenomena. We have implemented these on *Gorilla* and *PsyToolkit*.
