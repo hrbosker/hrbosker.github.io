@@ -1,7 +1,7 @@
 ---
 title: 'Listeners track talker-specific prosody to deal with talker-variability'
 authors:
-  - Giulio G.A. Severijnen
+  - giulio-severijnen
   - admin
   - Piai Vitoria
   - James M. McQueen

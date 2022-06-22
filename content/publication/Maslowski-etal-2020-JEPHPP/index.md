@@ -39,7 +39,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3067219_8/component/file_3261436/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_3231520_4/component/file_3257762/content'
 url_code: ''
 url_dataset: 'https://osf.io/c9fyd/'
 url_poster: ''
