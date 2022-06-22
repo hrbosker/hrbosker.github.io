@@ -29,7 +29,5 @@ day = date.getDate();
 document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year + " (m/d/y)";
 </script>
 
-# **This list is under construction**.
-
 <br />
 <br />
