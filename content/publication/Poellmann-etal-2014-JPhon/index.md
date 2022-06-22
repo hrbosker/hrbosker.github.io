@@ -21,7 +21,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*`Journal of Phonetics, 46*, 101-127, doi:10.1016/j.wocn.2014.06.004'
+publication: '*Journal of Phonetics, 46*, 101-127, doi:10.1016/j.wocn.2014.06.004'
 publication_short: ''
 
 abstract: This study investigates if and how listeners adapt to reductions in casual continuous speech. In a perceptual learning variant of the visual-world paradigm, two groups of Dutch participants were exposed to either segmental (/b/ → [ʋ]) or syllabic (ver- → [fː]) reductions in spoken Dutch sentences. In the test phase, both groups heard both kinds of reductions, but now applied to different words. In one of two experiments, the segmental reduction exposure group was better than the syllabic reduction exposure group in recognizing new reduced /b/-words.  In both experiments, the syllabic reduction group showed a greater target preference for new reduced ver-words. Learning about reductions was thus applied to previously unheard words. This lexical generalization suggests that mechanisms compensating for semental and syllabic reductions take place at a prelexical level, and hence that lexical access involves an abstractionist mode of processing. Existing abstractionist models need to be revised, however, as they do not include representations of sequences of segments (corresponding e.g. to ver-) at the prelexical level.
