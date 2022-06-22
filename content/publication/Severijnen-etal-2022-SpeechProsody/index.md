@@ -33,7 +33,7 @@ tags:
   - cue weighting
   - prosody
 
-featured: true
+featured: false
 
 # links:
 # - name: ""
