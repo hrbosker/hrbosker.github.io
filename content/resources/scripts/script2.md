@@ -7,7 +7,9 @@ weight: 20
 
 This is the subtitle.
 
-<!-- {{< icon name="clock" pack="fas" >}} 1-2 hours per week, for 8 weeks -->
+<!--more-->
+
+{{< icon name="clock" pack="fas" >}} 1-2 hours per week, for 8 weeks
 
 ```
 firstobject = 2

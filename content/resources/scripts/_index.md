@@ -18,7 +18,7 @@ toc: true
 {{< toc hide_on="xl" >}}
 
 {{% callout note %}}
-The Praat scripts shared here are first and foremost intended as a **lab archive**, providing script templates for functions we frequently use. This means **they require customization** for each individual new project. *Use at your own risk!*
+The Praat scripts shared here are first and foremost intended as a **lab archive**, providing script snippets we frequently use. This means **they require customization** for each individual new project. *Use at your own risk!*
 {{% /callout %}}
 
 ## Praat syntax
@@ -28,7 +28,7 @@ Over the years, Praat has had three types of syntax:
 - `do("Extract part", 0, 0.1, "rectangular", 1, "no")` *(before Praat 5.3.63, Jan 2014)*
 - `Extract part: 0, 0.1, "rectangular, 1, "no"` *(current)*
 
-Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax.
+Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax. **[ADVERTISEMENT]** *Did you know the syntax highlighting in [PraatVSCode](..\tools\praatvscode) works with either syntax?*
 
 ## List of available scripts
 
