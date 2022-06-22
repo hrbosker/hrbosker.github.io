@@ -1,9 +1,9 @@
 ---
 title: 'Listening to yourself is special: Evidence from global speech rate tracking.'
 authors:
-  - admin
   - Merel Maslowski 
   - Antje S. Meyer 
+  - admin
 #author_notes:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
