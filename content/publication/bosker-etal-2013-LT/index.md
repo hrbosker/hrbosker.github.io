@@ -22,7 +22,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Language Testing, 30*(2)'
+publication: '*Language Testing, 30*(2), 159-175, doi:10.1177/0265532212455394'
 publication_short: ''
 
 abstract: The oral fluency level of an L2 speaker is often used as a measure in assessing language proficiency. The present study reports on four experiments investigating the contributions of three fluency aspects (pauses, speed and repairs) to perceived fluency. In Experiment 1 untrained raters evaluated the oral fluency of L2 Dutch speakers. Using specific acoustic measures of pause, speed and repair phenomena, linear regression analyses revealed that pause and speed measures best predicted the subjective fluency ratings, and that repair measures contributed only very little. A second research question sought to account for these results by investigating perceptual sensitivity to acoustic pause, speed and repair phenomena, possibly accounting for the results from Experiment 1. In Experiments 2–4 three new groups of untrained raters rated the same L2 speech materials from Experiment 1 on the use of pauses, speed and repairs. A comparison of the results from perceptual sensitivity (Experiments 2–4) with fluency perception (Experiment 1) showed that perceptual sensitivity alone could not account for the contributions of the three aspects to perceived fluency. We conclude that listeners weigh the importance of the perceived aspects of fluency to come to an overall judgment.
