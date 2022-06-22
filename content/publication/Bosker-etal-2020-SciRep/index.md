@@ -1,5 +1,5 @@
 ---
-title: 'Temporal contrast effects in human speech perception are immune to selective attention'
+title: 'Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings'
 authors:
   - admin
   - Matthias J. Sjerps
@@ -8,7 +8,7 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 date: '2020-01-01T00:00:00Z'
-doi: '10.1038/s41598-020-62613-8'
+doi: '10.3758/s13414-019-01824-2'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -20,20 +20,26 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Scientific Reports, 10'
+publication: '*Scientific Reports, 10*, 1318-1332, doi:10.3758/s13414-019-01824-2'
 publication_short: ''
 
-abstract: Two fundamental properties of perception are selective attention and perceptual contrast, but how these two processes interact remains unknown. Does an attended stimulus history exert a larger contrastive infuence on the perception of a following target than unattended stimuli? Dutch listeners categorized target sounds with a reduced prefx “ge-” marking tense (e.g., ambiguous between gegaan-gaan “gone-go”). In ‘single talker’ Experiments 1–2, participants perceived the reduced syllable (reporting gegaan) when the target was heard after a fast sentence, but not after a slow sentence (reporting gaan). In ‘selective attention’ Experiments 3–5, participants listened to two simultaneous sentences from two diferent talkers, followed by the same target sounds, with instructions to attend only one of the two talkers. Critically, the speech rates of attended and unattended talkers were found to equally infuence target perception – even when participants could watch the attended talker speak. In fact, participants’ target perception in ‘selective attention’ Experiments 3–5 did not difer from participants who were explicitly instructed to divide their attention equally across the two talkers (Experiment 6). This suggests that contrast efects of speech rate are immune to selective attention, largely operating prior to attentional stream segregation in the auditory processing hierarchy
+abstract: Speech sounds are perceived relative to spectral properties of surrounding speech. For instance, target words that are ambiguous between /bɪt/ (with low F1) and /bɛt/ (with high F1) are more likely to be perceived as “bet” after a “low F1” sentence, but as “bit” after a “high F1” sentence. However, it is unclear how these spectral contrast effects (SCEs) operate in multi-talker listening conditions. Recently, Feng and Oxenham (J.Exp.Psychol.-Hum.Percept.Perform. 44(9), 1447–1457, 2018b) reported that selective attention affected SCEs to a small degree, using two simultaneously presented sentences produced by a single talker. The present study assessed the role of selective attention in more naturalistic “cocktail party” settings, with 200 lexically unique sentences, 20 target words, and different talkers. Results indicate that selective attention to one talker in one ear (while ignoring another talker in the other ear) modulates SCEs in such a way that only the spectral properties of the attended talker influences target perception. However, SCEs were much smaller in multi-talker settings (Experiment 2) than those in single-talker settings (Experiment 1). Therefore, the influence of SCEs on speech comprehension in more naturalistic settings (i.e., with competing talkers) may be smaller than estimated based on studies without competing talkers.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
+tags:
+  - spectral contrast
+  - vowel normalization
+  - selective attention
+  - stream segregation
+  - cocktail party listening
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3214645_6/component/file_3251038/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_3107080_5/component/file_3249634/content'
 url_code: ''
 url_dataset: ''
 url_poster: ''
