@@ -1,5 +1,5 @@
 ---
-title: 'An example conference paper'
+title: 'Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity'
 authors:
   - admin
   - Robert Ford
