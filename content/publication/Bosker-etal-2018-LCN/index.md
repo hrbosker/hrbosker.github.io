@@ -30,7 +30,7 @@ tags:
   - neural entrainment
   - theta oscillations
   - speech rate 
-  - rate normalisation
+  - rate normalization
 featured: false
 
 # links:
