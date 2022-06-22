@@ -1,5 +1,5 @@
 ---
-title: 'Knowledge-based and signal-based cues are weighted flexibly during spoken language comprehension.'
+title: 'Knowledge-based and signal-based cues are weighted flexibly during spoken language comprehension'
 authors:
   - Greta Kaufeld
   - Anna Ravenschlag
