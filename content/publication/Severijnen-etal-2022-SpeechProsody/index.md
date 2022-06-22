@@ -1,9 +1,10 @@
 ---
 title: 'Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity'
 authors:
+  - giulio-severijnen
   - admin
-  - Robert Ford
-date: '2013-07-01T00:00:00Z'
+  - James M. McQueen
+date: '2022-01-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
