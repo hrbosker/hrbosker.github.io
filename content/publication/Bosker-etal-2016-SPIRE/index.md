@@ -36,7 +36,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'http://www.inspire-itn.eu/administrator/components/com_jresearch/files/publications/Proceedings_SPIRE_Conference_2016.pdf'
+url_pdf: 'https://pure.mpg.de/rest/items/item_2242166_11/component/file_2242165/content'
 url_code: ''
 url_dataset: ''
 url_poster: ''
