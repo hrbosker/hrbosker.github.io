@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: intern
+role: MA intern
 
 # Organizations/Affiliations
 organizations:
@@ -73,8 +73,4 @@ user_groups:
   - Interns
 ---
 
-Ivy Mok is an intern at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands.
-
-thesis
-
-Her supervisors are [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}) and [Ronny Bujok]({{< ref "../ronny-bujok" >}}). Her project investigates audiovisual prosody perception in noise.
+Ivy Mok is enrolled at Radboud University in the MA Linguistics program. She is currently writing her MA thesis at the SPEAC research group, under supervision of [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}) and [Ronny Bujok]({{< ref "../ronny-bujok" >}}). Her project investigates audiovisual prosody perception in noise, with a focus on beat gesutres.
