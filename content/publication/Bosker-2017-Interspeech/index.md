@@ -1,11 +1,9 @@
 ---
-title: 'Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity'
+title: 'The role of temporal amplitude modulations in the political arena: Hillary Clinton vs. Donald Trump'
 authors:
-  - giulio-severijnen
   - admin
-  - James M. McQueen
-date: '2022-01-01T00:00:00Z'
-doi: '10.21437/SpeechProsody.2022-57'
+date: '2017-01-01T00:00:00Z'
+doi: '10.21437/Interspeech.2017-142'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -17,30 +15,28 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2022* (ed. S. Frota, M. Cruz, and M. Vigário), 278-282, doi:10.21437/SpeechProsody.2022-57'
+publication: 'In *Proceedings of Interspeech 2017*, 2228-2232, doi:10.21437/Interspeech.2017-142'
 publication_short: ''
 
-abstract: 'The present study examined two acoustic cues in the production of lexical stress in Dutch: spectral tilt and overall intensity. Sluijter and Van Heuven (1996) reported that spectral tilt is a more reliable cue to stress than intensity. However, that study included only a small number of talkers (10) and only syllables with the vowels /aː/ and /ɔ/. The present study re-examined this issue in a larger and more variable dataset. We recorded 38 native speakers of Dutch (20 females) producing 744 tokens of Dutch segmentally overlapping words (e.g., *VOORnaam* vs. *voorNAAM*, “first name” vs. “respectable”), targeting 10 different vowels, in variable sentence contexts. For each syllable, we measured overall intensity and spectral tilt following Sluijter and Van Heuven (1996). Results from Linear Discriminant Analyses showed that, for the vowel /aː/ alone, spectral tilt showed an advantage over intensity, as evidenced by higher stressed/unstressed syllable classification accuracy scores for spectral tilt. However, when all vowels were included in the analysis, the advantage disappeared. These findings confirm that spectral tilt plays a larger role in signaling stress in Dutch /aː/ but show that, for a larger sample of Dutch vowels, overall intensity and spectral tilt are equally important.'
+abstract: 'Speech is an acoustic signal with inherent amplitude modulations in the 1-9 Hz range. Recent models of speech perception propose that this rhythmic nature of speech is central to speech recognition. Moreover, rhythmic amplitude modulations have been shown to have beneficial effects on language processing and the subjective impression listeners have of the speaker. This study investigated the role of amplitude modulations in the political arena by comparing the speech produced by Hillary Clinton and Donald Trump in the three presidential debates of 2016. Inspection of the modulation spectra, revealing the spectral content of the two speakers’ amplitude envelopes after matching for overall intensity, showed considerably greater power in Clinton’s modulation spectra (compared to Trump’s) across the three debates, particularly in the 1-9 Hz range. The findings suggest that Clinton’s speech had a more pronounced temporal envelope with rhythmic amplitude modulations below 9 Hz, with a preference for modulations around 3 Hz. This may be taken as evidence for a more structured temporal organization of syllables in Clinton’s speech, potentially due to more frequent use of preplanned utterances. Outcomes are interpreted in light of the potential beneficial effects of a rhythmic temporal envelope on intelligibility and speaker perception.'
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - lexical stress
-  - spectral tilt
-  - intensity
-  - speech production
-  - cue weighting
-  - prosody
+  - amplitude envelope
+  - amplitude modulations
+  - speech rhythm
+  - modulation spectrum
 
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3386990_2/component/file_3386991/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_2445121_8/component/file_2475658/content'
 url_code: ''
-url_dataset: 'https://osf.io/drq7g'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''

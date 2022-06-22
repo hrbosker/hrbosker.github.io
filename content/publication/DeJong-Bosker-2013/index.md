@@ -1,11 +1,9 @@
 ---
-title: 'Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity'
+title: 'Choosing a threshold for silent pauses to measure second language fluency'
 authors:
-  - giulio-severijnen
+  - Nivja H. de Jong
   - admin
-  - James M. McQueen
-date: '2022-01-01T00:00:00Z'
-doi: '10.21437/SpeechProsody.2022-57'
+date: '2013-01-01T00:00:00Z'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -17,30 +15,29 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2022* (ed. S. Frota, M. Cruz, and M. Vigário), 278-282, doi:10.21437/SpeechProsody.2022-57'
+publication: 'In *Proceedings of the 6th Workshop on Disfluency in Spontaneous Speech, DiSS* (ed. R. Eklund), 17-20'
 publication_short: ''
 
-abstract: 'The present study examined two acoustic cues in the production of lexical stress in Dutch: spectral tilt and overall intensity. Sluijter and Van Heuven (1996) reported that spectral tilt is a more reliable cue to stress than intensity. However, that study included only a small number of talkers (10) and only syllables with the vowels /aː/ and /ɔ/. The present study re-examined this issue in a larger and more variable dataset. We recorded 38 native speakers of Dutch (20 females) producing 744 tokens of Dutch segmentally overlapping words (e.g., *VOORnaam* vs. *voorNAAM*, “first name” vs. “respectable”), targeting 10 different vowels, in variable sentence contexts. For each syllable, we measured overall intensity and spectral tilt following Sluijter and Van Heuven (1996). Results from Linear Discriminant Analyses showed that, for the vowel /aː/ alone, spectral tilt showed an advantage over intensity, as evidenced by higher stressed/unstressed syllable classification accuracy scores for spectral tilt. However, when all vowels were included in the analysis, the advantage disappeared. These findings confirm that spectral tilt plays a larger role in signaling stress in Dutch /aː/ but show that, for a larger sample of Dutch vowels, overall intensity and spectral tilt are equally important.'
+abstract: 'Second language (L2) research often involves analyses of acoustic measures of fluency. The studies investigating fluency, however, have been difficult to compare because the measures of fluency that were used differed widely. One of the differences between studies concerns the lower cut-off point for silent pauses, which has been set anywhere between 100 ms and 1000 ms. The goal of this paper is to find an optimal cut-off point. We calculate acoustic measures of fluency using different pause thresholds and then relate these measures to a measure of L2 proficiency and to ratings on fluency.'
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - lexical stress
-  - spectral tilt
-  - intensity
-  - speech production
-  - cue weighting
-  - prosody
+  - silent pauses
+  - number of pauses
+  - duration of pauses
+  - silent pause threshold
+  - second language speech
 
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3386990_2/component/file_3386991/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_1900232_6/component/file_1900231/content'
 url_code: ''
-url_dataset: 'https://osf.io/drq7g'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''

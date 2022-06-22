@@ -1,11 +1,9 @@
 ---
-title: 'Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity'
+title: 'Our own speech rate influences speech perception'
 authors:
-  - giulio-severijnen
   - admin
-  - James M. McQueen
-date: '2022-01-01T00:00:00Z'
-doi: '10.21437/SpeechProsody.2022-57'
+date: '2016-01-01T00:00:00Z'
+doi: '10.21437/SpeechProsody.2016-47'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -17,30 +15,28 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2022* (ed. S. Frota, M. Cruz, and M. Vigário), 278-282, doi:10.21437/SpeechProsody.2022-57'
+publication: 'In *Proceedings of Speech Prosody 2016* (ed. J. Barnes, A. Brugos, S. Shattuck-Hufnagel, and N. Veilleux), 227-231, doi:10.21437/SpeechProsody.2016-47'
 publication_short: ''
 
-abstract: 'The present study examined two acoustic cues in the production of lexical stress in Dutch: spectral tilt and overall intensity. Sluijter and Van Heuven (1996) reported that spectral tilt is a more reliable cue to stress than intensity. However, that study included only a small number of talkers (10) and only syllables with the vowels /aː/ and /ɔ/. The present study re-examined this issue in a larger and more variable dataset. We recorded 38 native speakers of Dutch (20 females) producing 744 tokens of Dutch segmentally overlapping words (e.g., *VOORnaam* vs. *voorNAAM*, “first name” vs. “respectable”), targeting 10 different vowels, in variable sentence contexts. For each syllable, we measured overall intensity and spectral tilt following Sluijter and Van Heuven (1996). Results from Linear Discriminant Analyses showed that, for the vowel /aː/ alone, spectral tilt showed an advantage over intensity, as evidenced by higher stressed/unstressed syllable classification accuracy scores for spectral tilt. However, when all vowels were included in the analysis, the advantage disappeared. These findings confirm that spectral tilt plays a larger role in signaling stress in Dutch /aː/ but show that, for a larger sample of Dutch vowels, overall intensity and spectral tilt are equally important.'
+abstract: 'During conversation, spoken utterances occur in rich acoustic contexts, including speech produced by our interlocutor(s) and speech we produced ourselves. Prosodic characteristics of the acoustic context have been known to influence speech perception in a contrastive fashion: for instance, a vowel presented in a fast context is perceived to have a longer duration than the same vowel in a slow context. Given the ubiquity of the sound of our own voice, it may be that our own speech rate - a common source of acoustic context - also influences our perception of the speech of others. Two experiments were designed to test this hypothesis. Experiment 1 replicated earlier contextual rate effects by showing that hearing pre-recorded fast or slow context sentences alters the perception of ambiguous Dutch target words. Experiment 2 then extended this finding by showing that talking at a fast or slow rate prior to the presentation of the target words also altered the perception of those words. These results suggest that between-talker variation in speech rate production may induce between-talker variation in speech perception, thus potentially explaining why interlocutors tend to converge on speech rate in dialogue settings.'
 
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-  - lexical stress
-  - spectral tilt
-  - intensity
-  - speech production
-  - cue weighting
-  - prosody
+  - speech rate
+  - rate normalization
+  - self-monitoring
+  - phonetic convergence
 
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3386990_2/component/file_3386991/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_2293741_9/component/file_2293740/content'
 url_code: ''
-url_dataset: 'https://osf.io/drq7g'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
