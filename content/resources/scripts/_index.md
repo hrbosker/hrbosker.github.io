@@ -28,16 +28,20 @@ Over the years, Praat has had three types of syntax:
 - `do("Extract part", 0, 0.1, "rectangular", 1, "no")` *(before Praat 5.3.63, Jan 2014)*
 - `Extract part: 0, 0.1, "rectangular, 1, "no"` *(current)*
 
-Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax. **[ADVERTISEMENT]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
+Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax. **[ADVERTISEMENT:]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
+
+<br />
 
 ## List of available scripts
 
 {{< list_children >}}
 
-## Other labs
+<br />
 
-*Not finding what you were looking for?* There are various other webpages with really useful Praat scripts available online. Three particularly useful ones are:
-- [Vocal Toolkit plugin](http://www.praatvocaltoolkit.com/) is a plugin for Praat. When installed, its scripts 'live' here:
+## Helpful links
+
+*Not finding what you were looking for?* There are thousands of other Praat scripts available online. Three resources with particularly useful code are:
+- [Vocal Toolkit plugin](http://www.praatvocaltoolkit.com/) is a plugin for Praat. When installed, you can call various new functions from a button within Praat. However, it's a little risky if you don't know the ins-and-outs of a particular function, so **always check the raw code** here:
   - [WINDOWS] "C:\Users\\*(Username)*\Praat\plugin_VocalToolkit"
   - [MAC] "/Users/*(UserName)*/Library/Preferences/Praat Prefs/"
 - [Matt Winn's Listen Lab](http://www.mattwinn.com/praat.html) with some really fun [Youtube Praat tutorials](https://www.youtube.com/playlist?list=PL6niCBwOhjHga4bCS83VJ2uKzQ8ZjEVeG)
@@ -45,6 +49,6 @@ Current Praat versions are compatible with older and newer syntax types, and mix
 
 ## License
 
-Copyright (c) 2022, Hans Rutger Bosker
-
 {{< icon name="creative-commons" pack="fab" >}} All scripts are shared under an [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms).
+
+*2022, Hans Rutger Bosker*

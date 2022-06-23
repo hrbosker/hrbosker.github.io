@@ -22,6 +22,27 @@ main:
   - name: Resources
     url: resources
     weight: 60
+#    identifier: courses
+  - name: Corpora
+    PageRef: resources/corpora/_index.md
+    weight: 10
+    parent: resources
+  - name: Tools
+    PageRef: resources/tools/_index.md
+    weight: 20
+    parent: resources
+  # - name: How To's
+  #   PageRef: resources/howto/_index.md
+  #   weight: 30
+  #   parent: resources
+  - name: Scripts
+    PageRef: resources/scripts/_index.md
+    weight: 40
+    parent: resources
+  - name: Other resources
+    PageRef: resources/other-resources/_index.md
+    weight: 50
+    parent: resources
   - name: Contact
     url: contact
     weight: 70
