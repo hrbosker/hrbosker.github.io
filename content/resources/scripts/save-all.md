@@ -7,6 +7,8 @@ weight: 10
 
 Praat can only save one object at a time for you. If you have multiple objects in your object window you'd like to save in one go, you can use this script. It can either save objects by their object name or by their id number.
 
+> You can also [download the script](save-all.praat) as a .praat file.
+
 ```
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
