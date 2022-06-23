@@ -20,9 +20,9 @@ main:
     url: publication
     weight: 50
   - name: Resources
-    url: resources
+#    url: resources
     weight: 60
-#    identifier: courses
+    identifier: resources
   - name: Corpora
     PageRef: resources/corpora/_index.md
     weight: 10
