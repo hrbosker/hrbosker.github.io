@@ -75,7 +75,7 @@ toc: true
   - [Acted clear speech corpus](https://datashare.ed.ac.uk/handle/10283/343): English; 1 male talker; 'normal' sentences; 25 items; babble-modulated noise; Mayo et al. (2012), doi:[10.7488/ds/138](https://datashare.ed.ac.uk/handle/10283/343).
   - [Hurricane natural speech corpus](https://datashare.ed.ac.uk/handle/10283/347): English; 1 male talker; Harvard sentences (720 items) and MRT sentences (300 items); speech-modulated noise; Cooke et al. (2013), doi:[10.7488/ds/140](https://datashare.ed.ac.uk/handle/10283/347).
   - [DELNN](https://datashare.ed.ac.uk/handle/10283/3012): L1 Dutch and L2 English from 30 native speakers of Dutch (+9 native speakers of US English as control); speech-shaped noise; Marcoux (2022, PhD thesis).
-  - [RaLoCo](https://zenodo.org/record/4040685): Dutch; 78 talkers; 48 sentences; speech-shaped noise; Shen (2022, PhD thesis). [Additional info](https://zenodo.org/record/5645385), including human listening effort ratings and HEGP scores (spectral glimpsing metric of intelligibility).
+  - [RaLoCo](https://zenodo.org/record/4040685): Dutch; 78 talkers; 48 sentences; speech-shaped noise; Shen (2022, [PhD thesis](https://repository.ubn.ru.nl/bitstream/handle/2066/250399/250399.pdf)). [Additional info](https://zenodo.org/record/5645385), including human listening effort ratings and HEGP scores (spectral glimpsing metric of intelligibility).
   - Also see our very own [NiCLS corpus of Lombard speech](../corpora/#nicls).
 
 <br />
