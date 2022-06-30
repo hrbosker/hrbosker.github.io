@@ -21,7 +21,7 @@ content:
       background:
         position: right
         color: '#666'
-        brightness: 0.3
+        #brightness: 0.3
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
         fit: contain
     - title: Audiovisual integration
@@ -30,7 +30,7 @@ content:
       background:
         position: right
         color: '#555'
-        brightness: 0.5
+        #brightness: 0.5
         media: 'beat_gesture_double.jpg'
         fit: contain
     - title: Gesture-speech coupling
@@ -39,7 +39,7 @@ content:
       background:
         position: center
         color: '#333'
-        brightness: 0.7
+        #brightness: 0.7
         media: 'motion_tracking_still.jpg'
         fit: contain
       #link:
@@ -53,7 +53,7 @@ content:
       background:
         position: right
         color: '#333'
-        brightness: 0.5
+        #brightness: 0.5
         media: 'FigS1_Kosem_2018_CurrBiol.jpg'
         fit: contain
       #link:
@@ -67,7 +67,7 @@ content:
       background:
         position: center
         color: '#333'
-        brightness: 0.3
+        #brightness: 0.3
         media: 'tokensortratio.jpg'
         fit: contain
       #link:
