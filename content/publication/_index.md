@@ -24,7 +24,8 @@ Preprints are early versions of scientific papers that have *not yet been formal
 - Hans Rutger Bosker, Marieke Hoetjes, Wim Pouw, & Lieke van Maastricht (2021). Gesture-speech coupling in L2 lexical stress production: A pre-registration of a speech acoustic and gesture kinematic study. *OSF Preprints*, doi:[10.31219/osf.io/w2ezs](https://doi.org/10.31219/osf.io/w2ezs), data:[https://osf.io/kqse2/](https://osf.io/kqse2/)
 - Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2022). Audiovisual perception of lexical stress: Beat gestures are stronger visual cues for lexical stress than visible articulatory cues on the face. *PsyArXiv Preprints*, doi:[10.31234/osf.io/y9jck](https://doi.org/10.31234/osf.io/y9jck), data:[https://osf.io/4d9w5/](https://osf.io/4d9w5/)
 
-## **Last update**
+# List of publications
+Last updated: 
 <div id="current_date"></p>
 <script>
 date = new Date();
