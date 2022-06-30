@@ -37,3 +37,5 @@ document.getElementById("current_date").innerHTML = month + "/" + day + "/" + ye
 
 <br />
 <br />
+<br />
+<br />
