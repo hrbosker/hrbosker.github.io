@@ -18,7 +18,7 @@ design:
 
 <br>
 
-Hans Rutger Bosker heads the SPEAC research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
+Hans bla Rutger Bosker heads the SPEAC research group at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
 
 <br />
 <br />
