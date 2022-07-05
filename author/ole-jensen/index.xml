@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ole Jensen | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/author/ole-jensen/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/author/ole-jensen/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/author/ole-jensen/</link>
+      <atom:link href="https://hrbosker.github.io/author/ole-jensen/index.xml" rel="self" type="application/rss+xml" />
     <description>Ole Jensen</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Ole Jensen</title>
-      <link>https://hrbosker.github.io/myWebsite/author/ole-jensen/</link>
+      <link>https://hrbosker.github.io/author/ole-jensen/</link>
     </image>
     
     <item>
       <title>Biasing the perception of spoken words with transcranial alternating current stimulation</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</link>
+      <link>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</guid>
+      <guid>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -40,9 +40,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Neural entrainment determines the words we hear</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</link>
+      <link>https://hrbosker.github.io/publication/kosem-etal-2018-currbiol/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</guid>
+      <guid>https://hrbosker.github.io/publication/kosem-etal-2018-currbiol/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 

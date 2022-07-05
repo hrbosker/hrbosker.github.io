@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Merel Maslowski | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/author/merel-maslowski/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/author/merel-maslowski/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/author/merel-maslowski/</link>
+      <atom:link href="https://hrbosker.github.io/author/merel-maslowski/index.xml" rel="self" type="application/rss+xml" />
     <description>Merel Maslowski</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Merel Maslowski</title>
-      <link>https://hrbosker.github.io/myWebsite/author/merel-maslowski/</link>
+      <link>https://hrbosker.github.io/author/merel-maslowski/</link>
     </image>
     
     <item>
       <title>Eye-tracking the time course of distal and global speech rate effects</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -40,9 +40,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>How the tracking of habitual rate influences speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2019-jeplmc/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -66,9 +66,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listeners normalize speech for contextual speech rate even without an explicit recognition task</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2019-jasa/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -92,9 +92,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listening to yourself is special: Evidence from global speech rate tracking</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2018-plosone/index/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2018-plosone/index/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -118,9 +118,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Whether long-term tracking of speech rate affects perception depends on who is talking</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

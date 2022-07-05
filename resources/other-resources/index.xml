@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Other resources | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/resources/other-resources/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/resources/other-resources/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/resources/other-resources/</link>
+      <atom:link href="https://hrbosker.github.io/resources/other-resources/index.xml" rel="self" type="application/rss+xml" />
     <description>Other resources</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/resources/other-resources/featured.jpg</url>
+      <url>https://hrbosker.github.io/resources/other-resources/featured.jpg</url>
       <title>Other resources</title>
-      <link>https://hrbosker.github.io/myWebsite/resources/other-resources/</link>
+      <link>https://hrbosker.github.io/resources/other-resources/</link>
     </image>
     
   </channel>

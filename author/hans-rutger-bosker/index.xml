@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hans Rutger Bosker | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/author/hans-rutger-bosker/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/author/hans-rutger-bosker/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/author/hans-rutger-bosker/</link>
+      <atom:link href="https://hrbosker.github.io/author/hans-rutger-bosker/index.xml" rel="self" type="application/rss+xml" />
     <description>Hans Rutger Bosker</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/author/hans-rutger-bosker/avatar_hu4d80befbe962cd8b16138261c99e250f_457861_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://hrbosker.github.io/author/hans-rutger-bosker/avatar_hu4d80befbe962cd8b16138261c99e250f_457861_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Hans Rutger Bosker</title>
-      <link>https://hrbosker.github.io/myWebsite/author/hans-rutger-bosker/</link>
+      <link>https://hrbosker.github.io/author/hans-rutger-bosker/</link>
     </image>
     
     <item>
       <title>Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</link>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</guid>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -30,9 +30,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Evidence for selective adaptation and recalibration in the perception of lexical stress</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2022-ls/index/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2022-ls/index/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -57,9 +57,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Visible lexical stress cues on the face do not influence audiovisual speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</link>
+      <link>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</guid>
+      <guid>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -73,9 +73,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>A tool for efficient and accurate segmentation of speech data: Announcing POnSS</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2021-brm/</link>
+      <link>https://hrbosker.github.io/publication/rodd-etal-2021-brm/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2021-brm/</guid>
+      <guid>https://hrbosker.github.io/publication/rodd-etal-2021-brm/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -100,9 +100,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Beat gestures influence which speech sounds you hear</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-procroysocb/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-procroysocb/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -126,9 +126,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Discourse markers activate their, like, cohort competitors</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-discproc/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2021-discproc/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-discproc/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2021-discproc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -152,9 +152,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listeners track talker-specific prosody to deal with talker-variability</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</link>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2021-brainres/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</guid>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2021-brainres/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -179,9 +179,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>The contribution of amplitude modulations in speech to perceived charisma</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2021-bookchapter/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2021-bookchapter/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2021-bookchapter/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2021-bookchapter/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -195,9 +195,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Using fuzzy string matching for automated assessment of listener transcripts in speech intelligibility studies</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2021-brm/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2021-brm/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2021-brm/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2021-brm/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -221,9 +221,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Biasing the perception of spoken words with transcranial alternating current stimulation</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</link>
+      <link>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</guid>
+      <guid>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -247,9 +247,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Contextual speech rate influences morphosyntactic prediction and integration</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-lcn/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-lcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -274,9 +274,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Control of speaking rate is achieved by switching between qualitatively distinct cognitive ‘gaits’: Evidence from simulation</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2020-psychreview/</link>
+      <link>https://hrbosker.github.io/publication/rodd-etal-2020-psychreview/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2020-psychreview/</guid>
+      <guid>https://hrbosker.github.io/publication/rodd-etal-2020-psychreview/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -301,9 +301,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-jasa/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -327,9 +327,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Eye-tracking the time course of distal and global speech rate effects</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -353,9 +353,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Fluency in dialogue: Turn‐taking behavior shapes perceived fluency in native and nonnative speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/vanos-etal-2020-ll/</link>
+      <link>https://hrbosker.github.io/publication/vanos-etal-2020-ll/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/vanos-etal-2020-ll/</guid>
+      <guid>https://hrbosker.github.io/publication/vanos-etal-2020-ll/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -380,9 +380,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>How visual cues to speech rate influence speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-qjep/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-qjep/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-qjep/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-qjep/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -406,9 +406,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Knowledge-based and signal-based cues are weighted flexibly during spoken language comprehension</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-jeplmc/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -432,9 +432,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Linguistic structure and meaning organize neural oscillations into a content-specific hierarchy</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -458,9 +458,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-app/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -484,9 +484,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Temporal contrast effects in human speech perception are immune to selective attention</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-scirep/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-scirep/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -510,9 +510,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2019-jml/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2019-jml/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2019-jml/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2019-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -536,9 +536,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Deriving the onset and offset times of planning units from acoustic and articulatory measurements</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2019-jasa/</link>
+      <link>https://hrbosker.github.io/publication/rodd-etal-2019-jasa/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2019-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/rodd-etal-2019-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -563,9 +563,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>How the tracking of habitual rate influences speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2019-jeplmc/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -589,9 +589,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listeners normalize speech for contextual speech rate even without an explicit recognition task</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2019-jasa/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -615,9 +615,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Entrained theta oscillations guide perception of subsequent speech: Behavioral evidence from rate normalization</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-lcn/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2018-lcn/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-lcn/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2018-lcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -641,9 +641,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jml/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2018-jml/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jml/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2018-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -668,9 +668,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listening to yourself is special: Evidence from global speech rate tracking</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2018-plosone/index/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2018-plosone/index/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -694,9 +694,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Neural entrainment determines the words we hear</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</link>
+      <link>https://hrbosker.github.io/publication/kosem-etal-2018-currbiol/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</guid>
+      <guid>https://hrbosker.github.io/publication/kosem-etal-2018-currbiol/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -721,9 +721,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Putting Laurel and Yanny in context</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2018-jasa/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2018-jasa/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2018-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2018-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -747,9 +747,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Talkers produce more pronounced amplitude modulations when speaking in noise</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2018-jasa/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2018-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -774,9 +774,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Accounting for rate-dependent category boundary shifts in speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-app/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2017-app/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-app/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2017-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -792,9 +792,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>An entrained rhythm’s frequency, not phase, influences temporal sampling of speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</link>
+      <link>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -808,18 +808,18 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Cognitive load makes speech sound fast, but does not modulate acoustic context effects</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2017-jml/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2017-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT --&gt;
 </description>
     </item>
     
     <item>
       <title>Foreign languages sound fast: evidence from implicit rate normalization</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-frontiers/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2017-frontiers/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-frontiers/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2017-frontiers/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -844,9 +844,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>How our own speech rate influences our perception of others</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-jeplmc/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2017-jeplmc/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-jeplmc/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2017-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -871,9 +871,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>The role of temporal amplitude modulations in the political arena: Hillary Clinton vs. Donald Trump</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-interspeech/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-interspeech/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2017-interspeech/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -887,9 +887,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Whether long-term tracking of speech rate affects perception depends on who is talking</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</link>
+      <link>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</guid>
+      <guid>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -903,9 +903,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listening under cognitive load makes speech sound fast</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2016-spire/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2016-spire/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -919,9 +919,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Our own speech rate influences speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2016-sp/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2016-sp/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2016-sp/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2016-sp/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -935,9 +935,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Both native and non-native disfluencies trigger listeners’ attention</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2015/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2015/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2015/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -951,9 +951,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Normalization for speechrate in native and nonnative speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-reinisch-2015/</link>
+      <link>https://hrbosker.github.io/publication/bosker-reinisch-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-reinisch-2015/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-reinisch-2015/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -967,9 +967,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Native ‘um’s elicit prediction of low-frequency referents, but non-native ‘um’s do not</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-jml/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2014-jml/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-jml/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2014-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -994,9 +994,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Native speakers’ perceptions of fluency and accent in L2 speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/pinget-etal-2014-lt/</link>
+      <link>https://hrbosker.github.io/publication/pinget-etal-2014-lt/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/pinget-etal-2014-lt/</guid>
+      <guid>https://hrbosker.github.io/publication/pinget-etal-2014-lt/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -1021,9 +1021,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Perceptual adaptation to segmental and syllabic reductions in continuous spoken Dutch</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/poellmann-etal-2014-jphon/</link>
+      <link>https://hrbosker.github.io/publication/poellmann-etal-2014-jphon/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/poellmann-etal-2014-jphon/</guid>
+      <guid>https://hrbosker.github.io/publication/poellmann-etal-2014-jphon/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -1048,9 +1048,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>The perception of fluency in native and nonnative speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-ll/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2014-ll/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-ll/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2014-ll/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -1075,9 +1075,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>The processing and evaluation of fluency in native and non-native speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2014-thesis/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2014-thesis/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2014-thesis/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2014-thesis/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -1093,9 +1093,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Choosing a threshold for silent pauses to measure second language fluency</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/dejong-bosker-2013/</link>
+      <link>https://hrbosker.github.io/publication/dejong-bosker-2013/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/dejong-bosker-2013/</guid>
+      <guid>https://hrbosker.github.io/publication/dejong-bosker-2013/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -1109,9 +1109,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Juncture (prosodic)</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-juncture/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2013-ehll-juncture/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-juncture/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2013-ehll-juncture/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -1125,9 +1125,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Sibilant consonants</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-sibilants/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2013-ehll-sibilants/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-sibilants/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2013-ehll-sibilants/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -1141,9 +1141,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>What makes speech sound fluent? The contributions of pauses, speed and repairs</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2013-lt/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2013-lt/</link>
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2013-lt/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2013-lt/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
@@ -1159,9 +1159,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Whispered speech as input for cochlear implants</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2010/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2010/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2010/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2010/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

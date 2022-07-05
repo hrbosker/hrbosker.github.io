@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matthias J. Sjerps | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/author/matthias-j.-sjerps/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/author/matthias-j.-sjerps/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/author/matthias-j.-sjerps/</link>
+      <atom:link href="https://hrbosker.github.io/author/matthias-j.-sjerps/index.xml" rel="self" type="application/rss+xml" />
     <description>Matthias J. Sjerps</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Matthias J. Sjerps</title>
-      <link>https://hrbosker.github.io/myWebsite/author/matthias-j.-sjerps/</link>
+      <link>https://hrbosker.github.io/author/matthias-j.-sjerps/</link>
     </image>
     
     <item>
       <title>Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-app/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -40,9 +40,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Temporal contrast effects in human speech perception are immune to selective attention</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-scirep/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-scirep/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -66,18 +66,18 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Cognitive load makes speech sound fast, but does not modulate acoustic context effects</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2017-jml/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2017-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT --&gt;
 </description>
     </item>
     
     <item>
       <title>Listening under cognitive load makes speech sound fast</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2016-spire/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2016-spire/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

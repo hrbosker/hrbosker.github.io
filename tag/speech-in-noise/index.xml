@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>speech in noise | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/tag/speech-in-noise/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/tag/speech-in-noise/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/tag/speech-in-noise/</link>
+      <atom:link href="https://hrbosker.github.io/tag/speech-in-noise/index.xml" rel="self" type="application/rss+xml" />
     <description>speech in noise</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>speech in noise</title>
-      <link>https://hrbosker.github.io/myWebsite/tag/speech-in-noise/</link>
+      <link>https://hrbosker.github.io/tag/speech-in-noise/</link>
     </image>
     
     <item>
       <title>Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2020-jasa/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2020-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -40,9 +40,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Talkers produce more pronounced amplitude modulations when speaking in noise</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</link>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2018-jasa/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2018-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Scripts | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/resources/scripts/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/resources/scripts/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/resources/scripts/</link>
+      <atom:link href="https://hrbosker.github.io/resources/scripts/index.xml" rel="self" type="application/rss+xml" />
     <description>Scripts</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/resources/scripts/featured.jpg</url>
+      <url>https://hrbosker.github.io/resources/scripts/featured.jpg</url>
       <title>Scripts</title>
-      <link>https://hrbosker.github.io/myWebsite/resources/scripts/</link>
+      <link>https://hrbosker.github.io/resources/scripts/</link>
     </image>
     
     <item>
       <title>Save all</title>
-      <link>https://hrbosker.github.io/myWebsite/resources/scripts/save-all/</link>
+      <link>https://hrbosker.github.io/resources/scripts/save-all/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/save-all/</guid>
+      <guid>https://hrbosker.github.io/resources/scripts/save-all/</guid>
       <description>&lt;p&gt;Praat can only save one object at a time for you. If you have multiple objects in your object window you&amp;rsquo;d like to save in one go, you can use this script. It can either save objects by their object name or by their id number.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;You can also &lt;a href=&#34;../save-all.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
@@ -202,9 +202,9 @@ endfor
     
     <item>
       <title>Second script</title>
-      <link>https://hrbosker.github.io/myWebsite/resources/scripts/script2/</link>
+      <link>https://hrbosker.github.io/resources/scripts/script2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/script2/</guid>
+      <guid>https://hrbosker.github.io/resources/scripts/script2/</guid>
       <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
@@ -214,9 +214,9 @@ endfor
     
     <item>
       <title>Third script</title>
-      <link>https://hrbosker.github.io/myWebsite/resources/scripts/script3/</link>
+      <link>https://hrbosker.github.io/resources/scripts/script3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/script3/</guid>
+      <guid>https://hrbosker.github.io/resources/scripts/script3/</guid>
       <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>temporal sampling | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/tag/temporal-sampling/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/tag/temporal-sampling/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/tag/temporal-sampling/</link>
+      <atom:link href="https://hrbosker.github.io/tag/temporal-sampling/index.xml" rel="self" type="application/rss+xml" />
     <description>temporal sampling</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>temporal sampling</title>
-      <link>https://hrbosker.github.io/myWebsite/tag/temporal-sampling/</link>
+      <link>https://hrbosker.github.io/tag/temporal-sampling/</link>
     </image>
     
     <item>
       <title>An entrained rhythm’s frequency, not phase, influences temporal sampling of speech</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</link>
+      <link>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

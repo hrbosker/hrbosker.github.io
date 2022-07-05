@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Greta Kaufeld | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/author/greta-kaufeld/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/author/greta-kaufeld/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/author/greta-kaufeld/</link>
+      <atom:link href="https://hrbosker.github.io/author/greta-kaufeld/index.xml" rel="self" type="application/rss+xml" />
     <description>Greta Kaufeld</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Greta Kaufeld</title>
-      <link>https://hrbosker.github.io/myWebsite/author/greta-kaufeld/</link>
+      <link>https://hrbosker.github.io/author/greta-kaufeld/</link>
     </image>
     
     <item>
       <title>Contextual speech rate influences morphosyntactic prediction and integration</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-lcn/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-lcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -41,9 +41,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Knowledge-based and signal-based cues are weighted flexibly during spoken language comprehension</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-jeplmc/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -67,9 +67,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Linguistic structure and meaning organize neural oscillations into a content-specific hierarchy</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 

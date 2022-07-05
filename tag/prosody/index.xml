@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>prosody | SPEAC | Hans Rutger Bosker</title>
-    <link>https://hrbosker.github.io/myWebsite/tag/prosody/</link>
-      <atom:link href="https://hrbosker.github.io/myWebsite/tag/prosody/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://hrbosker.github.io/tag/prosody/</link>
+      <atom:link href="https://hrbosker.github.io/tag/prosody/index.xml" rel="self" type="application/rss+xml" />
     <description>prosody</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>prosody</title>
-      <link>https://hrbosker.github.io/myWebsite/tag/prosody/</link>
+      <link>https://hrbosker.github.io/tag/prosody/</link>
     </image>
     
     <item>
       <title>Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</link>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</guid>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -30,9 +30,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Evidence for selective adaptation and recalibration in the perception of lexical stress</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</link>
+      <link>https://hrbosker.github.io/publication/bosker-2022-ls/index/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</guid>
+      <guid>https://hrbosker.github.io/publication/bosker-2022-ls/index/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -57,9 +57,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Visible lexical stress cues on the face do not influence audiovisual speech perception</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</link>
+      <link>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</guid>
+      <guid>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</guid>
       <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -73,9 +73,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Listeners track talker-specific prosody to deal with talker-variability</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</link>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2021-brainres/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</guid>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2021-brainres/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
@@ -100,9 +100,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
     
     <item>
       <title>Linguistic structure and meaning organize neural oscillations into a content-specific hierarchy</title>
-      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</link>
+      <link>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</guid>
+      <guid>https://hrbosker.github.io/publication/kaufeld-etal-2020-jneuro/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 
