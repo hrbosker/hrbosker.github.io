@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Orhun Uluşahin | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/myWebsite/author/orhun-ulusahin/</link>
+      <atom:link href="https://hrbosker.github.io/myWebsite/author/orhun-ulusahin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Orhun Uluşahin</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
+    <image>
+      <url>https://hrbosker.github.io/myWebsite/author/orhun-ulusahin/avatar_hucc0e843926580e1ed13b4bd31ab2f6a2_56632_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Orhun Uluşahin</title>
+      <link>https://hrbosker.github.io/myWebsite/author/orhun-ulusahin/</link>
+    </image>
+    
+  </channel>
+</rss>

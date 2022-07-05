@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/myWebsite/</link>
+      <atom:link href="https://hrbosker.github.io/myWebsite/index.xml" rel="self" type="application/rss+xml" />
+    <description>SPEAC | Hans Rutger Bosker</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <title>SPEAC | Hans Rutger Bosker</title>
+      <link>https://hrbosker.github.io/myWebsite/</link>
+    </image>
+    
+    <item>
+      <title>First how-to</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/how-to/howto1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/how-to/howto1/</guid>
+      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;praatcode = 1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Save all</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/scripts/save-all/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/save-all/</guid>
+      <description>&lt;p&gt;Praat can only save one object at a time for you. If you have multiple objects in your object window you&amp;rsquo;d like to save in one go, you can use this script. It can either save objects by their object name or by their id number.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../save-all.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@ru.nl
+### Date: 23 June 2022, run in Praat 6.2.12 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+	###&amp;gt;&amp;gt; This script saves all selected objects to the directory &amp;#39;dir_out$&amp;#39;
+	###&amp;gt;&amp;gt;	with either:
+	###&amp;gt;&amp;gt;   - their object name (e.g., &amp;#34;sentence1.wav&amp;#34;)
+	###&amp;gt;&amp;gt;			&amp;gt; set variable &amp;#39;save_method$&amp;#39; to &amp;#34;name&amp;#34; [default]
+	###&amp;gt;&amp;gt;   - their id number in the Praat object window (e.g., &amp;#34;42.wav&amp;#34;)
+	###&amp;gt;&amp;gt;			&amp;gt; set variable &amp;#39;save_method$&amp;#39; to &amp;#34;id&amp;#34;
+	###&amp;gt;&amp;gt;
+	###&amp;gt;&amp;gt; Sounds are saved as .wav files,
+	###&amp;gt;&amp;gt; other object types (TextGrids, Spectrum, etc.) are saved
+	###&amp;gt;&amp;gt; with their own extension type (.TextGrid, .Spectrum).
+	###&amp;gt;&amp;gt;
+	###&amp;gt;&amp;gt; Default: the script will overwrite pre-existing files.
+	###&amp;gt;&amp;gt; Set variable &amp;#39;overwrite$&amp;#39; to &amp;#34;no&amp;#34; if you want Praat
+	###&amp;gt;&amp;gt; to throw an error instead.
+
+
+
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where should the selected objects be saved?
+
+dir_out$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+
+### Should Praat overwrite pre-existing files?
+
+overwrite$ = &amp;#34;yes&amp;#34;
+#overwrite$ = &amp;#34;no&amp;#34;
+
+### Do you want to save each object by its object name or by its id number?
+### If object name, then use &amp;#34;name&amp;#34; (e.g., &amp;#34;sentence1.wav&amp;#34;).
+### If object id number, then use &amp;#34;id&amp;#34; (e.g., &amp;#34;42.wav&amp;#34;).
+
+save_method$ = &amp;#34;name&amp;#34;
+#save_method$ = &amp;#34;id&amp;#34;
+
+
+
+
+
+################################################################################
+### Before we start, let&amp;#39;s check whether you&amp;#39;ve entered sensible
+### input for the variables above...
+################################################################################
+
+### Let&amp;#39;s check if the output directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_out$,1)=&amp;#34;/&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&amp;#34;\&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the output folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_out$&amp;#39; was not found
+	exit Your directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+### Make sure you&amp;#39;ve selected the objects you&amp;#39;d like to save in
+### the Praat object window. If nothing is selected, the script exits.
+
+nSelected = numberOfSelected()
+if nSelected = 0
+	exit No objects selected.
+endif
+
+### Store the object id numbers in an array
+
+for thisObject to nSelected
+	objectArray [&amp;#39;thisObject&amp;#39;] = selected(&amp;#39;thisObject&amp;#39;)
+endfor
+
+### Loop through this array and for each id number
+### select the corresponding object and save it.
+
+for thisArrayNumber to nSelected
+	objectId = objectArray [&amp;#39;thisArrayNumber&amp;#39;]
+	select &amp;#39;objectId&amp;#39;
+	type$ = extractWord$(selected$(), &amp;#34;&amp;#34;)
+	name$ = extractLine$(selected$(), &amp;#34; &amp;#34;)
+	
+	if save_method$ = &amp;#34;name&amp;#34;
+		if type$ = &amp;#34;Sound&amp;#34;
+			does_file_exist = fileReadable(&amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.wav&amp;#34;)
+			if does_file_exist = 1
+				if overwrite$ = &amp;#34;no&amp;#34;
+					exit The file &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.wav&amp;#39; already exists! If you wish to overwrite, set the variable overwrite$ to &amp;#34;yes&amp;#34;.
+				endif
+			endif
+			Write to WAV file... &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.wav
+		else
+			does_file_exist = fileReadable(&amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.&amp;#39;type$&amp;#39;&amp;#34;)
+			if does_file_exist = 1
+				if overwrite$ = &amp;#34;no&amp;#34;
+					exit The file &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.&amp;#39;type$&amp;#39; already exists! If you wish to overwrite, set the variable overwrite$ to &amp;#34;yes&amp;#34;.
+				endif
+			endif
+			Write to text file... &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;.&amp;#39;type$&amp;#39;
+		endif
+	elsif save_method$ = &amp;#34;id&amp;#34;
+		if type$ = &amp;#34;Sound&amp;#34;
+			does_file_exist = fileReadable(&amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;objectId$&amp;#39;.wav&amp;#34;)
+			if does_file_exist = 1
+				if overwrite$ = &amp;#34;no&amp;#34;
+					exit The file &amp;#39;dir_out$&amp;#39;\&amp;#39;objectId$&amp;#39;.wav&amp;#39; already exists! If you wish to overwrite, set the variable overwrite$ to &amp;#34;yes&amp;#34;.
+				endif
+			endif
+			Write to WAV file... &amp;#39;dir_out$&amp;#39;\&amp;#39;objectId&amp;#39;.wav
+		else
+			does_file_exist = fileReadable(&amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;objectId$&amp;#39;.&amp;#39;type$&amp;#39;&amp;#34;)
+			if does_file_exist = 1
+				if overwrite$ = &amp;#34;no&amp;#34;
+					exit The file &amp;#39;dir_out$&amp;#39;\&amp;#39;objectId$&amp;#39;.&amp;#39;type$&amp;#39; already exists! If you wish to overwrite, set the variable overwrite$ to &amp;#34;yes&amp;#34;.
+				endif
+			endif
+			Write to text file... &amp;#39;dir_out$&amp;#39;\&amp;#39;objectId&amp;#39;.&amp;#39;type$&amp;#39;
+		endif
+	endif
+endfor
+
+### Now set the selection back to what it was before running this script.
+
+for current to nSelected
+	objectId = objectArray [&amp;#39;current&amp;#39;]
+	if current = 1
+		select &amp;#39;objectId&amp;#39;
+	else
+		plus &amp;#39;objectId&amp;#39;
+	endif
+endfor
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Second how-to</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/how-to/howto2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/how-to/howto2/</guid>
+      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Second script</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/scripts/script2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/script2/</guid>
+      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 2
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Third how-to</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/how-to/howto3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/how-to/howto3/</guid>
+      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Third script</title>
+      <link>https://hrbosker.github.io/myWebsite/resources/scripts/script3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/resources/scripts/script3/</guid>
+      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 3
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Acoustic correlates of Dutch lexical stress re-examined: Spectral tilt is not always more reliable than intensity</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2022-speechprosody/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Evidence for selective adaptation and recalibration in the perception of lexical stress</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2022-ls/index/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visible lexical stress cues on the face do not influence audiovisual speech perception</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bujok-etal-2022-sp/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A tool for efficient and accurate segmentation of speech data: Announcing POnSS</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2021-brm/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2021-brm/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Beat gestures influence which speech sounds you hear</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-procroysocb/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-procroysocb/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Discourse markers activate their, like, cohort competitors</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-discproc/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2021-discproc/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Listeners track talker-specific prosody to deal with talker-variability</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/severijnen-etal-2021-brainres/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The contribution of amplitude modulations in speech to perceived charisma</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2021-bookchapter/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2021-bookchapter/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using fuzzy string matching for automated assessment of listener transcripts in speech intelligibility studies</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2021-brm/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2021-brm/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Biasing the perception of spoken words with transcranial alternating current stimulation</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2020-jcn/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Contextual speech rate influences morphosyntactic prediction and integration</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-lcn/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Control of speaking rate is achieved by switching between qualitatively distinct cognitive ‘gaits’: Evidence from simulation</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2020-psychreview/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2020-psychreview/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-jasa/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Eye-tracking the time course of distal and global speech rate effects</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2020-jephpp/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fluency in dialogue: Turn‐taking behavior shapes perceived fluency in native and nonnative speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/vanos-etal-2020-ll/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/vanos-etal-2020-ll/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How visual cues to speech rate influence speech perception</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-qjep/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-qjep/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Knowledge-based and signal-based cues are weighted flexibly during spoken language comprehension</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jeplmc/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linguistic structure and meaning organize neural oscillations into a content-specific hierarchy</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/kaufeld-etal-2020-jneuro/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Temporal contrast effects in human speech perception are immune to selective attention</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-scirep/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2019-jml/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2019-jml/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Deriving the onset and offset times of planning units from acoustic and articulatory measurements</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2019-jasa/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/rodd-etal-2019-jasa/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How the tracking of habitual rate influences speech perception</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jeplmc/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Listeners normalize speech for contextual speech rate even without an explicit recognition task</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2019-jasa/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Entrained theta oscillations guide perception of subsequent speech: Behavioral evidence from rate normalization</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-lcn/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-lcn/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jml/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jml/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Listening to yourself is special: Evidence from global speech rate tracking</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2018-plosone/index/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Neural entrainment determines the words we hear</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/kosem-etal-2018-currbiol/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Putting Laurel and Yanny in context</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2018-jasa/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2018-jasa/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Talkers produce more pronounced amplitude modulations when speaking in noise</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2018-jasa/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Accounting for rate-dependent category boundary shifts in speech perception</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-app/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-app/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>An entrained rhythm’s frequency, not phase, influences temporal sampling of speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-kosem-2017-interspeech/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cognitive load makes speech sound fast, but does not modulate acoustic context effects</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Foreign languages sound fast: evidence from implicit rate normalization</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-frontiers/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-frontiers/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How our own speech rate influences our perception of others</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-jeplmc/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-jeplmc/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The role of temporal amplitude modulations in the political arena: Hillary Clinton vs. Donald Trump</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2017-interspeech/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2017-interspeech/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Whether long-term tracking of speech rate affects perception depends on who is talking</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/maslowski-etal-2017-interspeech/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Listening under cognitive load makes speech sound fast</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Our own speech rate influences speech perception</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2016-sp/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2016-sp/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Both native and non-native disfluencies trigger listeners’ attention</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2015/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Normalization for speechrate in native and nonnative speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-reinisch-2015/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-reinisch-2015/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Native ‘um’s elicit prediction of low-frequency referents, but non-native ‘um’s do not</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-jml/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-jml/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Native speakers’ perceptions of fluency and accent in L2 speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/pinget-etal-2014-lt/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/pinget-etal-2014-lt/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Perceptual adaptation to segmental and syllabic reductions in continuous spoken Dutch</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/poellmann-etal-2014-jphon/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/poellmann-etal-2014-jphon/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The perception of fluency in native and nonnative speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-ll/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2014-ll/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The processing and evaluation of fluency in native and non-native speech</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2014-thesis/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2014-thesis/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Choosing a threshold for silent pauses to measure second language fluency</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/dejong-bosker-2013/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/dejong-bosker-2013/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Juncture (prosodic)</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-juncture/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-juncture/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sibilant consonants</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-sibilants/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-2013-ehll-sibilants/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What makes speech sound fluent? The contributions of pauses, speed and repairs</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2013-lt/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2013-lt/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Whispered speech as input for cochlear implants</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2010/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2010/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hrbosker.github.io/myWebsite/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hrbosker.github.io/myWebsite/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hrbosker.github.io/myWebsite/empty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/empty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://hrbosker.github.io/myWebsite/people/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/people/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>https://hrbosker.github.io/myWebsite/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/research/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

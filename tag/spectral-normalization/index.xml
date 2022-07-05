@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spectral normalization | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/myWebsite/tag/spectral-normalization/</link>
+      <atom:link href="https://hrbosker.github.io/myWebsite/tag/spectral-normalization/index.xml" rel="self" type="application/rss+xml" />
+    <description>spectral normalization</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hrbosker.github.io/myWebsite/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <title>spectral normalization</title>
+      <link>https://hrbosker.github.io/myWebsite/tag/spectral-normalization/</link>
+    </image>
+    
+    <item>
+      <title>Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2020-app/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cognitive load makes speech sound fast, but does not modulate acoustic context effects</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2017-jml/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Listening under cognitive load makes speech sound fast</title>
+      <link>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/myWebsite/publication/bosker-etal-2016-spire/</guid>
+      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

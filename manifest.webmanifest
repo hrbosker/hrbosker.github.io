@@ -1,0 +1,18 @@
+{
+  "name": "SPEAC | Hans Rutger Bosker",
+  "short_name": "SPEAC | Hans Rutger Bosker",
+  "lang": "en-us",
+  "theme_color": "#1565c0",
+  "background_color": "#1565c0",
+  "icons": [{
+    "src": "/myWebsite/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_192x192_fill_lanczos_center_3.png",
+    "sizes": "192x192",
+    "type": "image/png"
+    }, {
+    "src": "/myWebsite/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_512x512_fill_lanczos_center_3.png",
+    "sizes": "512x512",
+    "type": "image/png"
+     }],
+  "display": "standalone",
+  "start_url": "/?utm_source=web_app_manifest"
+}
