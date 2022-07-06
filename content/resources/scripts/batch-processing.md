@@ -7,7 +7,7 @@ weight: 30
 
 This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.
 
-In its current form, the script reads each .wav file *plus* accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled "vowel". It then allows the user to apply a particular function to those intervals (such as: `Scale intensity: 65`), after which it concatenates the individual intervals back together, and saves the output in an output directory.
+In its current form, the script reads each .wav file *plus* accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled "vowel". It then allows the user to apply a particular function to those intervals (such as `Scale intensity: 65`), after which it concatenates the individual intervals back together, and saves the output in an output directory.
 
 **NOTE:** In its current form, the script does not run any function on its input. It really only serves as a starting point, including snippets of code we regularly use and now do not need to look up every time we want to do batch processing in Praat.
 

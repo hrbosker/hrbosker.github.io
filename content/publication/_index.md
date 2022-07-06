@@ -26,14 +26,6 @@ Preprints are early versions of scientific papers that have *not yet been formal
 
 # List of publications
 Last updated: 
-<div id="current_date"></p>
-<script>
-date = new Date();
-year = date.getFullYear();
-month = date.getMonth() + 1;
-day = date.getDate();
-document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year + " (m/d/y)";
-</script>
 
 <br />
 <br />
