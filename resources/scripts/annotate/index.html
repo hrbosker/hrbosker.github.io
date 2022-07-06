@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This is the subtitle." />
+  <meta name="description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/script2/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/annotate/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/script2/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/annotate/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/script2/" />
-  <meta property="og:title" content="Second script | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This is the subtitle." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/annotate/" />
+  <meta property="og:title" content="Annotate | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Second script | SPEAC | Hans Rutger Bosker</title>
+  <title>Annotate | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="497aaacd695a6cc99390e61bbe079581" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="87e2dde545e138e121782d0c7c595fac" >
 
   
   
@@ -685,7 +685,7 @@
 
 
 
-  <li class="active"><a href="/resources/scripts/script2/">Second script</a></li>
+  <li class="active"><a href="/resources/scripts/annotate/">Annotate</a></li>
 
 
 
@@ -728,14 +728,250 @@
         <div class="docs-article-container">
           
 
-          <h1>Second script</h1>
+          <h1>Annotate</h1>
 
           <div class="article-style">
-            <p>This is the subtitle.</p>
-<p>
-  <i class="fas fa-clock  pr-1 fa-fw"></i> 1-2 hours per week, for 8 weeks</p>
-<pre tabindex="0"><code>firstobject = 2
-</code></pre><p>Some disclaimer</p>
+            <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
+<p>Moreover, the script keeps track of who annotated what, can continue where you left off yesterday, allows users to enter comments about their annotations, and blinds file names to avoid human annotation biases. The script can be updated to present new empty TextGrids (instead of any pre-existing ones, in case you only have .wav files) or to automatically perform changes to TextGrid tiers/intervals before presenting them for manual annotation.</p>
+<blockquote>
+<p>You can also <a href="../annotate.praat">download the script</a> as a .praat file.</p>
+</blockquote>
+<pre tabindex="0"><code>################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@ru.nl
+### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+	###&gt;&gt; This script reads a directory containing sound files with pre-existing TextGrids,
+	###&gt;&gt;	for instance resulting from a forced aligner (e.g., WebMAUS or EasyAlign).
+	###&gt;&gt;	IMPORTANT: Every Sound should have a pre-existing TextGrid file **with the same name**!
+	###&gt;&gt;	It opens every Sound + Textgrid combination, presents it to the user for editing,
+	###&gt;&gt;	allows the user to enter comments about the annotations, and then saves the
+	###&gt;&gt;	edited TextGrid with &#34;_edited&#34; suffix in the subfolder &#39;edited_textgrids&#39;.
+	###&gt;&gt;	User comments are tracked in the file &#39;annotation_log.txt&#39; in the same subfolder.
+	###&gt;&gt;	
+	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; If you **do not** yet have pre-existing TextGrids (i.e., only sound files),	&lt;&lt;&lt;&lt;&lt;
+	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; you can adjust the script to read all .wav files, create new empty TextGrids,	&lt;&lt;&lt;&lt;&lt;
+	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; and present those for editing and saving...									&lt;&lt;&lt;&lt;&lt;
+	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; See the line with &#34;CREATE EMPTY TEXTGRIDS&#34;									&lt;&lt;&lt;&lt;&lt;
+	###&gt;&gt;
+	###&gt;&gt; This script can be run by multiple users simultaneously, for instance when
+	###&gt;&gt;   multiple annotators are working on the same shared folder. It keeps track
+	###&gt;&gt;   of what files have already been edited: it only presents TextGrids for editing
+	###&gt;&gt;   that do not yet have an &#34;_edited&#34; version pre-existing in the subfolder.
+	###&gt;&gt;   This also means that users can close the script or Praat at anytime
+	###&gt;&gt;   without losing data. Then, next time someone runs the script, it will
+	###&gt;&gt;   start with the files that are &#39;left over&#39; from the previous run.
+	###&gt;&gt;	NOTE: This checking of which files already exist can slow the script down
+	###&gt;&gt;	when working with folders with &gt;5000 files...
+	###&gt;&gt;
+	###&gt;&gt; At present, the script **only** presents pre-existing tiers and intervals
+	###&gt;&gt;   for editing (e.g., adding boundaries, dragging boundaries around, etc.).
+	###&gt;&gt;   This script can be augmented by automatically adding tiers or intervals
+	###&gt;&gt;   before the TextGrid is presented for editing, so users can annotate
+	###&gt;&gt;   new tiers/intervals. See the line with &#34;ADD/REMOVE TIERS HERE&#34;.
+
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where can the Sound and TextGrid files be found?
+
+dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
+
+### Do you want to use &#39;blinded&#39; objects in Praat to avoid human biases in annotation?
+### Default value: &#34;yes&#34;
+### Change to &#34;no&#34; if you want to use original object names.
+
+blinded$ = &#34;yes&#34;
+
+
+
+
+
+################################################################################
+### Before we start, let&#39;s check whether you&#39;ve entered sensible
+### input for the variables above...
+################################################################################
+
+### Let&#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&#39;t exist
+### (i.e., it won&#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_in$,1)=&#34;/&#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&#34;\&#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+### does *not* exist. We&#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+	printline The folder &#39;dir_in$&#39; was not found
+	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+## Let&#39;s also check whether a subfolder with edited TextGrids already exists,
+## for instance when the script has been run and exited before.
+
+temp_filename$ = dir_in$ + &#34;/edited_textgrids/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+nocheck writeFileLine: temp_filename$, &#34;This is just to check if the subfolder exists&#34;
+
+### Can the file be found?
+
+subfolderfile_exists_yesno = fileReadable(temp_filename$)
+
+if subfolderfile_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the subfolder already exists.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if it didn&#39;t yet exist, let&#39;s create the subfolder
+	createFolder: &#34;&#39;dir_in$&#39;/edited_textgrids&#34;
+endif
+
+
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+## Let&#39;s keep track of who annotated which file. This can be helpful when
+## multiple annotators run the same script on the same shared folder.
+
+beginPause: &#34;Please enter your name:&#34;
+	text: &#34;annotator&#34;, &#34;&#34;
+clicked = endPause: &#34;Next&#34;, 1
+
+## Now we create a list of TextGrid files in the input directory:
+
+Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.TextGrid&#34;
+
+	#######################################################################################
+	## CREATE EMPTY TEXTGRIDS
+	########################
+	## If you do not yet have pre-existing TextGrids (but a folder with only sound files instead),
+	## you can read the sound files in the directory and create empty TextGrids for the user
+	## to edit.
+	## Adjust this script as follows:
+	## - Change *.TextGrid to *.wav in the line above.
+	## - Change *.TextGrid to *.wav in the line below starting with &#34;extposition$&#34;
+	## - Replace this line: Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
+	##		with this line: To TextGrid: &#34;manual&#34;, &#34;&#34;
+	#######################################################################################
+
+nfiles = Get number of strings
+if nfiles = 0
+	exit The directory &#39;dir_in$&#39; does not contain any TextGrid files.
+endif
+
+## By randomizing this file list, it allows for multiple users to simultanously work
+## on the same folder without overwriting previous annotations. It also reduces the risk
+## of human biases in annotations (e.g., annotator fatigue affecting one condition more
+## than another condition).
+
+Randomize
+
+## Now we&#39;ll loop through the list and present individual files...
+
+for i from 1 to &#39;nfiles&#39;
+	select Strings list_of_files
+	
+	fileplusext$ = Get string... &#39;i&#39;
+	extposition = index(fileplusext$, &#34;.TextGrid&#34;)
+	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
+
+	outname$ = &#34;&#39;name$&#39;_edited&#34;
+	fulloutname$ = &#34;&#39;dir_in$&#39;/edited_textgrids/&#39;outname$&#39;.TextGrid&#34;
+
+	## Let&#39;s check if an &#34;_edited&#34; version already exists.
+	## The script only presents those files for editing that do not yet have been edited before.
+	
+	editedfile_exists_yesno = fileReadable(fulloutname$)
+	if editedfile_exists_yesno
+		do_nothing = 1
+	else
+		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
+		if blinded$ = &#34;yes&#34;
+			Rename... current_Sound
+		endif
+		sound_name$ = selected$(&#34;Sound&#34;)
+		## If a filename contains spaces, Praat replaces these spaces with underscores.
+		## Example: &#34;file number 1.wav&#34; in a given folder becomes
+		##			&#34;file_number_1.wav&#34; in the Praat object window.
+		## Therefore, it is important **not** to use a filename variable (here: &#39;name$&#39;)
+		## in &#39;selecting commands&#39; in Praat, like &#39;select&#39; and &#39;plus&#39;!
+		## Better still: do not use spaces in filenames!
+		
+		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
+		if blinded$ = &#34;yes&#34;
+			Rename... current_TextGrid
+		endif
+		tg_name$ = selected$(&#34;TextGrid&#34;)
+
+		#######################################################################################
+		## ADD/REMOVE TIERS HERE
+		########################
+		## This is where we you could adjust the script to automatically add/remove tiers
+		## and/or automatically adjust intervals (setting them to the nearest zero crossings?).
+		## Duplicating tiers can be helpful when you want to view original vs. manually edited
+		## tiers below/above each other in one and the same edited TextGrid.
+		## Example:
+		## &gt; Duplicate tier... 1 1 newtier
+		## [ARGUMENTS: position_of_tier_to_duplicate position_for_new_tier name_of_new_tier]
+		#######################################################################################
+
+		plus Sound &#39;sound_name$&#39;
+		Edit
+
+		beginPause: &#34;Please check and edit this TextGrid.&#34;
+			comment: &#34;Please check and edit the annotations.&#34;
+			text: &#34;Comments&#34;, &#34;&#34;
+		clicked = endPause: &#34;Next&#34;, 1
+		
+		editor TextGrid &#39;tg_name$&#39;
+			Close
+		endeditor
+
+		select TextGrid &#39;tg_name$&#39;
+		Write to text file... &#39;fulloutname$&#39;
+		plus Sound &#39;sound_name$&#39;
+		Remove
+
+		appendFileLine: &#34;&#39;dir_in$&#39;/edited_textgrids/annotation_log.txt&#34;, annotator$, tab$, name$, tab$, comments$
+	endif
+endfor
+
+################################################################################
+# End of script
+################################################################################
+</code></pre>
           </div>
 
           
