@@ -476,22 +476,240 @@ Remove
     </item>
     
     <item>
+      <title>Batch processing</title>
+      <link>https://hrbosker.github.io/resources/scripts/batch-processing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/scripts/batch-processing/</guid>
+      <description>&lt;p&gt;This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.&lt;/p&gt;
+&lt;p&gt;In its current form, the script reads each .wav file &lt;em&gt;plus&lt;/em&gt; accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled &amp;ldquo;vowel&amp;rdquo;. It then allows the user to apply a particular function to those intervals (such as: &lt;code&gt;Scale intensity: 65&lt;/code&gt;), after which it concatenates the individual intervals back together, and saves the output in an output directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; In its current form, the script does not run any function on its input. It really only serves as a starting point, including snippets of code we regularly use and now do not need to look up every time we want to do batch processing in Praat.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../batch-processing.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@ru.nl
+### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+
+	###&amp;gt;&amp;gt; This script is a starting point for batch processing a set of files.
+	###&amp;gt;&amp;gt;	The script basically reads files in an input directory and runs a
+	###&amp;gt;&amp;gt;	a to-be-defined function [see &amp;#39;Perform your function here&amp;#39; below]
+	###&amp;gt;&amp;gt;	and writes the output to an output directory . This saves me having
+	###&amp;gt;&amp;gt;	to look up how to create a file list, how to loop over files, etc.
+	###&amp;gt;&amp;gt;	
+	###&amp;gt;&amp;gt; Since this was basically intended for in-house use, I&amp;#39;ve added in bits
+	###&amp;gt;&amp;gt;	and pieces that I find useful to have ready-to-go, such as:
+	###&amp;gt;&amp;gt;	&amp;#39;beginPause&amp;#39; for manually specifying variables.
+
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where can the files be found?
+
+dir_in$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+
+### Where should the output files be saved?
+
+dir_out$ = &amp;#34;C:\Users\hanbos\mysounds\output&amp;#34;
+
+
+
+
+
+################################################################################
+### Let&amp;#39;s check whether the directories specified above exist...
+################################################################################
+
+### Let&amp;#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_in$,1)=&amp;#34;/&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&amp;#34;\&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_in$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_in$&amp;#39; was not found
+	exit Your input directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+## Now re-do this for the output directory:
+
+if right$(dir_out$,1)=&amp;#34;/&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&amp;#34;\&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_out$&amp;#39; was not found
+	exit Your output directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+###########################################################################
+##	FORM TO MANUALLY SPECIFY VARIABLES
+###########################################################################
+#beginPause: &amp;#34;Enter settings&amp;#34;
+#	comment: &amp;#34;Provide instructions here&amp;#34;
+#	real: &amp;#34;minPitch&amp;#34;, 70
+#	real: &amp;#34;maxPitch&amp;#34;, 250
+#	choice: &amp;#34;method&amp;#34;, 1
+#	   option: &amp;#34;Flip F0 contour&amp;#34;
+#	   option: &amp;#34;Expand/Contract F0 contour&amp;#34;
+#	   option: &amp;#34;Flatten F0 contour&amp;#34;
+#clicked = endPause (&amp;#34;Cancel&amp;#34;, &amp;#34;OK&amp;#34;, 2)
+###########################################################################
+###########################################################################
+
+
+
+
+
+## Let&amp;#39;s create a list of all the files in the input directory.
+
+Create Strings as file list: &amp;#34;list_of_files&amp;#34;, &amp;#34;&amp;#39;dir_in$&amp;#39;/*.wav&amp;#34;
+
+nfiles = Get number of strings
+if nfiles = 0
+	exit The directory &amp;#39;dir_in$&amp;#39; does not contain any .wav files.
+endif
+
+## Now we&amp;#39;ll loop through the list...
+
+for i from 1 to &amp;#39;nfiles&amp;#39;
+	select Strings list_of_files
+	
+	fileplusext$ = Get string... &amp;#39;i&amp;#39;
+	extposition = index(fileplusext$, &amp;#34;.wav&amp;#34;)
+	name$ = left$(fileplusext$, (&amp;#39;extposition&amp;#39;-1))
+
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;name$&amp;#39;.wav
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;name$&amp;#39;.TextGrid
+	plus Sound &amp;#39;name$&amp;#39;
+	Extract non-empty intervals... 1 no
+	
+	nSelected = numberOfSelected()
+
+	## Assign an object number to each object (e.g., 1-5),
+	## and save the id numbers of each object to an array.
+
+	for thisObject to nSelected
+		objectArray [&amp;#39;thisObject&amp;#39;] = selected(&amp;#39;thisObject&amp;#39;)
+	endfor
+
+	for j to nSelected
+		curr_objectId = objectArray [&amp;#39;j&amp;#39;]
+		select &amp;#39;curr_objectId&amp;#39;
+		curr_objectName$ = selected$(&amp;#34;Sound&amp;#34;)
+		
+		if curr_objectName$ = &amp;#34;vowel&amp;#34;
+
+			########################################################################
+			# Perform your function here!
+			#	Example: Scale intensity... 65
+			########################################################################
+
+		endif
+	endfor
+
+	for j from 1 to nSelected
+		curr_objectId = objectArray [&amp;#39;j&amp;#39;]
+		if j = 1
+			select &amp;#39;curr_objectId&amp;#39;
+		else
+			plus &amp;#39;curr_objectId&amp;#39;
+		endif
+	endfor
+	Concatenate recoverably
+
+	select Sound chain
+	Write to WAV file... &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;_manipulated.wav
+	select TextGrid chain
+	Write to text file... &amp;#39;dir_out$&amp;#39;\&amp;#39;name$&amp;#39;_manipulated.TextGrid
+
+	## Cleaning up...
+	for j from 1 to nSelected
+		curr_objectId = objectArray [&amp;#39;j&amp;#39;]
+		if j = 1
+			select &amp;#39;curr_objectId&amp;#39;
+		else
+			plus &amp;#39;curr_objectId&amp;#39;
+		endif
+	endfor
+	plus Sound chain
+	plus TextGrid chain
+	plus Sound &amp;#39;name$&amp;#39;
+	plus TextGrid &amp;#39;name$&amp;#39;
+	Remove
+
+endfor
+
+select Strings list_of_files
+Remove
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
       <title>Third how-to</title>
       <link>https://hrbosker.github.io/resources/how-to/howto3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/resources/how-to/howto3/</guid>
-      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 3
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Third script</title>
-      <link>https://hrbosker.github.io/resources/scripts/script3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/scripts/script3/</guid>
       <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
 &lt;p&gt;
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;

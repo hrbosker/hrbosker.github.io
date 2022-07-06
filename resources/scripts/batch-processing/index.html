@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This is the subtitle." />
+  <meta name="description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/script3/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/batch-processing/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/script3/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/batch-processing/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/script3/" />
-  <meta property="og:title" content="Third script | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This is the subtitle." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/batch-processing/" />
+  <meta property="og:title" content="Batch processing | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Third script | SPEAC | Hans Rutger Bosker</title>
+  <title>Batch processing | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e28e85cd58dc65b73e06e0315dee4e1d" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3b365b10c943f6e7d7f2a5d9dd414149" >
 
   
   
@@ -689,7 +689,7 @@
 
 
 
-  <li class="active"><a href="/resources/scripts/script3/">Third script</a></li>
+  <li class="active"><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
 
       
         </ul>
@@ -728,14 +728,232 @@
         <div class="docs-article-container">
           
 
-          <h1>Third script</h1>
+          <h1>Batch processing</h1>
 
           <div class="article-style">
-            <p>This is the subtitle.</p>
-<p>
-  <i class="fas fa-clock  pr-1 fa-fw"></i> 1-2 hours per week, for 8 weeks</p>
-<pre tabindex="0"><code>firstobject = 3
-</code></pre><p>Some disclaimer</p>
+            <p>This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
+<p>In its current form, the script reads each .wav file <em>plus</em> accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled &ldquo;vowel&rdquo;. It then allows the user to apply a particular function to those intervals (such as: <code>Scale intensity: 65</code>), after which it concatenates the individual intervals back together, and saves the output in an output directory.</p>
+<p><strong>NOTE:</strong> In its current form, the script does not run any function on its input. It really only serves as a starting point, including snippets of code we regularly use and now do not need to look up every time we want to do batch processing in Praat.</p>
+<blockquote>
+<p>You can also <a href="../batch-processing.praat">download the script</a> as a .praat file.</p>
+</blockquote>
+<pre tabindex="0"><code>################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@ru.nl
+### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+
+	###&gt;&gt; This script is a starting point for batch processing a set of files.
+	###&gt;&gt;	The script basically reads files in an input directory and runs a
+	###&gt;&gt;	a to-be-defined function [see &#39;Perform your function here&#39; below]
+	###&gt;&gt;	and writes the output to an output directory . This saves me having
+	###&gt;&gt;	to look up how to create a file list, how to loop over files, etc.
+	###&gt;&gt;	
+	###&gt;&gt; Since this was basically intended for in-house use, I&#39;ve added in bits
+	###&gt;&gt;	and pieces that I find useful to have ready-to-go, such as:
+	###&gt;&gt;	&#39;beginPause&#39; for manually specifying variables.
+
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where can the files be found?
+
+dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
+
+### Where should the output files be saved?
+
+dir_out$ = &#34;C:\Users\hanbos\mysounds\output&#34;
+
+
+
+
+
+################################################################################
+### Let&#39;s check whether the directories specified above exist...
+################################################################################
+
+### Let&#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&#39;t exist
+### (i.e., it won&#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_in$,1)=&#34;/&#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&#34;\&#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+### does *not* exist. We&#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+	printline The folder &#39;dir_in$&#39; was not found
+	exit Your input directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+## Now re-do this for the output directory:
+
+if right$(dir_out$,1)=&#34;/&#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&#34;\&#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+### does *not* exist. We&#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+	printline The folder &#39;dir_out$&#39; was not found
+	exit Your output directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+###########################################################################
+##	FORM TO MANUALLY SPECIFY VARIABLES
+###########################################################################
+#beginPause: &#34;Enter settings&#34;
+#	comment: &#34;Provide instructions here&#34;
+#	real: &#34;minPitch&#34;, 70
+#	real: &#34;maxPitch&#34;, 250
+#	choice: &#34;method&#34;, 1
+#	   option: &#34;Flip F0 contour&#34;
+#	   option: &#34;Expand/Contract F0 contour&#34;
+#	   option: &#34;Flatten F0 contour&#34;
+#clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
+###########################################################################
+###########################################################################
+
+
+
+
+
+## Let&#39;s create a list of all the files in the input directory.
+
+Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.wav&#34;
+
+nfiles = Get number of strings
+if nfiles = 0
+	exit The directory &#39;dir_in$&#39; does not contain any .wav files.
+endif
+
+## Now we&#39;ll loop through the list...
+
+for i from 1 to &#39;nfiles&#39;
+	select Strings list_of_files
+	
+	fileplusext$ = Get string... &#39;i&#39;
+	extposition = index(fileplusext$, &#34;.wav&#34;)
+	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
+
+	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
+	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
+	plus Sound &#39;name$&#39;
+	Extract non-empty intervals... 1 no
+	
+	nSelected = numberOfSelected()
+
+	## Assign an object number to each object (e.g., 1-5),
+	## and save the id numbers of each object to an array.
+
+	for thisObject to nSelected
+		objectArray [&#39;thisObject&#39;] = selected(&#39;thisObject&#39;)
+	endfor
+
+	for j to nSelected
+		curr_objectId = objectArray [&#39;j&#39;]
+		select &#39;curr_objectId&#39;
+		curr_objectName$ = selected$(&#34;Sound&#34;)
+		
+		if curr_objectName$ = &#34;vowel&#34;
+
+			########################################################################
+			# Perform your function here!
+			#	Example: Scale intensity... 65
+			########################################################################
+
+		endif
+	endfor
+
+	for j from 1 to nSelected
+		curr_objectId = objectArray [&#39;j&#39;]
+		if j = 1
+			select &#39;curr_objectId&#39;
+		else
+			plus &#39;curr_objectId&#39;
+		endif
+	endfor
+	Concatenate recoverably
+
+	select Sound chain
+	Write to WAV file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.wav
+	select TextGrid chain
+	Write to text file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.TextGrid
+
+	## Cleaning up...
+	for j from 1 to nSelected
+		curr_objectId = objectArray [&#39;j&#39;]
+		if j = 1
+			select &#39;curr_objectId&#39;
+		else
+			plus &#39;curr_objectId&#39;
+		endif
+	endfor
+	plus Sound chain
+	plus TextGrid chain
+	plus Sound &#39;name$&#39;
+	plus TextGrid &#39;name$&#39;
+	Remove
+
+endfor
+
+select Strings list_of_files
+Remove
+
+################################################################################
+# End of script
+################################################################################
+</code></pre>
           </div>
 
           
