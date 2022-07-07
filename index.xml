@@ -5,12 +5,274 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
       <link>https://hrbosker.github.io/</link>
     </image>
+    
+    <item>
+      <title>Manual McGurk effect</title>
+      <link>https://hrbosker.github.io/demos/manual-mcgurk/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/manual-mcgurk/</guid>
+      <description>&lt;h2 id=&#34;do-you-hear-voornaam-or-voornaam&#34;&gt;Do you hear &lt;em&gt;VOORnaam&lt;/em&gt; or &lt;em&gt;voorNAAM&lt;/em&gt;?&lt;/h2&gt;
+&lt;p&gt;In the video below, you&amp;rsquo;ll see a talker produce a Dutch word. Is he saying &lt;em&gt;VOORnaam&lt;/em&gt; (Eng. &amp;ldquo;first name&amp;rdquo;, with stress on the first syllable &lt;em&gt;VOOR-&lt;/em&gt;) or &lt;em&gt;voorNAAM&lt;/em&gt; (Eng. &amp;ldquo;respectable&amp;rdquo;, with stress on the second syllable &lt;em&gt;-NAAM&lt;/em&gt;). In other words: &lt;strong&gt;where do you hear the stress?&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/manual-mcgurk/voornaam_AV_swbeat_sw_4.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Spoiler: click here to reveal the video specs&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Audio:&lt;/strong&gt; &lt;em&gt;ambiguous&lt;/em&gt;; midway between &lt;em&gt;VOORnaam&lt;/em&gt; &amp;ndash; &lt;em&gt;voorNAAM&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lips:&lt;/strong&gt; head taken from a recording of &lt;em&gt;VOORnaam&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hands:&lt;/strong&gt; beat gesture aligned to the &lt;strong&gt;first&lt;/strong&gt; syllable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Now play the video below. &lt;strong&gt;Where do you hear the stress now?&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/manual-mcgurk/voornaam_AV_wsbeat_sw_4.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Spoiler: click here to reveal the video specs&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Audio:&lt;/strong&gt; &lt;em&gt;ambiguous&lt;/em&gt;; midway between &lt;em&gt;VOORnaam&lt;/em&gt; &amp;ndash; &lt;em&gt;voorNAAM&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lips:&lt;/strong&gt; head taken from a recording of &lt;em&gt;VOORnaam&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hands:&lt;/strong&gt; beat gesture aligned to the &lt;strong&gt;second&lt;/strong&gt; syllable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;explanation&#34;&gt;Explanation&lt;/h2&gt;
+&lt;p&gt;The audio in these videos is perfectly identical: it has been manipulated to be ambiguous, falling roughly midway between &lt;em&gt;VOORnaam&lt;/em&gt; and &lt;em&gt;voorNAAM&lt;/em&gt;. The head of the talker is also the same: it has been copy-pasted from a video recording of the talker saying &lt;em&gt;VOORnaam&lt;/em&gt;. &lt;strong&gt;The only difference between these two videos is the timing of the hand gesture.&lt;/strong&gt; In the first clip, the talker produces a beat gesture on the &lt;em&gt;first&lt;/em&gt; syllable, while in the second video the talker gestures on the &lt;em&gt;second&lt;/em&gt; syllable. Our experiments show that this slight change in timing has major consequences for perception. When we ask a group of Dutch participants to indicate what word they hear the talker say, the majority reports hearing &lt;em&gt;VOORnaam&lt;/em&gt; in the first clip, but &lt;em&gt;voorNAAM&lt;/em&gt; in the second clip.&lt;/p&gt;
+&lt;h2 id=&#34;how-hands-help-us-hear&#34;&gt;How hands help us hear&lt;/h2&gt;
+&lt;p&gt;When we have a face-to-face conversation, we don&amp;rsquo;t only exchange sounds. We also move our head, hands, and body to the rhythm of the speech. &lt;em&gt;Beat gestures&lt;/em&gt; are relatively &amp;lsquo;simple&amp;rsquo; up-and-down hand gestures that are closely aligned to the rhythm of speech. They tend to fall on the stressed syllable in free-stress languages, such as English and Dutch. These videos demonstrate that people are sensitive to the timing of beat gestures, influencing lexical stress perception. In &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb&#34;&gt;Bosker &amp;amp; Peeters (2021)&lt;/a&gt;, this effect was termed the &lt;strong&gt;manual McGurk effect&lt;/strong&gt;. That is, just like seeing a talker close their lips can make you hear the sound /b/ in the classic McGurk effect (&lt;a href=&#34;https://www.nature.com/articles/264746a0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;McGurk &amp;amp; McDonald, 1976&lt;/a&gt;), so can the timing of hand gestures influence speech perception in the manual McGurk effect.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;The manual McGurk effect is the first demonstration of how the timing of hand gestures influences low-level speech perception. Even the simplest flicks-of-the-hands that do not convey any particular meaning of themselves can shape what words you hear. This promises that these seemingly unimportant hand gestures contribute meaningfully to audiovisual speech intelligibility. Perhaps &amp;rsquo;enriching&amp;rsquo; our speech with carefully timed gestures can help our audience understand our spoken message, particularly in challenging listening conditions, such as in noise.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/david-peeters/&#34;&gt;David Peeters&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2021).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb/&#34;&gt;Beat gestures influence which speech sounds you hear&lt;/a&gt;.
+  &lt;em&gt;Proceedings of the Royal Society B: Biological Sciences, 288&lt;/em&gt;, 20202419, doi:10.1098/rspb.2020.2419.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3243428_3/component/file_3280864/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2021-procroysocb/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/b7kue/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1098/rspb.2020.2419&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2022).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2022-sp/&#34;&gt;Visible lexical stress cues on the face do not influence audiovisual speech perception&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2022&lt;/em&gt; (ed. S. Frota, M. Cruz, and M. Vigário), 259-263, doi:10.21437/SpeechProsody.2022-53.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3387404_1/component/file_3387405/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2022-sp/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/um7ph&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.21437/SpeechProsody.2022-53&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2022). Audiovisual perception of lexical stress: Beat gestures are stronger visual cues for lexical stress than visible articulatory cues on the face. &lt;em&gt;PsyArXiv Preprints&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.31234/osf.io/y9jck&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.31234/osf.io/y9jck&lt;/a&gt;, data:&lt;a href=&#34;https://osf.io/4d9w5/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://osf.io/4d9w5/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>First how-to</title>
@@ -210,6 +472,331 @@ endfor
 # End of script
 ################################################################################
 &lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Laurel or Yanny?</title>
+      <link>https://hrbosker.github.io/demos/laurel-yanny/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/laurel-yanny/</guid>
+      <description>&lt;h2 id=&#34;same-audio-different-perception&#34;&gt;Same audio, different perception&lt;/h2&gt;
+&lt;p&gt;In May 2018, social media exploded after the surfacing of &lt;a href=&#34;https://twitter.com/CloeCouture/status/996218489831473152&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;an audio clip&lt;/a&gt; that some perceived as &lt;em&gt;Laurel&lt;/em&gt;, but others as &lt;em&gt;Yanny&lt;/em&gt;. &lt;strong&gt;Listen and decide for yourself:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+&lt;p&gt;#Laurelgate was quickly seen as the auditory version of &lt;a href=&#34;https://en.wikipedia.org/wiki/The_dress&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#TheDress&lt;/a&gt;, a photo going viral in 2015 of a white and gold dress, or was it black and blue? But how fixed is this divide between individuals? &lt;strong&gt;Can we turn #Yannists into #Laurelites, and vice versa?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;higher-vs-lower-frequencies&#34;&gt;Higher vs. lower frequencies&lt;/h2&gt;
+&lt;p&gt;Acoustic analysis of the original clip suggests that the higher frequencies (&amp;gt;1000 Hz) resembled the word &lt;em&gt;Yanny&lt;/em&gt;, but the lower frequencies (&amp;lt;1000 Hz) are more like &lt;em&gt;Laurel&lt;/em&gt;. This can be seen in the figure at the top of this page, where the upper part of the middle panel (&lt;em&gt;Original&lt;/em&gt;) is more like the right panel (&lt;em&gt;Yanny&lt;/em&gt;), but the lower part is more like the left panel (&lt;em&gt;Laurel&lt;/em&gt;). This is best demonstrated by artificially emphasizing/attenuating the higher vs. lower frequencies in the audio clip.&lt;/p&gt;
+&lt;p&gt;In these sounds, we gradually attenuate (&lt;em&gt;~turn down&lt;/em&gt;) the higher frequencies while we simultaneously emphasize (&lt;em&gt;~turn up&lt;/em&gt;) the lower frequencies. &lt;strong&gt;Play the sounds below, can you hear &lt;em&gt;Laurel&lt;/em&gt; turning into &lt;em&gt;Yanny&lt;/em&gt;?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S4.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S5.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S8.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S9.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S10.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Click here for audio specs&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Middle clip:&lt;/strong&gt; original Laurel/Yanny clip&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Manipulation:&lt;/strong&gt; filtered by 10 bandpass filters (with center frequencies: 31.5, 63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000 Hz; using a Hann window with a roll-off width of 20, 20, 40, 80, 100, 100, 100, 100, 100, 100 Hz, respectively). Opposite intensity manipulation for high (&amp;gt;1000 Hz) vs. low (&amp;lt;1000 Hz) frequency bands in steps of 6 dB.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Top clip:&lt;/strong&gt; -18 dB attenuation for higher frequency bands, +18 dB emphasis for lower frequency bands.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bottom clip:&lt;/strong&gt; +18 dB emphasis for higher frequency bands, -18 dB attenuation for lower frequency bands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;OK, so we can guide what people hear by artificially editing the higher vs. lower frequencies in the clip. &lt;strong&gt;But can we also make someone hear one and the same clip differently?&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;lets-add-laurels-telephone-number&#34;&gt;Let&amp;rsquo;s add Laurel&amp;rsquo;s telephone number&lt;/h2&gt;
+&lt;p&gt;The perception of speech sounds is influenced by the surrounding acoustic context. The same sound can be perceived differently when, for instance, the acoustics of a preceding sentence are changed. Below, you will hear the original Laurel/Yanny clip, but this time preceded by a telephone number: 496-0356. In the first clip, we filtered out (&lt;em&gt;~removed&lt;/em&gt;) the lower frequencies in the telephone number leaving only the high frequency content. In the second clip, we filtered out the higher frequencies leaving only the low frequency content. Note: the Laurel/Yanny clip itself is identical in the two audios. &lt;strong&gt;Do you hear a different name after each telephone number?&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/hi_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/lo_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+&lt;h2 id=&#34;numbing-your-ears&#34;&gt;Numbing your ears&lt;/h2&gt;
+&lt;p&gt;In a crowd-sourced experiment with &amp;gt;500 online participants, we found that the same people were more likely to report hearing &lt;em&gt;Laurel&lt;/em&gt; for the first clip, but &lt;em&gt;Yanny&lt;/em&gt; for the second clip. This is because the high-frequency content in the telephone number in the first clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following high-frequency content, thus making the lower frequencies stand out more, biasing towards perception &lt;em&gt;Laurel&lt;/em&gt;. And vice versa, the low-frequency content in the telephone number in the second clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following low-frequency content, thus making the higher frequencies stand out more, biasing perception towards &lt;em&gt;Yanny&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Click here for the results of the experiment&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa&#34;&gt;Bosker (2018, &lt;em&gt;JASA&lt;/em&gt;)&lt;/a&gt; showing people&amp;rsquo;s responses in panel C. The blue line shows the proportion of &lt;em&gt;Yanny&lt;/em&gt; responses after a high-pass filtered telephone number (~first clip above), which is higher than the red line illustrating people&amp;rsquo;s responses for the &lt;strong&gt;same Laurel/Yanny clips&lt;/strong&gt; after a low-pass filtered telephone number (~second clip above).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://asa.scitation.org/na101/home/literatum/publisher/aip/journals/content/jas/2018/jas.2018.144.issue-6/1.5070144/20181206/images/large/1.5070144.figures.online.f2.jpeg
+&#34; alt=&#34;Figure 1, Bosker 2018 JASA&#34; width=&#34;800&#34;/&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;These social media phenomena are great examples of how &lt;em&gt;our perception of the world is strongly context-dependent&lt;/em&gt;. What we perceive is &lt;strong&gt;not&lt;/strong&gt; wholly determined by the input signal alone, but also by the context in which the signal is perceived, including sounds heard previously, our expectations, who is talking, etc. As such, they highlight the subtle intricacies of human perception.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa/&#34;&gt;Putting Laurel and Yanny in context&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustic Society of America, 144&lt;/em&gt;(6), EL503-EL508, doi:10.1121/1.5070144.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/63wdh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5070144&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>
@@ -476,6 +1063,100 @@ Remove
     </item>
     
     <item>
+      <title>Repackaging speech</title>
+      <link>https://hrbosker.github.io/demos/repackaging/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/repackaging/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/oded-ghitza/&#34;&gt;Oded Ghitza&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-lcn/&#34;&gt;Entrained theta oscillations guide perception of subsequent speech: Behavioral evidence from rate normalization&lt;/a&gt;.
+  &lt;em&gt;Language, Cognition and Neuroscience,33&lt;/em&gt;(8), 955-967, doi:10.1080/23273798.2018.1439179.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2538752_11/component/file_2630351/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-lcn/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1080/23273798.2018.1439179&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Batch processing</title>
       <link>https://hrbosker.github.io/resources/scripts/batch-processing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -715,6 +1396,764 @@ Remove
   &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 3
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lombard speech</title>
+      <link>https://hrbosker.github.io/demos/lombard-speech/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/lombard-speech/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa/&#34;&gt;Talkers produce more pronounced amplitude modulations when speaking in noise&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustical Society of America, 143&lt;/em&gt;(2), EL121-EL126, doi:10.1121/1.5024404.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2537243_6/component/file_2554157/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5024404&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-jasa/&#34;&gt;Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustical Society of America, 147&lt;/em&gt;(2), 721-730, doi:10.1121/10.0000646.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3186181_3/component/file_3186182/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2020-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/10.0000646&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cocktail party listening</title>
+      <link>https://hrbosker.github.io/demos/cocktail-party/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/cocktail-party/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matthias-j.-sjerps/&#34;&gt;Matthias J. Sjerps&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/eva-reinisch/&#34;&gt;Eva Reinisch&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-scirep/&#34;&gt;Temporal contrast effects in human speech perception are immune to selective attention&lt;/a&gt;.
+  &lt;em&gt;Scientific Reports, 10&lt;/em&gt;, 5607, doi:10.1038/s41598-020-62613-8.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3214645_6/component/file_3251038/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2020-scirep/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/dp7ck/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1038/s41598-020-62613-8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Look and listen</title>
+      <link>https://hrbosker.github.io/demos/visual-world-paradigm/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/visual-world-paradigm/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/esperanza-badaya/&#34;&gt;Esperanza Badaya&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-corley/&#34;&gt;Martin Corley&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2021).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-discproc/&#34;&gt;Discourse markers activate their, like, cohort competitors&lt;/a&gt;.
+  &lt;em&gt;Discourse Processes, 58&lt;/em&gt;(9), 837-851, doi:10.1080/0163853X.2021.1924000.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3316633_4/component/file_3356284/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2021-discproc/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/rmj4e/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1080/0163853X.2021.1924000&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/marjolein-van-os/&#34;&gt;Marjolein van Os,&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/rik-does/&#34;&gt;Rik Does&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2019).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2019-jml/&#34;&gt;Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension&lt;/a&gt;.
+  &lt;em&gt;Journal of Memory and Language, 106&lt;/em&gt;, 189-202, doi:10.1016/j.jml.2019.02.006.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3029110_7/component/file_3038833/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2019-jml/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/5y2e6/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.jml.2019.02.006&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jml/&#34;&gt;Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’&lt;/a&gt;.
+  &lt;em&gt;Journal of Memory and Language, 103&lt;/em&gt;, 191-209, doi:10.1016/j.jml.2018.08.004.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2640593_2/component/file_2640592/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-jml/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.jml.2018.08.004&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hugo-quene/&#34;&gt;Hugo Quené&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ted-sanders/&#34;&gt;Ted Sanders&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/nivja-h.-de-jong/&#34;&gt;Nivja H. de Jong&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2014).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2014-jml/&#34;&gt;Native ‘um’s elicit prediction of low-frequency referents, but non-native ‘um’s do not&lt;/a&gt;.
+  &lt;em&gt;Journal of Memory and Language, 75&lt;/em&gt;, 104-116, doi:10.1016/j.jml.2014.05.004.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_1900237_6/component/file_2034223/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2014-jml/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.jml.2014.05.004&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Your own speech changes your ears</title>
+      <link>https://hrbosker.github.io/demos/self/</link>
+      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/self/</guid>
+      <description>&lt;h2 id=&#34;title&#34;&gt;Title&lt;/h2&gt;
+&lt;p&gt;Text.&lt;/p&gt;
+&lt;h2 id=&#34;background-reading&#34;&gt;Background reading&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2017).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2017-jeplmc/&#34;&gt;How our own speech rate influences our perception of others&lt;/a&gt;.
+  &lt;em&gt;Journal of Experimental Psychology: Learning, Memory, and Cognition, 43&lt;/em&gt;(8), 1225-1238, doi:10.1037/xlm0000381.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2364495_7/component/file_2472957/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-2017-jeplmc/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1037/xlm0000381&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;/blockquote&gt;
+</description>
     </item>
     
     <item>

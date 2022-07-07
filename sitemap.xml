@@ -4,27 +4,47 @@
   
   
   <url>
-    <loc>https://hrbosker.github.io/resources/corpora/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/resources/corpora/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/demos/manual-mcgurk/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/resources/how-to/howto1/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/resources/scripts/save-all/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/scripts/annotate/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/demos/laurel-yanny/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/tools/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/resources/tools/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/resources/scripts/annotate/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/resources/how-to/howto2/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/scripts/batch-processing/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/demos/repackaging/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/scripts/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/resources/scripts/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/resources/scripts/batch-processing/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/resources/how-to/howto3/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/how-to/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/resources/how-to/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/resources/other-resources/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/demos/lombard-speech/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/demos/cocktail-party/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/resources/other-resources/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/demos/visual-world-paradigm/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/demos/self/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/demos/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/resources/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/</loc><lastmod>2022-07-07T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/publication-type/1/</loc><lastmod>2022-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -65,8 +85,6 @@
     <loc>https://hrbosker.github.io/author/ronny-bujok/</loc><lastmod>2022-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/tag/selective-adaptation/</loc><lastmod>2022-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://hrbosker.github.io/</loc><lastmod>2022-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/tag/spectral-tilt/</loc><lastmod>2022-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -534,6 +552,4 @@
   <url>
     <loc>https://hrbosker.github.io/tag/preface/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/research/</loc><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://hrbosker.github.io/resources/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://hrbosker.github.io/research/</loc><changefreq>weekly</changefreq></url></urlset>
