@@ -22,7 +22,7 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 {{% /callout %}}
 
 ## NiCLS
-> Bosker, H. R., & Cooke, M. (2020). Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech. *The Journal of the Acoustical Society of America, 147*: 721. doi:[10.1121/10.0000646](https://doi.org/10.1121/10.0000646). [［PDF］](https://pure.mpg.de/rest/items/item_3186181_3/component/file_3193680/content)
+> {{< cite page="/publication/bosker-etal-2020-jasa" view="4" >}}
 - **Nijmegen Corpus of Lombard Speech [NiCLS]**
 - {{< icon name="user" pack="fas" >}} Lead author: {{< mention "admin" >}}.
 - {{< icon name="link" pack="fas" >}} [https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6](https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6)
@@ -34,7 +34,7 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 <br />
 
 ## PiNCeR
-> Rodd, J., Bosker, H. R., Ernestus, M., Ten Bosch, L., & Meyer, A. S. (2019). PiNCeR: a corpus of cued-rate multiple picture naming in Dutch. *PsyArXiv*. doi:[10.31234/osf.io/wyc6h](https://doi.org/10.31234/osf.io/wyc6h).
+> {{< cite page="/publication/rodd-etal-2020-psychreview" view="4" >}}
 - **Picture Naming at Cued Rates [PiNCeR] corpus**
 - {{< icon name="user" pack="fas" >}} Lead author: Joe Rodd.
 - {{< icon name="link" pack="fas" >}} [https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c](https://hdl.handle.net/1839/7c210d30-bb55-4cbe-9eeb-baf18570460c)
