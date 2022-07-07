@@ -43,6 +43,9 @@ main:
     PageRef: resources/other-resources/_index.md
     weight: 50
     parent: resources
+  - name: Demos
+    url: demos
+    weight: 65
   - name: Contact
     url: contact
     weight: 70
