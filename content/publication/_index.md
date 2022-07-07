@@ -29,5 +29,3 @@ Last updated: July 7, 2022
 
 <br />
 <br />
-<br />
-<br />
