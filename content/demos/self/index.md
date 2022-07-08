@@ -1,7 +1,7 @@
 ---
 title: Your own speech changes your ears
 summary: Your own speech rate influences what vowels you hear...
-date: '2022-07-07'
+date: '2022-07-11'
 weight: 70
 
 # show author profile at bottom of page?
@@ -22,7 +22,7 @@ show_breadcrumb: true
 
 Text.
 
-## Background reading
+## Relevant papers
 
 > {{< cite page="/publication/bosker-2017-jeplmc" view="4" >}}
 

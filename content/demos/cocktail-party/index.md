@@ -1,7 +1,7 @@
 ---
 title: Cocktail party listening
 summary: Trying to attend one talker, while ignoring others...
-date: '2022-07-07'
+date: '2022-07-11'
 weight: 50
 
 # show author profile at bottom of page?
@@ -22,6 +22,6 @@ show_breadcrumb: true
 
 Text.
 
-## Background reading
+## Relevant papers
 
 > {{< cite page="/publication/bosker-etal-2020-scirep" view="4" >}}

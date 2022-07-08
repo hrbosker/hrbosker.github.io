@@ -1,5 +1,5 @@
 ---
-title:
+title: Who we are
 subtitle:
 widget: blank
 headless: true
