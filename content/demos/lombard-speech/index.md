@@ -1,8 +1,9 @@
 ---
 title: Lombard speech
 summary: How speaking up changes your voice...
-date: '2022-07-07'
-weight: 40
+date: '2022-07-04'
+weight: 70
+show_date: false
 
 # show author profile at bottom of page?
 profile: false
@@ -69,10 +70,10 @@ In the clips above, you can clearly hear the difference between 'plain speech' a
 Speech perception studies have demonstrated that these 'vocal adjustments' people make when speaking in noise actually have a purpose: they make you more intelligible! When you take the plain and Lombard clips above, scale their intensities to be exactly the same, and then mix them with loud babble, this is what you get:
 
 - **PLAIN SPEECH in BABBLE** (SNR = -6 dB)
-{{< audio src="MKH800_19_0005.mp3" >}}
+{{< audio src="noise_plain_snr_m6.mp3" >}}
 
 - **LOMBARD SPEECH in BABBLE** (SNR = -6 dB)
-{{< audio src="MKH800_25_0005.mp3" >}}
+{{< audio src="noise_lombard_snr_m6.mp3" >}}
 
 You may experience that it's easier to pick out the male target talker from the babble in the second (Lombard) clip than in the first (plain) clip. Apparently, 'speaking up' actually helps!
 

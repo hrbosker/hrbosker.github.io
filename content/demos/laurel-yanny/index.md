@@ -1,8 +1,9 @@
 ---
 title: Laurel or Yanny?
 summary: Making you hear *Yanny* when previously you heard *Laurel*...
-date: '2022-07-07'
-weight: 20
+date: '2022-07-05'
+weight: 60
+show_date: false
 
 # show author profile at bottom of page?
 profile: false

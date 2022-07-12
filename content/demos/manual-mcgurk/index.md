@@ -1,8 +1,9 @@
 ---
 title: Manual McGurk effect
 summary: How hands help us hear...
-date: '2022-07-07'
+date: '2022-07-12'
 weight: 10
+show_date: false
 
 # show author profile at bottom of page?
 profile: false

@@ -1,8 +1,9 @@
 ---
 title: Look and listen
 summary: How your eyes betray what you think you hear...
-date: '2022-07-08'
-weight: 60
+date: '2022-07-06'
+weight: 50
+show_date: false
 
 # show author profile at bottom of page?
 profile: false
@@ -60,7 +61,13 @@ As mentioned before, speech is messy. We don't only produce hesitations and disf
 
 *And that can be hard.* Filler words share their sounds (*phonology*) with many other words. The filler 'like' shares its initial sounds with words such as 'lion', 'lime', 'lice', lightbulb', etc. Our experiments have shown that listeners are actually considering these similar-sounding words (*cohort competitor*) when encountering 'like'. When presented with displays with one 'cohort competitor' (e.g., lion) and three distractors, participants were biased towards looking at the lion upon hearing "...for the like...". This suggests that filler words, like "like" (see what I did there?), have an impact on the efficiency of word recognition ([Bosker et al., 2021](/publication/bosker-etal-2021-discproc)).
 
+## Why is this important?
+
+Eye-tracking can reveal the time-course of speech processing. It allows tracking people's gaze with millisecond precision, often without participants themselves being aware of their own looking behavior. As such, it can show *when in time* certain acoustic and/or visual cues influence speech perception. That kind of temporal information has for instance been used to discriminate between different models of word recognition.
+
 ## Relevant papers
+
+> {{< cite page="/publication/maslowski-etal-2020-jephpp" view="4" >}}
 
 > {{< cite page="/publication/bosker-etal-2021-discproc" view="4" >}}
 

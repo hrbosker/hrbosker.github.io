@@ -1,8 +1,9 @@
 ---
 title: Repackaging speech
 summary: Making unintelligible speech intelligible again...
-date: '2022-07-07'
+date: '2022-07-08'
 weight: 30
+show_date: false
 
 # show author profile at bottom of page?
 profile: false
