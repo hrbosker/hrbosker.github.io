@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 08 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Manual McGurk effect</title>
       <link>https://hrbosker.github.io/demos/manual-mcgurk/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 12 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/demos/manual-mcgurk/</guid>
       <description>&lt;h2 id=&#34;do-you-hear-voornaam-or-voornaam&#34;&gt;Do you hear &lt;em&gt;VOORnaam&lt;/em&gt; or &lt;em&gt;voorNAAM&lt;/em&gt;?&lt;/h2&gt;
 &lt;p&gt;In the video below, you&amp;rsquo;ll see a (randomly selected&amp;hellip;) talker say a Dutch word. Is he saying &lt;em&gt;VOORnaam&lt;/em&gt; (Eng. &amp;ldquo;first name&amp;rdquo;, with stress on the first syllable &lt;em&gt;VOOR-&lt;/em&gt;) or &lt;em&gt;voorNAAM&lt;/em&gt; (Eng. &amp;ldquo;respectable&amp;rdquo;, with stress on the second syllable &lt;em&gt;-NAAM&lt;/em&gt;).&lt;/p&gt;
@@ -483,14 +483,18 @@ endfor
     </item>
     
     <item>
-      <title>Laurel or Yanny?</title>
-      <link>https://hrbosker.github.io/demos/laurel-yanny/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/demos/laurel-yanny/</guid>
-      <description>&lt;h2 id=&#34;same-audio-different-perception&#34;&gt;Same audio, different perception&lt;/h2&gt;
-&lt;p&gt;In May 2018, social media exploded after the surfacing of &lt;a href=&#34;https://twitter.com/CloeCouture/status/996218489831473152&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;an audio clip&lt;/a&gt; that some perceived as &lt;em&gt;Laurel&lt;/em&gt;, but others as &lt;em&gt;Yanny&lt;/em&gt;. &lt;strong&gt;Listen and decide for yourself:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Laurel/Yanny &amp;ndash; [original]
+      <title>Conjuring up words that were never spoken</title>
+      <link>https://hrbosker.github.io/demos/conjuring-words/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/conjuring-words/</guid>
+      <description>&lt;h2 id=&#34;remember-this-one&#34;&gt;Remember this one?&lt;/h2&gt;
+&lt;p&gt;Do you remember this famous quote, starting at 00:15s?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Z9WDsgCIroE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This was Neil Armstrong, landing on the moon on July 20, 1969. But hold on, what is he saying exactly? Let&amp;rsquo;s listen to the first part of his famous quote:&lt;/p&gt;
 
 
 
@@ -507,221 +511,66 @@ endfor
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/firstpart_mono.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
-&lt;/p&gt;
+
+&lt;p&gt;Is it:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&amp;ldquo;one small step for man&amp;rdquo;, or:&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;one small step for &lt;strong&gt;a&lt;/strong&gt; man&amp;rdquo;?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Both transcripts are grammatically viable, but they mean different things. In (1), &amp;ldquo;man&amp;rdquo; is used as a synonym of &amp;ldquo;mankind&amp;rdquo;, while in (2) &amp;ldquo;man&amp;rdquo; is used with the meaning of &amp;ldquo;person&amp;rdquo;. Only the second transcript actually fits the remainder of the quote (&amp;quot;&amp;hellip;one giant leap for mankind&amp;quot;) and Neil Armstrong himself also claimed that he had uttered the second version (&lt;a href=&#34;https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0155975&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Baese-Berk et al., 2016&lt;/a&gt;). &lt;strong&gt;But how come people miss the &amp;ldquo;a&amp;rdquo; in the recording?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;speech-is-messy&#34;&gt;Speech is messy&lt;/h2&gt;
+&lt;p&gt;When we talk, we don&amp;rsquo;t produce &amp;lsquo;spaces&amp;rsquo; between words. Instead, we join all the words together, producing a connected stream of sound. This is especially true for function words, like &amp;ldquo;a&amp;rdquo;, &amp;ldquo;or&amp;rdquo;, &amp;ldquo;for&amp;rdquo;, and &amp;ldquo;and&amp;rdquo;. It is quite likely that Neil Armstrong intended to say &amp;ldquo;for &lt;strong&gt;a&lt;/strong&gt; man&amp;rdquo;, but in stringing together the sounds for the words, the &amp;ldquo;a&amp;rdquo; was &amp;rsquo;lost&amp;rsquo; in articulation. This is what speech scientists call &amp;lsquo;reductions&amp;rsquo; in speech.&lt;/p&gt;
+&lt;h2 id=&#34;taking-speech-rate-into-account&#34;&gt;Taking speech rate into account&lt;/h2&gt;
+&lt;p&gt;OK, so the &amp;ldquo;a&amp;rdquo; is &amp;lsquo;reduced&amp;rsquo; in the original pronunciation. But human perception is not only determined by the input signal alone. Instead, it is heavily context-dependent, taking into account such contextual factors as who is talking, why he is talking, and even how fast the speech is likely to come in!&lt;/p&gt;
+&lt;p&gt;Evidence for this comes from &amp;lsquo;context effects&amp;rsquo;, whereby for instance the acoustic characteristics of a preceding sentence can influence what you hear next. Let&amp;rsquo;s take &lt;strong&gt;speech rate&lt;/strong&gt; for example. If you hear someone say &amp;ldquo;That&amp;rsquo;s one small step&amp;hellip;&amp;rdquo; at a really fast tempo, it is very likely that the next few words will be spoken at a fast rate too. And conversely: if someone happens to speak at a slow rate, the next few sounds will likely be slow too. This means people are likely to interpret the next few sounds &lt;em&gt;in line with the speech rate&lt;/em&gt; of the preceding sentence.&lt;/p&gt;
+&lt;h2 id=&#34;conjuring-up-the-a&#34;&gt;Conjuring up the &amp;ldquo;a&amp;rdquo;&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s see if we can make the &amp;ldquo;a&amp;rdquo; in Neil Armstrong&amp;rsquo;s quote appear and disappear by playing around with the speech rate of &lt;em&gt;only the surrounding speech&lt;/em&gt;. Note that &lt;strong&gt;we&amp;rsquo;re not changing anything about the &amp;ldquo;for (a)&amp;rdquo; part&lt;/strong&gt; of the audio clip (highlighted in red in video below). All we&amp;rsquo;ll do is speed up (compressed by 2) or slow down (compressed by 0.5) the surrounding parts of the recording. &lt;strong&gt;Do you hear &amp;ldquo;for man&amp;rdquo; or &amp;ldquo;for a man&amp;rdquo;?&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/ratenorm.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Click here to access the audio from the video&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;blockquote&gt;
+&lt;p&gt;ORIGINAL CLIP&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;#Laurelgate was quickly seen as the auditory version of &lt;a href=&#34;https://en.wikipedia.org/wiki/The_dress&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#TheDress&lt;/a&gt;, a photo going viral in 2015 of a white and gold dress, or was it black and blue? But how fixed is this divide between individuals? &lt;strong&gt;Can we turn #Yannists into #Laurelites, and vice versa?&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;higher-vs-lower-frequencies&#34;&gt;Higher vs. lower frequencies&lt;/h2&gt;
-&lt;p&gt;Acoustic analysis of the original clip suggests that the higher frequencies (&amp;gt;1000 Hz) resembled the word &lt;em&gt;Yanny&lt;/em&gt;, but the lower frequencies (&amp;lt;1000 Hz) are more like &lt;em&gt;Laurel&lt;/em&gt;. This can be seen in the figure at the top of this page, where the upper part of the middle panel (&lt;em&gt;Original&lt;/em&gt;) is more like the right panel (&lt;em&gt;Yanny&lt;/em&gt;), but the lower part is more like the left panel (&lt;em&gt;Laurel&lt;/em&gt;). This is best demonstrated by artificially emphasizing/attenuating the higher vs. lower frequencies in the audio clip.&lt;/p&gt;
-&lt;p&gt;In these sounds below, we gradually attenuate (&lt;em&gt;~turn down&lt;/em&gt;) the higher frequencies while we simultaneously emphasize (&lt;em&gt;~turn up&lt;/em&gt;) the lower frequencies. &lt;strong&gt;Play the sounds below, can you hear &lt;em&gt;Laurel&lt;/em&gt; turning into &lt;em&gt;Yanny&lt;/em&gt;?&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S4.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/firstpart_mono.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S5.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S8.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S9.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S10.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
-  &lt;summary&gt;&lt;em&gt;Click here for audio specs&lt;/em&gt;&lt;/summary&gt;
-  &lt;p&gt;&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Middle clip:&lt;/strong&gt; original Laurel/Yanny clip&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Manipulation:&lt;/strong&gt; filtered by 10 bandpass filters (with center frequencies: 31.5, 63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000 Hz; using a Hann window with a roll-off width of 20, 20, 40, 80, 100, 100, 100, 100, 100, 100 Hz, respectively). Inverse intensity manipulation for high (&amp;gt;1000 Hz) vs. low (&amp;lt;1000 Hz) frequency bands in steps of 6 dB.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Top clip:&lt;/strong&gt; -18 dB attenuation for higher frequency bands, +18 dB emphasis for lower frequency bands.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Bottom clip:&lt;/strong&gt; +18 dB emphasis for higher frequency bands, -18 dB attenuation for lower frequency bands.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;CONTEXT SLOWED DOWN&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/firstpart_slow.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CONTEXT SPED UP&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/firstpart_fast.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
 &lt;/p&gt;
 &lt;/details&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;OK, so we can guide what people hear by artificially editing the higher vs. lower frequencies in the clip. &lt;strong&gt;But can we also make someone hear one and the same clip differently?&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;lets-add-laurels-telephone-number&#34;&gt;Let&amp;rsquo;s add Laurel&amp;rsquo;s telephone number&lt;/h2&gt;
-&lt;p&gt;The perception of speech sounds is influenced by the surrounding acoustic context. The same sound can be perceived differently when, for instance, the acoustics of a preceding sentence are changed. Below, you will hear the original Laurel/Yanny clip, but this time preceded by a telephone number: &lt;em&gt;496-0356&lt;/em&gt;. In the first clip, we filtered out (&lt;em&gt;~removed&lt;/em&gt;) the lower frequencies in the telephone number leaving only the high frequency content. In the second clip, we filtered out the higher frequencies leaving only the low frequency content. Note: the Laurel/Yanny clip itself is identical in the two audios. &lt;strong&gt;Do you hear a different name after each telephone number?&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;High-pass&lt;/strong&gt; filtered telephone number + Laurel/Yanny
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/hi_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Low-pass&lt;/strong&gt; filtered telephone number + Laurel/Yanny
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/lo_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;numbing-your-ears&#34;&gt;Numbing your ears&lt;/h2&gt;
-&lt;p&gt;In a crowd-sourced experiment with &amp;gt;500 online participants, we found that the same people were more likely to report hearing &lt;em&gt;Laurel&lt;/em&gt; for the first clip, but &lt;em&gt;Yanny&lt;/em&gt; for the second clip. This is because the high-frequency content in the telephone number in the first clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following high-frequency content, thus making the lower frequencies stand out more, biasing perception towards &lt;em&gt;Laurel&lt;/em&gt;. And vice versa, the low-frequency content in the telephone number in the second clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following low-frequency content, thus making the higher frequencies stand out more, biasing perception towards &lt;em&gt;Yanny&lt;/em&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
-  &lt;summary&gt;&lt;em&gt;Really? Convince me&amp;hellip;&lt;/em&gt;&lt;/summary&gt;
-  &lt;p&gt;&lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa&#34;&gt;Bosker (2018, &lt;em&gt;JASA&lt;/em&gt;)&lt;/a&gt; showing people&amp;rsquo;s responses in panel C. The blue line shows the proportion of &lt;em&gt;Yanny&lt;/em&gt; responses after a high-pass filtered telephone number (~first clip above), which is higher than the red line illustrating people&amp;rsquo;s responses for the &lt;strong&gt;same Laurel/Yanny clips&lt;/strong&gt; after a low-pass filtered telephone number (~second clip above).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://asa.scitation.org/na101/home/literatum/publisher/aip/journals/content/jas/2018/jas.2018.144.issue-6/1.5070144/20181206/images/large/1.5070144.figures.online.f2.jpeg
-&#34; alt=&#34;Figure 1, Bosker 2018 JASA&#34; width=&#34;800&#34;/&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;/p&gt;
-&lt;/details&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-happened-there&#34;&gt;What happened there?&lt;/h2&gt;
+&lt;p&gt;Most listeners will report hearing &amp;ldquo;for man&amp;rdquo; in the bottom clip, with the slowed-down context, but &amp;ldquo;for &lt;strong&gt;a&lt;/strong&gt; man&amp;rdquo; in the top clip, with the sped-up context. Notably, these clips have the exact same &amp;ldquo;for a&amp;rdquo; part; they only differ in the speech rate of the surrounding context. The slow context makes listeners predict that the &amp;ldquo;for (a)&amp;rdquo; part was uttered at a slow rate too. But this critical &amp;ldquo;for (a)&amp;rdquo; does not contain a really slow &amp;ldquo;a&amp;rdquo;, so people &amp;lsquo;miss&amp;rsquo; the function word. However, in a fast context, listeners expect the critical &amp;ldquo;for (a)&amp;rdquo; to be uttered at a fast rate. This &amp;ldquo;for (a)&amp;rdquo; does indeed (kinda) match a really fast and short &amp;ldquo;a&amp;rdquo;, so people are more likely to report hearing &amp;ldquo;for &lt;strong&gt;a&lt;/strong&gt; man&amp;rdquo;.&lt;/p&gt;
 &lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
-&lt;p&gt;These social media phenomena are great examples of how &lt;em&gt;our perception of the world is strongly context-dependent&lt;/em&gt;. What we perceive is &lt;em&gt;not&lt;/em&gt; wholly determined by the input signal alone, but also by the context in which the signal is perceived, including the sounds heard previously, our prior expectations, who is talking, etc. etc. As such, they highlight the subtle intricacies of human perception.&lt;/p&gt;
+&lt;p&gt;Context effects abound in perception, and so they also surface in speech perception. People interpret speech sounds differently depending on the surrounding speech rate, formants, and perceived pitch. But even non-acoustic aspects of the context are taken into account: people hear a sound differently depending on the talker&amp;rsquo;s gender, the talker&amp;rsquo;s hand gestures, one&amp;rsquo;s own preceding speech, and there&amp;rsquo;s even reports that a stuffed toy seen in the background can change what you hear (&lt;a href=&#34;https://www.degruyter.com/document/doi/10.1515/ling.2010.027/html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hay &amp;amp; Drager, 2010&lt;/a&gt;). All these phenomena together shape human speech perception. So if we want Automatic Speech Recognition (the Siri&amp;rsquo;s, Cortana&amp;rsquo;s, and Alexa&amp;rsquo;s of this world) to approach human-like behavior, we need to know each and every aspect that defines what words we (think we) hear. Oh, and apparently it also helps extraterrestrial communication.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
 
@@ -749,9 +598,9 @@ endfor
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
-  (2018).
-  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa/&#34;&gt;Putting Laurel and Yanny in context&lt;/a&gt;.
-  &lt;em&gt;The Journal of the Acoustic Society of America, 144&lt;/em&gt;(6), EL503-EL508, doi:10.1121/1.5070144.
+  (2017).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2017-jeplmc/&#34;&gt;How our own speech rate influences our perception of others&lt;/a&gt;.
+  &lt;em&gt;Journal of Experimental Psychology: Learning, Memory, and Cognition, 43&lt;/em&gt;(8), 1225-1238, doi:10.1037/xlm0000381.
   
   &lt;p&gt;
 
@@ -768,25 +617,97 @@ endfor
 
 
 
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2364495_7/component/file_2472957/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
 &lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
-        data-filename=&#34;/publication/bosker-2018-jasa/cite.bib&#34;&gt;
+        data-filename=&#34;/publication/bosker-2017-jeplmc/cite.bib&#34;&gt;
   Cite
 &lt;/a&gt;
 
 
 
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1037/xlm0000381&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
   
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2017).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2017-app/&#34;&gt;Accounting for rate-dependent category boundary shifts in speech perception&lt;/a&gt;.
+  &lt;em&gt;Attention, Perception &amp;amp; Psychophysics, 79&lt;/em&gt;, 333-343, doi:10.3758/s13414-016-1206-4.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
   
     
   
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/63wdh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  Dataset
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2342414_8/component/file_2398345/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-2017-app/cite.bib&#34;&gt;
+  Cite
 &lt;/a&gt;
 
 
@@ -799,7 +720,9 @@ endfor
 
 
 
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5070144&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13414-016-1206-4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
@@ -1082,7 +1005,7 @@ Remove
     <item>
       <title>Repackaging speech</title>
       <link>https://hrbosker.github.io/demos/repackaging/</link>
-      <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/demos/repackaging/</guid>
       <description>&lt;h2 id=&#34;how-fast-can-your-ears-go&#34;&gt;How fast can your ears go?&lt;/h2&gt;
 &lt;p&gt;Listen to this clip of a talker saying the telephone number &lt;em&gt;496-0356&lt;/em&gt;&amp;hellip;&lt;/p&gt;
@@ -1689,19 +1612,27 @@ Remove
     </item>
     
     <item>
-      <title>Lombard speech</title>
-      <link>https://hrbosker.github.io/demos/lombard-speech/</link>
+      <title>Cocktail party listening</title>
+      <link>https://hrbosker.github.io/demos/cocktail-party/</link>
       <pubDate>Thu, 07 Jul 2022 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/demos/lombard-speech/</guid>
-      <description>&lt;h2 id=&#34;lets-do-a-little-test&#34;&gt;Let&amp;rsquo;s do a little test&amp;hellip;&lt;/h2&gt;
-&lt;p&gt;First, let&amp;rsquo;s take care of your audio settings:&lt;/p&gt;
+      <guid>https://hrbosker.github.io/demos/cocktail-party/</guid>
+      <description>&lt;h2 id=&#34;a-very-dull-cocktail-party&#34;&gt;A very dull cocktail party&lt;/h2&gt;
+&lt;p&gt;In everday life, we often encounter situations where there&amp;rsquo;s more than just one talker speaking, like having a conversation in a busy bar, listening to a presenter at a crowded poster session, or talking to someone on the phone while walking on the street. Somehow our brain has little trouble honing in on that one talker we want to attend to, while ignoring others. &lt;strong&gt;How do we that?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Speech researchers like ourselves tend to investigate this research question by creating terribly dull &amp;lsquo;cocktail parties&amp;rsquo;. These cocktail parties include one listener, two talkers (A and B), and a lamentable lack of any cocktails. Still, such a situation does allow the researcher to play with particular auditory and visual cues to see if that helps or hinders the listener to attend to Talker A and ignore Talker B.&lt;/p&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-0&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Why call this a &amp;lsquo;cocktail party&amp;rsquo; in the first place?&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;a href=&#34;https://asa.scitation.org/doi/abs/10.1121/1.1907229&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Colin Cherry&lt;/a&gt; came up with &amp;rsquo;the cocktail party problem&amp;rsquo; in 1953: &amp;ldquo;how do we recognize what one person is saying when others are speaking at the same time&amp;rdquo;. His experiments involved playing speech from two different talkers over the same speaker, covering such topics as &amp;ldquo;the really complex nature of the causes and uses of birds&amp;rsquo; colors&amp;rdquo; and about how &amp;ldquo;religious convictions, legal systems, and politics have been so successful in accomplishing their aims&amp;rdquo;. How prof. Cherry arrived at the term &amp;lsquo;cocktail party&amp;rsquo; in light of these topics remains an outright mystery. &lt;a href=&#34;https://www.youtube.com/watch?v=mCx4T8MKbjk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Scientists and parties&amp;hellip;&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;the-time-between-your-ears&#34;&gt;The time between your ears&lt;/h2&gt;
+&lt;p&gt;One such cue is the &lt;em&gt;interaural time difference&lt;/em&gt; (ITD). This is the difference in arrival time of a sound between two ears. Imagine Talker A is talking on your left, while Talker B is talking on your right. Their speech needs to travel through the air before reaching your ears, which takes (a very short amount of) time. Their opposite locations in space mean that the speech of Talker A will hit your left ear a fraction of a second earlier than your right ear. Likewise, the speech of Talker B will hit your right ear earlier than your left ear. Remarkably, your brain can use this difference in arrival time (ITD) to locate speakers in space, helping you to separate the speech from Talker A from the speech from Talker B.&lt;/p&gt;
+&lt;p&gt;We can try to construct a situation where ITD is the &lt;em&gt;only cue&lt;/em&gt; to speakers&amp;rsquo; locations in space, creating a &lt;em&gt;virtual auditory scene&lt;/em&gt;:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;put on your headphones/ear buds/speakers&lt;/li&gt;
-&lt;li&gt;turn your volume way down&lt;/li&gt;
-&lt;li&gt;play this sound&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Put on your headphones/ear buds&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do not use speakers&lt;/strong&gt;; this works better with headphones&lt;/li&gt;
+&lt;li&gt;Let&amp;rsquo;s take two recordings: one from a female Google, another from a male Alexa&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;SOME WHITE NOISE&amp;hellip;
+&lt;p&gt;&lt;strong&gt;FEMALE GOOGLE&lt;/strong&gt;
 
 
 
@@ -1718,21 +1649,71 @@ Remove
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/whitenoise.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/female_g_left.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+&lt;strong&gt;MALE ALEXA&lt;/strong&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/male_a_right.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;hellip;and adjust your volume until it&amp;rsquo;s at a &lt;strong&gt;loud but still comfortable&lt;/strong&gt; level.&lt;/li&gt;
+&lt;li&gt;Now let&amp;rsquo;s simply mix these two recordings:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;OK, now we&amp;rsquo;ll do a short reading test:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;play the video below&lt;/li&gt;
-&lt;li&gt;you&amp;rsquo;ll see a counter counting down from 3&amp;hellip;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and then it will present a simple sentence on screen&lt;/li&gt;
-&lt;li&gt;your task is simply to &lt;strong&gt;read out the sentence &lt;em&gt;aloud&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Ready? Go!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;GOOGLE/ALEXA MIX&lt;/strong&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/multitalker_mid.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;When listening to this mixture, we can already notice three things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;They&amp;rsquo;re lying.&lt;/em&gt; In defiance of their words, the positioning of the two talkers in (virtual) space is acutally identical. Most listeners would judge the two talkers as being positioned &amp;lsquo;right in front of them&amp;rsquo;, or even &amp;rsquo;talking inside their heads&amp;rsquo;. That is because &lt;em&gt;both voices reach both of your ears instantaneously&lt;/em&gt;. The audio clip is a mono file with only one channel, containing the mixed speech from both talkers. The browser sends this single channel to both sides of your headphones (if all went well&amp;hellip;), so the female speech reaches your left ear at the same point in time as it reaches your right ear (ITD = 0 ms), and the same for the male speech. In reality, this hardly ever happens (if at all), unless a speaker is standing perfectly in front of you.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;Our brains are remarkable.&lt;/em&gt; Despite the unrealistic virtual positions of the two talkers, we can still freely direct our attention to the female talker (and ignore the male talker), or to the male talker (and ignore the female talker). Apparently, we can use other cues (i.e., other than ITDs) to attend one talker and ignore others, such as their (markedly different) pitch.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;This truly is a dull party&amp;hellip;&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;virtual-reality&#34;&gt;Virtual reality&lt;/h2&gt;
+&lt;p&gt;Now let&amp;rsquo;s see if we can move these two talkers around in virtual space. Imagine the female talker is on your left and the male is on your right. This would mean that the female speech reaches your left ear before it reaches your right ear. And vice versa: the male speech would reach your right ear before reaching your left.&lt;/p&gt;
+&lt;p&gt;We can mimick this by applying ITDs to the individual speech signals. First, we take the mono clip above and copy it to another channel, resulting in a stereo clip with two identical channels (see illustration in the clip below). Second, we take &lt;em&gt;the female speech&lt;/em&gt; (given in red below) and delay it &lt;em&gt;in the right channel&lt;/em&gt; by 0.0006 seconds = 0.6 milliseconds = 600 μs. Finally, we take &lt;em&gt;the male speech&lt;/em&gt; (in blue) and delay it &lt;em&gt;in the left channel&lt;/em&gt; by the same minute amount of time. Now we have a stereo clip with opposite ITDs for the two talkers!&lt;/p&gt;
+&lt;p&gt;In the clip below, you&amp;rsquo;ll first hear the &amp;lsquo;old&amp;rsquo; mixture we had initially, followed by the &amp;rsquo;new&amp;rsquo; clip with manipulated ITDs. &lt;strong&gt;Can you hear the difference?&lt;/strong&gt;&lt;/p&gt;
 
 
 
@@ -1749,133 +1730,16 @@ Remove
 
 
 &lt;video controls  &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/itd.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
-&lt;p&gt;Why thank you! OK, now let&amp;rsquo;s do this again. Make sure to &lt;strong&gt;keep wearing your headphones&lt;/strong&gt;, play the next video, and read out the sentence aloud.&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-&lt;video controls  &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test_noise.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;p&gt;&lt;em&gt;Surprise!&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&#34;whats-going-on&#34;&gt;What&amp;rsquo;s going on?&lt;/h2&gt;
-&lt;p&gt;Perhaps you noticed your voice sounding somewhat different the second time, when there was loud babble from 16 other talkers playing in your ears, compared to the first time (in quiet). This phenomenon is called &lt;strong&gt;Lombard speech&lt;/strong&gt; (or: &lt;em&gt;Lombard effect&lt;/em&gt;; &lt;em&gt;Lombard reflex&lt;/em&gt;). It&amp;rsquo;s the type of speech people produce when speaking in noise.&lt;/p&gt;
-&lt;p&gt;But perhaps you didn&amp;rsquo;t quite hear yourself all too well because it&amp;rsquo;s hard to listen to your own voice when there&amp;rsquo;s other sounds around. So here&amp;rsquo;s two clips from a male speaker of British English (and a rather posh one, if I may say so&amp;hellip;) giving you some really useful dietary advice. The first is from when he was &lt;strong&gt;speaking in quiet&lt;/strong&gt;: this is called &amp;lsquo;plain speech&amp;rsquo;. The second clip is a recording of the same sentence but this time the talker heard loud noise over headphones, &lt;strong&gt;speaking in noise&lt;/strong&gt;: &amp;lsquo;Lombard speech&amp;rsquo;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PLAIN SPEECH&lt;/strong&gt;
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_19_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;LOMBARD SPEECH&lt;/strong&gt;
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_25_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;retrieved from the &lt;a href=&#34;https://datashare.ed.ac.uk/handle/10283/343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Acted clear speech corpus&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&#34;what-is-lombard-speech&#34;&gt;What is Lombard speech?&lt;/h2&gt;
-&lt;p&gt;In the clips above, you can clearly hear the difference between &amp;lsquo;plain speech&amp;rsquo; and &amp;lsquo;Lombard speech&amp;rsquo;. Lombard speech sounds louder, higher pitched, is a little slower, with more pronounced higher frequencies, and clearer vowels. In our own research, we demonstrated that Lombard speech is also more rhythmic, having a stronger &amp;lsquo;beat&amp;rsquo; to it compared to plain speech (see &lt;a href=&#34;#relevant-papers&#34;&gt;refs&lt;/a&gt; below).&lt;/p&gt;
-&lt;h2 id=&#34;lombard-speech-rulez&#34;&gt;Lombard speech rulez&lt;/h2&gt;
-&lt;p&gt;Speech perception studies have demonstrated that these &amp;lsquo;vocal adjustments&amp;rsquo; people make when speaking in noise actually have a purpose: they make you more intelligible! When you take the plain and Lombard clips above, scale their intensities to be exactly the same, and then mix them with loud babble, this is what you get:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;PLAIN SPEECH in BABBLE&lt;/strong&gt; (SNR = -6 dB)
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_19_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;LOMBARD SPEECH in BABBLE&lt;/strong&gt; (SNR = -6 dB)
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-&lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_25_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
-&lt;/audio&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;You may experience that it&amp;rsquo;s easier to pick out the male target talker from the babble in the second (Lombard) clip than in the first (plain) clip. Apparently, &amp;lsquo;speaking up&amp;rsquo; actually helps!&lt;/p&gt;
+&lt;p&gt;This is quite a different experience:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Now they&amp;rsquo;re finally speaking the truth!&lt;/em&gt; While in the first mixture (with ITD = 0 ms) the two talkers sound as coming from the same central position, in the second mixture (with ITD = 600 μs) you should have heard &lt;strong&gt;the female voice on your left and the male voice on your right&lt;/strong&gt;. Note, however, that this &lt;em&gt;does not mean&lt;/em&gt; that &amp;rsquo;the female voice was in your left ear&amp;rsquo;. The speech from either talker was presented to &lt;em&gt;both your ears&lt;/em&gt; (see illustration of &amp;lsquo;L / R&amp;rsquo; channels in the clip). Your brain &amp;lsquo;constructed&amp;rsquo; the talkers&amp;rsquo; virtual positions based on the ITD.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Our brains are even more remarkable!&lt;/em&gt; Your brain told you that the female talker is on the left because it can pick up on less than a millisecond of a time difference!&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Can we get to the cocktails now?&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
-&lt;p&gt;Lombard speech is more intelligible in noise than plain speech. This means that speech researchers can &amp;lsquo;borrow&amp;rsquo; acoustic aspects of Lombard speech to boost speech intelligibility, for instance in hearing aids. So next time you wanna make sure your message comes across in that busy bar, you&amp;rsquo;d better boost your F0, raise your spectral tilt, and increase your vowel dispersion; got it?!&lt;/p&gt;
+&lt;p&gt;Speech perception is presumably the hardest in noisy listening conditions. Even if we manage to understand what our interlocutor is trying to say in the midst of all the other speech, it takes our brain considerable effort and resources to do so. Knowing which acoustic and visual cues help humans &amp;rsquo;tune in&amp;rsquo; to talkers (such as rhythm; Bosker &amp;amp; Cooke, &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa&#34;&gt;2018&lt;/a&gt;; &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-jasa&#34;&gt;2020&lt;/a&gt;) can inspire innovations in hearing aid technology and telephony. Likewise, knowing which acoustic aspects are hard to ignore for listeners (i.e., &amp;lsquo;immune&amp;rsquo; to selective attention, such as speech rate; Bosker et al., &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-scirep&#34;&gt;2020a&lt;/a&gt;; &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-app&#34;&gt;2020b&lt;/a&gt;) can motivate signal processing algorithms that aim to filter these acoustic properties from unattended talkers.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
 
@@ -1902,11 +1766,12 @@ Remove
 
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matthias-j.-sjerps/&#34;&gt;Matthias J. Sjerps&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/eva-reinisch/&#34;&gt;Eva Reinisch&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
-  (2018).
-  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa/&#34;&gt;Talkers produce more pronounced amplitude modulations when speaking in noise&lt;/a&gt;.
-  &lt;em&gt;The Journal of the Acoustical Society of America, 143&lt;/em&gt;(2), EL121-EL126, doi:10.1121/1.5024404.
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-scirep/&#34;&gt;Temporal contrast effects in human speech perception are immune to selective attention&lt;/a&gt;.
+  &lt;em&gt;Scientific Reports, 10&lt;/em&gt;, 5607, doi:10.1038/s41598-020-62613-8.
   
   &lt;p&gt;
 
@@ -1923,15 +1788,25 @@ Remove
 
 
 
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2537243_6/component/file_2554157/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3214645_6/component/file_3251038/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   PDF
 &lt;/a&gt;
 
 
 
 &lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
-        data-filename=&#34;/publication/bosker-etal-2018-jasa/cite.bib&#34;&gt;
+        data-filename=&#34;/publication/bosker-etal-2020-scirep/cite.bib&#34;&gt;
   Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/dp7ck/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
 &lt;/a&gt;
 
 
@@ -1944,9 +1819,99 @@ Remove
 
 
 
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1038/s41598-020-62613-8&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
 
 
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5024404&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matthias-j.-sjerps/&#34;&gt;Matthias J. Sjerps&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/eva-reinisch/&#34;&gt;Eva Reinisch&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-app/&#34;&gt;Spectral contrast effects are modulated by selective attention in ‘cocktail party’ settings&lt;/a&gt;.
+  &lt;em&gt;Attention, Perception &amp;amp; Psychophysics, 82&lt;/em&gt;, 1318-1332, doi:10.3758/s13414-019-01824-2.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3107080_5/component/file_3249634/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2020-app/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/3n5cv/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13414-019-01824-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
@@ -2051,13 +2016,96 @@ Remove
 
 
 &lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa/&#34;&gt;Talkers produce more pronounced amplitude modulations when speaking in noise&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustical Society of America, 143&lt;/em&gt;(2), EL121-EL126, doi:10.1121/1.5024404.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2537243_6/component/file_2554157/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5024404&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
 </description>
     </item>
     
     <item>
       <title>Look and listen</title>
       <link>https://hrbosker.github.io/demos/visual-world-paradigm/</link>
-      <pubDate>Fri, 08 Jul 2022 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 06 Jul 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/demos/visual-world-paradigm/</guid>
       <description>&lt;h2 id=&#34;listening-test&#34;&gt;Listening test&lt;/h2&gt;
 &lt;p&gt;In the video below, you&amp;rsquo;ll see a simple display with four objects. First, see if you know each of the four objects. Then play the video. You&amp;rsquo;ll hear a female voice asking you to press a button for one of the objects (i.e., click on it). While watching and listening, try to keep track of where your eyes go in the display&amp;hellip;&lt;/p&gt;
@@ -2148,7 +2196,101 @@ Remove
 &lt;h2 id=&#34;filler-words-can-be-misleading&#34;&gt;Filler words can be misleading&lt;/h2&gt;
 &lt;p&gt;As mentioned before, speech is messy. We don&amp;rsquo;t only produce hesitations and disfluencies, but also litter our speech with seemingly meaningless filler words, such as &amp;lsquo;you know&amp;rsquo;, &amp;lsquo;well&amp;rsquo;, and (worst of all) &amp;rsquo;like&amp;rsquo;. Our audience, in turn, is tasked with distilling from this chaos what we actually want to communicate.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;And that can be hard.&lt;/em&gt; Filler words share their sounds (&lt;em&gt;phonology&lt;/em&gt;) with many other words. The filler &amp;rsquo;like&amp;rsquo; shares its initial sounds with words such as &amp;rsquo;lion&amp;rsquo;, &amp;rsquo;lime&amp;rsquo;, &amp;rsquo;lice&amp;rsquo;, lightbulb&amp;rsquo;, etc. Our experiments have shown that listeners are actually considering these similar-sounding words (&lt;em&gt;cohort competitor&lt;/em&gt;) when encountering &amp;rsquo;like&amp;rsquo;. When presented with displays with one &amp;lsquo;cohort competitor&amp;rsquo; (e.g., lion) and three distractors, participants were biased towards looking at the lion upon hearing &amp;ldquo;&amp;hellip;for the like&amp;hellip;&amp;rdquo;. This suggests that filler words, like &amp;ldquo;like&amp;rdquo; (see what I did there?), have an impact on the efficiency of word recognition (&lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-discproc&#34;&gt;Bosker et al., 2021&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;Eye-tracking can reveal the time-course of speech processing. It allows tracking people&amp;rsquo;s gaze with millisecond precision, often without participants themselves being aware of their own looking behavior. As such, it can show &lt;em&gt;when in time&lt;/em&gt; certain acoustic and/or visual cues influence speech perception. That kind of temporal information has for instance been used to discriminate between different models of word recognition.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/merel-maslowski/&#34;&gt;Merel Maslowski&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/&#34;&gt;Eye-tracking the time course of distal and global speech rate effects&lt;/a&gt;.
+  &lt;em&gt;Journal of Experimental Psychology: Human Perception and Performance, 46&lt;/em&gt;(10), 1148-1163, doi:10.1037/xhp0000838.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3231520_4/component/file_3257762/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maslowski-etal-2020-jephpp/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/c9fyd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1037/xhp0000838&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
 &lt;blockquote&gt;
 
 
@@ -2489,6 +2631,706 @@ Remove
 
 
 &lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.jml.2014.05.004&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Laurel or Yanny?</title>
+      <link>https://hrbosker.github.io/demos/laurel-yanny/</link>
+      <pubDate>Tue, 05 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/laurel-yanny/</guid>
+      <description>&lt;h2 id=&#34;same-audio-different-perception&#34;&gt;Same audio, different perception&lt;/h2&gt;
+&lt;p&gt;In May 2018, social media exploded after the surfacing of &lt;a href=&#34;https://twitter.com/CloeCouture/status/996218489831473152&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;an audio clip&lt;/a&gt; that some perceived as &lt;em&gt;Laurel&lt;/em&gt;, but others as &lt;em&gt;Yanny&lt;/em&gt;. &lt;strong&gt;Listen and decide for yourself:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Laurel/Yanny &amp;ndash; [original]
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;#Laurelgate was quickly seen as the auditory version of &lt;a href=&#34;https://en.wikipedia.org/wiki/The_dress&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#TheDress&lt;/a&gt;, a photo going viral in 2015 of a white and gold dress, or was it black and blue? But how fixed is this divide between individuals? &lt;strong&gt;Can we turn #Yannists into #Laurelites, and vice versa?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;higher-vs-lower-frequencies&#34;&gt;Higher vs. lower frequencies&lt;/h2&gt;
+&lt;p&gt;Acoustic analysis of the original clip suggests that the higher frequencies (&amp;gt;1000 Hz) resembled the word &lt;em&gt;Yanny&lt;/em&gt;, but the lower frequencies (&amp;lt;1000 Hz) are more like &lt;em&gt;Laurel&lt;/em&gt;. This can be seen in the figure at the top of this page, where the upper part of the middle panel (&lt;em&gt;Original&lt;/em&gt;) is more like the right panel (&lt;em&gt;Yanny&lt;/em&gt;), but the lower part is more like the left panel (&lt;em&gt;Laurel&lt;/em&gt;). This is best demonstrated by artificially emphasizing/attenuating the higher vs. lower frequencies in the audio clip.&lt;/p&gt;
+&lt;p&gt;In these sounds below, we gradually attenuate (&lt;em&gt;~turn down&lt;/em&gt;) the higher frequencies while we simultaneously emphasize (&lt;em&gt;~turn up&lt;/em&gt;) the lower frequencies. &lt;strong&gt;Play the sounds below, can you hear &lt;em&gt;Laurel&lt;/em&gt; turning into &lt;em&gt;Yanny&lt;/em&gt;?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S4.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S5.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S8.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S9.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S10.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-8&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Click here for audio specs&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Middle clip:&lt;/strong&gt; original Laurel/Yanny clip&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Manipulation:&lt;/strong&gt; filtered by 10 bandpass filters (with center frequencies: 31.5, 63, 125, 250, 500, 1000, 2000, 4000, 8000, 16000 Hz; using a Hann window with a roll-off width of 20, 20, 40, 80, 100, 100, 100, 100, 100, 100 Hz, respectively). Inverse intensity manipulation for high (&amp;gt;1000 Hz) vs. low (&amp;lt;1000 Hz) frequency bands in steps of 6 dB.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Top clip:&lt;/strong&gt; -18 dB attenuation for higher frequency bands, +18 dB emphasis for lower frequency bands.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Bottom clip:&lt;/strong&gt; +18 dB emphasis for higher frequency bands, -18 dB attenuation for lower frequency bands.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;OK, so we can guide what people hear by artificially editing the higher vs. lower frequencies in the clip. &lt;strong&gt;But can we also make someone hear one and the same clip differently?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lets-add-laurels-telephone-number&#34;&gt;Let&amp;rsquo;s add Laurel&amp;rsquo;s telephone number&lt;/h2&gt;
+&lt;p&gt;The perception of speech sounds is influenced by the surrounding acoustic context. The same sound can be perceived differently when, for instance, the acoustics of a preceding sentence are changed. Below, you will hear the original Laurel/Yanny clip, but this time preceded by a telephone number: &lt;em&gt;496-0356&lt;/em&gt;. In the first clip, we filtered out (&lt;em&gt;~removed&lt;/em&gt;) the lower frequencies in the telephone number leaving only the high frequency content. In the second clip, we filtered out the higher frequencies leaving only the low frequency content. Note: the Laurel/Yanny clip itself is identical in the two audios. &lt;strong&gt;Do you hear a different name after each telephone number?&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;High-pass&lt;/strong&gt; filtered telephone number + Laurel/Yanny
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/hi_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Low-pass&lt;/strong&gt; filtered telephone number + Laurel/Yanny
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/lo_ambig.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;numbing-your-ears&#34;&gt;Numbing your ears&lt;/h2&gt;
+&lt;p&gt;In a crowd-sourced experiment with &amp;gt;500 online participants, we found that the same people were more likely to report hearing &lt;em&gt;Laurel&lt;/em&gt; for the first clip, but &lt;em&gt;Yanny&lt;/em&gt; for the second clip. This is because the high-frequency content in the telephone number in the first clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following high-frequency content, thus making the lower frequencies stand out more, biasing perception towards &lt;em&gt;Laurel&lt;/em&gt;. And vice versa, the low-frequency content in the telephone number in the second clip &lt;em&gt;&amp;rsquo;numbs your ears&amp;rsquo;&lt;/em&gt; for any following low-frequency content, thus making the higher frequencies stand out more, biasing perception towards &lt;em&gt;Yanny&lt;/em&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-11&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Really? Convince me&amp;hellip;&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa&#34;&gt;Bosker (2018, &lt;em&gt;JASA&lt;/em&gt;)&lt;/a&gt; showing people&amp;rsquo;s responses in panel C. The blue line shows the proportion of &lt;em&gt;Yanny&lt;/em&gt; responses after a high-pass filtered telephone number (~first clip above), which is higher than the red line illustrating people&amp;rsquo;s responses for the &lt;strong&gt;same Laurel/Yanny clips&lt;/strong&gt; after a low-pass filtered telephone number (~second clip above).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://asa.scitation.org/na101/home/literatum/publisher/aip/journals/content/jas/2018/jas.2018.144.issue-6/1.5070144/20181206/images/large/1.5070144.figures.online.f2.jpeg
+&#34; alt=&#34;Figure 1, Bosker 2018 JASA&#34; width=&#34;800&#34;/&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;These social media phenomena are great examples of how &lt;em&gt;our perception of the world is strongly context-dependent&lt;/em&gt;. What we perceive is &lt;em&gt;not&lt;/em&gt; wholly determined by the input signal alone, but also by the context in which the signal is perceived, including the sounds heard previously, our prior expectations, who is talking, etc. etc. As such, they highlight the subtle intricacies of human perception.&lt;/p&gt;
+&lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa/&#34;&gt;Putting Laurel and Yanny in context&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustic Society of America, 144&lt;/em&gt;(6), EL503-EL508, doi:10.1121/1.5070144.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/63wdh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5070144&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lombard speech</title>
+      <link>https://hrbosker.github.io/demos/lombard-speech/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/lombard-speech/</guid>
+      <description>&lt;h2 id=&#34;lets-do-a-little-test&#34;&gt;Let&amp;rsquo;s do a little test&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;First, let&amp;rsquo;s take care of your audio settings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;put on your headphones/ear buds/speakers&lt;/li&gt;
+&lt;li&gt;turn your volume way down&lt;/li&gt;
+&lt;li&gt;play this sound&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;SOME WHITE NOISE&amp;hellip;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/whitenoise.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;and adjust your volume until it&amp;rsquo;s at a &lt;strong&gt;loud but still comfortable&lt;/strong&gt; level.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;OK, now we&amp;rsquo;ll do a short reading test:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;play the video below&lt;/li&gt;
+&lt;li&gt;you&amp;rsquo;ll see a counter counting down from 3&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and then it will present a simple sentence on screen&lt;/li&gt;
+&lt;li&gt;your task is simply to &lt;strong&gt;read out the sentence &lt;em&gt;aloud&lt;/em&gt;&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ready? Go!&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;p&gt;Why thank you! OK, now let&amp;rsquo;s do this again. Make sure to &lt;strong&gt;keep wearing your headphones&lt;/strong&gt;, play the next video, and read out the sentence aloud.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test_noise.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;p&gt;&lt;em&gt;Surprise!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;whats-going-on&#34;&gt;What&amp;rsquo;s going on?&lt;/h2&gt;
+&lt;p&gt;Perhaps you noticed your voice sounding somewhat different the second time, when there was loud babble from 16 other talkers playing in your ears, compared to the first time (in quiet). This phenomenon is called &lt;strong&gt;Lombard speech&lt;/strong&gt; (or: &lt;em&gt;Lombard effect&lt;/em&gt;; &lt;em&gt;Lombard reflex&lt;/em&gt;). It&amp;rsquo;s the type of speech people produce when speaking in noise.&lt;/p&gt;
+&lt;p&gt;But perhaps you didn&amp;rsquo;t quite hear yourself all too well because it&amp;rsquo;s hard to listen to your own voice when there&amp;rsquo;s other sounds around. So here&amp;rsquo;s two clips from a male speaker of British English (and a rather posh one, if I may say so&amp;hellip;) giving you some really useful dietary advice. The first is from when he was &lt;strong&gt;speaking in quiet&lt;/strong&gt;: this is called &amp;lsquo;plain speech&amp;rsquo;. The second clip is a recording of the same sentence but this time the talker heard loud noise over headphones, &lt;strong&gt;speaking in noise&lt;/strong&gt;: &amp;lsquo;Lombard speech&amp;rsquo;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PLAIN SPEECH&lt;/strong&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_19_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LOMBARD SPEECH&lt;/strong&gt;
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/MKH800_25_0005.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;retrieved from the &lt;a href=&#34;https://datashare.ed.ac.uk/handle/10283/343&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Acted clear speech corpus&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;what-is-lombard-speech&#34;&gt;What is Lombard speech?&lt;/h2&gt;
+&lt;p&gt;In the clips above, you can clearly hear the difference between &amp;lsquo;plain speech&amp;rsquo; and &amp;lsquo;Lombard speech&amp;rsquo;. Lombard speech sounds louder, higher pitched, is a little slower, with more pronounced higher frequencies, and clearer vowels. In our own research, we demonstrated that Lombard speech is also more rhythmic, having a stronger &amp;lsquo;beat&amp;rsquo; to it compared to plain speech (see &lt;a href=&#34;#relevant-papers&#34;&gt;refs&lt;/a&gt; below).&lt;/p&gt;
+&lt;h2 id=&#34;lombard-speech-rulez&#34;&gt;Lombard speech rulez&lt;/h2&gt;
+&lt;p&gt;Speech perception studies have demonstrated that these &amp;lsquo;vocal adjustments&amp;rsquo; people make when speaking in noise actually have a purpose: they make you more intelligible! When you take the plain and Lombard clips above, scale their intensities to be exactly the same, and then mix them with loud babble, this is what you get:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PLAIN SPEECH in BABBLE&lt;/strong&gt; (SNR = -6 dB)
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/noise_plain_snr_m6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;LOMBARD SPEECH in BABBLE&lt;/strong&gt; (SNR = -6 dB)
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/noise_lombard_snr_m6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You may experience that it&amp;rsquo;s easier to pick out the male target talker from the babble in the second (Lombard) clip than in the first (plain) clip. Apparently, &amp;lsquo;speaking up&amp;rsquo; actually helps!&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;Lombard speech is more intelligible in noise than plain speech. This means that speech researchers can &amp;lsquo;borrow&amp;rsquo; acoustic aspects of Lombard speech to boost speech intelligibility, for instance in hearing aids. So next time you wanna make sure your message comes across in that busy bar, you&amp;rsquo;d better boost your F0, raise your spectral tilt, and increase your vowel dispersion; got it?!&lt;/p&gt;
+&lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa/&#34;&gt;Talkers produce more pronounced amplitude modulations when speaking in noise&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustical Society of America, 143&lt;/em&gt;(2), EL121-EL126, doi:10.1121/1.5024404.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2537243_6/component/file_2554157/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5024404&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/martin-cooke/&#34;&gt;Martin Cooke&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2020).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-jasa/&#34;&gt;Enhanced amplitude modulations contribute to the Lombard intelligibility benefit: Evidence from the Nijmegen Corpus of Lombard Speech&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustical Society of America, 147&lt;/em&gt;(2), 721-730, doi:10.1121/10.0000646.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3186181_3/component/file_3186182/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2020-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://hdl.handle.net/1839/21ee5744-b5dc-4eed-9693-c37e871cdaf6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/10.0000646&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
   DOI
 &lt;/a&gt;
 
