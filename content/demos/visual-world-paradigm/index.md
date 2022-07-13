@@ -31,7 +31,7 @@ OK, next video. It's the same display, but with a new audio recording. Have a lo
 
 {{< video src="vwp_disfluent.mp4" controls="yes" >}}
 
-Well, in this case, you may already have a hunch, right? The speaker was hesitating at the end of her utterance, wasn't she? Well, chances are this native speaker of British English won't have much trouble naming common objects, like lion, ear, or bike, would she? So could it be that she'll refer to the Italian moka pot in the top left?
+Well, in this case, you may already have a slight hunch, right? The speaker was hesitating at the end of her utterance, wasn't she? Well, chances are this native speaker of British English won't have much trouble naming common objects, like lion, ear, or bike, would she? So could it be that she'll refer to the Italian moka pot in the top left?
 
 ## Disfluencies help you predict what's coming up
 
@@ -39,7 +39,7 @@ Natural speech is messy. We stumble over words, lose our line of thought, and pr
 
 Interestingly, human listeners seem to be aware of this. In our experiments, we presented listeners with displays like the ones above together with spoken instructions to click on one of the objects. While people were watching/listening, we recorded where they were looking on the screen using eye-tracking (see lab photo below). This allowed us to track their gaze on a millisecond time scale as the utterance unfolds. Results showed that **when people heard the speaker hesitate, they were much more likely to look at a low-frequency object, like moka pot, compared to high-frequency objects** ([Bosker et al., 2014](/publication/bosker-etal-2014-jml)).
 
-<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mpi.nl%2Fsites%2Fdefault%2Ffiles%2F2019-03%2F18085-Eyetracking_8474_small1.jpg" alt="mpi labs eyetracking" width="400"/>
+{{< figure src="https://www.mpi.nl/sites/default/files/2019-03/18085-Eyetracking_8474_small1.jpg" caption="Eye-tracking lab at the MPI. (C) Max-Planck-Gesellschaft, https://www.mpi.nl/page/mpi-labs" width="600">}}
 
 ## OK, let's try again...
 

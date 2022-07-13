@@ -65,6 +65,10 @@ In the clip below, you'll first hear the 'old' mixture we had initially, followe
 
 {{< video src="itd.mp4" controls="yes" >}}
 
+{{< spoiler text="*But I unexpectedly hear the talkers in the wrong locations!*" >}}
+If you do hear the difference between the two clips in the video, but you incorrectly hear the female talker *on the right* and the male talker *on your left* in the second clip, perhaps you're wearing your headphones 'the wrong way around'...?!? (with L in your right ear, and vice versa?)
+{{< /spoiler >}}
+
 This is quite a different experience:
 1. *Now they're finally speaking the truth!* While in the first mixture (with ITD = 0 ms) the two talkers sound as coming from the same central position, in the second mixture (with ITD = 600 μs) you should have heard **the female voice on your left and the male voice on your right**. Note, however, that this *does not mean* that 'the female voice was in your left ear'. The speech from either talker was presented to *both your ears* (see illustration of 'L / R' channels in the clip). Your brain 'constructed' the talkers' virtual positions based on the ITD.
 2. *Our brains are even more remarkable!* Your brain told you that the female talker is on the left because it can pick up on less than a millisecond of a time difference!

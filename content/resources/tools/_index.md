@@ -17,9 +17,8 @@ date: '2022-07-07'
 
 {{< toc hide_on="xl" >}}
 
-## TSR
-*Table showing example TSR scores for various responses*
-{{< figure src="tokensortratio_table.jpg" >}}
+## Token Sort Ratio
+{{< figure src="tokensortratio_table.jpg" caption="Table showing example TSR scores for various responses" numbered="true" width="600" >}}
 > {{< cite page="/publication/bosker-2021-brm" view="4" >}}
 - **Token Sort Ratio**: automatically quantifying response accuracy for speech intelligiblity experiments.
 - {{< icon name="user" pack="fas" >}} Author: {{< mention "admin" >}}.
@@ -29,8 +28,7 @@ date: '2022-07-07'
 <br />
 
 ## PraatVSCode
-<img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="PraatVSCode screenshot example" width="600"/>
-
+{{< figure src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" caption="PraatVSCode syntax highlighting" numbered="true" width="600">}}
 - {{< icon name="user" pack="fas" >}} Author: {{< mention "orhun-ulusahin" >}}.
 - {{< icon name="link" pack="fas" >}} [https://github.com/orhunulusahin/praatvscode](https://github.com/orhunulusahin/praatvscode)
 - {{< icon name="circle-info" pack="fas" >}} Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code (see screenshot) that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
@@ -42,8 +40,7 @@ date: '2022-07-07'
 <br />
 
 ## POnSS
-<img src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13428-020-01449-6/MediaObjects/13428_2020_1449_Fig2_HTML.png?as=webp" alt="POnSS screenshot example" width="600"/>
-
+{{< figure src="https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13428-020-01449-6/MediaObjects/13428_2020_1449_Fig2_HTML.png?as=webp" caption="POnSS annotation workflow screenshots" numbered="true" width="600">}}
 > {{< cite page="/publication/rodd-etal-2021-brm" view="4" >}}
 - **Pipeline for Online Speech Segmentation [POnSS]**
 - {{< icon name="user" pack="fas" >}} Lead author: Joe Rodd.
