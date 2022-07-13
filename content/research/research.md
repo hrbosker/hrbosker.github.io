@@ -28,3 +28,7 @@ The work we do contributes to a better understanding of how multimodal spoken co
 ## How do we conduct our research?
 
 The kinds of behavioral experiments we run include (i) playing participants artificially manipulated videos with a speech categorization task (what's this word?); (ii) speech-in-noise intelligibility experiments (what’s this sentence?); (iii) various psycholinguistic paradigms such as repetition priming (e.g., lexical decision). We use eye-tracking to study the time-course of speech processing on a millisecond timescale (e.g., visual world paradigm). We also apply neuroimaging techniques (EEG, MEG, tACS) to uncover the neurobiological mechanisms involved in the temporal decoding of speech, with a particular focus on oscillatory dynamics.
+
+## Wanna know more?
+
+[Check out some of our demos](/demos/), showcasing the kinds of experiments we run...
