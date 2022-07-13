@@ -84,8 +84,14 @@
 &lt;blockquote&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
   &lt;summary&gt;&lt;em&gt;Really? Convince me&amp;hellip;&lt;/em&gt;&lt;/summary&gt;
-  &lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb&#34;&gt;Bosker &amp;amp; Peeters (2021)&lt;/a&gt;. In the bottom left panel, you see the proportion of &amp;lsquo;I hear stress on the first syllable&amp;rsquo; responses for when the beat gesture falls on the first syllable (blue line) or on the second syllable (red line). The blue line lies above the red line, indicating an overall bias to report more &amp;lsquo;stress on first syllable&amp;rsquo; responses when the gesture falls on the first vs. second syllable. The difference between the lines is sizable, averaging around 20%.&lt;/p&gt;
-&lt;img src=&#34;https://royalsocietypublishing.org/cms/asset/53082c59-4ac5-43d8-a411-9f5f5edda544/rspb20202419f01.jpg&#34; alt=&#34;Figure 1, Bosker &amp; Peeters 2021&#34; width=&#34;800&#34;/&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb&#34;&gt;Bosker &amp;amp; Peeters (2021)&lt;/a&gt;. In the bottom left panel, you see the proportion of &amp;lsquo;I hear stress on the first syllable&amp;rsquo; responses for when the beat gesture falls on the first syllable (blue line) or on the second syllable (red line). The blue line lies above the red line, indicating an overall bias to report more &amp;lsquo;stress on first syllable&amp;rsquo; responses when the gesture falls on the first vs. second syllable. The difference between the lines is sizable, averaging around 20%.&lt;/p&gt;
+&lt;figure  id=&#34;figure-figure-1-in-bosker--peeters-2021&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://royalsocietypublishing.org/cms/asset/53082c59-4ac5-43d8-a411-9f5f5edda544/rspb20202419f01.jpg&#34; alt=&#34;Figure 1 in Bosker &amp;amp; Peeters (2021)&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;800&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Figure 1 in Bosker &amp;amp; Peeters (2021)
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;/details&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;how-hands-help-us-hear&#34;&gt;How hands help us hear&lt;/h2&gt;
@@ -1732,6 +1738,10 @@ Remove
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/itd.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;But I unexpectedly hear the talkers in the wrong locations!&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;If you do hear the difference between the two clips in the video, but you incorrectly hear the female talker &lt;em&gt;on the right&lt;/em&gt; and the male talker &lt;em&gt;on your left&lt;/em&gt; in the second clip, perhaps you&amp;rsquo;re wearing your headphones &amp;rsquo;the wrong way around&amp;rsquo;&amp;hellip;?!? (with L in your right ear, and vice versa?)&lt;/p&gt;
+&lt;/details&gt;
 &lt;p&gt;This is quite a different experience:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;em&gt;Now they&amp;rsquo;re finally speaking the truth!&lt;/em&gt; While in the first mixture (with ITD = 0 ms) the two talkers sound as coming from the same central position, in the second mixture (with ITD = 600 μs) you should have heard &lt;strong&gt;the female voice on your left and the male voice on your right&lt;/strong&gt;. Note, however, that this &lt;em&gt;does not mean&lt;/em&gt; that &amp;rsquo;the female voice was in your left ear&amp;rsquo;. The speech from either talker was presented to &lt;em&gt;both your ears&lt;/em&gt; (see illustration of &amp;lsquo;L / R&amp;rsquo; channels in the clip). Your brain &amp;lsquo;constructed&amp;rsquo; the talkers&amp;rsquo; virtual positions based on the ITD.&lt;/li&gt;
@@ -2147,11 +2157,32 @@ Remove
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/visual-world-paradigm/vwp_disfluent.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
-&lt;p&gt;Well, in this case, you may already have a hunch, right? The speaker was hesitating at the end of her utterance, wasn&amp;rsquo;t she? Well, chances are this native speaker of British English won&amp;rsquo;t have much trouble naming common objects, like lion, ear, or bike, would she? So could it be that she&amp;rsquo;ll refer to the Italian moka pot in the top left?&lt;/p&gt;
+&lt;p&gt;Well, in this case, you may already have a slight hunch, right? The speaker was hesitating at the end of her utterance, wasn&amp;rsquo;t she? Well, chances are this native speaker of British English won&amp;rsquo;t have much trouble naming common objects, like lion, ear, or bike, would she? So could it be that she&amp;rsquo;ll refer to the Italian moka pot in the top left?&lt;/p&gt;
 &lt;h2 id=&#34;disfluencies-help-you-predict-whats-coming-up&#34;&gt;Disfluencies help you predict what&amp;rsquo;s coming up&lt;/h2&gt;
 &lt;p&gt;Natural speech is messy. We stumble over words, lose our line of thought, and produce tons of uhm&amp;rsquo;s and uh&amp;rsquo;s. Still, these kinds of &lt;em&gt;disfluencies&lt;/em&gt; don&amp;rsquo;t occur randomly throughout an utterance. We are much more likely to stumble before rarely occurring (low-frequency), novel (not mentioned before), and complex (long) words than we are before common and simple words.&lt;/p&gt;
 &lt;p&gt;Interestingly, human listeners seem to be aware of this. In our experiments, we presented listeners with displays like the ones above together with spoken instructions to click on one of the objects. While people were watching/listening, we recorded where they were looking on the screen using eye-tracking (see lab photo below). This allowed us to track their gaze on a millisecond time scale as the utterance unfolds. Results showed that &lt;strong&gt;when people heard the speaker hesitate, they were much more likely to look at a low-frequency object, like moka pot, compared to high-frequency objects&lt;/strong&gt; (&lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2014-jml&#34;&gt;Bosker et al., 2014&lt;/a&gt;).&lt;/p&gt;
-&lt;img src=&#34;https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.mpi.nl%2Fsites%2Fdefault%2Ffiles%2F2019-03%2F18085-Eyetracking_8474_small1.jpg&#34; alt=&#34;mpi labs eyetracking&#34; width=&#34;400&#34;/&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  id=&#34;figure-eye-tracking-lab-at-the-mpi-c-max-planck-gesellschaft-httpswwwmpinlpagempi-labs&#34;&gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://www.mpi.nl/sites/default/files/2019-03/18085-Eyetracking_8474_small1.jpg&#34; alt=&#34;Eye-tracking lab at the MPI. (C) Max-Planck-Gesellschaft, https://www.mpi.nl/page/mpi-labs&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;600&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;figcaption&gt;
+      Eye-tracking lab at the MPI. (C) Max-Planck-Gesellschaft, &lt;a href=&#34;https://www.mpi.nl/page/mpi-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.mpi.nl/page/mpi-labs&lt;/a&gt;
+    &lt;/figcaption&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;ok-lets-try-again&#34;&gt;OK, let&amp;rsquo;s try again&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s another video, again with the same display, but another audio recording. Once again, have a listen and see if you can tell which object the speaker will name:&lt;/p&gt;
 
