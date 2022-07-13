@@ -1,12 +1,12 @@
 ---
-title: 'Using fuzzy string matching for automated assessment of listener transcripts in speech intelligibility studies'
+title: 'Evidence for selective adaptation and recalibration in the perception of lexical stress'
 authors:
   - admin
 #author_notes:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
-date: '2021-01-01T00:00:00Z'
-doi: '10.3758/s13428-021-01542-4'
+date: '2022-01-01T00:00:00Z'
+doi: '10.1177/00238309211030307'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -18,28 +18,28 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Behavior Research Methods, 53*(5), 1945-1953, doi:10.3758/s13428-021-01542-4'
+publication: '*Language and Speech 65*(2), 472-490, doi:10.1177/00238309211030307'
 publication_short: ''
 
-abstract: Many studies of speech perception assess the intelligibility of spoken sentence stimuli by means of transcription tasks (‘type out what you hear’). The intelligibility of a given stimulus is then often expressed in terms of percentage of words correctly reported from the target sentence. Yet scoring the participants’ raw responses for words correctly identified from the target sentence is a time-consuming task, and hence resource-intensive. Moreover, there is no consensus among speech scientists about what specific protocol to use for the human scoring, limiting the reliability of human scores. The present paper evaluates various forms of fuzzy string matching between participants’ responses and target sentences, as automated metrics of listener transcript accuracy. We demonstrate that one particular metric, the token sort ratio, is a consistent, highly efficient, and accurate metric for automated assessment of listener transcripts, as evidenced by high correlations with human-generated scores (best correlation r = 0.940) and a strong relationship to acoustic markers of speech intelligibility. Thus, fuzzy string matching provides a practical tool for assessment of listener transcript accuracy in large-scale speech intelligibility studies. See https//tokensortratio.netlify.app for an online implementation.
+abstract: Individuals vary in how they produce speech. This variability affects both the segments (vowels  and consonants) and the suprasegmental properties of their speech (prosody). Previous literature  has demonstrated that listeners can adapt to variability in how different talkers pronounce the  segments of speech. This study shows that listeners can also adapt to variability in how talkers  produce lexical stress. Experiment 1 demonstrates a selective adaptation effect in lexical stress  perception- repeatedly hearing Dutch trochaic words biased perception of a subsequent lexical stress continuum towards more iamb responses. Experiment 2 demonstrates a recalibrationeffect in lexical stress perception- when ambiguous suprasegmental cues to lexical stress were disambiguated by lexical orthographic context as signaling a trochaic word in an exposure phase, Dutch participants categorized a subsequent test continuum as more trochee-like. Moreover, the selective adaptation and recalibration effects generalized to novel words, not encountered during exposure. Together, the experiments demonstrate that listeners also flexibly adapt to variability in the suprasegmental properties of speech, thus expanding our understanding of the utility of listener adaptation in speech perception. Moreover, the combined outcomes speak for an architecture of spoken word recognition involving abstract prosodic representations at a prelexical level of analysis.
 
 # Summary. An optional shortened abstract.
 #summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
-tags: 
-  - speech intelligibility
-  - fuzzy string matching
-  - transcription accuracy
-  - automated assessment
-  - token sort ratio
+tags:
+  - lexical stress
+  - recalibration
+  - selective adaptation
+  - suprasegmental cues
+  - prosody
 featured: false
 
 # links:
 # - name: ""
 #   url: ""
-url_pdf: 'https://pure.mpg.de/rest/items/item_3277028_4/component/file_3356415/content'
+url_pdf: 'https://pure.mpg.de/rest/items/item_3326273_3/component/file_3331549/content'
 url_code: ''
-url_dataset: 'https://osf.io/73dnj/'
+url_dataset: 'https://osf.io/dfjyn/'
 url_poster: ''
 url_project: ''
 url_slides: ''
