@@ -56,7 +56,7 @@
   
     
   
-  <meta name="description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file." />
+  <meta name="description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with several tiers, add boundaries delimiting individual words and phonemes in the recording, and save the annotations to a TextGrid file." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/annotate-in-praat/" />
@@ -293,7 +293,7 @@
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
   <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/annotate-in-praat/" />
   <meta property="og:title" content="...annotate in Praat | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with several tiers, add boundaries delimiting individual words and phonemes in the recording, and save the annotations to a TextGrid file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -741,7 +741,15 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
 
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#download">Download</a></li>
+    <li><a href="#create-a-textgrid">Create a TextGrid</a></li>
+    <li><a href="#zooming-in">Zooming in</a></li>
+    <li><a href="#segment-a-word">Segment a word</a></li>
+    <li><a href="#working-with-textgrids">Working with TextGrids</a></li>
+  </ul>
+</nav>
 
       
     </div>
@@ -759,22 +767,280 @@
           <div class="article-style">
             <div class="alert alert-note">
   <div>
-    We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file.
+    We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with several tiers, add boundaries delimiting individual words and phonemes in the recording, and save the annotations to a TextGrid file.
   </div>
 </div>
+<h2 id="download">Download</h2>
 <ul>
 <li>Download Praat:</li>
 <li><a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/</a></li>
 <li>This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe</li>
+<li>When you open Praat, two windows pop up. One is called Praat Objects (or: object window), and the other is called Praat Picture. Praat Objects is the most important interface for working with sound and annotations, while Praat Picture is where the figures you draw appear (e.g., waveforms or spectrograms) allowing you to save them as .png or .eps files. In most cases, you can ignore Praat Picture and close it.</li>
+<li>In the Objects window, there are fixed menus at the top (Praat, New, Open, Save) and bottom (Rename, Copy, Inspect, Info, Remove). On the right is a dynamic menu, which changes depending on which objects are selected (Sounds, TextGrids, Spectra, etc.).</li>
 </ul>
-<details class="spoiler "  id="spoiler-1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/objects_picture_hu1b3ccb0ffc57c9cfcac0c013fdd91d36_96046_1db0e33ff3626c79fe9e709016363b97.webp 400w,
+               /resources/how-to/annotate-in-praat/objects_picture_hu1b3ccb0ffc57c9cfcac0c013fdd91d36_96046_d3a280ba0c193eeb99a67f3e35a27fdc.webp 760w,
+               /resources/how-to/annotate-in-praat/objects_picture_hu1b3ccb0ffc57c9cfcac0c013fdd91d36_96046_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/objects_picture_hu1b3ccb0ffc57c9cfcac0c013fdd91d36_96046_1db0e33ff3626c79fe9e709016363b97.webp"
+               width="600"
+               height="472"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<details class="spoiler "  id="spoiler-2">
   <summary><em>Why is it called Praat anyway?</em></summary>
   <p><em>Praat</em> was created by Paul Boersma and David Weenink, two Dutch speech scientists from Amsterdam. The Dutch word &lsquo;praat&rsquo; <a href="https://translate.google.nl/?sl=nl&amp;tl=en&amp;text=praat&amp;op=translate" target="_blank" rel="noopener">/pra:t/</a> is the <a href="https://www.fon.hum.uva.nl/paul/papers/speakUnspeakPraat_glot2001.pdf" target="_blank" rel="noopener">imperative form</a> of the verb &rsquo;to speak&rsquo; (so <em>&ldquo;speak!&rdquo;</em>).</p>
 </details>
+<div class="alert alert-note">
+  <div>
+    Parts of this how-to are adapted from Aletheia Cui&rsquo;s really clear and helpful <a href="https://aletheiacui.github.io/tutorials/segmentation_with_praat.html" target="_blank" rel="noopener">Segmentation with Praat tutorial</a>, including many of the screenshots. Praat also has a <a href="http://www.fon.hum.uva.nl/praat/manual/Intro.html" target="_blank" rel="noopener">Praat manual</a> itself: it is available online and offline as part of the Praat software. In Praat, go to <em>Help &gt; Praat Intro</em>. However, the search function in Praat isn&rsquo;t great so often typing a question into Google is more helpful.
+  </div>
+</div>
+<h2 id="create-a-textgrid">Create a TextGrid</h2>
 <ul>
-<li>Text.</li>
-<li>Text2.</li>
+<li>Open a sound file: <em>Open &gt; Read from file&hellip;</em></li>
+<li>The file will show up as a Sound object in the object window, and upon opening will already automatically be selected (highlighted in blue)</li>
+<li>Create a TextGrid: <em>Annotate &gt; To TextGrid&hellip;</em></li>
+<li>Praat will then ask you for the names of tiers. Each TextGrid can have multiple tiers, combining for instance word-level annotations (longer intervals demarcating individual words), syllable-level annotations (shorter intervals demarcating the syllables inside the words), and phoneme-level annotations (short intervals demarcating the individual sounds).</li>
+<li>Tiers inside TextGrids come in two flavors: interval tiers and point tiers. Interval tiers allow you to add &lsquo;boundaries&rsquo; that demarcate certain acoustic events (words, syllables, phonemes), indicating where they are and how long they are. For word-level annotations in an interval tier, you&rsquo;d need two boundaries to demarcate a single word: one at its onset and another at its offset. Point tiers allow you to add &lsquo;points&rsquo; that identify certain individual time points, but not the intervals between time points. <strong>Interval tiers are the most commonly used type of tier</strong>, so we&rsquo;ll primarily focus on interval tiers.</li>
+<li>Enter the names of your interval tiers in the top field, separated by space (e.g., <code>word phoneme</code>), and click OK. If you want any of these to be point tiers instead of interval tiers, copy the name of the point tier in the second field (e.g., <code>word phoneme F1 F2</code> in the first field, defining <code>F1 F2</code> in the second field as point tiers).</li>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/to_tg_hu8ee2ec56f2975846d71d30f3dca084f2_98091_f4abe1f1146350bdac8c0a1107007309.webp 400w,
+               /resources/how-to/annotate-in-praat/to_tg_hu8ee2ec56f2975846d71d30f3dca084f2_98091_bf28b811b1fe8870296d1fb479840903.webp 760w,
+               /resources/how-to/annotate-in-praat/to_tg_hu8ee2ec56f2975846d71d30f3dca084f2_98091_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/to_tg_hu8ee2ec56f2975846d71d30f3dca084f2_98091_f4abe1f1146350bdac8c0a1107007309.webp"
+               width="600"
+               height="320"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>You&rsquo;ll find a new object appear in the object window, namely a(n empty) TextGrid object with the same name as the Sound object. Also, it is selected automatically (highlighted in blue).</li>
+<li>Select both the Sound object and the TextGrid object (clicking while holding [<em>SHIFT</em>] or [<em>CTRL</em>]) together, and click <em>View and Edit</em></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/view_edit_hu56544f61f252b41f9159be213f8b0a30_235320_cbed4e8850b60798b2bdcad2daa5757d.webp 400w,
+               /resources/how-to/annotate-in-praat/view_edit_hu56544f61f252b41f9159be213f8b0a30_235320_c4be26d213fa656f4455cddcfa1830d4.webp 760w,
+               /resources/how-to/annotate-in-praat/view_edit_hu56544f61f252b41f9159be213f8b0a30_235320_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/view_edit_hu56544f61f252b41f9159be213f8b0a30_235320_cbed4e8850b60798b2bdcad2daa5757d.webp"
+               width="600"
+               height="760"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>This will present a new window showing the waveform (oscillogram) and spectrogram of the Sound object, with the various tiers of the TextGrid appearing below them. You&rsquo;ll find the names for the various tiers (that you defined in the previous step) appear on the right.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/tg_window_hu0428fc244bf14a2c34e1b264ed061132_316880_b9bc643e46a7a99d148904814aab5011.webp 400w,
+               /resources/how-to/annotate-in-praat/tg_window_hu0428fc244bf14a2c34e1b264ed061132_316880_20d34257e7ce2e1f90664f56affc4110.webp 760w,
+               /resources/how-to/annotate-in-praat/tg_window_hu0428fc244bf14a2c34e1b264ed061132_316880_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/tg_window_hu0428fc244bf14a2c34e1b264ed061132_316880_b9bc643e46a7a99d148904814aab5011.webp"
+               width="600"
+               height="633"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<h2 id="zooming-in">Zooming in</h2>
+<ul>
+<li>Now you can start editing the TextGrid by adding &lsquo;boundaries&rsquo; (in interval tiers) and &lsquo;points&rsquo; (in point tiers). We&rsquo;ll first focus on word-level annotations, identifying the onset and offset of individual words.</li>
+<li>First zoom in to the part of the recording you&rsquo;d like to annotate. Click and drag inside the waveform to select a part and click <em>[sel]</em> or [<em>CTRL+N</em>] in the bottom left to zoom in to this part. It&rsquo;s often wise to select a rather generous interval around the word of interest. This allows you to then select the &rsquo;true&rsquo; onset and offset of the word with greater precision and without missing anything. You can also use <em>[all]</em> [<em>CTRL+A</em>] to view the entire sound file, and <em>[in]</em> [<em>CTRL+I</em>] and <em>[out]</em> [<em>CTRL+O</em>] to gradually zoom in and out.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/sel_huedf5541d0db3d0b2753ea11aa888fd67_176947_21ee33abf24dbb742eb443649866fb86.webp 400w,
+               /resources/how-to/annotate-in-praat/sel_huedf5541d0db3d0b2753ea11aa888fd67_176947_a5f25c4fc82b4660a1898882a355d3ab.webp 760w,
+               /resources/how-to/annotate-in-praat/sel_huedf5541d0db3d0b2753ea11aa888fd67_176947_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/sel_huedf5541d0db3d0b2753ea11aa888fd67_176947_21ee33abf24dbb742eb443649866fb86.webp"
+               width="600"
+               height="511"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<h2 id="segment-a-word">Segment a word</h2>
+<ul>
+<li>Now that you see the word in greater detail, we&rsquo;ll segment it.</li>
+<li>Click inside the waveform at the word onset and drag to the word offset. This will select the word inside the waveform. Hit [<em>CTRL+,</em>] to move the left boundary of the selection to a zero-crossing, [<em>CTRL+.</em>] to move the right boundary of the selection to a zero-crossing, and then [<em>ENTER</em>] to create an interval in the top tier of the TextGrid (top tier selected by default).</li>
+<li>Instead of adding an entire interval (i.e, two boundaries) in one go, you can also click on an individual time point in the waveform, hit [<em>CTRL+0</em>] to move to the nearest zero-crossing, and then hit [<em>ENTER</em>] to insert a single boundary.</li>
+<li>You can still adjust the boundaries by dragging them around with the mouse. However, there&rsquo;s no keyboard shortcut to move a pre-existing boundary to a zero-crossing: you&rsquo;ll have to do this manually by selecting it and going to <em>Boundary &gt; Move to nearest zero crossing</em>. Consequently, it&rsquo;s often easier to simply remove a boundary [<em>ALT + BACKSPACE</em>], click at the new location, hit [<em>CTRL+0</em>] and [<em>ENTER</em>] to place the new boundary.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/add_interval_huedf5541d0db3d0b2753ea11aa888fd67_256852_c899439b2b372b5d284cfe91e203ff8d.webp 400w,
+               /resources/how-to/annotate-in-praat/add_interval_huedf5541d0db3d0b2753ea11aa888fd67_256852_a4e66d305367484eceda033f848690db.webp 760w,
+               /resources/how-to/annotate-in-praat/add_interval_huedf5541d0db3d0b2753ea11aa888fd67_256852_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/add_interval_huedf5541d0db3d0b2753ea11aa888fd67_256852_c899439b2b372b5d284cfe91e203ff8d.webp"
+               width="600"
+               height="511"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<div class="alert alert-warning">
+  <div>
+    <p><strong>Always select time points at positive-going zero-crossings!</strong> This is particularly important when you want to extract intervals from a sound file and manipulate them (but less important if you only want to measure certain acoustic features, such as intensity or F0, without extracting/manipulating anything).</p>
+<details class="spoiler "  id="spoiler-0">
+  <summary><em>Why should I?</em></summary>
+  <p><p>Sound is a wave of air pressure. Imagine we have two pure tones of 440 Hz, but one starts at a positive-going zero-crossing (<code>phase = 0°</code>; left) and the other at a point of high air pressure (<code>phase = 1/2π</code>; right). If we then concatenate these two sounds, and play the concatenation, our speakers need to jump from 0 to 1 near instantaneously. This will result in an audible click. <strong>NOTE:</strong> concatenating two tones that both start at a zero-crossing, but one starts at a <em>positive-going</em> zero-crossing and the other at a <em>negative-going</em> zero-crossing, also results in audible artifacts. Therefore, it&rsquo;s advisable to consistently select time points at <em>positive-going zero-crossings</em>. If you want to manually inspect this, select a tiny time interval around a boundary in Praat and click <em>[sel]</em> [<em>CTRL+N</em>].</p>
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/zerocrossings_hu8e4c7e5c17898239679ca3733dbb2f58_176001_5d95f57179479331953ec77ec6b23a1a.webp 400w,
+               /resources/how-to/annotate-in-praat/zerocrossings_hu8e4c7e5c17898239679ca3733dbb2f58_176001_257acd0f02654029399740c75323263e.webp 760w,
+               /resources/how-to/annotate-in-praat/zerocrossings_hu8e4c7e5c17898239679ca3733dbb2f58_176001_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/zerocrossings_hu8e4c7e5c17898239679ca3733dbb2f58_176001_5d95f57179479331953ec77ec6b23a1a.webp"
+               width="600"
+               height="428"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+</details>
+  </div>
+</div>
+<ul>
+<li>The two boundaries you just added demarcate the word, but they also form the onset of the first phoneme, and the offset of the last phoneme inside the word. Extend the first boundary in the first <em>word</em> tier to the second <em>phoneme</em> tier by clicking on it (blue line turns red) and then click the small circle appearing just below it (inside the second tier). This will place a boundary in the second tier at the exact same time point as in the first tier.</li>
+<li>Now place additional individual boundaries at the onsets and offsets of the various phonemes inside the word in the second <em>phoneme</em> tier. First click anywhere on the second tier to select it, then click on a time point in the waveform, and hit [<em>ENTER</em>] to place a boundary.</li>
+<li>You can play intervals to verify if they are accurate. Click on an interval to select it and hit [<em>TAB</em>] to play it and [<em>ESCAPE</em>] to stop the playback. This is identical to clicking on the interval appearing in the first gray bar at the very bottom of the TextGrid window. Clicking on the second gray bar will play the visible window, while clicking on the third and last gray bar will play the entire sound.</li>
+<li>Now let&rsquo;s label the individual intervals. Click on an interval and simply type in a label. It will appear inside the interval. You can also edit it in the utmost top left of the TextGrid window.</li>
+<li>The final result could then look something like this:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/annotate-in-praat/pat_segmented_hu87f8ccd721fd1472408c416483e2ac11_509251_5315503b0fc7e11a0e63a548ba1dec05.webp 400w,
+               /resources/how-to/annotate-in-praat/pat_segmented_hu87f8ccd721fd1472408c416483e2ac11_509251_3935f0d40eb8664271d0acac9bd14f62.webp 760w,
+               /resources/how-to/annotate-in-praat/pat_segmented_hu87f8ccd721fd1472408c416483e2ac11_509251_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/annotate-in-praat/pat_segmented_hu87f8ccd721fd1472408c416483e2ac11_509251_5315503b0fc7e11a0e63a548ba1dec05.webp"
+               width="600"
+               height="511"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<h2 id="working-with-textgrids">Working with TextGrids</h2>
+<ul>
+<li>You can quickly scroll through TextGrids by clicking on an interval and then hitting [<em>ALT + →</em>] to see the next one, or [<em>ALT + ←</em>] to see the previous one. Similarly, use [<em>ALT + ↓</em>] and [<em>ALT + ↑</em>] to go up or down a tier.</li>
+<li>You can easily remove boundaries by selecting an interval and hitting [<em>ALT + BACKSPACE</em>]. This will remove the left boundary of the interval.</li>
+<li>If you want to remove multiple boundaries in a row, you hit [<em>ALT + BACKSPACE</em>], [<em>ALT + →</em>], [<em>ALT + BACKSPACE</em>], [<em>ALT + →</em>], etc.</li>
+</ul>
+<blockquote>
+<p>to do: add spoiler about how to code this in a script, with code</p>
+</blockquote>
 <p><em>Happy Praat&rsquo;ing!</em></p>
 
           </div>
