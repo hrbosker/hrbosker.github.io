@@ -1,12 +1,12 @@
 ---
 title: How to's
-linkTitle: How to's
+linkTitle: How to...
 summary: Guidelines and templates for research-related tasks
 type: book
 weight: 40
 
 # display table-of-contents for this particular page on the right-hand side?
-toc: true
+toc: false
 
 date: '2022-07-07'
 
@@ -22,21 +22,9 @@ date: '2022-07-07'
 The how-to's shared here are first and foremost intended as a **lab archive**, providing some starting ground for tasks and documents we often deal with. This means **they require customization** for each individual new project. *Use at your own risk!*
 {{% /callout %}}
 
-## Placeholder1
-
-Body text.
-
-<br />
-
-## List of available how-to's
+## So how do I...
 
 {{< list_children >}}
-
-<br />
-
-## Placeholder2
-
-Body text.
 
 <br />
 
