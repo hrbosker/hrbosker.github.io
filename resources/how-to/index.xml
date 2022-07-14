@@ -13,39 +13,542 @@
     </image>
     
     <item>
-      <title>First how-to</title>
-      <link>https://hrbosker.github.io/resources/how-to/howto1/</link>
+      <title>...record audio</title>
+      <link>https://hrbosker.github.io/resources/how-to/record-audio/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/how-to/howto1/</guid>
-      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;praatcode = 1
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+      <guid>https://hrbosker.github.io/resources/how-to/record-audio/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    We&amp;rsquo;ll cover making clean audio recordings in &lt;strong&gt;Audacity&lt;/strong&gt; and in &lt;strong&gt;SpeechRecorder&lt;/strong&gt;. Audacity is easy-to-use and perfect for making a single (long) recording of a speaker. SpeechRecorder presents individual word/sentence prompts to a speaker, saving each utterance separately.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;audacity&#34;&gt;Audacity&lt;/h2&gt;
+&lt;p&gt;Audacity is a free, open-source, and cross-platform audio software package. It is easy to use, very intuitive, and fast. It is particularly suited for making a single (long) recording of a speaker, after which you manually extract the relevant words/sentences from this raw recording.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download, install, and open Audacity:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.audacityteam.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.audacityteam.org/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;First check the sampling frequency. Typically, 48 kHz or 44.1 kHz will do just fine.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp 400w,
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_3ad6b5f589837d118005f71e66a94edd.webp 760w,
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Audacity&amp;rsquo;s default is to make &lt;em&gt;stereo&lt;/em&gt; recordings, with each recording containing two channels:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp 400w,
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_101079cc1c9588fccf33605617292340.webp 760w,
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;In most cases, it&amp;rsquo;s better to make &lt;em&gt;mono&lt;/em&gt; recordings (with only one channel) to make annotating and manipulating the speech a lot easier. Change the settings at the top to MONO:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp 400w,
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_2e6d7ff407a4e6ada78768b2c74fe77f.webp 760w,
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Then click the red button to start a recording&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp 400w,
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_623908e7d9c6dc88c31e511ed137b576.webp 760w,
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;hellip;which should look something like this:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;When you&amp;rsquo;re done recording, click the yellow square to stop.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp 400w,
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_fddef4143c77084bfe82d4e714971019.webp 760w,
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;405&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Do not SAVE projects&lt;/strong&gt; in Audacity, but instead &lt;strong&gt;EXPORT audio files&lt;/strong&gt;. Go to: &lt;em&gt;File &amp;gt; Export Audio&amp;hellip;&lt;/em&gt;, and then click the &amp;lsquo;Save as type&amp;rsquo; drop-down menu to select the file format. Select .wav for uncompressed (raw) audio which is best suited for speech manipulations, or .mp3 for compressed (processed) audio.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Audacity is also great for quickly converting a batch of .wav files to .mp3. Open Audacity, drag a selection of files from a folder into Audacity, and go to &lt;em&gt;File &amp;gt; Export Multiple&lt;/em&gt;. In the pop-up window, select &lt;em&gt;MP3 Files&lt;/em&gt; as &lt;code&gt;Export format&lt;/code&gt;, choose an &lt;code&gt;Export location&lt;/code&gt;, and keep the other defaults (in particular, &lt;code&gt;Split files based on:&lt;/code&gt; &lt;em&gt;Tracks&lt;/em&gt;; &lt;code&gt;Name files:&lt;/code&gt; &lt;em&gt;Using Label/Track Name&lt;/em&gt;). Click &lt;code&gt;Export&lt;/code&gt; and voila, you now have an .mp3 file for each .wav file.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h3 id=&#34;tips-n-tricks&#34;&gt;Tips n tricks&lt;/h3&gt;
+&lt;p&gt;But how to make recordings that are &amp;lsquo;clean&amp;rsquo;: with little noise and of good quality?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;For longer recordings, ask your speaker to sit in a relaxed position that they can keep up for a longer period of time. People typically tend to slouch during a recording, changing the distance between them and the table mic, thus changing the intensity of speech appearing early vs. later in your recording. If you ask your speaker to try to &amp;lsquo;already slouch a little&amp;rsquo;, this can help avoid large variability in intensity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Before recording your items, start a dummy recording and ask the speaker to count to 100. Then adjust the volume/sensitivity/gain of the microphone. You want the average intensity of the speech to fall roughly in between 0.5 and -0.5 in Audacity. So &lt;strong&gt;this is good&lt;/strong&gt;:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;This is &lt;strong&gt;risky&lt;/strong&gt; because it&amp;rsquo;s approaching 1 and -1:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp 400w,
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_43e0b7a1bda07f0f2168f38b12caab4d.webp 760w,
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;This is &lt;strong&gt;bad&lt;/strong&gt; because it&amp;rsquo;s outside 1 and -1.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp 400w,
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_6ce8cd8fb0a845cfdc5141be27f94f8c.webp 760w,
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;This is called &amp;lsquo;clippings&amp;rsquo; and it&amp;rsquo;s very well audible in the signal. These two audio clips contain the same telephone number, but the first is clean and the second has clippings:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;CLEAN
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/clean.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;WITH CLIPPINGS
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/clippings.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;When boosting the volume/sensitivity/gain of the microphone, be aware that &amp;ndash; by doing so &amp;ndash; you may actually be boosting the background noise too. It&amp;rsquo;s often preferable to move the location of the mic closer to the speaker compared to amplifying the input signal.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;When you need the mic to be particularly close to the speaker (e.g., when using a head-mounted mic), make sure &lt;strong&gt;the mic is not too close to the speakers lips&lt;/strong&gt; as that will introduce puffs of loud noise for many stop consonants. Better to aim for the chin!&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Why not ask the speaker to go through your list of items from top to bottom first, and then repeat all items from bottom to top? This will give you two recordings of each item, allowing you to select the best one. Moreover, items at the top and bottom of lists typically sound different from the rest. First items typically have loud intensity and raised pitch, while last items have low intensity and pitch. By switching the order of items, you may be able to circumvent some of these order effects.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chopping-up-the-recording&#34;&gt;Chopping up the recording&lt;/h3&gt;
+&lt;p&gt;When you&amp;rsquo;ve finished recording with Audacity, and have extracted the audio as a .wav file, you will then need to isolate the individual items (e.g., words or sentences) from that one long recording. There&amp;rsquo;s different solutions for this task:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Do it by hand.&lt;/strong&gt; Read the .wav file into Praat, create an empty TextGrid, and insert boundaries at the onset and offset of every item. Once you&amp;rsquo;re done, you select the Sound and TextGrid objects together in Praat, and select an option from the Extract menu, such as &lt;code&gt;Extract all intervals...&lt;/code&gt; or &lt;code&gt;Extract non-empty intervals...&lt;/code&gt; and save the individual items.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Go full automatic.&lt;/strong&gt; You can use a forced-aligner to find the words inside your recording. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; (for word- and phoneme-level annotations) or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt; (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;However&lt;/em&gt;, often your speaker wasn&amp;rsquo;t perfect, fluffing their lines, repeating items several times before getting it right, or chucking in a few coughs and &amp;lsquo;uhm&amp;rsquo;s here and there. In that case, automatic forced-alignment is suboptimal. In such (commonly occurring) cases, you could consider:&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Go semi-automatic&lt;/strong&gt;. Read your .wav file in Praat and click &lt;em&gt;Annotate &amp;gt; To TextGrid (silences)&amp;hellip;&lt;/em&gt;. Praat will then create a TextGrid for you, labeling silent intervals as &amp;lsquo;silence&amp;rsquo; and intervals with speech as &amp;lsquo;sounding&amp;rsquo;. You can then go through this TextGrid manually and&amp;hellip;
+&lt;ol&gt;
+&lt;li&gt;&amp;hellip;remove incorrectly detected &amp;lsquo;sounding&amp;rsquo; intervals&lt;/li&gt;
+&lt;li&gt;&amp;hellip;adjust the boundaries of individual intervals&lt;/li&gt;
+&lt;li&gt;&amp;hellip;label the intervals correctly&lt;/li&gt;
+&lt;li&gt;&amp;hellip;extract the intervals for saving and further analysis/manipulation.&lt;br&gt;
+(&lt;em&gt;actions (3) and (4) can be performed automatically using scripts in Praat&lt;/em&gt;).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp 400w,
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_a7f3916459fecd13582f4b7d6dfe0ef0.webp 760w,
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;I&amp;rsquo;ve found that the default settings for the &lt;code&gt;To TextGrid (silences)&lt;/code&gt; function are best adjusted to: &lt;code&gt;Minimum pitch (Hz) = 50&lt;/code&gt; (instead of the default 100) and &lt;code&gt;Silence threshold (dB) = -40&lt;/code&gt; (instead of the default -32). In my experience, this works considerably better especially for single-word recordings, but often also for full-sentence recordings.&lt;/p&gt;
+&lt;p&gt;Oh, and as I&amp;rsquo;m writing this, I see the latest versions of Praat have a new &lt;code&gt;To TextGrid (voice activity)&lt;/code&gt; function. My initial impression is that the default settings for this function perform comparable to the &amp;lsquo;adjusted&amp;rsquo; settings for &lt;code&gt;To TextGrid (silences)&lt;/code&gt; suggested above.&lt;/p&gt;
+&lt;h2 id=&#34;speechrecorder&#34;&gt;SpeechRecorder&lt;/h2&gt;
+&lt;p&gt;SpeechRecorder is also a free, open-source, and cross-platform audio software package. It takes a little more preparation to use it appropriately compared to Audacity, but an important advantage is that it allows users to &lt;strong&gt;efficiently record multiple individual items&lt;/strong&gt; (instead of one massively long recording). This means that the &amp;lsquo;chopping up recordings into items&amp;rsquo; part of the workflow can be (largely) skipped&amp;hellip; &lt;em&gt;but see &lt;a href=&#34;#trim-silence&#34;&gt;this advice&lt;/a&gt; below&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download, install, and open SpeechRecorder:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp 400w,
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_b4c17a9c98e2a20104ced09e325f85cb.webp 760w,
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to &lt;em&gt;Project &amp;gt; New&lt;/em&gt;, and enter a name for your project&lt;/li&gt;
+&lt;li&gt;The directory for the audio output is &lt;code&gt;C:/Users/hanbos/speechrecorder/[myProjectName]/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;In the &amp;lsquo;Speaker data&amp;rsquo; window that pops up, add a speaker by clicking &lt;em&gt;Add&lt;/em&gt; and then &lt;em&gt;Select&lt;/em&gt;.
+&lt;ul&gt;
+&lt;li&gt;If you have multiple talkers, you can add several speakers, and by selecting one of them, you add a speaker identifier to the filename of each audio output file.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Go to &lt;em&gt;Project &amp;gt; Preferences&lt;/em&gt; and find the &lt;em&gt;Recording&lt;/em&gt; tab to change the &lt;em&gt;Format&lt;/em&gt; settings, such as the sampling frequency (e.g., 44.1 or 48 kHz) and the number of channels (usually &lt;em&gt;mono&lt;/em&gt; so 1 channel).&lt;/li&gt;
+&lt;li&gt;Then go to &lt;em&gt;Script &amp;gt; Import text table&amp;hellip;&lt;/em&gt; and select a headerless tab-separated file with 2 columns:
+&lt;ol&gt;
+&lt;li&gt;filenames without extension (e.g., &lt;code&gt;item42_cacao_isolated&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;prompts (e.g., &lt;code&gt;cacao&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    You can easily create a .txt file like this in Excel. In Excel, enter filenames in one column and prompts in another column, select all cells from the two columns, copy them, and paste them into Notepad. If you save this as a .txt file, you will have a headerless tab-separated 2-column file.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;SpeechRecorder will then look something like this:&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp 400w,
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_f7788fcf60be0acbb6309b03e7971671.webp 760w,
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp&#34;
+               width=&#34;600&#34;
+               height=&#34;404&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;Click &lt;em&gt;Record&lt;/em&gt; at the bottom to start a recording. The traffic light will go from Red, to Orange, to Green, after which the speaker pronounces the prompt on screen. Click &lt;em&gt;Stop&lt;/em&gt; to stop the recording.&lt;/li&gt;
+&lt;li&gt;If you are happy with the recording, click &lt;strong&gt;[&amp;raquo;]&lt;/strong&gt; to proceed to the next prompt. SpeechRecorder will then save the recording with the appropriate filename in the project folder and present the next prompt.&lt;/li&gt;
+&lt;li&gt;However, if you are unhappy with the recording, click &lt;em&gt;Record&lt;/em&gt; again to overwrite the previous take.&lt;/li&gt;
+&lt;li&gt;See these &lt;a href=&#34;#tips-n-tricks&#34;&gt;tips n tricks&lt;/a&gt; about how to control audio quality.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;trim-silence&#34;&gt;Trim silence&lt;/h3&gt;
+&lt;p&gt;Even though SpeechRecorder gives you separate recordings for individual items, it does often produce recordings with plenty of leading and trailing silence (i.e., before and after the critical word/sentence). There are several options to trim these silent intervals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Change SpeechRecorder settings&lt;/strong&gt;. Go to &lt;em&gt;Project &amp;gt; Preferences&lt;/em&gt;, click the &lt;em&gt;Recording&lt;/em&gt; tab and then the &lt;em&gt;Options&lt;/em&gt; tab. Reduce the &lt;code&gt;default prerecording delay&lt;/code&gt; (default is 1000 ms) and the &lt;code&gt;default postrecording delay&lt;/code&gt; (default is 500 ms) to lower values. &lt;strong&gt;NOTE:&lt;/strong&gt; this will also affect the traffic light behavior (i.e., recordings may start instantly).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Use forced alignment&lt;/strong&gt;. Because SpeechRecorder allows the user to re-record items that were fluffed, it typically produces recordings that are easily forced-aligned. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; (for word- and phoneme-level annotations) or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt; (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output. Finally, you can use this TextGrid to extract only the intervals of interest, removing leading and trailing silences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Happy recording!&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
-      <title>Second how-to</title>
-      <link>https://hrbosker.github.io/resources/how-to/howto2/</link>
+      <title>...annotate in Praat</title>
+      <link>https://hrbosker.github.io/resources/how-to/annotate-in-praat/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/how-to/howto2/</guid>
-      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 2
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Third how-to</title>
-      <link>https://hrbosker.github.io/resources/how-to/howto3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/how-to/howto3/</guid>
-      <description>&lt;p&gt;This is the subtitle.&lt;/p&gt;
-&lt;p&gt;
-  &lt;i class=&#34;fas fa-clock  pr-1 fa-fw&#34;&gt;&lt;/i&gt; 1-2 hours per week, for 8 weeks&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firstobject = 3
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Some disclaimer&lt;/p&gt;</description>
+      <guid>https://hrbosker.github.io/resources/how-to/annotate-in-praat/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    We&amp;rsquo;ll cover making TextGrid annotations in Praat. We&amp;rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Download Praat:&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fon.hum.uva.nl/praat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Why is it called Praat anyway?&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;em&gt;Praat&lt;/em&gt; was created by Paul Boersma and David Weenink, two Dutch speech scientists from Amsterdam. The Dutch word &amp;lsquo;praat&amp;rsquo; &lt;a href=&#34;https://translate.google.nl/?sl=nl&amp;amp;tl=en&amp;amp;text=praat&amp;amp;op=translate&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;/pra:t/&lt;/a&gt; is the &lt;a href=&#34;https://www.fon.hum.uva.nl/paul/papers/speakUnspeakPraat_glot2001.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;imperative form&lt;/a&gt; of the verb &amp;rsquo;to speak&amp;rsquo; (so &lt;em&gt;&amp;ldquo;speak!&amp;rdquo;&lt;/em&gt;).&lt;/p&gt;
+&lt;/details&gt;
+&lt;ul&gt;
+&lt;li&gt;Text.&lt;/li&gt;
+&lt;li&gt;Text2.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Happy Praat&amp;rsquo;ing!&lt;/em&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>

@@ -1,0 +1,1542 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="We&rsquo;ll cover making clean audio recordings in Audacity and in SpeechRecorder. Audacity is easy-to-use and perfect for making a single (long) recording of a speaker. SpeechRecorder presents individual word/sentence prompts to a speaker, saving each utterance separately." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/record-audio/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://hrbosker.github.io/resources/how-to/record-audio/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/record-audio/" />
+  <meta property="og:title" content="...record audio | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="We&rsquo;ll cover making clean audio recordings in Audacity and in SpeechRecorder. Audacity is easy-to-use and perfect for making a single (long) recording of a speaker. SpeechRecorder presents individual word/sentence prompts to a speaker, saving each utterance separately." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>...record audio | SPEAC | Hans Rutger Bosker</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5b04aa303363f6e4859c056f8f8bc3cd" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          How to...
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/resources/"><i class="fas fa-arrow-left pr-1"></i>Resources</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/resources/how-to/record-audio/">...record audio</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#audacity">Audacity</a>
+      <ul>
+        <li><a href="#tips-n-tricks">Tips n tricks</a></li>
+        <li><a href="#chopping-up-the-recording">Chopping up the recording</a></li>
+      </ul>
+    </li>
+    <li><a href="#speechrecorder">SpeechRecorder</a>
+      <ul>
+        <li><a href="#trim-silence">Trim silence</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>...record audio</h1>
+
+          <div class="article-style">
+            <div class="alert alert-note">
+  <div>
+    We&rsquo;ll cover making clean audio recordings in <strong>Audacity</strong> and in <strong>SpeechRecorder</strong>. Audacity is easy-to-use and perfect for making a single (long) recording of a speaker. SpeechRecorder presents individual word/sentence prompts to a speaker, saving each utterance separately.
+  </div>
+</div>
+<h2 id="audacity">Audacity</h2>
+<p>Audacity is a free, open-source, and cross-platform audio software package. It is easy to use, very intuitive, and fast. It is particularly suited for making a single (long) recording of a speaker, after which you manually extract the relevant words/sentences from this raw recording.</p>
+<ul>
+<li>Download, install, and open Audacity:</li>
+<li><a href="https://www.audacityteam.org/" target="_blank" rel="noopener">https://www.audacityteam.org/</a></li>
+<li>First check the sampling frequency. Typically, 48 kHz or 44.1 kHz will do just fine.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp 400w,
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_3ad6b5f589837d118005f71e66a94edd.webp 760w,
+               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>Audacity&rsquo;s default is to make <em>stereo</em> recordings, with each recording containing two channels:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp 400w,
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_101079cc1c9588fccf33605617292340.webp 760w,
+               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>In most cases, it&rsquo;s better to make <em>mono</em> recordings (with only one channel) to make annotating and manipulating the speech a lot easier. Change the settings at the top to MONO:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp 400w,
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_2e6d7ff407a4e6ada78768b2c74fe77f.webp 760w,
+               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>Then click the red button to start a recording&hellip;</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp 400w,
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_623908e7d9c6dc88c31e511ed137b576.webp 760w,
+               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>&hellip;which should look something like this:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>When you&rsquo;re done recording, click the yellow square to stop.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp 400w,
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_fddef4143c77084bfe82d4e714971019.webp 760w,
+               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp"
+               width="600"
+               height="405"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li><strong>Do not SAVE projects</strong> in Audacity, but instead <strong>EXPORT audio files</strong>. Go to: <em>File &gt; Export Audio&hellip;</em>, and then click the &lsquo;Save as type&rsquo; drop-down menu to select the file format. Select .wav for uncompressed (raw) audio which is best suited for speech manipulations, or .mp3 for compressed (processed) audio.</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    Audacity is also great for quickly converting a batch of .wav files to .mp3. Open Audacity, drag a selection of files from a folder into Audacity, and go to <em>File &gt; Export Multiple</em>. In the pop-up window, select <em>MP3 Files</em> as <code>Export format</code>, choose an <code>Export location</code>, and keep the other defaults (in particular, <code>Split files based on:</code> <em>Tracks</em>; <code>Name files:</code> <em>Using Label/Track Name</em>). Click <code>Export</code> and voila, you now have an .mp3 file for each .wav file.
+  </div>
+</div>
+<h3 id="tips-n-tricks">Tips n tricks</h3>
+<p>But how to make recordings that are &lsquo;clean&rsquo;: with little noise and of good quality?</p>
+<ul>
+<li>
+<p>For longer recordings, ask your speaker to sit in a relaxed position that they can keep up for a longer period of time. People typically tend to slouch during a recording, changing the distance between them and the table mic, thus changing the intensity of speech appearing early vs. later in your recording. If you ask your speaker to try to &lsquo;already slouch a little&rsquo;, this can help avoid large variability in intensity.</p>
+</li>
+<li>
+<p>Before recording your items, start a dummy recording and ask the speaker to count to 100. Then adjust the volume/sensitivity/gain of the microphone. You want the average intensity of the speech to fall roughly in between 0.5 and -0.5 in Audacity. So <strong>this is good</strong>:</p>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>This is <strong>risky</strong> because it&rsquo;s approaching 1 and -1:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp 400w,
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_43e0b7a1bda07f0f2168f38b12caab4d.webp 760w,
+               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>This is <strong>bad</strong> because it&rsquo;s outside 1 and -1.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp 400w,
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_6ce8cd8fb0a845cfdc5141be27f94f8c.webp 760w,
+               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>This is called &lsquo;clippings&rsquo; and it&rsquo;s very well audible in the signal. These two audio clips contain the same telephone number, but the first is clean and the second has clippings:</li>
+</ul>
+<blockquote>
+<p>CLEAN
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/record-audio/clean.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>WITH CLIPPINGS
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/record-audio/clippings.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<ul>
+<li>
+<p>When boosting the volume/sensitivity/gain of the microphone, be aware that &ndash; by doing so &ndash; you may actually be boosting the background noise too. It&rsquo;s often preferable to move the location of the mic closer to the speaker compared to amplifying the input signal.</p>
+</li>
+<li>
+<p>When you need the mic to be particularly close to the speaker (e.g., when using a head-mounted mic), make sure <strong>the mic is not too close to the speakers lips</strong> as that will introduce puffs of loud noise for many stop consonants. Better to aim for the chin!</p>
+</li>
+<li>
+<p>Why not ask the speaker to go through your list of items from top to bottom first, and then repeat all items from bottom to top? This will give you two recordings of each item, allowing you to select the best one. Moreover, items at the top and bottom of lists typically sound different from the rest. First items typically have loud intensity and raised pitch, while last items have low intensity and pitch. By switching the order of items, you may be able to circumvent some of these order effects.</p>
+</li>
+</ul>
+<h3 id="chopping-up-the-recording">Chopping up the recording</h3>
+<p>When you&rsquo;ve finished recording with Audacity, and have extracted the audio as a .wav file, you will then need to isolate the individual items (e.g., words or sentences) from that one long recording. There&rsquo;s different solutions for this task:</p>
+<ol>
+<li>
+<p><strong>Do it by hand.</strong> Read the .wav file into Praat, create an empty TextGrid, and insert boundaries at the onset and offset of every item. Once you&rsquo;re done, you select the Sound and TextGrid objects together in Praat, and select an option from the Extract menu, such as <code>Extract all intervals...</code> or <code>Extract non-empty intervals...</code> and save the individual items.</p>
+</li>
+<li>
+<p><strong>Go full automatic.</strong> You can use a forced-aligner to find the words inside your recording. We tend to use <a href="/resources/other-resources/#videoaudio-editing">WebMAUS</a> (for word- and phoneme-level annotations) or <a href="/resources/other-resources/#videoaudio-editing">EasyAlign</a> (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output.</p>
+</li>
+</ol>
+<p><em>However</em>, often your speaker wasn&rsquo;t perfect, fluffing their lines, repeating items several times before getting it right, or chucking in a few coughs and &lsquo;uhm&rsquo;s here and there. In that case, automatic forced-alignment is suboptimal. In such (commonly occurring) cases, you could consider:</p>
+<ol start="3">
+<li><strong>Go semi-automatic</strong>. Read your .wav file in Praat and click <em>Annotate &gt; To TextGrid (silences)&hellip;</em>. Praat will then create a TextGrid for you, labeling silent intervals as &lsquo;silence&rsquo; and intervals with speech as &lsquo;sounding&rsquo;. You can then go through this TextGrid manually and&hellip;
+<ol>
+<li>&hellip;remove incorrectly detected &lsquo;sounding&rsquo; intervals</li>
+<li>&hellip;adjust the boundaries of individual intervals</li>
+<li>&hellip;label the intervals correctly</li>
+<li>&hellip;extract the intervals for saving and further analysis/manipulation.<br>
+(<em>actions (3) and (4) can be performed automatically using scripts in Praat</em>).</li>
+</ol>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp 400w,
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_a7f3916459fecd13582f4b7d6dfe0ef0.webp 760w,
+               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<p>I&rsquo;ve found that the default settings for the <code>To TextGrid (silences)</code> function are best adjusted to: <code>Minimum pitch (Hz) = 50</code> (instead of the default 100) and <code>Silence threshold (dB) = -40</code> (instead of the default -32). In my experience, this works considerably better especially for single-word recordings, but often also for full-sentence recordings.</p>
+<p>Oh, and as I&rsquo;m writing this, I see the latest versions of Praat have a new <code>To TextGrid (voice activity)</code> function. My initial impression is that the default settings for this function perform comparable to the &lsquo;adjusted&rsquo; settings for <code>To TextGrid (silences)</code> suggested above.</p>
+<h2 id="speechrecorder">SpeechRecorder</h2>
+<p>SpeechRecorder is also a free, open-source, and cross-platform audio software package. It takes a little more preparation to use it appropriately compared to Audacity, but an important advantage is that it allows users to <strong>efficiently record multiple individual items</strong> (instead of one massively long recording). This means that the &lsquo;chopping up recordings into items&rsquo; part of the workflow can be (largely) skipped&hellip; <em>but see <a href="#trim-silence">this advice</a> below</em>.</p>
+<ul>
+<li>Download, install, and open SpeechRecorder:</li>
+<li><a href="https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/" target="_blank" rel="noopener">https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp 400w,
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_b4c17a9c98e2a20104ced09e325f85cb.webp 760w,
+               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>Go to <em>Project &gt; New</em>, and enter a name for your project</li>
+<li>The directory for the audio output is <code>C:/Users/hanbos/speechrecorder/[myProjectName]/</code></li>
+<li>In the &lsquo;Speaker data&rsquo; window that pops up, add a speaker by clicking <em>Add</em> and then <em>Select</em>.
+<ul>
+<li>If you have multiple talkers, you can add several speakers, and by selecting one of them, you add a speaker identifier to the filename of each audio output file.</li>
+</ul>
+</li>
+<li>Go to <em>Project &gt; Preferences</em> and find the <em>Recording</em> tab to change the <em>Format</em> settings, such as the sampling frequency (e.g., 44.1 or 48 kHz) and the number of channels (usually <em>mono</em> so 1 channel).</li>
+<li>Then go to <em>Script &gt; Import text table&hellip;</em> and select a headerless tab-separated file with 2 columns:
+<ol>
+<li>filenames without extension (e.g., <code>item42_cacao_isolated</code>)</li>
+<li>prompts (e.g., <code>cacao</code>)</li>
+</ol>
+</li>
+</ul>
+<div class="alert alert-note">
+  <div>
+    You can easily create a .txt file like this in Excel. In Excel, enter filenames in one column and prompts in another column, select all cells from the two columns, copy them, and paste them into Notepad. If you save this as a .txt file, you will have a headerless tab-separated 2-column file.
+  </div>
+</div>
+<ul>
+<li>SpeechRecorder will then look something like this:</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp 400w,
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_f7788fcf60be0acbb6309b03e7971671.webp 760w,
+               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_1200x1200_fit_q75_h2_lanczos.webp 1200w"
+               src="/resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp"
+               width="600"
+               height="404"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+<ul>
+<li>Click <em>Record</em> at the bottom to start a recording. The traffic light will go from Red, to Orange, to Green, after which the speaker pronounces the prompt on screen. Click <em>Stop</em> to stop the recording.</li>
+<li>If you are happy with the recording, click <strong>[&raquo;]</strong> to proceed to the next prompt. SpeechRecorder will then save the recording with the appropriate filename in the project folder and present the next prompt.</li>
+<li>However, if you are unhappy with the recording, click <em>Record</em> again to overwrite the previous take.</li>
+<li>See these <a href="#tips-n-tricks">tips n tricks</a> about how to control audio quality.</li>
+</ul>
+<h3 id="trim-silence">Trim silence</h3>
+<p>Even though SpeechRecorder gives you separate recordings for individual items, it does often produce recordings with plenty of leading and trailing silence (i.e., before and after the critical word/sentence). There are several options to trim these silent intervals:</p>
+<ul>
+<li>
+<p><strong>Change SpeechRecorder settings</strong>. Go to <em>Project &gt; Preferences</em>, click the <em>Recording</em> tab and then the <em>Options</em> tab. Reduce the <code>default prerecording delay</code> (default is 1000 ms) and the <code>default postrecording delay</code> (default is 500 ms) to lower values. <strong>NOTE:</strong> this will also affect the traffic light behavior (i.e., recordings may start instantly).</p>
+</li>
+<li>
+<p><strong>Use forced alignment</strong>. Because SpeechRecorder allows the user to re-record items that were fluffed, it typically produces recordings that are easily forced-aligned. We tend to use <a href="/resources/other-resources/#videoaudio-editing">WebMAUS</a> (for word- and phoneme-level annotations) or <a href="/resources/other-resources/#videoaudio-editing">EasyAlign</a> (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output. Finally, you can use this TextGrid to extract only the intervals of interest, removing leading and trailing silences.</p>
+</li>
+</ul>
+<p><em>Happy recording!</em></p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resources/how-to/annotate-in-praat/" rel="prev">...annotate in Praat</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 1, 0001</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.0589305bcbb23cc89d66482396cb6b61.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

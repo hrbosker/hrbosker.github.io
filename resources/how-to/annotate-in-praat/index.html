@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This is the subtitle." />
+  <meta name="description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/howto1/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/annotate-in-praat/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/how-to/howto1/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/how-to/annotate-in-praat/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/howto1/" />
-  <meta property="og:title" content="First how-to | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This is the subtitle." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/annotate-in-praat/" />
+  <meta property="og:title" content="...annotate in Praat | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>First how-to | SPEAC | Hans Rutger Bosker</title>
+  <title>...annotate in Praat | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3d26ec3a92970bcc0c9447401568700e" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="19843a42353e9324f2ae348db919ea0c" >
 
   
   
@@ -650,7 +650,7 @@
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
-          How to's
+          How to...
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -704,22 +704,18 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link " href="/resources/how-to/">How to&#39;s</a>
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
     
       
         <ul class="nav docs-sidenav">
       
 
 
-  <li class="active"><a href="/resources/how-to/howto1/">First how-to</a></li>
+  <li class=""><a href="/resources/how-to/record-audio/">...record audio</a></li>
 
 
 
-  <li class=""><a href="/resources/how-to/howto2/">Second how-to</a></li>
-
-
-
-  <li class=""><a href="/resources/how-to/howto3/">Third how-to</a></li>
+  <li class="active"><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
 
       
         </ul>
@@ -758,14 +754,29 @@
         <div class="docs-article-container">
           
 
-          <h1>First how-to</h1>
+          <h1>...annotate in Praat</h1>
 
           <div class="article-style">
-            <p>This is the subtitle.</p>
-<p>
-  <i class="fas fa-clock  pr-1 fa-fw"></i> 1-2 hours per week, for 8 weeks</p>
-<pre tabindex="0"><code>praatcode = 1
-</code></pre><p>Some disclaimer</p>
+            <div class="alert alert-note">
+  <div>
+    We&rsquo;ll cover making TextGrid annotations in Praat. We&rsquo;ll read .wav files in Praat, create an empty TextGrid with a single tier, add boundaries delimiting individual words in the recording, and save the annotations to a TextGrid file.
+  </div>
+</div>
+<ul>
+<li>Download Praat:</li>
+<li><a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/</a></li>
+<li>This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe</li>
+</ul>
+<details class="spoiler "  id="spoiler-1">
+  <summary><em>Why is it called Praat anyway?</em></summary>
+  <p><em>Praat</em> was created by Paul Boersma and David Weenink, two Dutch speech scientists from Amsterdam. The Dutch word &lsquo;praat&rsquo; <a href="https://translate.google.nl/?sl=nl&amp;tl=en&amp;text=praat&amp;op=translate" target="_blank" rel="noopener">/pra:t/</a> is the <a href="https://www.fon.hum.uva.nl/paul/papers/speakUnspeakPraat_glot2001.pdf" target="_blank" rel="noopener">imperative form</a> of the verb &rsquo;to speak&rsquo; (so <em>&ldquo;speak!&rdquo;</em>).</p>
+</details>
+<ul>
+<li>Text.</li>
+<li>Text2.</li>
+</ul>
+<p><em>Happy Praat&rsquo;ing!</em></p>
+
           </div>
 
           
@@ -781,9 +792,10 @@
   
   
   <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/resources/how-to/howto2/" rel="prev">Second how-to</a>
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/how-to/record-audio/" rel="next">...record audio</a>
   </div>
+  
   
 </div>
 
