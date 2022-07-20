@@ -31,10 +31,11 @@ date: '2022-07-07'
 {{< figure src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" caption="PraatVSCode syntax highlighting" numbered="true" width="600">}}
 - {{< icon name="user" pack="fas" >}} Author: {{< mention "orhun-ulusahin" >}}.
 - {{< icon name="link" pack="fas" >}} [https://github.com/orhunulusahin/praatvscode](https://github.com/orhunulusahin/praatvscode)
-- {{< icon name="circle-info" pack="fas" >}} Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code (see screenshot) that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows running and debugging of the script by Praat from inside Visual Studio Code.
+- {{< icon name="circle-info" pack="fas" >}} Praat is an excellent software package for speech analysis, annotation, and manipulation. However, it's scripting interface is - let's put it this way - 'suboptimal'. PraatVSCode is an extension for Visual Studio Code (see screenshot) that provides syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows running and debugging of scripts by Praat from inside Visual Studio Code.
 - {{< icon name="download" pack="fas" >}} **How to install:**
   - Download and install [Visual Studio Code](https://code.visualstudio.com/).
-  - Under *View* > *Extensions*, search for PraatVSCode, and click install.
+  - Under *View* > *Extensions*, search for 'PraatVSCode', and click install.
+  - See [here](https://github.com/orhunulusahin/praatvscode#23-running-scripts) for running Praat scripts from inside Visual Studio Code.
 - {{< icon name="creative-commons" pack="fab" >}} [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms)
 
 <br />
