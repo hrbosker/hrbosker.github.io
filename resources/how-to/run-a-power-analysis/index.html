@@ -1,0 +1,1211 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is by no means a one-size-fits-all solution to all your power needs. Use at your own risk!" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/run-a-power-analysis/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://hrbosker.github.io/resources/how-to/run-a-power-analysis/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/run-a-power-analysis/" />
+  <meta property="og:title" content="...run a power analysis | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is by no means a one-size-fits-all solution to all your power needs. Use at your own risk!" /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+    
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>...run a power analysis | SPEAC | Hans Rutger Bosker</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c0bf5a4f96f08fd81aeb59e8012275fe" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          How to...
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/resources/"><i class="fas fa-arrow-left pr-1"></i>Resources</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/resources/how-to/record-audio/">...record audio</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
+
+
+
+  <li class="active"><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents"></nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>...run a power analysis</h1>
+
+          <div class="article-style">
+            <div class="alert alert-warning">
+  <div>
+    This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is <strong>by no means</strong> a one-size-fits-all solution to all your power needs. <em>Use at your own risk!</em>
+  </div>
+</div>
+<p>The R script shared here is first and foremost intended as a <strong>lab archive</strong>, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means <strong>it requires customization</strong> for each individual new project.</p>
+<p>It is based on <a href="https://doi.org/10.3758/s13428-021-01546-0" target="_blank" rel="noopener">Kumle et al. (2021, BRM)</a>, adapting code from its github repo to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.</p>
+<p>The script can be adjusted to run LMM power analysis (instead of GLMM) and to include &gt;1 random effects; see comments in script.</p>
+<blockquote>
+<p>Download the <a href="R_power_analysis.R">R_power_analysis.R</a> script here.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-r" data-lang="r"><span class="line"><span class="cl"><span class="c1">##### Hans Rutger Bosker, Radboud University Nijmegen</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### SPEAC research group, hrbosker.github.io</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### HansRutger.Bosker@ru.nl</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### License: CC BY-NC 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Last updated: July 20, 2022</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### Code adapted from Kumle et al. (2021, Behavior Research Methods)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### doi: 10.3758/s13428-021-01546-0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### who introduced the R package &#39;mixedpower&#39; comparing it to &#39;simr&#39;.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Specifically: https://lkumle.github.io/power_notebooks/Scenario3_notebook.html</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#####           and https://github.com/lkumle/analyses_power_tutorial/blob/master/Scenario%203/Analysis_Scenario3.R</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### In its present form, the script runs a simulation-based GLMM power analysis</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### for a 2AFC experimental design with 20 participants and 100 trials per pp.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### BinomResp is the binomial dependent variable of 0s and 1s.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Predictors are Group (between-participant) and ScaledStep (within-participant).</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#####	&gt; For LMMs, see: https://lkumle.github.io/power_notebooks/Scenario3_notebook.html </span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### 	&gt; For adding additional random effects, see suggestions in script below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># REQUIRED PACKAGES</span>
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">lme4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">simr</span><span class="p">)</span> <span class="c1"># for comparison to mixedpower</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### Apparently, &#39;mixedpower&#39; does not live on the &#39;default&#39; package R server.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### In order to install it, you need another package &#39;remotes&#39; to access it.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Note: you only need to install these packages once. Once they&#39;re installed,</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### simply running the library() statements suffices.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#install.packages(&#34;remotes&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#library(remotes)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#remotes::install_github(&#34;DejanDraschkow/mixedpower&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">library</span><span class="p">(</span><span class="n">mixedpower</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># RETRIEVING ESTIMATES FROM PILOT DATA</span>
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pilot</span> <span class="o">&lt;-</span> <span class="nf">read.table</span><span class="p">(</span><span class="n">file</span><span class="o">=</span><span class="s">&#34;pilotdata.txt&#34;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s">&#34;\t&#34;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="bp">T</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">pilot</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ppid = participant number (hence, a unique entry for each pp)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># trialnr = test item order (1:100)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># step = step on the test continuum: 1,2,3,4,5</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># stepscaled = scaled version of step (z-scored), resulting from: scale(pilot$step)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># group = group, with 2 levels: Group_1 or Group_2</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># group_devcod = deviance coded &#39;group&#39;: -0.5 is Group_1, +0.5 is Group_2</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># BinomResp = binomial coding of participants&#39; responses (0s and 1s)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">pilot_m</span> <span class="o">&lt;-</span> <span class="nf">glmer</span><span class="p">(</span><span class="n">BinomResp</span> <span class="o">~</span> <span class="n">group_devcod</span> <span class="o">*</span> <span class="n">stepscaled</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">                   <span class="p">(</span><span class="m">1</span><span class="o">|</span><span class="n">ppid</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">data</span><span class="o">=</span><span class="n">pilot</span><span class="p">,</span> <span class="n">family</span><span class="o">=</span><span class="s">&#34;binomial&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">pilot_m</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># CREATING ARTIFICIAL DATA</span>
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### This creates a dataset in which 20 participants are presented 100 trials each.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### Half of the participants are assigned to Group 1, the other half to Group 2.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### The 100 trials per participant include steps 1, 2, 3, 4, and 5 from a phonetic continuum.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### So each step is repeated 20 times per participant.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 1: RANDOM EFFECTS</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># including variables used as random effects in artificial data</span>
+</span></span><span class="line"><span class="cl"><span class="n">number_of_participants</span> <span class="o">=</span> <span class="m">20</span>
+</span></span><span class="line"><span class="cl"><span class="n">number_of_trials_per_participant</span> <span class="o">=</span> <span class="m">100</span>
+</span></span><span class="line"><span class="cl"><span class="n">artificial_data</span> <span class="o">&lt;-</span> <span class="nf">expand.grid</span><span class="p">(</span><span class="n">TrialID</span> <span class="o">=</span> <span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="n">number_of_trials_per_participant</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                               <span class="n">ParticipantID</span> <span class="o">=</span> <span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="n">number_of_participants</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># At present, the script is designed for an analysis with only 1 random intercept.</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># If requiring &gt;1 random effects</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ...adjust the &#39;artificial_data&#39;;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ...add an estimate for &#39;estim_ran_effs&#39;;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># ...adjust the &#39;artificial_glmer&#39;.</span>
+</span></span><span class="line"><span class="cl">							   
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. FIXED EFFECTS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#  generate continuum steps</span>
+</span></span><span class="line"><span class="cl"><span class="n">continuum_steps</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">1</span><span class="o">:</span><span class="m">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># repeat for every ParticipantID in data (e.g., 20 times)</span>
+</span></span><span class="line"><span class="cl"><span class="n">artificial_data[</span><span class="s">&#34;Continuum_step&#34;</span><span class="n">]</span> <span class="o">&lt;-</span> <span class="nf">rep</span><span class="p">(</span><span class="n">continuum_steps</span><span class="p">,</span> <span class="n">number_of_participants</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">artificial_data</span><span class="o">$</span><span class="n">ScaledStep</span> <span class="o">&lt;-</span> <span class="nf">scale</span><span class="p">(</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">Continuum_step</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># include group</span>
+</span></span><span class="line"><span class="cl"><span class="n">artificial_data[</span><span class="s">&#34;Group&#34;</span><span class="n">]</span> <span class="o">&lt;-</span> <span class="m">0.5</span>
+</span></span><span class="line"><span class="cl"><span class="n">artificial_data[artificial_data</span><span class="o">$</span><span class="n">ParticipantID</span><span class="o">&lt;=</span><span class="p">(</span><span class="m">0.5</span><span class="o">*</span><span class="n">number_of_participants</span><span class="p">),</span><span class="n">]</span><span class="o">$</span><span class="n">Group</span> <span class="o">&lt;-</span> <span class="m">-0.5</span>
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="nf">as.factor</span><span class="p">(</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">Group</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. VERIFICATION OF DATAFRAME DESIGN</span>
+</span></span><span class="line"><span class="cl"><span class="nf">head</span><span class="p">(</span><span class="n">artificial_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">artificial_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">table</span><span class="p">(</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">ParticipantID</span><span class="p">,</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">Continuum_step</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">table</span><span class="p">(</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">ParticipantID</span><span class="p">,</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">TrialID</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">table</span><span class="p">(</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">ParticipantID</span><span class="p">,</span><span class="n">artificial_data</span><span class="o">$</span><span class="n">Group</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># CREATING ARTIFICIAL MODEL</span>
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### See summary(pilot_m) above for random and fixed effect estimates.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># summary(pilot_m)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### estim_fix_effs &lt;- c(intercept, firstSimpleEffect, secondSimpleEffect, interaction)</span>
+</span></span><span class="line"><span class="cl"><span class="n">estim_fix_effs</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">0.125</span><span class="p">,</span> <span class="m">0.838</span><span class="p">,</span> <span class="m">-1.072</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### estim_ran_effs &lt;- c(firstRandomIntercept, secondRandomIntercept)</span>
+</span></span><span class="line"><span class="cl"><span class="n">estim_ran_effs</span> <span class="o">&lt;-</span> <span class="nf">c</span><span class="p">(</span><span class="m">0.627</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">##### NOTE: it is very important that the order of estimates in &#39;estim_fix_effs&#39; and &#39;estim_ran_effs&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### 	is identical to the other of predictors in &#39;artificial_glmer&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#####	and in &#39;power_S3&#39; below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">artificial_glmer</span> <span class="o">&lt;-</span> <span class="nf">makeGlmer</span><span class="p">(</span><span class="n">formula</span> <span class="o">=</span> <span class="n">BinomResp</span> <span class="o">~</span> <span class="n">Group</span> <span class="o">+</span> <span class="n">ScaledStep</span> <span class="o">+</span>
+</span></span><span class="line"><span class="cl">                                <span class="p">(</span><span class="m">1</span> <span class="o">|</span> <span class="n">ParticipantID</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                              <span class="n">fixef</span> <span class="o">=</span> <span class="n">estim_fix_effs</span><span class="p">,</span> <span class="n">VarCorr</span> <span class="o">=</span> <span class="nf">list</span><span class="p">(</span><span class="n">estim_ran_effs</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                              <span class="n">family</span> <span class="o">=</span> <span class="s">&#34;binomial&#34;</span><span class="p">,</span>  <span class="n">data</span> <span class="o">=</span> <span class="n">artificial_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">summary</span><span class="p">(</span><span class="n">artificial_glmer</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### NOTE: at present, only testing for two simple effects without interaction</span>
+</span></span><span class="line"><span class="cl"><span class="c1">##### and a single random intercept for Participants.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># POWER ANALYSIS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">########################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># USING THE PACKAGE simr</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#power_simr &lt;- powerSim(fit = artificial_glmer, test = fixed(&#34;Group&#34;), nsim = 1000)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#print(power_simr)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># USING THE PACKAGE mixedpower</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># SESOI = Smallest Effect Size Of Interest</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># A simple justification strategy is to reduce all beta coefficients by 15%</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">power_mixed</span> <span class="o">&lt;-</span> <span class="nf">mixedpower</span><span class="p">(</span><span class="n">model</span> <span class="o">=</span> <span class="n">artificial_glmer</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">artificial_data</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">fixed_effects</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="s">&#34;Group&#34;</span><span class="p">,</span> <span class="s">&#34;ScaledStep&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">simvar</span> <span class="o">=</span> <span class="s">&#34;ParticipantID&#34;</span><span class="p">,</span> <span class="n">steps</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="m">10</span><span class="p">,</span><span class="m">20</span><span class="p">,</span><span class="m">30</span><span class="p">,</span><span class="m">40</span><span class="p">,</span><span class="m">50</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">critical_value</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">n_sim</span> <span class="o">=</span> <span class="m">1000</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                       <span class="n">SESOI</span> <span class="o">=</span> <span class="p">(</span><span class="n">estim_fix_effs</span><span class="o">*</span><span class="m">0.85</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nf">print</span><span class="p">(</span><span class="n">power_mixed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nf">multiplotPower</span><span class="p">(</span><span class="n">power_mixed</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span></code></pre></div><p><em>Happy R&rsquo;ing!</em></p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/how-to/annotate-in-praat/" rel="next">...annotate in Praat</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Jan 1, 0001</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2022 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.46271ef31da3f018e9cd1b59300aa265.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.0589305bcbb23cc89d66482396cb6b61.js"></script>
+
+    
+    
+      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
