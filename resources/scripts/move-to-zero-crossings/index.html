@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="Praat can only save one object at a time for you. If you have multiple objects in your object window you&rsquo;d like to save in one go, you can use this script." />
+  <meta name="description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/save-all/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/save-all/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/save-all/" />
-  <meta property="og:title" content="Save all | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="Praat can only save one object at a time for you. If you have multiple objects in your object window you&rsquo;d like to save in one go, you can use this script." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
+  <meta property="og:title" content="Move to zero-crossings | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Save all | SPEAC | Hans Rutger Bosker</title>
+  <title>Move to zero-crossings | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c3295f7839cdac0638abc97e77bc14ea" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="dbd7452a041ee79842acb4e0eaf90519" >
 
   
   
@@ -711,7 +711,7 @@
       
 
 
-  <li class="active"><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
 
 
 
@@ -723,7 +723,7 @@
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class="active"><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
 
       
         </ul>
@@ -762,58 +762,53 @@
         <div class="docs-article-container">
           
 
-          <h1>Save all</h1>
+          <h1>Move to zero-crossings</h1>
 
           <div class="article-style">
-            <p>Praat can only save one object at a time for you. If you have multiple objects in your object window you&rsquo;d like to save in one go, you can use this script. It can either save objects by their object name or by their id number.</p>
+            <p>This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
 <blockquote>
-<p>You can also <a href="../save-all.praat">download the script</a> as a .praat file.</p>
+<p>You can also <a href="../move-to-zero-crossings.praat">download the script</a> as a .praat file.</p>
 </blockquote>
 <pre tabindex="0"><code>################################################################################
 ### Hans Rutger Bosker, Radboud University
 ### HansRutger.Bosker@ru.nl
-### Date: 23 June 2022, run in Praat 6.2.12 on Windows 10
+### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################
 
-	###&gt;&gt; This script saves all selected objects to the directory &#39;dir_out$&#39;
-	###&gt;&gt;	with either:
-	###&gt;&gt;   - their object name (e.g., &#34;sentence1.wav&#34;)
-	###&gt;&gt;			&gt; set variable &#39;save_method$&#39; to &#34;name&#34; [default]
-	###&gt;&gt;   - their id number in the Praat object window (e.g., &#34;42.wav&#34;)
-	###&gt;&gt;			&gt; set variable &#39;save_method$&#39; to &#34;id&#34;
-	###&gt;&gt;
-	###&gt;&gt; Sounds are saved as .wav files,
-	###&gt;&gt; other object types (TextGrids, Spectrum, etc.) are saved
-	###&gt;&gt; with their own extension type (.TextGrid, .Spectrum).
-	###&gt;&gt;
-	###&gt;&gt; Default: the script will overwrite pre-existing files.
-	###&gt;&gt; Set variable &#39;overwrite$&#39; to &#34;no&#34; if you want Praat
-	###&gt;&gt; to throw an error instead.
+	###&gt;&gt; This script takes a single .wav and matching .TextGrid file as input
+	###&gt;&gt;   and moves all boundaries in one particular tier to zero-crossings.
 
+	###&gt;&gt;   Specifically, it *adds* a new &#39;to0x&#39; tier at the top of the TextGrid
+	###&gt;&gt;   that is identical to a given tier except that all boundaries are
+	###&gt;&gt;   at zero-crossings. The old TextGrid is then overwritten with the
+	###&gt;&gt;   new extended TextGrid, but no information is lost (only added).
+
+	###&gt;&gt;   This script works best if the script also subtracts the mean from
+	###&gt;&gt;   the audio signal, and overwrites the original audio:
+	###&gt;&gt;	&#39;method&#39; option 1 (default).
+
+	###&gt;&gt;	If you need to move the boundaries for more than one TextGrid file,
+	###&gt;&gt;	you can merge this script with &#39;batch-processing.praat&#39;,
+	###&gt;&gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/
 
 
 ################################################################################
-### Variables you will definitely need to customize:
+### Form to enter variables
 ################################################################################
-
-### Where should the selected objects be saved?
-
-dir_out$ = &#34;C:\Users\hanbos\mysounds&#34;
-
-### Should Praat overwrite pre-existing files?
-
-overwrite$ = &#34;yes&#34;
-#overwrite$ = &#34;no&#34;
-
-### Do you want to save each object by its object name or by its id number?
-### If object name, then use &#34;name&#34; (e.g., &#34;sentence1.wav&#34;).
-### If object id number, then use &#34;id&#34; (e.g., &#34;42.wav&#34;).
-
-save_method$ = &#34;name&#34;
-#save_method$ = &#34;id&#34;
-
-
+beginPause: &#34;Enter settings&#34;
+	comment: &#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&#34;
+	text: &#34;directory&#34;, &#34;C:/Users/hanbos/mysounds&#34;
+	comment: &#34;Provide the name of the sound file&#34;
+	comment: &#34;(should be identical to TextGrid name)&#34;
+	comment: &#34;NOTE: do NOT include any extension (no .wav)&#34;
+	text: &#34;filename&#34;, &#34;syll1&#34;
+	comment: &#34;Provide the interval tier number (typically 1)&#34;
+	real: &#34;tierNumber&#34;, 1
+	choice: &#34;method&#34;, 1
+	   option: &#34;Subtract mean and overwrite audio file&#34;
+	   option: &#34;Do not subtract mean&#34;
+clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
 
 
 
@@ -822,26 +817,26 @@ save_method$ = &#34;name&#34;
 ### input for the variables above...
 ################################################################################
 
-### Let&#39;s check if the output directory exists.
+### Let&#39;s check if the directory exists.
 ### This script will throw an error if the directory doesn&#39;t exist
 ### (i.e., it won&#39;t write to a mysterious temp directory).
 
 ### First check whether the input directory ends in a backslash (if so, removed)
 
-if right$(dir_out$,1)=&#34;/&#34;
-	dir_out$ = left$(dir_out$,length(dir_out$)-1)
-elsif right$(dir_out$,1)=&#34;\&#34;
-	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+if right$(directory$,1)=&#34;/&#34;
+	directory$ = left$(directory$,length(directory$)-1)
+elsif right$(directory$,1)=&#34;\&#34;
+	directory$ = left$(directory$,length(directory$)-1)
 endif
 
 ### Then create a temporary txt file in the folder
-### and try to write it to the output folder.
+### and try to write it to the input folder.
 
 ### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
 ### does *not* exist. We&#39;ll manually check whether the saving of this
 ### temp txt file has succeeded or not further down below.
 
-temp_filename$ = dir_out$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+temp_filename$ = directory$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
 nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
 
 ### Can the file be found?
@@ -853,13 +848,32 @@ if file_exists_yesno = 1
 	# this confirms that the directory is valid.
 	# Then you can delete it.
 	deleteFile: temp_filename$
+
+	## Let&#39;s also check whether the specified wav and TextGrid filenames exist
+	## inside this particular directory.
+
+	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.wav&#34;
+	wavFileExists = fileReadable(filepath$)
+
+	if wavFileExists = 0
+		# if the wav file does not exist
+		printline Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;
+		exit Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;. Check spelling.
+	endif
+
+	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.TextGrid&#34;
+	tgFileExists = fileReadable(filepath$)
+
+	if tgFileExists = 0
+		# if the TextGrid file does not exist
+		printline Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;
+		exit Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;. Check spelling.
+	endif
 else
-	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;dir_out$&#39; was not found
+	# if the temporary file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+	printline The folder &#39;directory$&#39; was not found
 	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
 endif
-
-
 
 
 
@@ -869,78 +883,32 @@ endif
 ################################################################################
 ################################################################################
 
-### Make sure you&#39;ve selected the objects you&#39;d like to save in
-### the Praat object window. If nothing is selected, the script exits.
-
-nSelected = numberOfSelected()
-if nSelected = 0
-	exit No objects selected.
+Read from file... &#39;directory$&#39;\&#39;filename$&#39;.wav
+if method = 1
+	Subtract mean
+	Write to WAV file... &#39;directory$&#39;\&#39;filename$&#39;.wav
 endif
+Read from file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
+nInts = Get number of intervals... &#39;tierNumber&#39;
+Insert interval tier... 1 to0x
 
-### Store the object id numbers in an array
-
-for thisObject to nSelected
-	objectArray [&#39;thisObject&#39;] = selected(&#39;thisObject&#39;)
+for i to (&#39;nInts&#39;-1)
+	select TextGrid &#39;filename$&#39;
+	intEnd = Get end point... (&#39;tierNumber&#39;+1) &#39;i&#39;
+	intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;i&#39;
+	select Sound &#39;filename$&#39;
+	zxEnd = Get nearest zero crossing... 1 &#39;intEnd&#39;
+	select TextGrid &#39;filename$&#39;
+	Insert boundary... 1 zxEnd
+	Set interval text... 1 &#39;i&#39; &#39;intLab$&#39;
 endfor
+intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;nInts&#39;
+Set interval text... 1 &#39;nInts&#39; &#39;intLab$&#39;
 
-### Loop through this array and for each id number
-### select the corresponding object and save it.
-
-for thisArrayNumber to nSelected
-	objectId = objectArray [&#39;thisArrayNumber&#39;]
-	select &#39;objectId&#39;
-	type$ = extractWord$(selected$(), &#34;&#34;)
-	name$ = extractLine$(selected$(), &#34; &#34;)
-	
-	if save_method$ = &#34;name&#34;
-		if type$ = &#34;Sound&#34;
-			does_file_exist = fileReadable(&#34;&#39;dir_out$&#39;\&#39;name$&#39;.wav&#34;)
-			if does_file_exist = 1
-				if overwrite$ = &#34;no&#34;
-					exit The file &#39;dir_out$&#39;\&#39;name$&#39;.wav&#39; already exists! If you wish to overwrite, set the variable overwrite$ to &#34;yes&#34;.
-				endif
-			endif
-			Write to WAV file... &#39;dir_out$&#39;\&#39;name$&#39;.wav
-		else
-			does_file_exist = fileReadable(&#34;&#39;dir_out$&#39;\&#39;name$&#39;.&#39;type$&#39;&#34;)
-			if does_file_exist = 1
-				if overwrite$ = &#34;no&#34;
-					exit The file &#39;dir_out$&#39;\&#39;name$&#39;.&#39;type$&#39; already exists! If you wish to overwrite, set the variable overwrite$ to &#34;yes&#34;.
-				endif
-			endif
-			Write to text file... &#39;dir_out$&#39;\&#39;name$&#39;.&#39;type$&#39;
-		endif
-	elsif save_method$ = &#34;id&#34;
-		if type$ = &#34;Sound&#34;
-			does_file_exist = fileReadable(&#34;&#39;dir_out$&#39;\&#39;objectId$&#39;.wav&#34;)
-			if does_file_exist = 1
-				if overwrite$ = &#34;no&#34;
-					exit The file &#39;dir_out$&#39;\&#39;objectId$&#39;.wav&#39; already exists! If you wish to overwrite, set the variable overwrite$ to &#34;yes&#34;.
-				endif
-			endif
-			Write to WAV file... &#39;dir_out$&#39;\&#39;objectId&#39;.wav
-		else
-			does_file_exist = fileReadable(&#34;&#39;dir_out$&#39;\&#39;objectId$&#39;.&#39;type$&#39;&#34;)
-			if does_file_exist = 1
-				if overwrite$ = &#34;no&#34;
-					exit The file &#39;dir_out$&#39;\&#39;objectId$&#39;.&#39;type$&#39; already exists! If you wish to overwrite, set the variable overwrite$ to &#34;yes&#34;.
-				endif
-			endif
-			Write to text file... &#39;dir_out$&#39;\&#39;objectId&#39;.&#39;type$&#39;
-		endif
-	endif
-endfor
-
-### Now set the selection back to what it was before running this script.
-
-for current to nSelected
-	objectId = objectArray [&#39;current&#39;]
-	if current = 1
-		select &#39;objectId&#39;
-	else
-		plus &#39;objectId&#39;
-	endif
-endfor
+Write to text file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
+Remove
+select Sound &#39;filename$&#39;
+Remove
 
 ################################################################################
 # End of script
@@ -961,9 +929,10 @@ endfor
   
   
   <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/annotate/" rel="prev">Annotate</a>
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/scripts/batch-processing/" rel="next">Batch processing</a>
   </div>
+  
   
 </div>
 

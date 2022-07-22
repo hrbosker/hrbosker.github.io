@@ -681,5 +681,161 @@ Remove
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
+    <item>
+      <title>Move to zero-crossings</title>
+      <link>https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/</guid>
+      <description>&lt;p&gt;This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &amp;rsquo;to0x&amp;rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../move-to-zero-crossings.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@ru.nl
+### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+	###&amp;gt;&amp;gt; This script takes a single .wav and matching .TextGrid file as input
+	###&amp;gt;&amp;gt;   and moves all boundaries in one particular tier to zero-crossings.
+
+	###&amp;gt;&amp;gt;   Specifically, it *adds* a new &amp;#39;to0x&amp;#39; tier at the top of the TextGrid
+	###&amp;gt;&amp;gt;   that is identical to a given tier except that all boundaries are
+	###&amp;gt;&amp;gt;   at zero-crossings. The old TextGrid is then overwritten with the
+	###&amp;gt;&amp;gt;   new extended TextGrid, but no information is lost (only added).
+
+	###&amp;gt;&amp;gt;   This script works best if the script also subtracts the mean from
+	###&amp;gt;&amp;gt;   the audio signal, and overwrites the original audio:
+	###&amp;gt;&amp;gt;	&amp;#39;method&amp;#39; option 1 (default).
+
+	###&amp;gt;&amp;gt;	If you need to move the boundaries for more than one TextGrid file,
+	###&amp;gt;&amp;gt;	you can merge this script with &amp;#39;batch-processing.praat&amp;#39;,
+	###&amp;gt;&amp;gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/
+
+
+################################################################################
+### Form to enter variables
+################################################################################
+beginPause: &amp;#34;Enter settings&amp;#34;
+	comment: &amp;#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&amp;#34;
+	text: &amp;#34;directory&amp;#34;, &amp;#34;C:/Users/hanbos/mysounds&amp;#34;
+	comment: &amp;#34;Provide the name of the sound file&amp;#34;
+	comment: &amp;#34;(should be identical to TextGrid name)&amp;#34;
+	comment: &amp;#34;NOTE: do NOT include any extension (no .wav)&amp;#34;
+	text: &amp;#34;filename&amp;#34;, &amp;#34;syll1&amp;#34;
+	comment: &amp;#34;Provide the interval tier number (typically 1)&amp;#34;
+	real: &amp;#34;tierNumber&amp;#34;, 1
+	choice: &amp;#34;method&amp;#34;, 1
+	   option: &amp;#34;Subtract mean and overwrite audio file&amp;#34;
+	   option: &amp;#34;Do not subtract mean&amp;#34;
+clicked = endPause (&amp;#34;Cancel&amp;#34;, &amp;#34;OK&amp;#34;, 2)
+
+
+
+################################################################################
+### Before we start, let&amp;#39;s check whether you&amp;#39;ve entered sensible
+### input for the variables above...
+################################################################################
+
+### Let&amp;#39;s check if the directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(directory$,1)=&amp;#34;/&amp;#34;
+	directory$ = left$(directory$,length(directory$)-1)
+elsif right$(directory$,1)=&amp;#34;\&amp;#34;
+	directory$ = left$(directory$,length(directory$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = directory$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+
+	## Let&amp;#39;s also check whether the specified wav and TextGrid filenames exist
+	## inside this particular directory.
+
+	filepath$ = directory$ + &amp;#34;/&amp;#34; + filename$ + &amp;#34;.wav&amp;#34;
+	wavFileExists = fileReadable(filepath$)
+
+	if wavFileExists = 0
+		# if the wav file does not exist
+		printline Could not find &amp;#39;filename$&amp;#39;.wav in the folder &amp;#39;directory$&amp;#39;
+		exit Could not find &amp;#39;filename$&amp;#39;.wav in the folder &amp;#39;directory$&amp;#39;. Check spelling.
+	endif
+
+	filepath$ = directory$ + &amp;#34;/&amp;#34; + filename$ + &amp;#34;.TextGrid&amp;#34;
+	tgFileExists = fileReadable(filepath$)
+
+	if tgFileExists = 0
+		# if the TextGrid file does not exist
+		printline Could not find &amp;#39;filename$&amp;#39;.TextGrid in the folder &amp;#39;directory$&amp;#39;
+		exit Could not find &amp;#39;filename$&amp;#39;.TextGrid in the folder &amp;#39;directory$&amp;#39;. Check spelling.
+	endif
+else
+	# if the temporary file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;directory$&amp;#39; was not found
+	exit Your directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+Read from file... &amp;#39;directory$&amp;#39;\&amp;#39;filename$&amp;#39;.wav
+if method = 1
+	Subtract mean
+	Write to WAV file... &amp;#39;directory$&amp;#39;\&amp;#39;filename$&amp;#39;.wav
+endif
+Read from file... &amp;#39;directory$&amp;#39;\&amp;#39;filename$&amp;#39;.TextGrid
+nInts = Get number of intervals... &amp;#39;tierNumber&amp;#39;
+Insert interval tier... 1 to0x
+
+for i to (&amp;#39;nInts&amp;#39;-1)
+	select TextGrid &amp;#39;filename$&amp;#39;
+	intEnd = Get end point... (&amp;#39;tierNumber&amp;#39;+1) &amp;#39;i&amp;#39;
+	intLab$ = Get label of interval... (&amp;#39;tierNumber&amp;#39;+1) &amp;#39;i&amp;#39;
+	select Sound &amp;#39;filename$&amp;#39;
+	zxEnd = Get nearest zero crossing... 1 &amp;#39;intEnd&amp;#39;
+	select TextGrid &amp;#39;filename$&amp;#39;
+	Insert boundary... 1 zxEnd
+	Set interval text... 1 &amp;#39;i&amp;#39; &amp;#39;intLab$&amp;#39;
+endfor
+intLab$ = Get label of interval... (&amp;#39;tierNumber&amp;#39;+1) &amp;#39;nInts&amp;#39;
+Set interval text... 1 &amp;#39;nInts&amp;#39; &amp;#39;intLab$&amp;#39;
+
+Write to text file... &amp;#39;directory$&amp;#39;\&amp;#39;filename$&amp;#39;.TextGrid
+Remove
+select Sound &amp;#39;filename$&amp;#39;
+Remove
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
   </channel>
 </rss>
