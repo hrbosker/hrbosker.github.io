@@ -719,6 +719,10 @@
 
 
 
+  <li class=""><a href="/resources/how-to/script-in-praat/">...script in Praat</a></li>
+
+
+
   <li class="active"><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
 
       
@@ -738,18 +742,6 @@
 
     
     
-    <div class="d-none d-xl-block col-xl-2 docs-toc">
-      
-
-      <ul class="nav toc-top">
-        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
-      </ul>
-
-      <nav id="TableOfContents"></nav>
-
-      
-    </div>
-    
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
@@ -766,8 +758,8 @@
     This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is <strong>by no means</strong> a one-size-fits-all solution to all your power needs. <em>Use at your own risk!</em>
   </div>
 </div>
-<p>The R script shared here is first and foremost intended as a <strong>lab archive</strong>, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means <strong>it requires customization</strong> for each individual new project.</p>
-<p>It is based on <a href="https://doi.org/10.3758/s13428-021-01546-0" target="_blank" rel="noopener">Kumle et al. (2021, BRM)</a>, adapting code from its github repo to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.</p>
+<p>The R script shared here is first and foremost intended as a <strong>lab template</strong>, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means <strong>it requires customization</strong> for each individual new project.</p>
+<p>It is based on <a href="https://doi.org/10.3758/s13428-021-01546-0" target="_blank" rel="noopener">Kumle et al. (2021, BRM)</a>, adapting code from its github repo (Scenario #3) to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.</p>
 <p>The script can be adjusted to run LMM power analysis (instead of GLMM) and to include &gt;1 random effects; see comments in script.</p>
 <blockquote>
 <p>Download the <a href="R_power_analysis.R">R_power_analysis.R</a> script here.</p>
@@ -960,7 +952,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/how-to/annotate-in-praat/" rel="next">...annotate in Praat</a>
+    <a href="/resources/how-to/script-in-praat/" rel="next">...script in Praat</a>
   </div>
   
   

@@ -539,6 +539,11 @@
 &lt;li&gt;Download Praat:&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.fon.hum.uva.nl/praat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here&amp;rsquo;s a video tutorial from Matt Winn about downloading Praat: &lt;a href=&#34;https://www.youtube.com/watch?v=QonCpMS5JPg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.youtube.com/watch?v=QonCpMS5JPg&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
 &lt;li&gt;When you open Praat, two windows pop up. One is called Praat Objects (or: object window), and the other is called Praat Picture. Praat Objects is the most important interface for working with sound and annotations, while Praat Picture is where the figures you draw appear (e.g., waveforms or spectrograms) allowing you to save them as .png or .eps files. In most cases, you can ignore Praat Picture and close it.&lt;/li&gt;
 &lt;li&gt;In the Objects window, there are fixed menus at the top (Praat, New, Open, Save) and bottom (Rename, Copy, Inspect, Info, Remove). On the right is a dynamic menu, which changes depending on which objects are selected (Sounds, TextGrids, Spectra, etc.).&lt;/li&gt;
 &lt;/ul&gt;
@@ -829,10 +834,192 @@
 &lt;li&gt;&lt;strong&gt;Option 1:&lt;/strong&gt; Save from the TextGrid Editor window. Just hit [Ctrl+S] which will bring up a dialogue window that allows you to specify the name and location of the new .TextGrid file. &lt;strong&gt;NOTE:&lt;/strong&gt; Even though you see the waveform in the TextGrid Editor window, saving in this way &lt;em&gt;only&lt;/em&gt; saves the TextGrid (i.e., everything in the tiers), &lt;em&gt;not&lt;/em&gt; the Sound!&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Option 2:&lt;/strong&gt; Save from the Praat object window. Select the TextGrid object (highlighting it in blue) and go to &lt;em&gt;Save &amp;gt; Save as text file&lt;/em&gt;. This will bring up the same dialogue window. Do &lt;strong&gt;not&lt;/strong&gt; select both the Sound and TextGrid objects; you only want to save your annotations inside the tiers in the TextGrid.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;to do: add spoiler about how to code this in a script, with code&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h2 id=&#34;lets-automate-this&#34;&gt;Let&amp;rsquo;s automate this&lt;/h2&gt;
+&lt;p&gt;Praat has a scripting interface that allows you to enter code to perform certain functions in a much faster and more efficient way. See our &lt;a href=&#34;https://hrbosker.github.io/resources/how-to/script-in-praat/&#34;&gt;How to script in Praat&lt;/a&gt; to get you acquainted with the Praat scripting interface.&lt;/p&gt;
+&lt;p&gt;Once you&amp;rsquo;re familiar with Praat scripting, check out our &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/annotate/&#34;&gt;annotation script&lt;/a&gt;. This script reads all files in a given folder, presents them to the user for manual annotation, and when the user clicks &lt;em&gt;Next&lt;/em&gt; to proceed Praat will automatically save the user&amp;rsquo;s annotations and present the next file for annotation. This speeds up an annotation workflow considerably.&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Happy Praat&amp;rsquo;ing!&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>...script in Praat</title>
+      <link>https://hrbosker.github.io/resources/how-to/script-in-praat/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/how-to/script-in-praat/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Here&amp;rsquo;s a brief intro into the Praat scripting language. We&amp;rsquo;ll cover how to write and run a script, point you to some tutorials, highlight some of the strange quirks in the Praat scripting language, and provide some scripts we find useful ourselves.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;run-your-first-script&#34;&gt;Run your first script&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Open Praat, and go to &lt;em&gt;Praat &amp;gt; New Praat script&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_648680a9fd9ccb6d0d83159659fbf19e.webp 400w,
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_79ec0d38c66cbe4e36be51cf33f4663e.webp 760w,
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_648680a9fd9ccb6d0d83159659fbf19e.webp&#34;
+               width=&#34;668&#34;
+               height=&#34;562&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;ul&gt;
+&lt;li&gt;You&amp;rsquo;ll find a rather empty-looking window popping up on your screen, with the menus &lt;em&gt;File, Edit, Search, Convert, Font, Run&lt;/em&gt; at the top.&lt;/li&gt;
+&lt;li&gt;Now type this into that scripting window:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Create Sound from formula: &amp;#34;demo&amp;#34;, 1, 0, 1, 44100, &amp;#34;1/2 * sin(2*pi*377*x)&amp;#34;
+Play
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Now turn on your speakers&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and click &lt;em&gt;Run &amp;gt; Run&lt;/em&gt; or hit [CTRL+R] to execute the script.&lt;/li&gt;
+&lt;li&gt;Congratulations, you&amp;rsquo;ve run your first script that creates and plays a short 377 Hz tone.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;every-line-is-a-click&#34;&gt;Every line is a click&lt;/h2&gt;
+&lt;p&gt;The Praat scripting language is a Graphical User Interface (GUI) scripting language. This means that, put rather bluntly, &lt;strong&gt;every line in the script is like a click in the Praat object window&lt;/strong&gt;. The two lines in the code above are identical to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;selecting &lt;em&gt;New &amp;gt; Sound &amp;gt; Create Sound from formula&amp;hellip;&lt;/em&gt;, and entering some parameters&lt;/li&gt;
+&lt;li&gt;clicking Play&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This also means that you can click around in Praat and then ask Praat to give you the code for those particular clicks. That is, Praat actually keeps track of every click you perform.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the scripting window&lt;/li&gt;
+&lt;li&gt;click &lt;em&gt;Edit &amp;gt; Paste history&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This asks Praat to paste every action you performed since opening Praat. This is particularly handy when you don&amp;rsquo;t know how to script a certain action. For instance, you wanna know how to open a sound file in Praat using a script?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go to the Praat object window&lt;/li&gt;
+&lt;li&gt;click &lt;em&gt;Open &amp;gt; Read from file&amp;hellip;&lt;/em&gt; and open a sound file&lt;/li&gt;
+&lt;li&gt;Now go to the scripting window&lt;/li&gt;
+&lt;li&gt;click &lt;em&gt;Edit &amp;gt; Paste history&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It should show you something along the lines of:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Read from file: &amp;#34;C:\Users\hanbos\mysounds\demo.wav&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;but then with a different directory and filename.&lt;/p&gt;
+&lt;p&gt;So remember: &lt;strong&gt;perform the functions in the object window, paste history in the scripting window, and edit the code from there&lt;/strong&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;
+&lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. Alternatively, go to &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. Other third-party tutorials are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&lt;/a&gt;: some quick intro slides by Eleanor Chodroff&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscripting.lingphon.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscripting.lingphon.net&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Jörg Mayer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscriptingtutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscriptingtutorial.com/&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Daniel Riggs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Mauricio A. Figueroa Candia&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;strange-quirks&#34;&gt;Strange quirks&lt;/h2&gt;
+&lt;p&gt;Praat has some peculiarities that make the Praat scripting language stand out compared to other languages, like &lt;em&gt;python&lt;/em&gt; and &lt;em&gt;R&lt;/em&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Over the years, Praat has had three types of syntax. Current Praat versions are compatible with older and newer syntax types, and mixes thereof.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# This line of code extracts the first 100 ms of a sound object...
+# ... in Praat versions 5.3.43 and older; before April 2013
+Extract part... 0 0.1 rectangular 1 no
+# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
+do(&amp;#34;Extract part&amp;#34;, 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;)
+# ... in Praat versions 5.3.63 and later; after January 2014
+Extract part: 0, 0.1, &amp;#34;rectangular, 1, &amp;#34;no&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Praat variables &lt;strong&gt;always&lt;/strong&gt; start in lowercase. Capitals are reserved for functions:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;play = 2
+for i to play
+    Play
+endfor
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Praat does not distinguish between single and double equal signs:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;intensityLevel = 75
+if intensityLevel = 75
+    newIntensityLevel = 80
+endif
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Praat uses single quotes to access the value of a variable. This is, for instance, important when concatenating the values of different string variables:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+myFilename$ = &amp;#34;demo.wav&amp;#34;
+Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Praat&amp;rsquo;s spelling is &lt;code&gt;elsif&lt;/code&gt;, &lt;strong&gt;not&lt;/strong&gt; &lt;code&gt;elseif&lt;/code&gt; (don&amp;rsquo;t ask me why&amp;hellip;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if intensityLevel = 80
+    Scale intensity: 75
+elsif intensityLevel = 75
+    Scale intensity: 80
+else
+    Scale intensity: 65
+endif
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;Different objects in Praat have different functions. For Sound objects, you can run functions like &lt;code&gt;Play&lt;/code&gt;, &lt;code&gt;Resample...&lt;/code&gt;, &lt;code&gt;Scale intensity...&lt;/code&gt;, etc., while for TextGrid objects, you can run functions like &lt;code&gt;Duplicate tier...&lt;/code&gt;, &lt;code&gt;Insert boundary...&lt;/code&gt;, etc. Therefore, it is important to &lt;strong&gt;keep track of which object is selected&lt;/strong&gt;:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+myFilename$ = &amp;#34;demo.wav&amp;#34;
+Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+Play
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;hellip; will throw an error because the newly created TextGrid is automatically selected after &lt;code&gt;To TextGrid:&lt;/code&gt; and Praat cannot play TextGrids. The solution is:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+myFilename$ = &amp;#34;demo.wav&amp;#34;
+Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+select Sound demo
+Play
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
+&lt;p&gt;See our &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/&#34;&gt;Scripts&lt;/a&gt; archive for snippets of code we frequently use. Note, however, that &lt;strong&gt;they require customization&lt;/strong&gt; for each individual new project. &lt;em&gt;Use at your own risk!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Other scripts resources available online are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.praatvocaltoolkit.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Vocal Toolkit plugin&lt;/a&gt; is a plugin for Praat. When installed, you can call various new functions from a button within Praat. However, it&amp;rsquo;s a little risky if you don&amp;rsquo;t know the ins-and-outs of a particular function, so &lt;strong&gt;always check the raw code&lt;/strong&gt; here:
+&lt;ul&gt;
+&lt;li&gt;[WINDOWS] &amp;ldquo;C:\Users\&lt;em&gt;(Username)&lt;/em&gt;\Praat\plugin_VocalToolkit&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;[MAC] &amp;ldquo;/Users/&lt;em&gt;(UserName)&lt;/em&gt;/Library/Preferences/Praat Prefs/&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mattwinn.com/praat.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matt Winn&amp;rsquo;s Listen Lab&lt;/a&gt; with some really fun &lt;a href=&#34;https://www.youtube.com/playlist?list=PL6niCBwOhjHga4bCS83VJ2uKzQ8ZjEVeG&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube Praat tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://holgermitterer.eu/research.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Holger Mitterer&amp;rsquo;s website&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stylerw/styler_praat_scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Will Styler&amp;rsquo;s repo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;praatvscode&#34;&gt;PraatVSCode&lt;/h2&gt;
+&lt;p&gt;The scripting interface in Praat itself is not the best. It&amp;rsquo;s basically a plain text editor with a Run button. There&amp;rsquo;s no syntax highlighting, no autocompletion, no regular expression search options&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Therefore, many users tend to write and edit their scripts in other editors, like TextPad, Notepad++, or Sublime. Some of these even provide things like syntax highlighting and autocompletion, see &lt;a href=&#34;https://praatpfanne.lingphon.net/praat-ressourcen/resources-english/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this overview&lt;/a&gt; for editor plugins for Sublime, Kate, Atom, Notepad++, Vim, and Ace. However, &lt;strong&gt;none of these can run Praat code&lt;/strong&gt;. Instead, users need to write their code in Notepad++, copy it, paste it into Praat, and then hit Run. You can&amp;rsquo;t imagine how cumbersome this is and it can introduce all sorts of human errors.&lt;/p&gt;
+&lt;p&gt;A great solution is &lt;a href=&#34;https://hrbosker.github.io/resources/tools/#praatvscode&#34;&gt;PraatVSCode&lt;/a&gt;:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;600&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Created by our very own &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt;, PraatVSCode is an extension for Visual Studio Code, providing syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows &lt;strong&gt;running of scripts by Praat from inside Visual Studio Code&lt;/strong&gt;. &lt;a href=&#34;https://hrbosker.github.io/resources/tools/#praatvscode&#34;&gt;Try it now!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Happy coding!&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -846,8 +1033,8 @@
     This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is &lt;strong&gt;by no means&lt;/strong&gt; a one-size-fits-all solution to all your power needs. &lt;em&gt;Use at your own risk!&lt;/em&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;p&gt;The R script shared here is first and foremost intended as a &lt;strong&gt;lab archive&lt;/strong&gt;, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means &lt;strong&gt;it requires customization&lt;/strong&gt; for each individual new project.&lt;/p&gt;
-&lt;p&gt;It is based on &lt;a href=&#34;https://doi.org/10.3758/s13428-021-01546-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kumle et al. (2021, BRM)&lt;/a&gt;, adapting code from its github repo to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.&lt;/p&gt;
+&lt;p&gt;The R script shared here is first and foremost intended as a &lt;strong&gt;lab template&lt;/strong&gt;, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means &lt;strong&gt;it requires customization&lt;/strong&gt; for each individual new project.&lt;/p&gt;
+&lt;p&gt;It is based on &lt;a href=&#34;https://doi.org/10.3758/s13428-021-01546-0&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Kumle et al. (2021, BRM)&lt;/a&gt;, adapting code from its github repo (Scenario #3) to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.&lt;/p&gt;
 &lt;p&gt;The script can be adjusted to run LMM power analysis (instead of GLMM) and to include &amp;gt;1 random effects; see comments in script.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Download the &lt;a href=&#34;R_power_analysis.R&#34;&gt;R_power_analysis.R&lt;/a&gt; script here.&lt;/p&gt;

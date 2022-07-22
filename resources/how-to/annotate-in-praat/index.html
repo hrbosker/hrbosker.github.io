@@ -719,6 +719,10 @@
 
 
 
+  <li class=""><a href="/resources/how-to/script-in-praat/">...script in Praat</a></li>
+
+
+
   <li class=""><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
 
       
@@ -755,6 +759,7 @@
     <li><a href="#segment-phonemes">Segment phonemes</a></li>
     <li><a href="#working-with-textgrids">Working with TextGrids</a></li>
     <li><a href="#saving-the-textgrid">Saving the TextGrid</a></li>
+    <li><a href="#lets-automate-this">Let&rsquo;s automate this</a></li>
   </ul>
 </nav>
 
@@ -782,6 +787,11 @@
 <li>Download Praat:</li>
 <li><a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/</a></li>
 <li>This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe</li>
+</ul>
+<blockquote>
+<p>Here&rsquo;s a video tutorial from Matt Winn about downloading Praat: <a href="https://www.youtube.com/watch?v=QonCpMS5JPg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=QonCpMS5JPg</a></p>
+</blockquote>
+<ul>
 <li>When you open Praat, two windows pop up. One is called Praat Objects (or: object window), and the other is called Praat Picture. Praat Objects is the most important interface for working with sound and annotations, while Praat Picture is where the figures you draw appear (e.g., waveforms or spectrograms) allowing you to save them as .png or .eps files. In most cases, you can ignore Praat Picture and close it.</li>
 <li>In the Objects window, there are fixed menus at the top (Praat, New, Open, Save) and bottom (Rename, Copy, Inspect, Info, Remove). On the right is a dynamic menu, which changes depending on which objects are selected (Sounds, TextGrids, Spectra, etc.).</li>
 </ul>
@@ -1072,9 +1082,9 @@
 <li><strong>Option 1:</strong> Save from the TextGrid Editor window. Just hit [Ctrl+S] which will bring up a dialogue window that allows you to specify the name and location of the new .TextGrid file. <strong>NOTE:</strong> Even though you see the waveform in the TextGrid Editor window, saving in this way <em>only</em> saves the TextGrid (i.e., everything in the tiers), <em>not</em> the Sound!</li>
 <li><strong>Option 2:</strong> Save from the Praat object window. Select the TextGrid object (highlighting it in blue) and go to <em>Save &gt; Save as text file</em>. This will bring up the same dialogue window. Do <strong>not</strong> select both the Sound and TextGrid objects; you only want to save your annotations inside the tiers in the TextGrid.</li>
 </ul>
-<blockquote>
-<p>to do: add spoiler about how to code this in a script, with code</p>
-</blockquote>
+<h2 id="lets-automate-this">Let&rsquo;s automate this</h2>
+<p>Praat has a scripting interface that allows you to enter code to perform certain functions in a much faster and more efficient way. See our <a href="/resources/how-to/script-in-praat/">How to script in Praat</a> to get you acquainted with the Praat scripting interface.</p>
+<p>Once you&rsquo;re familiar with Praat scripting, check out our <a href="/resources/scripts/annotate/">annotation script</a>. This script reads all files in a given folder, presents them to the user for manual annotation, and when the user clicks <em>Next</em> to proceed Praat will automatically save the user&rsquo;s annotations and present the next file for annotation. This speeds up an annotation workflow considerably.</p>
 <p><em>Happy Praat&rsquo;ing!</em></p>
 
           </div>
@@ -1100,7 +1110,7 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/how-to/run-a-power-analysis/" rel="prev">...run a power analysis</a>
+    <a href="/resources/how-to/script-in-praat/" rel="prev">...script in Praat</a>
   </div>
   
 </div>

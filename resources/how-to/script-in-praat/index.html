@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="Open Praat scripts for speech analysis, manipulation, and synthesis" />
+  <meta name="description" content="Here&rsquo;s a brief intro into the Praat scripting language. We&rsquo;ll cover how to write and run a script, point you to some tutorials, highlight some of the strange quirks in the Praat scripting language, and provide some scripts we find useful ourselves." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/script-in-praat/" />
 
   
   
@@ -260,8 +260,6 @@
   
 
   
-    <link rel="alternate" href="/resources/scripts/index.xml" type="application/rss+xml" title="SPEAC | Hans Rutger Bosker" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -270,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/how-to/script-in-praat/" />
 
   
   
@@ -281,6 +279,7 @@
   
   
     
+    
   
   
 
@@ -289,16 +288,15 @@
     
     
   
-  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/" />
-  <meta property="og:title" content="Scripts | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="Open Praat scripts for speech analysis, manipulation, and synthesis" /><meta property="og:image" content="https://hrbosker.github.io/resources/scripts/featured.jpg" />
-    <meta property="twitter:image" content="https://hrbosker.github.io/resources/scripts/featured.jpg" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/how-to/script-in-praat/" />
+  <meta property="og:title" content="...script in Praat | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="Here&rsquo;s a brief intro into the Praat scripting language. We&rsquo;ll cover how to write and run a script, point you to some tutorials, highlight some of the strange quirks in the Praat scripting language, and provide some scripts we find useful ourselves." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2022-07-07T00:00:00&#43;00:00" />
     
   
 
@@ -310,15 +308,17 @@
 
   
 
+  
 
 
 
 
-  <title>Scripts | SPEAC | Hans Rutger Bosker</title>
+
+  <title>...script in Praat | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3c695000c9960ffc206501e907fecded" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ac1e7b923b87c4d51e7361cec3fa632f" >
 
   
   
@@ -650,7 +650,7 @@
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
-          Resources
+          How to...
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -687,6 +687,10 @@
 
       
       
+        
+          
+        
+      
 
 
   
@@ -700,22 +704,26 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link  active" href="/resources/scripts/">Scripts</a>
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
     
       
         <ul class="nav docs-sidenav">
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/how-to/record-audio/">...record audio</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class="active"><a href="/resources/how-to/script-in-praat/">...script in Praat</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
 
       
         </ul>
@@ -743,10 +751,12 @@
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#praat-syntax">Praat syntax</a></li>
-    <li><a href="#list-of-available-scripts">List of available scripts</a></li>
-    <li><a href="#helpful-links">Helpful links</a></li>
-    <li><a href="#license">License</a></li>
+    <li><a href="#run-your-first-script">Run your first script</a></li>
+    <li><a href="#every-line-is-a-click">Every line is a click</a></li>
+    <li><a href="#tutorials">Tutorials</a></li>
+    <li><a href="#strange-quirks">Strange quirks</a></li>
+    <li><a href="#ready-made-scripts">Ready-made scripts</a></li>
+    <li><a href="#praatvscode">PraatVSCode</a></li>
   </ul>
 </nav>
 
@@ -761,10 +771,19 @@
         <div class="docs-article-container">
           
 
-          <h1>Scripts</h1>
+          <h1>...script in Praat</h1>
 
           <div class="article-style">
-            
+            <div class="alert alert-note">
+  <div>
+    Here&rsquo;s a brief intro into the Praat scripting language. We&rsquo;ll cover how to write and run a script, point you to some tutorials, highlight some of the strange quirks in the Praat scripting language, and provide some scripts we find useful ourselves.
+  </div>
+</div>
+<h2 id="run-your-first-script">Run your first script</h2>
+<ul>
+<li>Open Praat, and go to <em>Praat &gt; New Praat script</em>.</li>
+</ul>
+
 
 
 
@@ -783,66 +802,115 @@
 <figure  >
   <div class="d-flex justify-content-center">
     <div class="w-100" ><img alt="" srcset="
-               /resources/scripts/featured_hu6fd6459726fe8a6edb133366326fa2d5_269903_416c62c82f4fb06582582bf553651a3e.webp 400w,
-               /resources/scripts/featured_hu6fd6459726fe8a6edb133366326fa2d5_269903_eedbe8534052bf4dab2a63e117ca8410.webp 760w,
-               /resources/scripts/featured_hu6fd6459726fe8a6edb133366326fa2d5_269903_1200x1200_fit_q75_h2_lanczos.webp 1200w"
-               src="/resources/scripts/featured_hu6fd6459726fe8a6edb133366326fa2d5_269903_416c62c82f4fb06582582bf553651a3e.webp"
-               width="760"
-               height="428"
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_648680a9fd9ccb6d0d83159659fbf19e.webp 400w,
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_79ec0d38c66cbe4e36be51cf33f4663e.webp 760w,
+               /resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/script-in-praat/open_praatscript_hu29fd31b82b883422b501bc54a996c18a_102016_648680a9fd9ccb6d0d83159659fbf19e.webp"
+               width="668"
+               height="562"
                loading="lazy" data-zoomable /></div>
   </div></figure>
-<details class="toc-inpage d-print-none d-xl-none " open>
-  <summary class="font-weight-bold">Table of Contents</summary>
-  <nav id="TableOfContents">
-  <ul>
-    <li><a href="#praat-syntax">Praat syntax</a></li>
-    <li><a href="#list-of-available-scripts">List of available scripts</a></li>
-    <li><a href="#helpful-links">Helpful links</a></li>
-    <li><a href="#license">License</a></li>
-  </ul>
-</nav>
-</details>
-
-<div class="alert alert-note">
-  <div>
-    The Praat scripts shared here are first and foremost intended as a <strong>lab archive</strong>, providing script snippets we frequently use. This means <strong>they require customization</strong> for each individual new project. <em>Use at your own risk!</em>
-  </div>
-</div>
-<h2 id="praat-syntax">Praat syntax</h2>
-<p>Over the years, Praat has had three types of syntax:</p>
 <ul>
-<li><code>Extract part... 0 0.1 rectangular 1 no</code> <em>(Praat versions 5.3.43 and older; before April 2013)</em></li>
-<li><code>do(&quot;Extract part&quot;, 0, 0.1, &quot;rectangular&quot;, 1, &quot;no&quot;)</code> <em>(between 5.3.44 and 5.3.62; April 2013 - January 2014)</em></li>
-<li><code>Extract part: 0, 0.1, &quot;rectangular, 1, &quot;no&quot;</code> <em>(5.3.63 and after; after January 2014)</em></li>
+<li>You&rsquo;ll find a rather empty-looking window popping up on your screen, with the menus <em>File, Edit, Search, Convert, Font, Run</em> at the top.</li>
+<li>Now type this into that scripting window:</li>
 </ul>
-<p>Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax (&hellip;shows my age), with occasional lines using the latest type of syntax. <strong>[ADVERTISEMENT:]</strong> <em>Did you know the syntax highlighting in <a href="../tools/#praatvscode">PraatVSCode</a> works with either syntax?</em></p>
-<br />
-<h2 id="list-of-available-scripts">List of available scripts</h2>
-
-
-  <ul class="list-unstyled">
-    
-      <li>
-        <h5><a href="/resources/scripts/save-all/">Save all</a></h5>
-        <p>Praat can only save one object at a time for you. If you have multiple objects in your object window you&rsquo;d like to save in one go, you can use this script.</p>
-      </li>
-    
-      <li>
-        <h5><a href="/resources/scripts/annotate/">Annotate</a></h5>
-        <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on.</p>
-      </li>
-    
-      <li>
-        <h5><a href="/resources/scripts/batch-processing/">Batch processing</a></h5>
-        <p>This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
-      </li>
-    
-  </ul>
-
-
-<br />
-<h2 id="helpful-links">Helpful links</h2>
-<p><em>Not finding what you were looking for?</em> There are thousands of other Praat scripts available online. Three resources with particularly useful code are:</p>
+<pre tabindex="0"><code>Create Sound from formula: &#34;demo&#34;, 1, 0, 1, 44100, &#34;1/2 * sin(2*pi*377*x)&#34;
+Play
+</code></pre><ul>
+<li>Now turn on your speakers&hellip;</li>
+<li>&hellip;and click <em>Run &gt; Run</em> or hit [CTRL+R] to execute the script.</li>
+<li>Congratulations, you&rsquo;ve run your first script that creates and plays a short 377 Hz tone.</li>
+</ul>
+<h2 id="every-line-is-a-click">Every line is a click</h2>
+<p>The Praat scripting language is a Graphical User Interface (GUI) scripting language. This means that, put rather bluntly, <strong>every line in the script is like a click in the Praat object window</strong>. The two lines in the code above are identical to:</p>
+<ul>
+<li>selecting <em>New &gt; Sound &gt; Create Sound from formula&hellip;</em>, and entering some parameters</li>
+<li>clicking Play</li>
+</ul>
+<p>This also means that you can click around in Praat and then ask Praat to give you the code for those particular clicks. That is, Praat actually keeps track of every click you perform.</p>
+<ul>
+<li>Go to the scripting window</li>
+<li>click <em>Edit &gt; Paste history</em></li>
+</ul>
+<p>This asks Praat to paste every action you performed since opening Praat. This is particularly handy when you don&rsquo;t know how to script a certain action. For instance, you wanna know how to open a sound file in Praat using a script?</p>
+<ul>
+<li>Go to the Praat object window</li>
+<li>click <em>Open &gt; Read from file&hellip;</em> and open a sound file</li>
+<li>Now go to the scripting window</li>
+<li>click <em>Edit &gt; Paste history</em></li>
+</ul>
+<p>It should show you something along the lines of:</p>
+<pre tabindex="0"><code>Read from file: &#34;C:\Users\hanbos\mysounds\demo.wav&#34;
+</code></pre><p>but then with a different directory and filename.</p>
+<p>So remember: <strong>perform the functions in the object window, paste history in the scripting window, and edit the code from there</strong>.</p>
+<h2 id="tutorials">Tutorials</h2>
+<p>Praat offers a scripting tutorial itself. Go to <em>Help &gt; Praat Intro</em> and scroll down to find <em>Scripting</em>. Alternatively, go to <a href="https://www.fon.hum.uva.nl/praat/manual/Scripting.html" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/manual/Scripting.html</a>. This tutorial is not too bad actually. Other third-party tutorials are:</p>
+<ul>
+<li><a href="https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf" target="_blank" rel="noopener">https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf</a>: some quick intro slides by Eleanor Chodroff</li>
+<li><a href="https://praatscripting.lingphon.net" target="_blank" rel="noopener">https://praatscripting.lingphon.net</a>: a <strong>comprehensive written tutorial</strong> by Jörg Mayer</li>
+<li><a href="https://praatscriptingtutorial.com/" target="_blank" rel="noopener">https://praatscriptingtutorial.com/</a>: a <strong>comprehensive written tutorial</strong> by Daniel Riggs</li>
+<li><a href="http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html" target="_blank" rel="noopener">http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html</a>: a <strong>comprehensive written tutorial</strong> by Mauricio A. Figueroa Candia</li>
+</ul>
+<h2 id="strange-quirks">Strange quirks</h2>
+<p>Praat has some peculiarities that make the Praat scripting language stand out compared to other languages, like <em>python</em> and <em>R</em>.</p>
+<ul>
+<li>Over the years, Praat has had three types of syntax. Current Praat versions are compatible with older and newer syntax types, and mixes thereof.</li>
+</ul>
+<pre tabindex="0"><code># This line of code extracts the first 100 ms of a sound object...
+# ... in Praat versions 5.3.43 and older; before April 2013
+Extract part... 0 0.1 rectangular 1 no
+# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
+do(&#34;Extract part&#34;, 0, 0.1, &#34;rectangular&#34;, 1, &#34;no&#34;)
+# ... in Praat versions 5.3.63 and later; after January 2014
+Extract part: 0, 0.1, &#34;rectangular, 1, &#34;no&#34;
+</code></pre><ul>
+<li>Praat variables <strong>always</strong> start in lowercase. Capitals are reserved for functions:</li>
+</ul>
+<pre tabindex="0"><code>play = 2
+for i to play
+    Play
+endfor
+</code></pre><ul>
+<li>Praat does not distinguish between single and double equal signs:</li>
+</ul>
+<pre tabindex="0"><code>intensityLevel = 75
+if intensityLevel = 75
+    newIntensityLevel = 80
+endif
+</code></pre><ul>
+<li>Praat uses single quotes to access the value of a variable. This is, for instance, important when concatenating the values of different string variables:</li>
+</ul>
+<pre tabindex="0"><code>myDirectory$ = &#34;C:\Users\hanbos\mysounds&#34;
+myFilename$ = &#34;demo.wav&#34;
+Read from file: &#34;&#39;myDirectory$&#39;\&#39;myFilename$&#39;&#34;
+</code></pre><ul>
+<li>Praat&rsquo;s spelling is <code>elsif</code>, <strong>not</strong> <code>elseif</code> (don&rsquo;t ask me why&hellip;)</li>
+</ul>
+<pre tabindex="0"><code>if intensityLevel = 80
+    Scale intensity: 75
+elsif intensityLevel = 75
+    Scale intensity: 80
+else
+    Scale intensity: 65
+endif
+</code></pre><ul>
+<li>Different objects in Praat have different functions. For Sound objects, you can run functions like <code>Play</code>, <code>Resample...</code>, <code>Scale intensity...</code>, etc., while for TextGrid objects, you can run functions like <code>Duplicate tier...</code>, <code>Insert boundary...</code>, etc. Therefore, it is important to <strong>keep track of which object is selected</strong>:</li>
+</ul>
+<pre tabindex="0"><code>myDirectory$ = &#34;C:\Users\hanbos\mysounds&#34;
+myFilename$ = &#34;demo.wav&#34;
+Read from file: &#34;&#39;myDirectory$&#39;\&#39;myFilename$&#39;&#34;
+To TextGrid: &#34;words&#34;, &#34;&#34;
+Play
+</code></pre><p>&hellip; will throw an error because the newly created TextGrid is automatically selected after <code>To TextGrid:</code> and Praat cannot play TextGrids. The solution is:</p>
+<pre tabindex="0"><code>myDirectory$ = &#34;C:\Users\hanbos\mysounds&#34;
+myFilename$ = &#34;demo.wav&#34;
+Read from file: &#34;&#39;myDirectory$&#39;\&#39;myFilename$&#39;&#34;
+To TextGrid: &#34;words&#34;, &#34;&#34;
+select Sound demo
+Play
+</code></pre><h2 id="ready-made-scripts">Ready-made scripts</h2>
+<p>See our <a href="/resources/scripts/">Scripts</a> archive for snippets of code we frequently use. Note, however, that <strong>they require customization</strong> for each individual new project. <em>Use at your own risk!</em></p>
+<p>Other scripts resources available online are:</p>
 <ul>
 <li><a href="http://www.praatvocaltoolkit.com/" target="_blank" rel="noopener">Vocal Toolkit plugin</a> is a plugin for Praat. When installed, you can call various new functions from a button within Praat. However, it&rsquo;s a little risky if you don&rsquo;t know the ins-and-outs of a particular function, so <strong>always check the raw code</strong> here:
 <ul>
@@ -854,10 +922,32 @@
 <li><a href="http://holgermitterer.eu/research.html" target="_blank" rel="noopener">Holger Mitterer&rsquo;s website</a></li>
 <li><a href="https://github.com/stylerw/styler_praat_scripts" target="_blank" rel="noopener">Will Styler&rsquo;s repo</a></li>
 </ul>
-<h2 id="license">License</h2>
-<p>
-  <i class="fab fa-creative-commons  pr-1 fa-fw"></i> All scripts are shared under an <a href="https://en.wikipedia.org/wiki/MIT_License#License_terms" target="_blank" rel="noopener">MIT license</a>.</p>
-<p><em>2022, Hans Rutger Bosker</em></p>
+<h2 id="praatvscode">PraatVSCode</h2>
+<p>The scripting interface in Praat itself is not the best. It&rsquo;s basically a plain text editor with a Run button. There&rsquo;s no syntax highlighting, no autocompletion, no regular expression search options&hellip;</p>
+<p>Therefore, many users tend to write and edit their scripts in other editors, like TextPad, Notepad++, or Sublime. Some of these even provide things like syntax highlighting and autocompletion, see <a href="https://praatpfanne.lingphon.net/praat-ressourcen/resources-english/" target="_blank" rel="noopener">this overview</a> for editor plugins for Sublime, Kate, Atom, Notepad++, Vim, and Ace. However, <strong>none of these can run Praat code</strong>. Instead, users need to write their code in Notepad++, copy it, paste it into Praat, and then hit Run. You can&rsquo;t imagine how cumbersome this is and it can introduce all sorts of human errors.</p>
+<p>A great solution is <a href="/resources/tools/#praatvscode">PraatVSCode</a>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true" alt="" loading="lazy" data-zoomable width="600" /></div>
+  </div></figure>
+<p>Created by our very own <a href="/author/orhun-ulusahin/">Orhun Uluşahin</a>, PraatVSCode is an extension for Visual Studio Code, providing syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows <strong>running of scripts by Praat from inside Visual Studio Code</strong>. <a href="/resources/tools/#praatvscode">Try it now!</a></p>
+<p><em>Happy coding!</em></p>
 
           </div>
 
@@ -872,6 +962,19 @@
 <div class="post-nav">
   
   
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/how-to/annotate-in-praat/" rel="next">...annotate in Praat</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resources/how-to/run-a-power-analysis/" rel="prev">...run a power analysis</a>
+  </div>
+  
 </div>
 
           </div>
@@ -879,7 +982,7 @@
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Jul 7, 2022</p>
+          <p>Last updated on Jan 1, 0001</p>
 
           
 
