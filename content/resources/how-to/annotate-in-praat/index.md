@@ -14,6 +14,7 @@ We'll cover making TextGrid annotations in Praat. We'll read a wav file in Praat
 - Download Praat:
 - https://www.fon.hum.uva.nl/praat/
 - This will download a zipped folder containing a praat.exe file. Save it somewhere where you can find it later, unzip it, and open praat.exe
+> Here's a video tutorial from Matt Winn about downloading Praat: https://www.youtube.com/watch?v=QonCpMS5JPg
 - When you open Praat, two windows pop up. One is called Praat Objects (or: object window), and the other is called Praat Picture. Praat Objects is the most important interface for working with sound and annotations, while Praat Picture is where the figures you draw appear (e.g., waveforms or spectrograms) allowing you to save them as .png or .eps files. In most cases, you can ignore Praat Picture and close it.
 - In the Objects window, there are fixed menus at the top (Praat, New, Open, Save) and bottom (Rename, Copy, Inspect, Info, Remove). On the right is a dynamic menu, which changes depending on which objects are selected (Sounds, TextGrids, Spectra, etc.).
 
@@ -114,6 +115,10 @@ Sound is a wave of air pressure. Imagine we have two pure tones of 440 Hz, but o
 - **Option 1:** Save from the TextGrid Editor window. Just hit [Ctrl+S] which will bring up a dialogue window that allows you to specify the name and location of the new .TextGrid file. **NOTE:** Even though you see the waveform in the TextGrid Editor window, saving in this way *only* saves the TextGrid (i.e., everything in the tiers), *not* the Sound!
 - **Option 2:** Save from the Praat object window. Select the TextGrid object (highlighting it in blue) and go to *Save > Save as text file*. This will bring up the same dialogue window. Do **not** select both the Sound and TextGrid objects; you only want to save your annotations inside the tiers in the TextGrid. 
 
-> to do: add spoiler about how to code this in a script, with code
+## Let's automate this
+
+Praat has a scripting interface that allows you to enter code to perform certain functions in a much faster and more efficient way. See our [How to script in Praat](/resources/how-to/script-in-praat/) to get you acquainted with the Praat scripting interface.
+
+Once you're familiar with Praat scripting, check out our [annotation script](/resources/scripts/annotate/). This script reads all files in a given folder, presents them to the user for manual annotation, and when the user clicks *Next* to proceed Praat will automatically save the user's annotations and present the next file for annotation. This speeds up an annotation workflow considerably.
 
 *Happy Praat'ing!*

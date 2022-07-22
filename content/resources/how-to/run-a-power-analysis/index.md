@@ -1,17 +1,20 @@
 ---
 title: ...run a power analysis
 type: book
-weight: 30
+weight: 40
 #date: '2021-01-01'
+
+# display table-of-contents for this particular page on the right-hand side?
+toc: false
 ---
 
 {{% callout warning %}}
 This R script runs a simulation-based power analysis for a simple 2AFC experimental design. This is **by no means** a one-size-fits-all solution to all your power needs. *Use at your own risk!*
 {{% /callout %}}
 
-The R script shared here is first and foremost intended as a **lab archive**, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means **it requires customization** for each individual new project.
+The R script shared here is first and foremost intended as a **lab template**, providing code that we adjust each time we run a new 2AFC (two alternative forced choice) experiment. This means **it requires customization** for each individual new project.
 
-It is based on [Kumle et al. (2021, BRM)](https://doi.org/10.3758/s13428-021-01546-0), adapting code from its github repo to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.
+It is based on [Kumle et al. (2021, BRM)](https://doi.org/10.3758/s13428-021-01546-0), adapting code from its github repo (Scenario #3) to fit our needs. It runs a simulation-based GLMM power analysis with 1000 iterations for a 2AFC design with {10, 20, 30, 40, 50} participants, each presented with 100 trials sampling from a single 5-step phonetic continuum. The estimates for fixed effects and random effects are drawn from pilot data, but can also be adopted from previous literature.
 
 The script can be adjusted to run LMM power analysis (instead of GLMM) and to include >1 random effects; see comments in script.
 

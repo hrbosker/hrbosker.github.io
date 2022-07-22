@@ -25,11 +25,11 @@ The Praat scripts shared here are first and foremost intended as a **lab archive
 ## Praat syntax
 
 Over the years, Praat has had three types of syntax:
-- `Extract part... 0 0.1 rectangular 1 no` *(before Praat 5.3.44, Apr 2013)*
-- `do("Extract part", 0, 0.1, "rectangular", 1, "no")` *(before Praat 5.3.63, Jan 2014)*
-- `Extract part: 0, 0.1, "rectangular, 1, "no"` *(current)*
+- `Extract part... 0 0.1 rectangular 1 no` *(Praat versions 5.3.43 and older; before April 2013)*
+- `do("Extract part", 0, 0.1, "rectangular", 1, "no")` *(between 5.3.44 and 5.3.62; April 2013 - January 2014)*
+- `Extract part: 0, 0.1, "rectangular, 1, "no"` *(5.3.63 and after; after January 2014)*
 
-Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax, with occasional lines using the latest type of syntax. **[ADVERTISEMENT:]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
+Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax (...shows my age), with occasional lines using the latest type of syntax. **[ADVERTISEMENT:]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
 
 <br />
 
@@ -47,6 +47,7 @@ Current Praat versions are compatible with older and newer syntax types, and mix
   - [MAC] "/Users/*(UserName)*/Library/Preferences/Praat Prefs/"
 - [Matt Winn's Listen Lab](http://www.mattwinn.com/praat.html) with some really fun [Youtube Praat tutorials](https://www.youtube.com/playlist?list=PL6niCBwOhjHga4bCS83VJ2uKzQ8ZjEVeG)
 - [Holger Mitterer's website](http://holgermitterer.eu/research.html)
+- [Will Styler's repo](https://github.com/stylerw/styler_praat_scripts)
 
 ## License
 
