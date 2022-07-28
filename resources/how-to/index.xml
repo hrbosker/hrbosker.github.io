@@ -1220,7 +1220,7 @@ Play
       <guid>https://hrbosker.github.io/resources/how-to/write-a-manuscript/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    Here&amp;rsquo;s a Word template that helps us get started writing a manuscript. It includes all basic sections of a paper, template statements (e.g., about ethical guidelines, participant demographics, model output, etc.), &amp;lsquo;fields&amp;rsquo; to automatically update figure and table numbers, and Zotero for reference management.
+    Here&amp;rsquo;s a Word template that includes all basic sections of a paper, template statements (e.g., ethics, participants specs, etc.), &amp;lsquo;fields&amp;rsquo; to automatically update figure/table numbers, heading styles, and Zotero for reference management.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;word-template&#34;&gt;Word template&lt;/h2&gt;
@@ -1230,10 +1230,10 @@ Play
 &lt;h2 id=&#34;tips-n-tricks&#34;&gt;Tips n tricks&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Start now.&lt;/strong&gt; In the olden days, I wrote the paper after all experiments had been run, all data had been collected and analyzed, and I had made my mind up about its theoretical implications. Don&amp;rsquo;t go there. &lt;em&gt;Starting writing the moment you think of your research question.&lt;/em&gt; Take the template above and just start filling in some of the gaps with text. Add a Methods section when you&amp;rsquo;ve designed the experiment, start adding some sentences and references to the Introduction when waiting for data to come in, you can even start writing the Results and General Discussion based on your expectations, and then once the data are in, all you need to do is just fill in the numbers. It takes some commitment and diligence, but it will pay off in the end!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Start now.&lt;/strong&gt; In the olden days, I wrote the paper after all experiments had been run, all data had been collected and analyzed, and I had made my mind up about its theoretical implications. Don&amp;rsquo;t go there! &lt;em&gt;Start writing the moment you think of your research question.&lt;/em&gt; Take the template above and just start filling in some of the gaps with text. Add a Methods section when you&amp;rsquo;ve designed the experiment, start adding some sentences to the Introduction when waiting for data to come in, add a reference immediately the moment you encounter a paper you will definitely want to cite, you can even start writing the Results and General Discussion based on your expectations, and then once the data are in, all you need to do is just fill in the numbers. It takes some commitment and diligence, but it will pay off in the end!&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Cut an onion.&lt;/strong&gt; A paper is like slicing through an onion: start BIG AND GRAND at the beginning, describing a major problem in human behavior, and then gradually get smaller and smaller and more detailed as you reach the end of the Introduction, describing the actual experiment, then go really nitty-gritty when you reach the Methods and Results. When you reach the General Discussion, you start zooming out again, first summarizing the experimental outcomes, then discussing their theoretical implications, and finally drawing BIG AND GRAND conclusions about life, the universe, and everything.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cut an onion.&lt;/strong&gt; A paper is like an onion: start BIG AND GRAND at the beginning, describing a major problem in human behavior, and then gradually get smaller and smaller and more detailed as you reach the end of the Introduction, describing the actual experiment, then go really nitty-gritty when you reach the Methods and Results. When you reach the General Discussion, you start zooming out again, first summarizing the experimental outcomes, then discussing their theoretical implications, and finally drawing BIG AND GRAND conclusions about life, the universe, and everything.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Build a skeleton.&lt;/strong&gt; First try to create an outline of your Introduction, using one sentence to summarize each paragraph. Start with &amp;ldquo;Speech perception is amazing&amp;rdquo; for the first paragraph, and &amp;ldquo;This experiment tested&amp;hellip;&amp;rdquo; for the final paragraph of the Introduction, and try to find your way from the first claim to the last one. For instance:&lt;/p&gt;
@@ -1241,14 +1241,23 @@ Play
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Speech perception is amazing&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;People use both visual and auditory cues in speech perception&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;These visual cues include both facial articulatory cues as well as hand gestures&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;However, little is known about visual cues to prosody influence speech perception&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Therefore, this experiment tested&amp;hellip;&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(1)&lt;/strong&gt; &lt;em&gt;Speech perception is amazing&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(2)&lt;/strong&gt; &lt;em&gt;People use both visual and auditory cues in speech perception&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(3)&lt;/strong&gt; &lt;em&gt;These visual cues include both facial articulatory cues as well as hand gestures&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(4)&lt;/strong&gt; &lt;em&gt;However, little is known about how visual cues to prosody influence speech perception&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(5)&lt;/strong&gt; &lt;em&gt;Therefore, this experiment tested&amp;hellip;&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;Once you have this skeleton, all you then need to do is just &amp;lsquo;fill the paragraphs with words&amp;rsquo;. The skeleton also helps to find out which citation goes where (as in: when should I cite this seminal study I read?). Finally, according to the Onion Theory, the General Discussion is then simply the skeleton for the Introduction turned upside down.&lt;/p&gt;
+&lt;p&gt;Once you have this skeleton, all you then need to do is just &amp;lsquo;fill the paragraphs with words&amp;rsquo;. The skeleton also helps to find out which citation goes where (as in: when should I cite this seminal study I found?). Finally, according to the Onion Theory, the General Discussion is then simply the skeleton for the Introduction turned upside down:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;(5)&lt;/strong&gt; &lt;em&gt;This experiment tested ABC and found XYZ&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(4)&lt;/strong&gt; &lt;em&gt;This suggests that people use visual gestural cues to prosody in speech perception&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(3)&lt;/strong&gt; &lt;em&gt;How these visual cues interact with other visual cues, such as articulation on the face, remains an issue for future research&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(2)&lt;/strong&gt; &lt;em&gt;Our outcomes emphasize the importance of both visual and auditory cues in face-to-face spoken communication.&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;(1)&lt;/strong&gt; &lt;em&gt;Isn&amp;rsquo;t speech perception amazing?&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Cheat.&lt;/strong&gt; Use tools such as Thesaurus for synonym searching, Zotero for reference management, fields in Word for figure and table numbers, etc.&lt;/p&gt;
