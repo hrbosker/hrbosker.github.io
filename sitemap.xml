@@ -554,6 +554,8 @@
   <url>
     <loc>https://hrbosker.github.io/empty/</loc><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://hrbosker.github.io/googled886c90778b4364a/</loc><priority>0</priority></url>
+  <url>
     <loc>https://hrbosker.github.io/people/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/categories/</loc><changefreq>weekly</changefreq></url>
