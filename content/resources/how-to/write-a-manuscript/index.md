@@ -39,4 +39,8 @@ Once you have this skeleton, all you then need to do is just 'fill the paragraph
 
 - **Now just start typing.** It's easier to revise and edit something that you wrote yesterday than to fill an empty page. So why not jot down a few sketchy sentences and rework them later into something nice?
 
+{{% callout note %}}
+*Did you know that...* in the olden days, [APA guidelines](https://apastyle.apa.org/) asked you to place figures only at the end of the manuscript, presumably for copyediting reasons. Their positions in the main text were identified by short "Insert Figure 1 about here" boxes. However, this is a real pain, for reviewers in particular (and everyone else too, really...), because this means you need to flip back and forth between main text and figures to understand the results. It's much easier and more effective if you place figures in text. Even if journal guidelines still ask you to place figures at the end of the manuscript, I usually just put them in text and wait for an editorial assistant to call me out...
+{{% /callout %}}
+
 *Happy writing!*

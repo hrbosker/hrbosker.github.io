@@ -24,7 +24,7 @@ content:
     postcode: '6500 HE'
     country: Netherlands
     country_code: NL
-  directions: '[Visiting address] Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
+  directions: '[Visiting address] Room 02.321, Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
   coordinates:
     latitude: '51.81918627589622'
     longitude: '5.861970553750626'
@@ -54,4 +54,4 @@ design:
   columns: '1'
 ---
 
-**Feel free to get in touch via email**.
+**Feel free to get in touch!**.
