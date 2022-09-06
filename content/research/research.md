@@ -19,7 +19,7 @@ design:
 
 ## Vision
 
-The human brain is uniquely equipped to successfully perceive the speech of those around us – even in quite challenging listening environments. At the SPEAC research group, we investigate the psychological and neurobiological mechanisms that underlie the exceptional human behavior of spoken communication. We specifically focus on how humans integrate input from multiple modalities, including such visual cues as lip movements, facial expressions, and hand gestures.
+The human brain is uniquely equipped to successfully perceive the speech of those around us – even in quite challenging listening environments. At the SPEAC lab, we investigate the psychological and neurobiological mechanisms that underlie the exceptional human behavior of spoken communication. We specifically focus on how humans integrate input from multiple modalities, including such visual cues as lip movements, facial expressions, and hand gestures.
 
 ## The big questions
 

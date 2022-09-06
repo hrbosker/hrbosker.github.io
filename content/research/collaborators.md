@@ -17,7 +17,7 @@ design:
 
 ## Funding
 
-The SPEAC research group is funded by the ERC Starting Grant 'HearingHands' [101040276]. This grant was awarded to Hans Rutger Bosker in 2021 and runs from September 2022 to September 2027.
+The SPEAC lab is funded by the ERC Starting Grant 'HearingHands' [101040276]. This grant was awarded to Hans Rutger Bosker in 2021 and runs from September 2022 to September 2027.
 
 ## Collaboration
 
