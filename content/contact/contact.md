@@ -16,7 +16,7 @@ content:
   # Contact (edit or remove options as required)
 
   email: BothFirstNames.Surname@ru.nl
-  phone: +31 (0)24 3521373
+  # phone: +31 (0)24 3521380
   address:
     street: '[Postal address] Postbus 9104'
     city: Nijmegen
@@ -54,4 +54,4 @@ design:
   columns: '1'
 ---
 
-**Feel free to get in touch!**.
+**Feel free to get in touch!**
