@@ -15,7 +15,7 @@ subtitle:
 content:
   # Contact (edit or remove options as required)
 
-  email: BothFirstNames.Surname@ru.nl
+  email: BothFirstNames.Surname@donders.ru.nl
   # phone: +31 (0)24 3521380
   address:
     street: '[Postal address] Postbus 9104'
@@ -55,3 +55,5 @@ design:
 ---
 
 **Feel free to get in touch!**
+
+If you'd like to meet in person, **my office 02.321** is in the [Maria Montessori building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/maria-montessori-building) of the Radboud University. Enter through the main entrance and immediately take the stairs (right in front of you) to the first floor. Walk past the coffee bar (on your right hand side) to the other side of the building and then take the stairs (on your right hand side) to the second floor. Immediately take the corridor on your right, pass through the doors, and you'll find my room 02.321 on your left hand side.
