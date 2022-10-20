@@ -18,6 +18,6 @@ The first postdoc will run a large-scale cross-linguistic investigation of gestu
 
 ## [PD2] Testing Audiovisual Gesture-Speech Integration in MEG
 
-The second postdoc project is more neuro-focused, testing audiovisual gesture-speech integration (i.e., the [manual McGurk effect](.\demos\manual-mcgurk)) in the MEG scanner using Rapid Invisible Frequency Tagging (RIFT). The aim is to test both typically developing individuals as well as individuals with Autism Spectrum Disorder (ASD) who are known to demonstrate impairments in prosody perception. All the details can be found at the link below but also feel free [to get in touch](./contact) for more information.
+The second postdoc project is more neuro-focused, testing audiovisual gesture-speech integration (i.e., the [manual McGurk effect](./demos/manual-mcgurk)) in the MEG scanner using Rapid Invisible Frequency Tagging (RIFT). The aim is to test both typically developing individuals as well as individuals with Autism Spectrum Disorder (ASD) who are known to demonstrate impairments in prosody perception. All the details can be found at the link below but also feel free [to get in touch](./contact) for more information.
 
 {{% cta cta_link="https://www.ru.nl/en/working-at/job-opportunities/postdoctoral-researcher-testing-audiovisual-gesture-speech-integration-in-meg" cta_text="Apply for PD2 →" %}}
