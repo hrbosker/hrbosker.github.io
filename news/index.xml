@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latest News | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/news/</link>
+      <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
+    <description>Latest News</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 12 Dec 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <title>Latest News</title>
+      <link>https://hrbosker.github.io/news/</link>
+    </image>
+    
+    <item>
+      <title>Paper accepted in JEP:HPP!</title>
+      <link>https://hrbosker.github.io/news/22-12-12-paper-jephpp/</link>
+      <pubDate>Mon, 12 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/22-12-12-paper-jephpp/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Congratulazioni a Giulio e Giuseppe for successfully publishing their collaborative project &amp;ldquo;Tracking talker-specific cues to lexical stress: Evidence from perceptual learning&amp;rdquo;!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;accepted&#34;&gt;Accepted!&lt;/h2&gt;
+&lt;p&gt;Today we heard that the paper &amp;ldquo;Tracking talker-specific cues to lexical stress: Evidence from perceptual learning&amp;rdquo; has been accepted for publication in the &lt;em&gt;Journal of Experimental Psychology: Human Perception and Performance (JEP:HPP)&lt;/em&gt;, authored by &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;, Giuseppe Di Dona, &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;, and James McQueen. The fulltext and all data are publicly available at the links provided at the bottom of this post.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;The joint first-authors Giulio and Giuseppe set out to test whether listeners track how different talkers cue lexical stress. They first exposed two groups of listeners to two talkers: Talker A and B. These two talkers consistently used different cues to signal lexical stress in Dutch (e.g., differentiating &lt;em&gt;PLAto&lt;/em&gt; from &lt;em&gt;plaTEAU&lt;/em&gt;). Group 1 always heard Talker A use F0 to cue stressed syllables in Dutch, while Talker B always used intensity. Conversely, Group 2 heard the reverse talker-cue mappings: Talker A always used intensity, and Talker B always F0.&lt;/p&gt;
+&lt;p&gt;After this (admittedly strange) exposure phase, participants were given an (admittedly even stranger) test phase. They were presented with audio recordings from the two talkers but this time the F0 and intensity cues had been artificially manipulated to &amp;lsquo;point in different directions&amp;rsquo;. For instance, while F0 would clearly cue stress on the first syllable of the word, intensity cues would signal stress on the second syllable. Critically, these &amp;lsquo;mixed items&amp;rsquo; were perceived by listeners according to the talker-cue mappings they had learnt during exposure. That is, Group 1 had learnt that Talker A always used F0 in the exposure phase and therefore, at test, when they heard Talker A produce a mixed item, they were more likely to perceive stress on the syllable marked by F0. However, Group 2 was more likely to perceive the exact same mixed item as having stress on the syllable marked by intensity.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;These findings support Bayesian models of spoken word recognition. These predict that listeners can adjust their prior beliefs about the perceptual weight of different phonetic cues on the basis of short-term regularities in a talker-specific fashion. This had already been observed for segmental contrasts (e.g., the perception of different consonants and vowels). Now we demonstrate that people also track suprasegmental variability in prosody, such as lexical stress.&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giuseppe-di-dona/&#34;&gt;Giuseppe Di Dona&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2023).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/&#34;&gt; Tracking talker-specific cues to lexical stress: Evidence from perceptual learning&lt;/a&gt;.
+  &lt;em&gt;Journal of Experimental Psychology: Human Perception and Performance&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/severijnen-etal-2023-jephpp/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/dczx9&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>GESPIN 2023 in Nijmegen</title>
+      <link>https://hrbosker.github.io/news/22-11-01-gespin2023/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/22-11-01-gespin2023/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The Gesture and Speech in Interaction [GESPIN] conference is coming to Nijmegen on September 13-15, 2023.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;broadening-perspectives-integrating-views&#34;&gt;Broadening perspectives, integrating views&lt;/h2&gt;
+&lt;p&gt;&amp;hellip;that is the theme of the 2023 edition. This promises a highly interdisciplinary event, approaching the interaction of gesture and speech from the perspectives of language development, neurobiology, biomechanics, animal models, and many other fields. Keynotes are: Nuria Esteve Gibert, Yifei He, Susanne Fuchs, and Franz Goller. It is co-organized by CLS, the Donders Institute, and MPI. Paper submission opens January 1st, 2023 and the deadline is &lt;strong&gt;March 15th, 2023&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;See &lt;a href=&#34;https://gespin2023.nl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://gespin2023.nl&lt;/a&gt; for all the details. We hope to see you there!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
