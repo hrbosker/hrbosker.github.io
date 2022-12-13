@@ -2,16 +2,16 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: pages
 headless: true
-weight: 20
+weight: 25
 
 # Activate this widget? true/false
-active: false
+active: true
 
-title: Latest News
-subtitle:
+title: Latest news
+subtitle: click here for [all news items](./news/)
 
 content:
-  count: 5
+  count: 3
   filters:
     author: ''
     category: ''
@@ -20,8 +20,8 @@ content:
     tag: ''
   offset: 0
   order: desc
-  page_type: post
+  page_type: news
 design:
-  view: 3
-  columns: '1'
+  view: 2
+  columns: '2'
 ---
