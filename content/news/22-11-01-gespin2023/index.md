@@ -11,7 +11,7 @@ profile: false
 
 ## Broadening perspectives, integrating views
 
-...that is the theme of the 2023 edition. This promises a highly interdisciplinary event, approaching the interaction of gesture and speech from the perspectives of language development, neurobiology, biomechanics, animal models, and many other fields. Keynotes are: Nuria Esteve Gibert, Yifei He, Susanne Fuchs, and Franz Goller. It is co-organized by CLS, the Donders Institute, and MPI. Paper submission opens January 1st, 2023 and the deadline is **March 15th, 2023**.
+...that is the theme of the 2023 edition. This promises a highly interdisciplinary event, approaching the interaction of gesture and speech from the perspectives of language development, neurobiology, biomechanics, animal models, and many other fields. Keynotes are: Nuria Esteve Gibert, Yifei He, Susanne Fuchs, and Franz Goller. It is co-organized by CLS, the Donders Institute, and MPI. Paper submission opens January 10th, 2023 and the deadline is **March 15th, 2023**.
 
 See https://gespin2023.nl for all the details. We hope to see you there!
 

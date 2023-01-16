@@ -41,7 +41,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://pure.mpg.de/rest/items/item_3479620_2/component/file_3484213/content'
 url_code: ''
 url_dataset: 'https://osf.io/dczx9'
 url_poster: ''
