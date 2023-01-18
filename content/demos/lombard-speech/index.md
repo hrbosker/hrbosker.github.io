@@ -63,7 +63,9 @@ But perhaps you didn't quite hear yourself all too well because it's hard to lis
 
 ## What is Lombard speech?
 
-In the clips above, you can clearly hear the difference between 'plain speech' and 'Lombard speech'. Lombard speech sounds louder, higher pitched, is a little slower, with more pronounced higher frequencies, and clearer vowels. In our own research, we demonstrated that Lombard speech is also more rhythmic, having a stronger 'beat' to it compared to plain speech (see [refs](#relevant-papers) below).
+In the clips above, you can clearly hear the difference between 'plain speech' and 'Lombard speech'. And this speaker is not the odd-one-out: many vocal learning species, like dolphins, seals, and birds adjust their vocalizations when encountering noise.
+
+In humans, Lombard speech sounds louder, higher pitched, is a little slower, with more pronounced higher frequencies, and clearer vowels. In our own research, we demonstrated that Lombard speech is also more rhythmic, having a stronger 'beat' to it compared to plain speech (see [refs](#relevant-papers) below).
 
 ## Lombard speech rulez
 
