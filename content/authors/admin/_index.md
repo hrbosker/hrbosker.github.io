@@ -45,9 +45,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:hansrutger.bosker@donders.ru.nl'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/HRBosker
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/HRBosker
   - icon: google-scholar
     icon_pack: ai
     link: https://scholar.google.nl/citations?user=ENQ_ky0AAAAJ&hl=en
