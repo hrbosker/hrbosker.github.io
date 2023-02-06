@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
+  <meta name="description" content="This script creates an F0 continuum for two segmentally matching words (e.g., for a lexical stress pair, like SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (no." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/annotate/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu02d4214244b58f4d9dfd2bf839db7a24_28858_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/annotate/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/annotate/" />
-  <meta property="og:title" content="Annotate | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
+  <meta property="og:title" content="Interpolate F0 continuum | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script creates an F0 continuum for two segmentally matching words (e.g., for a lexical stress pair, like SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (no." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Annotate | SPEAC | Hans Rutger Bosker</title>
+  <title>Interpolate F0 continuum | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="87e2dde545e138e121782d0c7c595fac" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="de89edadd0773becf17145c9a48b8264" >
 
   
   
@@ -743,7 +743,7 @@
 
 
 
-  <li class="active"><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
 
 
 
@@ -755,7 +755,7 @@
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class="active"><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
 
       
         </ul>
@@ -794,248 +794,270 @@
         <div class="docs-article-container">
           
 
-          <h1>Annotate</h1>
+          <h1>Interpolate F0 continuum</h1>
 
           <div class="article-style">
-            <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
-<p>Moreover, the script keeps track of who annotated what, can continue where you left off yesterday, allows users to enter comments about their annotations, and blinds file names to avoid human annotation biases. The script can be updated to present new empty TextGrids (instead of any pre-existing ones, in case you only have .wav files) or to automatically perform changes to TextGrid tiers/intervals before presenting them for manual annotation.</p>
+            <p>This script creates an F0 continuum for two segmentally matching words (e.g., for a lexical stress pair, like <em>SUBject</em> vs. <em>subJECT</em>). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (no. 1 and 11 being the original contours), controlling for intensity.</p>
 <blockquote>
-<p>You can also <a href="../annotate.praat">download the script</a> as a .praat file.</p>
+<p>You can also <a href="../interpolate-F0.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<pre tabindex="0"><code>################################################################################
-### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
-### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10
-### License: CC BY-NC 4.0
-################################################################################
+<pre tabindex="0"><code>#____________________________________ HEADER __________________________________####
+# date:         31.01.2023, run in Praat 6.2.12 on Windows 11
+# author:       Ronny Bujok (adapted from Hans Rutger Bosker)
+# email:        Ronny.Bujok@mpi.nl
+# filename:     F0_stress continuum_interpolation.praat
+# project:      Audiovisual Perception of Lexical Stress
+# license:		CC BY-NC 4.0
 
-	###&gt;&gt; This script reads a directory containing sound files with pre-existing TextGrids,
-	###&gt;&gt;	for instance resulting from a forced aligner (e.g., WebMAUS or EasyAlign).
-	###&gt;&gt;	IMPORTANT: Every Sound should have a pre-existing TextGrid file **with the same name**!
-	###&gt;&gt;	It opens every Sound + Textgrid combination, presents it to the user for editing,
-	###&gt;&gt;	allows the user to enter comments about the annotations, and then saves the
-	###&gt;&gt;	edited TextGrid with &#34;_edited&#34; suffix in the subfolder &#39;edited_textgrids&#39;.
-	###&gt;&gt;	User comments are tracked in the file &#39;annotation_log.txt&#39; in the same subfolder.
-	###&gt;&gt;	
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; If you **do not** yet have pre-existing TextGrids (i.e., only sound files),	&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; you can adjust the script to read all .wav files, create new empty TextGrids,	&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; and present those for editing and saving...									&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; See the line with &#34;CREATE EMPTY TEXTGRIDS&#34;									&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;
-	###&gt;&gt; This script can be run by multiple users simultaneously, for instance when
-	###&gt;&gt;   multiple annotators are working on the same shared folder. It keeps track
-	###&gt;&gt;   of what files have already been edited: it only presents TextGrids for editing
-	###&gt;&gt;   that do not yet have an &#34;_edited&#34; version pre-existing in the subfolder.
-	###&gt;&gt;   This also means that users can close the script or Praat at anytime
-	###&gt;&gt;   without losing data. Then, next time someone runs the script, it will
-	###&gt;&gt;   start with the files that are &#39;left over&#39; from the previous run.
-	###&gt;&gt;	NOTE: This checking of which files already exist can slow the script down
-	###&gt;&gt;	when working with folders with &gt;5000 files...
-	###&gt;&gt;
-	###&gt;&gt; At present, the script **only** presents pre-existing tiers and intervals
-	###&gt;&gt;   for editing (e.g., adding boundaries, dragging boundaries around, etc.).
-	###&gt;&gt;   This script can be augmented by automatically adding tiers or intervals
-	###&gt;&gt;   before the TextGrid is presented for editing, so users can annotate
-	###&gt;&gt;   new tiers/intervals. See the line with &#34;ADD/REMOVE TIERS HERE&#34;.
-
-################################################################################
-### Variables you will definitely need to customize:
-################################################################################
-
-### Where can the Sound and TextGrid files be found?
-
-dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
-
-### Do you want to use &#39;blinded&#39; objects in Praat to avoid human biases in annotation?
-### Default value: &#34;yes&#34;
-### Change to &#34;no&#34; if you want to use original object names.
-
-blinded$ = &#34;yes&#34;
+####################################################################################################################
+# This script takes recordings of segmentally identical, disyllabic minimal stress pairs with lexical stress on the first 
+# (strong-weak; SW) or second (weak-strong; WS) syllable (e.g., VOORnaam vs. voorNAAM) and interpolates their F0-contours linearly. 
+# The manipulated F0-contours are applied to the SW recording to create an F0-based lexical stress continuum.
+# Duration and Intensity are set to mean, ambiguous values.
+#
+# This script requires minimal pairs to match in their name. Stress pattern in input files is denoted with &#34;_sw&#34; or &#34;_ws&#34; 
+# (e.g., voornaam_sw.wav &amp; voornaam_ws.wav). No other underscore characters are allowed.
+# Textgrids for each recording are required, with boundaries at word onset, second syllable onset and word offset.
+#
+# Note that the parameters for pitch estimation are set to match a male voice. When working with a female voice,
+# please adjust the arguments of the functions &#34;Lengthen (overlap-add)&#34; and &#34;To Manipulation&#34;.
+####################################################################################################################
 
 
+# Define input and output directory
+input_directory$ = &#34;C:\input folder&#34;
+output_directory$= &#34;C:\output folder&#34;
 
+# create file list of all files with the ending &#34;_sw.wav&#34; (just sound files, one per minimal pair (sw))
+Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
+n = Get number of strings
 
+# _________________________________ CREATE FILELIST ____________________________________________________
 
-################################################################################
-### Before we start, let&#39;s check whether you&#39;ve entered sensible
-### input for the variables above...
-################################################################################
+# create list again because it removes itself after every iteration
+for x from 1 to n
+	Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
 
-### Let&#39;s check if the input directory exists.
-### This script will throw an error if the directory doesn&#39;t exist
-### (i.e., it won&#39;t write to a mysterious temp directory).
+# get only the word name without extension or stress identifier (sw or ws)
+	select Strings list
+	current_file$ = Get string... x
+	idx = rindex (current_file$, &#34;_&#34;)
+	word$ = left$(current_file$,idx-1)
 
-### First check whether the input directory ends in a backslash (if so, removed)
+#_____________________________________ DURATION ___________________________________________________________
 
-if right$(dir_in$,1)=&#34;/&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-elsif right$(dir_in$,1)=&#34;\&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-endif
+# To interpolate F0 contours, recordings must be of equal length. So duration must be manipulated first. 
 
-### Then create a temporary txt file in the folder
-### and try to write it to the input folder.
+#---------------------------------- get values from SW word ---------------------------------------------
+# open SW word and convert to mono
+		wavfile_sw$ = &#34;&#39;word$&#39;_sw&#34;
+		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.Textgrid
+		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.wav
+		Convert to mono
+		Rename: &#34;mono_sw&#34;
+		wav_sw_id = selected()
+# select the mono file and the corresponding textgrid and extract all intervals
+		selectObject: &#34;TextGrid &#39;wavfile_sw$&#39;&#34;
+		plusObject: &#34;Sound mono_sw&#34;
+		Extract all intervals: 1, &#34;no&#34;
+# select the second interval (first syllable) and get the total duration and the intensity	
+		select (wav_sw_id+2)  
+		sw_dur1= Get total duration
+		sw_int1= Get intensity (dB)
+		Rename: &#34;sw_1&#34;
+# select the third interval (second syllable) and get the total duration and the intensity		
+		select (wav_sw_id+3)
+		sw_dur2= Get total duration
+		sw_int2= Get intensity (dB)
+		Rename: &#34;sw_2&#34;
 
-### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
-### does *not* exist. We&#39;ll manually check whether the saving of this
-### temp txt file has succeeded or not further down below.
-
-temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
-
-### Can the file be found?
-
-file_exists_yesno = fileReadable(temp_filename$)
-
-if file_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the directory is valid.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-else
-	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;dir_in$&#39; was not found
-	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
-endif
-
-## Let&#39;s also check whether a subfolder with edited TextGrids already exists,
-## for instance when the script has been run and exited before.
-
-temp_filename$ = dir_in$ + &#34;/edited_textgrids/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the subfolder exists&#34;
-
-### Can the file be found?
-
-subfolderfile_exists_yesno = fileReadable(temp_filename$)
-
-if subfolderfile_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the subfolder already exists.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-else
-	# if it didn&#39;t yet exist, let&#39;s create the subfolder
-	createFolder: &#34;&#39;dir_in$&#39;/edited_textgrids&#34;
-endif
-
-
-
-
-
-################################################################################
-################################################################################
-#################################    SCRIPT    #################################
-################################################################################
-################################################################################
-
-## Let&#39;s keep track of who annotated which file. This can be helpful when
-## multiple annotators run the same script on the same shared folder.
-
-beginPause: &#34;Please enter your name:&#34;
-	text: &#34;annotator&#34;, &#34;&#34;
-clicked = endPause: &#34;Next&#34;, 1
-
-## Now we create a list of TextGrid files in the input directory:
-
-Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.TextGrid&#34;
-
-	#######################################################################################
-	## CREATE EMPTY TEXTGRIDS
-	########################
-	## If you do not yet have pre-existing TextGrids (but a folder with only sound files instead),
-	## you can read the sound files in the directory and create empty TextGrids for the user
-	## to edit.
-	## Adjust this script as follows:
-	## - Change *.TextGrid to *.wav in the line above.
-	## - Change *.TextGrid to *.wav in the line below starting with &#34;extposition$&#34;
-	## - Replace this line: Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
-	##		with this line: To TextGrid: &#34;manual&#34;, &#34;&#34;
-	#######################################################################################
-
-nfiles = Get number of strings
-if nfiles = 0
-	exit The directory &#39;dir_in$&#39; does not contain any TextGrid files.
-endif
-
-## By randomizing this file list, it allows for multiple users to simultanously work
-## on the same folder without overwriting previous annotations. It also reduces the risk
-## of human biases in annotations (e.g., annotator fatigue affecting one condition more
-## than another condition).
-
-Randomize
-
-## Now we&#39;ll loop through the list and present individual files...
-
-for i from 1 to &#39;nfiles&#39;
-	select Strings list_of_files
-	
-	fileplusext$ = Get string... &#39;i&#39;
-	extposition = index(fileplusext$, &#34;.TextGrid&#34;)
-	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
-
-	outname$ = &#34;&#39;name$&#39;_edited&#34;
-	fulloutname$ = &#34;&#39;dir_in$&#39;/edited_textgrids/&#39;outname$&#39;.TextGrid&#34;
-
-	## Let&#39;s check if an &#34;_edited&#34; version already exists.
-	## The script only presents those files for editing that do not yet have been edited before.
-	
-	editedfile_exists_yesno = fileReadable(fulloutname$)
-	if editedfile_exists_yesno
-		do_nothing = 1
-	else
-		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
-		if blinded$ = &#34;yes&#34;
-			Rename... current_Sound
-		endif
-		sound_name$ = selected$(&#34;Sound&#34;)
-		## If a filename contains spaces, Praat replaces these spaces with underscores.
-		## Example: &#34;file number 1.wav&#34; in a given folder becomes
-		##			&#34;file_number_1.wav&#34; in the Praat object window.
-		## Therefore, it is important **not** to use a filename variable (here: &#39;name$&#39;)
-		## in &#39;selecting commands&#39; in Praat, like &#39;select&#39; and &#39;plus&#39;!
-		## Better still: do not use spaces in filenames!
+# select and rename the first and last interval (silences) for future reference, to concatenate the final audio
+		select (wav_sw_id+1)
+		Rename: &#34;pre_silence_sw&#34;
+		select (wav_sw_id+4)
+		Rename: &#34;post_silence_sw&#34;
 		
-		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
-		if blinded$ = &#34;yes&#34;
-			Rename... current_TextGrid
-		endif
-		tg_name$ = selected$(&#34;TextGrid&#34;)
+#---------------------------------- get values from WS word -----------------------------------------
 
-		#######################################################################################
-		## ADD/REMOVE TIERS HERE
-		########################
-		## This is where we you could adjust the script to automatically add/remove tiers
-		## and/or automatically adjust intervals (setting them to the nearest zero crossings?).
-		## Duplicating tiers can be helpful when you want to view original vs. manually edited
-		## tiers below/above each other in one and the same edited TextGrid.
-		## Example:
-		## &gt; Duplicate tier... 1 1 newtier
-		## [ARGUMENTS: position_of_tier_to_duplicate position_for_new_tier name_of_new_tier]
-		#######################################################################################
+# open WS word and convert to mono		
+		wavfile_ws$ = &#34;&#39;word$&#39;_ws&#34;
+		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.Textgrid
+		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.wav
+		Convert to mono
+		Rename: &#34;mono_ws&#34;
+		wav_ws_id = selected()
+# select the mono file and the corresponding textgrid and extract all intervals		
+		selectObject: &#34;TextGrid &#39;wavfile_ws$&#39;&#34;
+		plusObject: &#34;Sound mono_ws&#34;
+		Extract all intervals: 1, &#34;no&#34;
+# select the second interval (first syllable) and get the total duration and the intensity			
+		select (wav_ws_id+2)
+		ws_dur1= Get total duration
+		ws_int1= Get intensity (dB)
+		Rename: &#34;ws_1&#34;	
+# select the third interval (second syllable) and get the total duration and the intensity		
+		select (wav_ws_id+3)
+		ws_dur2= Get total duration
+		ws_int2= Get intensity (dB)
+		Rename: &#34;ws_2&#34;	
 
-		plus Sound &#39;sound_name$&#39;
-		Edit
 
-		beginPause: &#34;Please check and edit this TextGrid.&#34;
-			comment: &#34;Please check and edit the annotations.&#34;
-			text: &#34;Comments&#34;, &#34;&#34;
-		clicked = endPause: &#34;Next&#34;, 1
+#---------------------------------- Manipulate duration ------------------------------------------
+
+# Set the duration of syllable 1 of the SW word to the average, ambiguous duration
+		select Sound sw_1
+		targetdur_1 = ((sw_dur1+ws_dur1)/2)
+		Lengthen (overlap-add)... 75 250 (targetdur_1/sw_dur1)
+		Rename: &#34;sw_1_durmatched&#34;			
+# Set the duration of syllable 2 of the SW word to the average, ambiguous duration
+        select Sound sw_2
+		targetdur_2 = ((sw_dur2+ws_dur2)/2)
+		Lengthen (overlap-add)... 75 250 (targetdur_2/sw_dur2)
+		Rename: &#34;sw_2_durmatched&#34;	
 		
-		editor TextGrid &#39;tg_name$&#39;
-			Close
-		endeditor
+# Set the duration of syllable 1 of the WS word to the average, ambiguous duration
+        select Sound ws_1
+		Lengthen (overlap-add)... 75 250 (targetdur_1/ws_dur1)
+		Rename: &#34;ws_1_durmatched&#34;		
+# Set the duration of syllable 2 of the WS word to the average, ambiguous duration
+        select Sound ws_2
+		Lengthen (overlap-add)... 75 250 (targetdur_2/ws_dur2)
+		Rename: &#34;ws_2_durmatched&#34;
+		
 
-		select TextGrid &#39;tg_name$&#39;
-		Write to text file... &#39;fulloutname$&#39;
-		plus Sound &#39;sound_name$&#39;
-		Remove
 
-		appendFileLine: &#34;&#39;dir_in$&#39;/edited_textgrids/annotation_log.txt&#34;, annotator$, tab$, name$, tab$, comments$
-	endif
+# Concatenate duration-manipulated SW word
+		select Sound sw_1_durmatched
+		plusObject: &#34;Sound sw_2_durmatched&#34;
+		Concatenate recoverably
+		select Sound chain
+		Rename: &#34;durmatched_sw&#34;
+# Concatenate duration-manipulated WS word
+        select Sound ws_1_durmatched
+		plusObject: &#34;Sound ws_2_durmatched&#34;
+		Concatenate recoverably
+		select Sound chain
+		Rename: &#34;durmatched_ws&#34;
+		
+# save TextGrid with the boundary between the syllables. Necessary for intensity manipulation
+		select TextGrid chain
+		Rename: &#34;syl_boundary&#34;
+		
+
+		
+#__________________________________________ F0 INTERPOLATION ________________________________________________
+
+# Extract the pitch tiers
+		select Sound durmatched_sw
+		s1_dur = Get total duration
+		To Manipulation... 0.01 50 300
+		Extract pitch tier
+
+		select Sound durmatched_ws
+		s2_dur = Get total duration
+		To Manipulation... 0.01 50 300
+		Extract pitch tier
+
+# create 10 ms time bins for interpolation
+		timebinsize = 0.01
+		nbins = floor(s1_dur/timebinsize)
+
+		for currentbin from 1 to &#39;nbins&#39;
+			currentbin_start = (currentbin*timebinsize)-timebinsize
+			currentbin_end = (currentbin*timebinsize)
+			currentbin_mid = (currentbin_start + currentbin_end)/2
+			select PitchTier durmatched_sw
+			currentbin_f0_s1 = Get value at time... currentbin_mid
+			f0_bin_s1 [currentbin] = currentbin_f0_s1
+			select PitchTier durmatched_ws
+			currentbin_f0_s2 = Get value at time... currentbin_mid
+			f0_bin_s2 [currentbin] = currentbin_f0_s2
+		endfor
+
+#define number of steps for interpolation
+		nsteps = 11
+		step_ratio = 1/(&#39;nsteps&#39;-1)
+		# This means that...
+		#	the stepsize is 10% of the difference between SW and WS;
+		#	step 1 of the continuum is the original SW contour;
+		#	step 11 of the continuum is the original WS contour. 
+		
+
+# interpolate the pitch tiers 
+		for currentstep from 1 to &#39;nsteps&#39;
+			select PitchTier durmatched_sw
+			Copy... interpol_&#39;currentstep&#39;
+
+			# first remove all original F0 points
+			Remove points between... 0 &#39;s1_dur&#39;
+			
+			# now add a point for each time bin
+			for currentbin from 1 to &#39;nbins&#39;
+				currentbin_start = (currentbin*timebinsize)-timebinsize
+				currentbin_end = (currentbin*timebinsize)
+				currentbin_mid = (currentbin_start + currentbin_end)/2
+				currentbin_f0_s1 = f0_bin_s1 [currentbin]
+				currentbin_f0_s2 = f0_bin_s2 [currentbin]
+				currentbin_f0_diff = currentbin_f0_s1 - currentbin_f0_s2
+				currentbin_f0_ratio = currentbin_f0_diff * &#39;step_ratio&#39;
+				currentbin_f0_interpol = currentbin_f0_s1 - (currentbin_f0_ratio * (&#39;currentstep&#39;-1))
+				
+				Add point... &#39;currentbin_mid&#39; &#39;currentbin_f0_interpol&#39;
+			endfor
+			
+# select original audio (in this case SW recording) and replace the pitch contour
+			select Manipulation durmatched_sw
+			Copy... interpol_&#39;currentstep&#39;			
+			plusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
+			Replace pitch tier
+			minusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
+			Get resynthesis (overlap-add)
+			
+			interval_id = selected()
+
+#__________________________________________ INTENSITY____________________________________________________
+
+# extract each syllable again for intensity manipulation
+			plusObject: &#34;TextGrid syl_boundary&#34;
+			Extract all intervals: 1, &#34;no&#34;
+
+# set (average) target intensity per syllable
+            targetint_1 = ((sw_int1+ws_int1)/2) 
+            targetint_2 = ((sw_int2+ws_int2)/2) 
+			
+# adjust the intensities to an average/ambigous value
+			select (interval_id+1)
+			Scale intensity... targetint_1
+			Rename: &#34;final_syl_1&#34;
+			
+			select (interval_id+2)
+			Scale intensity... targetint_2
+			Rename: &#34;final_syl_2&#34;
+
+#______________________________________ CONCATENATE &amp; SAVE ______________________________________________
+
+# copy final segment of the recording (silence post word offset), so Praat concatenates in the correct order
+			select Sound post_silence_sw
+			Copy... post_silence_sw_copy
+# select remaining segments
+			plusObject: &#34;Sound pre_silence_sw&#34;
+			plusObject: &#34;Sound final_syl_1&#34;
+			plusObject: &#34;Sound final_syl_2&#34;
+			plusObject: &#34;post_silence_sw_copy&#34;
+# concatenate
+			Concatenate recoverably
+			select Sound chain
+			Rename: &#34;&#39;word$&#39;_step_&#39;currentstep&#39;&#34;
+			Save as WAV file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.wav
+			select TextGrid chain
+			Save as text file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.TextGrid
+
+		endfor
+	
+	select all
+	Remove
+	
 endfor
-
-select Strings list_of_files
-Remove
 
 ################################################################################
 # End of script
@@ -1057,15 +1079,9 @@ Remove
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/save-all/" rel="next">Save all</a>
+    <a href="/resources/scripts/move-to-zero-crossings/" rel="next">Move to zero-crossings</a>
   </div>
   
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/batch-processing/" rel="prev">Batch processing</a>
-  </div>
   
 </div>
 
