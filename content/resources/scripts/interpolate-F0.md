@@ -5,7 +5,7 @@ weight: 50
 #date: '2021-01-01'
 ---
 
-This script creates an F0 continuum for two segmentally matching words (e.g., for a lexical stress pair, like *SUBject* vs. *subJECT*). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (no. 1 and 11 being the original contours), controlling for intensity.
+This script creates an F0 continuum for two segmentally matching words (e.g., *SUBject* vs. *subJECT*). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.
 
 > You can also [download the script](../interpolate-F0.praat) as a .praat file.
 
