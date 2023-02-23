@@ -50,6 +50,12 @@
   <url>
     <loc>https://hrbosker.github.io/demos/lombard-speech/</loc><lastmod>2022-07-04T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://hrbosker.github.io/news/</loc><lastmod>2023-02-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/news/23-02-22-new-members/</loc><lastmod>2023-02-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/</loc><lastmod>2023-02-23T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/publication-type/2/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -74,8 +80,6 @@
   <url>
     <loc>https://hrbosker.github.io/publication/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://hrbosker.github.io/tag/suprasegmental-cues/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/tags/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -83,8 +87,6 @@
     <loc>https://hrbosker.github.io/tag/talker-variability/</loc><lastmod>2023-01-01T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/news/22-12-15-dagvdfonetiek2022/</loc><lastmod>2022-12-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
-    <loc>https://hrbosker.github.io/news/</loc><lastmod>2022-12-15T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/news/22-12-12-paper-jephpp/</loc><lastmod>2022-12-12T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -578,10 +580,12 @@
   <url>
     <loc>https://hrbosker.github.io/categories/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/author/ivy-mok/</loc><changefreq>weekly</changefreq></url>
+    <loc>https://hrbosker.github.io/author/floris-cos/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/author/orhun-ulusahin/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://hrbosker.github.io/tag/preface/</loc><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://hrbosker.github.io/research/</loc><changefreq>weekly</changefreq></url></urlset>
+    <loc>https://hrbosker.github.io/research/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://hrbosker.github.io/author/yitian-hong/</loc><changefreq>weekly</changefreq></url></urlset>
