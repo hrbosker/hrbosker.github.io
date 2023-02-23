@@ -1,10 +1,10 @@
 ---
 # Display name
-title: Ivy Mok
+title: Floris Cos
 
 # Username (this should match the folder name)
 authors:
-  - ivy-mok
+  - floris-cos
 
 # Is this the primary user of the site?
 superuser: false
@@ -18,22 +18,22 @@ organizations:
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include prosody and audiovisual speech perception.
+bio: My research interests include phonetics and speech perception.
 
 interests:
   - Speech Perception
   - Beat Gestures
-  - Prosody
   - Lexical Stress
+  - Phonetics
 
-# education:
-#   courses:
-#     - course: MSc in Cognitive Neuroscience
-#       institution: Radboud University Nijmegen
-#       year: 2020
-#     - course: BSc in Psychology
-#       institution: Bielefeld University
-#       year: 2017
+education:
+  courses:
+  #  - course: MA in Linguistics and Communication sciences
+  #    institution: Radboud University Nijmegen
+  #    year: 2021
+    - course: BA in Linguistics
+      institution: Radboud University Nijmegen
+      year: 2018
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,7 +42,7 @@ interests:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:ivy.mok@mpi.nl'
+    link: 'mailto:floris.cos@ru.nl'
 #  - icon: orcid
 #    icon_pack: ai
 #    link: https://orcid.org/0000-0001-6557-9808
@@ -73,4 +73,4 @@ user_groups:
   - Interns
 ---
 
-Ivy Mok is enrolled at Radboud University in the MA Linguistics program. She is currently writing her MA thesis at the SPEAC research group, under supervision of [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}) and [Ronny Bujok]({{< ref "../ronny-bujok" >}}). Her project investigates audiovisual prosody perception in noise, with a focus on beat gestures.
+Floris Cos is enrolled at Radboud University in the ResMA Linguistics and Communication Sciences program. He is currently doing an internship at the SPEAC research group, under supervision of [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). The internship involves running an online experiment to assess the test-retest reliability of the manual McGurk effect.

@@ -19,15 +19,15 @@ design:
 
 ## Vision
 
-The human brain is uniquely equipped to successfully perceive the speech of those around us – even in quite challenging listening environments. At the SPEAC lab, we investigate the psychological and neurobiological mechanisms that underlie the exceptional human behavior of spoken communication. We specifically focus on how humans integrate input from multiple modalities, including such visual cues as lip movements, facial expressions, and hand gestures.
+The human brain is uniquely equipped to successfully perceive the speech of those around us – even in quite challenging listening environments. At the SPEAC lab, we investigate the psychological and neurobiological mechanisms that underlie the exceptional human behavior of spoken communication. We specifically focus on how humans integrate input from multiple modalities, including such visual cues as lip movements and carefully-timed hand gestures.
 
 ## The big questions
 
-The work we do contributes to a better understanding of how multimodal spoken communication can usually take place so smoothly. For instance, how do seemingly meaningless up-and-down hand movements, known as *beat gestures*, influence what words we hear? How do listeners manage to understand talkers in challenging listening conditions, such as in loud background noise or when there are competing talkers around? How do listeners ‘tune in’ to a particular talker with his or her own peculiar pronunciation habits? What is the role of context (i.e., acoustic, semantic, and situational context) in speech processing? Finally, we also develop methodological tools to facilitate research in the speech sciences.
+The work we do contributes to a better understanding of how audiovisual spoken communication can - most of the time - take place so smoothly. We ask, for instance, how do seemingly meaningless up-and-down hand movements, known as *beat gestures*, influence what words we hear? How do listeners manage to understand talkers in challenging listening conditions, such as in loud background noise or when there are competing talkers around? How do listeners ‘tune in’ to a particular talker with his or her own peculiar pronunciation habits? What is the role of context (i.e., acoustic, semantic, and situational context) in speech processing? Finally, we also develop methodological tools and large audio/video collections to facilitate research in the speech sciences.
 
 ## How do we conduct our research?
 
-The kinds of behavioral experiments we run include (i) playing participants artificially manipulated videos with a speech categorization task (what's this word?); (ii) speech-in-noise intelligibility experiments (what’s this sentence?); (iii) various psycholinguistic paradigms such as repetition priming (e.g., lexical decision). We use eye-tracking to study the time-course of speech processing on a millisecond timescale (e.g., visual world paradigm). We also apply neuroimaging techniques (EEG, MEG, tACS) to uncover the neurobiological mechanisms involved in the temporal decoding of speech, with a particular focus on oscillatory dynamics.
+The kinds of behavioral experiments we run include (i) playing participants artificially manipulated videos with a speech categorization task (what's this word?); (ii) speech-in-noise intelligibility experiments (type out the sentence); and (iii) various psycholinguistic paradigms such as repetition priming (e.g., lexical decision). We use eye-tracking to study the time-course of speech processing on a millisecond timescale (e.g., visual world paradigm). We also apply neuroimaging techniques (EEG, MEG, tACS) to uncover the neurobiological mechanisms involved in the temporal decoding of speech.
 
 ## Wanna know more?
 

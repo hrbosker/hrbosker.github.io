@@ -21,4 +21,4 @@ On 12th Dec, 2019, **Merel Maslowski** successfully defended her PhD thesis, ent
 ## Interns
 These are the names of bright BA and MA students who wrote their thesis in the group or who did an internship with us. You will find some of their names appear as authors on [our publications]({{< ref "../publication" >}}).
 
-**Eleni Zimianiti**, **Christina Papoutsi**, **Nora Kennis**, **Myriam Weiß**, **Giulio Severijnen**, **Marie Stadtbäumer**, **Vilde Reksnes**, **Jeonga Kim**, **Marjolein van Os**, **Rebecca Wogan**, **Rik Does**, **Wibke Naumann**, **Anna Ravenschlag**.
+**Ivy Mok**, **Eleni Zimianiti**, **Christina Papoutsi**, **Nora Kennis**, **Myriam Weiß**, **Giulio Severijnen**, **Marie Stadtbäumer**, **Vilde Reksnes**, **Jeonga Kim**, **Marjolein van Os**, **Rebecca Wogan**, **Rik Does**, **Wibke Naumann**, **Anna Ravenschlag**.
