@@ -9,7 +9,7 @@ author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
 date: '2023-01-01T00:00:00Z'
-# doi: ''
+doi: '10.1037/xhp0001105'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -21,7 +21,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Journal of Experimental Psychology: Human Perception and Performance*'
+publication: '*Journal of Experimental Psychology: Human Perception and Performance, 49*(4), 549-565. doi:10.1037/xhp0001105'
 publication_short: ''
 
 abstract: 'When recognizing spoken words, listeners are confronted by variability in the speech signal caused by talker differences. Previous research has focused on segmental talker variability; less is known about how suprasegmental variability is handled. Here we investigated the use of perceptual learning to deal with between-talker differences in lexical stress. Two groups of participants heard Dutch minimal stress pairs (e.g., VOORnaam vs. voorNAAM, ‘first name’ vs. ‘respectable’) spoken by two male talkers. Group 1 heard Talker 1 use only F0 to signal stress (intensity and duration values were ambiguous), while Talker 2 used only intensity (F0 and duration were ambiguous). Group 2 heard the reverse talker-cue mappings. After training, participants were tested on words from both talkers containing conflicting stress cues (‘mixed items’; e.g., one spoken by Talker 1 with F0 signaling initial stress and intensity signaling final stress). We found that listeners used previously learned information about which talker used which cue to interpret the mixed items. For example, the mixed item described above tended to be interpreted as having initial stress by Group 1 but as having final stress by Group 2. This demonstrates that listeners learn how individual talkers signal stress and use that knowledge in spoken-word recognition.'
