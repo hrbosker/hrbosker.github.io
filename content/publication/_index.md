@@ -25,7 +25,7 @@ Preprints are early versions of scientific papers that have *not yet been formal
 - Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2022). Audiovisual perception of lexical stress: Beat gestures are stronger visual cues for lexical stress than visible articulatory cues on the face. *PsyArXiv Preprints*, doi:[10.31234/osf.io/y9jck](https://doi.org/10.31234/osf.io/y9jck), data:[https://osf.io/4d9w5/](https://osf.io/4d9w5/)
 
 # List of publications
-Last updated: Apr 3, 2023
+Last updated: May 23, 2023
 
 <br />
 <br />
