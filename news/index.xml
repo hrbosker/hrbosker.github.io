@@ -5,12 +5,203 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Two proceedings papers accepted for ICPhS 2023</title>
+      <link>https://hrbosker.github.io/news/23-04-03-proceedings-papers-icphs/</link>
+      <pubDate>Mon, 03 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/23-04-03-proceedings-papers-icphs/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Two proceedings papers from our group have been accepted for presentation at ICPhS 2023. Read them here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;rate-normalization&#34;&gt;Rate normalization&lt;/h2&gt;
+&lt;p&gt;In Severijnen et al. (2023), &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt; tested which acoustic and linguistic cues underlie rate normalization in speech perception. He observed that the tempo of Dutch context phrases can change people&amp;rsquo;s perception of vowel length in a following word: a preceding context with twice as many syllables per unit time biases people to report hearing long /a:/, a slower context towards short /ɑ/. However, this relationship between contextual speech rate and vowel length perception is not linear. That is, contexts with three times as many syllables do not lead to even more long /a:/ responses. Therefore, syllable rate is not the only determining factor in rate normalization.&lt;/p&gt;
+&lt;h2 id=&#34;converging-to-f2&#34;&gt;Converging to F2&lt;/h2&gt;
+&lt;p&gt;When having a conversation, interlocutors tend to sound more like each other over the course of the conversation. In Ulusahin et al. (2023), &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt; set out to test the automaticity and grain-size of this phonetic convergence. He presented participants with single words that - unaware to the participants - had the second formant frequency (F2) shifted way down. When participants repeated these words back, we unfortunately did not find any downward shift in participants&amp;rsquo; own F2. As such, these results question theories which view convergence as a product of automatic integration between perception and production.&lt;/p&gt;
+&lt;p&gt;Come and find these two posters this summer at ICPhS 2023!&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2023).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/severijnen-etal-2023-icphs/&#34;&gt;Syllable rate drives rate normalization, but is not the only factor&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of ICPhS 2023&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3505424_4/component/file_3505425/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/severijnen-etal-2023-icphs/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/36anr&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2023).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/ulusahin-etal-2023-icphs/&#34;&gt;No evidence for convergence to sub-phonemic F2 shifts in shadowing&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of ICPhS 2023&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3507211_3/component/file_3507212/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/ulusahin-etal-2023-icphs/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/wb2mn&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Ivy graduates!</title>
