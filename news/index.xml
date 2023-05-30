@@ -5,12 +5,23 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 03 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 16 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>New postdoc joins the group: Patrick Louis Rohrer</title>
+      <link>https://hrbosker.github.io/news/23-05-16-new-postdoc-patrick-louis-rohrer/</link>
+      <pubDate>Tue, 16 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/23-05-16-new-postdoc-patrick-louis-rohrer/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Patrick joined the group in May 2023 to work on a cross-linguistic comparison of gesture-speech temporal alignment in production and perception.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;timing-gestures-and-prosody&#34;&gt;Timing gestures and prosody&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt; will be in charge of Work Package 1 of the HearingHands ERC Starting Grant. This WP1 compares the temporal alignment of gestures and speech in languages with different prosodic regimes, including free-stress, fixed-stress, and lexical-tone languages. Next to this production strand, a perception strand investigates how the timing of seemingly meaningless gestures contributes to low-level speech perception in these same languages.&lt;/p&gt;
+&lt;p&gt;Glad to have you on the team, Patrick!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Two proceedings papers accepted for ICPhS 2023</title>
