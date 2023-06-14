@@ -54,4 +54,4 @@ Current Praat versions are compatible with older and newer syntax types, and mix
 
 {{< icon name="creative-commons" pack="fab" >}} All scripts are shared under an [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms).
 
-*2022, Hans Rutger Bosker*
+*2023, Hans Rutger Bosker*
