@@ -41,13 +41,14 @@ Current Praat versions are compatible with older and newer syntax types, and mix
 
 ## Helpful links
 
-*Not finding what you were looking for?* There are thousands of other Praat scripts available online. Three resources with particularly useful code are:
+*Not finding what you were looking for?* There are thousands of other Praat scripts available online. Some resources with particularly useful code are:
 - [Vocal Toolkit plugin](http://www.praatvocaltoolkit.com/) is a plugin for Praat. When installed, you can call various new functions from a button within Praat. However, it's a little risky if you don't know the ins-and-outs of a particular function, so **always check the raw code** here:
   - [WINDOWS] "C:\Users\\*(Username)*\Praat\plugin_VocalToolkit"
   - [MAC] "/Users/*(UserName)*/Library/Preferences/Praat Prefs/"
 - [Matt Winn's Listen Lab](http://www.mattwinn.com/praat.html) with some really fun [Youtube Praat tutorials](https://www.youtube.com/playlist?list=PL6niCBwOhjHga4bCS83VJ2uKzQ8ZjEVeG)
 - [Holger Mitterer's website](http://holgermitterer.eu/research.html)
 - [Will Styler's repo](https://github.com/stylerw/styler_praat_scripts)
+- [Christopher Carignan's formant optimization script](https://github.com/ChristopherCarignan/formant-optimization)
 
 ## License
 
