@@ -4062,271 +4062,246 @@ Remove
     </item>
     
     <item>
-      <title>Interpolate F0 continuum</title>
-      <link>https://hrbosker.github.io/resources/scripts/interpolate-f0/</link>
+      <title>Manipulate ITD/IID</title>
+      <link>https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/scripts/interpolate-f0/</guid>
-      <description>&lt;p&gt;This script creates an F0 continuum for two segmentally matching words (e.g., &lt;em&gt;SUBject&lt;/em&gt; vs. &lt;em&gt;subJECT&lt;/em&gt;). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.&lt;/p&gt;
+      <guid>https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/</guid>
+      <description>&lt;p&gt;This script allows you to create a &amp;lsquo;virtual auditory reality&amp;rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.&lt;/p&gt;
+&lt;p&gt;When you want to play two talkers as coming from opposite sides (talker1 from the left, talker2 from the right), you could simply present the talkers in different channels of a stereo sound file. This way, when your listeners use headphones, talker1 is the only signal played in the left ear and talker2 is the only signal played in the right ear. This design, however, does not reflect naturalistic acoustic environments where the speech of a given talker typically reaches &lt;em&gt;both ears&lt;/em&gt;. Moreover, such a simplistic 2-channel design also completely avoids any energetic masking from one talker onto the next.&lt;/p&gt;
+&lt;p&gt;In order to simulate more naturalistic multitalker environments, one can present the same sound to both ears, but with a slight delay (interaural time difference; ITD) and at a slightly lower intensity in one ear vs. the other (interaural intensity difference; IID). This way we simulate the shadowing effect of the listener&amp;rsquo;s head, maintaining naturalistic energetic masking.&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;You can also &lt;a href=&#34;../interpolate-F0.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../manipulate-ITD-IID.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#____________________________________ HEADER __________________________________####
-# date:         31.01.2023, run in Praat 6.2.12 on Windows 11
-# author:       Ronny Bujok (adapted from Hans Rutger Bosker)
-# email:        Ronny.Bujok@mpi.nl
-# filename:     F0_stress continuum_interpolation.praat
-# project:      Audiovisual Perception of Lexical Stress
-# license:		CC BY-NC 4.0
-
-####################################################################################################################
-# This script takes recordings of segmentally identical, disyllabic minimal stress pairs with lexical stress on the first 
-# (strong-weak; SW) or second (weak-strong; WS) syllable (e.g., VOORnaam vs. voorNAAM) and interpolates their F0-contours linearly. 
-# The manipulated F0-contours are applied to the SW recording to create an F0-based lexical stress continuum.
-# Duration and Intensity are set to mean, ambiguous values.
-#
-# This script requires minimal pairs to match in their name. Stress pattern in input files is denoted with &amp;#34;_sw&amp;#34; or &amp;#34;_ws&amp;#34; 
-# (e.g., voornaam_sw.wav &amp;amp; voornaam_ws.wav). No other underscore characters are allowed.
-# Textgrids for each recording are required, with boundaries at word onset, second syllable onset and word offset.
-#
-# Note that the parameters for pitch estimation are set to match a male voice. When working with a female voice,
-# please adjust the arguments of the functions &amp;#34;Lengthen (overlap-add)&amp;#34; and &amp;#34;To Manipulation&amp;#34;.
-####################################################################################################################
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@donders.ru.nl
+### Date: 19 July 2023, run in Praat 6.3.08 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
 
 
-# Define input and output directory
-input_directory$ = &amp;#34;C:\input folder&amp;#34;
-output_directory$= &amp;#34;C:\output folder&amp;#34;
+    ###&amp;gt;&amp;gt; This script takes two input sounds and applies interaural time differences (ITD)
+    ###&amp;gt;&amp;gt;	and interaural intensity differences (IID) in order to induce &amp;#39;virtual&amp;#39; spatial
+    ###&amp;gt;&amp;gt;	segregation of the two sosunds. This makes one sound be perceived as coming
+    ###&amp;gt;&amp;gt;	from the left and the other sound as coming from the right, despite the fact
+    ###&amp;gt;&amp;gt;   that both sounds are physically present in either channel. Use headphones
+    ###&amp;gt;&amp;gt;   (i.e., not speakers) to best experience this spatial segregation. And remember:
+    ###&amp;gt;&amp;gt;   wear the headphones appropriately (i.e., with L on your left ear, R on the right)
 
-# create file list of all files with the ending &amp;#34;_sw.wav&amp;#34; (just sound files, one per minimal pair (sw))
-Create Strings as file list... list &amp;#39;input_directory$&amp;#39;\*_sw.wav
-n = Get number of strings
+    ###&amp;gt;&amp;gt; In its current form, the script simply reads in two pre-defined mono sounds
+    ###&amp;gt;&amp;gt;   and gives as output two stereo wav files: one wav file with sound1 perceived
+    ###&amp;gt;&amp;gt;   as coming from the left and another with sound1 perceived as coming from the right.
+    ###&amp;gt;&amp;gt;   Combine this script with the batch-processing.praat script to process
+    ###&amp;gt;&amp;gt;   a larger number of files.
 
-# _________________________________ CREATE FILELIST ____________________________________________________
+    ###&amp;gt;&amp;gt; Remember: the two sounds should be mono sound files (1-channel) with
+    ###&amp;gt;&amp;gt;   the same sampling frequency.
 
-# create list again because it removes itself after every iteration
-for x from 1 to n
-	Create Strings as file list... list &amp;#39;input_directory$&amp;#39;\*_sw.wav
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
 
-# get only the word name without extension or stress identifier (sw or ws)
-	select Strings list
-	current_file$ = Get string... x
-	idx = rindex (current_file$, &amp;#34;_&amp;#34;)
-	word$ = left$(current_file$,idx-1)
+### Where can the files be found?
 
-#_____________________________________ DURATION ___________________________________________________________
+dir_in$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds&amp;#34;
 
-# To interpolate F0 contours, recordings must be of equal length. So duration must be manipulated first. 
+### Where should the output files be saved?
 
-#---------------------------------- get values from SW word ---------------------------------------------
-# open SW word and convert to mono
-		wavfile_sw$ = &amp;#34;&amp;#39;word$&amp;#39;_sw&amp;#34;
-		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_sw$&amp;#39;.Textgrid
-		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_sw$&amp;#39;.wav
-		Convert to mono
-		Rename: &amp;#34;mono_sw&amp;#34;
-		wav_sw_id = selected()
-# select the mono file and the corresponding textgrid and extract all intervals
-		selectObject: &amp;#34;TextGrid &amp;#39;wavfile_sw$&amp;#39;&amp;#34;
-		plusObject: &amp;#34;Sound mono_sw&amp;#34;
-		Extract all intervals: 1, &amp;#34;no&amp;#34;
-# select the second interval (first syllable) and get the total duration and the intensity	
-		select (wav_sw_id+2)  
-		sw_dur1= Get total duration
-		sw_int1= Get intensity (dB)
-		Rename: &amp;#34;sw_1&amp;#34;
-# select the third interval (second syllable) and get the total duration and the intensity		
-		select (wav_sw_id+3)
-		sw_dur2= Get total duration
-		sw_int2= Get intensity (dB)
-		Rename: &amp;#34;sw_2&amp;#34;
-
-# select and rename the first and last interval (silences) for future reference, to concatenate the final audio
-		select (wav_sw_id+1)
-		Rename: &amp;#34;pre_silence_sw&amp;#34;
-		select (wav_sw_id+4)
-		Rename: &amp;#34;post_silence_sw&amp;#34;
-		
-#---------------------------------- get values from WS word -----------------------------------------
-
-# open WS word and convert to mono		
-		wavfile_ws$ = &amp;#34;&amp;#39;word$&amp;#39;_ws&amp;#34;
-		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_ws$&amp;#39;.Textgrid
-		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_ws$&amp;#39;.wav
-		Convert to mono
-		Rename: &amp;#34;mono_ws&amp;#34;
-		wav_ws_id = selected()
-# select the mono file and the corresponding textgrid and extract all intervals		
-		selectObject: &amp;#34;TextGrid &amp;#39;wavfile_ws$&amp;#39;&amp;#34;
-		plusObject: &amp;#34;Sound mono_ws&amp;#34;
-		Extract all intervals: 1, &amp;#34;no&amp;#34;
-# select the second interval (first syllable) and get the total duration and the intensity			
-		select (wav_ws_id+2)
-		ws_dur1= Get total duration
-		ws_int1= Get intensity (dB)
-		Rename: &amp;#34;ws_1&amp;#34;	
-# select the third interval (second syllable) and get the total duration and the intensity		
-		select (wav_ws_id+3)
-		ws_dur2= Get total duration
-		ws_int2= Get intensity (dB)
-		Rename: &amp;#34;ws_2&amp;#34;	
+dir_out$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds&amp;#34;
 
 
-#---------------------------------- Manipulate duration ------------------------------------------
-
-# Set the duration of syllable 1 of the SW word to the average, ambiguous duration
-		select Sound sw_1
-		targetdur_1 = ((sw_dur1+ws_dur1)/2)
-		Lengthen (overlap-add)... 75 250 (targetdur_1/sw_dur1)
-		Rename: &amp;#34;sw_1_durmatched&amp;#34;			
-# Set the duration of syllable 2 of the SW word to the average, ambiguous duration
-        select Sound sw_2
-		targetdur_2 = ((sw_dur2+ws_dur2)/2)
-		Lengthen (overlap-add)... 75 250 (targetdur_2/sw_dur2)
-		Rename: &amp;#34;sw_2_durmatched&amp;#34;	
-		
-# Set the duration of syllable 1 of the WS word to the average, ambiguous duration
-        select Sound ws_1
-		Lengthen (overlap-add)... 75 250 (targetdur_1/ws_dur1)
-		Rename: &amp;#34;ws_1_durmatched&amp;#34;		
-# Set the duration of syllable 2 of the WS word to the average, ambiguous duration
-        select Sound ws_2
-		Lengthen (overlap-add)... 75 250 (targetdur_2/ws_dur2)
-		Rename: &amp;#34;ws_2_durmatched&amp;#34;
-		
 
 
-# Concatenate duration-manipulated SW word
-		select Sound sw_1_durmatched
-		plusObject: &amp;#34;Sound sw_2_durmatched&amp;#34;
-		Concatenate recoverably
-		select Sound chain
-		Rename: &amp;#34;durmatched_sw&amp;#34;
-# Concatenate duration-manipulated WS word
-        select Sound ws_1_durmatched
-		plusObject: &amp;#34;Sound ws_2_durmatched&amp;#34;
-		Concatenate recoverably
-		select Sound chain
-		Rename: &amp;#34;durmatched_ws&amp;#34;
-		
-# save TextGrid with the boundary between the syllables. Necessary for intensity manipulation
-		select TextGrid chain
-		Rename: &amp;#34;syl_boundary&amp;#34;
-		
 
-		
-#__________________________________________ F0 INTERPOLATION ________________________________________________
+################################################################################
+### Let&amp;#39;s check whether the directories specified above exist...
+################################################################################
 
-# Extract the pitch tiers
-		select Sound durmatched_sw
-		s1_dur = Get total duration
-		To Manipulation... 0.01 50 300
-		Extract pitch tier
+### Let&amp;#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
 
-		select Sound durmatched_ws
-		s2_dur = Get total duration
-		To Manipulation... 0.01 50 300
-		Extract pitch tier
+### First check whether the input directory ends in a backslash (if so, removed)
 
-# create 10 ms time bins for interpolation
-		timebinsize = 0.01
-		nbins = floor(s1_dur/timebinsize)
+if right$(dir_in$,1)=&amp;#34;/&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&amp;#34;\&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
 
-		for currentbin from 1 to &amp;#39;nbins&amp;#39;
-			currentbin_start = (currentbin*timebinsize)-timebinsize
-			currentbin_end = (currentbin*timebinsize)
-			currentbin_mid = (currentbin_start + currentbin_end)/2
-			select PitchTier durmatched_sw
-			currentbin_f0_s1 = Get value at time... currentbin_mid
-			f0_bin_s1 [currentbin] = currentbin_f0_s1
-			select PitchTier durmatched_ws
-			currentbin_f0_s2 = Get value at time... currentbin_mid
-			f0_bin_s2 [currentbin] = currentbin_f0_s2
-		endfor
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
 
-#define number of steps for interpolation
-		nsteps = 11
-		step_ratio = 1/(&amp;#39;nsteps&amp;#39;-1)
-		# This means that...
-		#	the stepsize is 10% of the difference between SW and WS;
-		#	step 1 of the continuum is the original SW contour;
-		#	step 11 of the continuum is the original WS contour. 
-		
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
 
-# interpolate the pitch tiers 
-		for currentstep from 1 to &amp;#39;nsteps&amp;#39;
-			select PitchTier durmatched_sw
-			Copy... interpol_&amp;#39;currentstep&amp;#39;
+temp_filename$ = dir_in$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
 
-			# first remove all original F0 points
-			Remove points between... 0 &amp;#39;s1_dur&amp;#39;
-			
-			# now add a point for each time bin
-			for currentbin from 1 to &amp;#39;nbins&amp;#39;
-				currentbin_start = (currentbin*timebinsize)-timebinsize
-				currentbin_end = (currentbin*timebinsize)
-				currentbin_mid = (currentbin_start + currentbin_end)/2
-				currentbin_f0_s1 = f0_bin_s1 [currentbin]
-				currentbin_f0_s2 = f0_bin_s2 [currentbin]
-				currentbin_f0_diff = currentbin_f0_s1 - currentbin_f0_s2
-				currentbin_f0_ratio = currentbin_f0_diff * &amp;#39;step_ratio&amp;#39;
-				currentbin_f0_interpol = currentbin_f0_s1 - (currentbin_f0_ratio * (&amp;#39;currentstep&amp;#39;-1))
-				
-				Add point... &amp;#39;currentbin_mid&amp;#39; &amp;#39;currentbin_f0_interpol&amp;#39;
-			endfor
-			
-# select original audio (in this case SW recording) and replace the pitch contour
-			select Manipulation durmatched_sw
-			Copy... interpol_&amp;#39;currentstep&amp;#39;			
-			plusObject: &amp;#34;PitchTier interpol_&amp;#39;currentstep&amp;#39;&amp;#34;
-			Replace pitch tier
-			minusObject: &amp;#34;PitchTier interpol_&amp;#39;currentstep&amp;#39;&amp;#34;
-			Get resynthesis (overlap-add)
-			
-			interval_id = selected()
+### Can the file be found?
 
-#__________________________________________ INTENSITY____________________________________________________
+file_exists_yesno = fileReadable(temp_filename$)
 
-# extract each syllable again for intensity manipulation
-			plusObject: &amp;#34;TextGrid syl_boundary&amp;#34;
-			Extract all intervals: 1, &amp;#34;no&amp;#34;
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_in$&amp;#39; was not found
+	exit Your input directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
 
-# set (average) target intensity per syllable
-            targetint_1 = ((sw_int1+ws_int1)/2) 
-            targetint_2 = ((sw_int2+ws_int2)/2) 
-			
-# adjust the intensities to an average/ambigous value
-			select (interval_id+1)
-			Scale intensity... targetint_1
-			Rename: &amp;#34;final_syl_1&amp;#34;
-			
-			select (interval_id+2)
-			Scale intensity... targetint_2
-			Rename: &amp;#34;final_syl_2&amp;#34;
+## Now re-do this for the output directory:
 
-#______________________________________ CONCATENATE &amp;amp; SAVE ______________________________________________
+if right$(dir_out$,1)=&amp;#34;/&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&amp;#34;\&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
 
-# copy final segment of the recording (silence post word offset), so Praat concatenates in the correct order
-			select Sound post_silence_sw
-			Copy... post_silence_sw_copy
-# select remaining segments
-			plusObject: &amp;#34;Sound pre_silence_sw&amp;#34;
-			plusObject: &amp;#34;Sound final_syl_1&amp;#34;
-			plusObject: &amp;#34;Sound final_syl_2&amp;#34;
-			plusObject: &amp;#34;post_silence_sw_copy&amp;#34;
-# concatenate
-			Concatenate recoverably
-			select Sound chain
-			Rename: &amp;#34;&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;&amp;#34;
-			Save as WAV file... &amp;#39;output_directory$&amp;#39;\&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;.wav
-			select TextGrid chain
-			Save as text file... &amp;#39;output_directory$&amp;#39;\&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;.TextGrid
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
 
-		endfor
-	
-	select all
-	Remove
-	
-endfor
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete that temp txt file.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_out$&amp;#39; was not found
+	exit Your output directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+## Enter the filenames of the two sounds in the variables below.
+## Remember to include the file extension (e.g., &amp;#34;firstsound.wav&amp;#34;)
+## but the filenames themselves should not contain any [.] character.
+
+soundfile1$ = &amp;#34;firstsound.wav&amp;#34;
+extposition = index(soundfile1$, &amp;#34;.&amp;#34;)
+soundname1$ = left$(soundfile1$, (&amp;#39;extposition&amp;#39;-1))
+
+Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;soundfile1$&amp;#39;
+Rename... original_s1
+Convert to mono
+Rename... soundone
+fs_1 = Get sampling frequency
+int_1 = Get intensity (dB)
+
+soundfile2$ = &amp;#34;secondsound.wav&amp;#34;
+extposition = index(soundfile2$, &amp;#34;.&amp;#34;)
+soundname2$ = left$(soundfile2$, (&amp;#39;extposition&amp;#39;-1))
+
+Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;soundfile2$&amp;#39;
+Rename... original_s2
+Convert to mono
+Rename... soundtwo
+fs_2 = Get sampling frequency
+int_2 = Get intensity (dB)
+
+if fs_1 &amp;lt;&amp;gt; fs_2
+	# if the two files have different sampling frequencies
+	printline &amp;#39;soundfile1$&amp;#39; has a sampling frequency of &amp;#39;fs_1&amp;#39; Hz.
+    printline &amp;#39;soundfile2$&amp;#39; has a sampling frequency of &amp;#39;fs_2&amp;#39; Hz.
+	exit The two files have different sampling frequencies. Resample to match the sampling frequencies.
+endif
+
+
+
+
+
+## The ITD implemented here is 0.6 ms = 600 microseconds.
+## This ITD simulates fully lateralized sound sources (Hartmann, 1999)
+itd = 0.0006
+Create Sound from formula: &amp;#34;itd&amp;#34;, 1, 0, 0.0006, &amp;#39;fs_1&amp;#39;, &amp;#34;0&amp;#34;
+
+## The ITD silence should precede the other two sounds in the Objects window
+select Sound soundone
+Copy... sound1
+select Sound soundone
+Remove
+select Sound soundtwo
+Copy... sound2
+select Sound soundtwo
+Remove
+
+
+
+
+## The IID implemented here is -6 dB, simulating fully lateralized sound sources (Hartmann, 1999)
+
+## Create the left channel, with sound1 appearing as coming from the left
+select Sound itd
+plus Sound sound2
+Concatenate
+Scale intensity... (&amp;#39;int_2&amp;#39;-6)
+Formula... self + Sound_sound1[]
+Rename... channel_L
+
+## Create the right channel, with sound2 appearing as coming from the right
+select Sound itd
+plus Sound sound1
+Concatenate
+Scale intensity... (&amp;#39;int_1&amp;#39;-6)
+Formula... self + Sound_sound2[]
+Rename... channel_R
+
+select Sound channel_L
+plus Sound channel_R
+Combine to stereo
+Rename... L_s1_R_s2
+Write to WAV file... &amp;#39;dir_in$&amp;#39;\L_&amp;#39;soundname1$&amp;#39;_R_&amp;#39;soundname2$&amp;#39;.wav
+Remove
+
+## And the opposite localization:
+
+select Sound channel_R
+Copy... channel_left
+select Sound channel_L
+Copy... channel_right
+plus Sound channel_left
+Combine to stereo
+Rename... R_s1_L_s2
+Write to WAV file... &amp;#39;dir_in$&amp;#39;\L_&amp;#39;soundname2$&amp;#39;_R_&amp;#39;soundname1$&amp;#39;.wav
+Remove
+
+## And clear up the mess
+select Sound channel_L
+plus Sound channel_R
+plus Sound channel_left
+plus Sound channel_right
+plus Sound original_s1
+plus Sound original_s2
+plus Sound itd
+plus Sound sound1
+plus Sound sound2
+Remove
+
+
 
 ################################################################################
 # End of script
@@ -4779,6 +4754,279 @@ endfor
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Happy publishing!&lt;/em&gt;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Interpolate F0 continuum</title>
+      <link>https://hrbosker.github.io/resources/scripts/interpolate-f0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/scripts/interpolate-f0/</guid>
+      <description>&lt;p&gt;This script creates an F0 continuum for two segmentally matching words (e.g., &lt;em&gt;SUBject&lt;/em&gt; vs. &lt;em&gt;subJECT&lt;/em&gt;). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../interpolate-F0.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;#____________________________________ HEADER __________________________________####
+# date:         31.01.2023, run in Praat 6.2.12 on Windows 11
+# author:       Ronny Bujok (adapted from Hans Rutger Bosker)
+# email:        Ronny.Bujok@mpi.nl
+# filename:     F0_stress continuum_interpolation.praat
+# project:      Audiovisual Perception of Lexical Stress
+# license:		CC BY-NC 4.0
+
+####################################################################################################################
+# This script takes recordings of segmentally identical, disyllabic minimal stress pairs with lexical stress on the first 
+# (strong-weak; SW) or second (weak-strong; WS) syllable (e.g., VOORnaam vs. voorNAAM) and interpolates their F0-contours linearly. 
+# The manipulated F0-contours are applied to the SW recording to create an F0-based lexical stress continuum.
+# Duration and Intensity are set to mean, ambiguous values.
+#
+# This script requires minimal pairs to match in their name. Stress pattern in input files is denoted with &amp;#34;_sw&amp;#34; or &amp;#34;_ws&amp;#34; 
+# (e.g., voornaam_sw.wav &amp;amp; voornaam_ws.wav). No other underscore characters are allowed.
+# Textgrids for each recording are required, with boundaries at word onset, second syllable onset and word offset.
+#
+# Note that the parameters for pitch estimation are set to match a male voice. When working with a female voice,
+# please adjust the arguments of the functions &amp;#34;Lengthen (overlap-add)&amp;#34; and &amp;#34;To Manipulation&amp;#34;.
+####################################################################################################################
+
+
+# Define input and output directory
+input_directory$ = &amp;#34;C:\input folder&amp;#34;
+output_directory$= &amp;#34;C:\output folder&amp;#34;
+
+# create file list of all files with the ending &amp;#34;_sw.wav&amp;#34; (just sound files, one per minimal pair (sw))
+Create Strings as file list... list &amp;#39;input_directory$&amp;#39;\*_sw.wav
+n = Get number of strings
+
+# _________________________________ CREATE FILELIST ____________________________________________________
+
+# create list again because it removes itself after every iteration
+for x from 1 to n
+	Create Strings as file list... list &amp;#39;input_directory$&amp;#39;\*_sw.wav
+
+# get only the word name without extension or stress identifier (sw or ws)
+	select Strings list
+	current_file$ = Get string... x
+	idx = rindex (current_file$, &amp;#34;_&amp;#34;)
+	word$ = left$(current_file$,idx-1)
+
+#_____________________________________ DURATION ___________________________________________________________
+
+# To interpolate F0 contours, recordings must be of equal length. So duration must be manipulated first. 
+
+#---------------------------------- get values from SW word ---------------------------------------------
+# open SW word and convert to mono
+		wavfile_sw$ = &amp;#34;&amp;#39;word$&amp;#39;_sw&amp;#34;
+		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_sw$&amp;#39;.Textgrid
+		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_sw$&amp;#39;.wav
+		Convert to mono
+		Rename: &amp;#34;mono_sw&amp;#34;
+		wav_sw_id = selected()
+# select the mono file and the corresponding textgrid and extract all intervals
+		selectObject: &amp;#34;TextGrid &amp;#39;wavfile_sw$&amp;#39;&amp;#34;
+		plusObject: &amp;#34;Sound mono_sw&amp;#34;
+		Extract all intervals: 1, &amp;#34;no&amp;#34;
+# select the second interval (first syllable) and get the total duration and the intensity	
+		select (wav_sw_id+2)  
+		sw_dur1= Get total duration
+		sw_int1= Get intensity (dB)
+		Rename: &amp;#34;sw_1&amp;#34;
+# select the third interval (second syllable) and get the total duration and the intensity		
+		select (wav_sw_id+3)
+		sw_dur2= Get total duration
+		sw_int2= Get intensity (dB)
+		Rename: &amp;#34;sw_2&amp;#34;
+
+# select and rename the first and last interval (silences) for future reference, to concatenate the final audio
+		select (wav_sw_id+1)
+		Rename: &amp;#34;pre_silence_sw&amp;#34;
+		select (wav_sw_id+4)
+		Rename: &amp;#34;post_silence_sw&amp;#34;
+		
+#---------------------------------- get values from WS word -----------------------------------------
+
+# open WS word and convert to mono		
+		wavfile_ws$ = &amp;#34;&amp;#39;word$&amp;#39;_ws&amp;#34;
+		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_ws$&amp;#39;.Textgrid
+		Read from file... &amp;#39;input_directory$&amp;#39;\&amp;#39;wavfile_ws$&amp;#39;.wav
+		Convert to mono
+		Rename: &amp;#34;mono_ws&amp;#34;
+		wav_ws_id = selected()
+# select the mono file and the corresponding textgrid and extract all intervals		
+		selectObject: &amp;#34;TextGrid &amp;#39;wavfile_ws$&amp;#39;&amp;#34;
+		plusObject: &amp;#34;Sound mono_ws&amp;#34;
+		Extract all intervals: 1, &amp;#34;no&amp;#34;
+# select the second interval (first syllable) and get the total duration and the intensity			
+		select (wav_ws_id+2)
+		ws_dur1= Get total duration
+		ws_int1= Get intensity (dB)
+		Rename: &amp;#34;ws_1&amp;#34;	
+# select the third interval (second syllable) and get the total duration and the intensity		
+		select (wav_ws_id+3)
+		ws_dur2= Get total duration
+		ws_int2= Get intensity (dB)
+		Rename: &amp;#34;ws_2&amp;#34;	
+
+
+#---------------------------------- Manipulate duration ------------------------------------------
+
+# Set the duration of syllable 1 of the SW word to the average, ambiguous duration
+		select Sound sw_1
+		targetdur_1 = ((sw_dur1+ws_dur1)/2)
+		Lengthen (overlap-add)... 75 250 (targetdur_1/sw_dur1)
+		Rename: &amp;#34;sw_1_durmatched&amp;#34;			
+# Set the duration of syllable 2 of the SW word to the average, ambiguous duration
+        select Sound sw_2
+		targetdur_2 = ((sw_dur2+ws_dur2)/2)
+		Lengthen (overlap-add)... 75 250 (targetdur_2/sw_dur2)
+		Rename: &amp;#34;sw_2_durmatched&amp;#34;	
+		
+# Set the duration of syllable 1 of the WS word to the average, ambiguous duration
+        select Sound ws_1
+		Lengthen (overlap-add)... 75 250 (targetdur_1/ws_dur1)
+		Rename: &amp;#34;ws_1_durmatched&amp;#34;		
+# Set the duration of syllable 2 of the WS word to the average, ambiguous duration
+        select Sound ws_2
+		Lengthen (overlap-add)... 75 250 (targetdur_2/ws_dur2)
+		Rename: &amp;#34;ws_2_durmatched&amp;#34;
+		
+
+
+# Concatenate duration-manipulated SW word
+		select Sound sw_1_durmatched
+		plusObject: &amp;#34;Sound sw_2_durmatched&amp;#34;
+		Concatenate recoverably
+		select Sound chain
+		Rename: &amp;#34;durmatched_sw&amp;#34;
+# Concatenate duration-manipulated WS word
+        select Sound ws_1_durmatched
+		plusObject: &amp;#34;Sound ws_2_durmatched&amp;#34;
+		Concatenate recoverably
+		select Sound chain
+		Rename: &amp;#34;durmatched_ws&amp;#34;
+		
+# save TextGrid with the boundary between the syllables. Necessary for intensity manipulation
+		select TextGrid chain
+		Rename: &amp;#34;syl_boundary&amp;#34;
+		
+
+		
+#__________________________________________ F0 INTERPOLATION ________________________________________________
+
+# Extract the pitch tiers
+		select Sound durmatched_sw
+		s1_dur = Get total duration
+		To Manipulation... 0.01 50 300
+		Extract pitch tier
+
+		select Sound durmatched_ws
+		s2_dur = Get total duration
+		To Manipulation... 0.01 50 300
+		Extract pitch tier
+
+# create 10 ms time bins for interpolation
+		timebinsize = 0.01
+		nbins = floor(s1_dur/timebinsize)
+
+		for currentbin from 1 to &amp;#39;nbins&amp;#39;
+			currentbin_start = (currentbin*timebinsize)-timebinsize
+			currentbin_end = (currentbin*timebinsize)
+			currentbin_mid = (currentbin_start + currentbin_end)/2
+			select PitchTier durmatched_sw
+			currentbin_f0_s1 = Get value at time... currentbin_mid
+			f0_bin_s1 [currentbin] = currentbin_f0_s1
+			select PitchTier durmatched_ws
+			currentbin_f0_s2 = Get value at time... currentbin_mid
+			f0_bin_s2 [currentbin] = currentbin_f0_s2
+		endfor
+
+#define number of steps for interpolation
+		nsteps = 11
+		step_ratio = 1/(&amp;#39;nsteps&amp;#39;-1)
+		# This means that...
+		#	the stepsize is 10% of the difference between SW and WS;
+		#	step 1 of the continuum is the original SW contour;
+		#	step 11 of the continuum is the original WS contour. 
+		
+
+# interpolate the pitch tiers 
+		for currentstep from 1 to &amp;#39;nsteps&amp;#39;
+			select PitchTier durmatched_sw
+			Copy... interpol_&amp;#39;currentstep&amp;#39;
+
+			# first remove all original F0 points
+			Remove points between... 0 &amp;#39;s1_dur&amp;#39;
+			
+			# now add a point for each time bin
+			for currentbin from 1 to &amp;#39;nbins&amp;#39;
+				currentbin_start = (currentbin*timebinsize)-timebinsize
+				currentbin_end = (currentbin*timebinsize)
+				currentbin_mid = (currentbin_start + currentbin_end)/2
+				currentbin_f0_s1 = f0_bin_s1 [currentbin]
+				currentbin_f0_s2 = f0_bin_s2 [currentbin]
+				currentbin_f0_diff = currentbin_f0_s1 - currentbin_f0_s2
+				currentbin_f0_ratio = currentbin_f0_diff * &amp;#39;step_ratio&amp;#39;
+				currentbin_f0_interpol = currentbin_f0_s1 - (currentbin_f0_ratio * (&amp;#39;currentstep&amp;#39;-1))
+				
+				Add point... &amp;#39;currentbin_mid&amp;#39; &amp;#39;currentbin_f0_interpol&amp;#39;
+			endfor
+			
+# select original audio (in this case SW recording) and replace the pitch contour
+			select Manipulation durmatched_sw
+			Copy... interpol_&amp;#39;currentstep&amp;#39;			
+			plusObject: &amp;#34;PitchTier interpol_&amp;#39;currentstep&amp;#39;&amp;#34;
+			Replace pitch tier
+			minusObject: &amp;#34;PitchTier interpol_&amp;#39;currentstep&amp;#39;&amp;#34;
+			Get resynthesis (overlap-add)
+			
+			interval_id = selected()
+
+#__________________________________________ INTENSITY____________________________________________________
+
+# extract each syllable again for intensity manipulation
+			plusObject: &amp;#34;TextGrid syl_boundary&amp;#34;
+			Extract all intervals: 1, &amp;#34;no&amp;#34;
+
+# set (average) target intensity per syllable
+            targetint_1 = ((sw_int1+ws_int1)/2) 
+            targetint_2 = ((sw_int2+ws_int2)/2) 
+			
+# adjust the intensities to an average/ambigous value
+			select (interval_id+1)
+			Scale intensity... targetint_1
+			Rename: &amp;#34;final_syl_1&amp;#34;
+			
+			select (interval_id+2)
+			Scale intensity... targetint_2
+			Rename: &amp;#34;final_syl_2&amp;#34;
+
+#______________________________________ CONCATENATE &amp;amp; SAVE ______________________________________________
+
+# copy final segment of the recording (silence post word offset), so Praat concatenates in the correct order
+			select Sound post_silence_sw
+			Copy... post_silence_sw_copy
+# select remaining segments
+			plusObject: &amp;#34;Sound pre_silence_sw&amp;#34;
+			plusObject: &amp;#34;Sound final_syl_1&amp;#34;
+			plusObject: &amp;#34;Sound final_syl_2&amp;#34;
+			plusObject: &amp;#34;post_silence_sw_copy&amp;#34;
+# concatenate
+			Concatenate recoverably
+			select Sound chain
+			Rename: &amp;#34;&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;&amp;#34;
+			Save as WAV file... &amp;#39;output_directory$&amp;#39;\&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;.wav
+			select TextGrid chain
+			Save as text file... &amp;#39;output_directory$&amp;#39;\&amp;#39;word$&amp;#39;_step_&amp;#39;currentstep&amp;#39;.TextGrid
+
+		endfor
+	
+	select all
+	Remove
+	
+endfor
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
