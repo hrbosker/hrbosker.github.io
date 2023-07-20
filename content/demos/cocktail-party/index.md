@@ -74,6 +74,10 @@ This is quite a different experience:
 2. *Our brains are even more remarkable!* Your brain told you that the female talker is on the left because it can pick up on less than a millisecond of a time difference!
 3. *Can we get to the cocktails now?*
 
+## Try it yourself!
+
+We've created a Praat script that implements ITD as well as IID manipulations (interaural intensity differences) for two input sounds. You can find it [here](/resources/scripts/manipulate-itd-iid)!
+
 ## Why is this important?
 
 Speech perception is presumably the hardest in noisy listening conditions. Even if we manage to understand what our interlocutor is trying to say in the midst of all the other speech, it takes our brain considerable effort and resources to do so. Knowing which acoustic and visual cues help humans 'tune in' to talkers (such as rhythm; Bosker & Cooke, [2018](/publication/bosker-etal-2018-jasa); [2020](/publication/bosker-etal-2020-jasa)) can inspire innovations in hearing aid technology and telephony. Likewise, knowing which acoustic aspects are hard to ignore for listeners (i.e., 'immune' to selective attention, such as speech rate; Bosker et al., [2020a](/publication/bosker-etal-2020-scirep); [2020b](/publication/bosker-etal-2020-app)) can motivate signal processing algorithms that aim to filter these acoustic properties from unattended talkers.
