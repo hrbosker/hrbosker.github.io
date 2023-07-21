@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." />
+  <meta name="description" content="This script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from &ldquo;bet&rdquo; to &ldquo;bit&rdquo;). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/manipulate-formants/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/manipulate-formants/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
-  <meta property="og:title" content="Manipulate ITD/IID | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/manipulate-formants/" />
+  <meta property="og:title" content="Manipulate formants | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from &ldquo;bet&rdquo; to &ldquo;bit&rdquo;). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Manipulate ITD/IID | SPEAC | Hans Rutger Bosker</title>
+  <title>Manipulate formants | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ba4834ac2502da41d83b0709dc7fc821" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1124bac512622960465ae77f9c3bd296" >
 
   
   
@@ -755,7 +755,7 @@
 
 
 
-  <li class="active"><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
 
 
 
@@ -763,7 +763,7 @@
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class="active"><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
 
       
         </ul>
@@ -802,41 +802,50 @@
         <div class="docs-article-container">
           
 
-          <h1>Manipulate ITD/IID</h1>
+          <h1>Manipulate formants</h1>
 
           <div class="article-style">
-            <p>This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
-<p>When you want to play two talkers as coming from opposite sides (talker1 from the left, talker2 from the right), you could simply present the talkers in different channels of a stereo sound file. This way, when your listeners use headphones, talker1 is the only signal played in the left ear and talker2 is the only signal played in the right ear. This design, however, does not reflect naturalistic acoustic environments where the speech of a given talker typically reaches <em>both ears</em>. Moreover, such a simplistic 2-channel design also completely avoids any energetic masking from one talker onto the next.</p>
-<p>In order to simulate more naturalistic multitalker environments, one can present the same sound to both ears, but with a slight delay (interaural time difference; ITD) and at a slightly lower intensity in one ear vs. the other (interaural intensity difference; IID). This way we simulate the shadowing effect of the listener&rsquo;s head, maintaining naturalistic energetic masking.</p>
-<p>See <a href="https://hrbosker.github.io/demos/cocktail-party/">this demo</a> for some examples and further details.</p>
+            <p>This script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from &ldquo;bet&rdquo; to &ldquo;bit&rdquo;). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0.</p>
 <blockquote>
-<p>You can also <a href="../manipulate-ITD-IID.praat">download the script</a> as a .praat file.</p>
+<p>You can also <a href="../manipulate-formants.praat">download the script</a> as a .praat file.</p>
 </blockquote>
 <pre tabindex="0"><code>################################################################################
 ### Hans Rutger Bosker, Radboud University
 ### HansRutger.Bosker@donders.ru.nl
-### Date: 19 July 2023, run in Praat 6.3.08 on Windows 10
+### based on an earlier script created by Matthias Sjerps
+### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################
 
 
-    ###&gt;&gt; This script takes two input sounds and applies interaural time differences (ITD)
-    ###&gt;&gt;	and interaural intensity differences (IID) in order to induce &#39;virtual&#39; spatial
-    ###&gt;&gt;	segregation of the two sosunds. This makes one sound be perceived as coming
-    ###&gt;&gt;	from the left and the other sound as coming from the right, despite the fact
-    ###&gt;&gt;   that both sounds are physically present in either channel. Use headphones
-    ###&gt;&gt;   (i.e., not speakers) to best experience this spatial segregation. And remember:
-    ###&gt;&gt;   wear the headphones appropriately (i.e., with L on your left ear, R on the right)
+	###&gt;&gt; This script takes pairs of items (e.g., bet and bit) from a directory
+	###&gt;&gt;	that critically only differ in their F1 (&#34;bet&#34; has higher F1 than &#34;bit&#34;).
+	###&gt;&gt;	The script then creates a phonetic continuum from high F1 (bet) to low F1 (bit)
+	###&gt;&gt;	using Burg&#39;s LPC method.
+	
+	###&gt;&gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the
+	###&gt;&gt;	input directory. This file should contain two tab-separated columns
+	###&gt;&gt;	with the labels &#34;word1&#34; and &#34;word2&#34;. Then script then loops over the
+	###&gt;&gt;	rows in this list of pairs. For example:
+	
+	###&gt;&gt;	word1	word2
+	###&gt;&gt;	bet	bit
+	###&gt;&gt;	get	git
+	###&gt;&gt;	set	sit
 
-    ###&gt;&gt; In its current form, the script simply reads in two pre-defined mono sounds
-    ###&gt;&gt;   and gives as output two stereo wav files: one wav file with sound1 perceived
-    ###&gt;&gt;   as coming from the left and another with sound1 perceived as coming from the right.
-    ###&gt;&gt;   Combine this script with the batch-processing.praat script to process
-    ###&gt;&gt;   a larger number of files.
+	###&gt;&gt; IMPORTANT: Every individual sound file should already have an accompanying
+	###&gt;&gt;	.TextGrid file containing one tier. This tier should have 3 intervals:
+	###&gt;&gt;	1. The interval preceding the critical vowel
+	###&gt;&gt;	2. The interval of the critical vowel
+	###&gt;&gt;	3. The interval following the critical vowel
 
-    ###&gt;&gt; Remember: the two sounds should be mono sound files (1-channel) with
-    ###&gt;&gt;   the same sampling frequency.
+	###&gt;&gt; The script includes transplantation of the intensity contour of the original
+	###&gt;&gt;	word1 to the manipulated output sound. The script can also set the
+	###&gt;&gt;	f0 of the manipulated vowel to a fixed average value calculated
+	###&gt;&gt;	across the two members of an item pair. This is done by setting
+	###&gt;&gt;	the variable control_f0$ to the value &#34;yes&#34;.
 
+	
 ################################################################################
 ### Variables you will definitely need to customize:
 ################################################################################
@@ -847,7 +856,43 @@ dir_in$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
 
 ### Where should the output files be saved?
 
-dir_out$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
+dir_out$ = &#34;C:\Users\hanbos\Desktop\mysounds\continua&#34;
+
+### What is the name of the .txt file containing the list of word pairs?
+### 	NOTE: Do **NOT** include the .txt extension; just the name!
+
+table_name$ = &#34;list_of_pairs&#34;
+
+### Next to the formant manipulations, do you also want to control the f0 and duration
+### 	of the output sounds by setting them to the average value between the two words?
+
+control_f0$ = &#34;yes&#34;
+
+### Number of estimated formants (default: 5)
+nformants = 5
+### Provide the max. frequency for filtering (default for F1: 3000)
+### 	Manipulations will be performed below this frequency only;
+### 	the original signal is used above this frequency.
+###		This helps to create natural-sounding (i.e., convincing) output speech.
+filter = 3000
+### Provide cutoff frequency for formant detection (default: 11000)
+cutoff = 11000
+### Provide the min and max pitch settings.
+###		For female talker: 100 - 400
+###		For male talker: 75 - 300
+minpitch = 100
+maxpitch = 400
+### Define how many steps should be on your continua.
+###		It helps if this value is an odd number so you have a &#39;true&#39; average
+###		in the middle. Default is 11 because this means the steps go up/down
+###		by 10% every time. This means that step 1 has the mean F1 of the original
+###		high-F1 member (e.g., bet) and step 11 has the mean F1 of the original
+###		low-F1 member (e.g., bit).
+nSteps = 11
+### Define your manipulation method (default: burg)
+methodLPC$ = &#34;burg&#34;
+### Define your fade-in/fade-out overlap window in seconds (default: 0.01)
+window = 0.01
 
 
 
@@ -937,109 +982,325 @@ endif
 ################################################################################
 ################################################################################
 
-## Enter the filenames of the two sounds in the variables below.
-## Remember to include the file extension (e.g., &#34;firstsound.wav&#34;)
-## but the filenames themselves should not contain any [.] character.
-
-soundfile1$ = &#34;firstsound.wav&#34;
-extposition = index(soundfile1$, &#34;.&#34;)
-soundname1$ = left$(soundfile1$, (&#39;extposition&#39;-1))
-
-Read from file... &#39;dir_in$&#39;\&#39;soundfile1$&#39;
-Rename... original_s1
-Convert to mono
-Rename... soundone
-fs_1 = Get sampling frequency
-int_1 = Get intensity (dB)
-
-soundfile2$ = &#34;secondsound.wav&#34;
-extposition = index(soundfile2$, &#34;.&#34;)
-soundname2$ = left$(soundfile2$, (&#39;extposition&#39;-1))
-
-Read from file... &#39;dir_in$&#39;\&#39;soundfile2$&#39;
-Rename... original_s2
-Convert to mono
-Rename... soundtwo
-fs_2 = Get sampling frequency
-int_2 = Get intensity (dB)
-
-if fs_1 &lt;&gt; fs_2
-	# if the two files have different sampling frequencies
-	printline &#39;soundfile1$&#39; has a sampling frequency of &#39;fs_1&#39; Hz.
-    printline &#39;soundfile2$&#39; has a sampling frequency of &#39;fs_2&#39; Hz.
-	exit The two files have different sampling frequencies. Resample to match the sampling frequencies.
-endif
+## Let&#39;s clear the Info window so we can print fresh new log data of our stimuli.
+## This log prints for each pair of items (&#34;item&#34;), for each created step,
+##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 1st member of the item pair
+##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 2nd member of the item pair
+##		the word duration, vowel duration, mean f0, f1, f2, f3 for the manipulated output sound.
+clearinfo
+echo item	step	dur_1	voweldur_1	f0_1	f1_1	f2_1	f3_1	dur_2	voweldur_2	f0_2	f1_2	f2_2	f3_2	dur_manip	voweldur_manip	f0_manip	f1_manip	f2_manip	f3_manip
 
 
 
 
 
-## The ITD implemented here is 0.6 ms = 600 microseconds.
-## This ITD simulates fully lateralized sound sources (Hartmann, 1999)
-itd = 0.0006
-Create Sound from formula: &#34;itd&#34;, 1, 0, 0.0006, &#39;fs_1&#39;, &#34;0&#34;
+Read from file... &#39;dir_in$&#39;\&#39;table_name$&#39;.txt
+nItems = Get number of rows
 
-## The ITD silence should precede the other two sounds in the Objects window
-select Sound soundone
-Copy... sound1
-select Sound soundone
-Remove
-select Sound soundtwo
-Copy... sound2
-select Sound soundtwo
-Remove
+for ItemCnt from 1 to nItems
+	## Create leading and trailing silence of 0.5 sec to append to the words to
+	## improve spectral measurements at the onset/offset of the words.
+	Create Sound from formula... silence1 Mono 0 0.5 cutoff  0
 
+	#######################################
+	## Read and measure acoustics of word1
+	#######################################
 
+	select Table &#39;table_name$&#39;
+	word1$ = Get value... &#39;ItemCnt&#39; word1
+	word2$ = Get value... &#39;ItemCnt&#39; word2
+	
+	Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.wav
+	Rename... word1
+	sampFreq_1 = Get sampling frequency
+	dur_1 = Get total duration
+	int_1 = Get intensity (dB)
+	To Pitch... 0 &#39;minpitch&#39; &#39;maxpitch&#39;
+	f0_1 = Get mean... 0 0 Hertz
 
+	select Sound word1
+	Resample: cutoff, 50
+	Rename... word1_belowcutoff
+	select Sound word1
+	Remove
 
-## The IID implemented here is -6 dB, simulating fully lateralized sound sources (Hartmann, 1999)
+	Create Sound from formula... silence2 Mono 0 0.5 cutoff  0
+	select Sound silence1
+	plus Sound word1_belowcutoff
+	plus Sound silence2
+	Concatenate
+	Rename... word1_pad
 
-## Create the left channel, with sound1 appearing as coming from the left
-select Sound itd
-plus Sound sound2
-Concatenate
-Scale intensity... (&#39;int_2&#39;-6)
-Formula... self + Sound_sound1[]
-Rename... channel_L
+	Filter (pass Hann band)... 0 filter 10
+	Rename... Low_Part_1
+	lowInt_1 = Get intensity (dB)
+	To Intensity... 100 0 no
+	Down to IntensityTier
+	select Intensity Low_Part_1
+	Remove
 
-## Create the right channel, with sound2 appearing as coming from the right
-select Sound itd
-plus Sound sound1
-Concatenate
-Scale intensity... (&#39;int_1&#39;-6)
-Formula... self + Sound_sound2[]
-Rename... channel_R
+	select Sound word1_pad
+	To LPC (burg): (&#39;nformants&#39;*2), 0.025, 0.005, 50
+	select Sound word1_pad
+	plus LPC word1_pad
+	Filter (inverse)
+	Rename... Source_1
+	select LPC word1_pad
+	Remove
+	
+	Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.TextGrid
+	Rename... word1
+	Shift times by... 0.5
+	vowelonset_1 = Get start time of interval... 1 2
+	voweloffset_1 = Get end time of interval... 1 2
+	voweldur_1 = voweloffset_1 - vowelonset_1
 
-select Sound channel_L
-plus Sound channel_R
-Combine to stereo
-Rename... L_s1_R_s2
-Write to WAV file... &#39;dir_in$&#39;\L_&#39;soundname1$&#39;_R_&#39;soundname2$&#39;.wav
-Remove
+	select Sound word1_pad
+	To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+	maxForm = Get maximum number of formants
+	for formCnt from 1 to maxForm
+		origFormantsArray_1 [&#39;formCnt&#39;] = Get mean... &#39;formCnt&#39; &#39;vowelonset_1&#39; &#39;voweloffset_1&#39; hertz
+		f&#39;formCnt&#39;_1 = Get mean... &#39;formCnt&#39; &#39;vowelonset_1&#39; &#39;voweloffset_1&#39; hertz
+	endfor
+	Remove
+	
+	
+	
+	
+	
+	#######################################
+	## Read and measure acoustics of word2
+	#######################################
 
-## And the opposite localization:
+	Read from file... &#39;dir_in$&#39;\&#39;word2$&#39;.wav
+	Rename... word2
+	sampFreq_2 = Get sampling frequency
+	dur_2 = Get total duration
+	int_2 = Get intensity (dB)
+	To Pitch... 0 &#39;minpitch&#39; &#39;maxpitch&#39;
+	f0_2 = Get mean... 0 0 Hertz
 
-select Sound channel_R
-Copy... channel_left
-select Sound channel_L
-Copy... channel_right
-plus Sound channel_left
-Combine to stereo
-Rename... R_s1_L_s2
-Write to WAV file... &#39;dir_in$&#39;\L_&#39;soundname2$&#39;_R_&#39;soundname1$&#39;.wav
-Remove
+	select Sound word2
+	Resample: cutoff, 50
+	Rename... word2_belowcutoff
+	select Sound word2
+	Remove
 
-## And clear up the mess
-select Sound channel_L
-plus Sound channel_R
-plus Sound channel_left
-plus Sound channel_right
-plus Sound original_s1
-plus Sound original_s2
-plus Sound itd
-plus Sound sound1
-plus Sound sound2
-Remove
+	Create Sound from formula... silence2 Mono 0 0.5 cutoff  0
+	select Sound silence1
+	plus Sound word2_belowcutoff
+	plus Sound silence2
+	Concatenate
+	Rename... word2_pad
+
+	Filter (pass Hann band)... 0 filter 10
+	Rename... Low_Part_2
+	lowInt_2 = Get intensity (dB)
+	To Intensity... 100 0 no
+	Down to IntensityTier
+	select Intensity Low_Part_2
+	Remove
+
+	select Sound word2_pad
+	To LPC (burg): (&#39;nformants&#39;*2), 0.025, 0.005, 50
+	select Sound word2_pad
+	plus LPC word2_pad
+	Filter (inverse)
+	Rename... Source_2
+	select LPC word2_pad
+	Remove
+
+	Read from file... &#39;dir_in$&#39;\&#39;word2$&#39;.TextGrid
+	Rename... word2
+	Shift times by... 0.5
+	vowelonset_2 = Get start time of interval... 1 2
+	voweloffset_2 = Get end time of interval... 1 2
+	voweldur_2 = voweloffset_2 - vowelonset_2
+
+	select Sound word2_pad
+	To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+	maxForm = Get maximum number of formants
+	for formCnt from 1 to maxForm
+		origFormantsArray_2 [&#39;formCnt&#39;] = Get mean... &#39;formCnt&#39; &#39;vowelonset_2&#39; &#39;voweloffset_2&#39; hertz
+		f&#39;formCnt&#39;_2 = Get mean... &#39;formCnt&#39; &#39;vowelonset_2&#39; &#39;voweloffset_2&#39; hertz
+	endfor
+	Remove
+	
+	
+	
+
+	
+	#######################################
+	## Now loop over steps
+	#######################################
+
+	for stepCtr from 1 to nSteps
+
+		# NOTE: we take word1 (here: the high-F1 member [bet]) as the basis for the manipulations.
+
+		select Sound word1_pad
+		To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+		maxForm = Get maximum number of formants
+		nFrames = Get number of frames
+		Rename: &#34;New_Form_&#39;stepCtr&#39;&#34;
+
+		###############################################################################################################
+		# if some items need custom formant shifts, you can define an item-specific constant here
+		###############################################################################################################
+		constant = 0
+		#	if word1$ = &#34;bet&#34;
+		#		constant = 30
+		#	elsif word1$ = &#34;get&#34;
+		#		constant = 50
+		#	elsif word1$ = &#34;set&#34;
+		#		constant = 40
+		#	endif
+
+		## NOTE: we create a continuum starting at the high-F1 member (on step 1)
+		##	gradually going do to the low-F1 member.
+		stepsize = (f1_1 - f1_2)/(nSteps-1)
+		Formula (frequencies): &#34;if row = 1 then (self-(((stepCtr-1)*stepsize)+constant)) else self fi&#34;
+		
+		## You can also control other formants, for instance by setting the F2 to the average of the two vowels
+		## thus creating an ambiguous F2 in between the two vowels that is fixed/constant at every step.
+		## For instance:
+
+		#ambF2 = (f2_1 + f2_2)/2
+		#distanceToAmbF2 = f2_1 - ambF2
+		#Formula (frequencies): &#34;if row = 2 then (self-distanceToAmbF2) else self fi&#34;
+		
+		## Filter the original source with the new formant filter
+		select Formant New_Form_&#39;stepCtr&#39;
+		plus Sound Source_1
+		Filter
+
+		## Restrict to lower-freq content only
+		Filter (pass Hann band)... 0 filter 10
+		Rename... word1_&#39;stepCtr&#39;_Low
+
+		## Transplant the original intensity contour back onto the manipulated speech
+		To Intensity... 100 0 no
+		Down to IntensityTier
+		Formula... self*-1
+		plus Sound word1_&#39;stepCtr&#39;_Low
+		Multiply... yes
+		plus IntensityTier Low_Part_1
+		Multiply... yes
+		Scale intensity... lowInt_1
+
+		## Remove leading and trailing silences
+		Extract part: 0.5, (dur_1+0.5), &#34;rectangular&#34;, 1, &#34;no&#34;
+		Resample: sampFreq_1, 50
+		Rename... word1_&#39;stepCtr&#39;_Low_nonpad
+
+		## Combine with the original high-freq content
+		Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.wav
+		Rename... word1
+		Filter (pass Hann band)... filter sampFreq_1 10
+		Rename... word1_High
+		plus Sound word1_&#39;stepCtr&#39;_Low_nonpad
+		Combine to stereo
+		Convert to mono
+		Rename... word1_&#39;stepCtr&#39;_manip
+		Scale intensity... int_1
+		selectObject: &#34;Sound word1&#34;
+		Scale intensity... int_1
+
+		select Sound word1_&#39;stepCtr&#39;_manip
+		dur_manip = Get total duration
+		To Manipulation... 0.01 &#39;minpitch&#39; &#39;maxpitch&#39;
+		Extract pitch tier
+		f0_manip = Get mean (curve)... 0 0
+
+		## Set the F0 to the average values across word1 &amp; word2
+		if control_f0$ = &#34;yes&#34;
+			newWordF0 = (f0_1+f0_2)/2
+			f0ScalingFactor = newWordF0/f0_manip
+
+			select Manipulation word1_&#39;stepCtr&#39;_manip
+			Extract pitch tier
+			Multiply frequencies... 0 1000 &#39;f0ScalingFactor&#39;
+			f0_manip = Get mean (curve)... 0 0
+			plus Manipulation word1_&#39;stepCtr&#39;_manip
+			Replace pitch tier
+			select Manipulation word1_&#39;stepCtr&#39;_manip
+			Get resynthesis (overlap-add)
+			Rename... word1_&#39;stepCtr&#39;_manip
+		endif
+		
+		## We&#39;ve shifted the formants in the entire word but we really only want to keep
+		## the critical manipulated vowel only. So here we combine:
+		## 1. the original pre-vowel interval
+		## 2. the manipulated vowel interval
+		## 3. the original post-vowel interval
+		## using a switch (man1Orig0Switch) that starts at 0 (set to original unmanipulated)
+		## and switches back and forth to 1 (manipulated), then 0, etc.
+
+		Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.TextGrid
+		Rename... word1
+		nInterv = Get number of intervals: 1
+		man1Orig0Switch = 0
+		for intervCnt from 1 to nInterv
+			selectObject: &#34;TextGrid word1&#34;
+			
+			intSta = Get start point: 1, intervCnt
+			intEnd = Get end point: 1, intervCnt
+			if intervCnt = 1
+				intSta2 = intSta
+				intEnd2 = intEnd + (window/2)
+			elsif intervCnt = nInterv
+				intSta2 = intSta - (window/2)
+				intEnd2 = intEnd
+			elsif intervCnt = 2
+				intSta2 = intSta - (window/2)
+				intEnd2 = intEnd + (window/2)
+				vowelonset = intSta
+				voweloffset = intEnd
+				voweldur_manip = intEnd-intSta
+			endif
+
+			if man1Orig0Switch = 0
+				selectObject: &#34;Sound word1&#34;
+				Extract part: intSta2, intEnd2, &#34;rectangular&#34;, 1, &#34;no&#34;
+				Rename... &#39;intervCnt&#39;
+				man1Orig0Switch = 1
+			elsif man1Orig0Switch = 1
+				selectObject: &#34;Sound word1_&#39;stepCtr&#39;_manip&#34;
+				Extract part: intSta2, intEnd2, &#34;rectangular&#34;, 1, &#34;no&#34;
+				Rename... &#39;intervCnt&#39;
+				man1Orig0Switch = 0
+			endif
+		endfor
+
+		selectObject: &#34;Sound 1&#34;
+		for intervCnt_2 from 2 to nInterv
+			plusObject: &#34;Sound &#39;intervCnt_2&#39;&#34;
+		endfor
+		Concatenate with overlap... &#39;window&#39;
+		Rename... Resynth____&#39;stepCtr&#39;
+
+		## Save the final result sound
+		Save as WAV file: &#34;&#39;dir_out$&#39;\&#39;word1$&#39;_step&#39;stepCtr&#39;.wav&#34;
+		selectObject: &#34;TextGrid word1&#34;
+		Save as text file: &#34;&#39;dir_out$&#39;\&#39;word1$&#39;_step&#39;stepCtr&#39;.TextGrid&#34;
+		
+		# Let&#39;s query the F1, F2, F3, F4 for the manipulated vowel interval
+		select Formant New_Form_&#39;stepCtr&#39;
+		f1_manip = Get mean... 1 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+		f2_manip = Get mean... 2 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+		f3_manip = Get mean... 3 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+		f4_manip = Get mean... 4 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+		
+		select Sound Resynth____&#39;stepCtr&#39;
+		dur_manip = Get total duration
+			
+		printline &#39;word1$&#39;	&#39;stepCtr&#39;	&#39;dur_1&#39;	&#39;voweldur_1&#39;	&#39;f0_1&#39;	&#39;f1_1&#39;	&#39;f2_1&#39;	&#39;f3_1&#39;	&#39;dur_2&#39;	&#39;voweldur_2&#39;	&#39;f0_2&#39;	&#39;f1_2&#39;	&#39;f2_2&#39;	&#39;f3_2&#39;	&#39;dur_manip&#39;	&#39;voweldur_manip&#39;	&#39;f0_manip&#39;	&#39;f1_manip&#39;	&#39;f2_manip&#39;	&#39;f3_manip&#39;
+	endfor
+
+	select all
+	minus Table &#39;table_name$&#39;
+	Remove
+endfor
 
 
 
@@ -1063,15 +1324,9 @@ Remove
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/move-to-zero-crossings/" rel="next">Move to zero-crossings</a>
+    <a href="/resources/scripts/interpolate-f0/" rel="next">Interpolate F0 continuum</a>
   </div>
   
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/interpolate-f0/" rel="prev">Interpolate F0 continuum</a>
-  </div>
   
 </div>
 
