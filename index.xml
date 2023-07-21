@@ -5910,6 +5910,228 @@ endfor
     </item>
     
     <item>
+      <title>Transplant intensity contour</title>
+      <link>https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/</guid>
+      <description>&lt;p&gt;This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../transplant-intensity-contour.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@donders.ru.nl
+### based on an earlier script created by Matthias Sjerps
+### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+
+	###&amp;gt;&amp;gt; This script takes pairs of items (e.g., bet and bit) from a directory
+	###&amp;gt;&amp;gt;	and transplants the intensity contour of word2 onto word1.
+	###&amp;gt;&amp;gt;	It does so by first scaling the duration of word2 to be identical to
+	###&amp;gt;&amp;gt;	that of word1, and then transplanting the duration-scaled intensity
+	###&amp;gt;&amp;gt;	contour onto word1. This works best if all individual speech segments
+	###&amp;gt;&amp;gt;	in the recordings are of similar duration in the two sounds.
+	
+	###&amp;gt;&amp;gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the
+	###&amp;gt;&amp;gt;	input directory. This file should contain two tab-separated columns
+	###&amp;gt;&amp;gt;	with the labels &amp;#34;word1&amp;#34; and &amp;#34;word2&amp;#34;.For example:
+	
+	###&amp;gt;&amp;gt;	word1	word2
+	###&amp;gt;&amp;gt;	bet	bit
+	###&amp;gt;&amp;gt;	get	git
+	###&amp;gt;&amp;gt;	set	sit
+
+	
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where can the files be found?
+
+dir_in$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds&amp;#34;
+
+### Where should the output files be saved?
+
+dir_out$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds\continua&amp;#34;
+
+### What is the name of the .txt file containing the list of word pairs?
+### 	NOTE: Do **NOT** include the .txt extension; just the name!
+
+table_name$ = &amp;#34;list_of_pairs&amp;#34;
+
+### Provide the min and max pitch settings.
+###		For female talker: 100 - 400
+###		For male talker: 75 - 300
+minpitch = 100
+maxpitch = 400
+
+
+
+
+################################################################################
+### Let&amp;#39;s check whether the directories specified above exist...
+################################################################################
+
+### Let&amp;#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_in$,1)=&amp;#34;/&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&amp;#34;\&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_in$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_in$&amp;#39; was not found
+	exit Your input directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+## Now re-do this for the output directory:
+
+if right$(dir_out$,1)=&amp;#34;/&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&amp;#34;\&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete that temp txt file.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_out$&amp;#39; was not found
+	exit Your output directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;table_name$&amp;#39;.txt
+nItems = Get number of rows
+
+for ItemCnt from 1 to nItems
+	#######################################
+	## Read and measure acoustics of word1
+	#######################################
+
+	select Table &amp;#39;table_name$&amp;#39;
+	word1$ = Get value... &amp;#39;ItemCnt&amp;#39; word1
+	word2$ = Get value... &amp;#39;ItemCnt&amp;#39; word2
+	
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word1$&amp;#39;.wav
+	Rename... word1
+	sampFreq_1 = Get sampling frequency
+	dur_1 = Get total duration
+	int_1 = Get intensity (dB)
+	
+	
+	
+	#######################################
+	## Read and measure acoustics of word2
+	#######################################
+
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word2$&amp;#39;.wav
+	Rename... word2
+	sampFreq_2 = Get sampling frequency
+	dur_2 = Get total duration
+	int_2 = Get intensity (dB)
+	
+	
+	
+	#######################################
+	## Scale the duration of word2 to the word1 duration
+	#######################################
+
+	select Sound word2
+	durScaleFactor = (dur_1/dur_2)
+	Lengthen (overlap-add)... &amp;#39;minpitch&amp;#39; &amp;#39;maxpitch&amp;#39; &amp;#39;durScaleFactor&amp;#39;
+	Rename... word2_durscaled
+	To Intensity... 100 0 no
+	Down to IntensityTier
+
+	#######################################
+	## Transplant the intensity contour of word2_durscaled onto word1
+	#######################################
+
+	select Sound word1
+	Copy... word1_manip
+
+	To Intensity... 100 0 no
+	Down to IntensityTier
+	Formula... self*-1
+	plus Sound word1_manip
+	Multiply... yes
+	plus IntensityTier word2_durscaled
+	Multiply... yes
+	Scale intensity... int_1
+
+	#######################################
+	## Save the final result sound
+	#######################################
+	Save as WAV file: &amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;word1$&amp;#39;_manip.wav&amp;#34;
+
+	select all
+	minus Table &amp;#39;table_name$&amp;#39;
+	Remove
+endfor
+
+
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
       <title>Another postdoc joins the group: Matteo Maran</title>
       <link>https://hrbosker.github.io/news/23-06-12-new-postdoc-matteo-maran/</link>
       <pubDate>Mon, 12 Jun 2023 00:00:00 +0000</pubDate>

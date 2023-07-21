@@ -56,10 +56,10 @@
   
     
   
-  <meta name="description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." />
+  <meta name="description" content="This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/batch-processing/" />
+  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/" />
 
   
   
@@ -268,7 +268,7 @@
   <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/batch-processing/" />
+  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/" />
 
   
   
@@ -291,9 +291,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/batch-processing/" />
-  <meta property="og:title" content="Batch processing | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/" />
+  <meta property="og:title" content="Transplant intensity contour | SPEAC | Hans Rutger Bosker" />
+  <meta property="og:description" content="This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
     <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -314,11 +314,11 @@
 
 
 
-  <title>Batch processing | SPEAC | Hans Rutger Bosker</title>
+  <title>Transplant intensity contour | SPEAC | Hans Rutger Bosker</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3b365b10c943f6e7d7f2a5d9dd414149" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9499fbf89f38d3109a1ceb2c6519f3a8" >
 
   
   
@@ -747,7 +747,7 @@
 
 
 
-  <li class="active"><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
 
 
 
@@ -767,7 +767,7 @@
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class="active"><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
 
       
         </ul>
@@ -806,45 +806,61 @@
         <div class="docs-article-container">
           
 
-          <h1>Batch processing</h1>
+          <h1>Transplant intensity contour</h1>
 
           <div class="article-style">
-            <p>This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
-<p>In its current form, the script reads each .wav file <em>plus</em> accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled &ldquo;vowel&rdquo;. It then allows the user to apply a particular function to those intervals (such as <code>Scale intensity: 65</code>), after which it concatenates the individual intervals back together, and saves the output in an output directory.</p>
-<p><strong>NOTE:</strong> In its current form, the script does not run any function on its input. It really only serves as a starting point, including snippets of code we regularly use and now do not need to look up every time we want to do batch processing in Praat.</p>
+            <p>This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.</p>
 <blockquote>
-<p>You can also <a href="../batch-processing.praat">download the script</a> as a .praat file.</p>
+<p>You can also <a href="../transplant-intensity-contour.praat">download the script</a> as a .praat file.</p>
 </blockquote>
 <pre tabindex="0"><code>################################################################################
 ### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
-### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
+### HansRutger.Bosker@donders.ru.nl
+### based on an earlier script created by Matthias Sjerps
+### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################
 
 
-	###&gt;&gt; This script is a starting point for batch processing a set of files.
-	###&gt;&gt;	The script basically reads files in an input directory and runs a
-	###&gt;&gt;	a to-be-defined function [see &#39;Perform your function here&#39; below]
-	###&gt;&gt;	and writes the output to an output directory . This saves me having
-	###&gt;&gt;	to look up how to create a file list, how to loop over files, etc.
-	###&gt;&gt;	
-	###&gt;&gt; Since this was basically intended for in-house use, I&#39;ve added in bits
-	###&gt;&gt;	and pieces that I find useful to have ready-to-go, such as:
-	###&gt;&gt;	&#39;beginPause&#39; for manually specifying variables.
+	###&gt;&gt; This script takes pairs of items (e.g., bet and bit) from a directory
+	###&gt;&gt;	and transplants the intensity contour of word2 onto word1.
+	###&gt;&gt;	It does so by first scaling the duration of word2 to be identical to
+	###&gt;&gt;	that of word1, and then transplanting the duration-scaled intensity
+	###&gt;&gt;	contour onto word1. This works best if all individual speech segments
+	###&gt;&gt;	in the recordings are of similar duration in the two sounds.
+	
+	###&gt;&gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the
+	###&gt;&gt;	input directory. This file should contain two tab-separated columns
+	###&gt;&gt;	with the labels &#34;word1&#34; and &#34;word2&#34;.For example:
+	
+	###&gt;&gt;	word1	word2
+	###&gt;&gt;	bet	bit
+	###&gt;&gt;	get	git
+	###&gt;&gt;	set	sit
 
+	
 ################################################################################
 ### Variables you will definitely need to customize:
 ################################################################################
 
 ### Where can the files be found?
 
-dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
+dir_in$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
 
 ### Where should the output files be saved?
 
-dir_out$ = &#34;C:\Users\hanbos\mysounds\output&#34;
+dir_out$ = &#34;C:\Users\hanbos\Desktop\mysounds\continua&#34;
 
+### What is the name of the .txt file containing the list of word pairs?
+### 	NOTE: Do **NOT** include the .txt extension; just the name!
+
+table_name$ = &#34;list_of_pairs&#34;
+
+### Provide the min and max pitch settings.
+###		For female talker: 100 - 400
+###		For male talker: 75 - 300
+minpitch = 100
+maxpitch = 400
 
 
 
@@ -915,7 +931,7 @@ file_exists_yesno = fileReadable(temp_filename$)
 if file_exists_yesno = 1
 	# if you *could* read that temp txt file,
 	# this confirms that the directory is valid.
-	# Then you can delete it.
+	# Then you can delete that temp txt file.
 	deleteFile: temp_filename$
 else
 	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
@@ -927,106 +943,82 @@ endif
 
 
 
-###########################################################################
-##	FORM TO MANUALLY SPECIFY VARIABLES
-###########################################################################
-#beginPause: &#34;Enter settings&#34;
-#	comment: &#34;Provide instructions here&#34;
-#	real: &#34;minPitch&#34;, 70
-#	real: &#34;maxPitch&#34;, 250
-#	choice: &#34;method&#34;, 1
-#	   option: &#34;Flip F0 contour&#34;
-#	   option: &#34;Expand/Contract F0 contour&#34;
-#	   option: &#34;Flatten F0 contour&#34;
-#clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
-###########################################################################
-###########################################################################
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
 
+Read from file... &#39;dir_in$&#39;\&#39;table_name$&#39;.txt
+nItems = Get number of rows
 
+for ItemCnt from 1 to nItems
+	#######################################
+	## Read and measure acoustics of word1
+	#######################################
 
-
-
-## Let&#39;s create a list of all the files in the input directory.
-
-Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.wav&#34;
-
-nfiles = Get number of strings
-if nfiles = 0
-	exit The directory &#39;dir_in$&#39; does not contain any .wav files.
-endif
-
-## Now we&#39;ll loop through the list...
-
-for i from 1 to &#39;nfiles&#39;
-	select Strings list_of_files
+	select Table &#39;table_name$&#39;
+	word1$ = Get value... &#39;ItemCnt&#39; word1
+	word2$ = Get value... &#39;ItemCnt&#39; word2
 	
-	fileplusext$ = Get string... &#39;i&#39;
-	extposition = index(fileplusext$, &#34;.wav&#34;)
-	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
-
-	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
-	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
-	plus Sound &#39;name$&#39;
-	Extract non-empty intervals... 1 no
+	Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.wav
+	Rename... word1
+	sampFreq_1 = Get sampling frequency
+	dur_1 = Get total duration
+	int_1 = Get intensity (dB)
 	
-	nSelected = numberOfSelected()
+	
+	
+	#######################################
+	## Read and measure acoustics of word2
+	#######################################
 
-	## Assign an object number to each object (e.g., 1-5),
-	## and save the id numbers of each object to an array.
+	Read from file... &#39;dir_in$&#39;\&#39;word2$&#39;.wav
+	Rename... word2
+	sampFreq_2 = Get sampling frequency
+	dur_2 = Get total duration
+	int_2 = Get intensity (dB)
+	
+	
+	
+	#######################################
+	## Scale the duration of word2 to the word1 duration
+	#######################################
 
-	for thisObject to nSelected
-		objectArray [&#39;thisObject&#39;] = selected(&#39;thisObject&#39;)
-	endfor
+	select Sound word2
+	durScaleFactor = (dur_1/dur_2)
+	Lengthen (overlap-add)... &#39;minpitch&#39; &#39;maxpitch&#39; &#39;durScaleFactor&#39;
+	Rename... word2_durscaled
+	To Intensity... 100 0 no
+	Down to IntensityTier
 
-	for j to nSelected
-		curr_objectId = objectArray [&#39;j&#39;]
-		select &#39;curr_objectId&#39;
-		curr_objectName$ = selected$(&#34;Sound&#34;)
-		
-		if curr_objectName$ = &#34;vowel&#34;
+	#######################################
+	## Transplant the intensity contour of word2_durscaled onto word1
+	#######################################
 
-			########################################################################
-			# Perform your function here!
-			#	Example: Scale intensity... 65
-			########################################################################
+	select Sound word1
+	Copy... word1_manip
 
-		endif
-	endfor
+	To Intensity... 100 0 no
+	Down to IntensityTier
+	Formula... self*-1
+	plus Sound word1_manip
+	Multiply... yes
+	plus IntensityTier word2_durscaled
+	Multiply... yes
+	Scale intensity... int_1
 
-	for j from 1 to nSelected
-		curr_objectId = objectArray [&#39;j&#39;]
-		if j = 1
-			select &#39;curr_objectId&#39;
-		else
-			plus &#39;curr_objectId&#39;
-		endif
-	endfor
-	Concatenate recoverably
+	#######################################
+	## Save the final result sound
+	#######################################
+	Save as WAV file: &#34;&#39;dir_out$&#39;\&#39;word1$&#39;_manip.wav&#34;
 
-	select Sound chain
-	Write to WAV file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.wav
-	select TextGrid chain
-	Write to text file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.TextGrid
-
-	## Cleaning up...
-	for j from 1 to nSelected
-		curr_objectId = objectArray [&#39;j&#39;]
-		if j = 1
-			select &#39;curr_objectId&#39;
-		else
-			plus &#39;curr_objectId&#39;
-		endif
-	endfor
-	plus Sound chain
-	plus TextGrid chain
-	plus Sound &#39;name$&#39;
-	plus TextGrid &#39;name$&#39;
+	select all
+	minus Table &#39;table_name$&#39;
 	Remove
-
 endfor
 
-select Strings list_of_files
-Remove
+
 
 ################################################################################
 # End of script
@@ -1048,15 +1040,9 @@ Remove
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/annotate/" rel="next">Annotate</a>
+    <a href="/resources/scripts/manipulate-formants/" rel="next">Manipulate formants</a>
   </div>
   
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/move-to-zero-crossings/" rel="prev">Move to zero-crossings</a>
-  </div>
   
 </div>
 
