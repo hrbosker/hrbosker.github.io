@@ -5921,7 +5921,6 @@ endfor
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
 ### Hans Rutger Bosker, Radboud University
 ### HansRutger.Bosker@donders.ru.nl
-### based on an earlier script created by Matthias Sjerps
 ### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################
@@ -5954,7 +5953,7 @@ dir_in$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds&amp;#34;
 
 ### Where should the output files be saved?
 
-dir_out$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds\continua&amp;#34;
+dir_out$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds\output&amp;#34;
 
 ### What is the name of the .txt file containing the list of word pairs?
 ### 	NOTE: Do **NOT** include the .txt extension; just the name!
@@ -6117,6 +6116,280 @@ for ItemCnt from 1 to nItems
 	## Save the final result sound
 	#######################################
 	Save as WAV file: &amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;word1$&amp;#39;_manip.wav&amp;#34;
+
+	select all
+	minus Table &amp;#39;table_name$&amp;#39;
+	Remove
+endfor
+
+
+
+################################################################################
+# End of script
+################################################################################
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dynamic Time Warping</title>
+      <link>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</guid>
+      <description>&lt;p&gt;This script takes pairs of items (e.g., bet and bit) from a directory and matches the duration of individual speech sounds in word1 to the duration of individual speech sounds in word2 (&amp;hellip;a kind of simplistic Dynamic Time Warping).&lt;/p&gt;
+&lt;p&gt;In order for this script to work, you&amp;rsquo;ll need to have a TextGrid for each individual .wav file that contains segmentations of each individual speech sound. Moreover, the TextGrids for the two members of a pair will need to have the same number of intervals segmented.&lt;/p&gt;
+&lt;p&gt;Note that it helps if the intervals in the TextGrids are segmented in a relatively fine-grained manner. For instance, segmenting pauses, stop closures, stop bursts, etc. as separate intervals will make the output sound more natural. Also note that the duration scaling is linear: if interval1 is 200 ms in word1 but 250 ms in word2, then the duration of interval1 is expanded by a factor of 1.25.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also &lt;a href=&#34;../dynamic-time-warping.praat&#34;&gt;download the script&lt;/a&gt; as a .praat file.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;################################################################################
+### Hans Rutger Bosker, Radboud University
+### HansRutger.Bosker@donders.ru.nl
+### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
+### License: CC BY-NC 4.0
+################################################################################
+
+
+	###&amp;gt;&amp;gt; This script takes pairs of items (e.g., bet and bit) from a directory
+	###&amp;gt;&amp;gt;	and matches the duration of individual speech sounds in word1
+	###&amp;gt;&amp;gt;	to the duration of individual speech sounds in word2.
+	
+	###&amp;gt;&amp;gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the
+	###&amp;gt;&amp;gt;	input directory. This file should contain two tab-separated columns
+	###&amp;gt;&amp;gt;	with the labels &amp;#34;word1&amp;#34; and &amp;#34;word2&amp;#34;.For example:
+	
+	###&amp;gt;&amp;gt;	word1	word2
+	###&amp;gt;&amp;gt;	bet	bit
+	###&amp;gt;&amp;gt;	get	git
+	###&amp;gt;&amp;gt;	set	sit
+
+	###&amp;gt;&amp;gt; IMPORTANT: Each sound file should have an accompanying TextGrid with
+	###&amp;gt;&amp;gt;	one interval tier. This tier should contain segmentations for each
+	###&amp;gt;&amp;gt;	individual speech sound. It&amp;#39;s best to segment as many sound segments
+	###&amp;gt;&amp;gt;	as possible. For instance, for stop consonants, segmenting the closure
+	###&amp;gt;&amp;gt;	separately from the burst avoids misaligned output.
+	###&amp;gt;&amp;gt;	The TextGrids for the two members of a word pair should contain an
+	###&amp;gt;&amp;gt;	identical number of (matching) intervals.
+
+	
+################################################################################
+### Variables you will definitely need to customize:
+################################################################################
+
+### Where can the files be found?
+
+dir_in$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds&amp;#34;
+
+### Where should the output files be saved?
+
+dir_out$ = &amp;#34;C:\Users\hanbos\Desktop\mysounds\output&amp;#34;
+
+### What is the name of the .txt file containing the list of word pairs?
+### 	NOTE: Do **NOT** include the .txt extension; just the name!
+
+table_name$ = &amp;#34;list_of_pairs&amp;#34;
+
+### Provide the min and max pitch settings.
+###		For female talker: 100 - 400
+###		For male talker: 75 - 300
+minpitch = 100
+maxpitch = 400
+
+
+
+
+################################################################################
+### Let&amp;#39;s check whether the directories specified above exist...
+################################################################################
+
+### Let&amp;#39;s check if the input directory exists.
+### This script will throw an error if the directory doesn&amp;#39;t exist
+### (i.e., it won&amp;#39;t write to a mysterious temp directory).
+
+### First check whether the input directory ends in a backslash (if so, removed)
+
+if right$(dir_in$,1)=&amp;#34;/&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+elsif right$(dir_in$,1)=&amp;#34;\&amp;#34;
+	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_in$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete it.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_in$&amp;#39; was not found
+	exit Your input directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+## Now re-do this for the output directory:
+
+if right$(dir_out$,1)=&amp;#34;/&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+elsif right$(dir_out$,1)=&amp;#34;\&amp;#34;
+	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+endif
+
+### Then create a temporary txt file in the folder
+### and try to write it to the input folder.
+
+### NOTE: The &amp;#34;nocheck&amp;#34; below asks Praat not to complain if the folder
+### does *not* exist. We&amp;#39;ll manually check whether the saving of this
+### temp txt file has succeeded or not further down below.
+
+temp_filename$ = dir_out$ + &amp;#34;/&amp;#34; + &amp;#34;my_temporary_Praat_file.txt&amp;#34;
+nocheck writeFileLine: temp_filename$, &amp;#34;This is just to check if the directory exists&amp;#34;
+
+### Can the file be found?
+
+file_exists_yesno = fileReadable(temp_filename$)
+
+if file_exists_yesno = 1
+	# if you *could* read that temp txt file,
+	# this confirms that the directory is valid.
+	# Then you can delete that temp txt file.
+	deleteFile: temp_filename$
+else
+	# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+	printline The folder &amp;#39;dir_out$&amp;#39; was not found
+	exit Your output directory doesn&amp;#39;t exist. Check spelling. The directory must *already* exist.
+endif
+
+
+
+
+
+################################################################################
+################################################################################
+#################################    SCRIPT    #################################
+################################################################################
+################################################################################
+
+## Let&amp;#39;s clear the Info window so we can print fresh new log data of our stimuli.
+## This log keeps track of the individual word durations and interval durations.
+clearinfo
+echo item	word1_dur	word2_dur	interval_nr	interval_dur_1	interval_dur_2	interval_dur_dtw	scaleFactor	word_dtw_dur
+
+
+
+Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;table_name$&amp;#39;.txt
+nItems = Get number of rows
+
+for ItemCnt from 1 to nItems
+	select Table &amp;#39;table_name$&amp;#39;
+	word1$ = Get value... &amp;#39;ItemCnt&amp;#39; word1
+	word2$ = Get value... &amp;#39;ItemCnt&amp;#39; word2
+	
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word1$&amp;#39;.TextGrid
+	Rename... word1
+	word1_nInts = Get number of intervals... 1
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word1$&amp;#39;.wav
+	Rename... word1
+	word1_dur = Get total duration
+	word1_int = Get intensity (dB)
+	
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word2$&amp;#39;.TextGrid
+	Rename... word2
+	word2_nInts = Get number of intervals... 1
+	Read from file... &amp;#39;dir_in$&amp;#39;\&amp;#39;word2$&amp;#39;.wav
+	Rename... word2
+	word2_dur = Get total duration
+	word2_int = Get intensity (dB)
+
+	
+	## Check if the number of intervals in the two TextGrids match
+	if word1_nInts &amp;lt;&amp;gt; word2_nInts
+		# if that file wasn&amp;#39;t readable, that means that the directory wasn&amp;#39;t valid. 
+		printline &amp;#39;word1$&amp;#39; has &amp;#39;word1_nInts&amp;#39; intervals but &amp;#39;word2$&amp;#39; has &amp;#39;word2_nInts&amp;#39; intervals.
+		exit The number of intervals in the two input TextGrids do not match. Adjust the TextGrids.
+	endif
+
+
+	for thisInt to word1_nInts
+		select TextGrid word1
+		thisStart = Get start time of interval... 1 &amp;#39;thisInt&amp;#39;
+		thisEnd = Get end time of interval... 1 &amp;#39;thisInt&amp;#39;
+		word1_thisInt_startArray [&amp;#39;thisInt&amp;#39;] = thisStart
+		word1_thisInt_endArray [&amp;#39;thisInt&amp;#39;] = thisEnd
+		thisDur = thisEnd - thisStart
+		word1_thisInt_durArray [&amp;#39;thisInt&amp;#39;] = thisDur
+
+		select TextGrid word2
+		thisStart = Get start time of interval... 1 &amp;#39;thisInt&amp;#39;
+		thisEnd = Get end time of interval... 1 &amp;#39;thisInt&amp;#39;
+		word2_thisInt_startArray [&amp;#39;thisInt&amp;#39;] = thisStart
+		word2_thisInt_endArray [&amp;#39;thisInt&amp;#39;] = thisEnd
+		thisDur = thisEnd - thisStart
+		word2_thisInt_durArray [&amp;#39;thisInt&amp;#39;] = thisDur
+	endfor
+
+
+	select Sound word1
+	To Manipulation... 0.01 &amp;#39;minpitch&amp;#39; &amp;#39;maxpitch&amp;#39;
+	Extract duration tier
+	for thisIntNumber to word1_nInts
+		start_of_1 = word1_thisInt_startArray [&amp;#39;thisIntNumber&amp;#39;]
+		end_of_1 = word1_thisInt_endArray [&amp;#39;thisIntNumber&amp;#39;]
+		dur_of_1 = word1_thisInt_durArray [&amp;#39;thisIntNumber&amp;#39;]
+		dur_of_2 = word2_thisInt_durArray [&amp;#39;thisIntNumber&amp;#39;]
+		scaledDur = dur_of_2
+		word1_thisInt_scaledDurArray [&amp;#39;thisIntNumber&amp;#39;] = scaledDur
+		durScaleFactor = scaledDur/dur_of_1
+		word1_thisInt_scaleFactorArray [&amp;#39;thisIntNumber&amp;#39;] = durScaleFactor
+		Add point: (&amp;#39;start_of_1&amp;#39; + 0.001), durScaleFactor
+		Add point: (&amp;#39;end_of_1&amp;#39; - 0.001), durScaleFactor
+	endfor
+	plus Manipulation word1
+	Replace duration tier
+	select Manipulation word1
+	Get resynthesis (overlap-add)
+	Scale intensity... &amp;#39;word1_int&amp;#39;
+	dtw_dur = Get total duration
+	Rename... word_dtw
+	
+	To TextGrid: &amp;#34;intervals&amp;#34;, &amp;#34;&amp;#34;
+	
+	boundarytimepoint = 0
+	for thisIntNumber to word1_nInts
+		start_of_1 = word1_thisInt_startArray [&amp;#39;thisIntNumber&amp;#39;]
+		end_of_1 = word1_thisInt_endArray [&amp;#39;thisIntNumber&amp;#39;]
+		dur_of_1 = word1_thisInt_durArray [&amp;#39;thisIntNumber&amp;#39;]
+		dur_of_2 = word2_thisInt_durArray [&amp;#39;thisIntNumber&amp;#39;]
+		scaledDur = word1_thisInt_scaledDurArray [&amp;#39;thisIntNumber&amp;#39;]
+		durScaleFactor = word1_thisInt_scaleFactorArray [&amp;#39;thisIntNumber&amp;#39;]
+		
+		if thisIntNumber &amp;lt;&amp;gt; word1_nInts
+			boundarytimepoint = boundarytimepoint + scaledDur
+			select TextGrid word_dtw
+			Insert boundary... 1 &amp;#39;boundarytimepoint&amp;#39;
+		endif
+
+		printline &amp;#39;word1$&amp;#39;	&amp;#39;word1_dur&amp;#39;	&amp;#39;word2_dur&amp;#39;	&amp;#39;thisIntNumber&amp;#39;	&amp;#39;dur_of_1&amp;#39;	&amp;#39;dur_of_2&amp;#39;	&amp;#39;scaledDur&amp;#39;	&amp;#39;durScaleFactor&amp;#39;	&amp;#39;dtw_dur&amp;#39;
+	endfor
+
+	#######################################
+	## Save the final result sound
+	#######################################
+	select Sound word_dtw
+	Save as WAV file: &amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;word1$&amp;#39;_dtw.wav&amp;#34;
+	select TextGrid word_dtw
+	Save as text file: &amp;#34;&amp;#39;dir_out$&amp;#39;\&amp;#39;word1$&amp;#39;_dtw.TextGrid&amp;#34;
 
 	select all
 	minus Table &amp;#39;table_name$&amp;#39;

@@ -7,11 +7,8 @@
 
 
 	###>> This script takes pairs of items (e.g., bet and bit) from a directory
-	###>>	and transplants the intensity contour of word2 onto word1.
-	###>>	It does so by first scaling the duration of word2 to be identical to
-	###>>	that of word1, and then transplanting the duration-scaled intensity
-	###>>	contour onto word1. This works best if all individual speech segments
-	###>>	in the recordings are of similar duration in the two sounds.
+	###>>	and matches the duration of individual speech sounds in word1
+	###>>	to the duration of individual speech sounds in word2.
 	
 	###>> IMPORTANT: Please provide a list of word pairs in a .txt file in the
 	###>>	input directory. This file should contain two tab-separated columns
@@ -21,6 +18,14 @@
 	###>>	bet	bit
 	###>>	get	git
 	###>>	set	sit
+
+	###>> IMPORTANT: Each sound file should have an accompanying TextGrid with
+	###>>	one interval tier. This tier should contain segmentations for each
+	###>>	individual speech sound. It's best to segment as many sound segments
+	###>>	as possible. For instance, for stop consonants, segmenting the closure
+	###>>	separately from the burst avoids misaligned output.
+	###>>	The TextGrids for the two members of a word pair should contain an
+	###>>	identical number of (matching) intervals.
 
 	
 ################################################################################
@@ -133,69 +138,115 @@ endif
 ################################################################################
 ################################################################################
 
+## Let's clear the Info window so we can print fresh new log data of our stimuli.
+## This log keeps track of the individual word durations and interval durations.
+clearinfo
+echo item	word1_dur	word2_dur	interval_nr	interval_dur_1	interval_dur_2	interval_dur_dtw	scaleFactor	word_dtw_dur
+
+
+
 Read from file... 'dir_in$'\'table_name$'.txt
 nItems = Get number of rows
 
 for ItemCnt from 1 to nItems
-	#######################################
-	## Read and measure acoustics of word1
-	#######################################
-
 	select Table 'table_name$'
 	word1$ = Get value... 'ItemCnt' word1
 	word2$ = Get value... 'ItemCnt' word2
 	
+	Read from file... 'dir_in$'\'word1$'.TextGrid
+	Rename... word1
+	word1_nInts = Get number of intervals... 1
 	Read from file... 'dir_in$'\'word1$'.wav
 	Rename... word1
-	sampFreq_1 = Get sampling frequency
-	dur_1 = Get total duration
-	int_1 = Get intensity (dB)
+	word1_dur = Get total duration
+	word1_int = Get intensity (dB)
 	
-	
-	
-	#######################################
-	## Read and measure acoustics of word2
-	#######################################
-
+	Read from file... 'dir_in$'\'word2$'.TextGrid
+	Rename... word2
+	word2_nInts = Get number of intervals... 1
 	Read from file... 'dir_in$'\'word2$'.wav
 	Rename... word2
-	sampFreq_2 = Get sampling frequency
-	dur_2 = Get total duration
-	int_2 = Get intensity (dB)
-	
-	
-	
-	#######################################
-	## Scale the duration of word2 to the word1 duration
-	#######################################
+	word2_dur = Get total duration
+	word2_int = Get intensity (dB)
 
-	select Sound word2
-	durScaleFactor = (dur_1/dur_2)
-	Lengthen (overlap-add)... 'minpitch' 'maxpitch' 'durScaleFactor'
-	Rename... word2_durscaled
-	To Intensity... 100 0 no
-	Down to IntensityTier
+	
+	## Check if the number of intervals in the two TextGrids match
+	if word1_nInts <> word2_nInts
+		# if that file wasn't readable, that means that the directory wasn't valid. 
+		printline 'word1$' has 'word1_nInts' intervals but 'word2$' has 'word2_nInts' intervals.
+		exit The number of intervals in the two input TextGrids do not match. Adjust the TextGrids.
+	endif
 
-	#######################################
-	## Transplant the intensity contour of word2_durscaled onto word1
-	#######################################
+
+	for thisInt to word1_nInts
+		select TextGrid word1
+		thisStart = Get start time of interval... 1 'thisInt'
+		thisEnd = Get end time of interval... 1 'thisInt'
+		word1_thisInt_startArray ['thisInt'] = thisStart
+		word1_thisInt_endArray ['thisInt'] = thisEnd
+		thisDur = thisEnd - thisStart
+		word1_thisInt_durArray ['thisInt'] = thisDur
+
+		select TextGrid word2
+		thisStart = Get start time of interval... 1 'thisInt'
+		thisEnd = Get end time of interval... 1 'thisInt'
+		word2_thisInt_startArray ['thisInt'] = thisStart
+		word2_thisInt_endArray ['thisInt'] = thisEnd
+		thisDur = thisEnd - thisStart
+		word2_thisInt_durArray ['thisInt'] = thisDur
+	endfor
+
 
 	select Sound word1
-	Copy... word1_manip
+	To Manipulation... 0.01 'minpitch' 'maxpitch'
+	Extract duration tier
+	for thisIntNumber to word1_nInts
+		start_of_1 = word1_thisInt_startArray ['thisIntNumber']
+		end_of_1 = word1_thisInt_endArray ['thisIntNumber']
+		dur_of_1 = word1_thisInt_durArray ['thisIntNumber']
+		dur_of_2 = word2_thisInt_durArray ['thisIntNumber']
+		scaledDur = dur_of_2
+		word1_thisInt_scaledDurArray ['thisIntNumber'] = scaledDur
+		durScaleFactor = scaledDur/dur_of_1
+		word1_thisInt_scaleFactorArray ['thisIntNumber'] = durScaleFactor
+		Add point: ('start_of_1' + 0.001), durScaleFactor
+		Add point: ('end_of_1' - 0.001), durScaleFactor
+	endfor
+	plus Manipulation word1
+	Replace duration tier
+	select Manipulation word1
+	Get resynthesis (overlap-add)
+	Scale intensity... 'word1_int'
+	dtw_dur = Get total duration
+	Rename... word_dtw
+	
+	To TextGrid: "intervals", ""
+	
+	boundarytimepoint = 0
+	for thisIntNumber to word1_nInts
+		start_of_1 = word1_thisInt_startArray ['thisIntNumber']
+		end_of_1 = word1_thisInt_endArray ['thisIntNumber']
+		dur_of_1 = word1_thisInt_durArray ['thisIntNumber']
+		dur_of_2 = word2_thisInt_durArray ['thisIntNumber']
+		scaledDur = word1_thisInt_scaledDurArray ['thisIntNumber']
+		durScaleFactor = word1_thisInt_scaleFactorArray ['thisIntNumber']
+		
+		if thisIntNumber <> word1_nInts
+			boundarytimepoint = boundarytimepoint + scaledDur
+			select TextGrid word_dtw
+			Insert boundary... 1 'boundarytimepoint'
+		endif
 
-	To Intensity... 100 0 no
-	Down to IntensityTier
-	Formula... self*-1
-	plus Sound word1_manip
-	Multiply... yes
-	plus IntensityTier word2_durscaled
-	Multiply... yes
-	Scale intensity... int_1
+		printline 'word1$'	'word1_dur'	'word2_dur'	'thisIntNumber'	'dur_of_1'	'dur_of_2'	'scaledDur'	'durScaleFactor'	'dtw_dur'
+	endfor
 
 	#######################################
 	## Save the final result sound
 	#######################################
-	Save as WAV file: "'dir_out$'\'word1$'_manip.wav"
+	select Sound word_dtw
+	Save as WAV file: "'dir_out$'\'word1$'_dtw.wav"
+	select TextGrid word_dtw
+	Save as text file: "'dir_out$'\'word1$'_dtw.TextGrid"
 
 	select all
 	minus Table 'table_name$'
