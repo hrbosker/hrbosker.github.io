@@ -13,7 +13,6 @@ This script takes pairs of items (e.g., bet and bit) from a directory and transp
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
 ### HansRutger.Bosker@donders.ru.nl
-### based on an earlier script created by Matthias Sjerps
 ### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################
@@ -46,7 +45,7 @@ dir_in$ = "C:\Users\hanbos\Desktop\mysounds"
 
 ### Where should the output files be saved?
 
-dir_out$ = "C:\Users\hanbos\Desktop\mysounds\continua"
+dir_out$ = "C:\Users\hanbos\Desktop\mysounds\output"
 
 ### What is the name of the .txt file containing the list of word pairs?
 ### 	NOTE: Do **NOT** include the .txt extension; just the name!
