@@ -5,12 +5,23 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 12 Jun 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Sep 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>A new PhD student joins the group: Chengjia Ye</title>
+      <link>https://hrbosker.github.io/news/23-09-04-new-phd-chengjia-ye/</link>
+      <pubDate>Mon, 04 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/23-09-04-new-phd-chengjia-ye/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Chengjia joined the group in Sept 2023 to test how the timing of hand gestures influences speech perception in more naturalistic listening conditions.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;when-listening-is-tough&#34;&gt;When listening is tough&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt; will run Work Package 3 of the HearingHands ERC Starting Grant, together with &lt;a href=&#34;https://www.ru.nl/english/people/mcqueen-j/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. James McQueen&lt;/a&gt; (promotor) and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Dr. Hans Rutger Bosker&lt;/a&gt;. This WP3 tests how beat gestures influence speech perception in more naturalistic listening conditions. We will assess whether the communicative relevance of a gesture influences the manual McGurk effect by making use of talking avatars, how the integration of gestural timing with spoken prosody varies depending on the saliency of the visual/auditory cues, and whether listeners adapt to variability in gesture-speech alignment.&lt;/p&gt;
+&lt;p&gt;Great to have you on the team, Chengjia!&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Another postdoc joins the group: Matteo Maran</title>
@@ -244,9 +255,9 @@
       <guid>https://hrbosker.github.io/news/23-02-22-new-members/</guid>
       <description>&lt;p&gt;&lt;strong&gt;In March 2023, we will have two new members join the group: Yitian Hong, a visiting researcher from PolyU Hong Kong; and Floris Cos, an intern from the Linguistics and Communication Sciences ResMA program at Radboud University.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;lexical-tone&#34;&gt;Lexical tone&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/yitian-hong/&#34;&gt;Yitian Hong&lt;/a&gt; will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;yitian-hong will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;test-retest-reliability&#34;&gt;Test-retest reliability&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/floris-cos/&#34;&gt;Floris Cos&lt;/a&gt; will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
+&lt;p&gt;floris-cos will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re glad to have them join the group. Welcome!&lt;/p&gt;</description>
     </item>
     
