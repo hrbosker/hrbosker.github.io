@@ -128,6 +128,14 @@ date: '2022-07-07'
   - [https://lists.qc.cuny.edu/mailman/listinfo/sentproc](https://lists.qc.cuny.edu/mailman/listinfo/sentproc)
   - mostly US-focused
   - associated with the annual HSP conference (Human Sentence Processing; what used to be CUNY in the olden days)
+- {{< icon name="at" pack="fas" >}} **LinguistList**
+  - [https://linguistlist.org/](https://linguistlist.org/)
+  - international
+  - forum for linguists in general
+- {{< icon name="at" pack="fas" >}} **D-multisensory**
+  - [https://mailman.mcmaster.ca/mailman/listinfo/d-multisensory/](https://mailman.mcmaster.ca/mailman/listinfo/d-multisensory/)
+  - international
+  - associated with the IMRF conference (International Multisensory Research Forum)
 - {{< icon name="at" pack="fas" >}} **sprosig**
   - [Speech Prosody Special Interest Group](http://sprosig.org/index.html)
   - international
