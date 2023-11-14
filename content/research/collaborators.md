@@ -28,7 +28,7 @@ We collaborate with multiple researchers from labs around the world, including:
 - [Marieke Hoetjes](https://www.ru.nl/en/people/hoetjes-m) (Radboud University, NL)
 - [Lieke van Maastricht](https://www.ru.nl/en/people/maastricht-l-van) (Radboud University, NL)
 - [James McQueen](https://www.ru.nl/personen/mcqueen-j) (Radboud University, NL)
-- [Jonathan Peelle](http://jonathanpeelle.net/) (Washington University in Saint Louis, USA)
+<!-- - [Jonathan Peelle](http://jonathanpeelle.net/) (Washington University in Saint Louis, USA) -->
 - [David Peeters](https://www.tilburguniversity.edu/staff/d-g-t-peeters) (Tilburg University, NL)
 - [Wim Pouw](http://www.wimpouw.com/) (Radboud University, NL)
 - [Eva Reinisch](https://www.evareinisch.info) (Austrian Academy of Sciences, Austria)

@@ -11,7 +11,7 @@ When you want to play two talkers as coming from opposite sides (talker1 from th
 
 In order to simulate more naturalistic multitalker environments, one can present the same sound to both ears, but with a slight delay (interaural time difference; ITD) and at a slightly lower intensity in one ear vs. the other (interaural intensity difference; IID). This way we simulate the shadowing effect of the listener's head, maintaining naturalistic energetic masking.
 
-See [this demo]({{< ref "../../demos/cocktail-party" >}}) for some examples and further details.
+See [this demo]({{< ref "../../demos/cocktail-party" >}}) for some examples and further details. Also see [this paper](/publication/papoutsi-zimianiti-etal-2023-pbr) for an example of how we applied this technique to a statistical learning paradigm.
 
 > You can also [download the script](../manipulate-ITD-IID.praat) as a .praat file.
 

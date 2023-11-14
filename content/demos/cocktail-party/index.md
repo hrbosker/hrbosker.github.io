@@ -91,3 +91,5 @@ Speech perception is presumably the hardest in noisy listening conditions. Even 
 > {{< cite page="/publication/bosker-etal-2020-jasa" view="4" >}}
 
 > {{< cite page="/publication/bosker-etal-2018-jasa" view="4" >}}
+
+> {{< cite page="/publication/papoutsi-zimianiti-etal-2023-pbr" view="4" >}}
