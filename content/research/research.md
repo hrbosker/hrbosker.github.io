@@ -29,6 +29,8 @@ The work we do contributes to a better understanding of how audiovisual spoken c
 
 The kinds of behavioral experiments we run include (i) playing participants artificially manipulated videos with a speech categorization task (what's this word?); (ii) speech-in-noise intelligibility experiments (type out the sentence); and (iii) various psycholinguistic paradigms such as repetition priming (e.g., lexical decision). We use eye-tracking to study the time-course of speech processing on a millisecond timescale (e.g., visual world paradigm). We also apply neuroimaging techniques (EEG, MEG, tACS) to uncover the neurobiological mechanisms involved in the temporal decoding of speech.
 
+At present, the SPEAC lab is funded by an ERC Starting Grant (HearingHands; 101040276). This grant was awarded to Hans Rutger Bosker in 2021 and runs from September 2022 to September 2027.
+
 ## Wanna know more?
 
 [Check out some of our demos](/demos/), showcasing the kinds of experiments we run...
