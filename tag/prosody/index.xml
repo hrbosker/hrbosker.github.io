@@ -5,12 +5,39 @@
     <link>https://hrbosker.github.io/tag/prosody/</link>
       <atom:link href="https://hrbosker.github.io/tag/prosody/index.xml" rel="self" type="application/rss+xml" />
     <description>prosody</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>prosody</title>
       <link>https://hrbosker.github.io/tag/prosody/</link>
     </image>
+    
+    <item>
+      <title>Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch</title>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
     
     <item>
       <title>Syllable rate drives rate normalization, but is not the only factor</title>
