@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>talker variability | SPEAC | Hans Rutger Bosker</title>
+    <title>Talker Variability | SPEAC | Hans Rutger Bosker</title>
     <link>https://hrbosker.github.io/tag/talker-variability/</link>
       <atom:link href="https://hrbosker.github.io/tag/talker-variability/index.xml" rel="self" type="application/rss+xml" />
-    <description>talker variability</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <description>Talker Variability</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
-      <title>talker variability</title>
+      <title>Talker Variability</title>
       <link>https://hrbosker.github.io/tag/talker-variability/</link>
     </image>
     
@@ -17,7 +17,9 @@
       <link>https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;

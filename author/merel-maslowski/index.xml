@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/author/merel-maslowski/</link>
       <atom:link href="https://hrbosker.github.io/author/merel-maslowski/index.xml" rel="self" type="application/rss+xml" />
     <description>Merel Maslowski</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Merel Maslowski</title>
@@ -18,6 +18,8 @@
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/maslowski-etal-2020-jephpp/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -53,6 +55,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -70,6 +74,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jasa/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -105,6 +111,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -121,7 +129,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;

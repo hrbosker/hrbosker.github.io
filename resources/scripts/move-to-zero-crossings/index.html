@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 12, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -8,7 +10,7 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
   
 
   
@@ -23,6 +25,20 @@
 
 
 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -40,46 +56,20 @@
 
   
   
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Hans Rutger Bosker" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
 
   
   
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
 
   
   
   
     
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -89,13 +79,6 @@
       
       
     
-    
-    
-
-    
-    
-    
-      
     
     
 
@@ -194,22 +177,6 @@
 
       
       
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
         
       
 
@@ -238,39 +205,13 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
-
   
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
 
   
   
   
 
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
-
-  
   
   
   
@@ -280,41 +221,146 @@
   
     
     
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
-  <meta property="og:title" content="Move to zero-crossings | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
-    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
-
-
-
-  
-
-  
-
   
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
+<meta property="og:title" content="Move to zero-crossings | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
   <title>Move to zero-crossings | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -329,7 +375,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
 
   
 
@@ -373,8 +419,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -389,7 +439,7 @@
   
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -639,6 +689,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -677,6 +728,7 @@
   <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
         
           Scripts
         
@@ -793,6 +845,17 @@
     <div class="d-none d-xl-block col-xl-2 docs-toc">
       
 
+
+
+
+
+
+
+
+
+
+
+
       <ul class="nav toc-top">
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
@@ -800,178 +863,205 @@
       <nav id="TableOfContents"></nav>
 
       
+
+
+
+
+
+
+
+
+
+
+
     </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
-      <article class="article">
+      <div class="docs-article-container">
+        
+      </div>
 
-        <div class="docs-article-container">
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Move to zero-crossings</h1>
+
+        <article class="article-style">
+
+          
           
 
-          <h1>Move to zero-crossings</h1>
-
-          <div class="article-style">
-            <p>This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
+          <p>This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
 <blockquote>
 <p>You can also <a href="../move-to-zero-crossings.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<pre tabindex="0"><code>################################################################################
-### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
-### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
-### License: CC BY-NC 4.0
-################################################################################
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@ru.nl</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script takes a single .wav and matching .TextGrid file as input</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   and moves all boundaries in one particular tier to zero-crossings.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   Specifically, it *adds* a new &#39;to0x&#39; tier at the top of the TextGrid</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   that is identical to a given tier except that all boundaries are</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   at zero-crossings. The old TextGrid is then overwritten with the</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   new extended TextGrid, but no information is lost (only added).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   This script works best if the script also subtracts the mean from</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   the audio signal, and overwrites the original audio:</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&#39;method&#39; option 1 (default).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	If you need to move the boundaries for more than one TextGrid file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	you can merge this script with &#39;batch-processing.praat&#39;,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Form to enter variables</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="n">beginPause</span><span class="p">:</span> <span class="s2">&#34;Enter settings&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;directory&#34;</span><span class="p">,</span> <span class="s2">&#34;C:/Users/hanbos/mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the name of the sound file&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;(should be identical to TextGrid name)&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;NOTE: do NOT include any extension (no .wav)&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;filename&#34;</span><span class="p">,</span> <span class="s2">&#34;syll1&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the interval tier number (typically 1)&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">real</span><span class="p">:</span> <span class="s2">&#34;tierNumber&#34;</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="n">choice</span><span class="p">:</span> <span class="s2">&#34;method&#34;</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	   <span class="n">option</span><span class="p">:</span> <span class="s2">&#34;Subtract mean and overwrite audio file&#34;</span>
+</span></span><span class="line"><span class="cl">	   <span class="n">option</span><span class="p">:</span> <span class="s2">&#34;Do not subtract mean&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">clicked</span> <span class="o">=</span> <span class="n">endPause</span> <span class="p">(</span><span class="s2">&#34;Cancel&#34;</span><span class="p">,</span> <span class="s2">&#34;OK&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Before we start, let&#39;s check whether you&#39;ve entered sensible</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### input for the variables above...</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the directory exists.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">directory</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">directory</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">## Let&#39;s also check whether the specified wav and TextGrid filenames exist</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## inside this particular directory.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">filepath</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">filename</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;.wav&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">wavFileExists</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">filepath</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">wavFileExists</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="c1"># if the wav file does not exist</span>
+</span></span><span class="line"><span class="cl">		<span class="n">printline</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">exit</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span><span class="o">.</span> <span class="n">Check</span> <span class="n">spelling</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">filepath</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">filename</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">tgFileExists</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">filepath</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">tgFileExists</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		<span class="c1"># if the TextGrid file does not exist</span>
+</span></span><span class="line"><span class="cl">		<span class="n">printline</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">exit</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span><span class="o">.</span> <span class="n">Check</span> <span class="n">spelling</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">endif</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if the temporary file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
+</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#################################    SCRIPT    #################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">method</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Subtract</span> <span class="n">mean</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Write</span> <span class="n">to</span> <span class="n">WAV</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
+</span></span><span class="line"><span class="cl"><span class="n">nInts</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">intervals</span><span class="o">...</span> <span class="s1">&#39;tierNumber&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Insert</span> <span class="n">interval</span> <span class="n">tier</span><span class="o">...</span> <span class="mi">1</span> <span class="n">to0x</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="n">to</span> <span class="p">(</span><span class="s1">&#39;nInts&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">TextGrid</span> <span class="s1">&#39;filename$&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">intEnd</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">end</span> <span class="n">point</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;i&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">intLab</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">label</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;i&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="s1">&#39;filename$&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">zxEnd</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">nearest</span> <span class="n">zero</span> <span class="n">crossing</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;intEnd&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">TextGrid</span> <span class="s1">&#39;filename$&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Insert</span> <span class="n">boundary</span><span class="o">...</span> <span class="mi">1</span> <span class="n">zxEnd</span>
+</span></span><span class="line"><span class="cl">	<span class="n">Set</span> <span class="n">interval</span> <span class="n">text</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;i&#39;</span> <span class="s1">&#39;intLab$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">endfor</span>
+</span></span><span class="line"><span class="cl"><span class="n">intLab</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">label</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;nInts&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Set</span> <span class="n">interval</span> <span class="n">text</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;nInts&#39;</span> <span class="s1">&#39;intLab$&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Write</span> <span class="n">to</span> <span class="n">text</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="s1">&#39;filename$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span></code></pre></div>
 
-	###&gt;&gt; This script takes a single .wav and matching .TextGrid file as input
-	###&gt;&gt;   and moves all boundaries in one particular tier to zero-crossings.
+        </article>
 
-	###&gt;&gt;   Specifically, it *adds* a new &#39;to0x&#39; tier at the top of the TextGrid
-	###&gt;&gt;   that is identical to a given tier except that all boundaries are
-	###&gt;&gt;   at zero-crossings. The old TextGrid is then overwritten with the
-	###&gt;&gt;   new extended TextGrid, but no information is lost (only added).
-
-	###&gt;&gt;   This script works best if the script also subtracts the mean from
-	###&gt;&gt;   the audio signal, and overwrites the original audio:
-	###&gt;&gt;	&#39;method&#39; option 1 (default).
-
-	###&gt;&gt;	If you need to move the boundaries for more than one TextGrid file,
-	###&gt;&gt;	you can merge this script with &#39;batch-processing.praat&#39;,
-	###&gt;&gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/
-
-
-################################################################################
-### Form to enter variables
-################################################################################
-beginPause: &#34;Enter settings&#34;
-	comment: &#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&#34;
-	text: &#34;directory&#34;, &#34;C:/Users/hanbos/mysounds&#34;
-	comment: &#34;Provide the name of the sound file&#34;
-	comment: &#34;(should be identical to TextGrid name)&#34;
-	comment: &#34;NOTE: do NOT include any extension (no .wav)&#34;
-	text: &#34;filename&#34;, &#34;syll1&#34;
-	comment: &#34;Provide the interval tier number (typically 1)&#34;
-	real: &#34;tierNumber&#34;, 1
-	choice: &#34;method&#34;, 1
-	   option: &#34;Subtract mean and overwrite audio file&#34;
-	   option: &#34;Do not subtract mean&#34;
-clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
+        
 
 
 
-################################################################################
-### Before we start, let&#39;s check whether you&#39;ve entered sensible
-### input for the variables above...
-################################################################################
 
-### Let&#39;s check if the directory exists.
-### This script will throw an error if the directory doesn&#39;t exist
-### (i.e., it won&#39;t write to a mysterious temp directory).
 
-### First check whether the input directory ends in a backslash (if so, removed)
-
-if right$(directory$,1)=&#34;/&#34;
-	directory$ = left$(directory$,length(directory$)-1)
-elsif right$(directory$,1)=&#34;\&#34;
-	directory$ = left$(directory$,length(directory$)-1)
-endif
-
-### Then create a temporary txt file in the folder
-### and try to write it to the input folder.
-
-### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
-### does *not* exist. We&#39;ll manually check whether the saving of this
-### temp txt file has succeeded or not further down below.
-
-temp_filename$ = directory$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
-
-### Can the file be found?
-
-file_exists_yesno = fileReadable(temp_filename$)
-
-if file_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the directory is valid.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-
-	## Let&#39;s also check whether the specified wav and TextGrid filenames exist
-	## inside this particular directory.
-
-	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.wav&#34;
-	wavFileExists = fileReadable(filepath$)
-
-	if wavFileExists = 0
-		# if the wav file does not exist
-		printline Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;
-		exit Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;. Check spelling.
-	endif
-
-	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.TextGrid&#34;
-	tgFileExists = fileReadable(filepath$)
-
-	if tgFileExists = 0
-		# if the TextGrid file does not exist
-		printline Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;
-		exit Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;. Check spelling.
-	endif
-else
-	# if the temporary file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;directory$&#39; was not found
-	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
-endif
+        
 
 
 
-################################################################################
-################################################################################
-#################################    SCRIPT    #################################
-################################################################################
-################################################################################
-
-Read from file... &#39;directory$&#39;\&#39;filename$&#39;.wav
-if method = 1
-	Subtract mean
-	Write to WAV file... &#39;directory$&#39;\&#39;filename$&#39;.wav
-endif
-Read from file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
-nInts = Get number of intervals... &#39;tierNumber&#39;
-Insert interval tier... 1 to0x
-
-for i to (&#39;nInts&#39;-1)
-	select TextGrid &#39;filename$&#39;
-	intEnd = Get end point... (&#39;tierNumber&#39;+1) &#39;i&#39;
-	intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;i&#39;
-	select Sound &#39;filename$&#39;
-	zxEnd = Get nearest zero crossing... 1 &#39;intEnd&#39;
-	select TextGrid &#39;filename$&#39;
-	Insert boundary... 1 zxEnd
-	Set interval text... 1 &#39;i&#39; &#39;intLab$&#39;
-endfor
-intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;nInts&#39;
-Set interval text... 1 &#39;nInts&#39; &#39;intLab$&#39;
-
-Write to text file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
-Remove
-select Sound &#39;filename$&#39;
-Remove
-
-################################################################################
-# End of script
-################################################################################
-</code></pre>
-          </div>
-
+        
+        
+        <div class="article-widget">
           
-
-
-
-          
-          
-          <div class="article-widget">
-            
 <div class="post-nav">
   
   
@@ -990,28 +1080,27 @@ Remove
   
 </div>
 
-          </div>
-          
         </div>
+        
+      </div>
 
-        <div class="body-footer">
-          <p>Last updated on Jan 1, 0001</p>
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
 
-          
-
-
-
-          
+        
 
 
 
 
-          
+        
 
 
-        </div>
 
-      </article>
+
+        
+
+
+      </div>
 
       <footer class="site-footer">
 
@@ -1019,14 +1108,27 @@ Remove
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1069,6 +1171,7 @@ Remove
 
 
 
+
   <p class="powered-by">
     
     
@@ -1079,7 +1182,7 @@ Remove
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1096,109 +1199,118 @@ Remove
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.b2240102cb8b24bcbe037562ce2ea60a.js"></script>
 
-      
-      
 
-      
 
-      
 
-    
+  
 
-    
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-    
+  
+  
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
-    <script>
-      anchors.add();
-    </script>
-    
+  
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.11e17bdd78ea3a0399cd799db7237725.js"></script>
 
-    
-    
-      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-    
-    
-    
-    
-      
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1209,7 +1321,8 @@ Remove
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1224,7 +1337,20 @@ Remove
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

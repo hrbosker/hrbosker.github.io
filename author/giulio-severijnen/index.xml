@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/author/giulio-severijnen/</link>
       <atom:link href="https://hrbosker.github.io/author/giulio-severijnen/index.xml" rel="self" type="application/rss+xml" />
     <description>Giulio Severijnen</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/author/giulio-severijnen/avatar_hu0e54b82bfadec27e44bd52bb494fd0d7_132772_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Giulio Severijnen</title>
@@ -13,11 +13,22 @@
     </image>
     
     <item>
+      <title>Giulio Severijnen</title>
+      <link>https://hrbosker.github.io/author/giulio-severijnen/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/author/giulio-severijnen/</guid>
+      <description>&lt;p&gt;Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the &lt;a href=&#34;https://www.ru.nl/donders/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Donders Institute&lt;/a&gt; at &lt;a href=&#34;https://www.ru.nl&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Radboud University&lt;/a&gt;, Nijmegen, The Netherlands. His supervisors are &lt;a href=&#34;https://www.ru.nl/english/people/mcqueen-j/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prof. James McQueen&lt;/a&gt; and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Dr. Hans Rutger Bosker&lt;/a&gt;. His project investigates between-talker and within-talker variability in prosody production, with a specific focus on lexical stress. Moreover, he also tests how listeners flexibly adapt to this variability in order to successfully comprehend different talkers. The project is funded through a &amp;lsquo;Donders Internal PhD Round&amp;rsquo; grant, awarded to Prof. James McQueen, Dr. Hans Rutger Bosker, and Dr. Ashley Lewis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch</title>
       <link>https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -44,7 +55,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2023-jephpp/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -60,7 +73,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/severijnen-etal-2023-icphs/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2023-icphs/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -76,7 +91,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -93,6 +110,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2021-brainres/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 

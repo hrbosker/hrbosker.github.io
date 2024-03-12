@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>spoken-word recognition | SPEAC | Hans Rutger Bosker</title>
+    <title>Spoken Word Recognition | SPEAC | Hans Rutger Bosker</title>
     <link>https://hrbosker.github.io/tag/spoken-word-recognition/</link>
       <atom:link href="https://hrbosker.github.io/tag/spoken-word-recognition/index.xml" rel="self" type="application/rss+xml" />
-    <description>spoken-word recognition</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
+    <description>Spoken Word Recognition</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
-      <title>spoken-word recognition</title>
+      <title>Spoken Word Recognition</title>
       <link>https://hrbosker.github.io/tag/spoken-word-recognition/</link>
     </image>
     
@@ -18,6 +18,8 @@
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/reinisch-bosker-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -43,7 +45,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</link>
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bujok-etal-2022-sp/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;

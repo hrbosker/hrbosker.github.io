@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 12, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -8,7 +10,7 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
   
 
   
@@ -23,6 +25,20 @@
 
 
 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -40,46 +56,20 @@
 
   
   
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Hans Rutger Bosker" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
 
   
   
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
 
   
   
   
     
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -89,13 +79,6 @@
       
       
     
-    
-    
-
-    
-    
-    
-      
     
     
 
@@ -194,22 +177,6 @@
 
       
       
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
         
       
 
@@ -238,39 +205,13 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
-
   
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
 
   
   
   
 
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
-
-  
   
   
   
@@ -280,41 +221,146 @@
   
     
     
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
-  <meta property="og:title" content="Manipulate ITD/IID | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
-    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
-
-
-
-  
-
-  
-
   
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
+<meta property="og:title" content="Manipulate ITD/IID | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
   <title>Manipulate ITD/IID | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -329,7 +375,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
 
   
 
@@ -373,8 +419,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -389,7 +439,7 @@
   
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -639,6 +689,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -677,6 +728,7 @@
   <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
         
           Scripts
         
@@ -793,6 +845,17 @@
     <div class="d-none d-xl-block col-xl-2 docs-toc">
       
 
+
+
+
+
+
+
+
+
+
+
+
       <ul class="nav toc-top">
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
@@ -800,271 +863,298 @@
       <nav id="TableOfContents"></nav>
 
       
+
+
+
+
+
+
+
+
+
+
+
     </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
-      <article class="article">
+      <div class="docs-article-container">
+        
+      </div>
 
-        <div class="docs-article-container">
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Manipulate ITD/IID</h1>
+
+        <article class="article-style">
+
+          
           
 
-          <h1>Manipulate ITD/IID</h1>
-
-          <div class="article-style">
-            <p>This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
+          <p>This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
 <p>When you want to play two talkers as coming from opposite sides (talker1 from the left, talker2 from the right), you could simply present the talkers in different channels of a stereo sound file. This way, when your listeners use headphones, talker1 is the only signal played in the left ear and talker2 is the only signal played in the right ear. This design, however, does not reflect naturalistic acoustic environments where the speech of a given talker typically reaches <em>both ears</em>. Moreover, such a simplistic 2-channel design also completely avoids any energetic masking from one talker onto the next.</p>
 <p>In order to simulate more naturalistic multitalker environments, one can present the same sound to both ears, but with a slight delay (interaural time difference; ITD) and at a slightly lower intensity in one ear vs. the other (interaural intensity difference; IID). This way we simulate the shadowing effect of the listener&rsquo;s head, maintaining naturalistic energetic masking.</p>
 <p>See <a href="https://hrbosker.github.io/demos/cocktail-party/">this demo</a> for some examples and further details. Also see <a href="/publication/papoutsi-zimianiti-etal-2023-pbr">this paper</a> for an example of how we applied this technique to a statistical learning paradigm.</p>
 <blockquote>
 <p>You can also <a href="../manipulate-ITD-IID.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<pre tabindex="0"><code>################################################################################
-### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@donders.ru.nl
-### Date: 19 July 2023, run in Praat 6.3.08 on Windows 10
-### License: CC BY-NC 4.0
-################################################################################
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@donders.ru.nl</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Date: 19 July 2023, run in Praat 6.3.08 on Windows 10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt; This script takes two input sounds and applies interaural time differences (ITD)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;	and interaural intensity differences (IID) in order to induce &#39;virtual&#39; spatial</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;	segregation of the two sosunds. This makes one sound be perceived as coming</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;	from the left and the other sound as coming from the right, despite the fact</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   that both sounds are physically present in either channel. Use headphones</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   (i.e., not speakers) to best experience this spatial segregation. And remember:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   wear the headphones appropriately (i.e., with L on your left ear, R on the right)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt; In its current form, the script simply reads in two pre-defined mono sounds</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   and gives as output two stereo wav files: one wav file with sound1 perceived</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   as coming from the left and another with sound1 perceived as coming from the right.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   Combine this script with the batch-processing.praat script to process</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   a larger number of files.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt; Remember: the two sounds should be mono sound files (1-channel) with</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">###&gt;&gt;   the same sampling frequency.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Variables you will definitely need to customize:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Where can the files be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\Desktop\mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Where should the output files be saved?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\Desktop\mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check whether the directories specified above exist...</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the input directory exists.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_in</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
+</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">input</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Now re-do this for the output directory:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_out</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete that temp txt file.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
+</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_out$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">output</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#################################    SCRIPT    #################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Enter the filenames of the two sounds in the variables below.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## Remember to include the file extension (e.g., &#34;firstsound.wav&#34;)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## but the filenames themselves should not contain any [.] character.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">soundfile1</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;firstsound.wav&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">extposition</span> <span class="o">=</span> <span class="n">index</span><span class="p">(</span><span class="n">soundfile1</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">soundname1</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">soundfile1</span><span class="o">$</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;extposition&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;soundfile1$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">original_s1</span>
+</span></span><span class="line"><span class="cl"><span class="n">Convert</span> <span class="n">to</span> <span class="n">mono</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">soundone</span>
+</span></span><span class="line"><span class="cl"><span class="n">fs_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">sampling</span> <span class="n">frequency</span>
+</span></span><span class="line"><span class="cl"><span class="n">int_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">soundfile2</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;secondsound.wav&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">extposition</span> <span class="o">=</span> <span class="n">index</span><span class="p">(</span><span class="n">soundfile2</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">soundname2</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">soundfile2</span><span class="o">$</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;extposition&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;soundfile2$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">original_s2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Convert</span> <span class="n">to</span> <span class="n">mono</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">soundtwo</span>
+</span></span><span class="line"><span class="cl"><span class="n">fs_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">sampling</span> <span class="n">frequency</span>
+</span></span><span class="line"><span class="cl"><span class="n">int_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">fs_1</span> <span class="o">&lt;&gt;</span> <span class="n">fs_2</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if the two files have different sampling frequencies</span>
+</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="s1">&#39;soundfile1$&#39;</span> <span class="n">has</span> <span class="n">a</span> <span class="n">sampling</span> <span class="n">frequency</span> <span class="n">of</span> <span class="s1">&#39;fs_1&#39;</span> <span class="n">Hz</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">    <span class="n">printline</span> <span class="s1">&#39;soundfile2$&#39;</span> <span class="n">has</span> <span class="n">a</span> <span class="n">sampling</span> <span class="n">frequency</span> <span class="n">of</span> <span class="s1">&#39;fs_2&#39;</span> <span class="n">Hz</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">The</span> <span class="n">two</span> <span class="n">files</span> <span class="n">have</span> <span class="n">different</span> <span class="n">sampling</span> <span class="n">frequencies</span><span class="o">.</span> <span class="n">Resample</span> <span class="n">to</span> <span class="n">match</span> <span class="n">the</span> <span class="n">sampling</span> <span class="n">frequencies</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## The ITD implemented here is 0.6 ms = 600 microseconds.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## This ITD simulates fully lateralized sound sources (Hartmann, 1999)</span>
+</span></span><span class="line"><span class="cl"><span class="n">itd</span> <span class="o">=</span> <span class="mf">0.0006</span>
+</span></span><span class="line"><span class="cl"><span class="n">Create</span> <span class="n">Sound</span> <span class="n">from</span> <span class="n">formula</span><span class="p">:</span> <span class="s2">&#34;itd&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.0006</span><span class="p">,</span> <span class="s1">&#39;fs_1&#39;</span><span class="p">,</span> <span class="s2">&#34;0&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## The ITD silence should precede the other two sounds in the Objects window</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">soundone</span>
+</span></span><span class="line"><span class="cl"><span class="n">Copy</span><span class="o">...</span> <span class="n">sound1</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">soundone</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">soundtwo</span>
+</span></span><span class="line"><span class="cl"><span class="n">Copy</span><span class="o">...</span> <span class="n">sound2</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">soundtwo</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## The IID implemented here is -6 dB, simulating fully lateralized sound sources (Hartmann, 1999)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Create the left channel, with sound1 appearing as coming from the left</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">itd</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">sound2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Concatenate</span>
+</span></span><span class="line"><span class="cl"><span class="n">Scale</span> <span class="n">intensity</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;int_2&#39;</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Formula</span><span class="o">...</span> <span class="bp">self</span> <span class="o">+</span> <span class="n">Sound_sound1</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">channel_L</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Create the right channel, with sound2 appearing as coming from the right</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">itd</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">sound1</span>
+</span></span><span class="line"><span class="cl"><span class="n">Concatenate</span>
+</span></span><span class="line"><span class="cl"><span class="n">Scale</span> <span class="n">intensity</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;int_1&#39;</span><span class="o">-</span><span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Formula</span><span class="o">...</span> <span class="bp">self</span> <span class="o">+</span> <span class="n">Sound_sound2</span><span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">channel_R</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">channel_L</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">channel_R</span>
+</span></span><span class="line"><span class="cl"><span class="n">Combine</span> <span class="n">to</span> <span class="n">stereo</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">L_s1_R_s2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Write</span> <span class="n">to</span> <span class="n">WAV</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="n">L_</span><span class="s1">&#39;soundname1$&#39;</span><span class="n">_R_</span><span class="s1">&#39;soundname2$&#39;</span><span class="o">.</span><span class="n">wav</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## And the opposite localization:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">channel_R</span>
+</span></span><span class="line"><span class="cl"><span class="n">Copy</span><span class="o">...</span> <span class="n">channel_left</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">channel_L</span>
+</span></span><span class="line"><span class="cl"><span class="n">Copy</span><span class="o">...</span> <span class="n">channel_right</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">channel_left</span>
+</span></span><span class="line"><span class="cl"><span class="n">Combine</span> <span class="n">to</span> <span class="n">stereo</span>
+</span></span><span class="line"><span class="cl"><span class="n">Rename</span><span class="o">...</span> <span class="n">R_s1_L_s2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Write</span> <span class="n">to</span> <span class="n">WAV</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="n">L_</span><span class="s1">&#39;soundname2$&#39;</span><span class="n">_R_</span><span class="s1">&#39;soundname1$&#39;</span><span class="o">.</span><span class="n">wav</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## And clear up the mess</span>
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="n">channel_L</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">channel_R</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">channel_left</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">channel_right</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">original_s1</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">original_s2</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">itd</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">sound1</span>
+</span></span><span class="line"><span class="cl"><span class="n">plus</span> <span class="n">Sound</span> <span class="n">sound2</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span></code></pre></div>
+
+        </article>
+
+        
 
 
-    ###&gt;&gt; This script takes two input sounds and applies interaural time differences (ITD)
-    ###&gt;&gt;	and interaural intensity differences (IID) in order to induce &#39;virtual&#39; spatial
-    ###&gt;&gt;	segregation of the two sosunds. This makes one sound be perceived as coming
-    ###&gt;&gt;	from the left and the other sound as coming from the right, despite the fact
-    ###&gt;&gt;   that both sounds are physically present in either channel. Use headphones
-    ###&gt;&gt;   (i.e., not speakers) to best experience this spatial segregation. And remember:
-    ###&gt;&gt;   wear the headphones appropriately (i.e., with L on your left ear, R on the right)
-
-    ###&gt;&gt; In its current form, the script simply reads in two pre-defined mono sounds
-    ###&gt;&gt;   and gives as output two stereo wav files: one wav file with sound1 perceived
-    ###&gt;&gt;   as coming from the left and another with sound1 perceived as coming from the right.
-    ###&gt;&gt;   Combine this script with the batch-processing.praat script to process
-    ###&gt;&gt;   a larger number of files.
-
-    ###&gt;&gt; Remember: the two sounds should be mono sound files (1-channel) with
-    ###&gt;&gt;   the same sampling frequency.
-
-################################################################################
-### Variables you will definitely need to customize:
-################################################################################
-
-### Where can the files be found?
-
-dir_in$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
-
-### Where should the output files be saved?
-
-dir_out$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
 
 
 
-
-
-################################################################################
-### Let&#39;s check whether the directories specified above exist...
-################################################################################
-
-### Let&#39;s check if the input directory exists.
-### This script will throw an error if the directory doesn&#39;t exist
-### (i.e., it won&#39;t write to a mysterious temp directory).
-
-### First check whether the input directory ends in a backslash (if so, removed)
-
-if right$(dir_in$,1)=&#34;/&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-elsif right$(dir_in$,1)=&#34;\&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-endif
-
-### Then create a temporary txt file in the folder
-### and try to write it to the input folder.
-
-### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
-### does *not* exist. We&#39;ll manually check whether the saving of this
-### temp txt file has succeeded or not further down below.
-
-temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
-
-### Can the file be found?
-
-file_exists_yesno = fileReadable(temp_filename$)
-
-if file_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the directory is valid.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-else
-	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;dir_in$&#39; was not found
-	exit Your input directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
-endif
-
-## Now re-do this for the output directory:
-
-if right$(dir_out$,1)=&#34;/&#34;
-	dir_out$ = left$(dir_out$,length(dir_out$)-1)
-elsif right$(dir_out$,1)=&#34;\&#34;
-	dir_out$ = left$(dir_out$,length(dir_out$)-1)
-endif
-
-### Then create a temporary txt file in the folder
-### and try to write it to the input folder.
-
-### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
-### does *not* exist. We&#39;ll manually check whether the saving of this
-### temp txt file has succeeded or not further down below.
-
-temp_filename$ = dir_out$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
-
-### Can the file be found?
-
-file_exists_yesno = fileReadable(temp_filename$)
-
-if file_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the directory is valid.
-	# Then you can delete that temp txt file.
-	deleteFile: temp_filename$
-else
-	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;dir_out$&#39; was not found
-	exit Your output directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
-endif
+        
 
 
 
-
-
-################################################################################
-################################################################################
-#################################    SCRIPT    #################################
-################################################################################
-################################################################################
-
-## Enter the filenames of the two sounds in the variables below.
-## Remember to include the file extension (e.g., &#34;firstsound.wav&#34;)
-## but the filenames themselves should not contain any [.] character.
-
-soundfile1$ = &#34;firstsound.wav&#34;
-extposition = index(soundfile1$, &#34;.&#34;)
-soundname1$ = left$(soundfile1$, (&#39;extposition&#39;-1))
-
-Read from file... &#39;dir_in$&#39;\&#39;soundfile1$&#39;
-Rename... original_s1
-Convert to mono
-Rename... soundone
-fs_1 = Get sampling frequency
-int_1 = Get intensity (dB)
-
-soundfile2$ = &#34;secondsound.wav&#34;
-extposition = index(soundfile2$, &#34;.&#34;)
-soundname2$ = left$(soundfile2$, (&#39;extposition&#39;-1))
-
-Read from file... &#39;dir_in$&#39;\&#39;soundfile2$&#39;
-Rename... original_s2
-Convert to mono
-Rename... soundtwo
-fs_2 = Get sampling frequency
-int_2 = Get intensity (dB)
-
-if fs_1 &lt;&gt; fs_2
-	# if the two files have different sampling frequencies
-	printline &#39;soundfile1$&#39; has a sampling frequency of &#39;fs_1&#39; Hz.
-    printline &#39;soundfile2$&#39; has a sampling frequency of &#39;fs_2&#39; Hz.
-	exit The two files have different sampling frequencies. Resample to match the sampling frequencies.
-endif
-
-
-
-
-
-## The ITD implemented here is 0.6 ms = 600 microseconds.
-## This ITD simulates fully lateralized sound sources (Hartmann, 1999)
-itd = 0.0006
-Create Sound from formula: &#34;itd&#34;, 1, 0, 0.0006, &#39;fs_1&#39;, &#34;0&#34;
-
-## The ITD silence should precede the other two sounds in the Objects window
-select Sound soundone
-Copy... sound1
-select Sound soundone
-Remove
-select Sound soundtwo
-Copy... sound2
-select Sound soundtwo
-Remove
-
-
-
-
-## The IID implemented here is -6 dB, simulating fully lateralized sound sources (Hartmann, 1999)
-
-## Create the left channel, with sound1 appearing as coming from the left
-select Sound itd
-plus Sound sound2
-Concatenate
-Scale intensity... (&#39;int_2&#39;-6)
-Formula... self + Sound_sound1[]
-Rename... channel_L
-
-## Create the right channel, with sound2 appearing as coming from the right
-select Sound itd
-plus Sound sound1
-Concatenate
-Scale intensity... (&#39;int_1&#39;-6)
-Formula... self + Sound_sound2[]
-Rename... channel_R
-
-select Sound channel_L
-plus Sound channel_R
-Combine to stereo
-Rename... L_s1_R_s2
-Write to WAV file... &#39;dir_in$&#39;\L_&#39;soundname1$&#39;_R_&#39;soundname2$&#39;.wav
-Remove
-
-## And the opposite localization:
-
-select Sound channel_R
-Copy... channel_left
-select Sound channel_L
-Copy... channel_right
-plus Sound channel_left
-Combine to stereo
-Rename... R_s1_L_s2
-Write to WAV file... &#39;dir_in$&#39;\L_&#39;soundname2$&#39;_R_&#39;soundname1$&#39;.wav
-Remove
-
-## And clear up the mess
-select Sound channel_L
-plus Sound channel_R
-plus Sound channel_left
-plus Sound channel_right
-plus Sound original_s1
-plus Sound original_s2
-plus Sound itd
-plus Sound sound1
-plus Sound sound2
-Remove
-
-
-
-################################################################################
-# End of script
-################################################################################
-</code></pre>
-          </div>
-
+        
+        
+        <div class="article-widget">
           
-
-
-
-          
-          
-          <div class="article-widget">
-            
 <div class="post-nav">
   
   
@@ -1083,28 +1173,27 @@ Remove
   
 </div>
 
-          </div>
-          
         </div>
+        
+      </div>
 
-        <div class="body-footer">
-          <p>Last updated on Jan 1, 0001</p>
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
 
-          
-
-
-
-          
+        
 
 
 
 
-          
+        
 
 
-        </div>
 
-      </article>
+
+        
+
+
+      </div>
 
       <footer class="site-footer">
 
@@ -1112,14 +1201,27 @@ Remove
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1162,6 +1264,7 @@ Remove
 
 
 
+
   <p class="powered-by">
     
     
@@ -1172,7 +1275,7 @@ Remove
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1189,109 +1292,118 @@ Remove
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.b2240102cb8b24bcbe037562ce2ea60a.js"></script>
 
-      
-      
 
-      
 
-      
 
-    
+  
 
-    
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-    
+  
+  
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
-    <script>
-      anchors.add();
-    </script>
-    
+  
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.11e17bdd78ea3a0399cd799db7237725.js"></script>
 
-    
-    
-      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-    
-    
-    
-    
-      
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1302,7 +1414,8 @@ Remove
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1317,7 +1430,20 @@ Remove
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

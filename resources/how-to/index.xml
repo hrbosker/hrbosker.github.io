@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/resources/how-to/</link>
       <atom:link href="https://hrbosker.github.io/resources/how-to/index.xml" rel="self" type="application/rss+xml" />
     <description>How to&#39;s</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 07 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/resources/how-to/featured.jpg</url>
       <title>How to&#39;s</title>
@@ -45,6 +45,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -56,9 +58,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Audacity&amp;rsquo;s default is to make &lt;em&gt;stereo&lt;/em&gt; recordings, with each recording containing two channels:&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -86,9 +91,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;In most cases, it&amp;rsquo;s better to make &lt;em&gt;mono&lt;/em&gt; recordings (with only one channel) to make annotating and manipulating the speech a lot easier. Change the settings at the top to MONO:&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -116,9 +124,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Then click the red button to start a recording&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -146,9 +157,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&amp;hellip;which should look something like this:&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -176,9 +190,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;When you&amp;rsquo;re done recording, click the yellow square to stop.&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -206,6 +223,7 @@
                height=&#34;405&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Do not SAVE projects&lt;/strong&gt; in Audacity, but instead &lt;strong&gt;EXPORT audio files&lt;/strong&gt;. Go to: &lt;em&gt;File &amp;gt; Export Audio&amp;hellip;&lt;/em&gt;, and then click the &amp;lsquo;Save as type&amp;rsquo; drop-down menu to select the file format. Select .wav for uncompressed (raw) audio which is best suited for speech manipulations, or .mp3 for compressed (processed) audio.&lt;/li&gt;
 &lt;/ul&gt;
@@ -240,6 +258,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -251,9 +271,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;This is &lt;strong&gt;risky&lt;/strong&gt; because it&amp;rsquo;s approaching 1 and -1:&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -281,9 +304,12 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;This is &lt;strong&gt;bad&lt;/strong&gt; because it&amp;rsquo;s outside 1 and -1.&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -311,11 +337,14 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;This is called &amp;lsquo;clippings&amp;rsquo; and it&amp;rsquo;s very well audible in the signal. These two audio clips contain the same telephone number, but the first is clean and the second has clippings:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;CLEAN
+
+
 
 
 
@@ -338,6 +367,8 @@
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;WITH CLIPPINGS
+
+
 
 
 
@@ -407,6 +438,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -418,6 +451,7 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;p&gt;I&amp;rsquo;ve found that the default settings for the &lt;code&gt;To TextGrid (silences)&lt;/code&gt; function are best adjusted to: &lt;code&gt;Minimum pitch (Hz) = 50&lt;/code&gt; (instead of the default 100) and &lt;code&gt;Silence threshold (dB) = -40&lt;/code&gt; (instead of the default -32). In my experience, this works considerably better especially for single-word recordings, but often also for full-sentence recordings.&lt;/p&gt;
 &lt;p&gt;Oh, and as I&amp;rsquo;m writing this, I see the latest versions of Praat have a new &lt;code&gt;To TextGrid (voice activity)&lt;/code&gt; function. My initial impression is that the default settings for this function perform comparable to the &amp;lsquo;adjusted&amp;rsquo; settings for &lt;code&gt;To TextGrid (silences)&lt;/code&gt; suggested above.&lt;/p&gt;
 &lt;h2 id=&#34;speechrecorder&#34;&gt;SpeechRecorder&lt;/h2&gt;
@@ -426,6 +460,8 @@
 &lt;li&gt;Download, install, and open SpeechRecorder:&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.bas.uni-muenchen.de/Bas/software/speechrecorder/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -453,6 +489,7 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Go to &lt;em&gt;Project &amp;gt; New&lt;/em&gt;, and enter a name for your project&lt;/li&gt;
 &lt;li&gt;The directory for the audio output is &lt;code&gt;C:/Users/hanbos/speechrecorder/[myProjectName]/&lt;/code&gt;&lt;/li&gt;
@@ -493,6 +530,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -504,6 +543,7 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Click &lt;em&gt;Record&lt;/em&gt; at the bottom to start a recording. The traffic light will go from Red, to Orange, to Green, after which the speaker pronounces the prompt on screen. Click &lt;em&gt;Stop&lt;/em&gt; to stop the recording.&lt;/li&gt;
 &lt;li&gt;If you are happy with the recording, click &lt;strong&gt;[&amp;raquo;]&lt;/strong&gt; to proceed to the next prompt. SpeechRecorder will then save the recording with the appropriate filename in the project folder and present the next prompt.&lt;/li&gt;
@@ -563,6 +603,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -574,6 +616,7 @@
                height=&#34;472&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
   &lt;summary&gt;&lt;em&gt;Why is it called Praat anyway?&lt;/em&gt;&lt;/summary&gt;
   &lt;p&gt;&lt;em&gt;Praat&lt;/em&gt; was created by Paul Boersma and David Weenink, two Dutch speech scientists from Amsterdam. The Dutch word &amp;lsquo;praat&amp;rsquo; &lt;a href=&#34;https://translate.google.nl/?sl=nl&amp;amp;tl=en&amp;amp;text=praat&amp;amp;op=translate&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;/pra:t/&lt;/a&gt; is the &lt;a href=&#34;https://www.fon.hum.uva.nl/paul/papers/speakUnspeakPraat_glot2001.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;imperative form&lt;/a&gt; of the verb &amp;rsquo;to speak&amp;rsquo; (so &lt;em&gt;&amp;ldquo;speak!&amp;rdquo;&lt;/em&gt;).&lt;/p&gt;
@@ -607,6 +650,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -618,6 +663,7 @@
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;h2 id=&#34;zooming-and-playing&#34;&gt;Zooming and playing&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;You can zoom in to a different parts of the recording by clicking and dragging inside the waveform to select a part and click &lt;code&gt;[sel]&lt;/code&gt; or [CTRL+N] in the bottom left to zoom in to this part. You can also use &lt;code&gt;bak&lt;/code&gt; [CTRL+B] to go back to the previous view, &lt;code&gt;[all]&lt;/code&gt; [CTRL+A] to view the entire sound file, and &lt;code&gt;[in]&lt;/code&gt; [CTRL+I] and &lt;code&gt;[out]&lt;/code&gt; [CTRL+O] to gradually zoom in and out.&lt;/li&gt;
@@ -647,6 +693,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -658,10 +706,13 @@
                height=&#34;320&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;You&amp;rsquo;ll find a new object appear in the object window, namely a(n empty) TextGrid object with the same name as the Sound object. Also, it is selected automatically (highlighted in blue).&lt;/li&gt;
 &lt;li&gt;Select both the Sound object and the TextGrid object (clicking while holding [SHIFT] or [CTRL]) together, and click &lt;em&gt;View and Edit&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -689,9 +740,12 @@
                height=&#34;760&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;You&amp;rsquo;ll see a new window, with the waveform on top, then a spectrogram, and then the various tiers of the TextGrid appearing below. You&amp;rsquo;ll find the names for the various tiers (that you defined in the previous step) appear on the right.&lt;/li&gt;
 &lt;/ul&gt;
+
+
 
 
 
@@ -719,6 +773,7 @@
                height=&#34;633&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;Now you can start editing the TextGrid by adding &amp;lsquo;boundaries&amp;rsquo; (in interval tiers) and &amp;lsquo;points&amp;rsquo; (in point tiers). We&amp;rsquo;ll first focus on word-level annotations, identifying the onset and offset of individual words.&lt;/li&gt;
 &lt;/ul&gt;
@@ -747,6 +802,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -758,6 +815,7 @@
                height=&#34;511&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;div class=&#34;alert alert-warning&#34;&gt;
   &lt;div&gt;
     &lt;p&gt;&lt;strong&gt;Always select time points at positive-going zero-crossings!&lt;/strong&gt; This is particularly important when you want to extract intervals from a sound file and manipulate them (but less important if you only want to measure certain acoustic features, such as intensity or F0, without extracting/manipulating anything).&lt;/p&gt;
@@ -811,6 +869,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -822,6 +882,7 @@
                height=&#34;511&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;h2 id=&#34;working-with-textgrids&#34;&gt;Working with TextGrids&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;You can quickly scroll through TextGrids by clicking on an interval and then hitting [ALT + →] to see the next one, or [ALT + ←] to see the previous one. Similarly, use [ALT + ↓] and [ALT + ↑] to go up or down a tier.&lt;/li&gt;
@@ -871,6 +932,8 @@
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
@@ -882,13 +945,14 @@
                height=&#34;562&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;ul&gt;
 &lt;li&gt;You&amp;rsquo;ll find a rather empty-looking window popping up on your screen, with the menus &lt;em&gt;File, Edit, Search, Convert, Font, Run&lt;/em&gt; at the top.&lt;/li&gt;
 &lt;li&gt;Now type this into that scripting window:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Create Sound from formula: &amp;#34;demo&amp;#34;, 1, 0, 1, 44100, &amp;#34;1/2 * sin(2*pi*377*x)&amp;#34;
-Play
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Create Sound from formula: &amp;#34;demo&amp;#34;, 1, 0, 1, 44100, &amp;#34;1/2 * sin(2*pi*377*x)&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Now turn on your speakers&amp;hellip;&lt;/li&gt;
 &lt;li&gt;&amp;hellip;and click &lt;em&gt;Run &amp;gt; Run&lt;/em&gt; or hit [CTRL+R] to execute the script.&lt;/li&gt;
 &lt;li&gt;Congratulations, you&amp;rsquo;ve run your first script that creates and plays a short 377 Hz tone.&lt;/li&gt;
@@ -912,8 +976,8 @@ Play
 &lt;li&gt;click &lt;em&gt;Edit &amp;gt; Paste history&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;It should show you something along the lines of:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Read from file: &amp;#34;C:\Users\hanbos\mysounds\demo.wav&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;but then with a different directory and filename.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;C:\Users\hanbos\mysounds\demo.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;but then with a different directory and filename.&lt;/p&gt;
 &lt;p&gt;So remember: &lt;strong&gt;perform the functions in the object window, paste history in the scripting window, and edit the code from there&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;
 &lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. Alternatively, go to &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. Other third-party tutorials are:&lt;/p&gt;
@@ -928,59 +992,59 @@ Play
 &lt;ul&gt;
 &lt;li&gt;Over the years, Praat has had three types of syntax. Current Praat versions are compatible with older and newer syntax types, and mixes thereof.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# This line of code extracts the first 100 ms of a sound object...
-# ... in Praat versions 5.3.43 and older; before April 2013
-Extract part... 0 0.1 rectangular 1 no
-# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
-do(&amp;#34;Extract part&amp;#34;, 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;)
-# ... in Praat versions 5.3.63 and later; after January 2014
-Extract part: 0, 0.1, &amp;#34;rectangular, 1, &amp;#34;no&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# This line of code extracts the first 100 ms of a sound object...
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions 5.3.43 and older; before April 2013
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part... 0 0.1 rectangular 1 no
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;do(&amp;#34;Extract part&amp;#34;, 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions 5.3.63 and later; after January 2014
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part: 0, 0.1, &amp;#34;rectangular, 1, &amp;#34;no&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat variables &lt;strong&gt;always&lt;/strong&gt; start in lowercase. Capitals are reserved for functions:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;play = 2
-for i to play
-    Play
-endfor
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;play = 2
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;for i to play
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Play
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endfor
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat does not distinguish between single and double equal signs:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;intensityLevel = 75
-if intensityLevel = 75
-    newIntensityLevel = 80
-endif
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;intensityLevel = 75
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if intensityLevel = 75
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    newIntensityLevel = 80
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat uses single quotes to access the value of a variable. This is, for instance, important when concatenating the values of different string variables:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
-myFilename$ = &amp;#34;demo.wav&amp;#34;
-Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myFilename$ = &amp;#34;demo.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat&amp;rsquo;s spelling is &lt;code&gt;elsif&lt;/code&gt;, &lt;strong&gt;not&lt;/strong&gt; &lt;code&gt;elseif&lt;/code&gt; (don&amp;rsquo;t ask me why&amp;hellip;)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;if intensityLevel = 80
-    Scale intensity: 75
-elsif intensityLevel = 75
-    Scale intensity: 80
-else
-    Scale intensity: 65
-endif
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if intensityLevel = 80
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Scale intensity: 75
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;elsif intensityLevel = 75
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Scale intensity: 80
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;else
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Scale intensity: 65
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Different objects in Praat have different functions. For Sound objects, you can run functions like &lt;code&gt;Play&lt;/code&gt;, &lt;code&gt;Resample...&lt;/code&gt;, &lt;code&gt;Scale intensity...&lt;/code&gt;, etc., while for TextGrid objects, you can run functions like &lt;code&gt;Duplicate tier...&lt;/code&gt;, &lt;code&gt;Insert boundary...&lt;/code&gt;, etc. Therefore, it is important to &lt;strong&gt;keep track of which object is selected&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
-myFilename$ = &amp;#34;demo.wav&amp;#34;
-Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
-To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
-Play
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&amp;hellip; will throw an error because the newly created TextGrid is automatically selected after &lt;code&gt;To TextGrid:&lt;/code&gt; and Praat cannot play TextGrids. The solution is:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
-myFilename$ = &amp;#34;demo.wav&amp;#34;
-Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
-To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
-select Sound demo
-Play
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myFilename$ = &amp;#34;demo.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; will throw an error because the newly created TextGrid is automatically selected after &lt;code&gt;To TextGrid:&lt;/code&gt; and Praat cannot play TextGrids. The solution is:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myFilename$ = &amp;#34;demo.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select Sound demo
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
 &lt;p&gt;See our &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/&#34;&gt;Scripts&lt;/a&gt; archive for snippets of code we frequently use. Note, however, that &lt;strong&gt;they require customization&lt;/strong&gt; for each individual new project. &lt;em&gt;Use at your own risk!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Other scripts resources available online are:&lt;/p&gt;
 &lt;ul&gt;
@@ -1014,10 +1078,13 @@ Play
 
 
 
+
+
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://github.com/orhunulusahin/praatvscode/blob/main/assets/syntax_after.png?raw=true&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;600&#34; /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
+
 &lt;p&gt;Created by our very own &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt;, PraatVSCode is an extension for Visual Studio Code, providing syntax highlighting, autocompletion, and even an array of code snippets that writes itself. Moreover, it allows &lt;strong&gt;running of scripts by Praat from inside Visual Studio Code&lt;/strong&gt;. &lt;a href=&#34;https://hrbosker.github.io/resources/tools/#praatvscode&#34;&gt;Try it now!&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Happy coding!&lt;/em&gt;&lt;/p&gt;
 </description>

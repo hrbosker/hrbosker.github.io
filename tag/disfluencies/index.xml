@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>disfluencies | SPEAC | Hans Rutger Bosker</title>
+    <title>Disfluencies | SPEAC | Hans Rutger Bosker</title>
     <link>https://hrbosker.github.io/tag/disfluencies/</link>
       <atom:link href="https://hrbosker.github.io/tag/disfluencies/index.xml" rel="self" type="application/rss+xml" />
-    <description>disfluencies</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <description>Disfluencies</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
-      <title>disfluencies</title>
+      <title>Disfluencies</title>
       <link>https://hrbosker.github.io/tag/disfluencies/</link>
     </image>
     
@@ -18,6 +18,8 @@
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2019-jml/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -43,7 +45,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/bosker-etal-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2015/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -60,6 +64,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2014-ll/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 

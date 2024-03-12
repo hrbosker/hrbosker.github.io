@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/demos/</link>
       <atom:link href="https://hrbosker.github.io/demos/index.xml" rel="self" type="application/rss+xml" />
     <description>Demos</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Demos</title>
@@ -29,6 +29,8 @@
 
 
 
+
+
   
 
 
@@ -38,6 +40,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/manual-mcgurk/voornaam_AV_swbeat_sw_4.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;blockquote&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
   &lt;summary&gt;&lt;em&gt;Spoiler: click here to reveal the video specs&lt;/em&gt;&lt;/summary&gt;
@@ -59,6 +62,8 @@
 
 
 
+
+
   
 
 
@@ -68,6 +73,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/manual-mcgurk/voornaam_AV_wsbeat_sw_4.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;blockquote&gt;
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
   &lt;summary&gt;&lt;em&gt;Spoiler: click here to reveal the video specs&lt;/em&gt;&lt;/summary&gt;
@@ -99,6 +105,8 @@
 &lt;p&gt;The manual McGurk effect is the first demonstration of how the timing of hand gestures influences low-level speech perception. Even the simplest flicks-of-the-hands that do not convey any particular meaning of themselves can shape what words you hear. This promises that these seemingly unimportant hand gestures contribute meaningfully to audiovisual speech comprehension. Perhaps &amp;rsquo;enriching&amp;rsquo; our speech with carefully timed gestures can help our audience understand our spoken message, particularly in challenging listening conditions, such as in noise.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -190,6 +198,8 @@
 
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -306,6 +316,8 @@
 
 
 
+
+
   
 
 
@@ -341,6 +353,8 @@
 
 
 
+
+
   
 
 
@@ -350,6 +364,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/conjuring-words/ratenorm.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-3&#34;&gt;
   &lt;summary&gt;&lt;em&gt;Click here to access the audio from the video&lt;/em&gt;&lt;/summary&gt;
   &lt;p&gt;&lt;blockquote&gt;
@@ -378,6 +393,8 @@
 &lt;p&gt;Context effects abound in perception, and so they also surface in speech perception. People interpret speech sounds differently depending on the surrounding speech rate, formants, and perceived pitch. But even non-acoustic aspects of the context are taken into account: people hear a sound differently depending on the talker&amp;rsquo;s gender, the talker&amp;rsquo;s hand gestures, one&amp;rsquo;s own preceding speech, and there&amp;rsquo;s even reports that a stuffed toy seen in the background can change what you hear (&lt;a href=&#34;https://www.degruyter.com/document/doi/10.1515/ling.2010.027/html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hay &amp;amp; Drager, 2010&lt;/a&gt;). All these phenomena together shape human speech perception. So if we want Automatic Speech Recognition (the Siri&amp;rsquo;s, Cortana&amp;rsquo;s, and Alexa&amp;rsquo;s of this world) to approach human-like behavior, we need to know each and every aspect that defines what words we (think we) hear. Oh, and apparently it also helps extraterrestrial communication.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -460,6 +477,8 @@
 
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -559,6 +578,8 @@
 
 
 
+
+
   
 
 
@@ -576,6 +597,8 @@
 &lt;p&gt;You&amp;rsquo;ll probably have no problem understanding the same digits when it&amp;rsquo;s compressed by a factor of 2 (i.e., twice as fast)&amp;hellip;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;496-0356&lt;/em&gt; &amp;ndash; compressed by 2
+
+
 
 
 
@@ -605,6 +628,8 @@
 
 
 
+
+
   
 
 
@@ -628,6 +653,8 @@
 
 
 
+
+
   
 
 
@@ -645,6 +672,8 @@
 &lt;p&gt;Or even by 5?&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;496-0356&lt;/em&gt; &amp;ndash; compressed by 5
+
+
 
 
 
@@ -677,6 +706,8 @@
 
 
 
+
+
   
 
 
@@ -695,6 +726,8 @@
 &lt;p&gt;Now let&amp;rsquo;s chop this clip up into short snippets of 66 ms (&amp;ldquo;packages&amp;rdquo;, cf. top panel in the figure at the top of this page) and space them apart by 100 ms (i.e., inserting silent intervals). This brings the package rate down to around 6 Hz. &lt;strong&gt;Can your brain keep up with that?&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;496-0356&lt;/em&gt; &amp;ndash; repackaged
+
+
 
 
 
@@ -724,6 +757,8 @@
 
 
 
+
+
   
 
 
@@ -744,6 +779,8 @@
 &lt;/details&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;And what about this one?&lt;/p&gt;
+
+
 
 
 
@@ -777,6 +814,8 @@
 
 
 
+
+
   
 
 
@@ -796,6 +835,8 @@
   &lt;p&gt;&lt;em&gt;0723&lt;/em&gt;&lt;/p&gt;
 &lt;/details&gt;
 &lt;/blockquote&gt;
+
+
 
 
 
@@ -826,6 +867,8 @@
 &lt;p&gt;This phenomenon can tell us something about what acoustic aspects support speech intelligibility. If we know what aspects of speech are critical for proper intelligibility, then that knowledge would be helpful, for instance, (i) for speech synthesizers, such as Automatic Announcement Systems in public transport, to generate speech signals that human listeners can understand well, (ii) for hearing aids to &amp;rsquo;enrich&amp;rsquo; incoming speech signals and present those optimized signals to the listening brain, or (iii) for communication with the elderly who often experience difficulty with speech perception, especially in noise.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -939,6 +982,8 @@
 
 
 
+
+
   
 
 
@@ -953,6 +998,8 @@
 &lt;/audio&gt;
 
 &lt;strong&gt;MALE ALEXA&lt;/strong&gt;
+
+
 
 
 
@@ -978,6 +1025,8 @@
 &lt;/ul&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;GOOGLE/ALEXA MIX&lt;/strong&gt;
+
+
 
 
 
@@ -1023,6 +1072,8 @@
 
 
 
+
+
   
 
 
@@ -1032,6 +1083,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/cocktail-party/itd.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-5&#34;&gt;
   &lt;summary&gt;&lt;em&gt;But I unexpectedly hear the talkers in the wrong locations!&lt;/em&gt;&lt;/summary&gt;
   &lt;p&gt;If you do hear the difference between the two clips in the video, but you incorrectly hear the female talker &lt;em&gt;on the right&lt;/em&gt; and the male talker &lt;em&gt;on your left&lt;/em&gt; in the second clip, perhaps you&amp;rsquo;re wearing your headphones &amp;rsquo;the wrong way around&amp;rsquo;&amp;hellip;?!? (with L in your right ear, and vice versa?)&lt;/p&gt;
@@ -1048,6 +1100,8 @@
 &lt;p&gt;Speech perception is presumably the hardest in noisy listening conditions. Even if we manage to understand what our interlocutor is trying to say in the midst of all the other speech, it takes our brain considerable effort and resources to do so. Knowing which acoustic and visual cues help humans &amp;rsquo;tune in&amp;rsquo; to talkers (such as rhythm; Bosker &amp;amp; Cooke, &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jasa&#34;&gt;2018&lt;/a&gt;; &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-jasa&#34;&gt;2020&lt;/a&gt;) can inspire innovations in hearing aid technology and telephony. Likewise, knowing which acoustic aspects are hard to ignore for listeners (i.e., &amp;lsquo;immune&amp;rsquo; to selective attention, such as speech rate; Bosker et al., &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-scirep&#34;&gt;2020a&lt;/a&gt;; &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2020-app&#34;&gt;2020b&lt;/a&gt;) can motivate signal processing algorithms that aim to filter these acoustic properties from unattended talkers.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -1150,6 +1204,8 @@
 
 
 
+
+
   
 
 
@@ -1232,6 +1288,8 @@
 
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -1333,6 +1391,8 @@
 
 
 
+
+
   
 
 
@@ -1406,6 +1466,8 @@
 
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -1517,6 +1579,8 @@
 
 
 
+
+
   
 
 
@@ -1526,8 +1590,11 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/visual-world-paradigm/vwp_fluent.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;Do you have any idea what the next word of the speaker will be? Probably not, right? Did you notice anything particular about where in the display your gaze was at? Since you probably didn&amp;rsquo;t know what object the speaker was going to name, chances are your eyes were all over the place.&lt;/p&gt;
 &lt;p&gt;OK, next video. It&amp;rsquo;s the same display, but with a new audio recording. Have a look and see if you can tell which of the four objects the speaker selects&amp;hellip;&lt;/p&gt;
+
+
 
 
 
@@ -1546,10 +1613,13 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/visual-world-paradigm/vwp_disfluent.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;Well, in this case, you may already have a slight hunch, right? The speaker was hesitating at the end of her utterance, wasn&amp;rsquo;t she? Well, chances are this native speaker of British English won&amp;rsquo;t have much trouble naming common objects, like lion, ear, or bike, would she? So could it be that she&amp;rsquo;ll refer to the Italian moka pot in the top left?&lt;/p&gt;
 &lt;h2 id=&#34;disfluencies-help-you-predict-whats-coming-up&#34;&gt;Disfluencies help you predict what&amp;rsquo;s coming up&lt;/h2&gt;
 &lt;p&gt;Natural speech is messy. We stumble over words, lose our line of thought, and produce tons of uhm&amp;rsquo;s and uh&amp;rsquo;s. Still, these kinds of &lt;em&gt;disfluencies&lt;/em&gt; don&amp;rsquo;t occur randomly throughout an utterance. We are much more likely to stumble before rarely occurring (low-frequency), novel (not mentioned before), and complex (long) words than we are before common and simple words.&lt;/p&gt;
 &lt;p&gt;Interestingly, human listeners seem to be aware of this. In our experiments, we presented listeners with displays like the ones above together with spoken instructions to click on one of the objects. While people were watching/listening, we recorded where they were looking on the screen using eye-tracking (see lab photo below). This allowed us to track their gaze on a millisecond time scale as the utterance unfolds. Results showed that &lt;strong&gt;when people heard the speaker hesitate, they were much more likely to look at a low-frequency object, like moka pot, compared to high-frequency objects&lt;/strong&gt; (&lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2014-jml&#34;&gt;Bosker et al., 2014&lt;/a&gt;).&lt;/p&gt;
+
+
 
 
 
@@ -1572,8 +1642,11 @@
   &lt;/div&gt;&lt;figcaption&gt;
       Eye-tracking lab at the MPI. (C) Max-Planck-Gesellschaft, &lt;a href=&#34;https://www.mpi.nl/page/mpi-labs&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.mpi.nl/page/mpi-labs&lt;/a&gt;
     &lt;/figcaption&gt;&lt;/figure&gt;
+
 &lt;h2 id=&#34;ok-lets-try-again&#34;&gt;OK, let&amp;rsquo;s try again&amp;hellip;&lt;/h2&gt;
 &lt;p&gt;Here&amp;rsquo;s another video, again with the same display, but another audio recording. Once again, have a listen and see if you can tell which object the speaker will name:&lt;/p&gt;
+
+
 
 
 
@@ -1592,8 +1665,11 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/visual-world-paradigm/vwp_li.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;In the last few milliseconds of the clip, you may have discovered a glimpse of the object. Did she say &amp;ldquo;Now press the button for the li-&amp;hellip;&amp;rdquo;? Does that mean we&amp;rsquo;ve finally figured out that it&amp;rsquo;ll be the lion after all?&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s find out:&lt;/p&gt;
+
+
 
 
 
@@ -1612,6 +1688,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/visual-world-paradigm/vwp_like.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;&lt;em&gt;Aargh!&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;filler-words-can-be-misleading&#34;&gt;Filler words can be misleading&lt;/h2&gt;
 &lt;p&gt;As mentioned before, speech is messy. We don&amp;rsquo;t only produce hesitations and disfluencies, but also litter our speech with seemingly meaningless filler words, such as &amp;lsquo;you know&amp;rsquo;, &amp;lsquo;well&amp;rsquo;, and (worst of all) &amp;rsquo;like&amp;rsquo;. Our audience, in turn, is tasked with distilling from this chaos what we actually want to communicate.&lt;/p&gt;
@@ -1620,6 +1697,8 @@
 &lt;p&gt;Eye-tracking can reveal the time-course of speech processing. It allows tracking people&amp;rsquo;s gaze with millisecond precision, often without participants themselves being aware of their own looking behavior. As such, it can show &lt;em&gt;when in time&lt;/em&gt; certain acoustic and/or visual cues influence speech perception. That kind of temporal information has for instance been used to discriminate between different models of word recognition.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -1722,6 +1801,8 @@
 
 
 
+
+
   
 
 
@@ -1814,6 +1895,8 @@
 
 
 
+
+
   
 
 
@@ -1828,9 +1911,9 @@
 
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/marjolein-van-os/&#34;&gt;Marjolein van Os,&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/marjolein-van-os/&#34;&gt;Marjolein Van Os,&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/rik-does/&#34;&gt;Rik Does&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje Van Bergen&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2019).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2019-jml/&#34;&gt;Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension&lt;/a&gt;.
@@ -1907,6 +1990,8 @@
 
 
 
+
+
   
 
 
@@ -1921,7 +2006,7 @@
 
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje Van Bergen&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2018).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jml/&#34;&gt;Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’&lt;/a&gt;.
@@ -1990,6 +2075,8 @@
 
 
 
+
+
   
 
 
@@ -2006,7 +2093,7 @@
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hugo-quene/&#34;&gt;Hugo Quené&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/ted-sanders/&#34;&gt;Ted Sanders&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/nivja-h.-de-jong/&#34;&gt;Nivja H. de Jong&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/nivja-h.-de-jong/&#34;&gt;Nivja H. De Jong&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2014).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2014-jml/&#34;&gt;Native ‘um’s elicit prediction of low-frequency referents, but non-native ‘um’s do not&lt;/a&gt;.
@@ -2082,6 +2169,8 @@
 
 
 
+
+
   
 
 
@@ -2106,6 +2195,8 @@
 
 
 
+
+
   
 
 
@@ -2118,6 +2209,8 @@
 &lt;audio controls &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S4.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
+
+
 
 
 
@@ -2144,6 +2237,8 @@
 
 
 
+
+
   
 
 
@@ -2156,6 +2251,8 @@
 &lt;audio controls &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S6.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
+
+
 
 
 
@@ -2182,6 +2279,8 @@
 
 
 
+
+
   
 
 
@@ -2201,6 +2300,8 @@
 
 
 
+
+
   
 
 
@@ -2213,6 +2314,8 @@
 &lt;audio controls &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/laurel-yanny/Audio%20S9.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
+
+
 
 
 
@@ -2256,6 +2359,8 @@
 
 
 
+
+
   
 
 
@@ -2272,6 +2377,8 @@
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;Low-pass&lt;/strong&gt; filtered telephone number + Laurel/Yanny
+
+
 
 
 
@@ -2309,6 +2416,8 @@
 &lt;p&gt;These social media phenomena are great examples of how &lt;em&gt;our perception of the world is strongly context-dependent&lt;/em&gt;. What we perceive is &lt;em&gt;not&lt;/em&gt; wholly determined by the input signal alone, but also by the context in which the signal is perceived, including the sounds heard previously, our prior expectations, who is talking, etc. etc. As such, they highlight the subtle intricacies of human perception.&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -2421,6 +2530,8 @@
 
 
 
+
+
   
 
 
@@ -2455,6 +2566,8 @@
 
 
 
+
+
   
 
 
@@ -2464,7 +2577,10 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;Why thank you! OK, now let&amp;rsquo;s do this again. Make sure to &lt;strong&gt;keep wearing your headphones&lt;/strong&gt;, play the next video, and read out the sentence aloud.&lt;/p&gt;
+
+
 
 
 
@@ -2483,6 +2599,7 @@
 &lt;video controls  &gt;
   &lt;source src=&#34;https://hrbosker.github.io/demos/lombard-speech/lombard_test_noise.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
+
 &lt;p&gt;&lt;em&gt;Surprise!&lt;/em&gt;&lt;/p&gt;
 &lt;h2 id=&#34;whats-going-on&#34;&gt;What&amp;rsquo;s going on?&lt;/h2&gt;
 &lt;p&gt;Perhaps you noticed your voice sounding somewhat different the second time, when there was loud babble from 16 other talkers playing in your ears, compared to the first time (in quiet). This phenomenon is called &lt;strong&gt;Lombard speech&lt;/strong&gt; (or: &lt;em&gt;Lombard effect&lt;/em&gt;; &lt;em&gt;Lombard reflex&lt;/em&gt;). It&amp;rsquo;s the type of speech people produce when speaking in noise.&lt;/p&gt;
@@ -2490,6 +2607,8 @@
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;PLAIN SPEECH&lt;/strong&gt;
+
+
 
 
 
@@ -2512,6 +2631,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;LOMBARD SPEECH&lt;/strong&gt;
+
+
 
 
 
@@ -2550,6 +2671,8 @@
 
 
 
+
+
   
 
 
@@ -2566,6 +2689,8 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;LOMBARD SPEECH in BABBLE&lt;/strong&gt; (SNR = -6 dB)
+
+
 
 
 
@@ -2592,6 +2717,8 @@
 &lt;p&gt;Lombard speech is more intelligible in noise than plain speech. This means that speech researchers can &amp;lsquo;borrow&amp;rsquo; acoustic aspects of Lombard speech to boost speech intelligibility, for instance in hearing aids. So next time you wanna make sure your message comes across in that busy bar, you&amp;rsquo;d better boost your F0, raise your spectral tilt, and increase your vowel dispersion; got it?!&lt;/p&gt;
 &lt;h2 id=&#34;relevant-papers&#34;&gt;Relevant papers&lt;/h2&gt;
 &lt;blockquote&gt;
+
+
 
 
 
@@ -2675,6 +2802,8 @@
 
 &lt;/blockquote&gt;
 &lt;blockquote&gt;
+
+
 
 
 

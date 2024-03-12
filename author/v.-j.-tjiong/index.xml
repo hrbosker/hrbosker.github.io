@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/author/v.-j.-tjiong/</link>
       <atom:link href="https://hrbosker.github.io/author/v.-j.-tjiong/index.xml" rel="self" type="application/rss+xml" />
     <description>V. J. Tjiong</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>V. J. Tjiong</title>
@@ -17,7 +17,9 @@
       <link>https://hrbosker.github.io/publication/bosker-etal-2015/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2015/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;

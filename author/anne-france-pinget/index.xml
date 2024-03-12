@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/author/anne-france-pinget/</link>
       <atom:link href="https://hrbosker.github.io/author/anne-france-pinget/index.xml" rel="self" type="application/rss+xml" />
     <description>Anne-France Pinget</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Anne-France Pinget</title>
@@ -18,6 +18,8 @@
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/pinget-etal-2014-lt/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -45,6 +47,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2013-lt/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

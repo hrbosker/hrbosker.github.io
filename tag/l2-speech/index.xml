@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>L2 speech | SPEAC | Hans Rutger Bosker</title>
+    <title>L2 Speech | SPEAC | Hans Rutger Bosker</title>
     <link>https://hrbosker.github.io/tag/l2-speech/</link>
       <atom:link href="https://hrbosker.github.io/tag/l2-speech/index.xml" rel="self" type="application/rss+xml" />
-    <description>L2 speech</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <description>L2 Speech</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
-      <title>L2 speech</title>
+      <title>L2 Speech</title>
       <link>https://hrbosker.github.io/tag/l2-speech/</link>
     </image>
     
@@ -18,6 +18,8 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2017-frontiers/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 

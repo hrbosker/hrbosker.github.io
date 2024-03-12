@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 12, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -8,7 +10,7 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
   
 
   
@@ -23,6 +25,20 @@
 
 
 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -40,46 +56,20 @@
 
   
   
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Hans Rutger Bosker" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/annotate/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
 
   
   
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
 
   
   
   
     
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -89,13 +79,6 @@
       
       
     
-    
-    
-
-    
-    
-    
-      
     
     
 
@@ -194,22 +177,6 @@
 
       
       
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
         
       
 
@@ -238,39 +205,13 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
-
   
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
 
   
   
   
 
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/annotate/" />
-
-  
   
   
   
@@ -280,41 +221,146 @@
   
     
     
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/annotate/" />
-  <meta property="og:title" content="Annotate | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
-    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
-
-
-
-  
-
-  
-
   
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/annotate/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/scripts/annotate/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/scripts/annotate/" />
+<meta property="og:title" content="Annotate | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
   <title>Annotate | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -329,7 +375,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
 
   
 
@@ -373,8 +419,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -389,7 +439,7 @@
   
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -639,6 +689,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -677,6 +728,7 @@
   <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
         
           Scripts
         
@@ -793,6 +845,17 @@
     <div class="d-none d-xl-block col-xl-2 docs-toc">
       
 
+
+
+
+
+
+
+
+
+
+
+
       <ul class="nav toc-top">
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
@@ -800,273 +863,300 @@
       <nav id="TableOfContents"></nav>
 
       
+
+
+
+
+
+
+
+
+
+
+
     </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
-      <article class="article">
+      <div class="docs-article-container">
+        
+      </div>
 
-        <div class="docs-article-container">
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Annotate</h1>
+
+        <article class="article-style">
+
+          
           
 
-          <h1>Annotate</h1>
-
-          <div class="article-style">
-            <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
+          <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
 <p>Moreover, the script keeps track of who annotated what, can continue where you left off yesterday, allows users to enter comments about their annotations, and blinds file names to avoid human annotation biases. The script can be updated to present new empty TextGrids (instead of any pre-existing ones, in case you only have .wav files) or to automatically perform changes to TextGrid tiers/intervals before presenting them for manual annotation.</p>
 <blockquote>
 <p>You can also <a href="../annotate.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<pre tabindex="0"><code>################################################################################
-### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
-### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10
-### License: CC BY-NC 4.0
-################################################################################
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@ru.nl</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script reads a directory containing sound files with pre-existing TextGrids,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	for instance resulting from a forced aligner (e.g., WebMAUS or EasyAlign).</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	IMPORTANT: Every Sound should have a pre-existing TextGrid file **with the same name**!</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	It opens every Sound + Textgrid combination, presents it to the user for editing,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	allows the user to enter comments about the annotations, and then saves the</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	edited TextGrid with &#34;_edited&#34; suffix in the subfolder &#39;edited_textgrids&#39;.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	User comments are tracked in the file &#39;annotation_log.txt&#39; in the same subfolder.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; If you **do not** yet have pre-existing TextGrids (i.e., only sound files),	&lt;&lt;&lt;&lt;&lt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; you can adjust the script to read all .wav files, create new empty TextGrids,	&lt;&lt;&lt;&lt;&lt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; and present those for editing and saving...									&lt;&lt;&lt;&lt;&lt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; See the line with &#34;CREATE EMPTY TEXTGRIDS&#34;									&lt;&lt;&lt;&lt;&lt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script can be run by multiple users simultaneously, for instance when</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   multiple annotators are working on the same shared folder. It keeps track</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   of what files have already been edited: it only presents TextGrids for editing</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   that do not yet have an &#34;_edited&#34; version pre-existing in the subfolder.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   This also means that users can close the script or Praat at anytime</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   without losing data. Then, next time someone runs the script, it will</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   start with the files that are &#39;left over&#39; from the previous run.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	NOTE: This checking of which files already exist can slow the script down</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	when working with folders with &gt;5000 files...</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; At present, the script **only** presents pre-existing tiers and intervals</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   for editing (e.g., adding boundaries, dragging boundaries around, etc.).</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   This script can be augmented by automatically adding tiers or intervals</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   before the TextGrid is presented for editing, so users can annotate</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   new tiers/intervals. See the line with &#34;ADD/REMOVE TIERS HERE&#34;.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Variables you will definitely need to customize:</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Where can the Sound and TextGrid files be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Do you want to use &#39;blinded&#39; objects in Praat to avoid human biases in annotation?</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Default value: &#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Change to &#34;no&#34; if you want to use original object names.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">blinded</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Before we start, let&#39;s check whether you&#39;ve entered sensible</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### input for the variables above...</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the input directory exists.</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_in</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
+</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Let&#39;s also check whether a subfolder with edited TextGrids already exists,</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## for instance when the script has been run and exited before.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_in</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/edited_textgrids/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the subfolder exists&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">subfolderfile_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">subfolderfile_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the subfolder already exists.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
+</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="c1"># if it didn&#39;t yet exist, let&#39;s create the subfolder</span>
+</span></span><span class="line"><span class="cl">	<span class="n">createFolder</span><span class="p">:</span> <span class="s2">&#34;&#39;dir_in$&#39;/edited_textgrids&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#################################    SCRIPT    #################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Let&#39;s keep track of who annotated which file. This can be helpful when</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## multiple annotators run the same script on the same shared folder.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">beginPause</span><span class="p">:</span> <span class="s2">&#34;Please enter your name:&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;annotator&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">clicked</span> <span class="o">=</span> <span class="n">endPause</span><span class="p">:</span> <span class="s2">&#34;Next&#34;</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Now we create a list of TextGrid files in the input directory:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Create</span> <span class="n">Strings</span> <span class="n">as</span> <span class="n">file</span> <span class="n">list</span><span class="p">:</span> <span class="s2">&#34;list_of_files&#34;</span><span class="p">,</span> <span class="s2">&#34;&#39;dir_in$&#39;/*.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">#######################################################################################</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## CREATE EMPTY TEXTGRIDS</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">########################</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## If you do not yet have pre-existing TextGrids (but a folder with only sound files instead),</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## you can read the sound files in the directory and create empty TextGrids for the user</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## to edit.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## Adjust this script as follows:</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## - Change *.TextGrid to *.wav in the line above.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## - Change *.TextGrid to *.wav in the line below starting with &#34;extposition$&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## - Replace this line: Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">##		with this line: To TextGrid: &#34;manual&#34;, &#34;&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">#######################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">nfiles</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">strings</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">nfiles</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">The</span> <span class="n">directory</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">contain</span> <span class="n">any</span> <span class="n">TextGrid</span> <span class="n">files</span><span class="o">.</span>
+</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## By randomizing this file list, it allows for multiple users to simultanously work</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## on the same folder without overwriting previous annotations. It also reduces the risk</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## of human biases in annotations (e.g., annotator fatigue affecting one condition more</span>
+</span></span><span class="line"><span class="cl"><span class="c1">## than another condition).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Randomize</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## Now we&#39;ll loop through the list and present individual files...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="s1">&#39;nfiles&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Strings</span> <span class="n">list_of_files</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="n">fileplusext</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">string</span><span class="o">...</span> <span class="s1">&#39;i&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">extposition</span> <span class="o">=</span> <span class="n">index</span><span class="p">(</span><span class="n">fileplusext</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;.TextGrid&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="n">name</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">fileplusext</span><span class="o">$</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;extposition&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="n">outname</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;&#39;name$&#39;_edited&#34;</span>
+</span></span><span class="line"><span class="cl">	<span class="n">fulloutname</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;&#39;dir_in$&#39;/edited_textgrids/&#39;outname$&#39;.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	<span class="c1">## Let&#39;s check if an &#34;_edited&#34; version already exists.</span>
+</span></span><span class="line"><span class="cl">	<span class="c1">## The script only presents those files for editing that do not yet have been edited before.</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	<span class="n">editedfile_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">fulloutname</span><span class="o">$</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">editedfile_exists_yesno</span>
+</span></span><span class="line"><span class="cl">		<span class="n">do_nothing</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">	<span class="k">else</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="o">.</span><span class="n">wav</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">blinded</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">Rename</span><span class="o">...</span> <span class="n">current_Sound</span>
+</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
+</span></span><span class="line"><span class="cl">		<span class="n">sound_name</span><span class="o">$</span> <span class="o">=</span> <span class="n">selected</span><span class="o">$</span><span class="p">(</span><span class="s2">&#34;Sound&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## If a filename contains spaces, Praat replaces these spaces with underscores.</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## Example: &#34;file number 1.wav&#34; in a given folder becomes</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">##			&#34;file_number_1.wav&#34; in the Praat object window.</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## Therefore, it is important **not** to use a filename variable (here: &#39;name$&#39;)</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## in &#39;selecting commands&#39; in Praat, like &#39;select&#39; and &#39;plus&#39;!</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## Better still: do not use spaces in filenames!</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
+</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">blinded</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">Rename</span><span class="o">...</span> <span class="n">current_TextGrid</span>
+</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
+</span></span><span class="line"><span class="cl">		<span class="n">tg_name</span><span class="o">$</span> <span class="o">=</span> <span class="n">selected</span><span class="o">$</span><span class="p">(</span><span class="s2">&#34;TextGrid&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="c1">#######################################################################################</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## ADD/REMOVE TIERS HERE</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">########################</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## This is where we you could adjust the script to automatically add/remove tiers</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## and/or automatically adjust intervals (setting them to the nearest zero crossings?).</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## Duplicating tiers can be helpful when you want to view original vs. manually edited</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## tiers below/above each other in one and the same edited TextGrid.</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## Example:</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## &gt; Duplicate tier... 1 1 newtier</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">## [ARGUMENTS: position_of_tier_to_duplicate position_for_new_tier name_of_new_tier]</span>
+</span></span><span class="line"><span class="cl">		<span class="c1">#######################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">Sound</span> <span class="s1">&#39;sound_name$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Edit</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">beginPause</span><span class="p">:</span> <span class="s2">&#34;Please check and edit this TextGrid.&#34;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Please check and edit the annotations.&#34;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;Comments&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">clicked</span> <span class="o">=</span> <span class="n">endPause</span><span class="p">:</span> <span class="s2">&#34;Next&#34;</span><span class="p">,</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">		<span class="n">editor</span> <span class="n">TextGrid</span> <span class="s1">&#39;tg_name$&#39;</span>
+</span></span><span class="line"><span class="cl">			<span class="n">Close</span>
+</span></span><span class="line"><span class="cl">		<span class="n">endeditor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">TextGrid</span> <span class="s1">&#39;tg_name$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Write</span> <span class="n">to</span> <span class="n">text</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;fulloutname$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">Sound</span> <span class="s1">&#39;sound_name$&#39;</span>
+</span></span><span class="line"><span class="cl">		<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		<span class="n">appendFileLine</span><span class="p">:</span> <span class="s2">&#34;&#39;dir_in$&#39;/edited_textgrids/annotation_log.txt&#34;</span><span class="p">,</span> <span class="n">annotator</span><span class="o">$</span><span class="p">,</span> <span class="n">tab</span><span class="o">$</span><span class="p">,</span> <span class="n">name</span><span class="o">$</span><span class="p">,</span> <span class="n">tab</span><span class="o">$</span><span class="p">,</span> <span class="n">comments</span><span class="o">$</span>
+</span></span><span class="line"><span class="cl">	<span class="n">endif</span>
+</span></span><span class="line"><span class="cl"><span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Strings</span> <span class="n">list_of_files</span>
+</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span></code></pre></div>
 
-	###&gt;&gt; This script reads a directory containing sound files with pre-existing TextGrids,
-	###&gt;&gt;	for instance resulting from a forced aligner (e.g., WebMAUS or EasyAlign).
-	###&gt;&gt;	IMPORTANT: Every Sound should have a pre-existing TextGrid file **with the same name**!
-	###&gt;&gt;	It opens every Sound + Textgrid combination, presents it to the user for editing,
-	###&gt;&gt;	allows the user to enter comments about the annotations, and then saves the
-	###&gt;&gt;	edited TextGrid with &#34;_edited&#34; suffix in the subfolder &#39;edited_textgrids&#39;.
-	###&gt;&gt;	User comments are tracked in the file &#39;annotation_log.txt&#39; in the same subfolder.
-	###&gt;&gt;	
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; If you **do not** yet have pre-existing TextGrids (i.e., only sound files),	&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; you can adjust the script to read all .wav files, create new empty TextGrids,	&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; and present those for editing and saving...									&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;	&gt;&gt;&gt;&gt;&gt; See the line with &#34;CREATE EMPTY TEXTGRIDS&#34;									&lt;&lt;&lt;&lt;&lt;
-	###&gt;&gt;
-	###&gt;&gt; This script can be run by multiple users simultaneously, for instance when
-	###&gt;&gt;   multiple annotators are working on the same shared folder. It keeps track
-	###&gt;&gt;   of what files have already been edited: it only presents TextGrids for editing
-	###&gt;&gt;   that do not yet have an &#34;_edited&#34; version pre-existing in the subfolder.
-	###&gt;&gt;   This also means that users can close the script or Praat at anytime
-	###&gt;&gt;   without losing data. Then, next time someone runs the script, it will
-	###&gt;&gt;   start with the files that are &#39;left over&#39; from the previous run.
-	###&gt;&gt;	NOTE: This checking of which files already exist can slow the script down
-	###&gt;&gt;	when working with folders with &gt;5000 files...
-	###&gt;&gt;
-	###&gt;&gt; At present, the script **only** presents pre-existing tiers and intervals
-	###&gt;&gt;   for editing (e.g., adding boundaries, dragging boundaries around, etc.).
-	###&gt;&gt;   This script can be augmented by automatically adding tiers or intervals
-	###&gt;&gt;   before the TextGrid is presented for editing, so users can annotate
-	###&gt;&gt;   new tiers/intervals. See the line with &#34;ADD/REMOVE TIERS HERE&#34;.
+        </article>
 
-################################################################################
-### Variables you will definitely need to customize:
-################################################################################
-
-### Where can the Sound and TextGrid files be found?
-
-dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
-
-### Do you want to use &#39;blinded&#39; objects in Praat to avoid human biases in annotation?
-### Default value: &#34;yes&#34;
-### Change to &#34;no&#34; if you want to use original object names.
-
-blinded$ = &#34;yes&#34;
+        
 
 
 
 
 
-################################################################################
-### Before we start, let&#39;s check whether you&#39;ve entered sensible
-### input for the variables above...
-################################################################################
-
-### Let&#39;s check if the input directory exists.
-### This script will throw an error if the directory doesn&#39;t exist
-### (i.e., it won&#39;t write to a mysterious temp directory).
-
-### First check whether the input directory ends in a backslash (if so, removed)
-
-if right$(dir_in$,1)=&#34;/&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-elsif right$(dir_in$,1)=&#34;\&#34;
-	dir_in$ = left$(dir_in$,length(dir_in$)-1)
-endif
-
-### Then create a temporary txt file in the folder
-### and try to write it to the input folder.
-
-### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
-### does *not* exist. We&#39;ll manually check whether the saving of this
-### temp txt file has succeeded or not further down below.
-
-temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
-
-### Can the file be found?
-
-file_exists_yesno = fileReadable(temp_filename$)
-
-if file_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the directory is valid.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-else
-	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
-	printline The folder &#39;dir_in$&#39; was not found
-	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
-endif
-
-## Let&#39;s also check whether a subfolder with edited TextGrids already exists,
-## for instance when the script has been run and exited before.
-
-temp_filename$ = dir_in$ + &#34;/edited_textgrids/&#34; + &#34;my_temporary_Praat_file.txt&#34;
-nocheck writeFileLine: temp_filename$, &#34;This is just to check if the subfolder exists&#34;
-
-### Can the file be found?
-
-subfolderfile_exists_yesno = fileReadable(temp_filename$)
-
-if subfolderfile_exists_yesno = 1
-	# if you *could* read that temp txt file,
-	# this confirms that the subfolder already exists.
-	# Then you can delete it.
-	deleteFile: temp_filename$
-else
-	# if it didn&#39;t yet exist, let&#39;s create the subfolder
-	createFolder: &#34;&#39;dir_in$&#39;/edited_textgrids&#34;
-endif
+        
 
 
 
-
-
-################################################################################
-################################################################################
-#################################    SCRIPT    #################################
-################################################################################
-################################################################################
-
-## Let&#39;s keep track of who annotated which file. This can be helpful when
-## multiple annotators run the same script on the same shared folder.
-
-beginPause: &#34;Please enter your name:&#34;
-	text: &#34;annotator&#34;, &#34;&#34;
-clicked = endPause: &#34;Next&#34;, 1
-
-## Now we create a list of TextGrid files in the input directory:
-
-Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.TextGrid&#34;
-
-	#######################################################################################
-	## CREATE EMPTY TEXTGRIDS
-	########################
-	## If you do not yet have pre-existing TextGrids (but a folder with only sound files instead),
-	## you can read the sound files in the directory and create empty TextGrids for the user
-	## to edit.
-	## Adjust this script as follows:
-	## - Change *.TextGrid to *.wav in the line above.
-	## - Change *.TextGrid to *.wav in the line below starting with &#34;extposition$&#34;
-	## - Replace this line: Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
-	##		with this line: To TextGrid: &#34;manual&#34;, &#34;&#34;
-	#######################################################################################
-
-nfiles = Get number of strings
-if nfiles = 0
-	exit The directory &#39;dir_in$&#39; does not contain any TextGrid files.
-endif
-
-## By randomizing this file list, it allows for multiple users to simultanously work
-## on the same folder without overwriting previous annotations. It also reduces the risk
-## of human biases in annotations (e.g., annotator fatigue affecting one condition more
-## than another condition).
-
-Randomize
-
-## Now we&#39;ll loop through the list and present individual files...
-
-for i from 1 to &#39;nfiles&#39;
-	select Strings list_of_files
-	
-	fileplusext$ = Get string... &#39;i&#39;
-	extposition = index(fileplusext$, &#34;.TextGrid&#34;)
-	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
-
-	outname$ = &#34;&#39;name$&#39;_edited&#34;
-	fulloutname$ = &#34;&#39;dir_in$&#39;/edited_textgrids/&#39;outname$&#39;.TextGrid&#34;
-
-	## Let&#39;s check if an &#34;_edited&#34; version already exists.
-	## The script only presents those files for editing that do not yet have been edited before.
-	
-	editedfile_exists_yesno = fileReadable(fulloutname$)
-	if editedfile_exists_yesno
-		do_nothing = 1
-	else
-		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
-		if blinded$ = &#34;yes&#34;
-			Rename... current_Sound
-		endif
-		sound_name$ = selected$(&#34;Sound&#34;)
-		## If a filename contains spaces, Praat replaces these spaces with underscores.
-		## Example: &#34;file number 1.wav&#34; in a given folder becomes
-		##			&#34;file_number_1.wav&#34; in the Praat object window.
-		## Therefore, it is important **not** to use a filename variable (here: &#39;name$&#39;)
-		## in &#39;selecting commands&#39; in Praat, like &#39;select&#39; and &#39;plus&#39;!
-		## Better still: do not use spaces in filenames!
-		
-		Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
-		if blinded$ = &#34;yes&#34;
-			Rename... current_TextGrid
-		endif
-		tg_name$ = selected$(&#34;TextGrid&#34;)
-
-		#######################################################################################
-		## ADD/REMOVE TIERS HERE
-		########################
-		## This is where we you could adjust the script to automatically add/remove tiers
-		## and/or automatically adjust intervals (setting them to the nearest zero crossings?).
-		## Duplicating tiers can be helpful when you want to view original vs. manually edited
-		## tiers below/above each other in one and the same edited TextGrid.
-		## Example:
-		## &gt; Duplicate tier... 1 1 newtier
-		## [ARGUMENTS: position_of_tier_to_duplicate position_for_new_tier name_of_new_tier]
-		#######################################################################################
-
-		plus Sound &#39;sound_name$&#39;
-		Edit
-
-		beginPause: &#34;Please check and edit this TextGrid.&#34;
-			comment: &#34;Please check and edit the annotations.&#34;
-			text: &#34;Comments&#34;, &#34;&#34;
-		clicked = endPause: &#34;Next&#34;, 1
-		
-		editor TextGrid &#39;tg_name$&#39;
-			Close
-		endeditor
-
-		select TextGrid &#39;tg_name$&#39;
-		Write to text file... &#39;fulloutname$&#39;
-		plus Sound &#39;sound_name$&#39;
-		Remove
-
-		appendFileLine: &#34;&#39;dir_in$&#39;/edited_textgrids/annotation_log.txt&#34;, annotator$, tab$, name$, tab$, comments$
-	endif
-endfor
-
-select Strings list_of_files
-Remove
-
-################################################################################
-# End of script
-################################################################################
-</code></pre>
-          </div>
-
+        
+        
+        <div class="article-widget">
           
-
-
-
-          
-          
-          <div class="article-widget">
-            
 <div class="post-nav">
   
   
@@ -1085,28 +1175,27 @@ Remove
   
 </div>
 
-          </div>
-          
         </div>
+        
+      </div>
 
-        <div class="body-footer">
-          <p>Last updated on Jan 1, 0001</p>
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
 
-          
-
-
-
-          
+        
 
 
 
 
-          
+        
 
 
-        </div>
 
-      </article>
+
+        
+
+
+      </div>
 
       <footer class="site-footer">
 
@@ -1114,14 +1203,27 @@ Remove
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1164,6 +1266,7 @@ Remove
 
 
 
+
   <p class="powered-by">
     
     
@@ -1174,7 +1277,7 @@ Remove
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1191,109 +1294,118 @@ Remove
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.b2240102cb8b24bcbe037562ce2ea60a.js"></script>
 
-      
-      
 
-      
 
-      
 
-    
+  
 
-    
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-    
+  
+  
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
-    <script>
-      anchors.add();
-    </script>
-    
+  
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.11e17bdd78ea3a0399cd799db7237725.js"></script>
 
-    
-    
-      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-    
-    
-    
-    
-      
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1304,7 +1416,8 @@ Remove
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1319,7 +1432,20 @@ Remove
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

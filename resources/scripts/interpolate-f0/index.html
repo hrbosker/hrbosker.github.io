@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="en-us" >
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: March 12, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -8,7 +10,7 @@
   
   
   
-    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
   
 
   
@@ -23,6 +25,20 @@
 
 
 
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -40,46 +56,20 @@
 
   
   
-  
-  
-  
-    
-    
-    
-  
-  
-
-  <meta name="author" content="Hans Rutger Bosker" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="This script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity." />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
 
   
   
 
   
 
-  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
 
   
   
   
     
     
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
     
 
     
@@ -89,13 +79,6 @@
       
       
     
-    
-    
-
-    
-    
-    
-      
     
     
 
@@ -194,22 +177,6 @@
 
       
       
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
         
       
 
@@ -238,39 +205,13 @@
   
   
   
-  <link rel="stylesheet" href="/css/wowchemy.6e5611e6b674485ee1cf93396460f76d.css" />
-
   
-
-
-
-  
-
-
-  
-
-
-  
-
-
-
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
 
   
   
   
 
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
-
-  
   
   
   
@@ -280,41 +221,146 @@
   
     
     
-  
-  
-
-  
-  
-    
-    
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
-  <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
-  <meta property="og:title" content="Interpolate F0 continuum | SPEAC | Hans Rutger Bosker" />
-  <meta property="og:description" content="This script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
-    <meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
   
 
   
-
-
-
-  
-
-  
-
   
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/scripts/interpolate-f0/" />
+<meta property="og:title" content="Interpolate F0 continuum | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
   <title>Interpolate F0 continuum | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
 </head>
 
 
@@ -329,7 +375,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.14a0ed61c6dbd594b9c75193b25be179.js"></script>
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
 
   
 
@@ -373,8 +419,12 @@
 
 
 
-  <div class="page-header">
-    
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
 
 
 
@@ -389,7 +439,7 @@
   
 
 
-<header class="header--fixed">
+<header>
   <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
     <div class="container-xl">
 
@@ -639,6 +689,7 @@
 
         
         
+        
         <li class="nav-item">
           <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
         </li>
@@ -677,6 +728,7 @@
   <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
         
           Scripts
         
@@ -793,6 +845,17 @@
     <div class="d-none d-xl-block col-xl-2 docs-toc">
       
 
+
+
+
+
+
+
+
+
+
+
+
       <ul class="nav toc-top">
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
@@ -800,295 +863,322 @@
       <nav id="TableOfContents"></nav>
 
       
+
+
+
+
+
+
+
+
+
+
+
     </div>
     
 
     <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
 
-      <article class="article">
+      <div class="docs-article-container">
+        
+      </div>
 
-        <div class="docs-article-container">
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Interpolate F0 continuum</h1>
+
+        <article class="article-style">
+
+          
           
 
-          <h1>Interpolate F0 continuum</h1>
-
-          <div class="article-style">
-            <p>This script creates an F0 continuum for two segmentally matching words (e.g., <em>SUBject</em> vs. <em>subJECT</em>). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.</p>
+          <p>This script creates an F0 continuum for two segmentally matching words (e.g., <em>SUBject</em> vs. <em>subJECT</em>). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.</p>
 <blockquote>
 <p>You can also <a href="../interpolate-F0.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<pre tabindex="0"><code>#____________________________________ HEADER __________________________________####
-# date:         31.01.2023, run in Praat 6.2.12 on Windows 11
-# author:       Ronny Bujok (adapted from Hans Rutger Bosker)
-# email:        Ronny.Bujok@mpi.nl
-# filename:     F0_stress continuum_interpolation.praat
-# project:      Audiovisual Perception of Lexical Stress
-# license:		CC BY-NC 4.0
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">#____________________________________ HEADER __________________________________####
+</span></span><span class="line"><span class="cl"># date:         31.01.2023, run in Praat 6.2.12 on Windows 11
+</span></span><span class="line"><span class="cl"># author:       Ronny Bujok (adapted from Hans Rutger Bosker)
+</span></span><span class="line"><span class="cl"># email:        Ronny.Bujok@mpi.nl
+</span></span><span class="line"><span class="cl"># filename:     F0_stress continuum_interpolation.praat
+</span></span><span class="line"><span class="cl"># project:      Audiovisual Perception of Lexical Stress
+</span></span><span class="line"><span class="cl"># license:		CC BY-NC 4.0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">####################################################################################################################
+</span></span><span class="line"><span class="cl"># This script takes recordings of segmentally identical, disyllabic minimal stress pairs with lexical stress on the first 
+</span></span><span class="line"><span class="cl"># (strong-weak; SW) or second (weak-strong; WS) syllable (e.g., VOORnaam vs. voorNAAM) and interpolates their F0-contours linearly. 
+</span></span><span class="line"><span class="cl"># The manipulated F0-contours are applied to the SW recording to create an F0-based lexical stress continuum.
+</span></span><span class="line"><span class="cl"># Duration and Intensity are set to mean, ambiguous values.
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># This script requires minimal pairs to match in their name. Stress pattern in input files is denoted with &#34;_sw&#34; or &#34;_ws&#34; 
+</span></span><span class="line"><span class="cl"># (e.g., voornaam_sw.wav &amp; voornaam_ws.wav). No other underscore characters are allowed.
+</span></span><span class="line"><span class="cl"># Textgrids for each recording are required, with boundaries at word onset, second syllable onset and word offset.
+</span></span><span class="line"><span class="cl">#
+</span></span><span class="line"><span class="cl"># Note that the parameters for pitch estimation are set to match a male voice. When working with a female voice,
+</span></span><span class="line"><span class="cl"># please adjust the arguments of the functions &#34;Lengthen (overlap-add)&#34; and &#34;To Manipulation&#34;.
+</span></span><span class="line"><span class="cl">####################################################################################################################
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Define input and output directory
+</span></span><span class="line"><span class="cl">input_directory$ = &#34;C:\input folder&#34;
+</span></span><span class="line"><span class="cl">output_directory$= &#34;C:\output folder&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># create file list of all files with the ending &#34;_sw.wav&#34; (just sound files, one per minimal pair (sw))
+</span></span><span class="line"><span class="cl">Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
+</span></span><span class="line"><span class="cl">n = Get number of strings
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># _________________________________ CREATE FILELIST ____________________________________________________
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># create list again because it removes itself after every iteration
+</span></span><span class="line"><span class="cl">for x from 1 to n
+</span></span><span class="line"><span class="cl">	Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># get only the word name without extension or stress identifier (sw or ws)
+</span></span><span class="line"><span class="cl">	select Strings list
+</span></span><span class="line"><span class="cl">	current_file$ = Get string... x
+</span></span><span class="line"><span class="cl">	idx = rindex (current_file$, &#34;_&#34;)
+</span></span><span class="line"><span class="cl">	word$ = left$(current_file$,idx-1)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#_____________________________________ DURATION ___________________________________________________________
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># To interpolate F0 contours, recordings must be of equal length. So duration must be manipulated first. 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#---------------------------------- get values from SW word ---------------------------------------------
+</span></span><span class="line"><span class="cl"># open SW word and convert to mono
+</span></span><span class="line"><span class="cl">		wavfile_sw$ = &#34;&#39;word$&#39;_sw&#34;
+</span></span><span class="line"><span class="cl">		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.Textgrid
+</span></span><span class="line"><span class="cl">		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.wav
+</span></span><span class="line"><span class="cl">		Convert to mono
+</span></span><span class="line"><span class="cl">		Rename: &#34;mono_sw&#34;
+</span></span><span class="line"><span class="cl">		wav_sw_id = selected()
+</span></span><span class="line"><span class="cl"># select the mono file and the corresponding textgrid and extract all intervals
+</span></span><span class="line"><span class="cl">		selectObject: &#34;TextGrid &#39;wavfile_sw$&#39;&#34;
+</span></span><span class="line"><span class="cl">		plusObject: &#34;Sound mono_sw&#34;
+</span></span><span class="line"><span class="cl">		Extract all intervals: 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl"># select the second interval (first syllable) and get the total duration and the intensity	
+</span></span><span class="line"><span class="cl">		select (wav_sw_id+2)  
+</span></span><span class="line"><span class="cl">		sw_dur1= Get total duration
+</span></span><span class="line"><span class="cl">		sw_int1= Get intensity (dB)
+</span></span><span class="line"><span class="cl">		Rename: &#34;sw_1&#34;
+</span></span><span class="line"><span class="cl"># select the third interval (second syllable) and get the total duration and the intensity		
+</span></span><span class="line"><span class="cl">		select (wav_sw_id+3)
+</span></span><span class="line"><span class="cl">		sw_dur2= Get total duration
+</span></span><span class="line"><span class="cl">		sw_int2= Get intensity (dB)
+</span></span><span class="line"><span class="cl">		Rename: &#34;sw_2&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># select and rename the first and last interval (silences) for future reference, to concatenate the final audio
+</span></span><span class="line"><span class="cl">		select (wav_sw_id+1)
+</span></span><span class="line"><span class="cl">		Rename: &#34;pre_silence_sw&#34;
+</span></span><span class="line"><span class="cl">		select (wav_sw_id+4)
+</span></span><span class="line"><span class="cl">		Rename: &#34;post_silence_sw&#34;
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">#---------------------------------- get values from WS word -----------------------------------------
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># open WS word and convert to mono		
+</span></span><span class="line"><span class="cl">		wavfile_ws$ = &#34;&#39;word$&#39;_ws&#34;
+</span></span><span class="line"><span class="cl">		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.Textgrid
+</span></span><span class="line"><span class="cl">		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.wav
+</span></span><span class="line"><span class="cl">		Convert to mono
+</span></span><span class="line"><span class="cl">		Rename: &#34;mono_ws&#34;
+</span></span><span class="line"><span class="cl">		wav_ws_id = selected()
+</span></span><span class="line"><span class="cl"># select the mono file and the corresponding textgrid and extract all intervals		
+</span></span><span class="line"><span class="cl">		selectObject: &#34;TextGrid &#39;wavfile_ws$&#39;&#34;
+</span></span><span class="line"><span class="cl">		plusObject: &#34;Sound mono_ws&#34;
+</span></span><span class="line"><span class="cl">		Extract all intervals: 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl"># select the second interval (first syllable) and get the total duration and the intensity			
+</span></span><span class="line"><span class="cl">		select (wav_ws_id+2)
+</span></span><span class="line"><span class="cl">		ws_dur1= Get total duration
+</span></span><span class="line"><span class="cl">		ws_int1= Get intensity (dB)
+</span></span><span class="line"><span class="cl">		Rename: &#34;ws_1&#34;	
+</span></span><span class="line"><span class="cl"># select the third interval (second syllable) and get the total duration and the intensity		
+</span></span><span class="line"><span class="cl">		select (wav_ws_id+3)
+</span></span><span class="line"><span class="cl">		ws_dur2= Get total duration
+</span></span><span class="line"><span class="cl">		ws_int2= Get intensity (dB)
+</span></span><span class="line"><span class="cl">		Rename: &#34;ws_2&#34;	
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#---------------------------------- Manipulate duration ------------------------------------------
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Set the duration of syllable 1 of the SW word to the average, ambiguous duration
+</span></span><span class="line"><span class="cl">		select Sound sw_1
+</span></span><span class="line"><span class="cl">		targetdur_1 = ((sw_dur1+ws_dur1)/2)
+</span></span><span class="line"><span class="cl">		Lengthen (overlap-add)... 75 250 (targetdur_1/sw_dur1)
+</span></span><span class="line"><span class="cl">		Rename: &#34;sw_1_durmatched&#34;			
+</span></span><span class="line"><span class="cl"># Set the duration of syllable 2 of the SW word to the average, ambiguous duration
+</span></span><span class="line"><span class="cl">        select Sound sw_2
+</span></span><span class="line"><span class="cl">		targetdur_2 = ((sw_dur2+ws_dur2)/2)
+</span></span><span class="line"><span class="cl">		Lengthen (overlap-add)... 75 250 (targetdur_2/sw_dur2)
+</span></span><span class="line"><span class="cl">		Rename: &#34;sw_2_durmatched&#34;	
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl"># Set the duration of syllable 1 of the WS word to the average, ambiguous duration
+</span></span><span class="line"><span class="cl">        select Sound ws_1
+</span></span><span class="line"><span class="cl">		Lengthen (overlap-add)... 75 250 (targetdur_1/ws_dur1)
+</span></span><span class="line"><span class="cl">		Rename: &#34;ws_1_durmatched&#34;		
+</span></span><span class="line"><span class="cl"># Set the duration of syllable 2 of the WS word to the average, ambiguous duration
+</span></span><span class="line"><span class="cl">        select Sound ws_2
+</span></span><span class="line"><span class="cl">		Lengthen (overlap-add)... 75 250 (targetdur_2/ws_dur2)
+</span></span><span class="line"><span class="cl">		Rename: &#34;ws_2_durmatched&#34;
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Concatenate duration-manipulated SW word
+</span></span><span class="line"><span class="cl">		select Sound sw_1_durmatched
+</span></span><span class="line"><span class="cl">		plusObject: &#34;Sound sw_2_durmatched&#34;
+</span></span><span class="line"><span class="cl">		Concatenate recoverably
+</span></span><span class="line"><span class="cl">		select Sound chain
+</span></span><span class="line"><span class="cl">		Rename: &#34;durmatched_sw&#34;
+</span></span><span class="line"><span class="cl"># Concatenate duration-manipulated WS word
+</span></span><span class="line"><span class="cl">        select Sound ws_1_durmatched
+</span></span><span class="line"><span class="cl">		plusObject: &#34;Sound ws_2_durmatched&#34;
+</span></span><span class="line"><span class="cl">		Concatenate recoverably
+</span></span><span class="line"><span class="cl">		select Sound chain
+</span></span><span class="line"><span class="cl">		Rename: &#34;durmatched_ws&#34;
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl"># save TextGrid with the boundary between the syllables. Necessary for intensity manipulation
+</span></span><span class="line"><span class="cl">		select TextGrid chain
+</span></span><span class="line"><span class="cl">		Rename: &#34;syl_boundary&#34;
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">#__________________________________________ F0 INTERPOLATION ________________________________________________
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Extract the pitch tiers
+</span></span><span class="line"><span class="cl">		select Sound durmatched_sw
+</span></span><span class="line"><span class="cl">		s1_dur = Get total duration
+</span></span><span class="line"><span class="cl">		To Manipulation... 0.01 50 300
+</span></span><span class="line"><span class="cl">		Extract pitch tier
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		select Sound durmatched_ws
+</span></span><span class="line"><span class="cl">		s2_dur = Get total duration
+</span></span><span class="line"><span class="cl">		To Manipulation... 0.01 50 300
+</span></span><span class="line"><span class="cl">		Extract pitch tier
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># create 10 ms time bins for interpolation
+</span></span><span class="line"><span class="cl">		timebinsize = 0.01
+</span></span><span class="line"><span class="cl">		nbins = floor(s1_dur/timebinsize)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		for currentbin from 1 to &#39;nbins&#39;
+</span></span><span class="line"><span class="cl">			currentbin_start = (currentbin*timebinsize)-timebinsize
+</span></span><span class="line"><span class="cl">			currentbin_end = (currentbin*timebinsize)
+</span></span><span class="line"><span class="cl">			currentbin_mid = (currentbin_start + currentbin_end)/2
+</span></span><span class="line"><span class="cl">			select PitchTier durmatched_sw
+</span></span><span class="line"><span class="cl">			currentbin_f0_s1 = Get value at time... currentbin_mid
+</span></span><span class="line"><span class="cl">			f0_bin_s1 [currentbin] = currentbin_f0_s1
+</span></span><span class="line"><span class="cl">			select PitchTier durmatched_ws
+</span></span><span class="line"><span class="cl">			currentbin_f0_s2 = Get value at time... currentbin_mid
+</span></span><span class="line"><span class="cl">			f0_bin_s2 [currentbin] = currentbin_f0_s2
+</span></span><span class="line"><span class="cl">		endfor
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#define number of steps for interpolation
+</span></span><span class="line"><span class="cl">		nsteps = 11
+</span></span><span class="line"><span class="cl">		step_ratio = 1/(&#39;nsteps&#39;-1)
+</span></span><span class="line"><span class="cl">		# This means that...
+</span></span><span class="line"><span class="cl">		#	the stepsize is 10% of the difference between SW and WS;
+</span></span><span class="line"><span class="cl">		#	step 1 of the continuum is the original SW contour;
+</span></span><span class="line"><span class="cl">		#	step 11 of the continuum is the original WS contour. 
+</span></span><span class="line"><span class="cl">		
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># interpolate the pitch tiers 
+</span></span><span class="line"><span class="cl">		for currentstep from 1 to &#39;nsteps&#39;
+</span></span><span class="line"><span class="cl">			select PitchTier durmatched_sw
+</span></span><span class="line"><span class="cl">			Copy... interpol_&#39;currentstep&#39;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">			# first remove all original F0 points
+</span></span><span class="line"><span class="cl">			Remove points between... 0 &#39;s1_dur&#39;
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl">			# now add a point for each time bin
+</span></span><span class="line"><span class="cl">			for currentbin from 1 to &#39;nbins&#39;
+</span></span><span class="line"><span class="cl">				currentbin_start = (currentbin*timebinsize)-timebinsize
+</span></span><span class="line"><span class="cl">				currentbin_end = (currentbin*timebinsize)
+</span></span><span class="line"><span class="cl">				currentbin_mid = (currentbin_start + currentbin_end)/2
+</span></span><span class="line"><span class="cl">				currentbin_f0_s1 = f0_bin_s1 [currentbin]
+</span></span><span class="line"><span class="cl">				currentbin_f0_s2 = f0_bin_s2 [currentbin]
+</span></span><span class="line"><span class="cl">				currentbin_f0_diff = currentbin_f0_s1 - currentbin_f0_s2
+</span></span><span class="line"><span class="cl">				currentbin_f0_ratio = currentbin_f0_diff * &#39;step_ratio&#39;
+</span></span><span class="line"><span class="cl">				currentbin_f0_interpol = currentbin_f0_s1 - (currentbin_f0_ratio * (&#39;currentstep&#39;-1))
+</span></span><span class="line"><span class="cl">				
+</span></span><span class="line"><span class="cl">				Add point... &#39;currentbin_mid&#39; &#39;currentbin_f0_interpol&#39;
+</span></span><span class="line"><span class="cl">			endfor
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl"># select original audio (in this case SW recording) and replace the pitch contour
+</span></span><span class="line"><span class="cl">			select Manipulation durmatched_sw
+</span></span><span class="line"><span class="cl">			Copy... interpol_&#39;currentstep&#39;			
+</span></span><span class="line"><span class="cl">			plusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
+</span></span><span class="line"><span class="cl">			Replace pitch tier
+</span></span><span class="line"><span class="cl">			minusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
+</span></span><span class="line"><span class="cl">			Get resynthesis (overlap-add)
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl">			interval_id = selected()
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#__________________________________________ INTENSITY____________________________________________________
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># extract each syllable again for intensity manipulation
+</span></span><span class="line"><span class="cl">			plusObject: &#34;TextGrid syl_boundary&#34;
+</span></span><span class="line"><span class="cl">			Extract all intervals: 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># set (average) target intensity per syllable
+</span></span><span class="line"><span class="cl">            targetint_1 = ((sw_int1+ws_int1)/2) 
+</span></span><span class="line"><span class="cl">            targetint_2 = ((sw_int2+ws_int2)/2) 
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl"># adjust the intensities to an average/ambigous value
+</span></span><span class="line"><span class="cl">			select (interval_id+1)
+</span></span><span class="line"><span class="cl">			Scale intensity... targetint_1
+</span></span><span class="line"><span class="cl">			Rename: &#34;final_syl_1&#34;
+</span></span><span class="line"><span class="cl">			
+</span></span><span class="line"><span class="cl">			select (interval_id+2)
+</span></span><span class="line"><span class="cl">			Scale intensity... targetint_2
+</span></span><span class="line"><span class="cl">			Rename: &#34;final_syl_2&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">#______________________________________ CONCATENATE &amp; SAVE ______________________________________________
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># copy final segment of the recording (silence post word offset), so Praat concatenates in the correct order
+</span></span><span class="line"><span class="cl">			select Sound post_silence_sw
+</span></span><span class="line"><span class="cl">			Copy... post_silence_sw_copy
+</span></span><span class="line"><span class="cl"># select remaining segments
+</span></span><span class="line"><span class="cl">			plusObject: &#34;Sound pre_silence_sw&#34;
+</span></span><span class="line"><span class="cl">			plusObject: &#34;Sound final_syl_1&#34;
+</span></span><span class="line"><span class="cl">			plusObject: &#34;Sound final_syl_2&#34;
+</span></span><span class="line"><span class="cl">			plusObject: &#34;post_silence_sw_copy&#34;
+</span></span><span class="line"><span class="cl"># concatenate
+</span></span><span class="line"><span class="cl">			Concatenate recoverably
+</span></span><span class="line"><span class="cl">			select Sound chain
+</span></span><span class="line"><span class="cl">			Rename: &#34;&#39;word$&#39;_step_&#39;currentstep&#39;&#34;
+</span></span><span class="line"><span class="cl">			Save as WAV file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.wav
+</span></span><span class="line"><span class="cl">			select TextGrid chain
+</span></span><span class="line"><span class="cl">			Save as text file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.TextGrid
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">		endfor
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	select all
+</span></span><span class="line"><span class="cl">	Remove
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">endfor
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl"># End of script
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span></code></pre></div>
 
-####################################################################################################################
-# This script takes recordings of segmentally identical, disyllabic minimal stress pairs with lexical stress on the first 
-# (strong-weak; SW) or second (weak-strong; WS) syllable (e.g., VOORnaam vs. voorNAAM) and interpolates their F0-contours linearly. 
-# The manipulated F0-contours are applied to the SW recording to create an F0-based lexical stress continuum.
-# Duration and Intensity are set to mean, ambiguous values.
-#
-# This script requires minimal pairs to match in their name. Stress pattern in input files is denoted with &#34;_sw&#34; or &#34;_ws&#34; 
-# (e.g., voornaam_sw.wav &amp; voornaam_ws.wav). No other underscore characters are allowed.
-# Textgrids for each recording are required, with boundaries at word onset, second syllable onset and word offset.
-#
-# Note that the parameters for pitch estimation are set to match a male voice. When working with a female voice,
-# please adjust the arguments of the functions &#34;Lengthen (overlap-add)&#34; and &#34;To Manipulation&#34;.
-####################################################################################################################
+        </article>
+
+        
 
 
-# Define input and output directory
-input_directory$ = &#34;C:\input folder&#34;
-output_directory$= &#34;C:\output folder&#34;
-
-# create file list of all files with the ending &#34;_sw.wav&#34; (just sound files, one per minimal pair (sw))
-Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
-n = Get number of strings
-
-# _________________________________ CREATE FILELIST ____________________________________________________
-
-# create list again because it removes itself after every iteration
-for x from 1 to n
-	Create Strings as file list... list &#39;input_directory$&#39;\*_sw.wav
-
-# get only the word name without extension or stress identifier (sw or ws)
-	select Strings list
-	current_file$ = Get string... x
-	idx = rindex (current_file$, &#34;_&#34;)
-	word$ = left$(current_file$,idx-1)
-
-#_____________________________________ DURATION ___________________________________________________________
-
-# To interpolate F0 contours, recordings must be of equal length. So duration must be manipulated first. 
-
-#---------------------------------- get values from SW word ---------------------------------------------
-# open SW word and convert to mono
-		wavfile_sw$ = &#34;&#39;word$&#39;_sw&#34;
-		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.Textgrid
-		Read from file... &#39;input_directory$&#39;\&#39;wavfile_sw$&#39;.wav
-		Convert to mono
-		Rename: &#34;mono_sw&#34;
-		wav_sw_id = selected()
-# select the mono file and the corresponding textgrid and extract all intervals
-		selectObject: &#34;TextGrid &#39;wavfile_sw$&#39;&#34;
-		plusObject: &#34;Sound mono_sw&#34;
-		Extract all intervals: 1, &#34;no&#34;
-# select the second interval (first syllable) and get the total duration and the intensity	
-		select (wav_sw_id+2)  
-		sw_dur1= Get total duration
-		sw_int1= Get intensity (dB)
-		Rename: &#34;sw_1&#34;
-# select the third interval (second syllable) and get the total duration and the intensity		
-		select (wav_sw_id+3)
-		sw_dur2= Get total duration
-		sw_int2= Get intensity (dB)
-		Rename: &#34;sw_2&#34;
-
-# select and rename the first and last interval (silences) for future reference, to concatenate the final audio
-		select (wav_sw_id+1)
-		Rename: &#34;pre_silence_sw&#34;
-		select (wav_sw_id+4)
-		Rename: &#34;post_silence_sw&#34;
-		
-#---------------------------------- get values from WS word -----------------------------------------
-
-# open WS word and convert to mono		
-		wavfile_ws$ = &#34;&#39;word$&#39;_ws&#34;
-		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.Textgrid
-		Read from file... &#39;input_directory$&#39;\&#39;wavfile_ws$&#39;.wav
-		Convert to mono
-		Rename: &#34;mono_ws&#34;
-		wav_ws_id = selected()
-# select the mono file and the corresponding textgrid and extract all intervals		
-		selectObject: &#34;TextGrid &#39;wavfile_ws$&#39;&#34;
-		plusObject: &#34;Sound mono_ws&#34;
-		Extract all intervals: 1, &#34;no&#34;
-# select the second interval (first syllable) and get the total duration and the intensity			
-		select (wav_ws_id+2)
-		ws_dur1= Get total duration
-		ws_int1= Get intensity (dB)
-		Rename: &#34;ws_1&#34;	
-# select the third interval (second syllable) and get the total duration and the intensity		
-		select (wav_ws_id+3)
-		ws_dur2= Get total duration
-		ws_int2= Get intensity (dB)
-		Rename: &#34;ws_2&#34;	
 
 
-#---------------------------------- Manipulate duration ------------------------------------------
 
-# Set the duration of syllable 1 of the SW word to the average, ambiguous duration
-		select Sound sw_1
-		targetdur_1 = ((sw_dur1+ws_dur1)/2)
-		Lengthen (overlap-add)... 75 250 (targetdur_1/sw_dur1)
-		Rename: &#34;sw_1_durmatched&#34;			
-# Set the duration of syllable 2 of the SW word to the average, ambiguous duration
-        select Sound sw_2
-		targetdur_2 = ((sw_dur2+ws_dur2)/2)
-		Lengthen (overlap-add)... 75 250 (targetdur_2/sw_dur2)
-		Rename: &#34;sw_2_durmatched&#34;	
-		
-# Set the duration of syllable 1 of the WS word to the average, ambiguous duration
-        select Sound ws_1
-		Lengthen (overlap-add)... 75 250 (targetdur_1/ws_dur1)
-		Rename: &#34;ws_1_durmatched&#34;		
-# Set the duration of syllable 2 of the WS word to the average, ambiguous duration
-        select Sound ws_2
-		Lengthen (overlap-add)... 75 250 (targetdur_2/ws_dur2)
-		Rename: &#34;ws_2_durmatched&#34;
-		
+        
 
 
-# Concatenate duration-manipulated SW word
-		select Sound sw_1_durmatched
-		plusObject: &#34;Sound sw_2_durmatched&#34;
-		Concatenate recoverably
-		select Sound chain
-		Rename: &#34;durmatched_sw&#34;
-# Concatenate duration-manipulated WS word
-        select Sound ws_1_durmatched
-		plusObject: &#34;Sound ws_2_durmatched&#34;
-		Concatenate recoverably
-		select Sound chain
-		Rename: &#34;durmatched_ws&#34;
-		
-# save TextGrid with the boundary between the syllables. Necessary for intensity manipulation
-		select TextGrid chain
-		Rename: &#34;syl_boundary&#34;
-		
 
-		
-#__________________________________________ F0 INTERPOLATION ________________________________________________
-
-# Extract the pitch tiers
-		select Sound durmatched_sw
-		s1_dur = Get total duration
-		To Manipulation... 0.01 50 300
-		Extract pitch tier
-
-		select Sound durmatched_ws
-		s2_dur = Get total duration
-		To Manipulation... 0.01 50 300
-		Extract pitch tier
-
-# create 10 ms time bins for interpolation
-		timebinsize = 0.01
-		nbins = floor(s1_dur/timebinsize)
-
-		for currentbin from 1 to &#39;nbins&#39;
-			currentbin_start = (currentbin*timebinsize)-timebinsize
-			currentbin_end = (currentbin*timebinsize)
-			currentbin_mid = (currentbin_start + currentbin_end)/2
-			select PitchTier durmatched_sw
-			currentbin_f0_s1 = Get value at time... currentbin_mid
-			f0_bin_s1 [currentbin] = currentbin_f0_s1
-			select PitchTier durmatched_ws
-			currentbin_f0_s2 = Get value at time... currentbin_mid
-			f0_bin_s2 [currentbin] = currentbin_f0_s2
-		endfor
-
-#define number of steps for interpolation
-		nsteps = 11
-		step_ratio = 1/(&#39;nsteps&#39;-1)
-		# This means that...
-		#	the stepsize is 10% of the difference between SW and WS;
-		#	step 1 of the continuum is the original SW contour;
-		#	step 11 of the continuum is the original WS contour. 
-		
-
-# interpolate the pitch tiers 
-		for currentstep from 1 to &#39;nsteps&#39;
-			select PitchTier durmatched_sw
-			Copy... interpol_&#39;currentstep&#39;
-
-			# first remove all original F0 points
-			Remove points between... 0 &#39;s1_dur&#39;
-			
-			# now add a point for each time bin
-			for currentbin from 1 to &#39;nbins&#39;
-				currentbin_start = (currentbin*timebinsize)-timebinsize
-				currentbin_end = (currentbin*timebinsize)
-				currentbin_mid = (currentbin_start + currentbin_end)/2
-				currentbin_f0_s1 = f0_bin_s1 [currentbin]
-				currentbin_f0_s2 = f0_bin_s2 [currentbin]
-				currentbin_f0_diff = currentbin_f0_s1 - currentbin_f0_s2
-				currentbin_f0_ratio = currentbin_f0_diff * &#39;step_ratio&#39;
-				currentbin_f0_interpol = currentbin_f0_s1 - (currentbin_f0_ratio * (&#39;currentstep&#39;-1))
-				
-				Add point... &#39;currentbin_mid&#39; &#39;currentbin_f0_interpol&#39;
-			endfor
-			
-# select original audio (in this case SW recording) and replace the pitch contour
-			select Manipulation durmatched_sw
-			Copy... interpol_&#39;currentstep&#39;			
-			plusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
-			Replace pitch tier
-			minusObject: &#34;PitchTier interpol_&#39;currentstep&#39;&#34;
-			Get resynthesis (overlap-add)
-			
-			interval_id = selected()
-
-#__________________________________________ INTENSITY____________________________________________________
-
-# extract each syllable again for intensity manipulation
-			plusObject: &#34;TextGrid syl_boundary&#34;
-			Extract all intervals: 1, &#34;no&#34;
-
-# set (average) target intensity per syllable
-            targetint_1 = ((sw_int1+ws_int1)/2) 
-            targetint_2 = ((sw_int2+ws_int2)/2) 
-			
-# adjust the intensities to an average/ambigous value
-			select (interval_id+1)
-			Scale intensity... targetint_1
-			Rename: &#34;final_syl_1&#34;
-			
-			select (interval_id+2)
-			Scale intensity... targetint_2
-			Rename: &#34;final_syl_2&#34;
-
-#______________________________________ CONCATENATE &amp; SAVE ______________________________________________
-
-# copy final segment of the recording (silence post word offset), so Praat concatenates in the correct order
-			select Sound post_silence_sw
-			Copy... post_silence_sw_copy
-# select remaining segments
-			plusObject: &#34;Sound pre_silence_sw&#34;
-			plusObject: &#34;Sound final_syl_1&#34;
-			plusObject: &#34;Sound final_syl_2&#34;
-			plusObject: &#34;post_silence_sw_copy&#34;
-# concatenate
-			Concatenate recoverably
-			select Sound chain
-			Rename: &#34;&#39;word$&#39;_step_&#39;currentstep&#39;&#34;
-			Save as WAV file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.wav
-			select TextGrid chain
-			Save as text file... &#39;output_directory$&#39;\&#39;word$&#39;_step_&#39;currentstep&#39;.TextGrid
-
-		endfor
-	
-	select all
-	Remove
-	
-endfor
-
-################################################################################
-# End of script
-################################################################################
-</code></pre>
-          </div>
-
+        
+        
+        <div class="article-widget">
           
-
-
-
-          
-          
-          <div class="article-widget">
-            
 <div class="post-nav">
   
   
@@ -1107,28 +1197,27 @@ endfor
   
 </div>
 
-          </div>
-          
         </div>
+        
+      </div>
 
-        <div class="body-footer">
-          <p>Last updated on Jan 1, 0001</p>
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
 
-          
-
-
-
-          
+        
 
 
 
 
-          
+        
 
 
-        </div>
 
-      </article>
+
+        
+
+
+      </div>
 
       <footer class="site-footer">
 
@@ -1136,14 +1225,27 @@ endfor
 
 
 
-  
+
+
+
+
+
+
+
+
 
   
-
+  
+  
+  
   
 
-  
-  
+
+
+
+
+
+
 
 
 
@@ -1186,6 +1288,7 @@ endfor
 
 
 
+
   <p class="powered-by">
     
     
@@ -1196,7 +1299,7 @@ endfor
       
       
       
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
@@ -1213,109 +1316,118 @@ endfor
     
   </div>
 
-      
+  
 
-    
-    <script src="/js/vendor-bundle.min.b4708d4364577c16ab7001b265a063a4.js"></script>
 
-    
-    
-    
-      
+<script src="/js/vendor-bundle.min.b2240102cb8b24bcbe037562ce2ea60a.js"></script>
 
-      
-      
 
-      
 
-      
 
-    
+  
 
-    
-    
-    
-      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
-    
+  
+  
 
-    
-    
-    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
-    <script>
-      anchors.add();
-    </script>
-    
+  
 
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
         </div>
-      </script>
-      
-        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
-      
-    
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
 
-    
-    
 
-    
-    
-    
-    
 
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
 
-    
 
-    
-    
-    
-    <script id="page-data" type="application/json">{"use_headroom":false}</script>
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.11e17bdd78ea3a0399cd799db7237725.js"></script>
 
-    
-    
-      <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
-    
-    
-    
-    
-      
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
 <div id="modal" class="modal fade" role="dialog">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -1326,7 +1438,8 @@ endfor
         </button>
       </div>
       <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
+        
+        <pre><code></code></pre>
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
@@ -1341,7 +1454,20 @@ endfor
   </div>
 </div>
 
-      <script src="/js/wowchemy-publication.af9327db0521d4a01354bfc8b77a4324.js" type="module"></script>
+
+  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

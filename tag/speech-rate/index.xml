@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>speech rate | SPEAC | Hans Rutger Bosker</title>
+    <title>Speech Rate | SPEAC | Hans Rutger Bosker</title>
     <link>https://hrbosker.github.io/tag/speech-rate/</link>
       <atom:link href="https://hrbosker.github.io/tag/speech-rate/index.xml" rel="self" type="application/rss+xml" />
-    <description>speech rate</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <description>Speech Rate</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
-      <title>speech rate</title>
+      <title>Speech Rate</title>
       <link>https://hrbosker.github.io/tag/speech-rate/</link>
     </image>
     
@@ -17,7 +17,9 @@
       <link>https://hrbosker.github.io/publication/severijnen-etal-2023-icphs/</link>
       <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/severijnen-etal-2023-icphs/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -34,6 +36,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/reinisch-bosker-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -60,6 +64,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/rodd-etal-2020-psychreview/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -96,6 +102,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -113,6 +121,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/maslowski-etal-2019-jeplmc/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -148,6 +158,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -165,6 +177,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2018-lcn/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -200,6 +214,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -217,6 +233,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-2017-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 &lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -234,7 +252,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-kosem-2017-interspeech/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -251,6 +271,8 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-etal-2017-frontiers/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
 
 
 
@@ -277,7 +299,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/maslowski-etal-2017-interspeech/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
@@ -293,7 +317,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <link>https://hrbosker.github.io/publication/bosker-2016-sp/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bosker-2016-sp/</guid>
-      <description>&lt;!-- &lt;div class=&#34;alert alert-note&#34;&gt;
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
   &lt;/div&gt;
