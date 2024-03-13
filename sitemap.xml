@@ -95,6 +95,18 @@
     <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/news/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/24-03-05-paper-jphon/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2024-03-05T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/publication-type/2/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -143,10 +155,6 @@
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/</loc>
-    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://hrbosker.github.io/tags/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -156,10 +164,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/news/23-09-04-new-phd-chengjia-ye/</loc>
-    <lastmod>2023-09-04T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/news/</loc>
     <lastmod>2023-09-04T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -6690,6 +6690,116 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# End of script
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paper accepted in Journal of Phonetics!</title>
+      <link>https://hrbosker.github.io/news/24-03-05-paper-jphon/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-03-05-paper-jphon/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;How do speakers of Dutch produce lexical stress? Read it in: &amp;ldquo;Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch.&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;published&#34;&gt;Published!&lt;/h2&gt;
+&lt;p&gt;Our paper &lt;strong&gt;&amp;ldquo;Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch&amp;rdquo;&lt;/strong&gt; has recently been published in &lt;em&gt;Journal of Phonetics&lt;/em&gt;, authored by &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;, &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;, and James McQueen. The fulltext and all data are publicly available at the links provided at the bottom of this post.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;As part of his PhD, Giulio recorded 40 speakers of Dutch producing word pairs that critically differed in stress position, like &amp;ldquo;VOORnaam&amp;rdquo; (&lt;em&gt;first name&lt;/em&gt;) - &amp;ldquo;voorNAAM&amp;rdquo; (&lt;em&gt;respectable&lt;/em&gt;). He then measured how a syllable with stress (&amp;ldquo;VOOR-&amp;rdquo;) differs acoustically from the same syllable without stress (&amp;ldquo;voor-&amp;rdquo;). The figure above (reproducing Figure 3 from the original paper) shows that people generally tend to use pitch, intensity, and duration as primary cues to stress, but this depends in part on the context in which the word is spoken.&lt;/p&gt;
+&lt;p&gt;More importantly, Giulio saw that each speaker had their own pronunciation preferences. That is, each employed a unique combination of acoustic cues to stress, illustrating large prosodic variability between talkers. In fact, classes of cue-weighting tendencies emerged, differing in which cue was used as the main cue (e.g., &amp;lsquo;pitch-speakers&amp;rsquo; vs. &amp;lsquo;intensity-speakers&amp;rsquo;). This suggests that, while there is a large amount of variability between different speakers (i.e., each talker had a unique set of cue weights), talkers do seem to cluster together regarding which cue is their main cue.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;This study is the most comprehensive acoustic description, to date, of word stress in Dutch. This is valuable information for speech scientists but also informative for speech synthesizers and automatic speech recognition (ASR) systems. Moreover, we describe large prosodic variability between individual talkers, but at the same time this variability isn&amp;rsquo;t boundless. Listeners, as well as ASR systems, may use this talker-specific information (e.g., &amp;ldquo;Johnny is a pitch-speaker&amp;rdquo;) when trying to comprehend new speech from the same talker, especially in challenging listening conditions such as in noise.&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/&#34;&gt;Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch&lt;/a&gt;.
+  &lt;em&gt;Journal of Phonetics, 103&lt;/em&gt;, 101296, doi:10.1016/j.wocn.2024.101296.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3562664_1/component/file_3562665/2024-01-15_Full%20Manuscript_Production_accepted.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/severijnen-etal-2024-jphon/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://data.donders.ru.nl/login/reviewer-241214775/bbEj3LjTV3m6x6u0JQKatK2RGlMNST-jdqVIzFfHMLc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.wocn.2024.101296&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
