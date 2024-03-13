@@ -14,7 +14,7 @@ date: '2022-07-07'
 #  - previous
 ---
 
-{{< figure src="featured.jpg" >}}
+<!-- {{< figure src="featured.jpg" >}} -->
 
 {{< toc hide_on="xl" >}}
 

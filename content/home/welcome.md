@@ -20,9 +20,9 @@ design:
 
 Hans Rutger Bosker heads the SPEAC lab at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
 
-<br />
-<br />
+<!-- <br /> -->
+<!-- <br /> -->
 
-|       |       |       |       |       |
-|:-----:|:-----:|:-----:|:-----:|:-----:|
-<a href="https://erc.europa.eu/" target="_blank"><img src="https://erc.europa.eu/sites/default/files/LOGO_ERC-FLAG_EU_.jpg" alt="European Research Counsil logo" width="200"/></a>|<pre>   </pre>|<a href="https://www.ru.nl/" target="_blank"><img src="https://www.ru.nl/views/ru-baseline/images/logos/ru_nl.svg" alt="Radboud University logo" width="200"/></a>|<pre>   </pre>|<a href="https://www.ru.nl/donders" target="_blank"><img src="https://www.ru.nl/publish/varianten/3375/donders_logo.png" alt="Donders Institute logo" width="200"/></a>
+<!-- |       |       |       |       |       | -->
+<!-- |:-----:|:-----:|:-----:|:-----:|:-----:| -->
+<!-- [![European Research Council logo](LOGO_ERC-FLAG_EU_.jpg)](https://erc.europa.eu/)|<pre>   </pre>|[![Radboud University logo](ru_nl.jpg)](https://www.ru.nl)|<pre>   </pre>|[![Donders Institute logo](donders_logo.png)](https://www.ru.nl/donders) -->
