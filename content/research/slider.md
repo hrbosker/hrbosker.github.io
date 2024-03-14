@@ -19,7 +19,7 @@ content:
       content: 'We investigate how the human brain perceives sounds and words from speech.'
       align: center
       background:
-        position: center
+        position: right
         color: '#666'
         #brightness: 0.3
         media: 'Fig1_Bosker_2018_JASAEL.jpg'
@@ -28,7 +28,7 @@ content:
       content: 'We do not only listen with our ears but also with our eyes, using lip movements and carefully-timed hand gestures to perceive speech.'
       align: center
       background:
-        position: center
+        position: right
         color: '#666'
         #brightness: 0.5
         media: 'beat_gesture_double.jpg'
@@ -51,7 +51,7 @@ content:
       content: 'We use behavioral, eye-tracking, virtual reality, and neuroimaging methods in our experiments.'
       align: left
       background:
-        position: center
+        position: right
         color: '#666'
         #brightness: 0.5
         media: 'FigS1_Kosem_2018_CurrBiol.jpg'
