@@ -5,12 +5,470 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Proceedings papers accepted for Speech Prosody 2024</title>
+      <link>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Several proceedings papers from our group have been accepted for presentation at &lt;a href=&#34;https://www.universiteitleiden.nl/sp2024&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech Prosody 2024&lt;/a&gt;. Read them here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-are-they-about&#34;&gt;What are they about?&lt;/h2&gt;
+&lt;p&gt;Most of our submissions concerned the temporal synchrony between hand gestures and speech in different languages. &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody&#34;&gt;Rohrer, Hong, and Bosker (2024)&lt;/a&gt; is one of the first studies to test how gestures time with speech in a lexical tone language, namely Mandarin. &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody&#34;&gt;Rohrer, Bujok, Van Maastricht, and Bosker (2024)&lt;/a&gt; demonstrates that seeing a gesture can change where you hear the stress in Spanish, extending the &amp;lsquo;manual McGurk effect&amp;rsquo; originally observed in Dutch to Spanish. &lt;a href=&#34;https://hrbosker.github.io/publication/cos-etal-2024-speechprosody&#34;&gt;Cos, Bujok, and Bosker (2024)&lt;/a&gt; reran an earlier manual McGurk experiment with the same participants over 1.5 years later, successfully replicating earlier work at the group level but reporting a weak correlation of the by-participant effect sizes in the two identical experiments. &lt;a href=&#34;https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody&#34;&gt;Maran and Bosker (2024)&lt;/a&gt; presents a mini-test of the manual McGurk effect, allowing reliable assessment of gesture-speech integration in under 10 minutes! Finally, &lt;a href=&#34;https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody&#34;&gt;Uluşahin, Bosker, McQueen, and Meyer (2024)&lt;/a&gt; reports two experiments investigating how knowledge about a given talker&amp;rsquo;s typical pitch influences subsequent voiceless (!) fricative perception.&lt;/p&gt;
+&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
+&lt;p&gt;If that wasn&amp;rsquo;t enough, there&amp;rsquo;s also two submissions accepted for Speech Prosody 2024 that didn&amp;rsquo;t stem from work performed in our group, but that were co-authored by current group members. These are &lt;strong&gt;Severijnen, Gärtner, Walther, and McQueen (2024)&lt;/strong&gt; and &lt;strong&gt;Ye and Boersma (2024)&lt;/strong&gt;. Congratulations!&lt;/p&gt;
+&lt;h2 id=&#34;wanna-know-more&#34;&gt;Wanna know more?&lt;/h2&gt;
+&lt;p&gt;You can find all fulltexts below, but why not come and find us at SP2024 in Leiden in July? Looking forward to seeing you there!&lt;/p&gt;
+&lt;h2 id=&#34;full-references&#34;&gt;Full references&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/floris-cos/&#34;&gt;Floris Cos&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/cos-etal-2024-speechprosody/&#34;&gt;Test-retest reliability of audiovisual lexical stress perception after &amp;gt;1.5 years&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3580020_1/component/file_3580021/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/cos-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/nqswd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody/&#34;&gt;How to test gesture-speech integration in ten minutes&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582995_1/component/file_3582996/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maran-bosker-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/qbyfm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/lieke-van-maastricht/&#34;&gt;Lieke Van Maastricht&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody/&#34;&gt;The timing of beat gestures affects lexical stress perception in Spanish&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582989_2/component/file_3582990/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/rohrer-bujok-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/bmk2s/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/yitian-hong/&#34;&gt;Yitian Hong&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody/&#34;&gt;Gestures time to vowel onset and change the acoustics of the word in Mandarin&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582991_2/component/file_3582992/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/rohrer-hong-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/w4czh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody/&#34;&gt;Knowledge of a talker’s f0 affects subsequent perception of voiceless fricatives&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3581041_1/component/file_3581042/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/ulusahin-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/wfp9y/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Paper accepted in Journal of Phonetics!</title>
@@ -369,9 +827,9 @@
       <guid>https://hrbosker.github.io/news/23-02-22-new-members/</guid>
       <description>&lt;p&gt;&lt;strong&gt;In March 2023, we will have two new members join the group: Yitian Hong, a visiting researcher from PolyU Hong Kong; and Floris Cos, an intern from the Linguistics and Communication Sciences ResMA program at Radboud University.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;lexical-tone&#34;&gt;Lexical tone&lt;/h2&gt;
-&lt;p&gt;yitian-hong will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/yitian-hong/&#34;&gt;Yitian Hong&lt;/a&gt; will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;test-retest-reliability&#34;&gt;Test-retest reliability&lt;/h2&gt;
-&lt;p&gt;floris-cos will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/floris-cos/&#34;&gt;Floris Cos&lt;/a&gt; will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re glad to have them join the group. Welcome!&lt;/p&gt;</description>
     </item>
     

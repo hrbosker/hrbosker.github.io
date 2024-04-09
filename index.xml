@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -4915,13 +4915,13 @@
     </item>
     
     <item>
-      <title>...get published</title>
-      <link>https://hrbosker.github.io/resources/how-to/get-published/</link>
+      <title>...submit a manuscript</title>
+      <link>https://hrbosker.github.io/resources/how-to/submit-a-manuscript/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/how-to/get-published/</guid>
+      <guid>https://hrbosker.github.io/resources/how-to/submit-a-manuscript/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
-    This describes which journal to choose, which suggested (or dispreferred?) reviewers to mention, an example cover letter, how to read the submission system, when to contact the editorial office about your submission, and how to respond to reviewers.
+    This describes which journal to choose, which suggested (or dispreferred?) reviewers to mention, what should go into a cover letter, how to read the submission system,  and when to contact the editorial office about your submission.
   &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&#34;alert alert-warning&#34;&gt;
@@ -4971,7 +4971,7 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;&amp;hellip;uploading all relevant files&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Upload your manuscript (.docx), any supplementary information (.pdf), raw figure files (.eps or .pdf), and a cover letter (.pdf). Check with the journal what file format to use. If possible, use vector-based formats like .eps and .pdf for figures because they look nicer in print. However, because Word doesn&amp;rsquo;t like these formats, I do use .png or .jpg images inside the manuscript&amp;rsquo;s Word document. Cover letters are stemming from the olden days when they were used to include &amp;rsquo;not published elsewhere&amp;rsquo;-statements, author contact details, etc., but nowaways these details live inside the submission system. Still, it&amp;rsquo;s nice to have one, especially to highlight the importance, novelty, and main take-away messages from the paper. For broad-interest journals with lots of desk rejections, the cover letter is important; you&amp;rsquo;ll really need to sell your study.&lt;/p&gt;
+&lt;p&gt;Upload your manuscript (.docx), any supplementary information (.pdf), raw figure files (.eps or .pdf), and a cover letter (.pdf). Check with the journal what file format to use. If possible, use vector-based formats like .eps and .pdf for figures because they look nicer in print. However, because Word doesn&amp;rsquo;t like these formats, I do use .png or .jpg images inside the manuscript&amp;rsquo;s Word document. Cover letters are stemming from the olden days when they were used to include &amp;rsquo;not published elsewhere&amp;rsquo;-statements, author contact details, etc., but nowadays these details live inside the submission system. Still, it&amp;rsquo;s nice to have one, especially to highlight the importance, novelty, and main take-away messages from the paper. For broad-interest journals with lots of desk rejections, the cover letter is important; you&amp;rsquo;ll really need to sell your study.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -5003,27 +5003,7 @@
 &lt;p&gt;Fingers crossed! Wait at least 3 months before contacting the editorial office about any updates (don&amp;rsquo;t use the editor&amp;rsquo;s personal email address). Be curteous and kindly ask whether they can inform you about your manuscript&amp;rsquo;s current status. They&amp;rsquo;ll likely inform you that they&amp;rsquo;re waiting for one reviewer to get back to them, and if you&amp;rsquo;re lucky they may give you an indication of when they expect all reviews to be in. The submission system itself usually also tells you what the status of your submission is, but these labels (like &amp;ldquo;With Editor&amp;rdquo;, &amp;ldquo;Under Review&amp;rdquo;, &amp;ldquo;Waiting for Editorial Decision&amp;rdquo;) usually do not tell you very much. Your paper can be &amp;ldquo;Under Review&amp;rdquo; the moment the first reviewer accepts, but then the editor may have considerable trouble finding the second one, who knows&amp;hellip;?!?&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reviews-are-in-now-what&#34;&gt;Reviews are in! Now what?&lt;/h2&gt;
-&lt;p&gt;&lt;em&gt;It&amp;rsquo;s a random Friday afternoon, you&amp;rsquo;re just about to close your laptop for the weekend, when you see this email appear in your inbox, with the obscure subject &amp;ldquo;Decision on XYZ-01234&amp;rdquo;. &lt;strong&gt;What do you do?&lt;/strong&gt; Do you open it immediately, do you leave it be for the weekend, do you forward it to your supervisors without opening?&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;I probably have never read a decision letter and felt delighted afterwards. Here&amp;rsquo;s a project you&amp;rsquo;ve spent years of your time on and now these anonymous strangers get to shoot at it! Do you really want the reviews to spoil your weekend? Why not leave it for now and book a timeslot in your agenda to carefully read it in full?&lt;/p&gt;
-&lt;p&gt;After the first read, it can really take some mental effort to take a deep breath and think about the reviews in a constructive manner. It may help to ask your supervisors and/or co-authors &amp;ndash; who may have had the pleasure of receiving reviews more often than you have &amp;ndash; for their opinions and perspectives. Forward the entire decision letter to them asap and schedule a meeting to go through it together, and in the meanwhile let the general impression sink in. Take some distance, there&amp;rsquo;s no real rush; leave it be for a while, take a few days to consider different perspectives. Keep in mind that &amp;lsquo;major revisions&amp;rsquo; does not mean &amp;rsquo;this study has major flaws&amp;rsquo; but is in practice the standard status of any manuscript sent back for revisions. In fact, in my (by now 12-year-long) academic career, I&amp;rsquo;ve received a &amp;lsquo;minor revisions&amp;rsquo; decision only once. All in all, this may help to avoid becoming grumpy and defensive, to put things into perspective, and adopt a constructive mindset.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;How to respond?&lt;/strong&gt; Well, on a practical level, copy the entire decision letter into a new document. Then paste &lt;strong&gt;***RESPONSE #1***&lt;/strong&gt; beneath the first comment, &lt;strong&gt;***RESPONSE #2***&lt;/strong&gt; below the second, etc. Then go through the document and write down how you&amp;rsquo;d like to respond to individual comments. This can be really informal at first (&lt;em&gt;&amp;ldquo;Need to look up refs&amp;rdquo;&lt;/em&gt;) but it helps to get an idea of how much work needs to be done. Also create a copy of the original manuscript, rename it, and start Track Changes to keep track of what&amp;rsquo;s been changed (useful for you and useful for co-authors).&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Tips n tricks:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Number your responses. This makes it easier to refer back to points already addressed earlier. Do not respond &amp;ldquo;Please see our earlier response above&amp;rdquo; but be specific: &amp;ldquo;Please see our Response #9&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Use &amp;lsquo;fields&amp;rsquo; in Word. Instead of manually typing from 1 to 134, copy the same statement including a field below each comment, and hit CTRL-A and then F9 to automatically update the fields.&lt;/li&gt;
-&lt;li&gt;Use a different font or color for your responses so it is immediately clear what was the original comment and what is your response. Note however that some journals do not allow you to upload a &amp;lsquo;Response to reviewers&amp;rsquo; document but instead ask you to copy your responses into a plain text box. This will remove any formatting, so also use *** or ### to mark your responses.&lt;/li&gt;
-&lt;li&gt;Look up a paper in a journal with open reviews (e.g., recent papers in &lt;em&gt;eLife, Royal Society Open Science, Nature Communications&lt;/em&gt;). You&amp;rsquo;ll be able to see how others have dealt with critical comments and still managed to get their paper published!&lt;/li&gt;
-&lt;li&gt;Make your reviewers&amp;rsquo; life easy: add page numbers to every response that involved changes in the manuscript. Tip: initially use something easily findable, like &lt;code&gt;#pagenumber&lt;/code&gt;, and only replace these with the actual page numbers at the very end, right before you resubmit.&lt;/li&gt;
-&lt;li&gt;Also: keep it snappy. Don&amp;rsquo;t respond to single-line comments with pages-and-pages of words. Also don&amp;rsquo;t spend too many words thanking reviewers at the beginning of each and every response. Instead, keep it efficient. Jump straight into the issue without further ado. Reviewers, when receiving your rebuttal, will want to know how you handled their questions and critiques; they don&amp;rsquo;t want to have to wade through lines and lines of (sometimes feigned) gratitude.&lt;/li&gt;
-&lt;li&gt;Your responses to substantial comments are best also included (likely in a trimmed down version) in the manuscript. Remember that, for most journals, the reviews aren&amp;rsquo;t open. This means that the points raised by the reviewers and your responses to them aren&amp;rsquo;t accessible to other readers. Still, they may have the same questions or concerns as your reviewers. Therefore, aim for an accurate and complete published record in which you explicitly acknowledge critical perspectives (&amp;ldquo;An anonymous reviewer mentioned that&amp;hellip;&amp;rdquo;) and your responses to them (&amp;ldquo;However, we should point out that&amp;hellip;&amp;rdquo;).&lt;/li&gt;
-&lt;li&gt;Give your reviewers the benefit of the doubt. Try to see the whole reviewing entreprise as something collaborative (&lt;em&gt;&amp;hellip;we&amp;rsquo;re all in this together to make it the best possible paper&lt;/em&gt;) instead of something competitive (&lt;em&gt;&amp;hellip;how can we make the author&amp;rsquo;s life as difficult as possible?&lt;/em&gt;). These annoying and troublesome strangers actually voluntarily invested a few hours if not days reading and thinking about your paper. Imagine them receiving your responses after several months have gone by, not exactly remembering what was wrong with the manuscript and why, only to find multiple &amp;rsquo;no-thank-you&amp;rsquo;s from you. Even if you are entirely correct, this would already annoy even the most constructive of reviewers. Take them seriously and show you&amp;rsquo;ve given their comments considerable thought.&lt;/li&gt;
-&lt;li&gt;In the unlikely event you receive comments that are outright disrespectful, don&amp;rsquo;t respond in the same tone of voice. Be polite, courteous, and constructive; that way you will likely change the tone of the discussion. At the same time, you demonstrate to the editor &amp;ndash; who in the end is the one who makes the final decision on your submission &amp;ndash; that you have considered the criticism seriously and have responded in a mature manner, winning them over to your side.&lt;/li&gt;
-&lt;li&gt;In the likely event you receive particularly useful and insightful comments, do feel free to explicitly express your gratitude (e.g., &amp;ldquo;We found this comment particularly insightful because XYZ&amp;rdquo;). However, don&amp;rsquo;t overdo it. Only include a handful of these thank-you-notes and why not try to distribute them equally across all reviewers, not to upset anyone&amp;hellip;&lt;/li&gt;
-&lt;li&gt;If after reading and re-reading and discussing the reviews with your co-authors, some comment remains unclear to you, do get in touch with the editor to ask for clarification. &lt;strong&gt;Do not ask&lt;/strong&gt; &amp;ldquo;if we only do ABC and not XYZ, will you then accept our paper?&amp;rdquo;. Rather, &amp;ldquo;we do not fully understand this comment about ABC because XYZ. Could you please clarify what criticism this comment raises?&amp;rdquo;. Do not get in touch with reviewers directly if you know their identity.&lt;/li&gt;
-&lt;li&gt;Finally, if your paper is reviewed but rejected by the editor, do revise your manuscript before sending it out to another journal. Don&amp;rsquo;t simply send out the old manuscript to a new journal; it could be the new journal happens to invite (some of) the same reviewers as before. But even if they don&amp;rsquo;t, the initial reviewers may see the paper out in print in another journal some day, still including some of the same mistakes or misinterpretations they pointed out initially. Again, take their comments seriously, revise, and then resubmit.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;em&gt;Happy publishing!&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Happy submitting!&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -5684,6 +5664,46 @@
 
 
 &lt;/blockquote&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>...reply to reviews</title>
+      <link>https://hrbosker.github.io/resources/how-to/reply-to-reviews/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/how-to/reply-to-reviews/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This talks about when to open that email that contains your fresh reviews, how to weigh the reviewers&amp;rsquo; feedback, how to respond, and how best to structure your response file.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    I currently serve as Associate Editor of the journal &lt;em&gt;Language &amp;amp; Speech&lt;/em&gt;. However, the statements below do not reflect the official opinion of &lt;em&gt;Language &amp;amp; Speech&lt;/em&gt; nor any other journal I ever edited or reviewed for. They merely describe my personal experiences with submitting, reviewing, and editing papers, so take them with a grain of salt&amp;hellip;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;reviews-are-in-now-what&#34;&gt;Reviews are in! Now what?&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;It&amp;rsquo;s a random Friday afternoon, you&amp;rsquo;re just about to close your laptop for the weekend, when you see this email appear in your inbox, with the obscure subject &amp;ldquo;Decision on XYZ-01234&amp;rdquo;. &lt;strong&gt;What do you do?&lt;/strong&gt; Do you open it immediately, do you leave it be for the weekend, do you forward it to your supervisors without opening?&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I probably have never read a decision letter and felt delighted afterwards. Here&amp;rsquo;s a project you&amp;rsquo;ve spent years of your time on and now these anonymous strangers get to shoot at it! Do you really want the reviews to spoil your weekend? Why not leave it for now and book a timeslot in your agenda to carefully read it in full?&lt;/p&gt;
+&lt;p&gt;After the first read, it can really take some mental effort to take a deep breath and think about the reviews in a constructive manner. It may help to ask your supervisors and/or co-authors &amp;ndash; who may have had the pleasure of receiving reviews more often than you have &amp;ndash; for their opinions and perspectives. Forward the entire decision letter to them asap and schedule a meeting to go through it together, and in the meanwhile let the general impression sink in. Take some distance, there&amp;rsquo;s no real rush; leave it be for a while, take a few days to consider different perspectives. Keep in mind that &amp;lsquo;major revisions&amp;rsquo; does not mean &amp;rsquo;this study has major flaws&amp;rsquo; but is in practice the standard status of any manuscript sent back for revisions. In fact, in my (by now 12-year-long) academic career, I&amp;rsquo;ve received a &amp;lsquo;minor revisions&amp;rsquo; decision only once. All in all, this may help to avoid becoming grumpy and defensive, to put things into perspective, and adopt a constructive mindset.&lt;/p&gt;
+&lt;h2 id=&#34;how-to-respond&#34;&gt;How to respond?&lt;/h2&gt;
+&lt;p&gt;Well, on a practical level, copy the entire decision letter into a new document. Then paste &lt;strong&gt;***RESPONSE #1***&lt;/strong&gt; beneath the first comment, &lt;strong&gt;***RESPONSE #2***&lt;/strong&gt; below the second, etc. Then go through the document and write down how you&amp;rsquo;d like to respond to individual comments. This can be really informal at first (&lt;em&gt;&amp;ldquo;Need to look up refs&amp;rdquo;&lt;/em&gt;) but it helps to get an idea of how much work needs to be done. Also create a copy of the original manuscript, rename it, and start Track Changes to keep track of what&amp;rsquo;s been changed (useful for you and useful for co-authors).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tips n tricks:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number your responses. This makes it easier to refer back to points already addressed earlier. Do not respond &amp;ldquo;Please see our earlier response above&amp;rdquo; but be specific: &amp;ldquo;Please see our Response #9&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Use &amp;lsquo;fields&amp;rsquo; in Word. Instead of manually typing from 1 to 134, copy the same statement including a field below each comment, and hit CTRL-A and then F9 to automatically update the fields.&lt;/li&gt;
+&lt;li&gt;Use a different font or color for your responses so it is immediately clear what was the original comment and what is your response. Note however that some journals do not allow you to upload a &amp;lsquo;Response to reviewers&amp;rsquo; document but instead ask you to copy your responses into a plain text box. This will remove any formatting, so also use *** or ### to mark your responses.&lt;/li&gt;
+&lt;li&gt;Look up a paper in a journal with open reviews (e.g., recent papers in &lt;em&gt;eLife, Royal Society Open Science, Nature Communications&lt;/em&gt;). You&amp;rsquo;ll be able to see how others have dealt with critical comments and still managed to get their paper published!&lt;/li&gt;
+&lt;li&gt;Make your reviewers&amp;rsquo; life easy: add page numbers to every response that involved changes in the manuscript. Tip: initially use something easily findable, like &lt;code&gt;#pagenumber&lt;/code&gt;, and only replace these with the actual page numbers at the very end, right before you resubmit.&lt;/li&gt;
+&lt;li&gt;Also: keep it snappy. Don&amp;rsquo;t respond to single-line comments with pages-and-pages of words. Also don&amp;rsquo;t spend too many words thanking reviewers at the beginning of each and every response. Instead, keep it efficient. Jump straight into the issue without further ado. Reviewers, when receiving your rebuttal, will want to know how you handled their questions and critiques; they don&amp;rsquo;t want to have to wade through lines and lines of (sometimes feigned) gratitude.&lt;/li&gt;
+&lt;li&gt;Your responses to substantial comments are best also included (likely in a trimmed down version) in the manuscript. Remember that, for most journals, the reviews aren&amp;rsquo;t open. This means that the points raised by the reviewers and your responses to them aren&amp;rsquo;t accessible to other readers. Still, they may have the same questions or concerns as your reviewers. Therefore, aim for an accurate and complete published record in which you explicitly acknowledge critical perspectives (&amp;ldquo;An anonymous reviewer mentioned that&amp;hellip;&amp;rdquo;) and your responses to them (&amp;ldquo;However, we should point out that&amp;hellip;&amp;rdquo;).&lt;/li&gt;
+&lt;li&gt;Give your reviewers the benefit of the doubt. This can be particularly challenging when you disagree with reviewer suggestions. Try to see the whole reviewing entreprise as something collaborative (&lt;em&gt;&amp;hellip;we&amp;rsquo;re all in this together to make it the best possible paper&lt;/em&gt;) instead of something competitive (&lt;em&gt;&amp;hellip;how can we make the author&amp;rsquo;s life as difficult as possible?&lt;/em&gt;). These annoying and troublesome strangers actually voluntarily invested a few hours if not days reading and thinking about your paper. Imagine them receiving your responses after several months have gone by, not exactly remembering what was wrong with the manuscript and why, only to find that the authors have dismissed their feedback with a few simple sentences. This would annoy even the most constructive of reviewers. Take the feedback seriously and show you&amp;rsquo;ve given their comments considerable thought.&lt;/li&gt;
+&lt;li&gt;In the unlikely event you receive comments that are disrespectful, don&amp;rsquo;t respond in the same tone of voice. Be polite, courteous, and constructive; that way you will likely change the tone of the discussion. At the same time, you demonstrate to the editor &amp;ndash; who in the end is the one who makes the final decision on your submission &amp;ndash; that you have considered the criticism seriously and have responded in a mature manner, winning them over to your side.&lt;/li&gt;
+&lt;li&gt;In the likely event you receive particularly useful and insightful comments, do feel free to explicitly express your gratitude (e.g., &amp;ldquo;We found this comment particularly insightful because XYZ&amp;rdquo;). However, don&amp;rsquo;t overdo it. Only include a handful of these thank-you-notes and why not try to distribute them equally across all reviewers, not to upset anyone&amp;hellip;&lt;/li&gt;
+&lt;li&gt;If after reading and re-reading and discussing the reviews with your co-authors, some comment remains unclear to you, do get in touch with the editor to ask for clarification. &lt;strong&gt;Do not ask&lt;/strong&gt; &amp;ldquo;if we only do ABC and not XYZ, will you then accept our paper?&amp;rdquo;. Rather, &amp;ldquo;we do not fully understand this comment about ABC because XYZ. Could you please clarify what criticism this comment raises?&amp;rdquo;. Do not get in touch with reviewers directly if you know their identity.&lt;/li&gt;
+&lt;li&gt;Finally, if your paper is reviewed but rejected by the editor, do revise your manuscript before sending it out to another journal. Don&amp;rsquo;t simply send out the old manuscript to a new journal; it could be the new journal happens to invite (some of) the same reviewers as before. But even if they don&amp;rsquo;t, the initial reviewers may see the paper out in print in another journal some day, still including some of the same mistakes or misinterpretations they pointed out initially. Again, take their comments seriously, revise, and then resubmit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;Happy rebutting!&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -6693,6 +6713,464 @@
     </item>
     
     <item>
+      <title>Proceedings papers accepted for Speech Prosody 2024</title>
+      <link>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</link>
+      <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Several proceedings papers from our group have been accepted for presentation at &lt;a href=&#34;https://www.universiteitleiden.nl/sp2024&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech Prosody 2024&lt;/a&gt;. Read them here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-are-they-about&#34;&gt;What are they about?&lt;/h2&gt;
+&lt;p&gt;Most of our submissions concerned the temporal synchrony between hand gestures and speech in different languages. &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody&#34;&gt;Rohrer, Hong, and Bosker (2024)&lt;/a&gt; is one of the first studies to test how gestures time with speech in a lexical tone language, namely Mandarin. &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody&#34;&gt;Rohrer, Bujok, Van Maastricht, and Bosker (2024)&lt;/a&gt; demonstrates that seeing a gesture can change where you hear the stress in Spanish, extending the &amp;lsquo;manual McGurk effect&amp;rsquo; originally observed in Dutch to Spanish. &lt;a href=&#34;https://hrbosker.github.io/publication/cos-etal-2024-speechprosody&#34;&gt;Cos, Bujok, and Bosker (2024)&lt;/a&gt; reran an earlier manual McGurk experiment with the same participants over 1.5 years later, successfully replicating earlier work at the group level but reporting a weak correlation of the by-participant effect sizes in the two identical experiments. &lt;a href=&#34;https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody&#34;&gt;Maran and Bosker (2024)&lt;/a&gt; presents a mini-test of the manual McGurk effect, allowing reliable assessment of gesture-speech integration in under 10 minutes! Finally, &lt;a href=&#34;https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody&#34;&gt;Uluşahin, Bosker, McQueen, and Meyer (2024)&lt;/a&gt; reports two experiments investigating how knowledge about a given talker&amp;rsquo;s typical pitch influences subsequent voiceless (!) fricative perception.&lt;/p&gt;
+&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
+&lt;p&gt;If that wasn&amp;rsquo;t enough, there&amp;rsquo;s also two submissions accepted for Speech Prosody 2024 that didn&amp;rsquo;t stem from work performed in our group, but that were co-authored by current group members. These are &lt;strong&gt;Severijnen, Gärtner, Walther, and McQueen (2024)&lt;/strong&gt; and &lt;strong&gt;Ye and Boersma (2024)&lt;/strong&gt;. Congratulations!&lt;/p&gt;
+&lt;h2 id=&#34;wanna-know-more&#34;&gt;Wanna know more?&lt;/h2&gt;
+&lt;p&gt;You can find all fulltexts below, but why not come and find us at SP2024 in Leiden in July? Looking forward to seeing you there!&lt;/p&gt;
+&lt;h2 id=&#34;full-references&#34;&gt;Full references&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/floris-cos/&#34;&gt;Floris Cos&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/cos-etal-2024-speechprosody/&#34;&gt;Test-retest reliability of audiovisual lexical stress perception after &amp;gt;1.5 years&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3580020_1/component/file_3580021/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/cos-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/nqswd/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody/&#34;&gt;How to test gesture-speech integration in ten minutes&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582995_1/component/file_3582996/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maran-bosker-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/qbyfm/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/lieke-van-maastricht/&#34;&gt;Lieke Van Maastricht&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody/&#34;&gt;The timing of beat gestures affects lexical stress perception in Spanish&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582989_2/component/file_3582990/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/rohrer-bujok-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/bmk2s/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/yitian-hong/&#34;&gt;Yitian Hong&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody/&#34;&gt;Gestures time to vowel onset and change the acoustics of the word in Mandarin&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3582991_2/component/file_3582992/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/rohrer-hong-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/w4czh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/orhun-ulusahin/&#34;&gt;Orhun Uluşahin&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody/&#34;&gt;Knowledge of a talker’s f0 affects subsequent perception of voiceless fricatives&lt;/a&gt;.
+  In &lt;em&gt;Proceedings of Speech Prosody 2024&lt;/em&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3581041_1/component/file_3581042/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/ulusahin-etal-2024-speechprosody/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/wfp9y/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>Paper accepted in Journal of Phonetics!</title>
       <link>https://hrbosker.github.io/news/24-03-05-paper-jphon/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
@@ -6800,6 +7278,96 @@
 
 
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gestures time to vowel onset and change the acoustics of the word in Mandarin</title>
+      <link>https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>How to test gesture-speech integration in ten minutes</title>
+      <link>https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/maran-bosker-2024-speechprosody/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Knowledge of a talker’s f0 affects subsequent perception of voiceless fricatives</title>
+      <link>https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/ulusahin-etal-2024-speechprosody/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Test-retest reliability of audiovisual lexical stress perception after &gt;1.5 years</title>
+      <link>https://hrbosker.github.io/publication/cos-etal-2024-speechprosody/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/cos-etal-2024-speechprosody/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The timing of beat gestures affects lexical stress perception in Spanish</title>
+      <link>https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/rohrer-bujok-etal-2024-speechprosody/</guid>
+      <description>&lt;!-- 
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
     </item>
     
     <item>
@@ -7078,9 +7646,9 @@ Supplementary notes can be added here, including [code and math](https://wowchem
       <guid>https://hrbosker.github.io/news/23-02-22-new-members/</guid>
       <description>&lt;p&gt;&lt;strong&gt;In March 2023, we will have two new members join the group: Yitian Hong, a visiting researcher from PolyU Hong Kong; and Floris Cos, an intern from the Linguistics and Communication Sciences ResMA program at Radboud University.&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;lexical-tone&#34;&gt;Lexical tone&lt;/h2&gt;
-&lt;p&gt;yitian-hong will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/yitian-hong/&#34;&gt;Yitian Hong&lt;/a&gt; will be working on a project investigating the audiovisual perception of lexical tone in Mandarin Chinese. This project will run from March - August 2023 and is in collaboration with Patrick Rohrer and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;test-retest-reliability&#34;&gt;Test-retest reliability&lt;/h2&gt;
-&lt;p&gt;floris-cos will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/floris-cos/&#34;&gt;Floris Cos&lt;/a&gt; will run an internship for his Linguistics and Communication Sciences ResMA program. He will assess the test-retest reliability of the Manual McGurk effect using online experimentation.&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re glad to have them join the group. Welcome!&lt;/p&gt;</description>
     </item>
     
