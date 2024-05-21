@@ -98,7 +98,7 @@ When you've finished recording with Audacity, and have extracted the audio as a 
 
 I've found that the default settings for the `To TextGrid (silences)` function are best adjusted to: `Minimum pitch (Hz) = 50` (instead of the default 100) and `Silence threshold (dB) = -40` (instead of the default -32). In my experience, this works considerably better especially for single-word recordings, but often also for full-sentence recordings.
 
-Oh, and as I'm writing this, I see the latest versions of Praat have a new `To TextGrid (voice activity)` function. My initial impression is that the default settings for this function perform comparable to the 'adjusted' settings for `To TextGrid (silences)` suggested above.
+Oh, and as I'm writing this, I see the latest versions of Praat have a new `To TextGrid (speech activity)` function. My initial impression is that the default settings for this function perform comparable to the 'adjusted' settings for `To TextGrid (silences)` suggested above.
 
 ## SpeechRecorder
 

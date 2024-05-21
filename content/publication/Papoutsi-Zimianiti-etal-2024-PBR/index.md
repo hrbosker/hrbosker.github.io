@@ -8,7 +8,7 @@ authors:
 author_notes:
   - 'Equal contribution'
   - 'Equal contribution'
-date: '2023-01-01T00:00:00Z'
+date: '2024-01-01T00:00:00Z'
 doi: '10.3758/s13423-023-02384-1'
 
 # Schedule page publish date (NOT publication's date).
@@ -21,7 +21,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: '*Psychonomic Bulletin & Review*, *in press*, doi:[10.3758/s13423-023-02384-1](https://doi.org/10.3758/s13423-023-02384-1)'
+publication: '*Psychonomic Bulletin & Review, 31*, 849-861, doi:[10.3758/s13423-023-02384-1](https://doi.org/10.3758/s13423-023-02384-1)'
 publication_short: ''
 
 abstract: Statistical learning – the ability to extract distributional regularities from input – is suggested to be key to language acquisition. Yet, evidence for the human capacity for statistical learning comes mainly from studies conducted in carefully controlled settings without auditory distraction. While such conditions permit careful examination of learning, they do not reflect the naturalistic language learning experience, which is replete with auditory distraction – including competing talkers. Here, we examine how statistical language learning proceeds in a virtual cocktail party environment, where the to-be-learned input is presented alongside a competing speech stream with its own distributional regularities. During exposure, participants in the Dual Talker group concurrently heard two novel languages, one produced by a female talker and one by a male talker, with each talker virtually positioned at opposite sides of the listener (left/right) using binaural acoustic manipulations. Selective attention was manipulated by instructing participants to attend to only one of the two talkers. At test, participants were asked to distinguish words from part-words for both the attended and the unattended languages. Results indicated that participants’ accuracy was significantly higher for trials from the attended vs. unattended language. Further, the performance of this Dual Talker group was no different compared to a control group who heard only one language from a single talker (Single Talker group). We thus conclude that statistical learning is modulated by selective attention, being relatively robust against the additional cognitive load provided by competing speech, emphasizing its efficiency in naturalistic language learning situations.
