@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -738,7 +738,7 @@
   &lt;/div&gt;&lt;/figure&gt;
 
 &lt;p&gt;I&amp;rsquo;ve found that the default settings for the &lt;code&gt;To TextGrid (silences)&lt;/code&gt; function are best adjusted to: &lt;code&gt;Minimum pitch (Hz) = 50&lt;/code&gt; (instead of the default 100) and &lt;code&gt;Silence threshold (dB) = -40&lt;/code&gt; (instead of the default -32). In my experience, this works considerably better especially for single-word recordings, but often also for full-sentence recordings.&lt;/p&gt;
-&lt;p&gt;Oh, and as I&amp;rsquo;m writing this, I see the latest versions of Praat have a new &lt;code&gt;To TextGrid (voice activity)&lt;/code&gt; function. My initial impression is that the default settings for this function perform comparable to the &amp;lsquo;adjusted&amp;rsquo; settings for &lt;code&gt;To TextGrid (silences)&lt;/code&gt; suggested above.&lt;/p&gt;
+&lt;p&gt;Oh, and as I&amp;rsquo;m writing this, I see the latest versions of Praat have a new &lt;code&gt;To TextGrid (speech activity)&lt;/code&gt; function. My initial impression is that the default settings for this function perform comparable to the &amp;lsquo;adjusted&amp;rsquo; settings for &lt;code&gt;To TextGrid (silences)&lt;/code&gt; suggested above.&lt;/p&gt;
 &lt;h2 id=&#34;speechrecorder&#34;&gt;SpeechRecorder&lt;/h2&gt;
 &lt;p&gt;SpeechRecorder is also a free, open-source, and cross-platform audio software package. It takes a little more preparation to use it appropriately compared to Audacity, but an important advantage is that it allows users to &lt;strong&gt;efficiently record multiple individual items&lt;/strong&gt; (instead of one massively long recording). This means that the &amp;lsquo;chopping up recordings into items&amp;rsquo; part of the workflow can be (largely) skipped&amp;hellip; &lt;em&gt;but see &lt;a href=&#34;#trim-silence&#34;&gt;this advice&lt;/a&gt; below&lt;/em&gt;.&lt;/p&gt;
 &lt;ul&gt;
@@ -1045,9 +1045,12 @@
       <description>&lt;h2 id=&#34;remember-this-one&#34;&gt;Remember this one?&lt;/h2&gt;
 &lt;p&gt;Do you remember this famous quote, starting at 00:15s?&lt;/p&gt;
 
-&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/Z9WDsgCIroE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+
+    
+    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Z9WDsgCIroE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
+      &gt;&lt;/iframe&gt;
+    &lt;/div&gt;
 
 &lt;p&gt;This was Neil Armstrong, landing on the moon on July 20, 1969. But hold on, what is he saying exactly? Let&amp;rsquo;s listen to the first part of his famous quote:&lt;/p&gt;
 
@@ -3223,86 +3226,6 @@
 
 
 
-
-
-  
-
-
-&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
-  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-
-  
-  
-
-  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
-    
-
-  &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/christina-papoutsi/&#34;&gt;Christina Papoutsi&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/eleni-zimianiti/&#34;&gt;Eleni Zimianiti&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/rebecca-frost/&#34;&gt;Rebecca Frost&lt;/a&gt;&lt;/span&gt;
-  &lt;/span&gt;
-  (2023).
-  &lt;a href=&#34;https://hrbosker.github.io/publication/papoutsi-zimianiti-etal-2023-pbr/&#34;&gt;Statistical learning at a virtual cocktail party&lt;/a&gt;.
-  &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt;, &lt;em&gt;in press&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.3758/s13423-023-02384-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.3758/s13423-023-02384-1&lt;/a&gt;.
-  
-  &lt;p&gt;
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3528937_1/component/file_3528938/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  PDF
-&lt;/a&gt;
-
-
-
-&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
-        data-filename=&#34;/publication/papoutsi-zimianiti-etal-2023-pbr/cite.bib&#34;&gt;
-  Cite
-&lt;/a&gt;
-
-
-
-  
-  
-    
-  
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/7sptu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  Dataset
-&lt;/a&gt;
-
-
-
-
-
-
-
-
-
-
-
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13423-023-02384-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  DOI
-&lt;/a&gt;
-
-
-&lt;/p&gt;
-
-  
-  
-&lt;/div&gt;
 
 
 
@@ -6713,6 +6636,117 @@
     </item>
     
     <item>
+      <title>Paper accepted in Language and Speech!</title>
+      <link>https://hrbosker.github.io/news/24-05-13-paper-ls/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-05-13-paper-ls/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Congratulations to Ronny on his first journal publication from his PhD project! Want to know how people use lip movements and simple hand gestures to perceive lexical stress? Read it here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;For Ronny&amp;rsquo;s first-year project, he video-recorded his PhD supervisor saying simple Dutch words that critically differed in which syllable carries stress: for instance &lt;em&gt;CONtent&lt;/em&gt; [noun] vs. &lt;em&gt;conTENT&lt;/em&gt; [adjective]. The talker sometimes did and sometimes didn&amp;rsquo;t produce a simple beat gesture on the word he was saying. Using audio- and video-editing techniques, Ronny created artificial videos that allowed him to play around with the auditory and visual cues to stress in all possible combinations. For instance, he created videos in which the talker&amp;rsquo;s voice was saying &lt;em&gt;CONtent&lt;/em&gt;, but the talker&amp;rsquo;s face was from a recording of &lt;em&gt;conTENT&lt;/em&gt;, while the talker&amp;rsquo;s body was from a recording where the talker produced a beat gesture on the first syllable (biasing towards &lt;em&gt;CONtent&lt;/em&gt; again). He then gave these manipulated videos to several groups of native Dutch participants and asked them what they thought the speaker said.&lt;/p&gt;
+&lt;p&gt;Results showed that people primarily relied on auditory cues to stress as well as visual cues about the timing of simple hand gestures. However, despite successfully demonstrating that people could tell apart the lip movements in a &lt;em&gt;CONtent&lt;/em&gt; video from the lip movements in a &lt;em&gt;conTENT&lt;/em&gt; video (i.e., when there&amp;rsquo;s no audio), we did not find that people used those visual articulatory cues to stress in audiovisual videos (i.e., with audio).&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;When it comes to perceiving vowels and consonants in speech, visual articulatory cues play an important role. Seeing a person&amp;rsquo;s face can greatly help with speech perception in noisy listening conditions and can even mislead you to hear things that weren&amp;rsquo;t said at all. Our paper, however, suggests that visual articulatory cues to stress are not heavily relied on in audiovisual speech perception. This is striking because we showed that those cues are informative and could have helped participants make their decisions. As such, these outcomes demonstrate that people weigh the multisensory cues in the audiovisual input signal differently, presumably depending on their reliability.&lt;/p&gt;
+&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
+&lt;p&gt;Interestingly, the timing of simple hand gestures did contribute consistently to participants&amp;rsquo; perceptual decisions: a beat gesture timed on the first syllable biased participants to hear &lt;em&gt;CONtent&lt;/em&gt;, while the same gesture but timed on the second syllable biased participants to hear &lt;em&gt;conTENT&lt;/em&gt;. This replicates earlier work from our group but importantly also extends it by using more natural gestures, more realistic presentation size, and richer stimuli (i.e., with the talker&amp;rsquo;s face visible).&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2024-ls/&#34;&gt;Audiovisual perception of lexical stress: Beat gestures and articulatory cues&lt;/a&gt;.
+  &lt;em&gt;Language and Speech&lt;/em&gt;, doi:10.1177/00238309241258162.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3589536_2/component/file_3589537/Bujok%20et%20al._2024_L%26S.docx?mode=download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2024-ls/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/4d9w5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>Proceedings papers accepted for Speech Prosody 2024</title>
       <link>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</link>
       <pubDate>Fri, 15 Mar 2024 00:00:00 +0000</pubDate>
@@ -7281,6 +7315,35 @@
     </item>
     
     <item>
+      <title>Audiovisual perception of lexical stress: Beat gestures and articulatory cues</title>
+      <link>https://hrbosker.github.io/publication/bujok-etal-2024-ls/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/bujok-etal-2024-ls/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Gestures time to vowel onset and change the acoustics of the word in Mandarin</title>
       <link>https://hrbosker.github.io/publication/rohrer-hong-etal-2024-speechprosody/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
@@ -7331,6 +7394,35 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Statistical learning at a virtual cocktail party</title>
+      <link>https://hrbosker.github.io/publication/papoutsi-zimianiti-etal-2024-pbr/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/papoutsi-zimianiti-etal-2024-pbr/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
 </description>
     </item>
     
@@ -7703,35 +7795,6 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Statistical learning at a virtual cocktail party</title>
-      <link>https://hrbosker.github.io/publication/papoutsi-zimianiti-etal-2023-pbr/</link>
-      <pubDate>Sun, 01 Jan 2023 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/publication/papoutsi-zimianiti-etal-2023-pbr/</guid>
-      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
-
-
-
-
-
-
-
-
-
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
---&gt;
 </description>
     </item>
     

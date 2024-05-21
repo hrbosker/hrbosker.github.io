@@ -5,12 +5,123 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 15 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 May 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Paper accepted in Language and Speech!</title>
+      <link>https://hrbosker.github.io/news/24-05-13-paper-ls/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-05-13-paper-ls/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Congratulations to Ronny on his first journal publication from his PhD project! Want to know how people use lip movements and simple hand gestures to perceive lexical stress? Read it here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;For Ronny&amp;rsquo;s first-year project, he video-recorded his PhD supervisor saying simple Dutch words that critically differed in which syllable carries stress: for instance &lt;em&gt;CONtent&lt;/em&gt; [noun] vs. &lt;em&gt;conTENT&lt;/em&gt; [adjective]. The talker sometimes did and sometimes didn&amp;rsquo;t produce a simple beat gesture on the word he was saying. Using audio- and video-editing techniques, Ronny created artificial videos that allowed him to play around with the auditory and visual cues to stress in all possible combinations. For instance, he created videos in which the talker&amp;rsquo;s voice was saying &lt;em&gt;CONtent&lt;/em&gt;, but the talker&amp;rsquo;s face was from a recording of &lt;em&gt;conTENT&lt;/em&gt;, while the talker&amp;rsquo;s body was from a recording where the talker produced a beat gesture on the first syllable (biasing towards &lt;em&gt;CONtent&lt;/em&gt; again). He then gave these manipulated videos to several groups of native Dutch participants and asked them what they thought the speaker said.&lt;/p&gt;
+&lt;p&gt;Results showed that people primarily relied on auditory cues to stress as well as visual cues about the timing of simple hand gestures. However, despite successfully demonstrating that people could tell apart the lip movements in a &lt;em&gt;CONtent&lt;/em&gt; video from the lip movements in a &lt;em&gt;conTENT&lt;/em&gt; video (i.e., when there&amp;rsquo;s no audio), we did not find that people used those visual articulatory cues to stress in audiovisual videos (i.e., with audio).&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;When it comes to perceiving vowels and consonants in speech, visual articulatory cues play an important role. Seeing a person&amp;rsquo;s face can greatly help with speech perception in noisy listening conditions and can even mislead you to hear things that weren&amp;rsquo;t said at all. Our paper, however, suggests that visual articulatory cues to stress are not heavily relied on in audiovisual speech perception. This is striking because we showed that those cues are informative and could have helped participants make their decisions. As such, these outcomes demonstrate that people weigh the multisensory cues in the audiovisual input signal differently, presumably depending on their reliability.&lt;/p&gt;
+&lt;h2 id=&#34;is-that-it&#34;&gt;Is that it?&lt;/h2&gt;
+&lt;p&gt;Interestingly, the timing of simple hand gestures did contribute consistently to participants&amp;rsquo; perceptual decisions: a beat gesture timed on the first syllable biased participants to hear &lt;em&gt;CONtent&lt;/em&gt;, while the same gesture but timed on the second syllable biased participants to hear &lt;em&gt;conTENT&lt;/em&gt;. This replicates earlier work from our group but importantly also extends it by using more natural gestures, more realistic presentation size, and richer stimuli (i.e., with the talker&amp;rsquo;s face visible).&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2024-ls/&#34;&gt;Audiovisual perception of lexical stress: Beat gestures and articulatory cues&lt;/a&gt;.
+  &lt;em&gt;Language and Speech&lt;/em&gt;, doi:10.1177/00238309241258162.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3589536_2/component/file_3589537/Bujok%20et%20al._2024_L%26S.docx?mode=download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2024-ls/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/4d9w5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>Proceedings papers accepted for Speech Prosody 2024</title>
