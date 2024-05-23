@@ -59,4 +59,4 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 <br />
 
 ## Other corpora
-Many other speech, video, and picture corpora are publicly available nowadays. Please see our [Other resources]({{< ref "../other-resources/#corpora" >}}) for some examples that we ourselves have used in the past.
+Many other speech, video, and picture corpora are publicly available nowadays. Please see [Other resources]({{< ref "../other-resources/#corpora" >}}) for some examples that we ourselves have used in the past.
