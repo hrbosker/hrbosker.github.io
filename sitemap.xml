@@ -58,6 +58,10 @@
     <loc>https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/resources/course-materials/</loc>
+    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/resources/other-resources/</loc>
     <lastmod>2022-07-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -92,34 +96,51 @@
     <loc>https://hrbosker.github.io/resources/scripts/manipulate-formants/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/resources/course-materials/prosody-in-speech-perception/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/resources/course-materials/introduction-to-r-tutorial/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/resources/course-materials/emlar-r-tutorial/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/news/</loc>
-    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/24-06-17-lot-summer-school-2024/</loc>
+    <lastmod>2024-06-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/24-06-13-nwo-grant-floris-cos/</loc>
+    <lastmod>2024-06-13T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tag/preface/</loc>
+    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/resources/</loc>
+    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tags/</loc>
+    <lastmod>2024-06-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/news/24-05-13-paper-ls/</loc>
     <lastmod>2024-05-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/</loc>
-    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/tag/preface/</loc>
-    <lastmod>2024-05-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/resources/</loc>
-    <lastmod>2024-05-07T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/tags/</loc>
-    <lastmod>2024-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/news/24-03-15-proceedings-papers-sp2024/</loc>

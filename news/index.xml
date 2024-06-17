@@ -5,12 +5,39 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 13 May 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Jun 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Teaching at LOT Summer School 2024</title>
+      <link>https://hrbosker.github.io/news/24-06-17-lot-summer-school-2024/</link>
+      <pubDate>Mon, 17 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-06-17-lot-summer-school-2024/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;I&amp;rsquo;m teaching a 5-day &lt;em&gt;Prosody in Speech Perception&lt;/em&gt; course at the LOT Summer School 2024 in Leiden. You can find all materials here!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;The &lt;strong&gt;Prosody in Speech Perception&lt;/strong&gt; course is part of the &lt;a href=&#34;https://lotschool.nl/events/lot-summer-school-2024/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOT Summer School 2024&lt;/a&gt;. The aim of this 5-day course is to reveal the central role that prosody plays in low-level speech perception and spoken word recognition.&lt;/p&gt;
+&lt;p&gt;Prosody in spoken communication generally refers to those aspects of speech that fall outside the segmental information about consonants and vowels (e.g., intonation, stress, rhythm). Still, this course will describe how suprasegmental prosody and segmental cues in speech are tightly interconnected. As such, it aims to reveal the central role that prosody plays in low-level speech perception and spoken word recognition. Each lecture targets a different processing mechanism by which prosody impacts speech perception, including general-auditory normalization, neural speech tracking, prosody-guided prediction, talker-specific learning, as well as audiovisual integration of multisensory cues to prosody. Thus, prosody - in all its different forms and appearances - is a potent factor in speech perception, determining which words and speech sounds we hear.&lt;/p&gt;
+&lt;h2 id=&#34;course-materials&#34;&gt;Course materials&lt;/h2&gt;
+&lt;p&gt;You can find &lt;a href=&#34;../../resources/course-materials/prosody-in-speech-perception/&#34;&gt;all course materials&lt;/a&gt; here.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>NWO PhD grant for Floris Cos!</title>
+      <link>https://hrbosker.github.io/news/24-06-13-nwo-grant-floris-cos/</link>
+      <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-06-13-nwo-grant-floris-cos/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Today we heard that Floris Cos successfully received a grant from the Dutch Research Council (NWO) to start a PhD project about how simple beat gestures influence spoken word recognition in L1 and L2.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-went-before&#34;&gt;What went before&amp;hellip;&lt;/h2&gt;
+&lt;p&gt;Floris Cos did a research internship at the SPEAC group in 2023. For this internship, he re-tested participants who had done a manual McGurk experiment about one year earlier. When these people performed the exact same task once again, we successfully replicated the manual McGurk effect at the group level but also found a weak correlation of the by-participant effect sizes in the two identical experiments. These outcomes were presented in Leiden at Speech Prosody 2024 and published as &lt;a href=&#34;https://hrbosker.github.io/publication/cos-etal-2024-speechprosody&#34;&gt;Cos, Bujok, and Bosker (2024)&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;hooray&#34;&gt;Hooray!&lt;/h2&gt;
+&lt;p&gt;After this internship, Floris applied for a &amp;lsquo;PhD in the Humanities&amp;rsquo; grant from the Dutch Research Council (NWO) to continue research into audiovisual speech perception. After a long wait, we now know he was successful and will start a PhD at the Center for Language Studies (CLS) at Radboud University in September 2024. &lt;em&gt;Congratulations, Floris!!&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;official-press-release&#34;&gt;Official press release&lt;/h2&gt;
+&lt;p&gt;Check out NWO&amp;rsquo;s &lt;a href=&#34;https://www.nwo.nl/en/news/funding-for-20-new-phd-students-in-the-humanities&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;press release&lt;/a&gt; here.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Paper accepted in Language and Speech!</title>

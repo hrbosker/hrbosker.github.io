@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Course materials | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/resources/course-materials/</link>
+      <atom:link href="https://hrbosker.github.io/resources/course-materials/index.xml" rel="self" type="application/rss+xml" />
+    <description>Course materials</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 12 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hrbosker.github.io/resources/course-materials/featured.png</url>
+      <title>Course materials</title>
+      <link>https://hrbosker.github.io/resources/course-materials/</link>
+    </image>
+    
+    <item>
+      <title>Prosody in Speech Perception</title>
+      <link>https://hrbosker.github.io/resources/course-materials/prosody-in-speech-perception/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/course-materials/prosody-in-speech-perception/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This course formed part of the &lt;a href=&#34;https://lotschool.nl/events/lot-summer-school-2024/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LOT Summer School 2024&lt;/a&gt;. The aim of this 5-day course was to reveal the central role that prosody plays in low-level speech perception and spoken word recognition.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;course-description&#34;&gt;Course description&lt;/h2&gt;
+&lt;p&gt;Prosody in spoken communication generally refers to those aspects of speech that fall outside the segmental information about consonants and vowels (e.g., intonation, stress, rhythm). Still, this course will describe how suprasegmental prosody and segmental cues in speech are tightly interconnected. As such, it aims to reveal the central role that prosody plays in low-level speech perception and spoken word recognition. Each lecture targets a different processing mechanism by which prosody impacts speech perception, including general-auditory normalization, neural speech tracking, prosody-guided prediction, talker-specific learning, as well as audiovisual integration of multisensory cues to prosody. Thus, prosody - in all its different forms and appearances - is a potent factor in speech perception, determining which words and speech sounds we hear.&lt;/p&gt;
+&lt;p&gt;You can find the full &lt;a href=&#34;course-description.pdf&#34;&gt;course description&lt;/a&gt; here.&lt;/p&gt;
+&lt;h2 id=&#34;lecture-slides&#34;&gt;Lecture slides&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;At the start of each lecture,&lt;/strong&gt; I will post the slides here.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Day 1: &lt;a href=&#34;./LOT%20Bosker%202024_lecture1.pdf&#34;&gt;low-level normalization for prosody&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Day 2: neural tracking of prosody&lt;/li&gt;
+&lt;li&gt;Day 3: prosody-guided prediction&lt;/li&gt;
+&lt;li&gt;Day 4: talker-specific learning of prosody&lt;/li&gt;
+&lt;li&gt;Day 5: audiovisual integration of multisensory prosody&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-creative-commons  pr-1 fa-fw&#34;&gt;&lt;/i&gt; All materials are shared under a &lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC-BY 4.0&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2024, Hans Rutger Bosker&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EMLAR R-tutorial</title>
+      <link>https://hrbosker.github.io/resources/course-materials/introduction-to-r-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/course-materials/introduction-to-r-tutorial/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This tutorial, co-designed with &lt;strong&gt;Hugo Quené&lt;/strong&gt;, formed part of the &lt;a href=&#34;https://emlar.wp.hum.uu.nl/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EMLAR workshop&lt;/a&gt; (Experimental Methods in Language Acquisition Research) at Utrecht University from 2014 to 2019. The aim of this 2-hour session was to introduce PhD students to coding in R.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;tutorial-materials&#34;&gt;Tutorial materials&lt;/h2&gt;
+&lt;p&gt;You can find the latest &lt;a href=&#34;EMLAR_R_tutorial_2019.zip&#34;&gt;zipped tutorial materials&lt;/a&gt; (from 2019) here. The tutorial starts from scratch, introducing how to work with variables, strings, numbers, data frames, and even includes some rudimentary figures and inferential stats.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-creative-commons  pr-1 fa-fw&#34;&gt;&lt;/i&gt; All materials are shared under a &lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC-BY 4.0&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2024, Hans Rutger Bosker&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Introduction-to-R tutorial</title>
+      <link>https://hrbosker.github.io/resources/course-materials/emlar-r-tutorial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/course-materials/emlar-r-tutorial/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This tutorial, co-taught with &lt;strong&gt;Joe Rodd&lt;/strong&gt;, formed part of the curriculum of the &lt;a href=&#34;https://www.mpi.nl/department/imprs-graduate-school/13&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMPRS graduate school&lt;/a&gt; at the MPI Nijmegen in 2017. The aim of this 3-lecture tutorial was to introduce PhD students to coding in R.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;tutorial-materials&#34;&gt;Tutorial materials&lt;/h2&gt;
+&lt;p&gt;You can find the &lt;a href=&#34;IMPRS_R_Course_2017.zip&#34;&gt;zipped tutorial materials&lt;/a&gt; here. The three sessions cover such topics as reading in your own data, merging data from different files, creating figures using ggplot2, and a rudimentary introduction to some inferential stats using linear mixed models (lmer). The zip file also includes a take-home assignment.&lt;/p&gt;
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+&lt;p&gt;
+  &lt;i class=&#34;fab fa-creative-commons  pr-1 fa-fw&#34;&gt;&lt;/i&gt; All materials are shared under a &lt;a href=&#34;https://creativecommons.org/licenses/by/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC-BY 4.0&lt;/a&gt; license.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;2024, Hans Rutger Bosker&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
