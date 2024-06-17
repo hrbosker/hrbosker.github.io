@@ -39,6 +39,10 @@ main:
     PageRef: resources/how-to/_index.md
     weight: 40
     parent: resources
+  - name: Course materials
+    PageRef: resources/course-materials/_index.md
+    weight: 45
+    parent: resources
   - name: Other resources
     PageRef: resources/other-resources/_index.md
     weight: 50
