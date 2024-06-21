@@ -17,13 +17,13 @@ You can find the full [course description](course-description.pdf) here.
 
 ## Lecture slides
 
-**At the start of each lecture,** I will post the slides here.
+You can download the slides (PDF) for each individual lecture here:
 
 - Day 1: [low-level normalization for prosody](./LOT%20Bosker%202024_lecture1.pdf)
 - Day 2: [neural tracking of prosody](./LOT%20Bosker%202024_lecture2.pdf)
 - Day 3: [prosody-guided prediction](./LOT%20Bosker%202024_lecture3.pdf)
 - Day 4: [talker-specific learning of prosody](./LOT%20Bosker%202024_lecture4.pdf)
-- Day 5: audiovisual integration of multisensory prosody
+- Day 5: [audiovisual integration of multisensory prosody](./LOT%20Bosker%202024_lecture5.pdf)
 
 ## License
 
