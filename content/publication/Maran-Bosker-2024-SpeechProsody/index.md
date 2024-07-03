@@ -4,7 +4,7 @@ authors:
   - matteo-maran
   - admin
 date: '2024-01-01T00:00:00Z'
-## doi: '10.21437/SpeechProsody.2022-57'
+doi: '10.21437/SpeechProsody.2024-149'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -16,7 +16,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2024*'
+publication: 'In *Proceedings of Speech Prosody 2024*, 737-741, doi:[10.21437/SpeechProsody.2024-149](https://doi.org/10.21437/SpeechProsody.2024-149)'
 publication_short: ''
 
 abstract: 'Human conversations are inherently multimodal, including auditory speech, visual articulatory cues, and hand gestures. Recent studies demonstrated that the timing of a simple up-and-down hand movement, known as a beat gesture, can affect speech perception. A beat gesture falling on the first syllable of a disyllabic word induces a bias to perceive a strong-weak stress pattern (i.e., “CONtent”), while a beat gesture falling on the second syllable combined with the same acoustics biases towards a weak-strong stress pattern (“conTENT”). This effect, termed the “manual McGurk effect”, has been studied in both in-lab and online studies, employing standard experimental sessions lasting approximately forty minutes. The present work tests whether the manual McGurk effect can be observed in an online short version (“mini-test”) of the original paradigm, lasting only ten minutes. Additionally, we employ two different response modalities, namely a two-alternative forced choice and a visual analog scale. A significant manual McGurk effect was observed with both response modalities. Overall, the present study demonstrates the feasibility of employing a ten-minute manual McGurk mini-test to obtain a measure of gesture-speech integration. As such, it may lend itself for inclusion in large-scale test batteries that aim to quantify individual variation in language processing.'

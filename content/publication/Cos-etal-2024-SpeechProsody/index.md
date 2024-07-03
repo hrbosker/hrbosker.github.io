@@ -5,7 +5,7 @@ authors:
   - ronny-bujok
   - admin
 date: '2024-01-01T00:00:00Z'
-## doi: '10.21437/SpeechProsody.2022-57'
+doi: '10.21437/SpeechProsody.2024-176'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -17,7 +17,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2024*'
+publication: 'In *Proceedings of Speech Prosody 2024*, 871-875, doi:[10.21437/SpeechProsody.2024-176](https://doi.org/10.21437/SpeechProsody.2024-176)'
 publication_short: ''
 
 abstract: 'In natural communication, we typically both see and hear our conversation partner. Speech comprehension thus requires the integration of auditory and visual information from the speech signal. This is for instance evidenced by the Manual McGurk effect, where the perception of lexical stress is biased towards the syllable that has a beat gesture aligned to it. However, there is considerable individual variation in how heavily gestural timing is weighed as a cue to stress. To assess within-individual consistency, this study investigated the test-retest reliability of the Manual McGurk effect. We reran an earlier Manual McGurk experiment with the same participants, over 1.5 years later. At the group level, we successfully replicated the Manual McGurk effect with a similar effect size. However, a correlation of the by-participant effect sizes in the two identical experiments indicated that there was only a weak correlation between both tests, suggesting that the weighing of gestural information in the perception of lexical stress is stable at the group level, but less so in individuals. Findings are discussed in comparison to other measures of audiovisual integration in speech perception.'

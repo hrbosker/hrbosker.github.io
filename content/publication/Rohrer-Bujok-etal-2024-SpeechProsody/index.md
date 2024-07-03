@@ -6,7 +6,7 @@ authors:
   - Lieke van Maastricht
   - admin
 date: '2024-01-01T00:00:00Z'
-## doi: '10.21437/SpeechProsody.2022-57'
+doi: '10.21437/SpeechProsody.2024-142'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -18,7 +18,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2024*'
+publication: 'In *Proceedings of Speech Prosody 2024*, 702-706, doi:[10.21437/SpeechProsody.2024-142](https://doi.org/10.21437/SpeechProsody.2024-142)'
 publication_short: ''
 
 abstract: 'It has been shown that when speakers produce hand gestures, addressees are attentive towards these gestures, using them to facilitate speech processing. Even relatively simple “beat” gestures are taken into account to help process aspects of speech such as prosodic prominence. In fact, recent evidence suggests that the timing of a beat gesture can influence spoken word recognition. Termed the manual McGurk Effect, Dutch participants, when presented with lexical stress minimal pair continua in Dutch, were biased to hear lexical stress on the syllable that coincided with a beat gesture. However, little is known about how this manual McGurk effect would surface in languages other than Dutch, with different acoustic cues to prominence, and variable gestures. Therefore, this study tests the effect in Spanish where lexical stress is arguably even more important, being a contrastive cue in the regular verb conjugation system. Results from 24 participants corroborate the effect in Spanish, namely that when given the same auditory stimulus, participants were biased to perceive lexical stress on the syllable that visually co-occurred with a beat gesture. These findings extend the manual McGurk effect to a different language, emphasizing the impact of gestures timing on prosody perception and spoken word recognition.'

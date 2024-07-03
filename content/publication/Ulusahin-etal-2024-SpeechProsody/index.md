@@ -6,7 +6,7 @@ authors:
   - James M. McQueen
   - Antje S. Meyer
 date: '2024-01-01T00:00:00Z'
-## doi: '10.21437/SpeechProsody.2022-57'
+doi: '10.21437/SpeechProsody.2024-88'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -18,7 +18,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2024*'
+publication: 'In *Proceedings of Speech Prosody 2024*, 432-436, doi:[10.21437/SpeechProsody.2024-88](https://doi.org/10.21437/SpeechProsody.2024-88)'
 publication_short: ''
 
 abstract: 'The human brain deals with the infinite variability of speech through multiple mechanisms. Some of them rely solely on information in the speech input (i.e., signal-driven) whereas some rely on linguistic or real-world knowledge (i.e., knowledge-driven). Many signal-driven perceptual processes rely on the enhancement of acoustic differences between incoming speech sounds, producing contrastive adjustments. For instance, when an ambiguous voiceless fricative is preceded by a high fundamental frequency (f0) sentence, the fricative is perceived as having lower a spectral center of gravity (CoG). However, it is not clear whether knowledge of a talker’s typical f0 can lead to similar contrastive effects. This study investigated a possible talker f0 effect on fricative CoG perception. In the exposure phase, two groups of participants (N=16 each) heard the same talker at high or low f0 for 20 minutes. Later, in the test phase, participants rated fixed-f0 /?ɔk/ tokens as being /sɔk/ (i.e., high CoG) or /ʃɔk/ (i.e., low CoG), where /?/ represents a fricative from a 5-step /s/-/ʃ/ continuum. Surprisingly, our data revealed an assimilatory effect of talker f0 on fricative CoG perception whereby hearing high f0 biased perception towards high CoG. Thus, we demonstrated that talker f0 information affects fricative CoG perception.'

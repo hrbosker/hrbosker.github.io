@@ -5,7 +5,7 @@ authors:
   - Yitian Hong
   - admin
 date: '2024-01-01T00:00:00Z'
-## doi: '10.21437/SpeechProsody.2022-57'
+doi: '10.21437/SpeechProsody.2024-175'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2017-01-01T00:00:00Z'
@@ -17,7 +17,7 @@ publishDate: '2017-01-01T00:00:00Z'
 publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: 'In *Proceedings of Speech Prosody 2024*'
+publication: 'In *Proceedings of Speech Prosody 2024*, 866-870, doi:[10.21437/SpeechProsody.2024-175](https://doi.org/10.21437/SpeechProsody.2024-175)'
 publication_short: ''
 
 abstract: 'Recent research on multimodal language production has revealed that prominence in speech and gesture go hand-in-hand. Specifically, peaks in gesture (i.e., the apex) seem to closely coordinate with peaks in fundamental frequency (F0). The nature of this relationship may also be bi-directional, as it has also been shown that the production of gesture directly affects speech acoustics. However, most studies on the topic have largely focused on stress-based languages, where fundamental frequency has a prominence-lending function. Less work has been carried out on lexical tone languages such as Mandarin, where F0 is lexically distinctive. In this study, four native Mandarin speakers were asked to produce single monosyllabic CV words, taken from minimal lexical tone triplets (e.g., /pi1/, /pi2/, /pi3/), either with or without a beat gesture. Our analyses of the timing of the gestures showed that the gesture apex most stably occurred near vowel onset, with consonantal duration being the strongest predictor of apex placement. Acoustic analyses revealed that words produced with gesture showed raised F0 contours, greater intensity, and shorter durations. These findings further our understanding of gesture-speech alignment in typologically diverse languages, and add to the discussion about multimodal prominence.'
