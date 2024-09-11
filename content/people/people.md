@@ -21,7 +21,6 @@ content:
     - PhD students
     - Visiting researchers
     - Interns
-    - Alumni
 design:
   show_interests: true
   show_role: true

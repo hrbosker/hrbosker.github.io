@@ -70,7 +70,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - PhD students
+  - alumni
 ---
 
-Giulio Severijnen is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). His project investigates between-talker and within-talker variability in prosody production, with a specific focus on lexical stress. Moreover, he also tests how listeners flexibly adapt to this variability in order to successfully comprehend different talkers. The project is funded through a 'Donders Internal PhD Round' grant, awarded to Prof. James McQueen, Dr. Hans Rutger Bosker, and Dr. Ashley Lewis.
+Giulio Severijnen did his PhD at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands (2020-2024). His PhD project was supervised by [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/), [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}), and Dr. Ashley Lewis. His research investigated between-talker and within-talker variability in prosody production, with a specific focus on lexical stress and speech rate. He also tested how listeners flexibly adapt to this variability in order to successfully comprehend different talkers. The project was funded through a 'Donders Internal PhD Round' grant, awarded to Prof. James McQueen, Dr. Hans Rutger Bosker, and Dr. Ashley Lewis. After his PhD, Giulio took up a postdoc position with Prof. Davide Crepaldi at the Language, Learning and Reading lab (SISSA, Trieste, Italy). 
