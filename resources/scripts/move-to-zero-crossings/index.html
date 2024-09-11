@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: July 3, 2024 --><html lang="en-us" >
+<!-- Last Published: September 11, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -902,150 +902,150 @@
 <blockquote>
 <p>You can also <a href="../move-to-zero-crossings.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@ru.nl</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Hans Rutger Bosker, Radboud University
+</span></span><span class="line"><span class="cl">### HansRutger.Bosker@ru.nl
+</span></span><span class="line"><span class="cl">### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
+</span></span><span class="line"><span class="cl">### License: CC BY-NC 4.0
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script takes a single .wav and matching .TextGrid file as input</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   and moves all boundaries in one particular tier to zero-crossings.</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; This script takes a single .wav and matching .TextGrid file as input
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   and moves all boundaries in one particular tier to zero-crossings.
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   Specifically, it *adds* a new &#39;to0x&#39; tier at the top of the TextGrid</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   that is identical to a given tier except that all boundaries are</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   at zero-crossings. The old TextGrid is then overwritten with the</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   new extended TextGrid, but no information is lost (only added).</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   Specifically, it *adds* a new &#39;to0x&#39; tier at the top of the TextGrid
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   that is identical to a given tier except that all boundaries are
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   at zero-crossings. The old TextGrid is then overwritten with the
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   new extended TextGrid, but no information is lost (only added).
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   This script works best if the script also subtracts the mean from</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;   the audio signal, and overwrites the original audio:</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&#39;method&#39; option 1 (default).</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   This script works best if the script also subtracts the mean from
+</span></span><span class="line"><span class="cl">	###&gt;&gt;   the audio signal, and overwrites the original audio:
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	&#39;method&#39; option 1 (default).
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	If you need to move the boundaries for more than one TextGrid file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	you can merge this script with &#39;batch-processing.praat&#39;,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Form to enter variables</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="n">beginPause</span><span class="p">:</span> <span class="s2">&#34;Enter settings&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;directory&#34;</span><span class="p">,</span> <span class="s2">&#34;C:/Users/hanbos/mysounds&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the name of the sound file&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;(should be identical to TextGrid name)&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;NOTE: do NOT include any extension (no .wav)&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">text</span><span class="p">:</span> <span class="s2">&#34;filename&#34;</span><span class="p">,</span> <span class="s2">&#34;syll1&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">comment</span><span class="p">:</span> <span class="s2">&#34;Provide the interval tier number (typically 1)&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">real</span><span class="p">:</span> <span class="s2">&#34;tierNumber&#34;</span><span class="p">,</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">choice</span><span class="p">:</span> <span class="s2">&#34;method&#34;</span><span class="p">,</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	   <span class="n">option</span><span class="p">:</span> <span class="s2">&#34;Subtract mean and overwrite audio file&#34;</span>
-</span></span><span class="line"><span class="cl">	   <span class="n">option</span><span class="p">:</span> <span class="s2">&#34;Do not subtract mean&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">clicked</span> <span class="o">=</span> <span class="n">endPause</span> <span class="p">(</span><span class="s2">&#34;Cancel&#34;</span><span class="p">,</span> <span class="s2">&#34;OK&#34;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	If you need to move the boundaries for more than one TextGrid file,
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	you can merge this script with &#39;batch-processing.praat&#39;,
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	see: https://hrbosker.github.io/resources/scripts/batch-processing/
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Before we start, let&#39;s check whether you&#39;ve entered sensible</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### input for the variables above...</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the directory exists.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">directory</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">directory</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">directory</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">## Let&#39;s also check whether the specified wav and TextGrid filenames exist</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## inside this particular directory.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">filepath</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">filename</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;.wav&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">wavFileExists</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">filepath</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">wavFileExists</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">		<span class="c1"># if the wav file does not exist</span>
-</span></span><span class="line"><span class="cl">		<span class="n">printline</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">exit</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span><span class="o">.</span> <span class="n">Check</span> <span class="n">spelling</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">filepath</span><span class="o">$</span> <span class="o">=</span> <span class="n">directory</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="n">filename</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;.TextGrid&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">tgFileExists</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">filepath</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">if</span> <span class="n">tgFileExists</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">		<span class="c1"># if the TextGrid file does not exist</span>
-</span></span><span class="line"><span class="cl">		<span class="n">printline</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">exit</span> <span class="n">Could</span> <span class="ow">not</span> <span class="n">find</span> <span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span><span class="o">.</span> <span class="n">Check</span> <span class="n">spelling</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endif</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if the temporary file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
-</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;directory$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Form to enter variables
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">beginPause: &#34;Enter settings&#34;
+</span></span><span class="line"><span class="cl">	comment: &#34;Provide the directory of the sound and TextGrid file (no slash at end of string)&#34;
+</span></span><span class="line"><span class="cl">	text: &#34;directory&#34;, &#34;C:/Users/hanbos/mysounds&#34;
+</span></span><span class="line"><span class="cl">	comment: &#34;Provide the name of the sound file&#34;
+</span></span><span class="line"><span class="cl">	comment: &#34;(should be identical to TextGrid name)&#34;
+</span></span><span class="line"><span class="cl">	comment: &#34;NOTE: do NOT include any extension (no .wav)&#34;
+</span></span><span class="line"><span class="cl">	text: &#34;filename&#34;, &#34;syll1&#34;
+</span></span><span class="line"><span class="cl">	comment: &#34;Provide the interval tier number (typically 1)&#34;
+</span></span><span class="line"><span class="cl">	real: &#34;tierNumber&#34;, 1
+</span></span><span class="line"><span class="cl">	choice: &#34;method&#34;, 1
+</span></span><span class="line"><span class="cl">	   option: &#34;Subtract mean and overwrite audio file&#34;
+</span></span><span class="line"><span class="cl">	   option: &#34;Do not subtract mean&#34;
+</span></span><span class="line"><span class="cl">clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#################################    SCRIPT    #################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Before we start, let&#39;s check whether you&#39;ve entered sensible
+</span></span><span class="line"><span class="cl">### input for the variables above...
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">method</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Subtract</span> <span class="n">mean</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Write</span> <span class="n">to</span> <span class="n">WAV</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl"><span class="n">nInts</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">intervals</span><span class="o">...</span> <span class="s1">&#39;tierNumber&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">Insert</span> <span class="n">interval</span> <span class="n">tier</span><span class="o">...</span> <span class="mi">1</span> <span class="n">to0x</span>
+</span></span><span class="line"><span class="cl">### Let&#39;s check if the directory exists.
+</span></span><span class="line"><span class="cl">### This script will throw an error if the directory doesn&#39;t exist
+</span></span><span class="line"><span class="cl">### (i.e., it won&#39;t write to a mysterious temp directory).
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="n">to</span> <span class="p">(</span><span class="s1">&#39;nInts&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">TextGrid</span> <span class="s1">&#39;filename$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">intEnd</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">end</span> <span class="n">point</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;i&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">intLab</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">label</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;i&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="s1">&#39;filename$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">zxEnd</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">nearest</span> <span class="n">zero</span> <span class="n">crossing</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;intEnd&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">TextGrid</span> <span class="s1">&#39;filename$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Insert</span> <span class="n">boundary</span><span class="o">...</span> <span class="mi">1</span> <span class="n">zxEnd</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Set</span> <span class="n">interval</span> <span class="n">text</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;i&#39;</span> <span class="s1">&#39;intLab$&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">endfor</span>
-</span></span><span class="line"><span class="cl"><span class="n">intLab</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">label</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="p">(</span><span class="s1">&#39;tierNumber&#39;</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="s1">&#39;nInts&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">Set</span> <span class="n">interval</span> <span class="n">text</span><span class="o">...</span> <span class="mi">1</span> <span class="s1">&#39;nInts&#39;</span> <span class="s1">&#39;intLab$&#39;</span>
+</span></span><span class="line"><span class="cl">### First check whether the input directory ends in a backslash (if so, removed)
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Write</span> <span class="n">to</span> <span class="n">text</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;directory$&#39;</span>\<span class="s1">&#39;filename$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
-</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Sound</span> <span class="s1">&#39;filename$&#39;</span>
-</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">if right$(directory$,1)=&#34;/&#34;
+</span></span><span class="line"><span class="cl">	directory$ = left$(directory$,length(directory$)-1)
+</span></span><span class="line"><span class="cl">elsif right$(directory$,1)=&#34;\&#34;
+</span></span><span class="line"><span class="cl">	directory$ = left$(directory$,length(directory$)-1)
+</span></span><span class="line"><span class="cl">endif
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">### Then create a temporary txt file in the folder
+</span></span><span class="line"><span class="cl">### and try to write it to the input folder.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+</span></span><span class="line"><span class="cl">### does *not* exist. We&#39;ll manually check whether the saving of this
+</span></span><span class="line"><span class="cl">### temp txt file has succeeded or not further down below.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">temp_filename$ = directory$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+</span></span><span class="line"><span class="cl">nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Can the file be found?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">file_exists_yesno = fileReadable(temp_filename$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if file_exists_yesno = 1
+</span></span><span class="line"><span class="cl">	# if you *could* read that temp txt file,
+</span></span><span class="line"><span class="cl">	# this confirms that the directory is valid.
+</span></span><span class="line"><span class="cl">	# Then you can delete it.
+</span></span><span class="line"><span class="cl">	deleteFile: temp_filename$
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	## Let&#39;s also check whether the specified wav and TextGrid filenames exist
+</span></span><span class="line"><span class="cl">	## inside this particular directory.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.wav&#34;
+</span></span><span class="line"><span class="cl">	wavFileExists = fileReadable(filepath$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	if wavFileExists = 0
+</span></span><span class="line"><span class="cl">		# if the wav file does not exist
+</span></span><span class="line"><span class="cl">		printline Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;
+</span></span><span class="line"><span class="cl">		exit Could not find &#39;filename$&#39;.wav in the folder &#39;directory$&#39;. Check spelling.
+</span></span><span class="line"><span class="cl">	endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	filepath$ = directory$ + &#34;/&#34; + filename$ + &#34;.TextGrid&#34;
+</span></span><span class="line"><span class="cl">	tgFileExists = fileReadable(filepath$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	if tgFileExists = 0
+</span></span><span class="line"><span class="cl">		# if the TextGrid file does not exist
+</span></span><span class="line"><span class="cl">		printline Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;
+</span></span><span class="line"><span class="cl">		exit Could not find &#39;filename$&#39;.TextGrid in the folder &#39;directory$&#39;. Check spelling.
+</span></span><span class="line"><span class="cl">	endif
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	# if the temporary file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+</span></span><span class="line"><span class="cl">	printline The folder &#39;directory$&#39; was not found
+</span></span><span class="line"><span class="cl">	exit Your directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">#################################    SCRIPT    #################################
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Read from file... &#39;directory$&#39;\&#39;filename$&#39;.wav
+</span></span><span class="line"><span class="cl">if method = 1
+</span></span><span class="line"><span class="cl">	Subtract mean
+</span></span><span class="line"><span class="cl">	Write to WAV file... &#39;directory$&#39;\&#39;filename$&#39;.wav
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">Read from file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">nInts = Get number of intervals... &#39;tierNumber&#39;
+</span></span><span class="line"><span class="cl">Insert interval tier... 1 to0x
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for i to (&#39;nInts&#39;-1)
+</span></span><span class="line"><span class="cl">	select TextGrid &#39;filename$&#39;
+</span></span><span class="line"><span class="cl">	intEnd = Get end point... (&#39;tierNumber&#39;+1) &#39;i&#39;
+</span></span><span class="line"><span class="cl">	intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;i&#39;
+</span></span><span class="line"><span class="cl">	select Sound &#39;filename$&#39;
+</span></span><span class="line"><span class="cl">	zxEnd = Get nearest zero crossing... 1 &#39;intEnd&#39;
+</span></span><span class="line"><span class="cl">	select TextGrid &#39;filename$&#39;
+</span></span><span class="line"><span class="cl">	Insert boundary... 1 zxEnd
+</span></span><span class="line"><span class="cl">	Set interval text... 1 &#39;i&#39; &#39;intLab$&#39;
+</span></span><span class="line"><span class="cl">endfor
+</span></span><span class="line"><span class="cl">intLab$ = Get label of interval... (&#39;tierNumber&#39;+1) &#39;nInts&#39;
+</span></span><span class="line"><span class="cl">Set interval text... 1 &#39;nInts&#39; &#39;intLab$&#39;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Write to text file... &#39;directory$&#39;\&#39;filename$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">Remove
+</span></span><span class="line"><span class="cl">select Sound &#39;filename$&#39;
+</span></span><span class="line"><span class="cl">Remove
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl"># End of script
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span></code></pre></div>
 
         </article>
@@ -1196,7 +1196,7 @@
   
 
 
-<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
 
 
 
@@ -1295,7 +1295,7 @@
   
 
 
-<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
 
 
 
@@ -1332,7 +1332,7 @@
 </div>
 
 
-  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
 
 
 

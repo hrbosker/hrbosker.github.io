@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: July 3, 2024 --><html lang="en-us" >
+<!-- Last Published: September 11, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -902,504 +902,504 @@
 <blockquote>
 <p>You can also <a href="../manipulate-formants.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@donders.ru.nl</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### based on an earlier script created by Matthias Sjerps</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Hans Rutger Bosker, Radboud University
+</span></span><span class="line"><span class="cl">### HansRutger.Bosker@donders.ru.nl
+</span></span><span class="line"><span class="cl">### based on an earlier script created by Matthias Sjerps
+</span></span><span class="line"><span class="cl">### Date: 20 July 2023, run in Praat 6.3.08 on Windows 10
+</span></span><span class="line"><span class="cl">### License: CC BY-NC 4.0
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script takes pairs of items (e.g., bet and bit) from a directory</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	that critically only differ in their F1 (&#34;bet&#34; has higher F1 than &#34;bit&#34;).</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	The script then creates a phonetic continuum from high F1 (bet) to low F1 (bit)</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	using Burg&#39;s LPC method.</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; This script takes pairs of items (e.g., bet and bit) from a directory
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	that critically only differ in their F1 (&#34;bet&#34; has higher F1 than &#34;bit&#34;).
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	The script then creates a phonetic continuum from high F1 (bet) to low F1 (bit)
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	using Burg&#39;s LPC method.
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	input directory. This file should contain two tab-separated columns</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	with the labels &#34;word1&#34; and &#34;word2&#34;. Then script then loops over the</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	rows in this list of pairs. For example:</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; IMPORTANT: Please provide a list of word pairs in a .txt file in the
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	input directory. This file should contain two tab-separated columns
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	with the labels &#34;word1&#34; and &#34;word2&#34;. Then script then loops over the
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	rows in this list of pairs. For example:
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	word1	word2</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	bet	bit</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	get	git</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	set	sit</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	word1	word2
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	bet	bit
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	get	git
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	set	sit
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; IMPORTANT: Every individual sound file should already have an accompanying</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	.TextGrid file containing one tier. This tier should have 3 intervals:</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	1. The interval preceding the critical vowel</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	2. The interval of the critical vowel</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	3. The interval following the critical vowel</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; IMPORTANT: Every individual sound file should already have an accompanying
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	.TextGrid file containing one tier. This tier should have 3 intervals:
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	1. The interval preceding the critical vowel
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	2. The interval of the critical vowel
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	3. The interval following the critical vowel
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; The script includes transplantation of the intensity contour of the original</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	word1 to the manipulated output sound. The script can also set the</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	f0 of the manipulated vowel to a fixed average value calculated</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	across the two members of an item pair. This is done by setting</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	the variable control_f0$ to the value &#34;yes&#34;.</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; The script includes transplantation of the intensity contour of the original
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	word1 to the manipulated output sound. The script can also set the
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	f0 of the manipulated vowel to a fixed average value calculated
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	across the two members of an item pair. This is done by setting
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	the variable control_f0$ to the value &#34;yes&#34;.
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Variables you will definitely need to customize:</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Variables you will definitely need to customize:
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Where can the files be found?</span>
+</span></span><span class="line"><span class="cl">### Where can the files be found?
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\Desktop\mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">dir_in$ = &#34;C:\Users\hanbos\Desktop\mysounds&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Where should the output files be saved?</span>
+</span></span><span class="line"><span class="cl">### Where should the output files be saved?
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\Desktop\mysounds\continua&#34;</span>
+</span></span><span class="line"><span class="cl">dir_out$ = &#34;C:\Users\hanbos\Desktop\mysounds\continua&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### What is the name of the .txt file containing the list of word pairs?</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 	NOTE: Do **NOT** include the .txt extension; just the name!</span>
+</span></span><span class="line"><span class="cl">### What is the name of the .txt file containing the list of word pairs?
+</span></span><span class="line"><span class="cl">### 	NOTE: Do **NOT** include the .txt extension; just the name!
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">table_name</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;list_of_pairs&#34;</span>
+</span></span><span class="line"><span class="cl">table_name$ = &#34;list_of_pairs&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Next to the formant manipulations, do you also want to control the f0 and duration</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 	of the output sounds by setting them to the average value between the two words?</span>
+</span></span><span class="line"><span class="cl">### Next to the formant manipulations, do you also want to control the f0 and duration
+</span></span><span class="line"><span class="cl">### 	of the output sounds by setting them to the average value between the two words?
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">control_f0</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl">control_f0$ = &#34;yes&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Number of estimated formants (default: 5)</span>
-</span></span><span class="line"><span class="cl"><span class="n">nformants</span> <span class="o">=</span> <span class="mi">5</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Provide the max. frequency for filtering (default for F1: 3000)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 	Manipulations will be performed below this frequency only;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### 	the original signal is used above this frequency.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		This helps to create natural-sounding (i.e., convincing) output speech.</span>
-</span></span><span class="line"><span class="cl"><span class="n">filter</span> <span class="o">=</span> <span class="mi">3000</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Provide cutoff frequency for formant detection (default: 11000)</span>
-</span></span><span class="line"><span class="cl"><span class="n">cutoff</span> <span class="o">=</span> <span class="mi">11000</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Provide the min and max pitch settings.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		For female talker: 100 - 400</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		For male talker: 75 - 300</span>
-</span></span><span class="line"><span class="cl"><span class="n">minpitch</span> <span class="o">=</span> <span class="mi">100</span>
-</span></span><span class="line"><span class="cl"><span class="n">maxpitch</span> <span class="o">=</span> <span class="mi">400</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Define how many steps should be on your continua.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		It helps if this value is an odd number so you have a &#39;true&#39; average</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		in the middle. Default is 11 because this means the steps go up/down</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		by 10% every time. This means that step 1 has the mean F1 of the original</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		high-F1 member (e.g., bet) and step 11 has the mean F1 of the original</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###		low-F1 member (e.g., bit).</span>
-</span></span><span class="line"><span class="cl"><span class="n">nSteps</span> <span class="o">=</span> <span class="mi">11</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Define your manipulation method (default: burg)</span>
-</span></span><span class="line"><span class="cl"><span class="n">methodLPC</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;burg&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Define your fade-in/fade-out overlap window in seconds (default: 0.01)</span>
-</span></span><span class="line"><span class="cl"><span class="n">window</span> <span class="o">=</span> <span class="mf">0.01</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check whether the directories specified above exist...</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the input directory exists.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_in</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
-</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">input</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Now re-do this for the output directory:</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_out</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete that temp txt file.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
-</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_out$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">output</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">### Number of estimated formants (default: 5)
+</span></span><span class="line"><span class="cl">nformants = 5
+</span></span><span class="line"><span class="cl">### Provide the max. frequency for filtering (default for F1: 3000)
+</span></span><span class="line"><span class="cl">### 	Manipulations will be performed below this frequency only;
+</span></span><span class="line"><span class="cl">### 	the original signal is used above this frequency.
+</span></span><span class="line"><span class="cl">###		This helps to create natural-sounding (i.e., convincing) output speech.
+</span></span><span class="line"><span class="cl">filter = 3000
+</span></span><span class="line"><span class="cl">### Provide cutoff frequency for formant detection (default: 11000)
+</span></span><span class="line"><span class="cl">cutoff = 11000
+</span></span><span class="line"><span class="cl">### Provide the min and max pitch settings.
+</span></span><span class="line"><span class="cl">###		For female talker: 100 - 400
+</span></span><span class="line"><span class="cl">###		For male talker: 75 - 300
+</span></span><span class="line"><span class="cl">minpitch = 100
+</span></span><span class="line"><span class="cl">maxpitch = 400
+</span></span><span class="line"><span class="cl">### Define how many steps should be on your continua.
+</span></span><span class="line"><span class="cl">###		It helps if this value is an odd number so you have a &#39;true&#39; average
+</span></span><span class="line"><span class="cl">###		in the middle. Default is 11 because this means the steps go up/down
+</span></span><span class="line"><span class="cl">###		by 10% every time. This means that step 1 has the mean F1 of the original
+</span></span><span class="line"><span class="cl">###		high-F1 member (e.g., bet) and step 11 has the mean F1 of the original
+</span></span><span class="line"><span class="cl">###		low-F1 member (e.g., bit).
+</span></span><span class="line"><span class="cl">nSteps = 11
+</span></span><span class="line"><span class="cl">### Define your manipulation method (default: burg)
+</span></span><span class="line"><span class="cl">methodLPC$ = &#34;burg&#34;
+</span></span><span class="line"><span class="cl">### Define your fade-in/fade-out overlap window in seconds (default: 0.01)
+</span></span><span class="line"><span class="cl">window = 0.01
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#################################    SCRIPT    #################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Let&#39;s check whether the directories specified above exist...
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Let&#39;s clear the Info window so we can print fresh new log data of our stimuli.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">## This log prints for each pair of items (&#34;item&#34;), for each created step,</span>
-</span></span><span class="line"><span class="cl"><span class="c1">##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 1st member of the item pair</span>
-</span></span><span class="line"><span class="cl"><span class="c1">##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 2nd member of the item pair</span>
-</span></span><span class="line"><span class="cl"><span class="c1">##		the word duration, vowel duration, mean f0, f1, f2, f3 for the manipulated output sound.</span>
-</span></span><span class="line"><span class="cl"><span class="n">clearinfo</span>
-</span></span><span class="line"><span class="cl"><span class="n">echo</span> <span class="n">item</span>	<span class="n">step</span>	<span class="n">dur_1</span>	<span class="n">voweldur_1</span>	<span class="n">f0_1</span>	<span class="n">f1_1</span>	<span class="n">f2_1</span>	<span class="n">f3_1</span>	<span class="n">dur_2</span>	<span class="n">voweldur_2</span>	<span class="n">f0_2</span>	<span class="n">f1_2</span>	<span class="n">f2_2</span>	<span class="n">f3_2</span>	<span class="n">dur_manip</span>	<span class="n">voweldur_manip</span>	<span class="n">f0_manip</span>	<span class="n">f1_manip</span>	<span class="n">f2_manip</span>	<span class="n">f3_manip</span>
+</span></span><span class="line"><span class="cl">### Let&#39;s check if the input directory exists.
+</span></span><span class="line"><span class="cl">### This script will throw an error if the directory doesn&#39;t exist
+</span></span><span class="line"><span class="cl">### (i.e., it won&#39;t write to a mysterious temp directory).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### First check whether the input directory ends in a backslash (if so, removed)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if right$(dir_in$,1)=&#34;/&#34;
+</span></span><span class="line"><span class="cl">	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+</span></span><span class="line"><span class="cl">elsif right$(dir_in$,1)=&#34;\&#34;
+</span></span><span class="line"><span class="cl">	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Then create a temporary txt file in the folder
+</span></span><span class="line"><span class="cl">### and try to write it to the input folder.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+</span></span><span class="line"><span class="cl">### does *not* exist. We&#39;ll manually check whether the saving of this
+</span></span><span class="line"><span class="cl">### temp txt file has succeeded or not further down below.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+</span></span><span class="line"><span class="cl">nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Can the file be found?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">file_exists_yesno = fileReadable(temp_filename$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if file_exists_yesno = 1
+</span></span><span class="line"><span class="cl">	# if you *could* read that temp txt file,
+</span></span><span class="line"><span class="cl">	# this confirms that the directory is valid.
+</span></span><span class="line"><span class="cl">	# Then you can delete it.
+</span></span><span class="line"><span class="cl">	deleteFile: temp_filename$
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+</span></span><span class="line"><span class="cl">	printline The folder &#39;dir_in$&#39; was not found
+</span></span><span class="line"><span class="cl">	exit Your input directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Now re-do this for the output directory:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if right$(dir_out$,1)=&#34;/&#34;
+</span></span><span class="line"><span class="cl">	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+</span></span><span class="line"><span class="cl">elsif right$(dir_out$,1)=&#34;\&#34;
+</span></span><span class="line"><span class="cl">	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Then create a temporary txt file in the folder
+</span></span><span class="line"><span class="cl">### and try to write it to the input folder.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+</span></span><span class="line"><span class="cl">### does *not* exist. We&#39;ll manually check whether the saving of this
+</span></span><span class="line"><span class="cl">### temp txt file has succeeded or not further down below.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">temp_filename$ = dir_out$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+</span></span><span class="line"><span class="cl">nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Can the file be found?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">file_exists_yesno = fileReadable(temp_filename$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if file_exists_yesno = 1
+</span></span><span class="line"><span class="cl">	# if you *could* read that temp txt file,
+</span></span><span class="line"><span class="cl">	# this confirms that the directory is valid.
+</span></span><span class="line"><span class="cl">	# Then you can delete that temp txt file.
+</span></span><span class="line"><span class="cl">	deleteFile: temp_filename$
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+</span></span><span class="line"><span class="cl">	printline The folder &#39;dir_out$&#39; was not found
+</span></span><span class="line"><span class="cl">	exit Your output directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+</span></span><span class="line"><span class="cl">endif
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;table_name$&#39;</span><span class="o">.</span><span class="n">txt</span>
-</span></span><span class="line"><span class="cl"><span class="n">nItems</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">rows</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">#################################    SCRIPT    #################################
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">ItemCnt</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">nItems</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## Create leading and trailing silence of 0.5 sec to append to the words to</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## improve spectral measurements at the onset/offset of the words.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Create</span> <span class="n">Sound</span> <span class="n">from</span> <span class="n">formula</span><span class="o">...</span> <span class="n">silence1</span> <span class="n">Mono</span> <span class="mi">0</span> <span class="mf">0.5</span> <span class="n">cutoff</span>  <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">## Let&#39;s clear the Info window so we can print fresh new log data of our stimuli.
+</span></span><span class="line"><span class="cl">## This log prints for each pair of items (&#34;item&#34;), for each created step,
+</span></span><span class="line"><span class="cl">##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 1st member of the item pair
+</span></span><span class="line"><span class="cl">##		the original word duration, vowel duration, mean f0, f1, f2, f3 for the 2nd member of the item pair
+</span></span><span class="line"><span class="cl">##		the word duration, vowel duration, mean f0, f1, f2, f3 for the manipulated output sound.
+</span></span><span class="line"><span class="cl">clearinfo
+</span></span><span class="line"><span class="cl">echo item	step	dur_1	voweldur_1	f0_1	f1_1	f2_1	f3_1	dur_2	voweldur_2	f0_2	f1_2	f2_2	f3_2	dur_manip	voweldur_manip	f0_manip	f1_manip	f2_manip	f3_manip
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## Read and measure acoustics of word1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Table</span> <span class="s1">&#39;table_name$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">word1</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">value</span><span class="o">...</span> <span class="s1">&#39;ItemCnt&#39;</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">word2</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">value</span><span class="o">...</span> <span class="s1">&#39;ItemCnt&#39;</span> <span class="n">word2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Read from file... &#39;dir_in$&#39;\&#39;table_name$&#39;.txt
+</span></span><span class="line"><span class="cl">nItems = Get number of rows
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for ItemCnt from 1 to nItems
+</span></span><span class="line"><span class="cl">	## Create leading and trailing silence of 0.5 sec to append to the words to
+</span></span><span class="line"><span class="cl">	## improve spectral measurements at the onset/offset of the words.
+</span></span><span class="line"><span class="cl">	Create Sound from formula... silence1 Mono 0 0.5 cutoff  0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	#######################################
+</span></span><span class="line"><span class="cl">	## Read and measure acoustics of word1
+</span></span><span class="line"><span class="cl">	#######################################
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">	select Table &#39;table_name$&#39;
+</span></span><span class="line"><span class="cl">	word1$ = Get value... &#39;ItemCnt&#39; word1
+</span></span><span class="line"><span class="cl">	word2$ = Get value... &#39;ItemCnt&#39; word2
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word1$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">sampFreq_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">sampling</span> <span class="n">frequency</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dur_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">total</span> <span class="n">duration</span>
-</span></span><span class="line"><span class="cl">	<span class="n">int_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Pitch</span><span class="o">...</span> <span class="mi">0</span> <span class="s1">&#39;minpitch&#39;</span> <span class="s1">&#39;maxpitch&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">f0_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">Hertz</span>
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.wav
+</span></span><span class="line"><span class="cl">	Rename... word1
+</span></span><span class="line"><span class="cl">	sampFreq_1 = Get sampling frequency
+</span></span><span class="line"><span class="cl">	dur_1 = Get total duration
+</span></span><span class="line"><span class="cl">	int_1 = Get intensity (dB)
+</span></span><span class="line"><span class="cl">	To Pitch... 0 &#39;minpitch&#39; &#39;maxpitch&#39;
+</span></span><span class="line"><span class="cl">	f0_1 = Get mean... 0 0 Hertz
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Resample</span><span class="p">:</span> <span class="n">cutoff</span><span class="p">,</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_belowcutoff</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	select Sound word1
+</span></span><span class="line"><span class="cl">	Resample: cutoff, 50
+</span></span><span class="line"><span class="cl">	Rename... word1_belowcutoff
+</span></span><span class="line"><span class="cl">	select Sound word1
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Create</span> <span class="n">Sound</span> <span class="n">from</span> <span class="n">formula</span><span class="o">...</span> <span class="n">silence2</span> <span class="n">Mono</span> <span class="mi">0</span> <span class="mf">0.5</span> <span class="n">cutoff</span>  <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">silence1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="n">word1_belowcutoff</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="n">silence2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Concatenate</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_pad</span>
+</span></span><span class="line"><span class="cl">	Create Sound from formula... silence2 Mono 0 0.5 cutoff  0
+</span></span><span class="line"><span class="cl">	select Sound silence1
+</span></span><span class="line"><span class="cl">	plus Sound word1_belowcutoff
+</span></span><span class="line"><span class="cl">	plus Sound silence2
+</span></span><span class="line"><span class="cl">	Concatenate
+</span></span><span class="line"><span class="cl">	Rename... word1_pad
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Filter</span> <span class="p">(</span><span class="k">pass</span> <span class="n">Hann</span> <span class="n">band</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">filter</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">Low_Part_1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">lowInt_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Intensity</span><span class="o">...</span> <span class="mi">100</span> <span class="mi">0</span> <span class="n">no</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Down</span> <span class="n">to</span> <span class="n">IntensityTier</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Intensity</span> <span class="n">Low_Part_1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	Filter (pass Hann band)... 0 filter 10
+</span></span><span class="line"><span class="cl">	Rename... Low_Part_1
+</span></span><span class="line"><span class="cl">	lowInt_1 = Get intensity (dB)
+</span></span><span class="line"><span class="cl">	To Intensity... 100 0 no
+</span></span><span class="line"><span class="cl">	Down to IntensityTier
+</span></span><span class="line"><span class="cl">	select Intensity Low_Part_1
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">LPC</span> <span class="p">(</span><span class="n">burg</span><span class="p">):</span> <span class="p">(</span><span class="s1">&#39;nformants&#39;</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.005</span><span class="p">,</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">LPC</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Filter</span> <span class="p">(</span><span class="n">inverse</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">Source_1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">LPC</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	select Sound word1_pad
+</span></span><span class="line"><span class="cl">	To LPC (burg): (&#39;nformants&#39;*2), 0.025, 0.005, 50
+</span></span><span class="line"><span class="cl">	select Sound word1_pad
+</span></span><span class="line"><span class="cl">	plus LPC word1_pad
+</span></span><span class="line"><span class="cl">	Filter (inverse)
+</span></span><span class="line"><span class="cl">	Rename... Source_1
+</span></span><span class="line"><span class="cl">	select LPC word1_pad
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word1$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Shift</span> <span class="n">times</span> <span class="n">by</span><span class="o">...</span> <span class="mf">0.5</span>
-</span></span><span class="line"><span class="cl">	<span class="n">vowelonset_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">start</span> <span class="n">time</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="mi">1</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">voweloffset_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">end</span> <span class="n">time</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="mi">1</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">voweldur_1</span> <span class="o">=</span> <span class="n">voweloffset_1</span> <span class="o">-</span> <span class="n">vowelonset_1</span>
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">	Rename... word1
+</span></span><span class="line"><span class="cl">	Shift times by... 0.5
+</span></span><span class="line"><span class="cl">	vowelonset_1 = Get start time of interval... 1 2
+</span></span><span class="line"><span class="cl">	voweloffset_1 = Get end time of interval... 1 2
+</span></span><span class="line"><span class="cl">	voweldur_1 = voweloffset_1 - vowelonset_1
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Formant</span> <span class="p">(</span><span class="s1">&#39;methodLPC$&#39;</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">nformants</span> <span class="p">(</span><span class="n">cutoff</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="mf">0.025</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">maxForm</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">maximum</span> <span class="n">number</span> <span class="n">of</span> <span class="n">formants</span>
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">formCnt</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">maxForm</span>
-</span></span><span class="line"><span class="cl">		<span class="n">origFormantsArray_1</span> <span class="p">[</span><span class="s1">&#39;formCnt&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="s1">&#39;formCnt&#39;</span> <span class="s1">&#39;vowelonset_1&#39;</span> <span class="s1">&#39;voweloffset_1&#39;</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f</span><span class="s1">&#39;formCnt&#39;</span><span class="n">_1</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="s1">&#39;formCnt&#39;</span> <span class="s1">&#39;vowelonset_1&#39;</span> <span class="s1">&#39;voweloffset_1&#39;</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
-</span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	select Sound word1_pad
+</span></span><span class="line"><span class="cl">	To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+</span></span><span class="line"><span class="cl">	maxForm = Get maximum number of formants
+</span></span><span class="line"><span class="cl">	for formCnt from 1 to maxForm
+</span></span><span class="line"><span class="cl">		origFormantsArray_1 [&#39;formCnt&#39;] = Get mean... &#39;formCnt&#39; &#39;vowelonset_1&#39; &#39;voweloffset_1&#39; hertz
+</span></span><span class="line"><span class="cl">		f&#39;formCnt&#39;_1 = Get mean... &#39;formCnt&#39; &#39;vowelonset_1&#39; &#39;voweloffset_1&#39; hertz
+</span></span><span class="line"><span class="cl">	endfor
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## Read and measure acoustics of word2</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	
+</span></span><span class="line"><span class="cl">	#######################################
+</span></span><span class="line"><span class="cl">	## Read and measure acoustics of word2
+</span></span><span class="line"><span class="cl">	#######################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word2$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">sampFreq_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">sampling</span> <span class="n">frequency</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dur_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">total</span> <span class="n">duration</span>
-</span></span><span class="line"><span class="cl">	<span class="n">int_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Pitch</span><span class="o">...</span> <span class="mi">0</span> <span class="s1">&#39;minpitch&#39;</span> <span class="s1">&#39;maxpitch&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">f0_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">0</span> <span class="mi">0</span> <span class="n">Hertz</span>
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;word2$&#39;.wav
+</span></span><span class="line"><span class="cl">	Rename... word2
+</span></span><span class="line"><span class="cl">	sampFreq_2 = Get sampling frequency
+</span></span><span class="line"><span class="cl">	dur_2 = Get total duration
+</span></span><span class="line"><span class="cl">	int_2 = Get intensity (dB)
+</span></span><span class="line"><span class="cl">	To Pitch... 0 &#39;minpitch&#39; &#39;maxpitch&#39;
+</span></span><span class="line"><span class="cl">	f0_2 = Get mean... 0 0 Hertz
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Resample</span><span class="p">:</span> <span class="n">cutoff</span><span class="p">,</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word2_belowcutoff</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	select Sound word2
+</span></span><span class="line"><span class="cl">	Resample: cutoff, 50
+</span></span><span class="line"><span class="cl">	Rename... word2_belowcutoff
+</span></span><span class="line"><span class="cl">	select Sound word2
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Create</span> <span class="n">Sound</span> <span class="n">from</span> <span class="n">formula</span><span class="o">...</span> <span class="n">silence2</span> <span class="n">Mono</span> <span class="mi">0</span> <span class="mf">0.5</span> <span class="n">cutoff</span>  <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">silence1</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="n">word2_belowcutoff</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="n">silence2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Concatenate</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word2_pad</span>
+</span></span><span class="line"><span class="cl">	Create Sound from formula... silence2 Mono 0 0.5 cutoff  0
+</span></span><span class="line"><span class="cl">	select Sound silence1
+</span></span><span class="line"><span class="cl">	plus Sound word2_belowcutoff
+</span></span><span class="line"><span class="cl">	plus Sound silence2
+</span></span><span class="line"><span class="cl">	Concatenate
+</span></span><span class="line"><span class="cl">	Rename... word2_pad
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Filter</span> <span class="p">(</span><span class="k">pass</span> <span class="n">Hann</span> <span class="n">band</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">filter</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">Low_Part_2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">lowInt_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">intensity</span> <span class="p">(</span><span class="n">dB</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Intensity</span><span class="o">...</span> <span class="mi">100</span> <span class="mi">0</span> <span class="n">no</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Down</span> <span class="n">to</span> <span class="n">IntensityTier</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Intensity</span> <span class="n">Low_Part_2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	Filter (pass Hann band)... 0 filter 10
+</span></span><span class="line"><span class="cl">	Rename... Low_Part_2
+</span></span><span class="line"><span class="cl">	lowInt_2 = Get intensity (dB)
+</span></span><span class="line"><span class="cl">	To Intensity... 100 0 no
+</span></span><span class="line"><span class="cl">	Down to IntensityTier
+</span></span><span class="line"><span class="cl">	select Intensity Low_Part_2
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word2_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">LPC</span> <span class="p">(</span><span class="n">burg</span><span class="p">):</span> <span class="p">(</span><span class="s1">&#39;nformants&#39;</span><span class="o">*</span><span class="mi">2</span><span class="p">),</span> <span class="mf">0.025</span><span class="p">,</span> <span class="mf">0.005</span><span class="p">,</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word2_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">LPC</span> <span class="n">word2_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Filter</span> <span class="p">(</span><span class="n">inverse</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">Source_2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">LPC</span> <span class="n">word2_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	select Sound word2_pad
+</span></span><span class="line"><span class="cl">	To LPC (burg): (&#39;nformants&#39;*2), 0.025, 0.005, 50
+</span></span><span class="line"><span class="cl">	select Sound word2_pad
+</span></span><span class="line"><span class="cl">	plus LPC word2_pad
+</span></span><span class="line"><span class="cl">	Filter (inverse)
+</span></span><span class="line"><span class="cl">	Rename... Source_2
+</span></span><span class="line"><span class="cl">	select LPC word2_pad
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word2$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Rename</span><span class="o">...</span> <span class="n">word2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Shift</span> <span class="n">times</span> <span class="n">by</span><span class="o">...</span> <span class="mf">0.5</span>
-</span></span><span class="line"><span class="cl">	<span class="n">vowelonset_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">start</span> <span class="n">time</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="mi">1</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">voweloffset_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">end</span> <span class="n">time</span> <span class="n">of</span> <span class="n">interval</span><span class="o">...</span> <span class="mi">1</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">	<span class="n">voweldur_2</span> <span class="o">=</span> <span class="n">voweloffset_2</span> <span class="o">-</span> <span class="n">vowelonset_2</span>
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;word2$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">	Rename... word2
+</span></span><span class="line"><span class="cl">	Shift times by... 0.5
+</span></span><span class="line"><span class="cl">	vowelonset_2 = Get start time of interval... 1 2
+</span></span><span class="line"><span class="cl">	voweloffset_2 = Get end time of interval... 1 2
+</span></span><span class="line"><span class="cl">	voweldur_2 = voweloffset_2 - vowelonset_2
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">word2_pad</span>
-</span></span><span class="line"><span class="cl">	<span class="n">To</span> <span class="n">Formant</span> <span class="p">(</span><span class="s1">&#39;methodLPC$&#39;</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">nformants</span> <span class="p">(</span><span class="n">cutoff</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="mf">0.025</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">	<span class="n">maxForm</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">maximum</span> <span class="n">number</span> <span class="n">of</span> <span class="n">formants</span>
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">formCnt</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">maxForm</span>
-</span></span><span class="line"><span class="cl">		<span class="n">origFormantsArray_2</span> <span class="p">[</span><span class="s1">&#39;formCnt&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="s1">&#39;formCnt&#39;</span> <span class="s1">&#39;vowelonset_2&#39;</span> <span class="s1">&#39;voweloffset_2&#39;</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f</span><span class="s1">&#39;formCnt&#39;</span><span class="n">_2</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="s1">&#39;formCnt&#39;</span> <span class="s1">&#39;vowelonset_2&#39;</span> <span class="s1">&#39;voweloffset_2&#39;</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	select Sound word2_pad
+</span></span><span class="line"><span class="cl">	To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+</span></span><span class="line"><span class="cl">	maxForm = Get maximum number of formants
+</span></span><span class="line"><span class="cl">	for formCnt from 1 to maxForm
+</span></span><span class="line"><span class="cl">		origFormantsArray_2 [&#39;formCnt&#39;] = Get mean... &#39;formCnt&#39; &#39;vowelonset_2&#39; &#39;voweloffset_2&#39; hertz
+</span></span><span class="line"><span class="cl">		f&#39;formCnt&#39;_2 = Get mean... &#39;formCnt&#39; &#39;vowelonset_2&#39; &#39;voweloffset_2&#39; hertz
+</span></span><span class="line"><span class="cl">	endfor
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">	
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## Now loop over steps</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">#######################################</span>
+</span></span><span class="line"><span class="cl">	#######################################
+</span></span><span class="line"><span class="cl">	## Now loop over steps
+</span></span><span class="line"><span class="cl">	#######################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">stepCtr</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">nSteps</span>
+</span></span><span class="line"><span class="cl">	for stepCtr from 1 to nSteps
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1"># NOTE: we take word1 (here: the high-F1 member [bet]) as the basis for the manipulations.</span>
+</span></span><span class="line"><span class="cl">		# NOTE: we take word1 (here: the high-F1 member [bet]) as the basis for the manipulations.
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1_pad</span>
-</span></span><span class="line"><span class="cl">		<span class="n">To</span> <span class="n">Formant</span> <span class="p">(</span><span class="s1">&#39;methodLPC$&#39;</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">nformants</span> <span class="p">(</span><span class="n">cutoff</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="mf">0.025</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">		<span class="n">maxForm</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">maximum</span> <span class="n">number</span> <span class="n">of</span> <span class="n">formants</span>
-</span></span><span class="line"><span class="cl">		<span class="n">nFrames</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">frames</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="p">:</span> <span class="s2">&#34;New_Form_&#39;stepCtr&#39;&#34;</span>
+</span></span><span class="line"><span class="cl">		select Sound word1_pad
+</span></span><span class="line"><span class="cl">		To Formant (&#39;methodLPC$&#39;)... 0 nformants (cutoff/2) 0.025 50
+</span></span><span class="line"><span class="cl">		maxForm = Get maximum number of formants
+</span></span><span class="line"><span class="cl">		nFrames = Get number of frames
+</span></span><span class="line"><span class="cl">		Rename: &#34;New_Form_&#39;stepCtr&#39;&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">###############################################################################################################</span>
-</span></span><span class="line"><span class="cl">		<span class="c1"># if some items need custom formant shifts, you can define an item-specific constant here</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">###############################################################################################################</span>
-</span></span><span class="line"><span class="cl">		<span class="n">constant</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#	if word1$ = &#34;bet&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#		constant = 30</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#	elsif word1$ = &#34;get&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#		constant = 50</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#	elsif word1$ = &#34;set&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#		constant = 40</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#	endif</span>
+</span></span><span class="line"><span class="cl">		###############################################################################################################
+</span></span><span class="line"><span class="cl">		# if some items need custom formant shifts, you can define an item-specific constant here
+</span></span><span class="line"><span class="cl">		###############################################################################################################
+</span></span><span class="line"><span class="cl">		constant = 0
+</span></span><span class="line"><span class="cl">		#	if word1$ = &#34;bet&#34;
+</span></span><span class="line"><span class="cl">		#		constant = 30
+</span></span><span class="line"><span class="cl">		#	elsif word1$ = &#34;get&#34;
+</span></span><span class="line"><span class="cl">		#		constant = 50
+</span></span><span class="line"><span class="cl">		#	elsif word1$ = &#34;set&#34;
+</span></span><span class="line"><span class="cl">		#		constant = 40
+</span></span><span class="line"><span class="cl">		#	endif
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## NOTE: we create a continuum starting at the high-F1 member (on step 1)</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">##	gradually going do to the low-F1 member.</span>
-</span></span><span class="line"><span class="cl">		<span class="n">stepsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">f1_1</span> <span class="o">-</span> <span class="n">f1_2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="n">nSteps</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Formula</span> <span class="p">(</span><span class="n">frequencies</span><span class="p">):</span> <span class="s2">&#34;if row = 1 then (self-(((stepCtr-1)*stepsize)+constant)) else self fi&#34;</span>
+</span></span><span class="line"><span class="cl">		## NOTE: we create a continuum starting at the high-F1 member (on step 1)
+</span></span><span class="line"><span class="cl">		##	gradually going do to the low-F1 member.
+</span></span><span class="line"><span class="cl">		stepsize = (f1_1 - f1_2)/(nSteps-1)
+</span></span><span class="line"><span class="cl">		Formula (frequencies): &#34;if row = 1 then (self-(((stepCtr-1)*stepsize)+constant)) else self fi&#34;
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="c1">## You can also control other formants, for instance by setting the F2 to the average of the two vowels</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## thus creating an ambiguous F2 in between the two vowels that is fixed/constant at every step.</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## For instance:</span>
+</span></span><span class="line"><span class="cl">		## You can also control other formants, for instance by setting the F2 to the average of the two vowels
+</span></span><span class="line"><span class="cl">		## thus creating an ambiguous F2 in between the two vowels that is fixed/constant at every step.
+</span></span><span class="line"><span class="cl">		## For instance:
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">#ambF2 = (f2_1 + f2_2)/2</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#distanceToAmbF2 = f2_1 - ambF2</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">#Formula (frequencies): &#34;if row = 2 then (self-distanceToAmbF2) else self fi&#34;</span>
+</span></span><span class="line"><span class="cl">		#ambF2 = (f2_1 + f2_2)/2
+</span></span><span class="line"><span class="cl">		#distanceToAmbF2 = f2_1 - ambF2
+</span></span><span class="line"><span class="cl">		#Formula (frequencies): &#34;if row = 2 then (self-distanceToAmbF2) else self fi&#34;
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="c1">## Filter the original source with the new formant filter</span>
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">Formant</span> <span class="n">New_Form_</span><span class="s1">&#39;stepCtr&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">Sound</span> <span class="n">Source_1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Filter</span>
+</span></span><span class="line"><span class="cl">		## Filter the original source with the new formant filter
+</span></span><span class="line"><span class="cl">		select Formant New_Form_&#39;stepCtr&#39;
+</span></span><span class="line"><span class="cl">		plus Sound Source_1
+</span></span><span class="line"><span class="cl">		Filter
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Restrict to lower-freq content only</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Filter</span> <span class="p">(</span><span class="k">pass</span> <span class="n">Hann</span> <span class="n">band</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="n">filter</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_Low</span>
+</span></span><span class="line"><span class="cl">		## Restrict to lower-freq content only
+</span></span><span class="line"><span class="cl">		Filter (pass Hann band)... 0 filter 10
+</span></span><span class="line"><span class="cl">		Rename... word1_&#39;stepCtr&#39;_Low
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Transplant the original intensity contour back onto the manipulated speech</span>
-</span></span><span class="line"><span class="cl">		<span class="n">To</span> <span class="n">Intensity</span><span class="o">...</span> <span class="mi">100</span> <span class="mi">0</span> <span class="n">no</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Down</span> <span class="n">to</span> <span class="n">IntensityTier</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Formula</span><span class="o">...</span> <span class="bp">self</span><span class="o">*-</span><span class="mi">1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">Sound</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_Low</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Multiply</span><span class="o">...</span> <span class="n">yes</span>
-</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">IntensityTier</span> <span class="n">Low_Part_1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Multiply</span><span class="o">...</span> <span class="n">yes</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Scale</span> <span class="n">intensity</span><span class="o">...</span> <span class="n">lowInt_1</span>
+</span></span><span class="line"><span class="cl">		## Transplant the original intensity contour back onto the manipulated speech
+</span></span><span class="line"><span class="cl">		To Intensity... 100 0 no
+</span></span><span class="line"><span class="cl">		Down to IntensityTier
+</span></span><span class="line"><span class="cl">		Formula... self*-1
+</span></span><span class="line"><span class="cl">		plus Sound word1_&#39;stepCtr&#39;_Low
+</span></span><span class="line"><span class="cl">		Multiply... yes
+</span></span><span class="line"><span class="cl">		plus IntensityTier Low_Part_1
+</span></span><span class="line"><span class="cl">		Multiply... yes
+</span></span><span class="line"><span class="cl">		Scale intensity... lowInt_1
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Remove leading and trailing silences</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Extract</span> <span class="n">part</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span> <span class="p">(</span><span class="n">dur_1</span><span class="o">+</span><span class="mf">0.5</span><span class="p">),</span> <span class="s2">&#34;rectangular&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;no&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Resample</span><span class="p">:</span> <span class="n">sampFreq_1</span><span class="p">,</span> <span class="mi">50</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_Low_nonpad</span>
+</span></span><span class="line"><span class="cl">		## Remove leading and trailing silences
+</span></span><span class="line"><span class="cl">		Extract part: 0.5, (dur_1+0.5), &#34;rectangular&#34;, 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl">		Resample: sampFreq_1, 50
+</span></span><span class="line"><span class="cl">		Rename... word1_&#39;stepCtr&#39;_Low_nonpad
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Combine with the original high-freq content</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word1$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Filter</span> <span class="p">(</span><span class="k">pass</span> <span class="n">Hann</span> <span class="n">band</span><span class="p">)</span><span class="o">...</span> <span class="n">filter</span> <span class="n">sampFreq_1</span> <span class="mi">10</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_High</span>
-</span></span><span class="line"><span class="cl">		<span class="n">plus</span> <span class="n">Sound</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_Low_nonpad</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Combine</span> <span class="n">to</span> <span class="n">stereo</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Convert</span> <span class="n">to</span> <span class="n">mono</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Scale</span> <span class="n">intensity</span><span class="o">...</span> <span class="n">int_1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;Sound word1&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Scale</span> <span class="n">intensity</span><span class="o">...</span> <span class="n">int_1</span>
+</span></span><span class="line"><span class="cl">		## Combine with the original high-freq content
+</span></span><span class="line"><span class="cl">		Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.wav
+</span></span><span class="line"><span class="cl">		Rename... word1
+</span></span><span class="line"><span class="cl">		Filter (pass Hann band)... filter sampFreq_1 10
+</span></span><span class="line"><span class="cl">		Rename... word1_High
+</span></span><span class="line"><span class="cl">		plus Sound word1_&#39;stepCtr&#39;_Low_nonpad
+</span></span><span class="line"><span class="cl">		Combine to stereo
+</span></span><span class="line"><span class="cl">		Convert to mono
+</span></span><span class="line"><span class="cl">		Rename... word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">		Scale intensity... int_1
+</span></span><span class="line"><span class="cl">		selectObject: &#34;Sound word1&#34;
+</span></span><span class="line"><span class="cl">		Scale intensity... int_1
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">Sound</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">		<span class="n">dur_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">total</span> <span class="n">duration</span>
-</span></span><span class="line"><span class="cl">		<span class="n">To</span> <span class="n">Manipulation</span><span class="o">...</span> <span class="mf">0.01</span> <span class="s1">&#39;minpitch&#39;</span> <span class="s1">&#39;maxpitch&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Extract</span> <span class="n">pitch</span> <span class="n">tier</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f0_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span> <span class="p">(</span><span class="n">curve</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">		select Sound word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">		dur_manip = Get total duration
+</span></span><span class="line"><span class="cl">		To Manipulation... 0.01 &#39;minpitch&#39; &#39;maxpitch&#39;
+</span></span><span class="line"><span class="cl">		Extract pitch tier
+</span></span><span class="line"><span class="cl">		f0_manip = Get mean (curve)... 0 0
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Set the F0 to the average values across word1 &amp; word2</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">control_f0</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
-</span></span><span class="line"><span class="cl">			<span class="n">newWordF0</span> <span class="o">=</span> <span class="p">(</span><span class="n">f0_1</span><span class="o">+</span><span class="n">f0_2</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
-</span></span><span class="line"><span class="cl">			<span class="n">f0ScalingFactor</span> <span class="o">=</span> <span class="n">newWordF0</span><span class="o">/</span><span class="n">f0_manip</span>
+</span></span><span class="line"><span class="cl">		## Set the F0 to the average values across word1 &amp; word2
+</span></span><span class="line"><span class="cl">		if control_f0$ = &#34;yes&#34;
+</span></span><span class="line"><span class="cl">			newWordF0 = (f0_1+f0_2)/2
+</span></span><span class="line"><span class="cl">			f0ScalingFactor = newWordF0/f0_manip
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">			<span class="n">select</span> <span class="n">Manipulation</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">			<span class="n">Extract</span> <span class="n">pitch</span> <span class="n">tier</span>
-</span></span><span class="line"><span class="cl">			<span class="n">Multiply</span> <span class="n">frequencies</span><span class="o">...</span> <span class="mi">0</span> <span class="mi">1000</span> <span class="s1">&#39;f0ScalingFactor&#39;</span>
-</span></span><span class="line"><span class="cl">			<span class="n">f0_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span> <span class="p">(</span><span class="n">curve</span><span class="p">)</span><span class="o">...</span> <span class="mi">0</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">			<span class="n">plus</span> <span class="n">Manipulation</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">			<span class="n">Replace</span> <span class="n">pitch</span> <span class="n">tier</span>
-</span></span><span class="line"><span class="cl">			<span class="n">select</span> <span class="n">Manipulation</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">			<span class="n">Get</span> <span class="n">resynthesis</span> <span class="p">(</span><span class="n">overlap</span><span class="o">-</span><span class="n">add</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">			<span class="n">Rename</span><span class="o">...</span> <span class="n">word1_</span><span class="s1">&#39;stepCtr&#39;</span><span class="n">_manip</span>
-</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
+</span></span><span class="line"><span class="cl">			select Manipulation word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">			Extract pitch tier
+</span></span><span class="line"><span class="cl">			Multiply frequencies... 0 1000 &#39;f0ScalingFactor&#39;
+</span></span><span class="line"><span class="cl">			f0_manip = Get mean (curve)... 0 0
+</span></span><span class="line"><span class="cl">			plus Manipulation word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">			Replace pitch tier
+</span></span><span class="line"><span class="cl">			select Manipulation word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">			Get resynthesis (overlap-add)
+</span></span><span class="line"><span class="cl">			Rename... word1_&#39;stepCtr&#39;_manip
+</span></span><span class="line"><span class="cl">		endif
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="c1">## We&#39;ve shifted the formants in the entire word but we really only want to keep</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## the critical manipulated vowel only. So here we combine:</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## 1. the original pre-vowel interval</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## 2. the manipulated vowel interval</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## 3. the original post-vowel interval</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## using a switch (man1Orig0Switch) that starts at 0 (set to original unmanipulated)</span>
-</span></span><span class="line"><span class="cl">		<span class="c1">## and switches back and forth to 1 (manipulated), then 0, etc.</span>
+</span></span><span class="line"><span class="cl">		## We&#39;ve shifted the formants in the entire word but we really only want to keep
+</span></span><span class="line"><span class="cl">		## the critical manipulated vowel only. So here we combine:
+</span></span><span class="line"><span class="cl">		## 1. the original pre-vowel interval
+</span></span><span class="line"><span class="cl">		## 2. the manipulated vowel interval
+</span></span><span class="line"><span class="cl">		## 3. the original post-vowel interval
+</span></span><span class="line"><span class="cl">		## using a switch (man1Orig0Switch) that starts at 0 (set to original unmanipulated)
+</span></span><span class="line"><span class="cl">		## and switches back and forth to 1 (manipulated), then 0, etc.
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;word1$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">word1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">nInterv</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">intervals</span><span class="p">:</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">		<span class="n">man1Orig0Switch</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="n">intervCnt</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">nInterv</span>
-</span></span><span class="line"><span class="cl">			<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;TextGrid word1&#34;</span>
+</span></span><span class="line"><span class="cl">		Read from file... &#39;dir_in$&#39;\&#39;word1$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">		Rename... word1
+</span></span><span class="line"><span class="cl">		nInterv = Get number of intervals: 1
+</span></span><span class="line"><span class="cl">		man1Orig0Switch = 0
+</span></span><span class="line"><span class="cl">		for intervCnt from 1 to nInterv
+</span></span><span class="line"><span class="cl">			selectObject: &#34;TextGrid word1&#34;
 </span></span><span class="line"><span class="cl">			
-</span></span><span class="line"><span class="cl">			<span class="n">intSta</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">start</span> <span class="n">point</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">intervCnt</span>
-</span></span><span class="line"><span class="cl">			<span class="n">intEnd</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">end</span> <span class="n">point</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="n">intervCnt</span>
-</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="n">intervCnt</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intSta2</span> <span class="o">=</span> <span class="n">intSta</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intEnd2</span> <span class="o">=</span> <span class="n">intEnd</span> <span class="o">+</span> <span class="p">(</span><span class="n">window</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">			<span class="n">elsif</span> <span class="n">intervCnt</span> <span class="o">=</span> <span class="n">nInterv</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intSta2</span> <span class="o">=</span> <span class="n">intSta</span> <span class="o">-</span> <span class="p">(</span><span class="n">window</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intEnd2</span> <span class="o">=</span> <span class="n">intEnd</span>
-</span></span><span class="line"><span class="cl">			<span class="n">elsif</span> <span class="n">intervCnt</span> <span class="o">=</span> <span class="mi">2</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intSta2</span> <span class="o">=</span> <span class="n">intSta</span> <span class="o">-</span> <span class="p">(</span><span class="n">window</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">				<span class="n">intEnd2</span> <span class="o">=</span> <span class="n">intEnd</span> <span class="o">+</span> <span class="p">(</span><span class="n">window</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">				<span class="n">vowelonset</span> <span class="o">=</span> <span class="n">intSta</span>
-</span></span><span class="line"><span class="cl">				<span class="n">voweloffset</span> <span class="o">=</span> <span class="n">intEnd</span>
-</span></span><span class="line"><span class="cl">				<span class="n">voweldur_manip</span> <span class="o">=</span> <span class="n">intEnd</span><span class="o">-</span><span class="n">intSta</span>
-</span></span><span class="line"><span class="cl">			<span class="n">endif</span>
+</span></span><span class="line"><span class="cl">			intSta = Get start point: 1, intervCnt
+</span></span><span class="line"><span class="cl">			intEnd = Get end point: 1, intervCnt
+</span></span><span class="line"><span class="cl">			if intervCnt = 1
+</span></span><span class="line"><span class="cl">				intSta2 = intSta
+</span></span><span class="line"><span class="cl">				intEnd2 = intEnd + (window/2)
+</span></span><span class="line"><span class="cl">			elsif intervCnt = nInterv
+</span></span><span class="line"><span class="cl">				intSta2 = intSta - (window/2)
+</span></span><span class="line"><span class="cl">				intEnd2 = intEnd
+</span></span><span class="line"><span class="cl">			elsif intervCnt = 2
+</span></span><span class="line"><span class="cl">				intSta2 = intSta - (window/2)
+</span></span><span class="line"><span class="cl">				intEnd2 = intEnd + (window/2)
+</span></span><span class="line"><span class="cl">				vowelonset = intSta
+</span></span><span class="line"><span class="cl">				voweloffset = intEnd
+</span></span><span class="line"><span class="cl">				voweldur_manip = intEnd-intSta
+</span></span><span class="line"><span class="cl">			endif
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">			<span class="k">if</span> <span class="n">man1Orig0Switch</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">				<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;Sound word1&#34;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">Extract</span> <span class="n">part</span><span class="p">:</span> <span class="n">intSta2</span><span class="p">,</span> <span class="n">intEnd2</span><span class="p">,</span> <span class="s2">&#34;rectangular&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;no&#34;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">Rename</span><span class="o">...</span> <span class="s1">&#39;intervCnt&#39;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">man1Orig0Switch</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">			<span class="n">elsif</span> <span class="n">man1Orig0Switch</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">				<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;Sound word1_&#39;stepCtr&#39;_manip&#34;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">Extract</span> <span class="n">part</span><span class="p">:</span> <span class="n">intSta2</span><span class="p">,</span> <span class="n">intEnd2</span><span class="p">,</span> <span class="s2">&#34;rectangular&#34;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&#34;no&#34;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">Rename</span><span class="o">...</span> <span class="s1">&#39;intervCnt&#39;</span>
-</span></span><span class="line"><span class="cl">				<span class="n">man1Orig0Switch</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">			<span class="n">endif</span>
-</span></span><span class="line"><span class="cl">		<span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">			if man1Orig0Switch = 0
+</span></span><span class="line"><span class="cl">				selectObject: &#34;Sound word1&#34;
+</span></span><span class="line"><span class="cl">				Extract part: intSta2, intEnd2, &#34;rectangular&#34;, 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl">				Rename... &#39;intervCnt&#39;
+</span></span><span class="line"><span class="cl">				man1Orig0Switch = 1
+</span></span><span class="line"><span class="cl">			elsif man1Orig0Switch = 1
+</span></span><span class="line"><span class="cl">				selectObject: &#34;Sound word1_&#39;stepCtr&#39;_manip&#34;
+</span></span><span class="line"><span class="cl">				Extract part: intSta2, intEnd2, &#34;rectangular&#34;, 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl">				Rename... &#39;intervCnt&#39;
+</span></span><span class="line"><span class="cl">				man1Orig0Switch = 0
+</span></span><span class="line"><span class="cl">			endif
+</span></span><span class="line"><span class="cl">		endfor
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;Sound 1&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="k">for</span> <span class="n">intervCnt_2</span> <span class="n">from</span> <span class="mi">2</span> <span class="n">to</span> <span class="n">nInterv</span>
-</span></span><span class="line"><span class="cl">			<span class="n">plusObject</span><span class="p">:</span> <span class="s2">&#34;Sound &#39;intervCnt_2&#39;&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">endfor</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Concatenate</span> <span class="n">with</span> <span class="n">overlap</span><span class="o">...</span> <span class="s1">&#39;window&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Rename</span><span class="o">...</span> <span class="n">Resynth____</span><span class="s1">&#39;stepCtr&#39;</span>
+</span></span><span class="line"><span class="cl">		selectObject: &#34;Sound 1&#34;
+</span></span><span class="line"><span class="cl">		for intervCnt_2 from 2 to nInterv
+</span></span><span class="line"><span class="cl">			plusObject: &#34;Sound &#39;intervCnt_2&#39;&#34;
+</span></span><span class="line"><span class="cl">		endfor
+</span></span><span class="line"><span class="cl">		Concatenate with overlap... &#39;window&#39;
+</span></span><span class="line"><span class="cl">		Rename... Resynth____&#39;stepCtr&#39;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="c1">## Save the final result sound</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Save</span> <span class="n">as</span> <span class="n">WAV</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;&#39;dir_out$&#39;</span><span class="se">\&#39;</span><span class="s2">word1$&#39;_step&#39;stepCtr&#39;.wav&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">selectObject</span><span class="p">:</span> <span class="s2">&#34;TextGrid word1&#34;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">Save</span> <span class="n">as</span> <span class="n">text</span> <span class="n">file</span><span class="p">:</span> <span class="s2">&#34;&#39;dir_out$&#39;</span><span class="se">\&#39;</span><span class="s2">word1$&#39;_step&#39;stepCtr&#39;.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">		## Save the final result sound
+</span></span><span class="line"><span class="cl">		Save as WAV file: &#34;&#39;dir_out$&#39;\&#39;word1$&#39;_step&#39;stepCtr&#39;.wav&#34;
+</span></span><span class="line"><span class="cl">		selectObject: &#34;TextGrid word1&#34;
+</span></span><span class="line"><span class="cl">		Save as text file: &#34;&#39;dir_out$&#39;\&#39;word1$&#39;_step&#39;stepCtr&#39;.TextGrid&#34;
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="c1"># Let&#39;s query the F1, F2, F3, F4 for the manipulated vowel interval</span>
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">Formant</span> <span class="n">New_Form_</span><span class="s1">&#39;stepCtr&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f1_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">1</span> <span class="p">(</span><span class="n">vowelonset</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="p">((</span><span class="n">voweloffset</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f2_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">2</span> <span class="p">(</span><span class="n">vowelonset</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="p">((</span><span class="n">voweloffset</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f3_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">3</span> <span class="p">(</span><span class="n">vowelonset</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="p">((</span><span class="n">voweloffset</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="n">hertz</span>
-</span></span><span class="line"><span class="cl">		<span class="n">f4_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">mean</span><span class="o">...</span> <span class="mi">4</span> <span class="p">(</span><span class="n">vowelonset</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="p">((</span><span class="n">voweloffset</span><span class="p">)</span><span class="o">+</span><span class="mf">0.5</span><span class="p">)</span> <span class="n">hertz</span>
+</span></span><span class="line"><span class="cl">		# Let&#39;s query the F1, F2, F3, F4 for the manipulated vowel interval
+</span></span><span class="line"><span class="cl">		select Formant New_Form_&#39;stepCtr&#39;
+</span></span><span class="line"><span class="cl">		f1_manip = Get mean... 1 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+</span></span><span class="line"><span class="cl">		f2_manip = Get mean... 2 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+</span></span><span class="line"><span class="cl">		f3_manip = Get mean... 3 (vowelonset+0.5) ((voweloffset)+0.5) hertz
+</span></span><span class="line"><span class="cl">		f4_manip = Get mean... 4 (vowelonset+0.5) ((voweloffset)+0.5) hertz
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="n">Sound</span> <span class="n">Resynth____</span><span class="s1">&#39;stepCtr&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">dur_manip</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">total</span> <span class="n">duration</span>
+</span></span><span class="line"><span class="cl">		select Sound Resynth____&#39;stepCtr&#39;
+</span></span><span class="line"><span class="cl">		dur_manip = Get total duration
 </span></span><span class="line"><span class="cl">			
-</span></span><span class="line"><span class="cl">		<span class="n">printline</span> <span class="s1">&#39;word1$&#39;</span>	<span class="s1">&#39;stepCtr&#39;</span>	<span class="s1">&#39;dur_1&#39;</span>	<span class="s1">&#39;voweldur_1&#39;</span>	<span class="s1">&#39;f0_1&#39;</span>	<span class="s1">&#39;f1_1&#39;</span>	<span class="s1">&#39;f2_1&#39;</span>	<span class="s1">&#39;f3_1&#39;</span>	<span class="s1">&#39;dur_2&#39;</span>	<span class="s1">&#39;voweldur_2&#39;</span>	<span class="s1">&#39;f0_2&#39;</span>	<span class="s1">&#39;f1_2&#39;</span>	<span class="s1">&#39;f2_2&#39;</span>	<span class="s1">&#39;f3_2&#39;</span>	<span class="s1">&#39;dur_manip&#39;</span>	<span class="s1">&#39;voweldur_manip&#39;</span>	<span class="s1">&#39;f0_manip&#39;</span>	<span class="s1">&#39;f1_manip&#39;</span>	<span class="s1">&#39;f2_manip&#39;</span>	<span class="s1">&#39;f3_manip&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">		printline &#39;word1$&#39;	&#39;stepCtr&#39;	&#39;dur_1&#39;	&#39;voweldur_1&#39;	&#39;f0_1&#39;	&#39;f1_1&#39;	&#39;f2_1&#39;	&#39;f3_1&#39;	&#39;dur_2&#39;	&#39;voweldur_2&#39;	&#39;f0_2&#39;	&#39;f1_2&#39;	&#39;f2_2&#39;	&#39;f3_2&#39;	&#39;dur_manip&#39;	&#39;voweldur_manip&#39;	&#39;f0_manip&#39;	&#39;f1_manip&#39;	&#39;f2_manip&#39;	&#39;f3_manip&#39;
+</span></span><span class="line"><span class="cl">	endfor
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">all</span>
-</span></span><span class="line"><span class="cl">	<span class="n">minus</span> <span class="n">Table</span> <span class="s1">&#39;table_name$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
-</span></span><span class="line"><span class="cl"><span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">	select all
+</span></span><span class="line"><span class="cl">	minus Table &#39;table_name$&#39;
+</span></span><span class="line"><span class="cl">	Remove
+</span></span><span class="line"><span class="cl">endfor
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl"># End of script
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span></code></pre></div>
 
         </article>
@@ -1550,7 +1550,7 @@
   
 
 
-<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
 
 
 
@@ -1649,7 +1649,7 @@
   
 
 
-<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
 
 
 
@@ -1686,7 +1686,7 @@
 </div>
 
 
-  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
 
 
 

@@ -5,12 +5,23 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Jun 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Podcast Alledaagse Vragen</title>
+      <link>https://hrbosker.github.io/news/24-09-11-podcast-alledaagse-vragen/</link>
+      <pubDate>Wed, 11 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-09-11-podcast-alledaagse-vragen/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Ik mocht een bijdrage leveren aan de podcast Alledaagse Vragen #183. Wil jij weten waarom we eigenlijk &amp;lsquo;uh&amp;rsquo; zeggen? Beluister het antwoord dan hier!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;waar-gaat-het-over&#34;&gt;Waar gaat het over?&lt;/h2&gt;
+&lt;p&gt;De podcast &lt;a href=&#34;https://open.spotify.com/show/1lr6j4z70G5xke70V6nHhI&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Alledaagse Vragen&lt;/a&gt; (BNNVARA) bespreekt elke aflevering een alledaagse vraag die is ingestuurd door een luisteraar. Vraag jij je af waarom pindakaas &amp;lsquo;pindakaas&amp;rsquo; heet? Of of eenden ook zeeziek kunnen worden? Dan is dit de podcast voor jou!&lt;/p&gt;
+&lt;p&gt;Aflevering #183 gaat over: &lt;strong&gt;&amp;ldquo;waarom zeggen we zo vaak uhhhhhh?&amp;rdquo;&lt;/strong&gt;, en de podcastmakers vroegen of ik hier wellicht een antwoord op had. Benieuwd geworden? Luister hier naar de aflevering op Spotify (7min): &lt;a href=&#34;https://open.spotify.com/episode/2VvFF8SqnpEYhe7EbBm4Jx&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://open.spotify.com/episode/2VvFF8SqnpEYhe7EbBm4Jx&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Teaching at LOT Summer School 2024</title>
@@ -374,7 +385,7 @@
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/patrick-louis-rohrer/&#34;&gt;Patrick Louis Rohrer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/lieke-van-maastricht/&#34;&gt;Lieke Van Maastricht&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/lieke-van-maastricht/&#34;&gt;Lieke van Maastricht&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2024).

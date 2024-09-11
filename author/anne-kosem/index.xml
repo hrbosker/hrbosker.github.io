@@ -5,12 +5,40 @@
     <link>https://hrbosker.github.io/author/anne-kosem/</link>
       <atom:link href="https://hrbosker.github.io/author/anne-kosem/index.xml" rel="self" type="application/rss+xml" />
     <description>Anne Kösem</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Anne Kösem</title>
       <link>https://hrbosker.github.io/author/anne-kosem/</link>
     </image>
+    
+    <item>
+      <title>Biasing the perception of spoken words with transcranial alternating current stimulation</title>
+      <link>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/kosem-etal-2020-jcn/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
     
     <item>
       <title>Neural entrainment determines the words we hear</title>

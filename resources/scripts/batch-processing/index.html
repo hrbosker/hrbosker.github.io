@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: July 3, 2024 --><html lang="en-us" >
+<!-- Last Published: September 11, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -904,222 +904,222 @@
 <blockquote>
 <p>You can also <a href="../batch-processing.praat">download the script</a> as a .praat file.</p>
 </blockquote>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@ru.nl</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY-NC 4.0</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Hans Rutger Bosker, Radboud University
+</span></span><span class="line"><span class="cl">### HansRutger.Bosker@ru.nl
+</span></span><span class="line"><span class="cl">### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
+</span></span><span class="line"><span class="cl">### License: CC BY-NC 4.0
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; This script is a starting point for batch processing a set of files.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	The script basically reads files in an input directory and runs a</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	a to-be-defined function [see &#39;Perform your function here&#39; below]</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	and writes the output to an output directory . This saves me having</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	to look up how to create a file list, how to loop over files, etc.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt; Since this was basically intended for in-house use, I&#39;ve added in bits</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	and pieces that I find useful to have ready-to-go, such as:</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">###&gt;&gt;	&#39;beginPause&#39; for manually specifying variables.</span>
+</span></span><span class="line"><span class="cl">	###&gt;&gt; This script is a starting point for batch processing a set of files.
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	The script basically reads files in an input directory and runs a
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	a to-be-defined function [see &#39;Perform your function here&#39; below]
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	and writes the output to an output directory . This saves me having
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	to look up how to create a file list, how to loop over files, etc.
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	
+</span></span><span class="line"><span class="cl">	###&gt;&gt; Since this was basically intended for in-house use, I&#39;ve added in bits
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	and pieces that I find useful to have ready-to-go, such as:
+</span></span><span class="line"><span class="cl">	###&gt;&gt;	&#39;beginPause&#39; for manually specifying variables.
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Variables you will definitely need to customize:</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Variables you will definitely need to customize:
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Where can the files be found?</span>
+</span></span><span class="line"><span class="cl">### Where can the files be found?
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\mysounds&#34;</span>
+</span></span><span class="line"><span class="cl">dir_in$ = &#34;C:\Users\hanbos\mysounds&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Where should the output files be saved?</span>
+</span></span><span class="line"><span class="cl">### Where should the output files be saved?
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;C:\Users\hanbos\mysounds\output&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check whether the directories specified above exist...</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Let&#39;s check if the input directory exists.</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### This script will throw an error if the directory doesn&#39;t exist</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### (i.e., it won&#39;t write to a mysterious temp directory).</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### First check whether the input directory ends in a backslash (if so, removed)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_in</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_in</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_in</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
-</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">input</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Now re-do this for the output directory:</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;/&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">elsif</span> <span class="n">right</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">dir_out</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">,</span><span class="n">length</span><span class="p">(</span><span class="n">dir_out</span><span class="o">$</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Then create a temporary txt file in the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### and try to write it to the input folder.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### does *not* exist. We&#39;ll manually check whether the saving of this</span>
-</span></span><span class="line"><span class="cl"><span class="c1">### temp txt file has succeeded or not further down below.</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">temp_filename</span><span class="o">$</span> <span class="o">=</span> <span class="n">dir_out</span><span class="o">$</span> <span class="o">+</span> <span class="s2">&#34;/&#34;</span> <span class="o">+</span> <span class="s2">&#34;my_temporary_Praat_file.txt&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="n">nocheck</span> <span class="n">writeFileLine</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;This is just to check if the directory exists&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">### Can the file be found?</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="n">fileReadable</span><span class="p">(</span><span class="n">temp_filename</span><span class="o">$</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">file_exists_yesno</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if you *could* read that temp txt file,</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># this confirms that the directory is valid.</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># Then you can delete it.</span>
-</span></span><span class="line"><span class="cl">	<span class="n">deleteFile</span><span class="p">:</span> <span class="n">temp_filename</span><span class="o">$</span>
-</span></span><span class="line"><span class="cl"><span class="k">else</span>
-</span></span><span class="line"><span class="cl">	<span class="c1"># if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. </span>
-</span></span><span class="line"><span class="cl">	<span class="n">printline</span> <span class="n">The</span> <span class="n">folder</span> <span class="s1">&#39;dir_out$&#39;</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">found</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">Your</span> <span class="n">output</span> <span class="n">directory</span> <span class="n">doesn</span><span class="s1">&#39;t exist. Check spelling. The directory must *already* exist.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
+</span></span><span class="line"><span class="cl">dir_out$ = &#34;C:\Users\hanbos\mysounds\output&#34;
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">###########################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">##	FORM TO MANUALLY SPECIFY VARIABLES</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###########################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#beginPause: &#34;Enter settings&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	comment: &#34;Provide instructions here&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	real: &#34;minPitch&#34;, 70</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	real: &#34;maxPitch&#34;, 250</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	choice: &#34;method&#34;, 1</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	   option: &#34;Flip F0 contour&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	   option: &#34;Expand/Contract F0 contour&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#	   option: &#34;Flatten F0 contour&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###########################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1">###########################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">### Let&#39;s check whether the directories specified above exist...
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Let&#39;s check if the input directory exists.
+</span></span><span class="line"><span class="cl">### This script will throw an error if the directory doesn&#39;t exist
+</span></span><span class="line"><span class="cl">### (i.e., it won&#39;t write to a mysterious temp directory).
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### First check whether the input directory ends in a backslash (if so, removed)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if right$(dir_in$,1)=&#34;/&#34;
+</span></span><span class="line"><span class="cl">	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+</span></span><span class="line"><span class="cl">elsif right$(dir_in$,1)=&#34;\&#34;
+</span></span><span class="line"><span class="cl">	dir_in$ = left$(dir_in$,length(dir_in$)-1)
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Then create a temporary txt file in the folder
+</span></span><span class="line"><span class="cl">### and try to write it to the input folder.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+</span></span><span class="line"><span class="cl">### does *not* exist. We&#39;ll manually check whether the saving of this
+</span></span><span class="line"><span class="cl">### temp txt file has succeeded or not further down below.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">temp_filename$ = dir_in$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+</span></span><span class="line"><span class="cl">nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Can the file be found?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">file_exists_yesno = fileReadable(temp_filename$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if file_exists_yesno = 1
+</span></span><span class="line"><span class="cl">	# if you *could* read that temp txt file,
+</span></span><span class="line"><span class="cl">	# this confirms that the directory is valid.
+</span></span><span class="line"><span class="cl">	# Then you can delete it.
+</span></span><span class="line"><span class="cl">	deleteFile: temp_filename$
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+</span></span><span class="line"><span class="cl">	printline The folder &#39;dir_in$&#39; was not found
+</span></span><span class="line"><span class="cl">	exit Your input directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Now re-do this for the output directory:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if right$(dir_out$,1)=&#34;/&#34;
+</span></span><span class="line"><span class="cl">	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+</span></span><span class="line"><span class="cl">elsif right$(dir_out$,1)=&#34;\&#34;
+</span></span><span class="line"><span class="cl">	dir_out$ = left$(dir_out$,length(dir_out$)-1)
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Then create a temporary txt file in the folder
+</span></span><span class="line"><span class="cl">### and try to write it to the input folder.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### NOTE: The &#34;nocheck&#34; below asks Praat not to complain if the folder
+</span></span><span class="line"><span class="cl">### does *not* exist. We&#39;ll manually check whether the saving of this
+</span></span><span class="line"><span class="cl">### temp txt file has succeeded or not further down below.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">temp_filename$ = dir_out$ + &#34;/&#34; + &#34;my_temporary_Praat_file.txt&#34;
+</span></span><span class="line"><span class="cl">nocheck writeFileLine: temp_filename$, &#34;This is just to check if the directory exists&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">### Can the file be found?
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">file_exists_yesno = fileReadable(temp_filename$)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">if file_exists_yesno = 1
+</span></span><span class="line"><span class="cl">	# if you *could* read that temp txt file,
+</span></span><span class="line"><span class="cl">	# this confirms that the directory is valid.
+</span></span><span class="line"><span class="cl">	# Then you can delete it.
+</span></span><span class="line"><span class="cl">	deleteFile: temp_filename$
+</span></span><span class="line"><span class="cl">else
+</span></span><span class="line"><span class="cl">	# if that file wasn&#39;t readable, that means that the directory wasn&#39;t valid. 
+</span></span><span class="line"><span class="cl">	printline The folder &#39;dir_out$&#39; was not found
+</span></span><span class="line"><span class="cl">	exit Your output directory doesn&#39;t exist. Check spelling. The directory must *already* exist.
+</span></span><span class="line"><span class="cl">endif
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Let&#39;s create a list of all the files in the input directory.</span>
+</span></span><span class="line"><span class="cl">###########################################################################
+</span></span><span class="line"><span class="cl">##	FORM TO MANUALLY SPECIFY VARIABLES
+</span></span><span class="line"><span class="cl">###########################################################################
+</span></span><span class="line"><span class="cl">#beginPause: &#34;Enter settings&#34;
+</span></span><span class="line"><span class="cl">#	comment: &#34;Provide instructions here&#34;
+</span></span><span class="line"><span class="cl">#	real: &#34;minPitch&#34;, 70
+</span></span><span class="line"><span class="cl">#	real: &#34;maxPitch&#34;, 250
+</span></span><span class="line"><span class="cl">#	choice: &#34;method&#34;, 1
+</span></span><span class="line"><span class="cl">#	   option: &#34;Flip F0 contour&#34;
+</span></span><span class="line"><span class="cl">#	   option: &#34;Expand/Contract F0 contour&#34;
+</span></span><span class="line"><span class="cl">#	   option: &#34;Flatten F0 contour&#34;
+</span></span><span class="line"><span class="cl">#clicked = endPause (&#34;Cancel&#34;, &#34;OK&#34;, 2)
+</span></span><span class="line"><span class="cl">###########################################################################
+</span></span><span class="line"><span class="cl">###########################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">Create</span> <span class="n">Strings</span> <span class="n">as</span> <span class="n">file</span> <span class="n">list</span><span class="p">:</span> <span class="s2">&#34;list_of_files&#34;</span><span class="p">,</span> <span class="s2">&#34;&#39;dir_in$&#39;/*.wav&#34;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">nfiles</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">number</span> <span class="n">of</span> <span class="n">strings</span>
-</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">nfiles</span> <span class="o">=</span> <span class="mi">0</span>
-</span></span><span class="line"><span class="cl">	<span class="n">exit</span> <span class="n">The</span> <span class="n">directory</span> <span class="s1">&#39;dir_in$&#39;</span> <span class="n">does</span> <span class="ow">not</span> <span class="n">contain</span> <span class="n">any</span> <span class="o">.</span><span class="n">wav</span> <span class="n">files</span><span class="o">.</span>
-</span></span><span class="line"><span class="cl"><span class="n">endif</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">## Now we&#39;ll loop through the list...</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="s1">&#39;nfiles&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Strings</span> <span class="n">list_of_files</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Let&#39;s create a list of all the files in the input directory.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Create Strings as file list: &#34;list_of_files&#34;, &#34;&#39;dir_in$&#39;/*.wav&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nfiles = Get number of strings
+</span></span><span class="line"><span class="cl">if nfiles = 0
+</span></span><span class="line"><span class="cl">	exit The directory &#39;dir_in$&#39; does not contain any .wav files.
+</span></span><span class="line"><span class="cl">endif
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">## Now we&#39;ll loop through the list...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">for i from 1 to &#39;nfiles&#39;
+</span></span><span class="line"><span class="cl">	select Strings list_of_files
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="n">fileplusext</span><span class="o">$</span> <span class="o">=</span> <span class="n">Get</span> <span class="n">string</span><span class="o">...</span> <span class="s1">&#39;i&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">extposition</span> <span class="o">=</span> <span class="n">index</span><span class="p">(</span><span class="n">fileplusext</span><span class="o">$</span><span class="p">,</span> <span class="s2">&#34;.wav&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">name</span><span class="o">$</span> <span class="o">=</span> <span class="n">left</span><span class="o">$</span><span class="p">(</span><span class="n">fileplusext</span><span class="o">$</span><span class="p">,</span> <span class="p">(</span><span class="s1">&#39;extposition&#39;</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">	fileplusext$ = Get string... &#39;i&#39;
+</span></span><span class="line"><span class="cl">	extposition = index(fileplusext$, &#34;.wav&#34;)
+</span></span><span class="line"><span class="cl">	name$ = left$(fileplusext$, (&#39;extposition&#39;-1))
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Read</span> <span class="n">from</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_in$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="o">.</span><span class="n">TextGrid</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="s1">&#39;name$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Extract</span> <span class="n">non</span><span class="o">-</span><span class="n">empty</span> <span class="n">intervals</span><span class="o">...</span> <span class="mi">1</span> <span class="n">no</span>
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.wav
+</span></span><span class="line"><span class="cl">	Read from file... &#39;dir_in$&#39;\&#39;name$&#39;.TextGrid
+</span></span><span class="line"><span class="cl">	plus Sound &#39;name$&#39;
+</span></span><span class="line"><span class="cl">	Extract non-empty intervals... 1 no
 </span></span><span class="line"><span class="cl">	
-</span></span><span class="line"><span class="cl">	<span class="n">nSelected</span> <span class="o">=</span> <span class="n">numberOfSelected</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">	nSelected = numberOfSelected()
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">## Assign an object number to each object (e.g., 1-5),</span>
-</span></span><span class="line"><span class="cl">	<span class="c1">## and save the id numbers of each object to an array.</span>
+</span></span><span class="line"><span class="cl">	## Assign an object number to each object (e.g., 1-5),
+</span></span><span class="line"><span class="cl">	## and save the id numbers of each object to an array.
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">thisObject</span> <span class="n">to</span> <span class="n">nSelected</span>
-</span></span><span class="line"><span class="cl">		<span class="n">objectArray</span> <span class="p">[</span><span class="s1">&#39;thisObject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">selected</span><span class="p">(</span><span class="s1">&#39;thisObject&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">	for thisObject to nSelected
+</span></span><span class="line"><span class="cl">		objectArray [&#39;thisObject&#39;] = selected(&#39;thisObject&#39;)
+</span></span><span class="line"><span class="cl">	endfor
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">j</span> <span class="n">to</span> <span class="n">nSelected</span>
-</span></span><span class="line"><span class="cl">		<span class="n">curr_objectId</span> <span class="o">=</span> <span class="n">objectArray</span> <span class="p">[</span><span class="s1">&#39;j&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">		<span class="n">select</span> <span class="s1">&#39;curr_objectId&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">curr_objectName</span><span class="o">$</span> <span class="o">=</span> <span class="n">selected</span><span class="o">$</span><span class="p">(</span><span class="s2">&#34;Sound&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	for j to nSelected
+</span></span><span class="line"><span class="cl">		curr_objectId = objectArray [&#39;j&#39;]
+</span></span><span class="line"><span class="cl">		select &#39;curr_objectId&#39;
+</span></span><span class="line"><span class="cl">		curr_objectName$ = selected$(&#34;Sound&#34;)
 </span></span><span class="line"><span class="cl">		
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">curr_objectName</span><span class="o">$</span> <span class="o">=</span> <span class="s2">&#34;vowel&#34;</span>
+</span></span><span class="line"><span class="cl">		if curr_objectName$ = &#34;vowel&#34;
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">			<span class="c1">########################################################################</span>
-</span></span><span class="line"><span class="cl">			<span class="c1"># Perform your function here!</span>
-</span></span><span class="line"><span class="cl">			<span class="c1">#	Example: Scale intensity... 65</span>
-</span></span><span class="line"><span class="cl">			<span class="c1">########################################################################</span>
+</span></span><span class="line"><span class="cl">			########################################################################
+</span></span><span class="line"><span class="cl">			# Perform your function here!
+</span></span><span class="line"><span class="cl">			#	Example: Scale intensity... 65
+</span></span><span class="line"><span class="cl">			########################################################################
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">		endif
+</span></span><span class="line"><span class="cl">	endfor
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">j</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">nSelected</span>
-</span></span><span class="line"><span class="cl">		<span class="n">curr_objectId</span> <span class="o">=</span> <span class="n">objectArray</span> <span class="p">[</span><span class="s1">&#39;j&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">			<span class="n">select</span> <span class="s1">&#39;curr_objectId&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="k">else</span>
-</span></span><span class="line"><span class="cl">			<span class="n">plus</span> <span class="s1">&#39;curr_objectId&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Concatenate</span> <span class="n">recoverably</span>
+</span></span><span class="line"><span class="cl">	for j from 1 to nSelected
+</span></span><span class="line"><span class="cl">		curr_objectId = objectArray [&#39;j&#39;]
+</span></span><span class="line"><span class="cl">		if j = 1
+</span></span><span class="line"><span class="cl">			select &#39;curr_objectId&#39;
+</span></span><span class="line"><span class="cl">		else
+</span></span><span class="line"><span class="cl">			plus &#39;curr_objectId&#39;
+</span></span><span class="line"><span class="cl">		endif
+</span></span><span class="line"><span class="cl">	endfor
+</span></span><span class="line"><span class="cl">	Concatenate recoverably
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">Sound</span> <span class="n">chain</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Write</span> <span class="n">to</span> <span class="n">WAV</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_out$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="n">_manipulated</span><span class="o">.</span><span class="n">wav</span>
-</span></span><span class="line"><span class="cl">	<span class="n">select</span> <span class="n">TextGrid</span> <span class="n">chain</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Write</span> <span class="n">to</span> <span class="n">text</span> <span class="n">file</span><span class="o">...</span> <span class="s1">&#39;dir_out$&#39;</span>\<span class="s1">&#39;name$&#39;</span><span class="n">_manipulated</span><span class="o">.</span><span class="n">TextGrid</span>
+</span></span><span class="line"><span class="cl">	select Sound chain
+</span></span><span class="line"><span class="cl">	Write to WAV file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.wav
+</span></span><span class="line"><span class="cl">	select TextGrid chain
+</span></span><span class="line"><span class="cl">	Write to text file... &#39;dir_out$&#39;\&#39;name$&#39;_manipulated.TextGrid
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">	<span class="c1">## Cleaning up...</span>
-</span></span><span class="line"><span class="cl">	<span class="k">for</span> <span class="n">j</span> <span class="n">from</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">nSelected</span>
-</span></span><span class="line"><span class="cl">		<span class="n">curr_objectId</span> <span class="o">=</span> <span class="n">objectArray</span> <span class="p">[</span><span class="s1">&#39;j&#39;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl">		<span class="k">if</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span>
-</span></span><span class="line"><span class="cl">			<span class="n">select</span> <span class="s1">&#39;curr_objectId&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="k">else</span>
-</span></span><span class="line"><span class="cl">			<span class="n">plus</span> <span class="s1">&#39;curr_objectId&#39;</span>
-</span></span><span class="line"><span class="cl">		<span class="n">endif</span>
-</span></span><span class="line"><span class="cl">	<span class="n">endfor</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="n">chain</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">TextGrid</span> <span class="n">chain</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">Sound</span> <span class="s1">&#39;name$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">plus</span> <span class="n">TextGrid</span> <span class="s1">&#39;name$&#39;</span>
-</span></span><span class="line"><span class="cl">	<span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">	## Cleaning up...
+</span></span><span class="line"><span class="cl">	for j from 1 to nSelected
+</span></span><span class="line"><span class="cl">		curr_objectId = objectArray [&#39;j&#39;]
+</span></span><span class="line"><span class="cl">		if j = 1
+</span></span><span class="line"><span class="cl">			select &#39;curr_objectId&#39;
+</span></span><span class="line"><span class="cl">		else
+</span></span><span class="line"><span class="cl">			plus &#39;curr_objectId&#39;
+</span></span><span class="line"><span class="cl">		endif
+</span></span><span class="line"><span class="cl">	endfor
+</span></span><span class="line"><span class="cl">	plus Sound chain
+</span></span><span class="line"><span class="cl">	plus TextGrid chain
+</span></span><span class="line"><span class="cl">	plus Sound &#39;name$&#39;
+</span></span><span class="line"><span class="cl">	plus TextGrid &#39;name$&#39;
+</span></span><span class="line"><span class="cl">	Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">endfor</span>
+</span></span><span class="line"><span class="cl">endfor
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">select</span> <span class="n">Strings</span> <span class="n">list_of_files</span>
-</span></span><span class="line"><span class="cl"><span class="n">Remove</span>
+</span></span><span class="line"><span class="cl">select Strings list_of_files
+</span></span><span class="line"><span class="cl">Remove
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
-</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">################################################################################
+</span></span><span class="line"><span class="cl"># End of script
+</span></span><span class="line"><span class="cl">################################################################################
 </span></span></code></pre></div>
 
         </article>
@@ -1270,7 +1270,7 @@
   
 
 
-<script src="/js/vendor-bundle.min.391d344a129df56f7ad674c2c2ed04e8.js"></script>
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
 
 
 
@@ -1369,7 +1369,7 @@
   
 
 
-<script src="/en/js/wowchemy.min.7f5ebaff62ae468cff8bb3dd1337bb9b.js"></script>
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
 
 
 
@@ -1406,7 +1406,7 @@
 </div>
 
 
-  <script src="/js/wowchemy-publication.9c0e895144aef5a693008b5c5d450147.js" type="module"></script>
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
 
 
 

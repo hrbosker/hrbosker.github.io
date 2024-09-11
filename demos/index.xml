@@ -96,7 +96,8 @@
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://royalsocietypublishing.org/cms/asset/53082c59-4ac5-43d8-a411-9f5f5edda544/rspb20202419f01.jpg&#34; alt=&#34;Figure 1 in Bosker &amp;amp; Peeters (2021)&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;800&#34; /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption&gt;
       Figure 1 in Bosker &amp;amp; Peeters (2021)
-    &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+    &lt;/figcaption&gt;&lt;/figure&gt;
+&lt;/p&gt;
 &lt;/details&gt;
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;how-hands-help-us-hear&#34;&gt;How hands help us hear&lt;/h2&gt;
@@ -305,12 +306,9 @@
       <description>&lt;h2 id=&#34;remember-this-one&#34;&gt;Remember this one?&lt;/h2&gt;
 &lt;p&gt;Do you remember this famous quote, starting at 00:15s?&lt;/p&gt;
 
-
-    
-    &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-      &lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&#34; allowfullscreen=&#34;allowfullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/Z9WDsgCIroE?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;
-      &gt;&lt;/iframe&gt;
-    &lt;/div&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/Z9WDsgCIroE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;p&gt;This was Neil Armstrong, landing on the moon on July 20, 1969. But hold on, what is he saying exactly? Let&amp;rsquo;s listen to the first part of his famous quote:&lt;/p&gt;
 
@@ -1834,9 +1832,9 @@
 
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/marjolein-van-os/&#34;&gt;Marjolein Van Os,&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/marjolein-van-os/&#34;&gt;Marjolein van Os,&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/rik-does/&#34;&gt;Rik Does&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje Van Bergen&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2019).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2019-jml/&#34;&gt;Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension&lt;/a&gt;.
@@ -1929,7 +1927,7 @@
 
   &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje Van Bergen&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/geertje-van-bergen/&#34;&gt;Geertje van Bergen&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2018).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-jml/&#34;&gt;Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’&lt;/a&gt;.
@@ -2016,7 +2014,7 @@
       &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/hugo-quene/&#34;&gt;Hugo Quené&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
       &lt;a href=&#34;https://hrbosker.github.io/author/ted-sanders/&#34;&gt;Ted Sanders&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/nivja-h.-de-jong/&#34;&gt;Nivja H. De Jong&lt;/a&gt;&lt;/span&gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/nivja-h.-de-jong/&#34;&gt;Nivja H. de Jong&lt;/a&gt;&lt;/span&gt;
   &lt;/span&gt;
   (2014).
   &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2014-jml/&#34;&gt;Native ‘um’s elicit prediction of low-frequency referents, but non-native ‘um’s do not&lt;/a&gt;.
