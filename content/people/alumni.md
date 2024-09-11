@@ -12,6 +12,8 @@ design:
 ---
 
 ## PhD students
+In August 2024, {{< mention "giulio-severijnen" >}} received approval from the reading committee to defend his thesis, entitled *A blessing in disguise: How prosodic variability challenges but also aids successful speech perception*. The defense will take place early 2025.
+
 On 19th Jan, 2021, **Greta Kaufeld** successfully defended her PhD thesis, entitled [Investigating spoken language comprehension as perceptual inference](https://repository.ubn.ru.nl/bitstream/handle/2066/228260/228260.pdf). After her PhD, she took up a position at Disney Research Studios.
 
 On 24th Sept, 2020, **Joe Rodd** successfully defended his PhD thesis, entitled [How speaking fast is like running: modelling control of speaking rate](https://pure.mpg.de/rest/items/item_3248326_2/component/file_3248327/content). After his PhD, he took up a position at the 'Dienst Uitvoering Onderwijs' [DUO].
