@@ -20,6 +20,11 @@ marketing:
     org_name: 'SPEAC | Hans Rutger Bosker'
     description: 'Hans Rutger Bosker heads the Speech Perception in Audiovisual Communication [SPEAC] lab at Radboud University Nijmegen'
     twitter: ''
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    google_tag_manager: ''
+    microsoft_clarity: ''
   verification:
     google: ''
     baidu: ''
