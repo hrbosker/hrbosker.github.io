@@ -68,4 +68,4 @@ The manual McGurk effect is the first demonstration of how the timing of hand ge
 
 > {{< cite page="/publication/bujok-etal-2022-sp" view="4" >}}
 
-> Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2022). Audiovisual perception of lexical stress: Beat gestures are stronger visual cues for lexical stress than visible articulatory cues on the face. *PsyArXiv Preprints*, doi:[10.31234/osf.io/y9jck](https://doi.org/10.31234/osf.io/y9jck), data:[https://osf.io/4d9w5/](https://osf.io/4d9w5/)
+> {{< cite page="/publication/bujok-etal-2024-ls" view="4" >}}
