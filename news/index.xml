@@ -5,12 +5,39 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 11 Sep 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 16 Oct 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Several new preprints out!</title>
+      <link>https://hrbosker.github.io/news/24-10-16-several-new-preprints/</link>
+      <pubDate>Wed, 16 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/24-10-16-several-new-preprints/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;We have a bunch of new preprints out! Read them here&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;what-are-they-about&#34;&gt;What are they about?&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;, Antje S. Meyer, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; (2024). Beat gestures can influence on-line spoken word recognition. &lt;em&gt;PsyArXiv Preprints&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.31234/osf.io/6gn3d&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.31234/osf.io/6gn3d&lt;/a&gt;, data:&lt;a href=&#34;https://osf.io/57dvh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://osf.io/57dvh/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This preprint was posted early October and is currently under review. Using eye-tracking, it demonstrates how beat gestures can already guide spoken word recognition as the word (that the gesture is aligned to) is still unfolding over time!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;, &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;, Antje S. Meyer, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; (2024). Beat gestures facilitate lexical access in constraining sentence contexts. &lt;em&gt;PsyArXiv Preprints&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.31234/osf.io/8ntjm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.31234/osf.io/8ntjm&lt;/a&gt;, data:&lt;a href=&#34;https://osf.io/8vsfq/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://osf.io/8vsfq/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This preprint was also posted in October. Here, participants were asked to perform an audiovisual lexical decision task (&amp;lsquo;is this a word or not?&amp;rsquo;) on target words that were placed at the end of sentences with supporting context (e.g., &lt;em&gt;He became a colonel in the ARMY&lt;/em&gt;). Even in such already greatly facilitating contexts, seeing a beat gesture on the critical target word sped up reaction times, revealing the first behavioral influence of simple beat gestures on lexical access.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;, David Peeters, Antje S. Meyer, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; (2024). Beating stress: evidence for recalibration of word stress perception. &lt;em&gt;PsyArXiv Preprints&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.31234/osf.io/9sua6&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.31234/osf.io/9sua6&lt;/a&gt;, data:&lt;a href=&#34;https://osf.io/s3p6a/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://osf.io/s3p6a/&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This preprint was updated in August and is in its second round of reviews. It uses a recalibration paradigm to show how beat gestures can have a lasting impact, changing audio-only spoken word recognition minutes later!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt;, James McQueen, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; (2024). Effect of auditory cues to lexical stress on the visual perception of gestural timing. &lt;em&gt;PsyArXiv Preprints&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.31234/osf.io/ykbgj&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.31234/osf.io/ykbgj&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This preprint was posted in October upon submission to a peer-reviewed journal. It provides evidence that beat gestures that are misaligned to stress (i.e., precede or follow a stressed syllable) are perceived as closer to the stressed syllable than they actually were. Even the exact same gesture timed midway between two syllables is more likely perceived as having occurred on the first syllable if the word has initial stress, but as occurring on the second syllable if the word has final stress.&lt;/p&gt;
+&lt;h2 id=&#34;what-are-preprints-anyway&#34;&gt;What are preprints, anyway?&lt;/h2&gt;
+&lt;p&gt;Our preprints are listed on our &lt;a href=&#34;../../publication&#34;&gt;publications page&lt;/a&gt;. They are early versions of scientific papers that have not yet been formally peer-reviewed. Hence, they are subject to change, should not be reported as conclusive, and should be considered separately from peer-reviewed publications. This also means we’re open to feedback and suggestions from interested readers. &lt;a href=&#34;../../contact&#34;&gt;Send us your comments!&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Podcast Alledaagse Vragen</title>
