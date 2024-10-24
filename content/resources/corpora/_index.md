@@ -51,9 +51,9 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - An example from English: *FOREbear* [noun] 'ancestor' vs. *forBEAR* [verb] 'to be patient'
 - {{< icon name="user" pack="fas" >}} Lead author: {{< mention "admin" >}}
 - {{< icon name="link" pack="fas" >}} [Download the Excel file here](minimal-stress-pairs.xlsx)
-- {{< icon name="language" pack="fas" >}} Dutch, Italian, Spanish, English, German (each language in an individual sheet)
+- {{< icon name="language" pack="fas" >}} Dutch, English, German, Italian, Romanian, Spanish (each language in an individual sheet)
 - {{< icon name="comments" pack="fas" >}} The two members of a pair are primarily distinguished by stress. However, there may also occassionally be subtle segmental differences involved (e.g., vowel reduction in unstressed syllables in English and German)
-- {{< icon name="folder" pack="fas" >}} Sources and further references listed at the top of each individual sheet
+- {{< icon name="folder" pack="fas" >}} Sources and further references listed at the top of each individual sheet; thanks to everyone who helped out!
 - {{< icon name="creative-commons" pack="fab" >}} [CC BY 4.0 license](https://creativecommons.org/licenses/by/4.0/)
 
 <br />
