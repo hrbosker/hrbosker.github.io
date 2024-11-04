@@ -3,7 +3,7 @@ widget: blank
 headless: true
 
 # ... Put Your Section Options Here (title etc.) ...
-title: PhD theses
+title: Former PhDs
 subtitle: 
 weight: 99
 design:

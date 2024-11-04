@@ -13,7 +13,7 @@ design:
 
 Students regularly contribute to our research in the form of BA/MA theses, lab rotations, internships, honours projects, or as student-assistants. Current student projects include:
 
-- **Yuting Hong** (Leiden University) is running an internship looking at audiovisual prominence in tone languages Mandarin and Cantonese;
+- **Yuting Sun** (Leiden University) is running an internship looking at audiovisual prominence in tone languages Mandarin and Cantonese;
 - **Sarah Kapp** (Freiburg University) is writing her MA thesis on a project testing how people tune into a particular talker's habitual speech rate;
 - **Renske Rötjes** and **Anna Schreurs** are writing their BA theses on how different artificially generated visual cues (e.g., avatars) influence spoken word recognition;
 - **Tim Kolleth**, **Fenna Seebregts**, and **Lorin Wolfs** are running a BA honours project testing how the manual McGurk effect works in English;
