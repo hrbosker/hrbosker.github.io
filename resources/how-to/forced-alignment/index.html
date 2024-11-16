@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This shows you how to perform forced-alignment using WebMAUS. It takes pairs of sound files &#43; text files with the same filename (item1.wav &#43; item1.txt) as input and matches the orthographic words in the txt file to the sounds, syllables, and words in the sound file." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/forced-alignment/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/how-to/forced-alignment/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/how-to/forced-alignment/" />
+<meta property="og:title" content="...do forced-alignment | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This shows you how to perform forced-alignment using WebMAUS. It takes pairs of sound files &#43; text files with the same filename (item1.wav &#43; item1.txt) as input and matches the orthographic words in the txt file to the sounds, syllables, and words in the sound file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>...do forced-alignment | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="9565822b409dc6e9f0248f0a62da60db" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/course-materials/"><span>Course materials</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          How to...
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/resources/"><i class="fas fa-arrow-left pr-1"></i>Resources</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/resources/how-to/record-speech/">...record speech</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/generate-speech/">...generate speech</a></li>
+
+
+
+  <li class="active"><a href="/resources/how-to/forced-alignment/">...do forced-alignment</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/script-in-praat/">...script in Praat</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/write-a-manuscript/">...write a paper</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/submit-a-manuscript/">...submit a manuscript</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/reply-to-reviews/">...reply to reviews</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#findings-words-syllables-and-sounds">Findings words, syllables, and sounds</a></li>
+    <li><a href="#forced-alignment">Forced alignment</a></li>
+    <li><a href="#webmaus">WebMAUS</a></li>
+    <li><a href="#web-interface">Web interface</a></li>
+    <li><a href="#lets-get-set-up">Let&rsquo;s get set up!</a></li>
+    <li><a href="#lets-go">Let&rsquo;s go!</a></li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>...do forced-alignment</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <div class="alert alert-note">
+  <div>
+    This shows you how to perform forced-alignment using <strong><a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">WebMAUS</a></strong>. It takes pairs of sound files + text files with the same filename (item1.wav + item1.txt) as input and matches the orthographic words in the txt file to the sounds, syllables, and words in the sound file. The output are TextGrid files with word, syllable, and phoneme level annotations.
+  </div>
+</div>
+<h2 id="findings-words-syllables-and-sounds">Findings words, syllables, and sounds</h2>
+<p>When you have some speech recordings for your research, you may want to know when in time the target word occurs, or how long the vowels are. These measurements are often done <strong>in TextGrids in <a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">Praat</a></strong>. When you have a small set of recordings, you can manually create word-level, syllable-level, or phoneme-level intervals by hand (also see our <a href="/resources/how-to/annotate-in-praat/">how-to-annotate-in-praat</a>). However, this is hard work and very time-consuming (and outright boring). So let&rsquo;s speed things up a bit!</p>
+<h2 id="forced-alignment">Forced alignment</h2>
+<p>Forced alignment is when you try to <strong>automatically match orthographic transcriptions (text) to speech recordings (audio)</strong>. The resulting output is sometimes called &rsquo;timestamps&rsquo;, &lsquo;speech marks&rsquo;, &lsquo;annotations&rsquo;, or &lsquo;intervals&rsquo;, for instance in TextGrids in Praat. There are various forced-aligners available nowadays, the most famous being <a href="https://github.com/m-bain/whisperX" target="_blank" rel="noopener">WhisperX</a>, <a href="https://montreal-forced-aligner.readthedocs.io/en/latest/" target="_blank" rel="noopener">Montreal Forced Aligner</a>, <a href="https://web.sas.upenn.edu/phonetics-lab/facilities/" target="_blank" rel="noopener">Penn Forced Aligner (P2FA)</a>, <a href="https://github.com/evyaco/EasyAlignIPA" target="_blank" rel="noopener">EasyAlign</a>, and <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">WebMAUS</a>.</p>
+<h2 id="webmaus">WebMAUS</h2>
+<p>I selected WebMAUS for this how-to because:</p>
+<ul>
+<li>it can handle a large number of languages</li>
+<li>it can do word-level AND syllable-level AND phoneme-level annotations</li>
+<li>it is pretty accurate</li>
+<li>it is accessible through a Python script as well as a fairly user-friendly web interface</li>
+<li>it gives TextGrids as output.</li>
+</ul>
+<p>Here&rsquo;s an example of some WebMAUS output, showing words (in orthography and <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a>), syllables, and phonemes in different tiers in a TextGrid:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_aa971aa0f0c2d1af4d476a27425682bb.webp 400w,
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_bbac05e5fc5ed5a74db26e7813ae5255.webp 760w,
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_aa971aa0f0c2d1af4d476a27425682bb.webp"
+               width="760"
+               height="447"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+<h2 id="web-interface">Web interface</h2>
+<p>The <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">web interface of WebMAUS</a> is fairly straight-forward. All you need to do is upload a speech recording (e.g., &ldquo;sentence1.wav&rdquo;) together with a text file with the exact same name (&ldquo;sentence1.txt&rdquo;). This text file should contain the words of the sentence in regular orthography. Select the language, agree to the Terms of Usage, and a few seconds later you can download the &ldquo;sentence1.TextGrid&rdquo;.</p>
+<p>But there&rsquo;s a catch! <strong>WebMAUS Basic does not give you syllable-level annotations by default!</strong> For this, you need a work-around. The regular process is called WebMAUS Basic: <code>wav + txt</code> &raquo; <code>TextGrid</code> (with only words &amp; phonemes). WebMAUS <em>can</em> give you syllables too, but only through this extra process called <em>Pho2Syl</em>. The trick is to run WebMAUS Basic and Pho2Syl in a sequence:</p>
+<ol>
+<li>WebMAUS Basic: <code>wav + txt</code> &raquo; <code>BPF .par file</code></li>
+<li>Pho2Syl: <code>BPF .par file</code> &raquo; <code>TextGrid</code> (with words, syllables, phonemes)</li>
+</ol>
+<p>Doing this by hand is just a hassle, even if you only have a single recording. <strong>So let&rsquo;s script it!</strong></p>
+<h2 id="lets-get-set-up">Let&rsquo;s get set up!</h2>
+<ul>
+<li>Install <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>.</li>
+<li>Install the Python module <code>requests</code>:
+<ul>
+<li>Type &ldquo;terminal&rdquo; in the Start Menu in Windows to start Windows PowerShell</li>
+<li>Paste this line and hit ENTER: <code>pip install requests</code></li>
+</ul>
+</li>
+<li>Download <a href="/resources/scripts/forced-alignment.py">forced-alignment.py</a> and store it in a separate new folder.</li>
+</ul>
+<h2 id="lets-go">Let&rsquo;s go!</h2>
+<ol>
+<li>Select the <strong>language of your choice</strong> in line 29: <code>webmaus_language = 'eng-US'</code>
+<ul>
+<li>For a list of languages supported by WebMAUS, check out the drop-down Language menu in the <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">web interface</a>.</li>
+<li>NOTE: the script only accepts language codes, like &ldquo;eng-US&rdquo;. These can be found <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help" target="_blank" rel="noopener">here</a> (&hellip;it&rsquo;s a long page of text, so search for &ldquo;eng-US&rdquo; to find the list of languages).</li>
+</ul>
+</li>
+<li>Select the <strong>extension of your audio files</strong> in line 39 (wav or mp3): <code>audio_extension = &quot;wav&quot;</code></li>
+<li><strong>Copy</strong> all your speech recordings with accompanying text files into the same folder as the script.
+<ul>
+<li>NOTE: the script only runs on <strong>pairs of files</strong> with the same name, like &ldquo;item3.wav&rdquo; + &ldquo;item3.txt&rdquo;.</li>
+<li>The txt files should contain the words in the speech in regular orthography.</li>
+</ul>
+</li>
+<li><strong>Run the script!</strong> For instance, right-click some empty space inside the folder shown in Windows Explorer, click &ldquo;Open in Terminal&rdquo;, type: <code>python forced-alignment.py</code> and hit Enter.</li>
+<li><strong>Done!</strong></li>
+</ol>
+<blockquote>
+<details class="spoiler "  id="spoiler-2">
+  <summary><em>What are the four tiers in the TextGrid?</em></summary>
+  <p><ol>
+<li><strong>ORT-MAU:</strong> WebMAUS words, given in orthography (pauses are left empty)</li>
+<li><strong>KAN-MAU:</strong> WebMAUS words, canonical form in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are empty)</li>
+<li><strong>MAU:</strong> WebMAUS phonemes, in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are &ldquo;&lt;p:&gt;&rdquo;)</li>
+<li><strong>MAS:</strong> WebMAUS syllables, in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are &ldquo;&lt;p:&gt;&rdquo;)</li>
+</ol>
+</p>
+</details>
+</blockquote>
+<div class="alert alert-note">
+  <div>
+    Looking for a quick and easy way to go through the output in Praat? <a href="/resources/scripts/annotate/">This Praat script</a> can streamline your workflow: it presents a TextGrid for manual inspection to the user, allows you to perform some changes if necessary, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on.
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    Last but certainly not least: using WebMAUS means you agree to their <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help" target="_blank" rel="noopener">Terms and Conditions</a>. In summary: WebMAUS is only <strong>free for members of an academic institution</strong> to be used for non-profit research purposes only. Also, WebMAUS requests you <strong>cite Kisler et al., 2017</strong> (<a href="https://doi.org/10.1016/j.csl.2017.01.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.csl.2017.01.005</a>) in any academic output.
+  </div>
+</div>
+<p><em>Happy aligning!</em></p>
+
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/how-to/generate-speech/" rel="next">...generate speech</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resources/how-to/annotate-in-praat/" rel="prev">...annotate in Praat</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
+
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank">CC BY 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

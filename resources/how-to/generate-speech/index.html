@@ -1,0 +1,1505 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This shows you how to generate speech (speech synthesis) using text-to-speech from Elevenlabs. We&rsquo;ll take a list of prompts as input and generate individual .mp3 files for each prompt. We&rsquo;ll also automatically perform forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/how-to/generate-speech/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/how-to/generate-speech/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/how-to/generate-speech/" />
+<meta property="og:title" content="...generate speech | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This shows you how to generate speech (speech synthesis) using text-to-speech from Elevenlabs. We&rsquo;ll take a list of prompts as input and generate individual .mp3 files for each prompt. We&rsquo;ll also automatically perform forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>...generate speech | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="52e024525a29a31a11180f76c093d0f2" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/course-materials/"><span>Course materials</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          How to...
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/resources/"><i class="fas fa-arrow-left pr-1"></i>Resources</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/resources/how-to/">How to...</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/resources/how-to/record-speech/">...record speech</a></li>
+
+
+
+  <li class="active"><a href="/resources/how-to/generate-speech/">...generate speech</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/forced-alignment/">...do forced-alignment</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/annotate-in-praat/">...annotate in Praat</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/script-in-praat/">...script in Praat</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/run-a-power-analysis/">...run a power analysis</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/write-a-manuscript/">...write a paper</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/submit-a-manuscript/">...submit a manuscript</a></li>
+
+
+
+  <li class=""><a href="/resources/how-to/reply-to-reviews/">...reply to reviews</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#why-generate-and-not-record-speech">Why generate (and not record) speech?</a></li>
+    <li><a href="#elevenlabs">Elevenlabs</a></li>
+    <li><a href="#webmaus">WebMAUS</a></li>
+    <li><a href="#ok-how-do-i-get-set-up">OK, how do I get set up?</a></li>
+    <li><a href="#lets-go">Let&rsquo;s go!</a></li>
+    <li><a href="#really-that-simple">Really? That simple?</a>
+      <ul>
+        <li><a href="#models-and-settings">Models and settings</a></li>
+        <li><a href="#voices">Voices</a></li>
+        <li><a href="#prompting">Prompting</a></li>
+        <li><a href="#webmaus-parameters">WebMAUS parameters</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>...generate speech</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <div class="alert alert-note">
+  <div>
+    This shows you how to generate speech (speech synthesis) using text-to-speech from <strong>Elevenlabs</strong>. We&rsquo;ll take a list of prompts as input and generate individual .mp3 files for each prompt. We&rsquo;ll also automatically perform forced-alignment on the output speech using <strong>WebMAUS</strong>, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations.
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt=""
+           src="/resources/how-to/generate-speech/screenshot.gif"
+           loading="lazy" data-zoomable width="500" /></div>
+  </div></figure>
+
+<h2 id="why-generate-and-not-record-speech">Why generate (and not record) speech?</h2>
+<p>Researchers in the field of speech perception usually play participants pre-recorded speech stimuli in their experiments. But as you&rsquo;ve seen in our <a href="/resources/how-to/record-speech">how-to-record-speech</a>, it can be tough to make high-quality human speech recordings. Not only do you need to find a volunteer speaker, you also need to have the right equipment, a quiet recording room, and lots of patience. And then you end up with this hour-long audio file but what you actually need is separate audio files for &lsquo;sentence 1&rsquo;, &lsquo;sentence 2&rsquo;, &lsquo;sentence 3&rsquo;, etc. So you spend hours of extracting smaller chunks from this hour-long audio-file. Imagine only then finding out some words were mispronounced but your speaker has since then moved to another country&hellip;</p>
+<p>Generating artificial speech is free, quick, clean, and flexible. Your &lsquo;speaker&rsquo; never gets tired, is always available, always sounds the same even years later, and never has a cold on the day of the recordings. With our script, you get individual stimuli files with accompanying word, syllable, and phoneme level annotations.</p>
+<p>Of course, there are downsides too: it&rsquo;s hard to control the acoustic specs of the generated audio (pitch, intensity, duration, emotion, &hellip;) and some text-to-speech (TTS) systems simply sound robotic. But if you&rsquo;re looking for a quick way to record some simple word or sentence stimuli, it is a big time saver.</p>
+<h2 id="elevenlabs">Elevenlabs</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt=""
+           src="/resources/how-to/generate-speech/elevenlabs.gif"
+           loading="lazy" data-zoomable width="200" /></div>
+  </div></figure>
+
+<p><a href="https://elevenlabs.io/" target="_blank" rel="noopener">Elevenlabs</a> is an AI audio platform that can generate fairly realistic and contextually-aware speech, voices, and sound effects across <strong>32 languages</strong>. It takes orthographic words and sentences as input but can also generate speech based on <strong><a href="https://www.internationalphoneticalphabet.org" target="_blank" rel="noopener">IPA</a> and <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict" target="_blank" rel="noopener">CMU Arpabet</a></strong> (see <a href="#really-that-simple">the last section</a> below). The <strong>free tier gives you 10,000 characters</strong> of TTS per month, which is about 10 min of speech. This may not sound like a lot, but assuming an average sentence has 8 words, consisting of ca. 6 characters each, then you can generate around 180 sentence stimuli per month. And you get 50% discount (20,000 characters = around 360 sentences!) if you use their Turbo models that are quicker but slightly less quality (but not particularly noticably so, in my experience). But don&rsquo;t take my word for it, listen to these examples:</p>
+<blockquote>
+<p>Aria: <em>&ldquo;She sells sea shells by the sea shore.&rdquo;</em> 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T20_07_10_Aria_pre_s50_sb74_se0_b_m2.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>Aria: <em>&ldquo;She shouted: she sells sea shells by the sea shore!&rdquo;</em> 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T20_07_38_Aria_pre_s50_sb74_se0_b_m2.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>Daniel: <em>&ldquo;object&rdquo;</em> 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_34_Daniel_pre_s38_sb75_t2_isol.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>Daniel: [CMU Arpabet] &ldquo;AA0 B JH EH1 K T&rdquo; (with final stress) 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_13_Daniel_pre_s38_sb75_t2_01.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>Daniel: [CMU Arpabet] &ldquo;AA1 B JH EH0 K T&rdquo; (with initial stress) 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_23_Daniel_pre_s38_sb75_t2_10.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<p>Will: note the breaths inside these sentences&hellip; 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_19_11_Will_pre_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<p>Still, there are of course relevant alternatives to consider too. I selected Elevenlabs here because other TTS systems are either paid (e.g., Amazon Polly stops being free after 12 months after sign-up) or of lower-quality in my experience (Microsoft, Google). One important disadvantage of Elevenlabs, however, is the lack of <a href="https://www.w3.org/TR/speech-synthesis11/" target="_blank" rel="noopener">Speech Synthesis Markup Language</a> (SSML) support, meaning it&rsquo;s hard to control the prosodic specs of the speech (for some suggestions, see <a href="#really-that-simple">the last section</a> below). But if you&rsquo;re looking for some off-the-shelf speech, it&rsquo;s a great tool.</p>
+<h2 id="webmaus">WebMAUS</h2>
+<p>If you just want to generate some speech, you can simply use Elevenlabs&rsquo; web interface. However, we often don&rsquo;t only need the speech, we also need to know <strong>when in time each word, syllable, and phoneme was produced</strong>. These kinds of data are called &rsquo;timestamps&rsquo; or &lsquo;speech marks&rsquo; in the TTS field, and annotations or segmentations by the phonetics crowd. Elevenlabs can actually give you timestamps that go with the speech it generated, but it only provides timestamps of each character (not words, syllables, or phonemes). Timestamps of characters often don&rsquo;t make any sense (<em>&hellip;what&rsquo;s the timestamp of -g in the word &ldquo;thought&rdquo;?</em>) and even in words where they do (the word &ldquo;test&rdquo;), they&rsquo;re actually not terribly accurate. Moreover, many phoneticians would like to see these kinds of data in TextGrid format to be used and analyzed in <a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">Praat</a>.</p>
+<p>This is where <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">WebMAUS</a> comes in. It&rsquo;s a forced-alignment tool that takes a speech file as input together with its orthographic transcription and returns a TextGrid with word, syllable, and phoneme annotations. The script provided here automatically feeds the speech from Elevenlabs to WebMAUS so that at the end you are left with speech <em>and</em> TextGrid data.</p>
+<h2 id="ok-how-do-i-get-set-up">OK, how do I get set up?</h2>
+<ul>
+<li>Set up a free account in <a href="https://elevenlabs.io/" target="_blank" rel="noopener">Elevenlabs</a>.</li>
+<li>Set up your personal API key for Elevenlabs. This is a long string of characters that allows the script to &rsquo;log in&rsquo; to Elevenlabs.
+<ul>
+<li>Once you&rsquo;re logged into the Elevenlabs web app, go to your profile&rsquo;s menu in the bottom-left corner.</li>
+<li>Click on &ldquo;API Keys&rdquo; and then &ldquo;Create API Key&rdquo;</li>
+<li>Give your personal API key a (random) name; it&rsquo;s not particularly important&hellip;</li>
+<li>&hellip;and click &ldquo;Create&rdquo;</li>
+<li>Your personal API key will be shown <strong>once and only once!</strong></li>
+<li><strong>Make sure to copy it immediately</strong> and store it somewhere safe.</li>
+<li>Anyone who has this API key can log into your Elevenlabs account, so <strong>don&rsquo;t share it!</strong></li>
+</ul>
+</li>
+<li>Install <a href="https://www.python.org/" target="_blank" rel="noopener">Python</a>.</li>
+<li>Download our Python script <a href="/resources/scripts/generate-speech.py">generate-speech.py</a></li>
+<li>Install particular Python modules the script relies on.
+<ul>
+<li>Type &ldquo;terminal&rdquo; in the Start Menu in Windows to start Windows PowerShell</li>
+<li>Paste this line and hit ENTER: <code>pip install requests tgt pandas openpyxl</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="lets-go">Let&rsquo;s go!</h2>
+<ul>
+<li>Create a new folder where you store the <a href="/resources/scripts/generate-speech.py">generate-speech.py</a> script.</li>
+<li>In the same folder, create an Excel file called <strong>&ldquo;input.xlsx&rdquo;</strong>. In this Excel file, create two columns: one with the name &ldquo;filename&rdquo; (in cell A1) and the other with the name &ldquo;prompt&rdquo; (in cell B1).</li>
+<li>Enter a list of filenames in A2, A3, A4, and so on. Example: item1_b, item1_p, item2_b, item2_p&hellip;</li>
+<li>Enter your prompts in B2, B3, B4, etc. Example: bear, pear, bull, pull&hellip;</li>
+<li><strong>Run the script!</strong> For instance, right-click some empty space inside the script&rsquo;s folder shown in Windows Explorer, click &ldquo;Open in Terminal&rdquo;, type: <code>python generate-speech.py</code> and hit Enter.</li>
+<li>Done!</li>
+</ul>
+<blockquote>
+<details class="spoiler "  id="spoiler-9">
+  <summary><em>What are the five tiers in the TextGrid?</em></summary>
+  <p><ol>
+<li><strong>Characters:</strong> Elevenlabs timestamps for each character in the prompt (inaccurate and nonsensical)</li>
+<li><strong>ORT-MAU:</strong> WebMAUS words, given in orthography (pauses are left empty)</li>
+<li><strong>KAN-MAU:</strong> WebMAUS words, canonical form in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are empty)</li>
+<li><strong>MAU:</strong> WebMAUS phonemes, in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are &ldquo;&lt;p:&gt;&rdquo;)</li>
+<li><strong>MAS:</strong> WebMAUS syllables, in <a href="https://en.wikipedia.org/wiki/X-SAMPA" target="_blank" rel="noopener">X-SAMPA</a> (pauses are &ldquo;&lt;p:&gt;&rdquo;)</li>
+</ol>
+</p>
+</details>
+</blockquote>
+<h2 id="really-that-simple">Really? That simple?</h2>
+<p>Well&hellip; yeah! But there&rsquo;s a zillion different specs and parameters you can tweak, if you like. The most relevant ones are <strong>Elevenlabs models and settings, Elevenlabs voices, prompt specs, and WebMAUS parameters</strong>.</p>
+<h3 id="models-and-settings">Models and settings</h3>
+<p>At present (Nov 2024), Elevenlabs offers two families of <a href="elevenlabs.io/docs/product/speech-synthesis/overview#models">models</a>: Standard (high-quality) models and Turbo models, which are optimized for low latency and cost 50% less credits. Only &ldquo;Eleven English V1&rdquo; and &ldquo;Eleven Turbo V2&rdquo; support <a href="https://www.internationalphoneticalphabet.org" target="_blank" rel="noopener">IPA</a> and <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict" target="_blank" rel="noopener">CMU Arpabet</a>. Select the model of your choice by changing line 140 in <a href="/resources/scripts/generate-speech.py">generate-speech.py</a>: <code>&quot;model_id&quot;: &quot;eleven_turbo_v2&quot;</code></p>
+<p>There&rsquo;s also some general <a href="https://elevenlabs.io/docs/product/speech-synthesis/overview#settings" target="_blank" rel="noopener">voice settings</a> you can tweak, but it&rsquo;s not entirely clear what they do. Note that Elevenlabs&rsquo; AI is non-deterministic; even the exact same input and settings does not guarantee the exact same result every time. The default values recommended by Elevenlabs are used in the script:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="s2">&#34;voice_settings&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;stability&#34;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;similarity_boost&#34;</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;style&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;use_speaker_boost&#34;</span><span class="p">:</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></div><h3 id="voices">Voices</h3>
+<p>There&rsquo;s a large number of voices to choose from, covering 32 languages. Note that <strong>Elevenlabs does not have a language setting</strong>. The voice you select decides which language is spoken. The easiest way to explore voices is to log into Elevenlabs&rsquo; web interface, go to Speech Synthesis: Text-to-Speech, and try out different voices. Listen to demo clips for each voice (free!) or simply type a word into the text box and press &ldquo;generate&rdquo; to listen to it in a particular voice. This will also automatically list this voice under your My Voices library, which you need if you want to use the voice inside a script. Please note that <strong>each time you press &ldquo;generate&rdquo; anywhere on the website, it will deduct credits from your monthly quota</strong>.</p>
+<p>To select a voice in the script, you need the speaker&rsquo;s voice ID. This is a string of characters, like &ldquo;9BWtsMINqrJLrRacOk9x&rdquo; for the voice Aria. Replace this string in line 35 of the script with the voice ID of another speaker to change the voice. You can find the voice ID of a given speaker in your My Voices library in Elevenlabs&rsquo; web interface or by running a short script: see <a href="https://help.elevenlabs.io/hc/en-us/articles/14599760033937-How-do-I-find-my-voices-ID-of-my-voices-via-the-website-and-through-the-API" target="_blank" rel="noopener">these instructions</a>.</p>
+<h3 id="prompting">Prompting</h3>
+<p>Elevenlabs AI <strong>does not support SSML</strong> (<a href="https://www.w3.org/TR/speech-synthesis11/" target="_blank" rel="noopener">Speech Synthesis Markup Language</a>). Instead, it infers much of the prosody from the context of your input prompts. It will generate a question intonation for a prompt ending in a &ldquo;?&rdquo; and will sound more assertive when using &ldquo;!&rdquo;. It will also try its best to take the larger context into account to generate emotional prosody, like irony. However, the AI is non-deterministic and there&rsquo;s no guarantee it will do what you want it to do, even when re-using the exact same prompt.</p>
+<p>There are a few explicit ways to guide the AI&rsquo;s output. You can, for intance, control the pauses and hesitations by entering &ldquo;&hellip;&rdquo; to your prompts or through explicit breaks:</p>
+<p><code>&quot;Give me a sec.&quot; &lt;break time=&quot;1.0s&quot; /&gt; &quot;OK, all good!&quot;</code></p>
+<p>You can also use <a href="https://www.internationalphoneticalphabet.org" target="_blank" rel="noopener">IPA</a> and <a href="http://www.speech.cs.cmu.edu/cgi-bin/cmudict" target="_blank" rel="noopener">CMU Arpabet</a> as input prompts, like <code>AA1 B JH EH0 K T</code> for <em>OBject</em> (noun, initial stress) and <code>AA0 B JH EH1 K T</code> for <em>obJECT</em> (verb, final stress). However, this is only supported by the models “Eleven English V1” and “Eleven Turbo V2”.</p>
+<p>A strength of Elevenlabs is its contextual sensitivity. In the examples above, you can hear that adding &ldquo;She shouted&hellip;&rdquo; to a prompt actually makes the speaker &lsquo;speak up&rsquo;. Likewise, adding &ldquo;&hellip;he said, confused&rdquo; or &ldquo;&hellip;he replied angrily&rdquo; will lead to audible changes in the output speech. Still, it&rsquo;s hard to control this behavior and it has its limits (e.g., &ldquo;&hellip;he whispered&rdquo; doesn&rsquo;t work).</p>
+<p>For a complete overview, see <a href="https://elevenlabs.io/docs/product/speech-synthesis/prompting" target="_blank" rel="noopener">this page</a>. Note also that adding explicit breaks or IPA inside the prompt may throw WebMAUS off, because the prompts also form the input to the forced-alignment.</p>
+<h3 id="webmaus-parameters">WebMAUS parameters</h3>
+<p>The most important parameter for using WebMAUS is <strong>which language model</strong> you&rsquo;d like to use. You can see a list of languages supported by WebMAUS by inspecting the drop-down Language menu in their <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic" target="_blank" rel="noopener">web interface</a>. The script only accepts language codes, like &ldquo;eng-US&rdquo;. These can be found <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help" target="_blank" rel="noopener">here</a> but it&rsquo;s a long page of text so search for &ldquo;eng-US&rdquo; to find the list. The parameter can then be set in the script under the WebMAUS parameters in lines 48-57.</p>
+<div class="alert alert-note">
+  <div>
+    Looking for a quick and easy way to go through the output in Praat? <a href="/resources/scripts/annotate/">This Praat script</a> can streamline your workflow: it presents a speech recording with accompanying TextGrid for manual inspection to the user, let&rsquo;s you play it or perform some changes if necessary, and when you click Next, it automatically saves the changes and presents the next recording, and so on.
+  </div>
+</div>
+<div class="alert alert-warning">
+  <div>
+    Last but certainly not least: using Elevenlabs and WebMAUS means you agree to their Terms and Conditions, see <a href="https://elevenlabs.io/terms-of-use" target="_blank" rel="noopener">here</a> and <a href="https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help" target="_blank" rel="noopener">here</a>. In summary: Elevenlabs&rsquo; free tier allows you to use the content <strong>non-commercially with attribution</strong> and WebMAUS is only <strong>free for members of an academic institution</strong> to be used for non-profit research purposes only. Also, WebMAUS requests you <strong>cite Kisler et al., 2017</strong> (<a href="https://doi.org/10.1016/j.csl.2017.01.005" target="_blank" rel="noopener">https://doi.org/10.1016/j.csl.2017.01.005</a>) in any academic output.
+  </div>
+</div>
+<p><em>Happy synthesizing!</em></p>
+
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/resources/how-to/record-speech/" rel="next">...record speech</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resources/how-to/forced-alignment/" rel="prev">...do forced-alignment</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
+
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank">CC BY 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

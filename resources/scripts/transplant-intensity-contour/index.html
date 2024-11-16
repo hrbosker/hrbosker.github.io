@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." />
+<meta name="description" content="This Praat script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." />
 
 
 
@@ -316,8 +316,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/" />
-<meta property="og:title" content="Transplant intensity contour | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Praat: Transplant intensity contour | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Praat script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
   
@@ -344,7 +344,7 @@
 
 
   
-  <title>Transplant intensity contour | SPEAC | Hans Rutger Bosker</title>
+  <title>Praat: Transplant intensity contour | SPEAC | Hans Rutger Bosker</title>
 
   
   
@@ -793,39 +793,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class="active"><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class="active"><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -891,14 +899,14 @@
 
       <div class="docs-article-container">
         
-        <h1>Transplant intensity contour</h1>
+        <h1>Praat: Transplant intensity contour</h1>
 
         <article class="article-style">
 
           
           
 
-          <p>This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.</p>
+          <p>This Praat script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.</p>
 <blockquote>
 <p>You can also <a href="../transplant-intensity-contour.praat">download the script</a> as a .praat file.</p>
 </blockquote>
@@ -1135,14 +1143,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/manipulate-formants/" rel="next">Manipulate formants</a>
+    <a href="/resources/scripts/manipulate-formants/" rel="next">Praat: Manipulate formants</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/dynamic-time-warping/" rel="prev">Dynamic Time Warping</a>
+    <a href="/resources/scripts/dynamic-time-warping/" rel="prev">Praat: Dynamic Time Warping</a>
   </div>
   
 </div>

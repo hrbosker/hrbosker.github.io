@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://hrbosker.github.io/resources/scripts/generate-speech/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/resources/scripts/forced-alignment/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/resources/corpora/</loc>
     <lastmod>2024-05-07T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,10 +16,13 @@
     <lastmod>2022-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/resources/how-to/record-audio/</loc>
+    <loc>https://hrbosker.github.io/resources/how-to/record-speech/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/resources/scripts/save-all/</loc>
+    <loc>https://hrbosker.github.io/resources/how-to/generate-speech/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/resources/how-to/forced-alignment/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/demos/conjuring-words/</loc>
@@ -42,6 +51,9 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/resources/scripts/batch-processing/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/resources/scripts/save-all/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/demos/cocktail-party/</loc>
@@ -105,21 +117,25 @@
     <loc>https://hrbosker.github.io/resources/scripts/transplant-intensity-contour/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://hrbosker.github.io/resources/course-materials/emlar-r-tutorial/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/news/</loc>
-    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+    <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/news/24-10-16-several-new-preprints/</loc>
-    <lastmod>2024-10-16T00:00:00+00:00</lastmod>
+    <loc>https://hrbosker.github.io/news/24-11-01-isgs2025/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2024-11-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/24-10-16-several-new-preprints/</loc>
     <lastmod>2024-10-16T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="Open Praat scripts for speech analysis, manipulation, and synthesis" />
+<meta name="description" content="Scripts for speech synthesis, analysis, and manipulation" />
 
 
 
@@ -316,7 +316,7 @@
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/" />
 <meta property="og:title" content="Scripts | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="Open Praat scripts for speech analysis, manipulation, and synthesis" /><meta property="og:image" content="https://hrbosker.github.io/resources/scripts/featured.jpg" /><meta property="og:locale" content="en-us" />
+<meta property="og:description" content="Scripts for speech synthesis, analysis, and manipulation" /><meta property="og:image" content="https://hrbosker.github.io/resources/scripts/featured.jpg" /><meta property="og:locale" content="en-us" />
 
   
     <meta property="og:updated_time" content="2022-07-07T00:00:00&#43;00:00" />
@@ -789,39 +789,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -860,7 +868,7 @@
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#praat-syntax">Praat syntax</a></li>
+    <li><a href="#praat">Praat</a></li>
     <li><a href="#list-of-available-scripts">List of available scripts</a></li>
     <li><a href="#helpful-links">Helpful links</a></li>
     <li><a href="#license">License</a></li>
@@ -944,7 +952,7 @@
   <summary class="font-weight-bold">Table of Contents</summary>
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#praat-syntax">Praat syntax</a></li>
+    <li><a href="#praat">Praat</a></li>
     <li><a href="#list-of-available-scripts">List of available scripts</a></li>
     <li><a href="#helpful-links">Helpful links</a></li>
     <li><a href="#license">License</a></li>
@@ -954,17 +962,17 @@
 
 <div class="alert alert-note">
   <div>
-    The Praat scripts shared here are first and foremost intended as a <strong>lab archive</strong>, providing script snippets we frequently use. This means <strong>they require customization</strong> for each individual new project. <em>Use at your own risk!</em>
+    The scripts shared here are first and foremost intended as a <strong>lab archive</strong>, providing script snippets we frequently use. This means <strong>they require customization</strong> for each individual new project. <em>Use at your own risk!</em>
   </div>
 </div>
-<h2 id="praat-syntax">Praat syntax</h2>
-<p>Over the years, Praat has had three types of syntax:</p>
+<h2 id="praat">Praat</h2>
+<p>Many (but not all!) of the scripts shared here are for use in <a href="https://www.fon.hum.uva.nl/praat/" target="_blank" rel="noopener">Praat</a>, the most commonly used software package for phonetic research. Over the years, Praat has had three types of syntax:</p>
 <ul>
 <li><code>Extract part... 0 0.1 rectangular 1 no</code> <em>(Praat versions 5.3.43 and older; before April 2013)</em></li>
 <li><code>do(&quot;Extract part&quot;, 0, 0.1, &quot;rectangular&quot;, 1, &quot;no&quot;)</code> <em>(between 5.3.44 and 5.3.62; April 2013 - January 2014)</em></li>
 <li><code>Extract part: 0, 0.1, &quot;rectangular, 1, &quot;no&quot;</code> <em>(5.3.63 and after; after January 2014)</em></li>
 </ul>
-<p>Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax (&hellip;shows my age), with occasional lines using the latest type of syntax. <strong>[ADVERTISEMENT:]</strong> <em>Did you know the syntax highlighting in <a href="../tools/#praatvscode">PraatVSCode</a> works with either syntax?</em></p>
+<p>Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The Praat scripts shared here primarily use the first type of syntax (&hellip;shows my age), with occasional lines using the latest type of syntax. <strong>[ADVERTISEMENT:]</strong> <em>Did you know the syntax highlighting in <a href="../tools/#praatvscode">PraatVSCode</a> works with either syntax?</em></p>
 <br />
 <h2 id="list-of-available-scripts">List of available scripts</h2>
 
@@ -975,56 +983,68 @@
     
       <li>
         
-        <h5><a href="/resources/scripts/save-all/">Save all</a></h5>
+        <h5><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></h5>
+        <p>This Python script performs AI text-to-speech synthesis using Elevenlabs. It takes a list of prompts as input and generates individual .mp3 files for each prompt. It also automatically performs forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations.</p>
+      </li>
+    
+      <li>
+        
+        <h5><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></h5>
+        <p>This Python script performs forced-alignment using WebMAUS. It takes pairs of sound files + text files with the same filename (item1.wav + item1.txt) as input and matches the orthographic words in the txt file to the sounds, syllables, and words in the sound file.</p>
+      </li>
+    
+      <li>
+        
+        <h5><a href="/resources/scripts/annotate/">Praat: Annotate</a></h5>
+        <p>This Praat script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on.</p>
+      </li>
+    
+      <li>
+        
+        <h5><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></h5>
+        <p>This Praat script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
+      </li>
+    
+      <li>
+        
+        <h5><a href="/resources/scripts/save-all/">Praat: Save all</a></h5>
         <p>Praat can only save one object at a time for you. If you have multiple objects in your object window you&rsquo;d like to save in one go, you can use this script.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/annotate/">Annotate</a></h5>
-        <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on.</p>
+        <h5><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></h5>
+        <p>This Praat script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/batch-processing/">Batch processing</a></h5>
-        <p>This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
+        <h5><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></h5>
+        <p>This Praat script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></h5>
-        <p>This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
+        <h5><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></h5>
+        <p>This Praat script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></h5>
-        <p>This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
+        <h5><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></h5>
+        <p>This Praat script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from &ldquo;bet&rdquo; to &ldquo;bit&rdquo;). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></h5>
-        <p>This script creates an F0 continuum for two segmentally matching words (e.g., SUBject vs. subJECT). First, it matches the two words in duration and then interpolates the F0 contour linearly in 11 steps (steps 1 and 11 being the original contours), controlling for intensity.</p>
+        <h5><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></h5>
+        <p>This Praat script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1.</p>
       </li>
     
       <li>
         
-        <h5><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></h5>
-        <p>This script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from &ldquo;bet&rdquo; to &ldquo;bit&rdquo;). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0.</p>
-      </li>
-    
-      <li>
-        
-        <h5><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></h5>
-        <p>This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1.</p>
-      </li>
-    
-      <li>
-        
-        <h5><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></h5>
-        <p>This script takes pairs of items (e.g., bet and bit) from a directory and matches the duration of individual speech sounds in word1 to the duration of individual speech sounds in word2 (&hellip;a kind of simplistic Dynamic Time Warping).</p>
+        <h5><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></h5>
+        <p>This Praat script takes pairs of items (e.g., bet and bit) from a directory and matches the duration of individual speech sounds in word1 to the duration of individual speech sounds in word2 (&hellip;a kind of simplistic Dynamic Time Warping).</p>
       </li>
     
   </ul>

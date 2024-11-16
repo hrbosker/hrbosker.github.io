@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
+<meta name="description" content="This Praat script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." />
 
 
 
@@ -316,8 +316,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/annotate/" />
-<meta property="og:title" content="Annotate | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Praat: Annotate | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Praat script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
   
@@ -344,7 +344,7 @@
 
 
   
-  <title>Annotate | SPEAC | Hans Rutger Bosker</title>
+  <title>Praat: Annotate | SPEAC | Hans Rutger Bosker</title>
 
   
   
@@ -793,39 +793,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class="active"><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class="active"><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -891,14 +899,14 @@
 
       <div class="docs-article-container">
         
-        <h1>Annotate</h1>
+        <h1>Praat: Annotate</h1>
 
         <article class="article-style">
 
           
           
 
-          <p>This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
+          <p>This Praat script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">WebMAUS</a> or <a href="https://hrbosker.github.io/resources/other-resources/#videoaudio-editing">EasyAlign</a>) that you&rsquo;d like to manually evaluate and edit.</p>
 <p>Moreover, the script keeps track of who annotated what, can continue where you left off yesterday, allows users to enter comments about their annotations, and blinds file names to avoid human annotation biases. The script can be updated to present new empty TextGrids (instead of any pre-existing ones, in case you only have .wav files) or to automatically perform changes to TextGrid tiers/intervals before presenting them for manual annotation.</p>
 <blockquote>
 <p>You can also <a href="../annotate.praat">download the script</a> as a .praat file.</p>
@@ -1165,14 +1173,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/save-all/" rel="next">Save all</a>
+    <a href="/resources/scripts/forced-alignment/" rel="next">WebMAUS: Forced-alignment</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/batch-processing/" rel="prev">Batch processing</a>
+    <a href="/resources/scripts/batch-processing/" rel="prev">Praat: Batch processing</a>
   </div>
   
 </div>

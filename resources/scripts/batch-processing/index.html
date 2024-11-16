@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." />
+<meta name="description" content="This Praat script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." />
 
 
 
@@ -316,8 +316,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/batch-processing/" />
-<meta property="og:title" content="Batch processing | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Praat: Batch processing | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Praat script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
   
@@ -344,7 +344,7 @@
 
 
   
-  <title>Batch processing | SPEAC | Hans Rutger Bosker</title>
+  <title>Praat: Batch processing | SPEAC | Hans Rutger Bosker</title>
 
   
   
@@ -793,39 +793,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class="active"><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class="active"><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -891,14 +899,14 @@
 
       <div class="docs-article-container">
         
-        <h1>Batch processing</h1>
+        <h1>Praat: Batch processing</h1>
 
         <article class="article-style">
 
           
           
 
-          <p>This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
+          <p>This Praat script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.</p>
 <p>In its current form, the script reads each .wav file <em>plus</em> accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled &ldquo;vowel&rdquo;. It then allows the user to apply a particular function to those intervals (such as <code>Scale intensity: 65</code>), after which it concatenates the individual intervals back together, and saves the output in an output directory.</p>
 <p><strong>NOTE:</strong> In its current form, the script does not run any function on its input. It really only serves as a starting point, including snippets of code we regularly use and now do not need to look up every time we want to do batch processing in Praat.</p>
 <blockquote>
@@ -1144,14 +1152,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/annotate/" rel="next">Annotate</a>
+    <a href="/resources/scripts/annotate/" rel="next">Praat: Annotate</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/move-to-zero-crossings/" rel="prev">Move to zero-crossings</a>
+    <a href="/resources/scripts/save-all/" rel="prev">Praat: Save all</a>
   </div>
   
 </div>

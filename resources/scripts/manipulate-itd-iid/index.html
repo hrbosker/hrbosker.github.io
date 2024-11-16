@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." />
+<meta name="description" content="This Praat script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." />
 
 
 
@@ -316,8 +316,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/manipulate-itd-iid/" />
-<meta property="og:title" content="Manipulate ITD/IID | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Praat: Manipulate ITD/IID | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Praat script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
   
@@ -344,7 +344,7 @@
 
 
   
-  <title>Manipulate ITD/IID | SPEAC | Hans Rutger Bosker</title>
+  <title>Praat: Manipulate ITD/IID | SPEAC | Hans Rutger Bosker</title>
 
   
   
@@ -793,39 +793,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class="active"><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class="active"><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -891,14 +899,14 @@
 
       <div class="docs-article-container">
         
-        <h1>Manipulate ITD/IID</h1>
+        <h1>Praat: Manipulate ITD/IID</h1>
 
         <article class="article-style">
 
           
           
 
-          <p>This script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
+          <p>This Praat script allows you to create a &lsquo;virtual auditory reality&rsquo; by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.</p>
 <p>When you want to play two talkers as coming from opposite sides (talker1 from the left, talker2 from the right), you could simply present the talkers in different channels of a stereo sound file. This way, when your listeners use headphones, talker1 is the only signal played in the left ear and talker2 is the only signal played in the right ear. This design, however, does not reflect naturalistic acoustic environments where the speech of a given talker typically reaches <em>both ears</em>. Moreover, such a simplistic 2-channel design also completely avoids any energetic masking from one talker onto the next.</p>
 <p>In order to simulate more naturalistic multitalker environments, one can present the same sound to both ears, but with a slight delay (interaural time difference; ITD) and at a slightly lower intensity in one ear vs. the other (interaural intensity difference; IID). This way we simulate the shadowing effect of the listener&rsquo;s head, maintaining naturalistic energetic masking.</p>
 <p>See <a href="https://hrbosker.github.io/demos/cocktail-party/">this demo</a> for some examples and further details. Also see <a href="/publication/papoutsi-zimianiti-etal-2023-pbr">this paper</a> for an example of how we applied this technique to a statistical learning paradigm.</p>
@@ -1163,14 +1171,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/move-to-zero-crossings/" rel="next">Move to zero-crossings</a>
+    <a href="/resources/scripts/move-to-zero-crossings/" rel="next">Praat: Move to zero-crossings</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/interpolate-f0/" rel="prev">Interpolate F0 continuum</a>
+    <a href="/resources/scripts/interpolate-f0/" rel="prev">Praat: Interpolate F0 continuum</a>
   </div>
   
 </div>

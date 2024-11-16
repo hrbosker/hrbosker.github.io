@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: November 4, 2024 --><html lang="en-us" >
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
 
 
 <head>
@@ -271,7 +271,7 @@
 
   
 
-<meta name="description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." />
+<meta name="description" content="This Praat script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." />
 
 
 
@@ -316,8 +316,8 @@
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
 <meta property="og:url" content="https://hrbosker.github.io/resources/scripts/move-to-zero-crossings/" />
-<meta property="og:title" content="Move to zero-crossings | SPEAC | Hans Rutger Bosker" />
-<meta property="og:description" content="This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+<meta property="og:title" content="Praat: Move to zero-crossings | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Praat script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
 
   
   
@@ -344,7 +344,7 @@
 
 
   
-  <title>Move to zero-crossings | SPEAC | Hans Rutger Bosker</title>
+  <title>Praat: Move to zero-crossings | SPEAC | Hans Rutger Bosker</title>
 
   
   
@@ -793,39 +793,47 @@
       
 
 
-  <li class=""><a href="/resources/scripts/save-all/">Save all</a></li>
+  <li class=""><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/annotate/">Annotate</a></li>
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/batch-processing/">Batch processing</a></li>
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
 
 
 
-  <li class="active"><a href="/resources/scripts/move-to-zero-crossings/">Move to zero-crossings</a></li>
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Manipulate ITD/IID</a></li>
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/interpolate-f0/">Interpolate F0 continuum</a></li>
+  <li class="active"><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/manipulate-formants/">Manipulate formants</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Transplant intensity contour</a></li>
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
 
 
 
-  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Dynamic Time Warping</a></li>
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
 
       
         </ul>
@@ -891,14 +899,14 @@
 
       <div class="docs-article-container">
         
-        <h1>Move to zero-crossings</h1>
+        <h1>Praat: Move to zero-crossings</h1>
 
         <article class="article-style">
 
           
           
 
-          <p>This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
+          <p>This Praat script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier &rsquo;to0x&rsquo; at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.</p>
 <blockquote>
 <p>You can also <a href="../move-to-zero-crossings.praat">download the script</a> as a .praat file.</p>
 </blockquote>
@@ -1070,14 +1078,14 @@
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/resources/scripts/batch-processing/" rel="next">Batch processing</a>
+    <a href="/resources/scripts/save-all/" rel="next">Praat: Save all</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/resources/scripts/manipulate-itd-iid/" rel="prev">Manipulate ITD/IID</a>
+    <a href="/resources/scripts/manipulate-itd-iid/" rel="prev">Praat: Manipulate ITD/IID</a>
   </div>
   
 </div>

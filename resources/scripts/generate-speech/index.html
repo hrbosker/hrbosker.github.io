@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: November 16, 2024 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.88eac37c0928c6d9f75a4489e6f10b4a.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="This Python script performs AI text-to-speech synthesis using Elevenlabs. It takes a list of prompts as input and generates individual .mp3 files for each prompt. It also automatically performs forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations." />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/resources/scripts/generate-speech/" />
+<link rel="canonical" href="https://hrbosker.github.io/resources/scripts/generate-speech/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" />
+
+
+
+  
+
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/resources/scripts/generate-speech/" />
+<meta property="og:title" content="Elevenlabs: Generate speech | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="This Python script performs AI text-to-speech synthesis using Elevenlabs. It takes a list of prompts as input and generates individual .mp3 files for each prompt. It also automatically performs forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations." /><meta property="og:image" content="https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+
+  
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>Elevenlabs: Generate speech | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="5eef63514e62c026db65cef5ed6c8210" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/course-materials/"><span>Course materials</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+        
+          Scripts
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/resources/"><i class="fas fa-arrow-left pr-1"></i>Resources</a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/resources/scripts/">Scripts</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class="active"><a href="/resources/scripts/generate-speech/">Elevenlabs: Generate speech</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/forced-alignment/">WebMAUS: Forced-alignment</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/annotate/">Praat: Annotate</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/batch-processing/">Praat: Batch processing</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/save-all/">Praat: Save all</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/move-to-zero-crossings/">Praat: Move to zero-crossings</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/manipulate-itd-iid/">Praat: Manipulate ITD/IID</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/interpolate-f0/">Praat: Interpolate F0 continuum</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/manipulate-formants/">Praat: Manipulate formants</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/transplant-intensity-contour/">Praat: Transplant intensity contour</a></li>
+
+
+
+  <li class=""><a href="/resources/scripts/dynamic-time-warping/">Praat: Dynamic Time Warping</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents"></nav>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <div class="docs-article-container">
+        
+      </div>
+
+      
+      
+      
+
+      <div class="docs-article-container">
+        
+        <h1>Elevenlabs: Generate speech</h1>
+
+        <article class="article-style">
+
+          
+          
+
+          <p>This Python script performs AI text-to-speech synthesis using <a href="https://elevenlabs.io/" target="_blank" rel="noopener">Elevenlabs</a>. It takes a list of prompts as input and generates individual .mp3 files for each prompt. It also automatically performs forced-alignment on the output speech using WebMAUS, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations.</p>
+<p>If you want to get started using this script, please see our <a href="/resources/how-to/generate-speech">how-to-generate-speech</a> for hands-on instructions.</p>
+<blockquote>
+<p>You can also <a href="../generate-speech.py">download the script</a> as a .py file.</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Hans Rutger Bosker, Radboud University</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### HansRutger.Bosker@donders.ru.nl</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### Date: 11 November 2024, run in Python 3.11.5 on Windows 11</span>
+</span></span><span class="line"><span class="cl"><span class="c1">### License: CC BY 4.0</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># IMPORTING LIBRARIES</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># to send HTTP requests </span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span> <span class="c1"># for parsing the JSON data that is received from Elevenlabs</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">base64</span> <span class="c1"># for audio</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span> <span class="c1"># for changing the working directory and removing files</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span> <span class="c1"># for handling input from an Excel file</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">xml.etree.ElementTree</span> <span class="k">as</span> <span class="nn">ET</span> <span class="c1"># to parse the XML response from webmaus</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tgt</span> <span class="c1"># to parse and access TextGrids</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># IMPORTANT: pandas often uses openpyxl to read Excel files, so make sure to have the &#39;openpyxl&#39; module installed as well!</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># SET PARAMETERS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set the working directory to the location of the script file</span>
+</span></span><span class="line"><span class="cl"><span class="n">script_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="vm">__file__</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">script_dir</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Path to the input file</span>
+</span></span><span class="line"><span class="cl"><span class="n">input_excel_path</span> <span class="o">=</span> <span class="s2">&#34;input.xlsx&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Voice ID to use</span>
+</span></span><span class="line"><span class="cl"><span class="n">VOICE_ID</span> <span class="o">=</span> <span class="s2">&#34;9BWtsMINqrJLrRacOk9x&#34;</span>  <span class="c1"># Aria</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Construct the URL for the Text-to-Speech API request</span>
+</span></span><span class="line"><span class="cl"><span class="n">tts_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;https://api.elevenlabs.io/v1/text-to-speech/</span><span class="si">{</span><span class="n">VOICE_ID</span><span class="si">}</span><span class="s2">/with-timestamps&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Your personal API Key for Elevenlabs</span>
+</span></span><span class="line"><span class="cl"><span class="n">XI_API_KEY</span> <span class="o">=</span> <span class="s2">&#34;paste_your_own_API_key_here&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Accept&#34;</span><span class="p">:</span> <span class="s2">&#34;application/json&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;xi-api-key&#34;</span><span class="p">:</span> <span class="n">XI_API_KEY</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Content-Type&#34;</span><span class="p">:</span> <span class="s2">&#34;application/json&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># WebMAUSBasic parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">webmaus_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runMAUSBasic&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">webmaus_language</span> <span class="o">=</span> <span class="s1">&#39;eng-US&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># runPho2Syl parameters</span>
+</span></span><span class="line"><span class="cl"><span class="n">runpho2syl_url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/runPho2Syl&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">runpho2syl_input_tier</span> <span class="o">=</span> <span class="s2">&#34;MAU&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">runpho2syl_wsync</span> <span class="o">=</span> <span class="s2">&#34;yes&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">runpho2syl_outsym</span> <span class="o">=</span> <span class="s2">&#34;sampa&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">runpho2syl_output_format</span> <span class="o">=</span> <span class="s2">&#34;tg&#34;</span>  <span class="c1"># Output format: TextGrid</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># DEFINE CUSTOM FUNCTIONS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Function to convert JSON to TextGrid format (for alignment data)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">json_to_textgrid</span><span class="p">(</span><span class="n">json_data</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">characters</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s2">&#34;characters&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">start_times</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s2">&#34;character_start_times_seconds&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">end_times</span> <span class="o">=</span> <span class="n">json_data</span><span class="p">[</span><span class="s2">&#34;character_end_times_seconds&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">xmin</span> <span class="o">=</span> <span class="n">start_times</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">xmax</span> <span class="o">=</span> <span class="n">end_times</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;File type = &#34;ooTextFile&#34;</span><span class="se">\n</span><span class="s1">Object class = &#34;TextGrid&#34;</span><span class="se">\n\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;xmin = </span><span class="si">{</span><span class="n">xmin</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;xmax = </span><span class="si">{</span><span class="n">xmax</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;tiers? &lt;exists&gt;</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;size = 1</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;item []:</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;    item [1]:</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        class = &#34;IntervalTier&#34;</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        name = &#34;Characters&#34;</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        xmin = </span><span class="si">{</span><span class="n">xmin</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        xmax = </span><span class="si">{</span><span class="n">xmax</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        intervals: size = </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">characters</span><span class="p">)</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">char</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">characters</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">char_xmin</span> <span class="o">=</span> <span class="n">start_times</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">char_xmax</span> <span class="o">=</span> <span class="n">end_times</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">text</span> <span class="o">=</span> <span class="n">char</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;&#34;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#34;&#34;&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;        intervals [</span><span class="si">{</span><span class="n">j</span> <span class="o">+</span> <span class="mi">1</span><span class="si">}</span><span class="s1">]:</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;            xmin = </span><span class="si">{</span><span class="n">char_xmin</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;            xmax = </span><span class="si">{</span><span class="n">char_xmax</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">textgrid_content</span> <span class="o">+=</span> <span class="sa">f</span><span class="s1">&#39;            text = &#34;</span><span class="si">{</span><span class="n">text</span><span class="si">}</span><span class="s1">&#34;</span><span class="se">\n</span><span class="s1">&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Write to the output file</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_path</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">textgrid_content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#print(f&#34;TextGrid file written to {output_path}&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Function to parse and combine TextGrid files with TextGridTools (tgt)</span>
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">combine_textgrids_tgt</span><span class="p">(</span><span class="n">textgrid_path_1</span><span class="p">,</span> <span class="n">textgrid_path_2</span><span class="p">,</span> <span class="n">output_path</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Load the TextGrid files using TextGridTools</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tg_1</span> <span class="o">=</span> <span class="n">tgt</span><span class="o">.</span><span class="n">read_textgrid</span><span class="p">(</span><span class="n">textgrid_path_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tg_2</span> <span class="o">=</span> <span class="n">tgt</span><span class="o">.</span><span class="n">read_textgrid</span><span class="p">(</span><span class="n">textgrid_path_2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Create a list of the textgrids to be merged</span>
+</span></span><span class="line"><span class="cl">    <span class="n">textgrids</span> <span class="o">=</span> <span class="p">[</span><span class="n">tg_1</span><span class="p">,</span> <span class="n">tg_2</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">## Create a new TextGrid for the combined output</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#combined_tg = tgt.TextGrid()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">combined_tg</span> <span class="o">=</span> <span class="n">tgt</span><span class="o">.</span><span class="n">util</span><span class="o">.</span><span class="n">merge_textgrids</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">textgrids</span><span class="o">=</span><span class="n">textgrids</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">ignore_duplicates</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1"># Write the combined TextGrid to the output file</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tgt</span><span class="o">.</span><span class="n">write_to_file</span><span class="p">(</span><span class="n">combined_tg</span><span class="p">,</span> <span class="n">output_path</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;short&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;TextGrid file saved as </span><span class="si">{</span><span class="n">output_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># START GENERATING SPEECH + TEXTGRIDS</span>
+</span></span><span class="line"><span class="cl"><span class="c1">######################################</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Read the input Excel file using pandas</span>
+</span></span><span class="line"><span class="cl"><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">input_excel_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Main loop for processing the data</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">item</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&#34;filename&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">prompt</span> <span class="o">=</span> <span class="n">row</span><span class="p">[</span><span class="s2">&#34;prompt&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Data payload for the API request</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;text&#34;</span><span class="p">:</span> <span class="n">prompt</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;model_id&#34;</span><span class="p">:</span> <span class="s2">&#34;eleven_turbo_v2&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;voice_settings&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;stability&#34;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;similarity_boost&#34;</span><span class="p">:</span> <span class="mf">0.75</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;style&#34;</span><span class="p">:</span> <span class="mf">0.0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;use_speaker_boost&#34;</span><span class="p">:</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Make the POST request to the TTS API with headers and data</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">tts_url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">stream</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">!=</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Error encountered for prompt &#39;</span><span class="si">{</span><span class="n">prompt</span><span class="si">}</span><span class="s2">&#39;, status: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">, content: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">json_string</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&#34;utf-8&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">response_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">json_string</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Decode the base64-encoded audio data</span>
+</span></span><span class="line"><span class="cl">    <span class="n">audio_bytes</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64decode</span><span class="p">(</span><span class="n">response_dict</span><span class="p">[</span><span class="s2">&#34;audio_base64&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Save the input text to a text file using &#39;item&#39; as the filename</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_text_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.txt&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_text_path</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">outfile</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">outfile</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">prompt</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Text file saved as </span><span class="si">{</span><span class="n">output_text_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Save the audio file using &#39;item&#39; as the filename</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_audio_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.mp3&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_audio_path</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">audio_bytes</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Audio file saved as </span><span class="si">{</span><span class="n">output_audio_path</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Save character-based alignment data to a JSON file using &#39;item&#39; as the filename</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_json_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.json&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">json_object</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">response_dict</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">],</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ??? Do you want to save the JSON file? Then use this:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#with open(output_json_path, &#34;w&#34;) as outfile:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#    outfile.write(json_object)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">#print(f&#34;Alignment data saved as {output_json_path}&#34;)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Now convert JSON to TextGrid...</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># ...but wait with saving until the forced-alignment data from WebMAUSBasic have been added</span>
+</span></span><span class="line"><span class="cl">    <span class="n">output_textgrid_path_1</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">json_to_textgrid</span><span class="p">(</span><span class="n">response_dict</span><span class="p">[</span><span class="s1">&#39;alignment&#39;</span><span class="p">],</span> <span class="n">output_textgrid_path_1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Run WebMAUSBasic on the mp3 and txt pairs</span>
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_audio_path</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">audio_file</span><span class="p">,</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_text_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">text_file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># Construct the payload</span>
+</span></span><span class="line"><span class="cl">        <span class="n">files</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;SIGNAL&#39;</span><span class="p">:</span> <span class="n">audio_file</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;TEXT&#39;</span><span class="p">:</span> <span class="n">text_file</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;LANGUAGE&#39;</span><span class="p">:</span> <span class="n">webmaus_language</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;OUTFORMAT&#39;</span><span class="p">:</span> <span class="s1">&#39;bpf&#39;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="c1"># Send the request to the WebMAUSBasic API</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">webmaus_url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="c1"># Parse the XML response</span>
+</span></span><span class="line"><span class="cl">            <span class="n">root</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">download_link</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;.//downloadLink&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">download_link</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="c1"># Download the BPF file using the download link</span>
+</span></span><span class="line"><span class="cl">                <span class="n">output_filename_webmaus</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">_webmaus.par&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="n">download_response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">download_link</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                <span class="c1"># Check if the download was successful</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="n">download_response</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_filename_webmaus</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">download_response</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">#print(f&#34;WebMAUS TextGrid file downloaded as {output_filename_webmaus}&#34;)</span>
+</span></span><span class="line"><span class="cl">                    
+</span></span><span class="line"><span class="cl">                    <span class="c1"># Step 2: Use the .par BPF file as input to runPho2Syl</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_filename_webmaus</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">bpf_file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">files</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;i&#39;</span><span class="p">:</span> <span class="n">bpf_file</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;wsync&#39;</span><span class="p">:</span> <span class="n">runpho2syl_wsync</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;lng&#39;</span><span class="p">:</span> <span class="n">webmaus_language</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;tier&#39;</span><span class="p">:</span> <span class="n">runpho2syl_input_tier</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;outsym&#39;</span><span class="p">:</span> <span class="n">runpho2syl_outsym</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                            <span class="s1">&#39;oform&#39;</span><span class="p">:</span> <span class="n">runpho2syl_output_format</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">response_pho2syl</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="n">runpho2syl_url</span><span class="p">,</span> <span class="n">files</span><span class="o">=</span><span class="n">files</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="n">response_pho2syl</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                            <span class="c1"># Parse the XML response to find download link for runPho2Syl</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">root_pho2syl</span> <span class="o">=</span> <span class="n">ET</span><span class="o">.</span><span class="n">fromstring</span><span class="p">(</span><span class="n">response_pho2syl</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">download_link_pho2syl</span> <span class="o">=</span> <span class="n">root_pho2syl</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&#34;.//downloadLink&#34;</span><span class="p">)</span><span class="o">.</span><span class="n">text</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                            <span class="k">if</span> <span class="n">download_link_pho2syl</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                                <span class="c1"># Download the runPho2Syl output file</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">output_filename_pho2syl</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">_sylls.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">download_response_pho2syl</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">download_link_pho2syl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                
+</span></span><span class="line"><span class="cl">                                <span class="k">if</span> <span class="n">download_response_pho2syl</span><span class="o">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">output_filename_pho2syl</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                                        <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">download_response_pho2syl</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                    
+</span></span><span class="line"><span class="cl">                                    <span class="c1"># Combine both TextGrid files using TextGridTools (tgt)</span>
+</span></span><span class="line"><span class="cl">                                    <span class="n">output_combined_textgrid_path</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.TextGrid&#34;</span>
+</span></span><span class="line"><span class="cl">                                    <span class="n">combine_textgrids_tgt</span><span class="p">(</span><span class="n">output_textgrid_path_1</span><span class="p">,</span> <span class="n">output_filename_pho2syl</span><span class="p">,</span> <span class="n">output_combined_textgrid_path</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">                                    <span class="c1"># Remove the intermediate output files containing only partial output</span>
+</span></span><span class="line"><span class="cl">                                    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">output_filename_pho2syl</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                                    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Failed to download the runPho2Syl output file.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Download link not found in the runPho2Syl response.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Failed to process the runPho2Syl request. Status code: </span><span class="si">{</span><span class="n">response_pho2syl</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        
+</span></span><span class="line"><span class="cl">                    <span class="c1"># Remove the intermediate output files containing only partial output</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">output_filename_webmaus</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                    <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Failed to download the WebMAUS BPF file.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Download link not found in the response.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Failed to process the WebMAUS request. Status code: </span><span class="si">{</span><span class="n">response</span><span class="o">.</span><span class="n">status_code</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># End of script</span>
+</span></span><span class="line"><span class="cl"><span class="c1">################################################################################</span>
+</span></span></code></pre></div>
+
+        </article>
+
+        
+
+
+
+
+
+        
+
+
+
+        
+        
+        <div class="article-widget">
+          
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/resources/scripts/forced-alignment/" rel="prev">WebMAUS: Forced-alignment</a>
+  </div>
+  
+</div>
+
+        </div>
+        
+      </div>
+
+      <div class="body-footer">
+        <p>Last updated on Jan 1, 0001</p>
+
+        
+
+
+
+
+        
+
+
+
+
+        
+
+
+      </div>
+
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank">CC BY 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/anchor-js@5.0.0/anchor.min.js" integrity="sha256-aQmOEF2ZD4NM/xt4hthzREIo/2PFkOX/g01WjxEV7Ys=" crossorigin="anonymous"></script>
+<script>
+  anchors.add();
+</script>
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

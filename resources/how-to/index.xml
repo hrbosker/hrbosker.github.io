@@ -13,10 +13,10 @@
     </image>
     
     <item>
-      <title>...record audio</title>
-      <link>https://hrbosker.github.io/resources/how-to/record-audio/</link>
+      <title>...record speech</title>
+      <link>https://hrbosker.github.io/resources/how-to/record-speech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/resources/how-to/record-audio/</guid>
+      <guid>https://hrbosker.github.io/resources/how-to/record-speech/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     We&amp;rsquo;ll cover making clean audio recordings in &lt;strong&gt;Audacity&lt;/strong&gt; and in &lt;strong&gt;SpeechRecorder&lt;/strong&gt;. Audacity is easy-to-use and perfect for making a single (long) recording of a speaker. SpeechRecorder presents individual word/sentence prompts to a speaker, saving each utterance separately.
@@ -50,10 +50,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp 400w,
-               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_3ad6b5f589837d118005f71e66a94edd.webp 760w,
-               /resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp&#34;
+               /resources/how-to/record-speech/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp 400w,
+               /resources/how-to/record-speech/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_3ad6b5f589837d118005f71e66a94edd.webp 760w,
+               /resources/how-to/record-speech/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%285%29_hu2376441eede321f8a9da7e7d53920a1d_91532_fcfff5ccd21f291198de3c5bb7eb2094.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -83,10 +83,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp 400w,
-               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_101079cc1c9588fccf33605617292340.webp 760w,
-               /resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp&#34;
+               /resources/how-to/record-speech/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp 400w,
+               /resources/how-to/record-speech/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_101079cc1c9588fccf33605617292340.webp 760w,
+               /resources/how-to/record-speech/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%282%29_hu7be07d5036e9b7da3a74763866b1da0f_108602_c15791337c4530288e9b26dcc221855b.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -116,10 +116,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp 400w,
-               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_2e6d7ff407a4e6ada78768b2c74fe77f.webp 760w,
-               /resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp&#34;
+               /resources/how-to/record-speech/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp 400w,
+               /resources/how-to/record-speech/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_2e6d7ff407a4e6ada78768b2c74fe77f.webp 760w,
+               /resources/how-to/record-speech/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%283%29_hu2376441eede321f8a9da7e7d53920a1d_86535_45cf3f591e7a0596c0971f6ee5819e49.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -149,10 +149,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp 400w,
-               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_623908e7d9c6dc88c31e511ed137b576.webp 760w,
-               /resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp&#34;
+               /resources/how-to/record-speech/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp 400w,
+               /resources/how-to/record-speech/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_623908e7d9c6dc88c31e511ed137b576.webp 760w,
+               /resources/how-to/record-speech/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity-%281%29_hu4b45ac301e71be0d2144ce8adc0b578d_82319_cc3d39f0447e3a7c95a9ba21a3bab9e9.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -182,10 +182,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -215,10 +215,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp 400w,
-               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_fddef4143c77084bfe82d4e714971019.webp 760w,
-               /resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp&#34;
+               /resources/how-to/record-speech/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp 400w,
+               /resources/how-to/record-speech/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_fddef4143c77084bfe82d4e714971019.webp 760w,
+               /resources/how-to/record-speech/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%286%29_hu5a8d2d1acc1a5d49f87cae738a910dc5_107877_41b57c8c8d948f1104ab9c5ae4b18710.webp&#34;
                width=&#34;600&#34;
                height=&#34;405&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -263,10 +263,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
-               /resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp 400w,
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_687d0e6e3ddb5e255870cfd935a13ec7.webp 760w,
+               /resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%288%29_hu4b4dab99231e2d53a28bf9b9c2ccdad6_170078_91355917154f899b9e63f27b458a3e6d.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -296,10 +296,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp 400w,
-               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_43e0b7a1bda07f0f2168f38b12caab4d.webp 760w,
-               /resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp&#34;
+               /resources/how-to/record-speech/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp 400w,
+               /resources/how-to/record-speech/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_43e0b7a1bda07f0f2168f38b12caab4d.webp 760w,
+               /resources/how-to/record-speech/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%284%29_hu2376441eede321f8a9da7e7d53920a1d_100282_98959f412f17659ca2270b433e362987.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -329,10 +329,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp 400w,
-               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_6ce8cd8fb0a845cfdc5141be27f94f8c.webp 760w,
-               /resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp&#34;
+               /resources/how-to/record-speech/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp 400w,
+               /resources/how-to/record-speech/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_6ce8cd8fb0a845cfdc5141be27f94f8c.webp 760w,
+               /resources/how-to/record-speech/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/audacity%20%287%29_hu46cec7b9763626ae177ec4efbcbad4ab_167475_fa51829f8d628713ef0f015d3061c84b.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -361,7 +361,7 @@
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/clean.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/clean.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -385,7 +385,7 @@
 
 
 &lt;audio controls &gt;
-  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/clippings.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/clippings.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
 &lt;/audio&gt;
 &lt;/p&gt;
 &lt;/blockquote&gt;
@@ -403,13 +403,21 @@
 &lt;h3 id=&#34;chopping-up-the-recording&#34;&gt;Chopping up the recording&lt;/h3&gt;
 &lt;p&gt;When you&amp;rsquo;ve finished recording with Audacity, and have extracted the audio as a .wav file, you will then need to isolate the individual items (e.g., words or sentences) from that one long recording. There&amp;rsquo;s different solutions for this task:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Do it by hand.&lt;/strong&gt; Read the .wav file into Praat, create an empty TextGrid, and insert boundaries at the onset and offset of every item. Once you&amp;rsquo;re done, you select the Sound and TextGrid objects together in Praat, and select an option from the Extract menu, such as &lt;code&gt;Extract all intervals...&lt;/code&gt; or &lt;code&gt;Extract non-empty intervals...&lt;/code&gt; and save the individual items.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Go full automatic.&lt;/strong&gt; You can use a forced-aligner to find the words inside your recording. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; (for word- and phoneme-level annotations) or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt; (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output.&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Do it by hand.&lt;/strong&gt; Read the .wav file into Praat, create an empty TextGrid, and insert boundaries at the onset and offset of every item. Once you&amp;rsquo;re done, you select the Sound and TextGrid objects together in Praat, and select an option from the Extract menu, such as &lt;code&gt;Extract all intervals...&lt;/code&gt; or &lt;code&gt;Extract non-empty intervals...&lt;/code&gt; and save the individual items.&lt;/li&gt;
 &lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Here&amp;rsquo;s a how-to about &lt;a href=&#34;https://hrbosker.github.io/resources/how-to/annotate-in-praat/&#34;&gt;annotating in Praat&lt;/a&gt;. Also, we have a script that can help you save all extracted intervals in one go: &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/save-all/&#34;&gt;save-all.praat&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;&lt;strong&gt;Go full automatic.&lt;/strong&gt; You can use a forced-aligner to find the words inside your recording. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt; because they can provide word, syllable, and phoneme-level annotations. In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Here&amp;rsquo;s a how-to about &lt;a href=&#34;https://hrbosker.github.io/resources/how-to/forced-alignment/&#34;&gt;forced alignment in WebMAUS&lt;/a&gt;. It shows you how to run a Python script on a folder of speech recordings, creating word, syllable, and phoneme level annotations in one go: &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/forced-alignment/&#34;&gt;forced-alignment.py&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 &lt;p&gt;&lt;em&gt;However&lt;/em&gt;, often your speaker wasn&amp;rsquo;t perfect, fluffing their lines, repeating items several times before getting it right, or chucking in a few coughs and &amp;lsquo;uhm&amp;rsquo;s here and there. In that case, automatic forced-alignment is suboptimal. In such (commonly occurring) cases, you could consider:&lt;/p&gt;
 &lt;ol start=&#34;3&#34;&gt;
 &lt;li&gt;&lt;strong&gt;Go semi-automatic&lt;/strong&gt;. Read your .wav file in Praat and click &lt;em&gt;Annotate &amp;gt; To TextGrid (silences)&amp;hellip;&lt;/em&gt;. Praat will then create a TextGrid for you, labeling silent intervals as &amp;lsquo;silence&amp;rsquo; and intervals with speech as &amp;lsquo;sounding&amp;rsquo;. You can then go through this TextGrid manually and&amp;hellip;
@@ -443,10 +451,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp 400w,
-               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_a7f3916459fecd13582f4b7d6dfe0ef0.webp 760w,
-               /resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp&#34;
+               /resources/how-to/record-speech/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp 400w,
+               /resources/how-to/record-speech/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_a7f3916459fecd13582f4b7d6dfe0ef0.webp 760w,
+               /resources/how-to/record-speech/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/praat%20textgrid%20to%20silences_huaf5bafd9495b95bf7399b1b8ff70f2e4_241763_8d787d42ba7df2968908582761cc1228.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -481,10 +489,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp 400w,
-               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_b4c17a9c98e2a20104ced09e325f85cb.webp 760w,
-               /resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp&#34;
+               /resources/how-to/record-speech/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp 400w,
+               /resources/how-to/record-speech/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_b4c17a9c98e2a20104ced09e325f85cb.webp 760w,
+               /resources/how-to/record-speech/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/speechrecorder_1_hub1cc186d544025fb70cb3e12bd4d70a4_137608_1bca9ca60a3d625d8dc0d878c25a9a57.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -535,10 +543,10 @@
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
     &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp 400w,
-               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_f7788fcf60be0acbb6309b03e7971671.webp 760w,
-               /resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
-               src=&#34;https://hrbosker.github.io/resources/how-to/record-audio/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp&#34;
+               /resources/how-to/record-speech/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp 400w,
+               /resources/how-to/record-speech/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_f7788fcf60be0acbb6309b03e7971671.webp 760w,
+               /resources/how-to/record-speech/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_1200x1200_fit_q75_h2_lanczos.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/record-speech/speechrecorder_2_hu0d357699356910442a098a9c0c2bf723_325046_187da9bf15b0ba202cd908ddf8e7e76a.webp&#34;
                width=&#34;600&#34;
                height=&#34;404&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
@@ -557,10 +565,417 @@
 &lt;p&gt;&lt;strong&gt;Change SpeechRecorder settings&lt;/strong&gt;. Go to &lt;em&gt;Project &amp;gt; Preferences&lt;/em&gt;, click the &lt;em&gt;Recording&lt;/em&gt; tab and then the &lt;em&gt;Options&lt;/em&gt; tab. Reduce the &lt;code&gt;default prerecording delay&lt;/code&gt; (default is 1000 ms) and the &lt;code&gt;default postrecording delay&lt;/code&gt; (default is 500 ms) to lower values. &lt;strong&gt;NOTE:&lt;/strong&gt; this will also affect the traffic light behavior (i.e., recordings may start instantly).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Use forced alignment&lt;/strong&gt;. Because SpeechRecorder allows the user to re-record items that were fluffed, it typically produces recordings that are easily forced-aligned. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; (for word- and phoneme-level annotations) or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt; (for syllable-level annotations). In both cases, you provide the forced-aligner with the .wav file and a .txt file that contains the orthographic content of the recording (i.e., the prompts that your speaker was asked to read out). The forced-aligner will then try to find the words from the .txt file in the .wav file, providing a .TextGrid file as output. Finally, you can use this TextGrid to extract only the intervals of interest, removing leading and trailing silences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Use forced alignment&lt;/strong&gt;. Because SpeechRecorder allows the user to re-record items that were fluffed, it typically produces recordings that are easily forced-aligned. We tend to use &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;WebMAUS&lt;/a&gt; or &lt;a href=&#34;https://hrbosker.github.io/resources/other-resources/#videoaudio-editing&#34;&gt;EasyAlign&lt;/a&gt;, giving TextGrids as output. You can then use these TextGrids to extract only the intervals of interest, removing leading and trailing silences.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Happy recording!&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>...generate speech</title>
+      <link>https://hrbosker.github.io/resources/how-to/generate-speech/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/how-to/generate-speech/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This shows you how to generate speech (speech synthesis) using text-to-speech from &lt;strong&gt;Elevenlabs&lt;/strong&gt;. We&amp;rsquo;ll take a list of prompts as input and generate individual .mp3 files for each prompt. We&amp;rsquo;ll also automatically perform forced-alignment on the output speech using &lt;strong&gt;WebMAUS&lt;/strong&gt;, giving you accompanying TextGrid files with word-level, syllable-level, and phoneme-level annotations.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/screenshot.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;500&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;why-generate-and-not-record-speech&#34;&gt;Why generate (and not record) speech?&lt;/h2&gt;
+&lt;p&gt;Researchers in the field of speech perception usually play participants pre-recorded speech stimuli in their experiments. But as you&amp;rsquo;ve seen in our &lt;a href=&#34;https://hrbosker.github.io/resources/how-to/record-speech&#34;&gt;how-to-record-speech&lt;/a&gt;, it can be tough to make high-quality human speech recordings. Not only do you need to find a volunteer speaker, you also need to have the right equipment, a quiet recording room, and lots of patience. And then you end up with this hour-long audio file but what you actually need is separate audio files for &amp;lsquo;sentence 1&amp;rsquo;, &amp;lsquo;sentence 2&amp;rsquo;, &amp;lsquo;sentence 3&amp;rsquo;, etc. So you spend hours of extracting smaller chunks from this hour-long audio-file. Imagine only then finding out some words were mispronounced but your speaker has since then moved to another country&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Generating artificial speech is free, quick, clean, and flexible. Your &amp;lsquo;speaker&amp;rsquo; never gets tired, is always available, always sounds the same even years later, and never has a cold on the day of the recordings. With our script, you get individual stimuli files with accompanying word, syllable, and phoneme level annotations.&lt;/p&gt;
+&lt;p&gt;Of course, there are downsides too: it&amp;rsquo;s hard to control the acoustic specs of the generated audio (pitch, intensity, duration, emotion, &amp;hellip;) and some text-to-speech (TTS) systems simply sound robotic. But if you&amp;rsquo;re looking for a quick way to record some simple word or sentence stimuli, it is a big time saver.&lt;/p&gt;
+&lt;h2 id=&#34;elevenlabs&#34;&gt;Elevenlabs&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/elevenlabs.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable width=&#34;200&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://elevenlabs.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elevenlabs&lt;/a&gt; is an AI audio platform that can generate fairly realistic and contextually-aware speech, voices, and sound effects across &lt;strong&gt;32 languages&lt;/strong&gt;. It takes orthographic words and sentences as input but can also generate speech based on &lt;strong&gt;&lt;a href=&#34;https://www.internationalphoneticalphabet.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA&lt;/a&gt; and &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMU Arpabet&lt;/a&gt;&lt;/strong&gt; (see &lt;a href=&#34;#really-that-simple&#34;&gt;the last section&lt;/a&gt; below). The &lt;strong&gt;free tier gives you 10,000 characters&lt;/strong&gt; of TTS per month, which is about 10 min of speech. This may not sound like a lot, but assuming an average sentence has 8 words, consisting of ca. 6 characters each, then you can generate around 180 sentence stimuli per month. And you get 50% discount (20,000 characters = around 360 sentences!) if you use their Turbo models that are quicker but slightly less quality (but not particularly noticably so, in my experience). But don&amp;rsquo;t take my word for it, listen to these examples:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Aria: &lt;em&gt;&amp;ldquo;She sells sea shells by the sea shore.&amp;rdquo;&lt;/em&gt; 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T20_07_10_Aria_pre_s50_sb74_se0_b_m2.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Aria: &lt;em&gt;&amp;ldquo;She shouted: she sells sea shells by the sea shore!&amp;rdquo;&lt;/em&gt; 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T20_07_38_Aria_pre_s50_sb74_se0_b_m2.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Daniel: &lt;em&gt;&amp;ldquo;object&amp;rdquo;&lt;/em&gt; 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_34_Daniel_pre_s38_sb75_t2_isol.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Daniel: [CMU Arpabet] &amp;ldquo;AA0 B JH EH1 K T&amp;rdquo; (with final stress) 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_13_Daniel_pre_s38_sb75_t2_01.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Daniel: [CMU Arpabet] &amp;ldquo;AA1 B JH EH0 K T&amp;rdquo; (with initial stress) 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_14_23_Daniel_pre_s38_sb75_t2_10.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Will: note the breaths inside these sentences&amp;hellip; 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/resources/how-to/generate-speech/ElevenLabs_2024-11-13T21_19_11_Will_pre_s50_sb75_se0_b_m2.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Still, there are of course relevant alternatives to consider too. I selected Elevenlabs here because other TTS systems are either paid (e.g., Amazon Polly stops being free after 12 months after sign-up) or of lower-quality in my experience (Microsoft, Google). One important disadvantage of Elevenlabs, however, is the lack of &lt;a href=&#34;https://www.w3.org/TR/speech-synthesis11/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech Synthesis Markup Language&lt;/a&gt; (SSML) support, meaning it&amp;rsquo;s hard to control the prosodic specs of the speech (for some suggestions, see &lt;a href=&#34;#really-that-simple&#34;&gt;the last section&lt;/a&gt; below). But if you&amp;rsquo;re looking for some off-the-shelf speech, it&amp;rsquo;s a great tool.&lt;/p&gt;
+&lt;h2 id=&#34;webmaus&#34;&gt;WebMAUS&lt;/h2&gt;
+&lt;p&gt;If you just want to generate some speech, you can simply use Elevenlabs&amp;rsquo; web interface. However, we often don&amp;rsquo;t only need the speech, we also need to know &lt;strong&gt;when in time each word, syllable, and phoneme was produced&lt;/strong&gt;. These kinds of data are called &amp;rsquo;timestamps&amp;rsquo; or &amp;lsquo;speech marks&amp;rsquo; in the TTS field, and annotations or segmentations by the phonetics crowd. Elevenlabs can actually give you timestamps that go with the speech it generated, but it only provides timestamps of each character (not words, syllables, or phonemes). Timestamps of characters often don&amp;rsquo;t make any sense (&lt;em&gt;&amp;hellip;what&amp;rsquo;s the timestamp of -g in the word &amp;ldquo;thought&amp;rdquo;?&lt;/em&gt;) and even in words where they do (the word &amp;ldquo;test&amp;rdquo;), they&amp;rsquo;re actually not terribly accurate. Moreover, many phoneticians would like to see these kinds of data in TextGrid format to be used and analyzed in &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Praat&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is where &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebMAUS&lt;/a&gt; comes in. It&amp;rsquo;s a forced-alignment tool that takes a speech file as input together with its orthographic transcription and returns a TextGrid with word, syllable, and phoneme annotations. The script provided here automatically feeds the speech from Elevenlabs to WebMAUS so that at the end you are left with speech &lt;em&gt;and&lt;/em&gt; TextGrid data.&lt;/p&gt;
+&lt;h2 id=&#34;ok-how-do-i-get-set-up&#34;&gt;OK, how do I get set up?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up a free account in &lt;a href=&#34;https://elevenlabs.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Elevenlabs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Set up your personal API key for Elevenlabs. This is a long string of characters that allows the script to &amp;rsquo;log in&amp;rsquo; to Elevenlabs.
+&lt;ul&gt;
+&lt;li&gt;Once you&amp;rsquo;re logged into the Elevenlabs web app, go to your profile&amp;rsquo;s menu in the bottom-left corner.&lt;/li&gt;
+&lt;li&gt;Click on &amp;ldquo;API Keys&amp;rdquo; and then &amp;ldquo;Create API Key&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Give your personal API key a (random) name; it&amp;rsquo;s not particularly important&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and click &amp;ldquo;Create&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Your personal API key will be shown &lt;strong&gt;once and only once!&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Make sure to copy it immediately&lt;/strong&gt; and store it somewhere safe.&lt;/li&gt;
+&lt;li&gt;Anyone who has this API key can log into your Elevenlabs account, so &lt;strong&gt;don&amp;rsquo;t share it!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Download our Python script &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/generate-speech.py&#34;&gt;generate-speech.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Install particular Python modules the script relies on.
+&lt;ul&gt;
+&lt;li&gt;Type &amp;ldquo;terminal&amp;rdquo; in the Start Menu in Windows to start Windows PowerShell&lt;/li&gt;
+&lt;li&gt;Paste this line and hit ENTER: &lt;code&gt;pip install requests tgt pandas openpyxl&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lets-go&#34;&gt;Let&amp;rsquo;s go!&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Create a new folder where you store the &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/generate-speech.py&#34;&gt;generate-speech.py&lt;/a&gt; script.&lt;/li&gt;
+&lt;li&gt;In the same folder, create an Excel file called &lt;strong&gt;&amp;ldquo;input.xlsx&amp;rdquo;&lt;/strong&gt;. In this Excel file, create two columns: one with the name &amp;ldquo;filename&amp;rdquo; (in cell A1) and the other with the name &amp;ldquo;prompt&amp;rdquo; (in cell B1).&lt;/li&gt;
+&lt;li&gt;Enter a list of filenames in A2, A3, A4, and so on. Example: item1_b, item1_p, item2_b, item2_p&amp;hellip;&lt;/li&gt;
+&lt;li&gt;Enter your prompts in B2, B3, B4, etc. Example: bear, pear, bull, pull&amp;hellip;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run the script!&lt;/strong&gt; For instance, right-click some empty space inside the script&amp;rsquo;s folder shown in Windows Explorer, click &amp;ldquo;Open in Terminal&amp;rdquo;, type: &lt;code&gt;python generate-speech.py&lt;/code&gt; and hit Enter.&lt;/li&gt;
+&lt;li&gt;Done!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-9&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;What are the five tiers in the TextGrid?&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Characters:&lt;/strong&gt; Elevenlabs timestamps for each character in the prompt (inaccurate and nonsensical)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ORT-MAU:&lt;/strong&gt; WebMAUS words, given in orthography (pauses are left empty)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KAN-MAU:&lt;/strong&gt; WebMAUS words, canonical form in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are empty)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAU:&lt;/strong&gt; WebMAUS phonemes, in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are &amp;ldquo;&amp;lt;p:&amp;gt;&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAS:&lt;/strong&gt; WebMAUS syllables, in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are &amp;ldquo;&amp;lt;p:&amp;gt;&amp;rdquo;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;really-that-simple&#34;&gt;Really? That simple?&lt;/h2&gt;
+&lt;p&gt;Well&amp;hellip; yeah! But there&amp;rsquo;s a zillion different specs and parameters you can tweak, if you like. The most relevant ones are &lt;strong&gt;Elevenlabs models and settings, Elevenlabs voices, prompt specs, and WebMAUS parameters&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;models-and-settings&#34;&gt;Models and settings&lt;/h3&gt;
+&lt;p&gt;At present (Nov 2024), Elevenlabs offers two families of &lt;a href=&#34;elevenlabs.io/docs/product/speech-synthesis/overview#models&#34;&gt;models&lt;/a&gt;: Standard (high-quality) models and Turbo models, which are optimized for low latency and cost 50% less credits. Only &amp;ldquo;Eleven English V1&amp;rdquo; and &amp;ldquo;Eleven Turbo V2&amp;rdquo; support &lt;a href=&#34;https://www.internationalphoneticalphabet.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA&lt;/a&gt; and &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMU Arpabet&lt;/a&gt;. Select the model of your choice by changing line 140 in &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/generate-speech.py&#34;&gt;generate-speech.py&lt;/a&gt;: &lt;code&gt;&amp;quot;model_id&amp;quot;: &amp;quot;eleven_turbo_v2&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;There&amp;rsquo;s also some general &lt;a href=&#34;https://elevenlabs.io/docs/product/speech-synthesis/overview#settings&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;voice settings&lt;/a&gt; you can tweak, but it&amp;rsquo;s not entirely clear what they do. Note that Elevenlabs&amp;rsquo; AI is non-deterministic; even the exact same input and settings does not guarantee the exact same result every time. The default values recommended by Elevenlabs are used in the script:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;voice_settings&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;s2&#34;&gt;&amp;#34;stability&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;s2&#34;&gt;&amp;#34;similarity_boost&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.75&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;s2&#34;&gt;&amp;#34;style&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mf&#34;&gt;0.0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;            &lt;span class=&#34;s2&#34;&gt;&amp;#34;use_speaker_boost&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;True&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;voices&#34;&gt;Voices&lt;/h3&gt;
+&lt;p&gt;There&amp;rsquo;s a large number of voices to choose from, covering 32 languages. Note that &lt;strong&gt;Elevenlabs does not have a language setting&lt;/strong&gt;. The voice you select decides which language is spoken. The easiest way to explore voices is to log into Elevenlabs&amp;rsquo; web interface, go to Speech Synthesis: Text-to-Speech, and try out different voices. Listen to demo clips for each voice (free!) or simply type a word into the text box and press &amp;ldquo;generate&amp;rdquo; to listen to it in a particular voice. This will also automatically list this voice under your My Voices library, which you need if you want to use the voice inside a script. Please note that &lt;strong&gt;each time you press &amp;ldquo;generate&amp;rdquo; anywhere on the website, it will deduct credits from your monthly quota&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;To select a voice in the script, you need the speaker&amp;rsquo;s voice ID. This is a string of characters, like &amp;ldquo;9BWtsMINqrJLrRacOk9x&amp;rdquo; for the voice Aria. Replace this string in line 35 of the script with the voice ID of another speaker to change the voice. You can find the voice ID of a given speaker in your My Voices library in Elevenlabs&amp;rsquo; web interface or by running a short script: see &lt;a href=&#34;https://help.elevenlabs.io/hc/en-us/articles/14599760033937-How-do-I-find-my-voices-ID-of-my-voices-via-the-website-and-through-the-API&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;these instructions&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;prompting&#34;&gt;Prompting&lt;/h3&gt;
+&lt;p&gt;Elevenlabs AI &lt;strong&gt;does not support SSML&lt;/strong&gt; (&lt;a href=&#34;https://www.w3.org/TR/speech-synthesis11/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Speech Synthesis Markup Language&lt;/a&gt;). Instead, it infers much of the prosody from the context of your input prompts. It will generate a question intonation for a prompt ending in a &amp;ldquo;?&amp;rdquo; and will sound more assertive when using &amp;ldquo;!&amp;rdquo;. It will also try its best to take the larger context into account to generate emotional prosody, like irony. However, the AI is non-deterministic and there&amp;rsquo;s no guarantee it will do what you want it to do, even when re-using the exact same prompt.&lt;/p&gt;
+&lt;p&gt;There are a few explicit ways to guide the AI&amp;rsquo;s output. You can, for intance, control the pauses and hesitations by entering &amp;ldquo;&amp;hellip;&amp;rdquo; to your prompts or through explicit breaks:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;&amp;quot;Give me a sec.&amp;quot; &amp;lt;break time=&amp;quot;1.0s&amp;quot; /&amp;gt; &amp;quot;OK, all good!&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You can also use &lt;a href=&#34;https://www.internationalphoneticalphabet.org&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IPA&lt;/a&gt; and &lt;a href=&#34;http://www.speech.cs.cmu.edu/cgi-bin/cmudict&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CMU Arpabet&lt;/a&gt; as input prompts, like &lt;code&gt;AA1 B JH EH0 K T&lt;/code&gt; for &lt;em&gt;OBject&lt;/em&gt; (noun, initial stress) and &lt;code&gt;AA0 B JH EH1 K T&lt;/code&gt; for &lt;em&gt;obJECT&lt;/em&gt; (verb, final stress). However, this is only supported by the models “Eleven English V1” and “Eleven Turbo V2”.&lt;/p&gt;
+&lt;p&gt;A strength of Elevenlabs is its contextual sensitivity. In the examples above, you can hear that adding &amp;ldquo;She shouted&amp;hellip;&amp;rdquo; to a prompt actually makes the speaker &amp;lsquo;speak up&amp;rsquo;. Likewise, adding &amp;ldquo;&amp;hellip;he said, confused&amp;rdquo; or &amp;ldquo;&amp;hellip;he replied angrily&amp;rdquo; will lead to audible changes in the output speech. Still, it&amp;rsquo;s hard to control this behavior and it has its limits (e.g., &amp;ldquo;&amp;hellip;he whispered&amp;rdquo; doesn&amp;rsquo;t work).&lt;/p&gt;
+&lt;p&gt;For a complete overview, see &lt;a href=&#34;https://elevenlabs.io/docs/product/speech-synthesis/prompting&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this page&lt;/a&gt;. Note also that adding explicit breaks or IPA inside the prompt may throw WebMAUS off, because the prompts also form the input to the forced-alignment.&lt;/p&gt;
+&lt;h3 id=&#34;webmaus-parameters&#34;&gt;WebMAUS parameters&lt;/h3&gt;
+&lt;p&gt;The most important parameter for using WebMAUS is &lt;strong&gt;which language model&lt;/strong&gt; you&amp;rsquo;d like to use. You can see a list of languages supported by WebMAUS by inspecting the drop-down Language menu in their &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web interface&lt;/a&gt;. The script only accepts language codes, like &amp;ldquo;eng-US&amp;rdquo;. These can be found &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; but it&amp;rsquo;s a long page of text so search for &amp;ldquo;eng-US&amp;rdquo; to find the list. The parameter can then be set in the script under the WebMAUS parameters in lines 48-57.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Looking for a quick and easy way to go through the output in Praat? &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/annotate/&#34;&gt;This Praat script&lt;/a&gt; can streamline your workflow: it presents a speech recording with accompanying TextGrid for manual inspection to the user, let&amp;rsquo;s you play it or perform some changes if necessary, and when you click Next, it automatically saves the changes and presents the next recording, and so on.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Last but certainly not least: using Elevenlabs and WebMAUS means you agree to their Terms and Conditions, see &lt;a href=&#34;https://elevenlabs.io/terms-of-use&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt;. In summary: Elevenlabs&amp;rsquo; free tier allows you to use the content &lt;strong&gt;non-commercially with attribution&lt;/strong&gt; and WebMAUS is only &lt;strong&gt;free for members of an academic institution&lt;/strong&gt; to be used for non-profit research purposes only. Also, WebMAUS requests you &lt;strong&gt;cite Kisler et al., 2017&lt;/strong&gt; (&lt;a href=&#34;https://doi.org/10.1016/j.csl.2017.01.005&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/j.csl.2017.01.005&lt;/a&gt;) in any academic output.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Happy synthesizing!&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>...do forced-alignment</title>
+      <link>https://hrbosker.github.io/resources/how-to/forced-alignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/resources/how-to/forced-alignment/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    This shows you how to perform forced-alignment using &lt;strong&gt;&lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebMAUS&lt;/a&gt;&lt;/strong&gt;. It takes pairs of sound files + text files with the same filename (item1.wav + item1.txt) as input and matches the orthographic words in the txt file to the sounds, syllables, and words in the sound file. The output are TextGrid files with word, syllable, and phoneme level annotations.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;h2 id=&#34;findings-words-syllables-and-sounds&#34;&gt;Findings words, syllables, and sounds&lt;/h2&gt;
+&lt;p&gt;When you have some speech recordings for your research, you may want to know when in time the target word occurs, or how long the vowels are. These measurements are often done &lt;strong&gt;in TextGrids in &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Praat&lt;/a&gt;&lt;/strong&gt;. When you have a small set of recordings, you can manually create word-level, syllable-level, or phoneme-level intervals by hand (also see our &lt;a href=&#34;https://hrbosker.github.io/resources/how-to/annotate-in-praat/&#34;&gt;how-to-annotate-in-praat&lt;/a&gt;). However, this is hard work and very time-consuming (and outright boring). So let&amp;rsquo;s speed things up a bit!&lt;/p&gt;
+&lt;h2 id=&#34;forced-alignment&#34;&gt;Forced alignment&lt;/h2&gt;
+&lt;p&gt;Forced alignment is when you try to &lt;strong&gt;automatically match orthographic transcriptions (text) to speech recordings (audio)&lt;/strong&gt;. The resulting output is sometimes called &amp;rsquo;timestamps&amp;rsquo;, &amp;lsquo;speech marks&amp;rsquo;, &amp;lsquo;annotations&amp;rsquo;, or &amp;lsquo;intervals&amp;rsquo;, for instance in TextGrids in Praat. There are various forced-aligners available nowadays, the most famous being &lt;a href=&#34;https://github.com/m-bain/whisperX&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WhisperX&lt;/a&gt;, &lt;a href=&#34;https://montreal-forced-aligner.readthedocs.io/en/latest/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Montreal Forced Aligner&lt;/a&gt;, &lt;a href=&#34;https://web.sas.upenn.edu/phonetics-lab/facilities/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Penn Forced Aligner (P2FA)&lt;/a&gt;, &lt;a href=&#34;https://github.com/evyaco/EasyAlignIPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;EasyAlign&lt;/a&gt;, and &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;WebMAUS&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;webmaus&#34;&gt;WebMAUS&lt;/h2&gt;
+&lt;p&gt;I selected WebMAUS for this how-to because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it can handle a large number of languages&lt;/li&gt;
+&lt;li&gt;it can do word-level AND syllable-level AND phoneme-level annotations&lt;/li&gt;
+&lt;li&gt;it is pretty accurate&lt;/li&gt;
+&lt;li&gt;it is accessible through a Python script as well as a fairly user-friendly web interface&lt;/li&gt;
+&lt;li&gt;it gives TextGrids as output.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of some WebMAUS output, showing words (in orthography and &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt;), syllables, and phonemes in different tiers in a TextGrid:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_aa971aa0f0c2d1af4d476a27425682bb.webp 400w,
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_bbac05e5fc5ed5a74db26e7813ae5255.webp 760w,
+               /resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/resources/how-to/forced-alignment/screenshot_hu038bad645f8391c5d162de3b32e4d3e7_515965_aa971aa0f0c2d1af4d476a27425682bb.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;447&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;web-interface&#34;&gt;Web interface&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web interface of WebMAUS&lt;/a&gt; is fairly straight-forward. All you need to do is upload a speech recording (e.g., &amp;ldquo;sentence1.wav&amp;rdquo;) together with a text file with the exact same name (&amp;ldquo;sentence1.txt&amp;rdquo;). This text file should contain the words of the sentence in regular orthography. Select the language, agree to the Terms of Usage, and a few seconds later you can download the &amp;ldquo;sentence1.TextGrid&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;But there&amp;rsquo;s a catch! &lt;strong&gt;WebMAUS Basic does not give you syllable-level annotations by default!&lt;/strong&gt; For this, you need a work-around. The regular process is called WebMAUS Basic: &lt;code&gt;wav + txt&lt;/code&gt; &amp;raquo; &lt;code&gt;TextGrid&lt;/code&gt; (with only words &amp;amp; phonemes). WebMAUS &lt;em&gt;can&lt;/em&gt; give you syllables too, but only through this extra process called &lt;em&gt;Pho2Syl&lt;/em&gt;. The trick is to run WebMAUS Basic and Pho2Syl in a sequence:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;WebMAUS Basic: &lt;code&gt;wav + txt&lt;/code&gt; &amp;raquo; &lt;code&gt;BPF .par file&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pho2Syl: &lt;code&gt;BPF .par file&lt;/code&gt; &amp;raquo; &lt;code&gt;TextGrid&lt;/code&gt; (with words, syllables, phonemes)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Doing this by hand is just a hassle, even if you only have a single recording. &lt;strong&gt;So let&amp;rsquo;s script it!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;lets-get-set-up&#34;&gt;Let&amp;rsquo;s get set up!&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.python.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Python&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Install the Python module &lt;code&gt;requests&lt;/code&gt;:
+&lt;ul&gt;
+&lt;li&gt;Type &amp;ldquo;terminal&amp;rdquo; in the Start Menu in Windows to start Windows PowerShell&lt;/li&gt;
+&lt;li&gt;Paste this line and hit ENTER: &lt;code&gt;pip install requests&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Download &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/forced-alignment.py&#34;&gt;forced-alignment.py&lt;/a&gt; and store it in a separate new folder.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;lets-go&#34;&gt;Let&amp;rsquo;s go!&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Select the &lt;strong&gt;language of your choice&lt;/strong&gt; in line 29: &lt;code&gt;webmaus_language = &#39;eng-US&#39;&lt;/code&gt;
+&lt;ul&gt;
+&lt;li&gt;For a list of languages supported by WebMAUS, check out the drop-down Language menu in the &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/interface/WebMAUSBasic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;web interface&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;NOTE: the script only accepts language codes, like &amp;ldquo;eng-US&amp;rdquo;. These can be found &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;here&lt;/a&gt; (&amp;hellip;it&amp;rsquo;s a long page of text, so search for &amp;ldquo;eng-US&amp;rdquo; to find the list of languages).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Select the &lt;strong&gt;extension of your audio files&lt;/strong&gt; in line 39 (wav or mp3): &lt;code&gt;audio_extension = &amp;quot;wav&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Copy&lt;/strong&gt; all your speech recordings with accompanying text files into the same folder as the script.
+&lt;ul&gt;
+&lt;li&gt;NOTE: the script only runs on &lt;strong&gt;pairs of files&lt;/strong&gt; with the same name, like &amp;ldquo;item3.wav&amp;rdquo; + &amp;ldquo;item3.txt&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;The txt files should contain the words in the speech in regular orthography.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Run the script!&lt;/strong&gt; For instance, right-click some empty space inside the folder shown in Windows Explorer, click &amp;ldquo;Open in Terminal&amp;rdquo;, type: &lt;code&gt;python forced-alignment.py&lt;/code&gt; and hit Enter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Done!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-2&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;What are the four tiers in the TextGrid?&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;ORT-MAU:&lt;/strong&gt; WebMAUS words, given in orthography (pauses are left empty)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;KAN-MAU:&lt;/strong&gt; WebMAUS words, canonical form in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are empty)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAU:&lt;/strong&gt; WebMAUS phonemes, in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are &amp;ldquo;&amp;lt;p:&amp;gt;&amp;rdquo;)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MAS:&lt;/strong&gt; WebMAUS syllables, in &lt;a href=&#34;https://en.wikipedia.org/wiki/X-SAMPA&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;X-SAMPA&lt;/a&gt; (pauses are &amp;ldquo;&amp;lt;p:&amp;gt;&amp;rdquo;)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Looking for a quick and easy way to go through the output in Praat? &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/annotate/&#34;&gt;This Praat script&lt;/a&gt; can streamline your workflow: it presents a TextGrid for manual inspection to the user, allows you to perform some changes if necessary, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    Last but certainly not least: using WebMAUS means you agree to their &lt;a href=&#34;https://clarin.phonetik.uni-muenchen.de/BASWebServices/services/help&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Terms and Conditions&lt;/a&gt;. In summary: WebMAUS is only &lt;strong&gt;free for members of an academic institution&lt;/strong&gt; to be used for non-profit research purposes only. Also, WebMAUS requests you &lt;strong&gt;cite Kisler et al., 2017&lt;/strong&gt; (&lt;a href=&#34;https://doi.org/10.1016/j.csl.2017.01.005&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1016/j.csl.2017.01.005&lt;/a&gt;) in any academic output.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;Happy aligning!&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
