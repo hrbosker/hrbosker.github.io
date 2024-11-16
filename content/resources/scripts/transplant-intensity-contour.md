@@ -1,11 +1,11 @@
 ---
-title: Transplant intensity contour
+title: "Praat: Transplant intensity contour"
 type: book
 weight: 80
 #date: '2021-01-01'
 ---
 
-This script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.
+This Praat script takes pairs of items (e.g., bet and bit) from a directory and transplants the intensity contour of word2 onto word1. It does so by first scaling the duration of word2 to be identical to that of word1, and then transplanting the duration-scaled intensity contour onto word1. This works best if all individual speech segments in the recordings are of similar duration in the two sounds.
 
 > You can also [download the script](../transplant-intensity-contour.praat) as a .praat file.
 

@@ -1,11 +1,11 @@
 ---
-title: Manipulate formants
+title: "Praat: Manipulate formants"
 type: book
 weight: 70
 #date: '2021-01-01'
 ---
 
-This script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from "bet" to "bit"). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0.
+This Praat script gradually shifts a formant track (here: first formant, F1) to create a phonetic continuum from high-to-low (e.g., from "bet" to "bit"). It takes a list of word pairs as input, reads the first member, and applies the formant shift while controlling for intensity and f0.
 
 
 

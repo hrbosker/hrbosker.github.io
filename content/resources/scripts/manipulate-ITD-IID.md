@@ -1,11 +1,11 @@
 ---
-title: Manipulate ITD/IID
+title: "Praat: Manipulate ITD/IID"
 type: book
 weight: 50
 #date: '2021-01-01'
 ---
 
-This script allows you to create a 'virtual auditory reality' by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.
+This Praat script allows you to create a 'virtual auditory reality' by implementing interaural time differences (ITD) and interaural intensity differences (IID) for two sounds. Thus we simulate naturalistic perception of two fully lateralized sound sources.
 
 When you want to play two talkers as coming from opposite sides (talker1 from the left, talker2 from the right), you could simply present the talkers in different channels of a stereo sound file. This way, when your listeners use headphones, talker1 is the only signal played in the left ear and talker2 is the only signal played in the right ear. This design, however, does not reflect naturalistic acoustic environments where the speech of a given talker typically reaches *both ears*. Moreover, such a simplistic 2-channel design also completely avoids any energetic masking from one talker onto the next.
 

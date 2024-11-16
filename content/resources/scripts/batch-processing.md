@@ -1,11 +1,11 @@
 ---
-title: Batch processing
+title: "Praat: Batch processing"
 type: book
 weight: 30
 #date: '2021-01-01'
 ---
 
-This script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.
+This Praat script is an in-house template / starting point for batch processing multiple files. Adapt it to your own needs to apply a particular function to multiple files or multiple time intervals within each file.
 
 In its current form, the script reads each .wav file *plus* accompanying TextGrid in a given input directory, extracts all non-empty intervals individually, and then loops over those to find the ones labelled "vowel". It then allows the user to apply a particular function to those intervals (such as `Scale intensity: 65`), after which it concatenates the individual intervals back together, and saves the output in an output directory.
 

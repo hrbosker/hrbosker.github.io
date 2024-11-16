@@ -1,11 +1,11 @@
 ---
-title: Move to zero-crossings
+title: "Praat: Move to zero-crossings"
 type: book
 weight: 40
 #date: '2021-01-01'
 ---
 
-This script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier 'to0x' at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.
+This Praat script automatically moves all boundaries in a given tier in a TextGrid file to zero-crossings, which is important for extracting sound intervals. Specifically, it adds a tier 'to0x' at the top of the TextGrid that is identical to a given input tier, except that all boundaries are at zero-crossings.
 
 > You can also [download the script](../move-to-zero-crossings.praat) as a .praat file.
 

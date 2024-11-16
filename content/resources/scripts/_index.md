@@ -1,7 +1,7 @@
 ---
 title: Scripts
 linkTitle: Scripts
-summary: Open Praat scripts for speech analysis, manipulation, and synthesis
+summary: Scripts for speech synthesis, analysis, and manipulation
 type: book
 weight: 30
 
@@ -19,17 +19,17 @@ date: '2022-07-07'
 {{< toc hide_on="xl" >}}
 
 {{% callout note %}}
-The Praat scripts shared here are first and foremost intended as a **lab archive**, providing script snippets we frequently use. This means **they require customization** for each individual new project. *Use at your own risk!*
+The scripts shared here are first and foremost intended as a **lab archive**, providing script snippets we frequently use. This means **they require customization** for each individual new project. *Use at your own risk!*
 {{% /callout %}}
 
-## Praat syntax
+## Praat
 
-Over the years, Praat has had three types of syntax:
+Many (but not all!) of the scripts shared here are for use in [Praat](https://www.fon.hum.uva.nl/praat/), the most commonly used software package for phonetic research. Over the years, Praat has had three types of syntax:
 - `Extract part... 0 0.1 rectangular 1 no` *(Praat versions 5.3.43 and older; before April 2013)*
 - `do("Extract part", 0, 0.1, "rectangular", 1, "no")` *(between 5.3.44 and 5.3.62; April 2013 - January 2014)*
 - `Extract part: 0, 0.1, "rectangular, 1, "no"` *(5.3.63 and after; after January 2014)*
 
-Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The scripts shared here primarily use the first type of syntax (...shows my age), with occasional lines using the latest type of syntax. **[ADVERTISEMENT:]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
+Current Praat versions are compatible with older and newer syntax types, and mixes thereof. The Praat scripts shared here primarily use the first type of syntax (...shows my age), with occasional lines using the latest type of syntax. **[ADVERTISEMENT:]** *Did you know the syntax highlighting in [PraatVSCode](../tools/#praatvscode) works with either syntax?*
 
 <br />
 

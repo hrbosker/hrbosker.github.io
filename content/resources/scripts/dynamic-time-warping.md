@@ -1,11 +1,11 @@
 ---
-title: Dynamic Time Warping
+title: "Praat: Dynamic Time Warping"
 type: book
 weight: 90
 #date: '2021-01-01'
 ---
 
-This script takes pairs of items (e.g., bet and bit) from a directory and matches the duration of individual speech sounds in word1 to the duration of individual speech sounds in word2 (...a kind of simplistic Dynamic Time Warping).
+This Praat script takes pairs of items (e.g., bet and bit) from a directory and matches the duration of individual speech sounds in word1 to the duration of individual speech sounds in word2 (...a kind of simplistic Dynamic Time Warping).
 
 In order for this script to work, you'll need to have a TextGrid for each individual .wav file that contains segmentations of each individual speech sound. Moreover, the TextGrids for the two members of a pair will need to have the same number of intervals segmented.
 

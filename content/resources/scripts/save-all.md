@@ -1,7 +1,7 @@
 ---
-title: Save all
+title: "Praat: Save all"
 type: book
-weight: 10
+weight: 35
 #date: '2021-01-01'
 ---
 

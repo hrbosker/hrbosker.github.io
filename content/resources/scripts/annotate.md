@@ -1,11 +1,11 @@
 ---
-title: Annotate
+title: "Praat: Annotate"
 type: book
 weight: 20
 #date: '2021-01-01'
 ---
 
-This script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from [WebMAUS]({{< ref "../other-resources/#videoaudio-editing" >}}) or [EasyAlign]({{< ref "../other-resources/#videoaudio-editing" >}})) that you'd like to manually evaluate and edit.
+This Praat script streamlines an annotation workflow: it presents a TextGrid for manual annotation to the user, you perform some changes, and when you click Next, it automatically saves the changes and presents the next TextGrid, and so on. This is particularly useful for when you have forced aligned TextGrids (e.g., from [WebMAUS]({{< ref "../other-resources/#videoaudio-editing" >}}) or [EasyAlign]({{< ref "../other-resources/#videoaudio-editing" >}})) that you'd like to manually evaluate and edit.
 
 Moreover, the script keeps track of who annotated what, can continue where you left off yesterday, allows users to enter comments about their annotations, and blinds file names to avoid human annotation biases. The script can be updated to present new empty TextGrids (instead of any pre-existing ones, in case you only have .wav files) or to automatically perform changes to TextGrid tiers/intervals before presenting them for manual annotation.
 

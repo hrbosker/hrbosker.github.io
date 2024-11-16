@@ -32,4 +32,4 @@ The how-to's shared here are first and foremost intended as a **lab archive**, p
 
 {{< icon name="creative-commons" pack="fab" >}} All documents are shared under an [MIT license](https://en.wikipedia.org/wiki/MIT_License#License_terms).
 
-*2022, Hans Rutger Bosker*
+*2024, Hans Rutger Bosker*
