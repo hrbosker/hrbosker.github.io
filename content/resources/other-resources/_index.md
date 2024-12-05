@@ -41,7 +41,8 @@ date: '2022-07-07'
   - forced-alignment tool taking wav files and txt files with orthographic transcripts as input, providing TextGrids as output
   - 'lives' online: you upload wav and txt files and download TextGrids
   - large set of languages available
-  - annotations at word-level and at phone-level (not syllable-level)
+  - default: annotations of words and phonemes only
+  - get syllables too by using our script: [forced-alignment.py](/resources/scripts/forced-alignment/)
 - {{< icon name="circle-play" pack="fas" >}} **EasyAlign**
   - [http://latlcui.unige.ch/phonetique/easyalign.php](http://latlcui.unige.ch/phonetique/easyalign.php)
   - forced-alignment tool taking wav files and txt files with orthographic transcripts as input, providing TextGrids as output
