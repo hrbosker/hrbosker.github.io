@@ -75,5 +75,19 @@ content:
       #  icon_pack: fas
       #  text: Join Us
       #  url: ../contact/
+    - title: Interested?
+      content: ''
+      align: center
+      background:
+        position: right
+        color: '#666'
+        #brightness: 0.5
+        media: 'dccintro.gif'
+        fit: cover
+      link:
+        icon: play-circle
+        icon_pack: fas
+        text: Take a look inside the DCC labs!
+        url: 'https://www.youtube.com/watch?v=FmtY4k6xWfk'
 ---
 
