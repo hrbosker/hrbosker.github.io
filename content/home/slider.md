@@ -88,6 +88,6 @@ content:
         icon: play-circle
         icon_pack: fas
         text: Take a look inside the DCC labs!
-        url: 'https://www.youtube.com/watch?v=FmtY4k6xWfk'
+        url: 'https://hrbosker.github.io/news/24-12-12-labvideo/#watch-it-here'
 ---
 
