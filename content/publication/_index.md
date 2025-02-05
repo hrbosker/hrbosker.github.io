@@ -25,6 +25,7 @@ Preprints are early versions of scientific papers that have *not yet been formal
 - Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2024). Beat gestures can influence on-line spoken word recognition. *PsyArXiv Preprints*, doi:[10.31234/osf.io/6gn3d](https://doi.org/10.31234/osf.io/6gn3d), data:[https://osf.io/57dvh/](https://osf.io/57dvh/)
 - Ronny Bujok, Matteo Maran, Antje S. Meyer, and Hans Rutger Bosker (2024). Beat gestures facilitate lexical access in constraining sentence contexts. *PsyArXiv Preprints*, doi:[10.31234/osf.io/8ntjm](https://doi.org/10.31234/osf.io/8ntjm), data:[https://osf.io/8vsfq/](https://osf.io/8vsfq/)
 - Ronny Bujok, David Peeters, Antje S. Meyer, and Hans Rutger Bosker (2024). Beating stress: evidence for recalibration of word stress perception. *PsyArXiv Preprints*, doi:[10.31234/osf.io/9sua6](https://doi.org/10.31234/osf.io/9sua6), data:[https://osf.io/s3p6a/](https://osf.io/s3p6a/)
+- Matteo Maran, Renske Uilenreef\*, Roos Rossen\*, & Hans Rutger Bosker (2025). The timing of an avatar’s beat gestures biases lexical stress perception in vocoded speech. *PsyArXiv Preprints*, doi:[10.31234/osf.io/nvh36_v1](https://doi.org/10.31234/osf.io/nvh36_v1). \**shared authorship*
 - Chengjia Ye, James McQueen, and Hans Rutger Bosker (2024). Effect of auditory cues to lexical stress on the visual perception of gestural timing. *PsyArXiv Preprints*, doi:[10.31234/osf.io/ykbgj](https://doi.org/10.31234/osf.io/ykbgj)
 
 # List of publications
