@@ -50,7 +50,8 @@ Voice recordings are privacy-sensitive data; please use them respectfully and fo
 - **List of minimal pairs differing only in lexical stress**
 - An example from English: *FOREbear* [noun] 'ancestor' vs. *forBEAR* [verb] 'to be patient'
 - {{< icon name="user" pack="fas" >}} Lead author: {{< mention "admin" >}}
-- {{< icon name="link" pack="fas" >}} [Download the Excel file here](minimal-stress-pairs.xlsx)
+- {{< icon name="link" pack="fas" >}} [Download the Excel file here](https://osf.io/5d4ks/files/osfstorage)
+- {{< icon name="newspaper" pack="fas" >}} doi:[10.17605/OSF.IO/5D4KS](https://doi.org/10.17605/OSF.IO/5D4KS)
 - {{< icon name="language" pack="fas" >}} Dutch, English, German, Italian, Romanian, Spanish (each language in an individual sheet)
 - {{< icon name="comments" pack="fas" >}} The two members of a pair are primarily distinguished by stress. However, there may also occassionally be subtle segmental differences involved (e.g., vowel reduction in unstressed syllables in English and German)
 - {{< icon name="folder" pack="fas" >}} Sources and further references listed at the top of each individual sheet; thanks to everyone who helped out!
