@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 10 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 06 May 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -3041,12 +3041,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;but then with a different directory and filename.&lt;/p&gt;
 &lt;p&gt;So remember: &lt;strong&gt;perform the functions in the object window, paste history in the scripting window, and edit the code from there&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;
-&lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. Alternatively, go to &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. Other third-party tutorials are:&lt;/p&gt;
+&lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. You can also find it online: &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. There&amp;rsquo;s also these quick intro slides by Eleanor Chodroff: &lt;a href=&#34;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&lt;/a&gt;. More &lt;strong&gt;comprehensive guides&lt;/strong&gt; are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&lt;/a&gt;: some quick intro slides by Eleanor Chodroff&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://praatscripting.lingphon.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscripting.lingphon.net&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Jörg Mayer&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://praatscriptingtutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscriptingtutorial.com/&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Daniel Riggs&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Mauricio A. Figueroa Candia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fon.hum.uva.nl/david/sspbook/sspbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Speech Signal Processing with Praat&amp;rdquo;&lt;/a&gt; by David Weenink himself!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stylerw/usingpraat/raw/main/UsingPraatforLinguisticResearchLatest.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Using Praat for Linguistic Research&amp;rdquo;&lt;/a&gt; by Will Styler&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscripting.lingphon.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscripting.lingphon.net&lt;/a&gt;: by Jörg Mayer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscriptingtutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscriptingtutorial.com/&lt;/a&gt;: by Daniel Riggs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&lt;/a&gt;: by Mauricio A. Figueroa Candia&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;strange-quirks&#34;&gt;Strange quirks&lt;/h2&gt;
 &lt;p&gt;Praat has some peculiarities that make the Praat scripting language stand out compared to other languages, like &lt;em&gt;python&lt;/em&gt; and &lt;em&gt;R&lt;/em&gt;.&lt;/p&gt;
@@ -3059,7 +3060,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;do(&amp;#34;Extract part&amp;#34;, 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions 5.3.63 and later; after January 2014
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part: 0, 0.1, &amp;#34;rectangular, 1, &amp;#34;no&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part: 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat variables &lt;strong&gt;always&lt;/strong&gt; start in lowercase. Capitals are reserved for functions:&lt;/li&gt;
 &lt;/ul&gt;
@@ -3091,6 +3092,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Scale intensity: 65
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Praat&amp;rsquo;s symbol for &amp;ldquo;not equal to&amp;rdquo; is &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; (&amp;hellip;duh!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# skip measurements on the first interval
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if interval_number &amp;lt;&amp;gt; 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dur_measurement = Get total duration
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Different objects in Praat have different functions. For Sound objects, you can run functions like &lt;code&gt;Play&lt;/code&gt;, &lt;code&gt;Resample...&lt;/code&gt;, &lt;code&gt;Scale intensity...&lt;/code&gt;, etc., while for TextGrid objects, you can run functions like &lt;code&gt;Duplicate tier...&lt;/code&gt;, &lt;code&gt;Insert boundary...&lt;/code&gt;, etc. Therefore, it is important to &lt;strong&gt;keep track of which object is selected&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
@@ -3105,7 +3113,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select Sound demo
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Praat&amp;rsquo;s Object window replaces periods, spaces, and special characters in filenames with &amp;ldquo;_&amp;rdquo;. This can get you into trouble when you first read a file called &amp;ldquo;word1 (talker4) v1.3.wav&amp;rdquo; and later on want to select it in the Object window:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myFilename$ = &amp;#34;word1 (talker4) v1.3&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select Sound &amp;#39;myFilename$&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; will throw an error upon reaching the &lt;code&gt;select&lt;/code&gt; statement. This is because the Object window only lists a Sound object with the name &amp;ldquo;word1__talker4__v1_3&amp;rdquo; and hence cannot find &amp;ldquo;word1 (talker4) v1.3&amp;rdquo;. The best solution is to avoid periods, spaces, and special characters in your filenames; only use &amp;ldquo;_&amp;rdquo; and &amp;ldquo;-&amp;rdquo;!&lt;/p&gt;
+&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
 &lt;p&gt;See our &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/&#34;&gt;Scripts&lt;/a&gt; archive for snippets of code we frequently use. Note, however, that &lt;strong&gt;they require customization&lt;/strong&gt; for each individual new project. &lt;em&gt;Use at your own risk!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Other scripts resources available online are:&lt;/p&gt;
 &lt;ul&gt;
@@ -7568,6 +7586,110 @@
     </item>
     
     <item>
+      <title>Ye et al. (2025) published in Attention, Perception, &amp; Psychophysics!</title>
+      <link>https://hrbosker.github.io/news/25-05-06-yeetal-paper-app/</link>
+      <pubDate>Tue, 06 May 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-05-06-yeetal-paper-app/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;The same gesture can be perceived differently, depending on the speech you hear!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;published&#34;&gt;Published!&lt;/h2&gt;
+&lt;p&gt;Our new paper “Effect of auditory cues to lexical stress on the visual perception of gestural timing”, authored by &lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt;, &lt;a href=&#34;https://www.ru.nl/en/people/mcqueen-j&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;James McQueen&lt;/a&gt; and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;, is now publicly available online! It&amp;rsquo;s published Open Access in the journal &lt;em&gt;Attention, Perception, &amp;amp; Psychophysics&lt;/em&gt;. Feel free to check it out: links are given at the bottom of the page.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;We ran two experiments to see how native listeners of Dutch use auditory cues to lexical stress when perceiving the timing of hand beats. Previous studies of our lab have demonstrated that the timing of hand beats can influence the perception of lexical stress, and thus spoken-word recognition. In this study, we examined &amp;lsquo;a reverse effect&amp;rsquo;: does lexical stress change how you perceive the visual timing of hand gestures? Our results showed that the perceived timing of a hand beat is indeed &amp;lsquo;pulled towards&amp;rsquo; the syllable with stronger stress cues. For example, our participants perceived an &amp;rsquo;early gesture&amp;rsquo;, objectively preceding a stressed syllable by 200 ms, to only precede the stress by 80 ms! In fact, the same gesture, falling midway between two syllables, can be perceived as falling on the first or second syllable, depending on which of two syllables is acoustically stressed.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;In everyday conversations, people often gesture while they speak. Small rhythmic gestures, in particular, are timed in synchrony with our speech, mostly falling on stressed syllables. However, this is no strict rule of course: people can gesture in different ways and at different times. Our study demonstrates that our brain can handle some variability in the timing of hand gestures and word stress. That is, our brain perceptually shrinks this variability: gestures that are objectively timed &amp;lsquo;out-of-sync&amp;rsquo; with speech are perceived as less &amp;lsquo;out-of-sync&amp;rsquo; because the acoustic stress &amp;lsquo;pulls on&amp;rsquo; the gesture. This means that even if you produce slightly out-of-sync gestures, your audience can still correctly interpret which words and syllables your gestures are emphasizing! Clever ay?&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2025).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/ye-etal-2025-app/&#34;&gt;Effect of auditory cues to lexical stress on the visual perception of gestural timing&lt;/a&gt;.
+  &lt;em&gt;Attention, Perception, &amp;amp; Psychophysics&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.3758/s13414-025-03072-z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.3758/s13414-025-03072-z&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/ye-etal-2025-app/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.34973/zp61-3y60&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13414-025-03072-z&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>Paper accepted in Psychonomic Bulletin &amp; Review!</title>
       <link>https://hrbosker.github.io/news/25-04-10-rohreretal-paper-pbr/</link>
       <pubDate>Thu, 10 Apr 2025 00:00:00 +0000</pubDate>
@@ -7629,8 +7751,14 @@
 
 
   
+    
+  
 
 
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3644884_1/component/file_3644885/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
 
 
 
@@ -7693,6 +7821,35 @@
       <link>https://hrbosker.github.io/publication/bujok-etal-2025-ls/</link>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://hrbosker.github.io/publication/bujok-etal-2025-ls/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Effect of auditory cues to lexical stress on the visual perception of gestural timing</title>
+      <link>https://hrbosker.github.io/publication/ye-etal-2025-app/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/ye-etal-2025-app/</guid>
       <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
 
 

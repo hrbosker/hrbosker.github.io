@@ -1395,12 +1395,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;but then with a different directory and filename.&lt;/p&gt;
 &lt;p&gt;So remember: &lt;strong&gt;perform the functions in the object window, paste history in the scripting window, and edit the code from there&lt;/strong&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;tutorials&#34;&gt;Tutorials&lt;/h2&gt;
-&lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. Alternatively, go to &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. Other third-party tutorials are:&lt;/p&gt;
+&lt;p&gt;Praat offers a scripting tutorial itself. Go to &lt;em&gt;Help &amp;gt; Praat Intro&lt;/em&gt; and scroll down to find &lt;em&gt;Scripting&lt;/em&gt;. You can also find it online: &lt;a href=&#34;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.fon.hum.uva.nl/praat/manual/Scripting.html&lt;/a&gt;. This tutorial is not too bad actually. There&amp;rsquo;s also these quick intro slides by Eleanor Chodroff: &lt;a href=&#34;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&lt;/a&gt;. More &lt;strong&gt;comprehensive guides&lt;/strong&gt; are:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf&lt;/a&gt;: some quick intro slides by Eleanor Chodroff&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://praatscripting.lingphon.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscripting.lingphon.net&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Jörg Mayer&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://praatscriptingtutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscriptingtutorial.com/&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Daniel Riggs&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&lt;/a&gt;: a &lt;strong&gt;comprehensive written tutorial&lt;/strong&gt; by Mauricio A. Figueroa Candia&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fon.hum.uva.nl/david/sspbook/sspbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Speech Signal Processing with Praat&amp;rdquo;&lt;/a&gt; by David Weenink himself!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/stylerw/usingpraat/raw/main/UsingPraatforLinguisticResearchLatest.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&amp;ldquo;Using Praat for Linguistic Research&amp;rdquo;&lt;/a&gt; by Will Styler&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscripting.lingphon.net&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscripting.lingphon.net&lt;/a&gt;: by Jörg Mayer&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://praatscriptingtutorial.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://praatscriptingtutorial.com/&lt;/a&gt;: by Daniel Riggs&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html&lt;/a&gt;: by Mauricio A. Figueroa Candia&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;strange-quirks&#34;&gt;Strange quirks&lt;/h2&gt;
 &lt;p&gt;Praat has some peculiarities that make the Praat scripting language stand out compared to other languages, like &lt;em&gt;python&lt;/em&gt; and &lt;em&gt;R&lt;/em&gt;.&lt;/p&gt;
@@ -1413,7 +1414,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;do(&amp;#34;Extract part&amp;#34;, 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;)
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# ... in Praat versions 5.3.63 and later; after January 2014
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part: 0, 0.1, &amp;#34;rectangular, 1, &amp;#34;no&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Extract part: 0, 0.1, &amp;#34;rectangular&amp;#34;, 1, &amp;#34;no&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Praat variables &lt;strong&gt;always&lt;/strong&gt; start in lowercase. Capitals are reserved for functions:&lt;/li&gt;
 &lt;/ul&gt;
@@ -1445,6 +1446,13 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Scale intensity: 65
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Praat&amp;rsquo;s symbol for &amp;ldquo;not equal to&amp;rdquo; is &lt;code&gt;&amp;lt;&amp;gt;&lt;/code&gt; (&amp;hellip;duh!)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# skip measurements on the first interval
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;if interval_number &amp;lt;&amp;gt; 1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    dur_measurement = Get total duration
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;endif
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
 &lt;li&gt;Different objects in Praat have different functions. For Sound objects, you can run functions like &lt;code&gt;Play&lt;/code&gt;, &lt;code&gt;Resample...&lt;/code&gt;, &lt;code&gt;Scale intensity...&lt;/code&gt;, etc., while for TextGrid objects, you can run functions like &lt;code&gt;Duplicate tier...&lt;/code&gt;, &lt;code&gt;Insert boundary...&lt;/code&gt;, etc. Therefore, it is important to &lt;strong&gt;keep track of which object is selected&lt;/strong&gt;:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
@@ -1459,7 +1467,17 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select Sound demo
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Praat&amp;rsquo;s Object window replaces periods, spaces, and special characters in filenames with &amp;ldquo;_&amp;rdquo;. This can get you into trouble when you first read a file called &amp;ldquo;word1 (talker4) v1.3.wav&amp;rdquo; and later on want to select it in the Object window:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myDirectory$ = &amp;#34;C:\Users\hanbos\mysounds&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;myFilename$ = &amp;#34;word1 (talker4) v1.3&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Read from file: &amp;#34;&amp;#39;myDirectory$&amp;#39;\&amp;#39;myFilename$&amp;#39;.wav&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;To TextGrid: &amp;#34;words&amp;#34;, &amp;#34;&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;select Sound &amp;#39;myFilename$&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Play
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&amp;hellip; will throw an error upon reaching the &lt;code&gt;select&lt;/code&gt; statement. This is because the Object window only lists a Sound object with the name &amp;ldquo;word1__talker4__v1_3&amp;rdquo; and hence cannot find &amp;ldquo;word1 (talker4) v1.3&amp;rdquo;. The best solution is to avoid periods, spaces, and special characters in your filenames; only use &amp;ldquo;_&amp;rdquo; and &amp;ldquo;-&amp;rdquo;!&lt;/p&gt;
+&lt;h2 id=&#34;ready-made-scripts&#34;&gt;Ready-made scripts&lt;/h2&gt;
 &lt;p&gt;See our &lt;a href=&#34;https://hrbosker.github.io/resources/scripts/&#34;&gt;Scripts&lt;/a&gt; archive for snippets of code we frequently use. Note, however, that &lt;strong&gt;they require customization&lt;/strong&gt; for each individual new project. &lt;em&gt;Use at your own risk!&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Other scripts resources available online are:&lt;/p&gt;
 &lt;ul&gt;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 10, 2025 --><html lang="en-us" >
+<!-- Last Published: May 7, 2025 --><html lang="en-us" >
 
 
 <head>
@@ -479,6 +479,34 @@
           
           
           
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
             
           
 
@@ -499,34 +527,6 @@
 
           <li class="nav-item">
             <a class="nav-link " href="/research"><span>Research</span></a>
-          </li>
-
-          
-          
-
-          
-
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-
-          
-            
-              
-              
-            
-            
-          
-
-          <li class="nav-item">
-            <a class="nav-link " href="/news"><span>News</span></a>
           </li>
 
           
@@ -980,12 +980,13 @@
 </span></span></code></pre></div><p>but then with a different directory and filename.</p>
 <p>So remember: <strong>perform the functions in the object window, paste history in the scripting window, and edit the code from there</strong>.</p>
 <h2 id="tutorials">Tutorials</h2>
-<p>Praat offers a scripting tutorial itself. Go to <em>Help &gt; Praat Intro</em> and scroll down to find <em>Scripting</em>. Alternatively, go to <a href="https://www.fon.hum.uva.nl/praat/manual/Scripting.html" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/manual/Scripting.html</a>. This tutorial is not too bad actually. Other third-party tutorials are:</p>
+<p>Praat offers a scripting tutorial itself. Go to <em>Help &gt; Praat Intro</em> and scroll down to find <em>Scripting</em>. You can also find it online: <a href="https://www.fon.hum.uva.nl/praat/manual/Scripting.html" target="_blank" rel="noopener">https://www.fon.hum.uva.nl/praat/manual/Scripting.html</a>. This tutorial is not too bad actually. There&rsquo;s also these quick intro slides by Eleanor Chodroff: <a href="https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf" target="_blank" rel="noopener">https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf</a>. More <strong>comprehensive guides</strong> are:</p>
 <ul>
-<li><a href="https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf" target="_blank" rel="noopener">https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf</a>: some quick intro slides by Eleanor Chodroff</li>
-<li><a href="https://praatscripting.lingphon.net" target="_blank" rel="noopener">https://praatscripting.lingphon.net</a>: a <strong>comprehensive written tutorial</strong> by Jörg Mayer</li>
-<li><a href="https://praatscriptingtutorial.com/" target="_blank" rel="noopener">https://praatscriptingtutorial.com/</a>: a <strong>comprehensive written tutorial</strong> by Daniel Riggs</li>
-<li><a href="http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html" target="_blank" rel="noopener">http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html</a>: a <strong>comprehensive written tutorial</strong> by Mauricio A. Figueroa Candia</li>
+<li><a href="https://www.fon.hum.uva.nl/david/sspbook/sspbook.pdf" target="_blank" rel="noopener">&ldquo;Speech Signal Processing with Praat&rdquo;</a> by David Weenink himself!</li>
+<li><a href="https://github.com/stylerw/usingpraat/raw/main/UsingPraatforLinguisticResearchLatest.pdf" target="_blank" rel="noopener">&ldquo;Using Praat for Linguistic Research&rdquo;</a> by Will Styler</li>
+<li><a href="https://praatscripting.lingphon.net" target="_blank" rel="noopener">https://praatscripting.lingphon.net</a>: by Jörg Mayer</li>
+<li><a href="https://praatscriptingtutorial.com/" target="_blank" rel="noopener">https://praatscriptingtutorial.com/</a>: by Daniel Riggs</li>
+<li><a href="http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html" target="_blank" rel="noopener">http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html</a>: by Mauricio A. Figueroa Candia</li>
 </ul>
 <h2 id="strange-quirks">Strange quirks</h2>
 <p>Praat has some peculiarities that make the Praat scripting language stand out compared to other languages, like <em>python</em> and <em>R</em>.</p>
@@ -998,7 +999,7 @@
 </span></span><span class="line"><span class="cl"># ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
 </span></span><span class="line"><span class="cl">do(&#34;Extract part&#34;, 0, 0.1, &#34;rectangular&#34;, 1, &#34;no&#34;)
 </span></span><span class="line"><span class="cl"># ... in Praat versions 5.3.63 and later; after January 2014
-</span></span><span class="line"><span class="cl">Extract part: 0, 0.1, &#34;rectangular, 1, &#34;no&#34;
+</span></span><span class="line"><span class="cl">Extract part: 0, 0.1, &#34;rectangular&#34;, 1, &#34;no&#34;
 </span></span></code></pre></div><ul>
 <li>Praat variables <strong>always</strong> start in lowercase. Capitals are reserved for functions:</li>
 </ul>
@@ -1030,6 +1031,13 @@
 </span></span><span class="line"><span class="cl">    Scale intensity: 65
 </span></span><span class="line"><span class="cl">endif
 </span></span></code></pre></div><ul>
+<li>Praat&rsquo;s symbol for &ldquo;not equal to&rdquo; is <code>&lt;&gt;</code> (&hellip;duh!)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl"># skip measurements on the first interval
+</span></span><span class="line"><span class="cl">if interval_number &lt;&gt; 1
+</span></span><span class="line"><span class="cl">    dur_measurement = Get total duration
+</span></span><span class="line"><span class="cl">endif
+</span></span></code></pre></div><ul>
 <li>Different objects in Praat have different functions. For Sound objects, you can run functions like <code>Play</code>, <code>Resample...</code>, <code>Scale intensity...</code>, etc., while for TextGrid objects, you can run functions like <code>Duplicate tier...</code>, <code>Insert boundary...</code>, etc. Therefore, it is important to <strong>keep track of which object is selected</strong>:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">myDirectory$ = &#34;C:\Users\hanbos\mysounds&#34;
@@ -1044,7 +1052,17 @@
 </span></span><span class="line"><span class="cl">To TextGrid: &#34;words&#34;, &#34;&#34;
 </span></span><span class="line"><span class="cl">select Sound demo
 </span></span><span class="line"><span class="cl">Play
-</span></span></code></pre></div><h2 id="ready-made-scripts">Ready-made scripts</h2>
+</span></span></code></pre></div><ul>
+<li>Praat&rsquo;s Object window replaces periods, spaces, and special characters in filenames with &ldquo;_&rdquo;. This can get you into trouble when you first read a file called &ldquo;word1 (talker4) v1.3.wav&rdquo; and later on want to select it in the Object window:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">myDirectory$ = &#34;C:\Users\hanbos\mysounds&#34;
+</span></span><span class="line"><span class="cl">myFilename$ = &#34;word1 (talker4) v1.3&#34;
+</span></span><span class="line"><span class="cl">Read from file: &#34;&#39;myDirectory$&#39;\&#39;myFilename$&#39;.wav&#34;
+</span></span><span class="line"><span class="cl">To TextGrid: &#34;words&#34;, &#34;&#34;
+</span></span><span class="line"><span class="cl">select Sound &#39;myFilename$&#39;
+</span></span><span class="line"><span class="cl">Play
+</span></span></code></pre></div><p>&hellip; will throw an error upon reaching the <code>select</code> statement. This is because the Object window only lists a Sound object with the name &ldquo;word1__talker4__v1_3&rdquo; and hence cannot find &ldquo;word1 (talker4) v1.3&rdquo;. The best solution is to avoid periods, spaces, and special characters in your filenames; only use &ldquo;_&rdquo; and &ldquo;-&rdquo;!</p>
+<h2 id="ready-made-scripts">Ready-made scripts</h2>
 <p>See our <a href="/resources/scripts/">Scripts</a> archive for snippets of code we frequently use. Note, however, that <strong>they require customization</strong> for each individual new project. <em>Use at your own risk!</em></p>
 <p>Other scripts resources available online are:</p>
 <ul>
