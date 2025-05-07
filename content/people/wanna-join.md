@@ -15,4 +15,4 @@ design:
     text_color_light: true
 ---
 
-{{% cta cta_link="../wanna-join/" cta_text="Explore opportunities" %}}
+{{% cta cta_link="../join-us/" cta_text="Explore opportunities" %}}
