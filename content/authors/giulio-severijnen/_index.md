@@ -28,6 +28,9 @@ interests:
 
 education:
   courses:
+    - course: PhD in Psycholinguistics
+      institution: Radboud University Nijmegen, *with distinction*
+      year: 2025
     - course: MSc in Cognitive Neuroscience
       institution: Radboud University Nijmegen
       year: 2020
@@ -73,4 +76,8 @@ user_groups:
   - alumni
 ---
 
-Giulio Severijnen did his PhD at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands (2020-2024). His PhD project was supervised by [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/), [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}), and Dr. Ashley Lewis. His research investigated between-talker and within-talker variability in prosody production, with a specific focus on lexical stress and speech rate. He also tested how listeners flexibly adapt to this variability in order to successfully comprehend different talkers. The project was funded through a 'Donders Internal PhD Round' grant, awarded to Prof. James McQueen, Dr. Hans Rutger Bosker, and Dr. Ashley Lewis. After his PhD, Giulio took up a postdoc position with Prof. Davide Crepaldi at the Language, Learning and Reading lab (SISSA, Trieste, Italy). 
+Giulio Severijnen did his PhD at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands (2020-2024). His PhD project was supervised by [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/), [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}), and Dr. Ashley Lewis. His research investigated between-talker and within-talker variability in prosody production, with a specific focus on lexical stress and speech rate. He also tested how listeners flexibly adapt to this variability in order to successfully comprehend different talkers. The project was funded through a 'Donders Internal PhD Round' grant, awarded to Prof. James McQueen, Dr. Hans Rutger Bosker, and Dr. Ashley Lewis. After his PhD, Giulio took up a postdoc position with Prof. Davide Crepaldi at the Language, Learning and Reading lab (SISSA, Trieste, Italy).
+
+Read his thesis here:
+
+> Severijnen, G. G. A. (2025) A blessing in disguise: How prosodic variability challenges but also aids successful speech perception. PhD thesis, Radboud University, Nijmegen. https://hdl.handle.net/2066/315703

@@ -56,12 +56,13 @@ So remember: **perform the functions in the object window, paste history in the 
 
 ## Tutorials
 
-Praat offers a scripting tutorial itself. Go to *Help > Praat Intro* and scroll down to find *Scripting*. Alternatively, go to https://www.fon.hum.uva.nl/praat/manual/Scripting.html. This tutorial is not too bad actually. Other third-party tutorials are:
+Praat offers a scripting tutorial itself. Go to *Help > Praat Intro* and scroll down to find *Scripting*. You can also find it online: https://www.fon.hum.uva.nl/praat/manual/Scripting.html. This tutorial is not too bad actually. There's also these quick intro slides by Eleanor Chodroff: https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf. More **comprehensive guides** are:
 
-- https://www.eleanorchodroff.com/tutorial/PraatScripting.pdf: some quick intro slides by Eleanor Chodroff
-- https://praatscripting.lingphon.net: a **comprehensive written tutorial** by Jörg Mayer
-- https://praatscriptingtutorial.com/: a **comprehensive written tutorial** by Daniel Riggs
-- http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html: a **comprehensive written tutorial** by Mauricio A. Figueroa Candia
+- ["Speech Signal Processing with Praat"](https://www.fon.hum.uva.nl/david/sspbook/sspbook.pdf) by David Weenink himself!
+- ["Using Praat for Linguistic Research"](https://github.com/stylerw/usingpraat/raw/main/UsingPraatforLinguisticResearchLatest.pdf) by Will Styler
+- https://praatscripting.lingphon.net: by Jörg Mayer
+- https://praatscriptingtutorial.com/: by Daniel Riggs
+- http://www.mauriciofigueroa.cl/04_scripts/04_scripts.html: by Mauricio A. Figueroa Candia
 
 ## Strange quirks
 
@@ -76,7 +77,7 @@ Extract part... 0 0.1 rectangular 1 no
 # ... in Praat versions between 5.3.44 and 5.3.62; April 2013 - January 2014
 do("Extract part", 0, 0.1, "rectangular", 1, "no")
 # ... in Praat versions 5.3.63 and later; after January 2014
-Extract part: 0, 0.1, "rectangular, 1, "no"
+Extract part: 0, 0.1, "rectangular", 1, "no"
 ```
 
 - Praat variables **always** start in lowercase. Capitals are reserved for functions:
@@ -117,6 +118,15 @@ else
 endif
 ```
 
+- Praat's symbol for "not equal to" is `<>` (...duh!)
+
+```
+# skip measurements on the first interval
+if interval_number <> 1
+    dur_measurement = Get total duration
+endif
+```
+
 - Different objects in Praat have different functions. For Sound objects, you can run functions like `Play`, `Resample...`, `Scale intensity...`, etc., while for TextGrid objects, you can run functions like `Duplicate tier...`, `Insert boundary...`, etc. Therefore, it is important to **keep track of which object is selected**:
 
 ```
@@ -137,6 +147,19 @@ To TextGrid: "words", ""
 select Sound demo
 Play
 ```
+
+- Praat's Object window replaces periods, spaces, and special characters in filenames with "_". This can get you into trouble when you first read a file called "word1 (talker4) v1.3.wav" and later on want to select it in the Object window:
+
+```
+myDirectory$ = "C:\Users\hanbos\mysounds"
+myFilename$ = "word1 (talker4) v1.3"
+Read from file: "'myDirectory$'\'myFilename$'.wav"
+To TextGrid: "words", ""
+select Sound 'myFilename$'
+Play
+```
+
+... will throw an error upon reaching the `select` statement. This is because the Object window only lists a Sound object with the name "word1__talker4__v1_3" and hence cannot find "word1 (talker4) v1.3". The best solution is to avoid periods, spaces, and special characters in your filenames; only use "_" and "-"!
 
 ## Ready-made scripts
 

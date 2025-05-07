@@ -38,7 +38,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://pure.mpg.de/rest/items/item_3644884_1/component/file_3644885/content'
 url_code: ''
 url_dataset: 'https://doi.org/10.34973/p0hn-ce44'
 url_poster: ''

@@ -23,7 +23,8 @@ date: '2022-07-07'
   - [praat.org](https://www.praat.org)
   - the *number 1* speech-editing software in academia
   - supports speech measurements, annotation in TextGrids, manipulation, synthesis
-  - scripting interface supports batch processing
+  - supports batch processing through scripts
+  - see our [How to](/resources/how-to/) page for guides, examples, and scripts
   - recommended scripting interface: [PraatVSCode]({{< ref "../tools/#praatvscode" >}})
 - {{< icon name="circle-play" pack="fas" >}} **ffmpeg**
   - [ffmpeg.org](https://ffmpeg.org/)
