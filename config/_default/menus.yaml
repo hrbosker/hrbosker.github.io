@@ -50,9 +50,9 @@ main:
   - name: Demos
     url: demos
     weight: 65
-  #- name: Join us!
-  #  url: join-us
-  #  weight: 66
+  - name: Join us!
+    url: join-us
+    weight: 66
   - name: Contact
     url: contact
     weight: 70
