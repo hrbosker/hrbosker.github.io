@@ -39,7 +39,7 @@ featured: false
 # links:
 # - name: ""
 #   url: ""
-url_pdf: ''
+url_pdf: 'https://pure.mpg.de/pubman/item/item_3649569_1/component/file_3649570/Ye_etal_2025_effect%20of%20auditory%20cues%20to....pdf'
 url_code: ''
 url_dataset: 'https://doi.org/10.34973/zp61-3y60'
 url_poster: ''
