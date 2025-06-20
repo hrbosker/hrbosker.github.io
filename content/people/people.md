@@ -27,4 +27,8 @@ design:
   show_social: true
 ---
 
+<!-- 
+
 {{< figure src="team_dec2023_heads.jpg" caption="November 2023. Credit: Isa Emmen" align="center">}}
+
+-->

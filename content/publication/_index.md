@@ -24,11 +24,10 @@ Preprints are early versions of scientific papers that have *not yet been formal
 - Hans Rutger Bosker\*, Marieke Hoetjes\*, Doenja Hustin\*, Wim Pouw\*, & Lieke van Maastricht\* (2025). Foreign language learners show a kinematic accent in their co-speech hand movements. *OSF Preprints*, doi:[10.31234/osf.io/wumc4_v1](https://doi.org/10.31234/osf.io/wumc4_v1), data: [https://github.com/WimPouw/stress_in_motion_SI](https://github.com/WimPouw/stress_in_motion_SI). \**shared first authorship*
 - Ronny Bujok, Antje S. Meyer, and Hans Rutger Bosker (2024). Beat gestures can influence on-line spoken word recognition. *PsyArXiv Preprints*, doi:[10.31234/osf.io/6gn3d](https://doi.org/10.31234/osf.io/6gn3d), data:[https://osf.io/57dvh/](https://osf.io/57dvh/)
 - Ronny Bujok, Matteo Maran, Antje S. Meyer, and Hans Rutger Bosker (2024). Beat gestures facilitate lexical access in constraining sentence contexts. *PsyArXiv Preprints*, doi:[10.31234/osf.io/8ntjm](https://doi.org/10.31234/osf.io/8ntjm), data:[https://osf.io/8vsfq/](https://osf.io/8vsfq/)
-- Ronny Bujok, David Peeters, Antje S. Meyer, and Hans Rutger Bosker (2024). Beating stress: evidence for recalibration of word stress perception. *PsyArXiv Preprints*, doi:[10.31234/osf.io/9sua6](https://doi.org/10.31234/osf.io/9sua6), data:[https://osf.io/s3p6a/](https://osf.io/s3p6a/)
 - Matteo Maran, Renske Uilenreef\*, Roos Rossen\*, & Hans Rutger Bosker (2025). The timing of an avatar’s beat gestures biases lexical stress perception in vocoded speech. *PsyArXiv Preprints*, doi:[10.31234/osf.io/nvh36_v1](https://doi.org/10.31234/osf.io/nvh36_v1). \**shared authorship*
 
 # List of publications
-Last updated: Oct 16, 2024
+Last updated: June 20, 2025
 
 <br />
 <br />
