@@ -5,12 +5,26 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 02 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Two talks at Interspeech 2025, Rotterdam</title>
+      <link>https://hrbosker.github.io/news/25-07-02-talks-at-interspeech/</link>
+      <pubDate>Wed, 02 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-07-02-talks-at-interspeech/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Two submissions from our group have been accepted as oral presentations at Interspeech 2025 (Rotterdam, 17-21 August). Both talks will present how the timing of simple gestures influences speech perception.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;comparing-gestures-made-by-avatars-and-humans&#34;&gt;Comparing gestures made by avatars and humans&lt;/h2&gt;
+&lt;p&gt;One of the talks is: “Beat gestures made by human-like avatars affect speech perception”, authored by &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;, Renske Rötjes, Anna R. E. Schreurs and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;. This study found that beat gestures produced by an avatar also affect word stress perception, just like human-made gestures do (though the effect was slightly reduced). The oral presentation is preliminarily planned on the morning of Thursday 21 August, and will be given by &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;comparing-the-effect-of-various-ambiguous-gesture-timings&#34;&gt;Comparing the effect of various ambiguous gesture timings&lt;/h2&gt;
+&lt;p&gt;The other talk is: “A gradient effect of hand beat timing on spoken word recognition”, authored by &lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt;, James M. McQueen and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;. This study showed that the hand beat timing effect on the perception of word stress is gradient, instead of categorical. Moreover, this visual effect even surfaced when participants had received brief feedback to ignore the visual cues. This talk is preliminarily planned on the afternoon of Wednesday 20 August, and will be given by &lt;a href=&#34;https://hrbosker.github.io/author/chengjia-ye/&#34;&gt;Chengjia Ye&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;come-and-join-us&#34;&gt;Come and join us!&lt;/h2&gt;
+&lt;p&gt;The two full papers will be made available online in August. They will be in the proceedings of Interspeech 2025 and will also appear on the Publications page of this website. Interested? Come and meet us in Rotterdam! We look forward to seeing you there.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How strong is the rhythm of perception?</title>
