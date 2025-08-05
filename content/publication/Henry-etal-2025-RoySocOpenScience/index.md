@@ -4,7 +4,7 @@ authors:
   - Molly J. Henry
   - Jonas Obleser
   - Maria R. Crusey
-  - (...e.a.)
+  - (...et al)
   - admin
   - (...et al.)
   - giulio-severijnen
