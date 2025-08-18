@@ -20,8 +20,12 @@ design:
 
 Hans Rutger Bosker heads the SPEAC lab at the [Donders Institute](https://www.ru.nl/donders/) of [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands.
 
-<!-- <br /> -->
-<!-- <br /> -->
+<br />
+<br />
+<br />
+<br />
+
+> Roos, Matteo, and Hans Rutger giving a demo at the Speech Science Festival, Rotterdam, 2025
 
 <!-- |       |       |       |       |       | -->
 <!-- |:-----:|:-----:|:-----:|:-----:|:-----:| -->

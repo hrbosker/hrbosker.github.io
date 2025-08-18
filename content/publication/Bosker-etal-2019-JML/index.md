@@ -2,7 +2,7 @@
 title: 'Counting ‘uhm’s: how tracking the distribution of native and non-native disfluencies influences online language comprehension'
 authors:
   - admin
-  - Marjolein van Os, 
+  - Marjolein van Os
   - Rik Does 
   - Geertje van Bergen
 #author_notes:
