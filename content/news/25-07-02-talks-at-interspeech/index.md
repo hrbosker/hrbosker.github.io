@@ -20,4 +20,8 @@ The other talk is: “A gradient effect of hand beat timing on spoken word recog
 
 ## Come and join us!
 
-The two full papers will be made available online in August. They will be in the proceedings of Interspeech 2025 and will also appear on the Publications page of this website. Interested? Come and meet us in Rotterdam! We look forward to seeing you there.
+The two full papers will be made available online in August. They will be in the proceedings of Interspeech 2025 and will also appear on the Publications page of this website (see links below). Interested? Come and meet us in Rotterdam! We look forward to seeing you there.
+
+> {{< cite page="/publication/maran-etal-2025-interspeech" view="4" >}}
+
+> {{< cite page="/publication/ye-etal-2025-interspeech" view="4" >}}
