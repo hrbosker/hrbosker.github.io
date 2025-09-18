@@ -24,7 +24,7 @@ content:
     postcode: '6500 HE'
     country: Netherlands
     country_code: NL
-  directions: '[Visiting address] Room 02.321, Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
+  directions: '[Visiting address] Room 02.374, Maria Montessori building, Thomas van Aquinostraat 4, 6525 GD, Nijmegen'
   coordinates:
     latitude: '51.81918627589622'
     longitude: '5.861970553750626'
@@ -54,6 +54,6 @@ design:
   columns: '1'
 ---
 
-**Feel free to get in touch!**
+If you'd like to meet in person, **my office 02.374** is in the [Maria Montessori building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/maria-montessori-building) of the Radboud University.
 
-If you'd like to meet in person, **my office 02.321** is in the [Maria Montessori building](https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/maria-montessori-building) of the Radboud University. Enter through the main entrance and immediately take the stairs (right in front of you) to the first floor. Walk past the coffee bar (on your right hand side) to the other side of the building and then take the stairs (on your right hand side) to the second floor. Immediately take the corridor on your right, pass through the doors, and you'll find my room 02.321 on your left hand side.
+Enter through the main entrance and immediately take the stairs (right in front of you) to the first floor. Walk past the coffee bar (on your right hand side) to the other side of the building and then take the stairs (on your right hand side) to the second floor. Upon reaching the top of the stairs, continue ahead but don't go up the next flight of stairs in front of you. Stay on the second floor and walk past those stairs on your right (i.e., heading towards room 02.610, pointed out on the signs). At the very end of this corridor, just to the right of the stairs behind glass doors, you'll find a (slightly hidden) automatic door (i.e., opposite room 02.610). Press the button to open it and you'll find room 02.374 halfway along the corridor, on your left hand side.
