@@ -19,8 +19,7 @@ content:
     - Principal Investigator
     - Postdocs
     - PhD students
-    - Visiting researchers
-    - Interns
+    - External collaborator
 design:
   show_interests: true
   show_role: true

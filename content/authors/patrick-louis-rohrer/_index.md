@@ -6,11 +6,11 @@ title: Patrick Louis Rohrer
 superuser: false
 
 # Role/position
-role: Postdoctoral Researcher
+role: Assistant Professor
 
 # Organizations/Affiliations
 organizations:
-  - name: Radboud University Nijmegen
+  - name: Universitat Rovira i Virgili in Tarragona, Catalonia
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -46,7 +46,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:patrick.rohrer@donders.ru.nl'
+    link: 'mailto:patricklouis.rohrer@urv.cat   '
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/PatrickLRohrer
@@ -80,10 +80,9 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Postdocs
+  - External collaborator
 ---
 
-Patrick Louis Rohrer is a Postdoctoral Researcher at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He is a member of the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276; PI: Hans Rutger Bosker] that started in September 2022. His project within this research grant investigates gesture-speech synchrony in a set of typologically diverse languages in terms of prosodic structure. Additionally, his project assesses the effects of this synchrony on audiovisual speech perception.
+After having been a postdoc in the SPEAC group for more than two years, Patrick Louis Rohrer took up an Assistant Professor position (Serra Húnter Fellow) at the Universitat Rovira i Virgili in Tarragona, Catalonia. He continues to collaborate with many of the SPEAC members, specifically investigating gesture-speech synchrony in language production and perception, adopting a cross-linguistic perspective.
 
 ORCID iD: [0000-0002-2714-7294](https://orcid.org/0000-0002-2714-7294).
-
