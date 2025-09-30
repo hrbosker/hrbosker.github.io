@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -7609,6 +7609,119 @@
     </item>
     
     <item>
+      <title>Paper accepted in Psychonomic Bulletin &amp; Review!</title>
+      <link>https://hrbosker.github.io/news/25-09-30-severijnen-paper-pbr/</link>
+      <pubDate>Tue, 30 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-09-30-severijnen-paper-pbr/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;When &amp;ldquo;train&amp;rdquo; turns into &amp;ldquo;terrain&amp;rdquo;: can the perceived syllable rate be guided by linguistic information? Read all about it in our new paper: “Is rate-dependent perception affected by linguistic information about the intended syllable rate?”&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;published&#34;&gt;Published!&lt;/h2&gt;
+&lt;p&gt;Our paper “Is rate-dependent perception affected by linguistic information about the intended syllable rate?”, authored by &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;, &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;, and James McQueen, was published in &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt;. You can find the full text and the accompanying data repository at the bottom of this post.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;Listeners are faced with the task of dealing with huge amounts of acoustic variability in speech. One of these types of variability stems from differences in speaking rate between talkers, which in turn strongly affects the duration of different speech sounds such as consonants (e.g., &lt;em&gt;beer&lt;/em&gt; vs. &lt;em&gt;pier&lt;/em&gt;), or vowels (Dutch &lt;em&gt;stad&lt;/em&gt; vs. &lt;em&gt;staat&lt;/em&gt;, ‘city’ vs. ‘state’). The task for the listener is to perceive the correct speech sounds despite those differences in speech rate, which listeners achieve through rate-dependent perception: perceiving speech relative to the rate in the surrounding context.&lt;/p&gt;
+&lt;p&gt;In this paper we examined &lt;strong&gt;which types of information listeners use during rate-dependent perception&lt;/strong&gt;. More specifically, is it mostly driven by acoustic information (i.e., low-level, acoustics), or do listeners also make use of non-acoustic, linguistic information, such as tracking the number of syllables.&lt;/p&gt;
+&lt;p&gt;We tested this by having participants listen to different word lists that either had an acoustically different number of syllables (monosyllabic words or bisyllabic words), or lists that were acoustically identical but we imposed a different &lt;em&gt;intended&lt;/em&gt; number of syllables through orthography. In these latter lists, the words were somewhere between monosyllabic and bisyllabic words: for example, a recording of [t?rɛin] is midway between (monosyllabic) &lt;em&gt;trein&lt;/em&gt; &amp;ldquo;train&amp;rdquo; and (disyllabic) &lt;em&gt;terrein&lt;/em&gt; &amp;ldquo;terrain&amp;rdquo;. When we showed people words on a screen of what the speaker intended to say, &lt;strong&gt;they indeed showed evidence of interpreting the ambiguous recordings as monosyllabic (if &amp;ldquo;trein&amp;rdquo; was on screen) or disyllabic (if &amp;ldquo;terrein&amp;rdquo; was on screen)&lt;/strong&gt;. However, another experiment showed that people did not use this linguistic information in rate-dependent perception.&lt;/p&gt;
+&lt;img src=&#34;https://media.springernature.com/full/springer-static/image/art%3A10.3758%2Fs13423-025-02746-x/MediaObjects/13423_2025_2746_Fig5_HTML.png&#34; alt=&#34;Figure 5, Severijnen et al 2025&#34; width=&#34;400&#34;/&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;This research further characterizes the exact sources of information that listeners do or do not use during speech perception. This is important for our understanding of how humans are so successful at understanding spoken language in everyday situations. In particular, it informs models of speech perception regarding the role of context: people can interpret the same recording differently depending on other sources of information, like a preceding sentence, world knowledge, or accompanying visual signals we see. This study shows that &amp;rsquo;not all context is created equal&amp;rsquo;: some information (here: linguistic information about the intended number of syllables) is used for some processes, but not others.&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2025).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/&#34;&gt;Is rate‑dependent perception affected by linguistic information about the intended syllable rate?&lt;/a&gt;.
+  &lt;em&gt;Psychonomic Bulletin &amp;amp; Review&lt;/em&gt;, doi:&lt;a href=&#34;https://doi.org/10.3758/s13423-025-02746-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.3758/s13423-025-02746-x&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://link.springer.com/content/pdf/10.3758/s13423-025-02746-x.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/severijnen-etal-2025-pbr/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.34973/kw23-aa86&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13423-025-02746-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>Join us at the Speech Science Festival!</title>
       <link>https://hrbosker.github.io/news/25-08-05-speech-science-festival/</link>
       <pubDate>Tue, 05 Aug 2025 00:00:00 +0000</pubDate>
@@ -8525,6 +8638,35 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
 --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Is rate‑dependent perception affected by linguistic information about the intended syllable rate?</title>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
     </item>
     
     <item>

@@ -126,15 +126,19 @@
     <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/news/25-08-05-speech-science-festival/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+    <loc>https://hrbosker.github.io/news/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/news/</loc>
-    <lastmod>2025-08-05T00:00:00+00:00</lastmod>
+    <loc>https://hrbosker.github.io/news/25-09-30-severijnen-paper-pbr/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2025-09-30T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/25-08-05-speech-science-festival/</loc>
     <lastmod>2025-08-05T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -282,6 +286,10 @@
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/author/james-m.-mcqueen/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -307,6 +315,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/author/lieke-van-maastricht/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tag/linguistic-information/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -338,6 +350,10 @@
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/tag/orthography/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/author/patrick-louis-rohrer/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -355,6 +371,14 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/publication/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tag/rate-normalization/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tag/rate-dependent-perception/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -391,6 +415,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/tag/speech-perception/</loc>
+    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/tag/speech-rate/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -610,19 +638,11 @@
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/tag/rate-normalization/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>https://hrbosker.github.io/publication/wu-etal-2023-jocn/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/tag/sentential-prediction/</loc>
-    <lastmod>2023-01-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/tag/speech-rate/</loc>
     <lastmod>2023-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -1031,10 +1051,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/tag/rate-normalisation/</loc>
-    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/tag/rate-dependent-perception/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

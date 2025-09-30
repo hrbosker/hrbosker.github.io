@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linguistic information | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/tag/linguistic-information/</link>
+      <atom:link href="https://hrbosker.github.io/tag/linguistic-information/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linguistic information</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
+      <title>Linguistic information</title>
+      <link>https://hrbosker.github.io/tag/linguistic-information/</link>
+    </image>
+    
+    <item>
+      <title>Is rate‑dependent perception affected by linguistic information about the intended syllable rate?</title>
+      <link>https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/</link>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/severijnen-etal-2025-pbr/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
