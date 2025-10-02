@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 30 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -7606,6 +7606,118 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# End of script
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paper published in JEP:LMC!</title>
+      <link>https://hrbosker.github.io/news/25-10-01-bujok-paper-jeplmc/</link>
+      <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-10-01-bujok-paper-jeplmc/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;A simple beat gesture can help you recognize words faster. Read more about it in: “Beat gestures facilitate lexical access in constraining sentence contexts”&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;published&#34;&gt;Published!&lt;/h2&gt;
+&lt;p&gt;Our new paper “Beat gestures facilitate lexical access in constraining sentence contexts”, written by &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;, &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;, Antje S. Meyer, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; was published in the &lt;em&gt;Journal of Experimental Psychology: Learning, Memory and Cognition&lt;/em&gt;. Links to the published paper, an open access full text (prepublication version), and all supporting data are available below.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;In this study, we tested whether seeing beat gestures could generally help you understand words faster. Moreover, in earlier studies, we had found that beat gestures might serve as visual cues to lexical stress, for example differentiating &lt;em&gt;CONtent&lt;/em&gt; [noun] from &lt;em&gt;conTENT&lt;/em&gt; [adjective]. Therefore, this time we investigated whether beat gestures might also facilitate the recognition of words that &lt;em&gt;do not&lt;/em&gt; have a stress competitor (e.g., Dutch &lt;em&gt;DOCHter&lt;/em&gt; &amp;ldquo;daughter&amp;rdquo; in the example above). In fact, we kinda stacked the cards against us: we tested the recognition of sentence-final target words, in semantically constraining (i.e., predictable) lead-in sentences, with clear acoustics. &lt;strong&gt;Would these simple up-and-down hand movements still support target word recognition, even in these already rather optimal listening conditions?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Participants watched a talker saying sentences where the final word was a very predictable bisyllabic word, given the sentence context (e.g., &lt;em&gt;De ouders hadden een zoon en een &lt;strong&gt;dochter&lt;/strong&gt;&lt;/em&gt;; “The parents had a son and a daughter”). However, sometimes instead of the predictable word the sentence ended in a pseudoword (e.g., &lt;em&gt;dochkiet&lt;/em&gt;). In a lexical decision task, participants had to decide as fast as possible whether the final word was an actual Dutch word or a pseudoword. Moreover, sometimes the talker would say the final word without any gesture (above: &amp;ldquo;No Beat&amp;rdquo;), sometimes with a beat gesture on the syllable with lexical stress (Beat on 1st) and sometimes (incongruently) on the syllable without lexical stress (Beat on 2nd). &lt;strong&gt;Critically, people&amp;rsquo;s reaction times showed that participants generally reacted faster to words when they saw a beat gesture.&lt;/strong&gt; Also, the fastest reaction times were found when the beat gesture was correctly aligned to words with word-initial stress.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;This study shows that beat gestures can facilitate lexical access and thus help us understand speech fast and efficiently. Even when many other supporting cues, such as a constraining sentence context, were already present, beat gestures could still speed up word recognition. This suggests that the influence of beat gestures might be even greater in everyday situations, where sentences are generally less predictable. This study highlights how speech is more than just sounds: it involves what we see as well.&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2025).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2025-jeplmc/&#34;&gt;Beat gestures facilitate lexical access in constraining sentence contexts&lt;/a&gt;.
+  &lt;em&gt;Journal of Experimental Psychology: Learning, Memory, and Cognition&lt;/em&gt;, Advance online publication. doi:&lt;a href=&#34;10.1037/xlm0001524&#34;&gt;10.1037/xlm0001524&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3662165_2/component/file_3662169/Bujok%20et%20al.%20%282025%29_AAM.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2025-jeplmc/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/8vsfq/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1037/xlm0001524&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
