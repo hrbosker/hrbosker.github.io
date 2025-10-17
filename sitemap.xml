@@ -127,14 +127,18 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/news/</loc>
-    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>https://hrbosker.github.io/news/25-10-01-bujok-paper-jeplmc/</loc>
-    <lastmod>2025-10-01T00:00:00+00:00</lastmod>
+    <loc>https://hrbosker.github.io/news/25-10-17-orhun-defends-phd/</loc>
+    <lastmod>2025-10-17T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2025-10-17T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/news/25-10-01-bujok-paper-jeplmc/</loc>
     <lastmod>2025-10-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -203,10 +207,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/tag/audiovisual-integration/</loc>
-    <lastmod>2025-01-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/publication/bujok-etal-2025-ls/</loc>
     <lastmod>2025-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -483,6 +483,10 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/tag/acoustic-variability/</loc>
+    <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/publication/bujok-etal-2024-ls/</loc>
     <lastmod>2024-01-01T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>

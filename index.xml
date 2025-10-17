@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -743,6 +743,85 @@
 
 
 
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2024-ls/&#34;&gt;Audiovisual perception of lexical stress: Beat gestures and articulatory cues&lt;/a&gt;.
+  &lt;em&gt;Language and Speech&lt;/em&gt;, 68(1), 181-203. doi:&lt;a href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1177/00238309241258162&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3589536_2/component/file_3589537/Bujok%20et%20al._2024_L%26S.docx?mode=download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2024-ls/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/4d9w5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
 
 
 
@@ -2333,7 +2412,7 @@
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Hans Rutger Bosker, Radboud University
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@ru.nl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@donders.ru.nl
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### License: CC BY-NC 4.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
@@ -3182,7 +3261,7 @@
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Hans Rutger Bosker, Radboud University
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@ru.nl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@donders.ru.nl
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### License: CC BY-NC 4.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
@@ -3410,7 +3489,7 @@
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Hans Rutger Bosker, Radboud University
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@ru.nl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@donders.ru.nl
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Date: 23 June 2022, run in Praat 6.2.12 on Windows 10
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### License: CC BY-NC 4.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
@@ -4134,7 +4213,7 @@
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-r&#34; data-lang=&#34;r&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### Hans Rutger Bosker, Radboud University Nijmegen&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### SPEAC research group, hrbosker.github.io&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### HansRutger.Bosker@ru.nl&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### HansRutger.Bosker@donders.ru.nl&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### License: CC BY-NC 4.0&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;##### Last updated: July 20, 2022&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -4317,7 +4396,7 @@
 &lt;/blockquote&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Hans Rutger Bosker, Radboud University
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@ru.nl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### HansRutger.Bosker@donders.ru.nl
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;### License: CC BY-NC 4.0
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
@@ -7609,6 +7688,19 @@
     </item>
     
     <item>
+      <title>Orhun successfully defends his PhD</title>
+      <link>https://hrbosker.github.io/news/25-10-17-orhun-defends-phd/</link>
+      <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-10-17-orhun-defends-phd/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;On October 17, 2025, Orhun successfully defended his PhD thesis in the Aula and was awarded the title of doctor. Congratulations to Dr. Uluşahin!&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;voices-in-our-heads&#34;&gt;Voices in our heads&lt;/h2&gt;
+&lt;p&gt;Orhun&amp;rsquo;s thesis is entitled &amp;ldquo;Voices in our heads: Talker-specific listening and speaking&amp;rdquo;. It describes several studies around the topic of how listeners learn about the way a talker speaks and how this knowledge subsequently changes how they listen, and even how they speak themselves. To give just one example: listening to a particularly high-pitched talker for ca. 20 minutes can change your perception of that talker&amp;rsquo;s /s-ʃ/ distinction.&lt;/p&gt;
+&lt;p&gt;Several SPEAC members celebrated this happy event together with Orhun, with some even joining from abroad through the live stream. It&amp;rsquo;s been an honor to have been part of Orhun&amp;rsquo;s PhD project as supervisor, together with Prof. James McQueen (promotor) and Prof. Antje Meyer (promotor). But then again, this is no goodbye event; Orhun&amp;rsquo;s just across the hallway, having taken up a postdoc position at the DCC.&lt;/p&gt;
+&lt;h2 id=&#34;read-his-book&#34;&gt;Read his book!&lt;/h2&gt;
+&lt;p&gt;Interested? Read his thesis here: &lt;a href=&#34;https://hdl.handle.net/2066/324252&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://hdl.handle.net/2066/324252&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Paper published in JEP:LMC!</title>
       <link>https://hrbosker.github.io/news/25-10-01-bujok-paper-jeplmc/</link>
       <pubDate>Wed, 01 Oct 2025 00:00:00 +0000</pubDate>
@@ -8233,86 +8325,6 @@
 
 
 
-  
-
-
-&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
-  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
-
-  
-  
-
-  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
-    
-
-  &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/david-peeters/&#34;&gt;David Peeters&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
-      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
-  &lt;/span&gt;
-  (2025).
-  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2025-app/&#34;&gt;Beating stress: evidence for recalibration of word stress perception&lt;/a&gt;.
-  &lt;em&gt;Attention, Perception, &amp;amp; Psychophysics 87&lt;/em&gt;, 1729-1749. doi:&lt;a href=&#34;https://doi.org/10.3758/s13414-025-03088-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.3758/s13414-025-03088-5&lt;/a&gt;.
-  
-  &lt;p&gt;
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://link.springer.com/content/pdf/10.3758/s13414-025-03088-5.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  PDF
-&lt;/a&gt;
-
-
-
-&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
-        data-filename=&#34;/publication/bujok-etal-2025-app/cite.bib&#34;&gt;
-  Cite
-&lt;/a&gt;
-
-
-
-  
-  
-    
-  
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/s3p6a/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  Dataset
-&lt;/a&gt;
-
-
-
-
-
-
-
-
-
-
-
-&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.3758/s13414-025-03088-5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
-  DOI
-&lt;/a&gt;
-
-
-&lt;/p&gt;
-
-  
-  
-&lt;/div&gt;
-
-
 
 &lt;/blockquote&gt;</description>
     </item>
@@ -8569,35 +8581,6 @@
 
 
 Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/). --&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Audiovisual perception of lexical stress: Beat gestures and articulatory cues</title>
-      <link>https://hrbosker.github.io/publication/bujok-etal-2025-ls/</link>
-      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://hrbosker.github.io/publication/bujok-etal-2025-ls/</guid>
-      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
-
-
-
-
-
-
-
-
-
-
-
-&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
---&gt;
 </description>
     </item>
     
@@ -8951,6 +8934,85 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/ronny-bujok/&#34;&gt;Ronny Bujok&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/antje-s.-meyer/&#34;&gt;Antje S. Meyer&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bujok-etal-2024-ls/&#34;&gt;Audiovisual perception of lexical stress: Beat gestures and articulatory cues&lt;/a&gt;.
+  &lt;em&gt;Language and Speech&lt;/em&gt;, 68(1), 181-203. doi:&lt;a href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1177/00238309241258162&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3589536_2/component/file_3589537/Bujok%20et%20al._2024_L%26S.docx?mode=download&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bujok-etal-2024-ls/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/4d9w5&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1177/00238309241258162&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
 
 
 
@@ -9543,6 +9605,35 @@ Supplementary notes can be added here, including [code and math](https://wowchem
 
 
 &lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Audiovisual perception of lexical stress: Beat gestures and articulatory cues</title>
+      <link>https://hrbosker.github.io/publication/bujok-etal-2024-ls/</link>
+      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/bujok-etal-2024-ls/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;
+</description>
     </item>
     
     <item>
