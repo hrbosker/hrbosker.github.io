@@ -16,7 +16,7 @@ In its current form, the script reads each .wav file *plus* accompanying TextGri
 ```
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
+### HansRutger.Bosker@donders.ru.nl
 ### Date: 6 July 2022, run in Praat 6.2.12 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################

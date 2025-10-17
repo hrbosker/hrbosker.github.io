@@ -23,7 +23,7 @@ The script can be adjusted to run LMM power analysis (instead of GLMM) and to in
 ```r
 ##### Hans Rutger Bosker, Radboud University Nijmegen
 ##### SPEAC research group, hrbosker.github.io
-##### HansRutger.Bosker@ru.nl
+##### HansRutger.Bosker@donders.ru.nl
 ##### License: CC BY-NC 4.0
 ##### Last updated: July 20, 2022
 

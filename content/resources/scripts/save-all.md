@@ -12,7 +12,7 @@ Praat can only save one object at a time for you. If you have multiple objects i
 ```
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
+### HansRutger.Bosker@donders.ru.nl
 ### Date: 23 June 2022, run in Praat 6.2.12 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################

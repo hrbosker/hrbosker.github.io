@@ -14,7 +14,7 @@ Moreover, the script keeps track of who annotated what, can continue where you l
 ```
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
+### HansRutger.Bosker@donders.ru.nl
 ### Date: 30 June 2022, run in Praat 6.2.12 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################

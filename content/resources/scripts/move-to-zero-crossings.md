@@ -12,7 +12,7 @@ This Praat script automatically moves all boundaries in a given tier in a TextGr
 ```
 ################################################################################
 ### Hans Rutger Bosker, Radboud University
-### HansRutger.Bosker@ru.nl
+### HansRutger.Bosker@donders.ru.nl
 ### Date: 22 July 2022, run in Praat 6.2.12 on Windows 10
 ### License: CC BY-NC 4.0
 ################################################################################

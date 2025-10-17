@@ -29,4 +29,4 @@ This research shows that beat gestures, the kind of gestures we use the most, ca
 
 The full citation, open access PDF, and all data are publicly available from the links below:
 
-> {{< cite page="/publication/bujok-etal-2025-app" view="4" >}}
+> {{< cite page="/publication/bujok-etal-2024-app" view="4" >}}
