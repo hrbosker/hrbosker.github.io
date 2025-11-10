@@ -11,9 +11,9 @@ design:
   columns: '1'
 ---
 
-{{< mention "ronny-bujok" >}} was a PhD student in the SPEAC group from 2020 - 2024. His PhD defense is planned to take place on November 5, 2025. His thesis, entitled "When the beat drops: How beat gesture alignment with speech affects word recognition", will be made publicly available after the defense.
+On 5th Nov, 2025, {{< mention "ronny-bujok" >}} publicly defended his PhD thesis: [When the beat drops: How beat gesture alignment with speech affects word recognition](https://hdl.handle.net/21.11116/0000-0011-FA96-A). After his PhD, Ronny did a postdoc with Dr. Lieke van Maastricht at the CLS, Radboud University.
 
-{{< mention "orhun-ulusahin" >}} was a PhD student in the SPEAC group from 2020 - 2025. His PhD defense is planned to take place on October 17, 2025. His thesis, entitled "Voices in our heads: Talker-specific listening and speaking", will be made publicly available after the defense.
+On 17th Oct, 2025, {{< mention "orhun-ulusahin" >}} publicly defended his PhD thesis: [Voices in our heads: Talker-specific listening and speaking](https://hdl.handle.net/2066/324252). Afterwards, Orhun took up a postdoc position at the DCC with Prof. James M. McQueen.
 
 On 14th Febr, 2025, {{< mention "giulio-severijnen" >}} was awarded the title of doctor *with distinction, cum laude*. His PhD thesis was entitled: [A blessing in disguise: How prosodic variability challenges but also aids successful speech perception](https://hdl.handle.net/2066/315703). After his PhD, he took up a post-doc position at SISSA, Trieste, Italy.
 
