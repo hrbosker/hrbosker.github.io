@@ -5,7 +5,7 @@
     <link>https://hrbosker.github.io/</link>
       <atom:link href="https://hrbosker.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>SPEAC | Hans Rutger Bosker</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 05 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Nov 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>SPEAC | Hans Rutger Bosker</title>
@@ -7685,6 +7685,118 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;# End of script
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;################################################################################
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Paper published in Applied Psycholinguistics!</title>
+      <link>https://hrbosker.github.io/news/25-11-17-maran-paper-ap/</link>
+      <pubDate>Mon, 17 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/25-11-17-maran-paper-ap/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Movements made by an avatar can support listening to vocoded speech. Read all about it in our new publication in Applied Psycholinguistics&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;published&#34;&gt;Published!&lt;/h2&gt;
+&lt;p&gt;Our new paper “The timing of an avatar’s beat gestures biases lexical stress perception in vocoded speech”, written by &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;, Renske M. J. Uilenreef, Roos Rossen, and &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt; was published in &lt;em&gt;Applied Psycholinguistics&lt;/em&gt;. The full text and all supporting data are publicly available from links at the bottom of this post.&lt;/p&gt;
+&lt;h2 id=&#34;whats-it-about&#34;&gt;What&amp;rsquo;s it about?&lt;/h2&gt;
+&lt;p&gt;Cochlear implants (CIs) are neural prostheses that can restore some level of hearing capacity. However, CIs convey a signal that distorts some aspects of speech, for example the intonation (“fundamental frequency”) that provides the emphasis to distinguish between two otherwise identical words (e.g., the noun “CONtent” vs. the adjective “conTENT”, which differ in the so-called lexical stress). Recent studies show that simple up-and-down flick of the hands, called beat gestures, affect lexical stress: a beat gesture falling on the first syllable of a word (e.g., “content”) will make it more prominent, making listeners more likely to hear the word with emphasis on the first syllable (e.g., hearing the noun “CONtent”, rather than the adjective “conTENT”). Similarly, a beat gesture falling on the second syllable will provide it with more emphasis (e.g., hearing the adjective “conTENT”, rather than the noun “CONtent”).&lt;/p&gt;
+&lt;p&gt;In this online experiment, we tested whether beat gestures can affect the perceived emphasis of words once access to the fundamental frequency information is limited (“vocoded speech”), in a way that might resemble hearing through CIs. Clear speech served as a baseline condition for comparison. Additionally, the beat gestures were made by a human-looking avatar, which could in principle be used in future app-based software to support hearing through CIs. Beat gestures indeed affected the perceived emphasis of words in vocoded speech, especially when the information in the speech signal was ambiguous (e.g., half-way between CONtent and conTENT) or infrequent (e.g., emphasis on the second syllable, which in the tested language occurs only 12% of the time). In these cases, the effect of beat gestures in vocoded speech was numerically larger than in clear speech.&lt;/p&gt;
+&lt;h2 id=&#34;why-is-this-important&#34;&gt;Why is this important?&lt;/h2&gt;
+&lt;p&gt;This research shows that beat gestures can affect which words individuals hear once the speech signal is distorted. This property of beat gestures might be particularly important for individuals who are routinely exposed to distorted speech, for example because they hear through cochlear implants. Importantly, our study shows that even beat gestures made by a human-looking avatar affect speech perception. Therefore, the present findings might inspire the development of apps and software in which avatars, by moving to the rhythm of speech, support comprehension in individuals with altered hearing.&lt;/p&gt;
+&lt;h2 id=&#34;full-reference&#34;&gt;Full reference&lt;/h2&gt;
+&lt;p&gt;The full citation, open access PDF, and all data are publicly available from the links below:&lt;/p&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/matteo-maran/&#34;&gt;Matteo Maran&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/renske-uilenreef/&#34;&gt;Renske Uilenreef&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/roos-rossen/&#34;&gt;Roos Rossen&lt;/a&gt;&lt;/span&gt;&lt;i class=&#34;author-notes fas fa-info-circle&#34; data-toggle=&#34;tooltip&#34; title=&#34;Equal contribution&#34;&gt;&lt;/i&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2025).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/maran-etal-2025-ap/&#34;&gt;The timing of an avatar’s beat gestures biases lexical stress perception in vocoded speech&lt;/a&gt;.
+  &lt;em&gt;Applied Psycholinguistics 46&lt;/em&gt;, e37, doi:&lt;a href=&#34;https://doi.org/10.1017/S0142716425100180&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;10.1017/S0142716425100180&lt;/a&gt;.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://www.cambridge.org/core/services/aop-cambridge-core/content/view/833ED5CC967A7B2784E94BD8BF9B1B24/S0142716425100180a.pdf/the-timing-of-an-avatars-beat-gestures-biases-lexical-stress-perception-in-vocoded-speech.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/maran-etal-2025-ap/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.34973/fr6d-c702&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1017/S0142716425100180&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
