@@ -20,12 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include between-talker variability, speech perception, and prosody.
 
-interests:
-  - Speech Perception
-  - Speech Production
-  - Prosody
-  - Lexical Stress
-
 education:
   courses:
     - course: PhD in Psycholinguistics

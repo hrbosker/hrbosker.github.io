@@ -16,15 +16,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include speech perception, audiovisual integration, and prosody.
 
-interests:
-  - Speech Perception
-  - Audiovisual Integration
-  - Prosody
-  - Gestures
-  - Lexical Stress
-  - Speech Rate
-  - Speech in Noise
-
 education:
   courses:
     - course: PhD in Psycholinguistics

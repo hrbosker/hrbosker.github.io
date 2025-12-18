@@ -16,17 +16,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My main research interests lies in the relationship between gesture and prosody from a crosslinguistic perspective, and how these two modes jointly contribute to the conveyal of communicative meaning, as well as their effects on cognition and acquisition.
 
-interests:
-  - Gestures
-  - Prosody
-  - Gesture-Speech synchrony
-  - Speech Perception
-  - Audiovisual Integration
-  - Cognition
-  - (Multimodal) Language Acquisition (L1/L2)
-  - Pragmatics
-
-
 education:
   courses:
     - course: PhD in Language Sciences
@@ -80,7 +69,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - External collaborator
+  - External collaborators
 ---
 
 After having been a postdoc in the SPEAC group for more than two years, Patrick Louis Rohrer took up an Assistant Professor position (Serra Húnter Fellow) at the Universitat Rovira i Virgili in Tarragona, Catalonia. He continues to collaborate with many of the SPEAC members, specifically investigating gesture-speech synchrony in language production and perception, adopting a cross-linguistic perspective.

@@ -19,7 +19,8 @@ content:
     - Principal Investigator
     - Postdocs
     - PhD students
-    - External collaborator
+    - BA/MA students
+    - External collaborators
 design:
   show_interests: true
   show_role: true

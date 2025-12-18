@@ -20,12 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include the production-perception interface, phonetic convergence, and talker familiarity.
 
-interests:
-  - Speech Perception
-  - Speech Production
-  - Phonetic Convergence
-  - Talker Familiarity
-
 education:
   courses:
     - course: MSc in Cognitive Neuroscience

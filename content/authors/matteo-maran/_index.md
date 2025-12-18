@@ -16,12 +16,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include incremental language comprehension, audiovisual integration, and their neural basis.
 
-interests:
-  - Audiovisual Integration
-  - Language-related ERPs
-  - Neural Basis of Language Comprehension
-  - Neurodevelopmental Disorders
-
 education:
   courses:
     - course: PhD in Psychology

@@ -20,12 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include audiovisual speech perception, gestures, and lexical stress.
 
-interests:
-  - Speech Perception
-  - Beat Gestures
-  - Prosody
-  - Lexical Stress
-
 education:
   courses:
     - course: MSc in Cognitive Neuroscience

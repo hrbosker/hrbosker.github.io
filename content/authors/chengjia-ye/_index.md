@@ -20,12 +20,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests mainly include speech perception, speech production, prosody and audiovisual integration.
 
-interests:
-  - Speech Perception
-  - Speech Production
-  - Prosody
-  - Audiovisual Integration
-
 education:
   courses:
     - course: MA in Linguistics
