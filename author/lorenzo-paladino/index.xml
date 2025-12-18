@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lorenzo Paladino | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/author/lorenzo-paladino/</link>
+      <atom:link href="https://hrbosker.github.io/author/lorenzo-paladino/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lorenzo Paladino</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://hrbosker.github.io/author/lorenzo-paladino/avatar_hu57c981b3aed019adc09d84c65815569b_195862_270x270_fill_lanczos_center_3.png</url>
+      <title>Lorenzo Paladino</title>
+      <link>https://hrbosker.github.io/author/lorenzo-paladino/</link>
+    </image>
+    
+  </channel>
+</rss>

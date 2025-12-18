@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Huandi Chen | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/author/huandi-chen/</link>
+      <atom:link href="https://hrbosker.github.io/author/huandi-chen/index.xml" rel="self" type="application/rss+xml" />
+    <description>Huandi Chen</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://hrbosker.github.io/author/huandi-chen/avatar_hu22380677315be3fbbc24226752244d1a_236972_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Huandi Chen</title>
+      <link>https://hrbosker.github.io/author/huandi-chen/</link>
+    </image>
+    
+  </channel>
+</rss>

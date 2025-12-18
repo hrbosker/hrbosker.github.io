@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Marit van Rossum | SPEAC | Hans Rutger Bosker</title>
+    <link>https://hrbosker.github.io/author/marit-van-rossum/</link>
+      <atom:link href="https://hrbosker.github.io/author/marit-van-rossum/index.xml" rel="self" type="application/rss+xml" />
+    <description>Marit van Rossum</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language>
+    <image>
+      <url>https://hrbosker.github.io/author/marit-van-rossum/avatar_hu9f245068f654b586ccf02845ca0cfd49_28432797_270x270_fill_lanczos_center_3.png</url>
+      <title>Marit van Rossum</title>
+      <link>https://hrbosker.github.io/author/marit-van-rossum/</link>
+    </image>
+    
+  </channel>
+</rss>
