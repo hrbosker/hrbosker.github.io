@@ -5,12 +5,40 @@
     <link>https://hrbosker.github.io/publication/</link>
       <atom:link href="https://hrbosker.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Publications</title>
       <link>https://hrbosker.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Foreign language learners show a kinematic accent in their co-speech hand movements</title>
+      <link>https://hrbosker.github.io/publication/bosker-etal-2026-openmind/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/publication/bosker-etal-2026-openmind/</guid>
+      <description>&lt;!-- THIS MARKDOWN BIT IS CURRENTLY COMMENTED OUT
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+Supplementary notes can be added here, including [code and math](https://wowchemy.com/docs/content/writing-markdown-latex/).
+--&gt;</description>
+    </item>
     
     <item>
       <title>A gradient effect of hand beat timing on spoken word recognition</title>
