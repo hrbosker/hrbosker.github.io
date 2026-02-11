@@ -16,7 +16,7 @@ design:
   css_class:
 ---
 
-Students regularly contribute to our research in various projects. If the project is successful, they may also serve as co-authors on journal articles and/or proceedings papers describing the study outcomes. We primarily host student projects from the **Cognitive Neuroscience (CNS) master program** and the **Psychology bachelor program** of Radboud University. These include [BA theses](#ba-thesis), [BA honours projects](#honours), [lab rotations](#lab-rotations), [internships](#internships), and [MA theses](#ma-thesis), specified below. Individual requests to host such projects are typically accepted: just [send me an email](/contact/) and let's meet!
+Students regularly contribute to our research in various projects. If the project is successful, they may also serve as co-authors on journal articles and/or proceedings papers describing the study outcomes. We primarily host student projects from the **Cognitive Neuroscience (CNS) master program** and the **Psychology bachelor program** of Radboud University. These include [BA theses](#ba-thesis), [lab rotations](#lab-rotations), [internships](#internships), and [MA theses](#ma-thesis), specified below. Individual requests to host such projects are typically accepted: just [send me an email](/contact/) and let's meet!
 
 Examples of student projects include:
 
@@ -27,10 +27,6 @@ For their [BA thesis](#ba-thesis), BA Psychology students ran a self-made web ex
 :brain:
 
 For her [BA thesis](#ba-thesis), a Biomedical Sciences student ran **an EEG study**, testing if 'out-of-sync' beat gestures (i.e., falling on unstressed syllables) lead to an N400 response in the brain.
-
-:earth_americas:
-
-For the [General Psychology Honours Program](#honours), BA students ran their own web experiment, testing the **manual McGurk effect in English**.
 
 :film_strip:
 

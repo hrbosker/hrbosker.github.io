@@ -3,7 +3,7 @@ title: "Wanna join?"
 subtitle:
 widget: blank
 headless: true
-weight: 99
+weight: 98
 design:
   columns: '1'
   background:
