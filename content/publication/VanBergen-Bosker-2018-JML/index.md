@@ -1,8 +1,8 @@
 ---
 title: 'Linguistic expectation management in online discourse processing: An investigation of Dutch inderdaad ‘indeed’ and eigenlijk ‘actually’'
 authors:
-  - admin
   - Geertje van Bergen
+  - admin
 #author_notes:
 #  - 'Equal contribution'
 #  - 'Equal contribution'

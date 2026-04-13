@@ -11,7 +11,7 @@ title: Latest news
 subtitle: click here for [all news items](./news/)
 
 content:
-  count: 3
+  count: 5
   filters:
     author: ''
     category: ''
