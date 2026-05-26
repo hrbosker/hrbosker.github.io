@@ -1,7 +1,7 @@
 ---
 title: 'Test-retest reliability of audiovisual lexical stress perception after >1.5 years'
 authors:
-  - Floris Cos
+  - floris-cos
   - ronny-bujok
   - admin
 date: '2024-01-01T00:00:00Z'
