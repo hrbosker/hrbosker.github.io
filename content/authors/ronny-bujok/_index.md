@@ -10,18 +10,21 @@ authors:
 superuser: false
 
 # Role/position
-role: PhD student
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-  - name: Max Planck Institute for Psycholinguistics
+  - name: Radboud University Nijmegen
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include audiovisual speech perception, gestures, and lexical stress.
+bio: My research interests include audiovisual speech perception and production, gestures, prosody, and lexical stress.
 
 education:
   courses:
+    - course: PhD in Psycholinguistics
+      institution: Radboud University Nijmegen
+      year: 2025
     - course: MSc in Cognitive Neuroscience
       institution: Radboud University Nijmegen
       year: 2020
@@ -36,7 +39,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:ronny.bujok@mpi.nl'
+    link: 'mailto:ronny.bujok@ru.nl'
   - icon: orcid
     icon_pack: ai
     link: https://orcid.org/0000-0001-6557-9808
@@ -64,9 +67,7 @@ email: ''
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - alumni
+  - Postdocs
 ---
 
-Ronny Bujok was a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors were [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje) and [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). His project investigated how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception. After his PhD, he took up a postdoc position with [Dr. Lieke van Maastricht](https://www.ru.nl/personen/maastricht-l-van) at the Centre for Language Studies, Radboud University, Nijmegen.
-
-> Ronny's PhD defense took place on November 5, 2025. His thesis title is: "When the beat drops: How beat gesture alignment with speech affects word recognition". Read it [here](https://hdl.handle.net/21.11116/0000-0011-FA96-A)!
+Ronny Bujok is a Postdoctoral Researcher at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He is a member of the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276; PI: [Hans Rutger Bosker]({{< ref "../admin" >}})] that started in September 2022. He performed his [PhD research](https://hdl.handle.net/21.11116/0000-0011-FA96-A) at the Max Planck Institute for Psycholinguistics, investigating how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception. After his PhD, he took up a postdoc position with [Dr. Lieke van Maastricht](https://www.ru.nl/personen/maastricht-l-van) at the Centre for Language Studies, Radboud University, Nijmegen. After that, he started his current postdoc with the SPEAC group. Present research lines focus on individual differences in gesture-speech synchrony in production and perception.
