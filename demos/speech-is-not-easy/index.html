@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<!-- This site was created with Hugo Blox. https://hugoblox.com -->
+<!-- Last Published: August 26, 2026 --><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Hugo Blox Builder 5.9.7" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.26c458e6907dc03073573976b7f4044e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.4/css/academicons.min.css" integrity="sha512-IW0nhlW5MgNydsXJO40En2EoCkTTjZhI3yuODrZIc8cQ4h1XcF53PsqDHa09NqnkXuIe0Oiyyj171BqZFwISBw==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.d5368166acb2929b24b1533fc0cf4c7f.css" />
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/libs/chroma/github-light.min.css" title="hl-light" media="print" onload="this.media='all'" >
+    <link rel="stylesheet" href="/css/libs/chroma/dracula.min.css" title="hl-dark" media="print" onload="this.media='all'" disabled>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+  <meta name="author" content="Hans Rutger Bosker" />
+
+
+
+
+
+  
+
+<meta name="description" content="...or is it?" />
+
+
+
+<link rel="alternate" hreflang="en-us" href="https://hrbosker.github.io/demos/speech-is-not-easy/" />
+<link rel="canonical" href="https://hrbosker.github.io/demos/speech-is-not-easy/" />
+
+
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+
+
+<link rel="icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_32x32_fill_lanczos_center_3.png" />
+<link rel="apple-touch-icon" type="image/png" href="/media/icon_huae2b00520e03f5ba379b883d5ffe682c_34272_180x180_fill_lanczos_center_3.png" />
+
+<meta name="theme-color" content="#1565c0" />
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://hrbosker.github.io/demos/speech-is-not-easy/featured.png" />
+
+
+
+  
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SPEAC | Hans Rutger Bosker" />
+<meta property="og:url" content="https://hrbosker.github.io/demos/speech-is-not-easy/" />
+<meta property="og:title" content="It&#39;s (not) easy to recognize speech | SPEAC | Hans Rutger Bosker" />
+<meta property="og:description" content="...or is it?" /><meta property="og:image" content="https://hrbosker.github.io/demos/speech-is-not-easy/featured.png" /><meta property="og:locale" content="en-us" />
+
+  
+    <meta
+      property="article:published_time"
+      content="2026-08-15T00:00:00&#43;00:00"
+    />
+  
+  
+    <meta property="article:modified_time" content="2026-08-15T00:00:00&#43;00:00">
+  
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+
+
+  
+  <title>It&#39;s (not) easy to recognize speech | SPEAC | Hans Rutger Bosker</title>
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="98c3df4a6c9d44542bbfbcb03c54e486" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.4fef3e534144e9903491f0cc6527eccd.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header header--fixed">
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+            
+            ></a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/"><img src="/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_0x70_resize_lanczos_3.png" alt="SPEAC | Hans Rutger Bosker"
+          
+          ></a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-end" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/news"><span>News</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/research"><span>Research</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/people"><span>People</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/publication"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"><span>Resources</span><span class="caret"></span>
+            </a>
+            <div class="dropdown-menu">
+              
+                <a class="dropdown-item" href="/resources/corpora/"><span>Corpora</span></a>
+              
+                <a class="dropdown-item" href="/resources/tools/"><span>Research tools</span></a>
+              
+                <a class="dropdown-item" href="/resources/scripts/"><span>Scripts</span></a>
+              
+                <a class="dropdown-item" href="/resources/how-to/"><span>How to's</span></a>
+              
+                <a class="dropdown-item" href="/resources/course-materials/"><span>Course materials</span></a>
+              
+                <a class="dropdown-item" href="/resources/other-resources/"><span>Other resources</span></a>
+              
+            </div>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/demos"><span>Demos</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/join-us"><span>Join us!</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+      
+      
+      <div class="article-container py-1" style="background: initial">
+        
+  <nav class="d-none d-md-flex" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      
+  
+    
+  
+    
+  
+
+    <li class="breadcrumb-item">
+      <a href="/">
+        
+          Home
+        
+      </a>
+    </li>
+  
+
+    <li class="breadcrumb-item">
+      <a href="/demos/">
+        
+          Demos
+        
+      </a>
+    </li>
+  
+
+      <li class="breadcrumb-item active" aria-current="page">
+        It's (not) easy to recognize speech
+      </li>
+    </ol>
+  </nav>
+
+
+
+
+      </div>
+    
+
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+<div class="article-container pt-3">
+  <h1>It&#39;s (not) easy to recognize speech</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 481px;">
+  <div style="position: relative">
+    <img src="/demos/speech-is-not-easy/featured_huae8992c36740bef80b1cc99338b2115c_7334025_766e8f8ae885b4651434d978b8fcf343.webp" width="720" height="481" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h2 id="you-think-its-easy">You think it&rsquo;s easy?</h2>
+<p>You really think it&rsquo;s easy to recognize speech? Let&rsquo;s hear what this person has to say about recognizing speech:</p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<video controls  >
+  <source src="/demos/speech-is-not-easy/it_is_not_easy_to_recognize_speech.mp4" type="video/mp4">
+</video>
+
+<blockquote>
+<details class="spoiler "  id="spoiler-1">
+  <summary><em>AI-generated video; click here for model and prompt</em></summary>
+  <p><p>Generated in Google Flow; model: Omni Flash; date: May 27, 2026.</p>
+<p>Prompt: <em>A cinematic, medium close-up shot from the front of a man sitting in front of a green screen, behind an office desk. He is looking casual. He is holding and staring down at a single, crisp white sheet of paper. In a single, fast, and incredibly sloppy burst of speech, without any pauses, he strings the words together to say, &ldquo;it&rsquo;s not easy to wreck a nice beach&rdquo; (sounding phonetically like &ldquo;itsnoteasytowreckanicebeach&rdquo;). Immediately after he finishes speaking, the camera operator walks over in a natural motion to behind and over his shoulder. The camera focuses sharply on the paper in his hands, revealing the text printed clearly in a clean, legible font: &ldquo;it&rsquo;s not easy to wreck a nice beach&rdquo;. Photorealistic, professional cinematic lighting, natural motion blur during the camera movement, 4k resolution, seamless audio-to-video synchronization.</em></p>
+</p>
+</details>
+</blockquote>
+<p>You think you know what he&rsquo;s saying until&hellip; you see the words he&rsquo;s actually been reading. Surprise!</p>
+<p>Most of us have conversations with people all day and we hardly ever find comprehending what they&rsquo;re saying particularly difficult, right? Only in the most challenging circumstances do we conciously struggle, like when talking in loud background noise. This at times makes us underestimate how challenging speech perception really is.</p>
+<p>Understanding what someone else is saying is actually an incredible achievement of the human brain. But it can be challenging to convince people that recognizing speech is truly remarkable. Here&rsquo;s my attempt by guiding you past <strong>four exhibits</strong>:</p>
+<div class="custom-toc">
+  
+  
+  <details class="toc-inpage d-print-none  " open>
+    <summary class="font-weight-bold">Table of Contents</summary>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#you-think-its-easy">You think it&rsquo;s easy?</a></li>
+    <li><a href="#exhibit-1-same-speech-different-words"><strong>Exhibit #1</strong>: same speech, different words</a></li>
+    <li><a href="#exhibit-2-same-words-different-speech"><strong>Exhibit #2</strong>: same words, different speech</a></li>
+    <li><a href="#exhibit-3-sloppy-speech-is-worse"><strong>Exhibit #3</strong>: sloppy speech is worse</a></li>
+    <li><a href="#exhibit-4-worst-case-scenarios"><strong>Exhibit #4</strong>: worst-case scenarios</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#relevant-lab-papers">Relevant lab papers</a></li>
+  </ul>
+</nav>
+  </details>
+
+</div>
+<h2 id="exhibit-1-same-speech-different-words"><strong>Exhibit #1</strong>: same speech, different words</h2>
+<p>Did you know the same clip can be heard as two completely different words? Check out this clip:</p>
+<blockquote>
+<p>Laurel/Yanny &ndash; [original]
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/demos/speech-is-not-easy/Audio%20S7.mp3" type="audio/mpeg">
+</audio>
+
+<details class="spoiler "  id="spoiler-4">
+  <summary><em>Source</em></summary>
+  <p><div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+  <span class="article-metadata li-cite-author">
+  <span >
+      <a href="/author/hans-rutger-bosker/">Hans Rutger Bosker</a></span>
+  </span>
+  (2018).
+  <a href="/publication/bosker-2018-jasa/">Putting Laurel and Yanny in context</a>.
+  <em>The Journal of the Acoustic Society of America, 144</em>(6), EL503-EL508, doi:10.1121/1.5070144.
+  <p>
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content" target="_blank" rel="noopener">
+  PDF
+</a>
+<p><a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+data-filename="/publication/bosker-2018-jasa/cite.bib">
+Cite
+</a></p>
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://osf.io/63wdh/" target="_blank" rel="noopener">
+  Dataset
+</a>
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1121/1.5070144" target="_blank" rel="noopener">
+  DOI
+</a>
+</p>
+</div>
+</p>
+</details></p>
+</blockquote>
+<p>The internet exploded over this audio clip in 2018 because people got into heated arguments about whether what you&rsquo;re hearing is the name <strong>Laurel</strong> or the name <strong>Yanny</strong>. This is called a &lsquo;bistable clip&rsquo; or a &lsquo;polyperceivable word&rsquo; and other examples were soon found, like the next one. It&rsquo;s perceived as <strong>brainstorm</strong> some of the time, but as <strong>green needle</strong> on other occasions. Just play it a couple of times. For me, even just thinking about one of the two options can change what I&rsquo;m hearing!</p>
+<blockquote>
+<p>Brainstorm/Green Needle &ndash; [original]
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/demos/speech-is-not-easy/brainstorm.wav" type="audio/wav">
+</audio>
+
+<details class="spoiler "  id="spoiler-6">
+  <summary><em>Source</em></summary>
+  <p><a href="https://archive.thetab.com/uk/2018/05/18/brainstorm-or-green-needle-why-can-i-hear-both-explained-65537" target="_blank" rel="noopener">https://archive.thetab.com/uk/2018/05/18/brainstorm-or-green-needle-why-can-i-hear-both-explained-65537</a></p>
+</details></p>
+</blockquote>
+<p>Still, you might say:</p>
+<p>** <em>Well, this is all artificial speech. Real speech produced by humans is much clearer.</em> **</p>
+<p>But there are lots of examples of human-produced speech that are similarly enigmatic (&hellip;there&rsquo;s even a <a href="https://theory.stanford.edu/~valiant/polyperceivable/index.html" target="_blank" rel="noopener">webpage</a> logging some of these). For instance, have you ever experienced listening to a new song and hearing the strangest of lyrics? Like: why is Lady Gaga singing <strong>Gotta pee, okay?</strong> in her hit &lsquo;Just Dance&rsquo;? And there are more of such <a href="https://en.wikipedia.org/wiki/Mondegreen" target="_blank" rel="noopener">mondegreens</a>:</p>
+<table>
+<thead>
+<tr>
+<th>Misheard</th>
+<th>Original</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>English:</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;Gotta pee, okay?&rdquo;</td>
+<td>&ldquo;Gonna be okay&rdquo;</td>
+<td>Just Dance, Lady Gaga</td>
+</tr>
+<tr>
+<td>&ldquo;Pair of&hellip; pair of&hellip; pair of dice&rdquo;</td>
+<td>&ldquo;para-, para-, paradise&rdquo;</td>
+<td>Paradise, Coldplay</td>
+</tr>
+<tr>
+<td>&ldquo;I’m your penis&hellip;&rdquo;</td>
+<td>&ldquo;I&rsquo;m your Venus&hellip;&rdquo;</td>
+<td>Venus, Shocking Blue</td>
+</tr>
+<tr>
+<td>&ldquo;Obama&rsquo;s elf&rdquo;</td>
+<td>&ldquo;All by myself&rdquo;</td>
+<td>All By Myself, Eric Carmen</td>
+</tr>
+<tr>
+<td>&ldquo;José, can you see&rdquo;</td>
+<td>&ldquo;O say can you see&hellip;</td>
+<td>American national anthem</td>
+</tr>
+<tr>
+<td>&ldquo;The girl with colitis goes by&rdquo;</td>
+<td>&ldquo;The girl with kaleidoscope eyes&rdquo;</td>
+<td>Lucy in the Sky with Diamonds, The Beatles</td>
+</tr>
+<tr>
+<td>&ldquo;Dancing queen, feel the beat, on the tangerine&hellip;&rdquo;</td>
+<td>&ldquo;Dancing queen, feel the beat, from the tambourine&hellip;&rdquo;</td>
+<td>Dancing Queen, ABBA</td>
+</tr>
+<tr>
+<td>&ldquo;I’m blue, I&rsquo;m in need of a guy&hellip;&rdquo;</td>
+<td>&ldquo;I&rsquo;m blue, dabadee, dabadai&rdquo;</td>
+<td>Blue, Eiffel65</td>
+</tr>
+<tr>
+<td><em>Dutch:</em></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>&ldquo;Mama, appelsap&rdquo; [Eng. Mommy applejuice]</td>
+<td>&ldquo;Mama-say mama-sa ma-ma-ko-ssa&rdquo;</td>
+<td>Wanna Be Startin&rsquo; Somethin&rsquo;, Michael Jackson</td>
+</tr>
+</tbody>
+</table>
+<p>Don&rsquo;t believe me? Just watch this:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/1xigLkM81xk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br />
+<p>OK, so the same speech can actually be perceived as completely different words.</p>
+<p>Does the reverse also hold: same words, different speech?</p>
+<h2 id="exhibit-2-same-words-different-speech"><strong>Exhibit #2</strong>: same words, different speech</h2>
+<p>The same word can be pronounced in a zillion different ways. Think of differences in pronunciation between native and non-native speakers, differences between dialects, men vs. women, the voices of kids vs. adults, and so on.</p>
+<p>But the same word comes out differently even <strong>for one and the same talker</strong>:</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/RDrfE9I8_hs" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br />
+<p>Let&rsquo;s take a closer look at just 17 instances of Trump&rsquo;s &ldquo;China&rdquo;. The blue lines at the bottom of the image below indicate where one &ldquo;China&rdquo; ends and the next one starts. Conclusion: <strong>they are all acoustically different</strong>. Some are long, others are short. Some are loud, others more quiet. Some are high-pitched, others low&hellip; and yet we perceive the same word over and over again?!?</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="Screenshot from Praat showing 17 instances of the word &amp;ldquo;China&amp;rdquo;" srcset="
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_3980396b49301fd0a0cb0f2da3177220.webp 400w,
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_9741ab3eeeaf461156878d47dcfa46a3.webp 760w,
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+               src="/demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_3980396b49301fd0a0cb0f2da3177220.webp"
+               width="760"
+               height="412"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>And it gets even worse&hellip;</p>
+<h2 id="exhibit-3-sloppy-speech-is-worse"><strong>Exhibit #3</strong>: sloppy speech is worse</h2>
+<p>The words we exchange when we have a conversation don&rsquo;t come out nicely spaced apart. Instead we string them together into one long continuous sound stream. This makes picking out words from that stream quite challenging. <strong>Listen to this clip and see if you can recognize the word.</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+<video controls  >
+  <source src="/demos/speech-is-not-easy/forrestgump.mp4" type="video/mp4">
+</video>
+
+<p>That was tough, right? You probably only recognized the word when the full sentence was played. Now, I hear you thinking:</p>
+<p>** <em>&ldquo;Well, that&rsquo;s obvious. I simply use the context to get the word right.&rdquo;</em> **</p>
+<p>&hellip;and you wouldn&rsquo;t be wrong. Hearing a word in context is much easier than hearing it cut out from its natural habitat (as this example demonstrates). <strong>Still, it&rsquo;s too simplistic to think that context solves all our problems.</strong> Many contexts are not particularly helpful for predicting what&rsquo;ll come next. &ldquo;My momma&hellip;&rdquo; could have continued with just about anything.</p>
+<p>Also, if context helps to recognize the next word, how did you recognize the context itself then? The first words in the sentence don&rsquo;t have any preceding context and still you recognize them, right? <em>Really? You sure?</em> You really think the first words were &ldquo;My momma&hellip;&rdquo; in this clip? <a href="https://www.imdb.com/title/tt0109830/quotes/?item=qt0373657&amp;ref_=ext_shr_lnk" target="_blank" rel="noopener">IMDB</a> at least says so. But listen again and you&rsquo;ll find it&rsquo;s closer to &ldquo;ma-mam&rdquo;.</p>
+<p>In fact, the speech we hear on the news, in university lectures, and in audiobooks is not very representative of the speech we hear most of the time. Speech in spontaneous conversations is <strong>much more sloppy</strong>: vowels become less clear, consonants change, and sometimes even entire syllables or words disappear. <strong>I do not know</strong> becomes <strong>I don&rsquo;t know, I dunno, dunno, or even hm-mm!</strong> Listen to these examples from Prof. Natasha Warner&rsquo;s <a href="https://sites.arizona.edu/nwarner/reduced-speech-examples/" target="_blank" rel="noopener">webpage</a>.</p>
+<blockquote>
+<p><em>She wants to be a police officer, I think</em>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="https://sites.arizona.edu/nwarner/files/2023/07/soundF-context.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>&ndash;&gt; &hellip;where &ldquo;She wants to be a&hellip;&rdquo; comes out as &ldquo;shuh-zi&rdquo;!
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="https://sites.arizona.edu/nwarner/files/2023/07/soundF-nocontext.mp3" type="audio/mpeg">
+</audio>
+</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><em>As like parttime, I can&rsquo;t remember what they called it&hellip;</em>
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="https://sites.arizona.edu/nwarner/files/2025/09/1053_cant_remember_Fig5_context.wav" type="audio/wav">
+</audio>
+</p>
+</blockquote>
+<blockquote>
+<blockquote>
+<p>&ndash;&gt; &hellip;where &ldquo;can&rsquo;t remember what&hellip;&rdquo; comes out as &ldquo;kam bruh&rdquo;!
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="https://sites.arizona.edu/nwarner/files/2025/09/1053_cant_remember_Fig5_isolation.wav" type="audio/wav">
+</audio>
+</p>
+</blockquote>
+</blockquote>
+<p>Therefore, it&rsquo;s actually surprisingly difficult to correctly write down the words from an audio clip. Even when you are given video clips, where you can indeed <em>hear and see</em> the talker speak, you can still have error rates of ca. 15% (see Table 5 in <a href="https://doi.org/10.48550/arXiv.1906.01040" target="_blank" rel="noopener">Guan &amp; Valiant, 2019</a>).</p>
+<h2 id="exhibit-4-worst-case-scenarios"><strong>Exhibit #4</strong>: worst-case scenarios</h2>
+<p>You thought those earlier clips were hard to recognize? There&rsquo;s worse.</p>
+<p><strong>Speech is typically not heard in a void.</strong> We can chat with our friends in a busy bar, we&rsquo;re on the phone while the kids are talking in our other ear, we can multitask listening to a podcast while driving a car, we can deal with echo-y speech inside a large cathedral, we can recognize whispers as well as shouting, and even talkers with a foreign accent.</p>
+<blockquote>
+<p>Can you follow the lady&rsquo;s voice?
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<audio controls >
+  <source src="/demos/speech-is-not-easy/challenginglistening.wav" type="audio/wav">
+</audio>
+
+<details class="spoiler "  id="spoiler-15">
+  <summary><em>Source</em></summary>
+  <p>Adaptation of <a href="https://en.wikipedia.org/wiki/File:Recording_of_speaker_of_British_English_%28Received_Pronunciation%29.ogg" target="_blank" rel="noopener">original recording</a> (IPA, CC-BY-SA 3.0), using SFX from Elevenlabs and Praat.</p>
+</details></p>
+</blockquote>
+<p>In all of these scenarios, the speech sounds different. This can make listening hard. In fact, as people get older and their hearing worsens, these situations become the first instances where they notice trouble communicating.</p>
+<h1 id="but-ai-can-recognize-speech-just-fine">But AI can recognize speech just fine</h1>
+<p>You sure?</p>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/nwPtcqcqz00" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<br />
+<p>Well&hellip; to be honest, AI can do speech recognition very well these days. Nevertheless, there are still scenarios where humans are fine and AI fails. For example, humans can code-switch between languages effortlessly, starting a sentence in English and ending it in Spanish, while AI struggles with different languages within one and the same utterance. Similarly, humans can easily track who&rsquo;s talking when, while AI may confuse the target talker with a competing talker in the background.</p>
+<p>But I hear you thinking:</p>
+<p>** <em>&ldquo;Well, in a year or two, AI will be able to deal with that too.&rdquo;</em> **</p>
+<p>&hellip;and you may be right (or not). Even if AI were to reach comparable word recognition performance to humans, the crucial distinction remains that <strong>AI accomplishes this through fundamentally different mechanisms</strong>. An analogy:</p>
+<p>Humans can swim under water. Submarines can also operate under water. But noone would say that submarines swim, right?</p>
+<p>It&rsquo;s a bit like that. AI systems can only recognize words because they&rsquo;ve been trained on truckloads and truckloads of speech recordings, often with accompanying (human-generated!) transcripts. Indeed, some systems have been trained by playing them an entire lifetime of speech! Us humans, however, can already understand (some) words when we&rsquo;re only 6-months old, with much less training. Therefore, even if speech recognition performance (i.e., external behavior) were to become comparable between AI systems and humans, how we achieve this kind of behavior is qualitatively dissimilar (i.e., internal mechanisms).</p>
+<blockquote>
+<details class="spoiler "  id="spoiler-17">
+  <summary><em>Convince me&hellip;</em></summary>
+  <p><p>The difference between AI-driven and human speech recognition is nicely illustrated by a clever speech trick: &lsquo;repackaging&rsquo; speech. This involves compressing speech (i.e., speeding it up artificially), thereby making it impossible to understand. But then you intersperse very short silent gaps into the compressed signal&hellip; et voilá: intelligibility is restored. Try it yourself in <a href="../repackaging">this other demo</a>.</p>
+<p>This speech trick works well for humans, because the silences give the brain some &lsquo;breathing space&rsquo;. However, AI systems fail terribly when they&rsquo;re fed this kind of &lsquo;repackaged speech&rsquo; (see <a href="https://doi.org/10.1016/j.neunet.2023.02.032" target="_blank" rel="noopener">Adolfi et al., 2023</a>). This is because they haven&rsquo;t been trained on this kind of quirky speech, revealing distinct processing mechanisms between humans and AI.</p>
+</p>
+</details>
+</blockquote>
+<h1 id="so-how-come-it-still-seems-so-easy">So how come it still seems so easy?</h1>
+<p>If speech recognition in everyday life is really that remarkable, then how come it seems so easy?</p>
+<p><strong>Because humans are clever.</strong> We can predict what word is gonna come next (<a href="../visual-world-paradigm">demo</a>), we can compensate for acoustic specs in the surrounding context (<a href="../conjuring-words">demo</a> and another <a href="../laurel-yanny">demo</a>), we can selectively attend to one talker while ignoring others (<a href="../cocktail-party">demo</a>), we can adapt our voice and our ears to the listening situation at hand (<a href="../lombard-speech">demo</a>), we can help our ears by &rsquo;listening with our eyes&rsquo; (<a href="../manual-mcgurk">demo</a>), and so on.</p>
+<p>What is a challenging process becomes remarkably smooth thanks to our brain&rsquo;s exceptional toolbox for interpreting speech.</p>
+<h1 id="why-are-you-telling-me-all-this">Why are you telling me all this?</h1>
+<p>Because it underscores the need for research into human speech perception. The human brain is unique in its ability to recognize speech (almost) effortlessly; yet, how exactly it does so remains unclear. We know parts of the human toolbox for comprehending speech but we don&rsquo;t have the full picture yet. By studying the intricacies of speech perception, we may be able to better understand this unique aspect of human nature. Also, it could inspire better AI speech recognition, and may even help those who struggle with spoken communication, due to aging and hearing loss.</p>
+<p>So, all in all, I hope you&rsquo;re now convinced that:</p>
+<blockquote>
+<p>What speech is like, then, is: not immediately transparent for the listener. Speech is fast, continuous, variable, and nonunique.</p>
+</blockquote>
+<blockquote>
+<p>Anne Cutler, <em>Native Listening</em>, 2012, p.39</p>
+</blockquote>
+<h2 id="relevant-lab-papers">Relevant lab papers</h2>
+<blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      <a href="/author/hans-rutger-bosker/">Hans Rutger Bosker</a></span>
+  </span>
+  (2018).
+  <a href="/publication/bosker-2018-jasa/">Putting Laurel and Yanny in context</a>.
+  <em>The Journal of the Acoustic Society of America, 144</em>(6), EL503-EL508, doi:10.1121/1.5070144.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/bosker-2018-jasa/cite.bib">
+  Cite
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://osf.io/63wdh/" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1121/1.5070144" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+
+
+</blockquote>
+<blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      <a href="/author/hans-rutger-bosker/">Hans Rutger Bosker</a></span>, <span >
+      <a href="/author/oded-ghitza/">Oded Ghitza</a></span>
+  </span>
+  (2018).
+  <a href="/publication/bosker-etal-2018-lcn/">Entrained theta oscillations guide perception of subsequent speech: Behavioral evidence from rate normalization</a>.
+  <em>Language, Cognition and Neuroscience,33</em>(8), 955-967, doi:10.1080/23273798.2018.1439179.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pure.mpg.de/rest/items/item_2538752_11/component/file_2630351/content" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/bosker-etal-2018-lcn/cite.bib">
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1080/23273798.2018.1439179" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+
+
+</blockquote>
+<blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="pub-list-item view-citation" style="margin-bottom: 1rem">
+  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
+
+  
+  
+
+  <span class="article-metadata li-cite-author">
+    
+
+  <span >
+      <a href="/author/giulio-severijnen/">Giulio Severijnen</a></span>, <span >
+      <a href="/author/hans-rutger-bosker/">Hans Rutger Bosker</a></span>, <span >
+      <a href="/author/james-m.-mcqueen/">James M. McQueen</a></span>
+  </span>
+  (2024).
+  <a href="/publication/severijnen-etal-2024-jphon/">Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch</a>.
+  <em>Journal of Phonetics, 103</em>, 101296, doi:10.1016/j.wocn.2024.101296.
+  
+  <p>
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://pure.mpg.de/pubman/item/item_3562664_1/component/file_3562665/2024-01-15_Full%20Manuscript_Production_accepted.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
+        data-filename="/publication/severijnen-etal-2024-jphon/cite.bib">
+  Cite
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://data.donders.ru.nl/login/reviewer-241214775/bbEj3LjTV3m6x6u0JQKatK2RGlMNST-jdqVIzFfHMLc" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+
+
+<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://doi.org/10.1016/j.wocn.2024.101296" target="_blank" rel="noopener">
+  DOI
+</a>
+
+
+</p>
+
+  
+  
+</div>
+
+
+
+</blockquote>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F&amp;text=It%27s&#43;%28not%29&#43;easy&#43;to&#43;recognize&#43;speech" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F&amp;t=It%27s&#43;%28not%29&#43;easy&#43;to&#43;recognize&#43;speech" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+        
+      
+      <li>
+        <a href="mailto:?subject=It%27s%20%28not%29%20easy%20to%20recognize%20speech&amp;body=https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F&amp;title=It%27s&#43;%28not%29&#43;easy&#43;to&#43;recognize&#43;speech" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=It%27s&#43;%28not%29&#43;easy&#43;to&#43;recognize&#43;speech%20https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhrbosker.github.io%2Fdemos%2Fspeech-is-not-easy%2F&amp;title=It%27s&#43;%28not%29&#43;easy&#43;to&#43;recognize&#43;speech" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-widget">
+  
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/demos/manual-mcgurk/" rel="prev">Manual McGurk effect</a>
+  </div>
+  
+</div>
+
+</div>
+
+
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2026 Hans Rutger Bosker. This work is licensed under <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank">CC BY 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+      
+    </a>
+  </p>
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://hugoblox.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Hugo Blox Builder</a> — the free, <a href="https://github.com/HugoBlox/hugo-blox-builder" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+
+
+<script src="/js/vendor-bundle.min.f64289d8217e08e3afcd597d60836062.js"></script>
+
+
+
+
+  
+
+  
+  
+
+  
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <script id="search-hit-fuse-template" type="text/x-template">
+    <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+    </div>
+  </script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+
+  <script src="/js/wowchemy-headroom.db4755770454eb63685f8de785c0a172.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<script src="/en/js/wowchemy.min.ee7be7b7b2cf2cd4bb899879abb5b47b.js"></script>
+
+
+
+  <script src="/js/wowchemy-map.a26e9d2f7238ba5b868384f1c5bc6477.js" type="module"></script>
+
+
+
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+        <pre><code></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="/js/wowchemy-publication.9137013a66774049159934c29c3f0205.js" type="module"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

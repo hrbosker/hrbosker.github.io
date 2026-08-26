@@ -5,6 +5,10 @@
     <loc>https://hrbosker.github.io/resources/scripts/generate-speech/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/demos/speech-is-not-easy/</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/resources/scripts/forced-alignment/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -126,15 +130,19 @@
     <loc>https://hrbosker.github.io/resources/scripts/dynamic-time-warping/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>https://hrbosker.github.io/demos/</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
+    <loc>https://hrbosker.github.io/</loc>
+    <lastmod>2026-08-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>https://hrbosker.github.io/news/26-05-26-speech-prosody-2026/</loc>
     <lastmod>2026-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/news/</loc>
-    <lastmod>2026-05-26T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/</loc>
     <lastmod>2026-05-26T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
@@ -836,10 +844,6 @@
   </url><url>
     <loc>https://hrbosker.github.io/news/22-11-01-gespin2023/</loc>
     <lastmod>2022-11-01T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>https://hrbosker.github.io/demos/</loc>
-    <lastmod>2022-07-12T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>https://hrbosker.github.io/publication/severijnen-etal-2022-speechprosody/</loc>

@@ -5,12 +5,744 @@
     <link>https://hrbosker.github.io/demos/</link>
       <atom:link href="https://hrbosker.github.io/demos/index.xml" rel="self" type="application/rss+xml" />
     <description>Demos</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 12 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 15 Aug 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Demos</title>
       <link>https://hrbosker.github.io/demos/</link>
     </image>
+    
+    <item>
+      <title>It&#39;s (not) easy to recognize speech</title>
+      <link>https://hrbosker.github.io/demos/speech-is-not-easy/</link>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/demos/speech-is-not-easy/</guid>
+      <description>&lt;h2 id=&#34;you-think-its-easy&#34;&gt;You think it&amp;rsquo;s easy?&lt;/h2&gt;
+&lt;p&gt;You really think it&amp;rsquo;s easy to recognize speech? Let&amp;rsquo;s hear what this person has to say about recognizing speech:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/it_is_not_easy_to_recognize_speech.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-1&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;AI-generated video; click here for model and prompt&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;Generated in Google Flow; model: Omni Flash; date: May 27, 2026.&lt;/p&gt;
+&lt;p&gt;Prompt: &lt;em&gt;A cinematic, medium close-up shot from the front of a man sitting in front of a green screen, behind an office desk. He is looking casual. He is holding and staring down at a single, crisp white sheet of paper. In a single, fast, and incredibly sloppy burst of speech, without any pauses, he strings the words together to say, &amp;ldquo;it&amp;rsquo;s not easy to wreck a nice beach&amp;rdquo; (sounding phonetically like &amp;ldquo;itsnoteasytowreckanicebeach&amp;rdquo;). Immediately after he finishes speaking, the camera operator walks over in a natural motion to behind and over his shoulder. The camera focuses sharply on the paper in his hands, revealing the text printed clearly in a clean, legible font: &amp;ldquo;it&amp;rsquo;s not easy to wreck a nice beach&amp;rdquo;. Photorealistic, professional cinematic lighting, natural motion blur during the camera movement, 4k resolution, seamless audio-to-video synchronization.&lt;/em&gt;&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;You think you know what he&amp;rsquo;s saying until&amp;hellip; you see the words he&amp;rsquo;s actually been reading. Surprise!&lt;/p&gt;
+&lt;p&gt;Most of us have conversations with people all day and we hardly ever find comprehending what they&amp;rsquo;re saying particularly difficult, right? Only in the most challenging circumstances do we conciously struggle, like when talking in loud background noise. This at times makes us underestimate how challenging speech perception really is.&lt;/p&gt;
+&lt;p&gt;Understanding what someone else is saying is actually an incredible achievement of the human brain. But it can be challenging to convince people that recognizing speech is truly remarkable. Here&amp;rsquo;s my attempt by guiding you past &lt;strong&gt;four exhibits&lt;/strong&gt;:&lt;/p&gt;
+&lt;div class=&#34;custom-toc&#34;&gt;
+  
+  
+  &lt;details class=&#34;toc-inpage d-print-none  &#34; open&gt;
+    &lt;summary class=&#34;font-weight-bold&#34;&gt;Table of Contents&lt;/summary&gt;
+    &lt;nav id=&#34;TableOfContents&#34;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#you-think-its-easy&#34;&gt;You think it&amp;rsquo;s easy?&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#exhibit-1-same-speech-different-words&#34;&gt;&lt;strong&gt;Exhibit #1&lt;/strong&gt;: same speech, different words&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#exhibit-2-same-words-different-speech&#34;&gt;&lt;strong&gt;Exhibit #2&lt;/strong&gt;: same words, different speech&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#exhibit-3-sloppy-speech-is-worse&#34;&gt;&lt;strong&gt;Exhibit #3&lt;/strong&gt;: sloppy speech is worse&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&#34;#exhibit-4-worst-case-scenarios&#34;&gt;&lt;strong&gt;Exhibit #4&lt;/strong&gt;: worst-case scenarios&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&#34;#relevant-lab-papers&#34;&gt;Relevant lab papers&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+  &lt;/details&gt;
+
+&lt;/div&gt;
+&lt;h2 id=&#34;exhibit-1-same-speech-different-words&#34;&gt;&lt;strong&gt;Exhibit #1&lt;/strong&gt;: same speech, different words&lt;/h2&gt;
+&lt;p&gt;Did you know the same clip can be heard as two completely different words? Check out this clip:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Laurel/Yanny &amp;ndash; [original]
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/Audio%20S7.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-4&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Source&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa/&#34;&gt;Putting Laurel and Yanny in context&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustic Society of America, 144&lt;/em&gt;(6), EL503-EL508, doi:10.1121/1.5070144.
+  &lt;p&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+data-filename=&#34;/publication/bosker-2018-jasa/cite.bib&#34;&gt;
+Cite
+&lt;/a&gt;&lt;/p&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/63wdh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5070144&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;/details&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The internet exploded over this audio clip in 2018 because people got into heated arguments about whether what you&amp;rsquo;re hearing is the name &lt;strong&gt;Laurel&lt;/strong&gt; or the name &lt;strong&gt;Yanny&lt;/strong&gt;. This is called a &amp;lsquo;bistable clip&amp;rsquo; or a &amp;lsquo;polyperceivable word&amp;rsquo; and other examples were soon found, like the next one. It&amp;rsquo;s perceived as &lt;strong&gt;brainstorm&lt;/strong&gt; some of the time, but as &lt;strong&gt;green needle&lt;/strong&gt; on other occasions. Just play it a couple of times. For me, even just thinking about one of the two options can change what I&amp;rsquo;m hearing!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Brainstorm/Green Needle &amp;ndash; [original]
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/brainstorm.wav&#34; type=&#34;audio/wav&#34;&gt;
+&lt;/audio&gt;
+
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-6&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Source&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;a href=&#34;https://archive.thetab.com/uk/2018/05/18/brainstorm-or-green-needle-why-can-i-hear-both-explained-65537&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://archive.thetab.com/uk/2018/05/18/brainstorm-or-green-needle-why-can-i-hear-both-explained-65537&lt;/a&gt;&lt;/p&gt;
+&lt;/details&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Still, you might say:&lt;/p&gt;
+&lt;p&gt;** &lt;em&gt;Well, this is all artificial speech. Real speech produced by humans is much clearer.&lt;/em&gt; **&lt;/p&gt;
+&lt;p&gt;But there are lots of examples of human-produced speech that are similarly enigmatic (&amp;hellip;there&amp;rsquo;s even a &lt;a href=&#34;https://theory.stanford.edu/~valiant/polyperceivable/index.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;webpage&lt;/a&gt; logging some of these). For instance, have you ever experienced listening to a new song and hearing the strangest of lyrics? Like: why is Lady Gaga singing &lt;strong&gt;Gotta pee, okay?&lt;/strong&gt; in her hit &amp;lsquo;Just Dance&amp;rsquo;? And there are more of such &lt;a href=&#34;https://en.wikipedia.org/wiki/Mondegreen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;mondegreens&lt;/a&gt;:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Misheard&lt;/th&gt;
+&lt;th&gt;Original&lt;/th&gt;
+&lt;th&gt;Source&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;English:&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Gotta pee, okay?&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Gonna be okay&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Just Dance, Lady Gaga&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Pair of&amp;hellip; pair of&amp;hellip; pair of dice&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;para-, para-, paradise&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Paradise, Coldplay&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;I’m your penis&amp;hellip;&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;I&amp;rsquo;m your Venus&amp;hellip;&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Venus, Shocking Blue&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Obama&amp;rsquo;s elf&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;All by myself&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;All By Myself, Eric Carmen&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;José, can you see&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;O say can you see&amp;hellip;&lt;/td&gt;
+&lt;td&gt;American national anthem&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;The girl with colitis goes by&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;The girl with kaleidoscope eyes&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Lucy in the Sky with Diamonds, The Beatles&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Dancing queen, feel the beat, on the tangerine&amp;hellip;&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Dancing queen, feel the beat, from the tambourine&amp;hellip;&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Dancing Queen, ABBA&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;I’m blue, I&amp;rsquo;m in need of a guy&amp;hellip;&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;I&amp;rsquo;m blue, dabadee, dabadai&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Blue, Eiffel65&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;em&gt;Dutch:&lt;/em&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;ldquo;Mama, appelsap&amp;rdquo; [Eng. Mommy applejuice]&lt;/td&gt;
+&lt;td&gt;&amp;ldquo;Mama-say mama-sa ma-ma-ko-ssa&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;Wanna Be Startin&amp;rsquo; Somethin&amp;rsquo;, Michael Jackson&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Don&amp;rsquo;t believe me? Just watch this:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/1xigLkM81xk&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;p&gt;OK, so the same speech can actually be perceived as completely different words.&lt;/p&gt;
+&lt;p&gt;Does the reverse also hold: same words, different speech?&lt;/p&gt;
+&lt;h2 id=&#34;exhibit-2-same-words-different-speech&#34;&gt;&lt;strong&gt;Exhibit #2&lt;/strong&gt;: same words, different speech&lt;/h2&gt;
+&lt;p&gt;The same word can be pronounced in a zillion different ways. Think of differences in pronunciation between native and non-native speakers, differences between dialects, men vs. women, the voices of kids vs. adults, and so on.&lt;/p&gt;
+&lt;p&gt;But the same word comes out differently even &lt;strong&gt;for one and the same talker&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/RDrfE9I8_hs&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;p&gt;Let&amp;rsquo;s take a closer look at just 17 instances of Trump&amp;rsquo;s &amp;ldquo;China&amp;rdquo;. The blue lines at the bottom of the image below indicate where one &amp;ldquo;China&amp;rdquo; ends and the next one starts. Conclusion: &lt;strong&gt;they are all acoustically different&lt;/strong&gt;. Some are long, others are short. Some are loud, others more quiet. Some are high-pitched, others low&amp;hellip; and yet we perceive the same word over and over again?!?&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;Screenshot from Praat showing 17 instances of the word &amp;amp;ldquo;China&amp;amp;rdquo;&#34; srcset=&#34;
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_3980396b49301fd0a0cb0f2da3177220.webp 400w,
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_9741ab3eeeaf461156878d47dcfa46a3.webp 760w,
+               /demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_1200x1200_fit_q75_h2_lanczos_3.webp 1200w&#34;
+               src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/trump_says_china_huf7c8931263cc86b26171a2fb37f81937_334990_3980396b49301fd0a0cb0f2da3177220.webp&#34;
+               width=&#34;760&#34;
+               height=&#34;412&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;And it gets even worse&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;exhibit-3-sloppy-speech-is-worse&#34;&gt;&lt;strong&gt;Exhibit #3&lt;/strong&gt;: sloppy speech is worse&lt;/h2&gt;
+&lt;p&gt;The words we exchange when we have a conversation don&amp;rsquo;t come out nicely spaced apart. Instead we string them together into one long continuous sound stream. This makes picking out words from that stream quite challenging. &lt;strong&gt;Listen to this clip and see if you can recognize the word.&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+&lt;video controls  &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/forrestgump.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+
+&lt;p&gt;That was tough, right? You probably only recognized the word when the full sentence was played. Now, I hear you thinking:&lt;/p&gt;
+&lt;p&gt;** &lt;em&gt;&amp;ldquo;Well, that&amp;rsquo;s obvious. I simply use the context to get the word right.&amp;rdquo;&lt;/em&gt; **&lt;/p&gt;
+&lt;p&gt;&amp;hellip;and you wouldn&amp;rsquo;t be wrong. Hearing a word in context is much easier than hearing it cut out from its natural habitat (as this example demonstrates). &lt;strong&gt;Still, it&amp;rsquo;s too simplistic to think that context solves all our problems.&lt;/strong&gt; Many contexts are not particularly helpful for predicting what&amp;rsquo;ll come next. &amp;ldquo;My momma&amp;hellip;&amp;rdquo; could have continued with just about anything.&lt;/p&gt;
+&lt;p&gt;Also, if context helps to recognize the next word, how did you recognize the context itself then? The first words in the sentence don&amp;rsquo;t have any preceding context and still you recognize them, right? &lt;em&gt;Really? You sure?&lt;/em&gt; You really think the first words were &amp;ldquo;My momma&amp;hellip;&amp;rdquo; in this clip? &lt;a href=&#34;https://www.imdb.com/title/tt0109830/quotes/?item=qt0373657&amp;amp;ref_=ext_shr_lnk&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;IMDB&lt;/a&gt; at least says so. But listen again and you&amp;rsquo;ll find it&amp;rsquo;s closer to &amp;ldquo;ma-mam&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;In fact, the speech we hear on the news, in university lectures, and in audiobooks is not very representative of the speech we hear most of the time. Speech in spontaneous conversations is &lt;strong&gt;much more sloppy&lt;/strong&gt;: vowels become less clear, consonants change, and sometimes even entire syllables or words disappear. &lt;strong&gt;I do not know&lt;/strong&gt; becomes &lt;strong&gt;I don&amp;rsquo;t know, I dunno, dunno, or even hm-mm!&lt;/strong&gt; Listen to these examples from Prof. Natasha Warner&amp;rsquo;s &lt;a href=&#34;https://sites.arizona.edu/nwarner/reduced-speech-examples/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;webpage&lt;/a&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;She wants to be a police officer, I think&lt;/em&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://sites.arizona.edu/nwarner/files/2023/07/soundF-context.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash;&amp;gt; &amp;hellip;where &amp;ldquo;She wants to be a&amp;hellip;&amp;rdquo; comes out as &amp;ldquo;shuh-zi&amp;rdquo;!
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://sites.arizona.edu/nwarner/files/2023/07/soundF-nocontext.mp3&#34; type=&#34;audio/mpeg&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;As like parttime, I can&amp;rsquo;t remember what they called it&amp;hellip;&lt;/em&gt;
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://sites.arizona.edu/nwarner/files/2025/09/1053_cant_remember_Fig5_context.wav&#34; type=&#34;audio/wav&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ndash;&amp;gt; &amp;hellip;where &amp;ldquo;can&amp;rsquo;t remember what&amp;hellip;&amp;rdquo; comes out as &amp;ldquo;kam bruh&amp;rdquo;!
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://sites.arizona.edu/nwarner/files/2025/09/1053_cant_remember_Fig5_isolation.wav&#34; type=&#34;audio/wav&#34;&gt;
+&lt;/audio&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Therefore, it&amp;rsquo;s actually surprisingly difficult to correctly write down the words from an audio clip. Even when you are given video clips, where you can indeed &lt;em&gt;hear and see&lt;/em&gt; the talker speak, you can still have error rates of ca. 15% (see Table 5 in &lt;a href=&#34;https://doi.org/10.48550/arXiv.1906.01040&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guan &amp;amp; Valiant, 2019&lt;/a&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;exhibit-4-worst-case-scenarios&#34;&gt;&lt;strong&gt;Exhibit #4&lt;/strong&gt;: worst-case scenarios&lt;/h2&gt;
+&lt;p&gt;You thought those earlier clips were hard to recognize? There&amp;rsquo;s worse.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Speech is typically not heard in a void.&lt;/strong&gt; We can chat with our friends in a busy bar, we&amp;rsquo;re on the phone while the kids are talking in our other ear, we can multitask listening to a podcast while driving a car, we can deal with echo-y speech inside a large cathedral, we can recognize whispers as well as shouting, and even talkers with a foreign accent.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Can you follow the lady&amp;rsquo;s voice?
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+&lt;audio controls &gt;
+  &lt;source src=&#34;https://hrbosker.github.io/demos/speech-is-not-easy/challenginglistening.wav&#34; type=&#34;audio/wav&#34;&gt;
+&lt;/audio&gt;
+
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-15&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Source&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;Adaptation of &lt;a href=&#34;https://en.wikipedia.org/wiki/File:Recording_of_speaker_of_British_English_%28Received_Pronunciation%29.ogg&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;original recording&lt;/a&gt; (IPA, CC-BY-SA 3.0), using SFX from Elevenlabs and Praat.&lt;/p&gt;
+&lt;/details&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;In all of these scenarios, the speech sounds different. This can make listening hard. In fact, as people get older and their hearing worsens, these situations become the first instances where they notice trouble communicating.&lt;/p&gt;
+&lt;h1 id=&#34;but-ai-can-recognize-speech-just-fine&#34;&gt;But AI can recognize speech just fine&lt;/h1&gt;
+&lt;p&gt;You sure?&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/nwPtcqcqz00&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br /&gt;
+&lt;p&gt;Well&amp;hellip; to be honest, AI can do speech recognition very well these days. Nevertheless, there are still scenarios where humans are fine and AI fails. For example, humans can code-switch between languages effortlessly, starting a sentence in English and ending it in Spanish, while AI struggles with different languages within one and the same utterance. Similarly, humans can easily track who&amp;rsquo;s talking when, while AI may confuse the target talker with a competing talker in the background.&lt;/p&gt;
+&lt;p&gt;But I hear you thinking:&lt;/p&gt;
+&lt;p&gt;** &lt;em&gt;&amp;ldquo;Well, in a year or two, AI will be able to deal with that too.&amp;rdquo;&lt;/em&gt; **&lt;/p&gt;
+&lt;p&gt;&amp;hellip;and you may be right (or not). Even if AI were to reach comparable word recognition performance to humans, the crucial distinction remains that &lt;strong&gt;AI accomplishes this through fundamentally different mechanisms&lt;/strong&gt;. An analogy:&lt;/p&gt;
+&lt;p&gt;Humans can swim under water. Submarines can also operate under water. But noone would say that submarines swim, right?&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a bit like that. AI systems can only recognize words because they&amp;rsquo;ve been trained on truckloads and truckloads of speech recordings, often with accompanying (human-generated!) transcripts. Indeed, some systems have been trained by playing them an entire lifetime of speech! Us humans, however, can already understand (some) words when we&amp;rsquo;re only 6-months old, with much less training. Therefore, even if speech recognition performance (i.e., external behavior) were to become comparable between AI systems and humans, how we achieve this kind of behavior is qualitatively dissimilar (i.e., internal mechanisms).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;details class=&#34;spoiler &#34;  id=&#34;spoiler-17&#34;&gt;
+  &lt;summary&gt;&lt;em&gt;Convince me&amp;hellip;&lt;/em&gt;&lt;/summary&gt;
+  &lt;p&gt;&lt;p&gt;The difference between AI-driven and human speech recognition is nicely illustrated by a clever speech trick: &amp;lsquo;repackaging&amp;rsquo; speech. This involves compressing speech (i.e., speeding it up artificially), thereby making it impossible to understand. But then you intersperse very short silent gaps into the compressed signal&amp;hellip; et voilá: intelligibility is restored. Try it yourself in &lt;a href=&#34;../repackaging&#34;&gt;this other demo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This speech trick works well for humans, because the silences give the brain some &amp;lsquo;breathing space&amp;rsquo;. However, AI systems fail terribly when they&amp;rsquo;re fed this kind of &amp;lsquo;repackaged speech&amp;rsquo; (see &lt;a href=&#34;https://doi.org/10.1016/j.neunet.2023.02.032&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Adolfi et al., 2023&lt;/a&gt;). This is because they haven&amp;rsquo;t been trained on this kind of quirky speech, revealing distinct processing mechanisms between humans and AI.&lt;/p&gt;
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;so-how-come-it-still-seems-so-easy&#34;&gt;So how come it still seems so easy?&lt;/h1&gt;
+&lt;p&gt;If speech recognition in everyday life is really that remarkable, then how come it seems so easy?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Because humans are clever.&lt;/strong&gt; We can predict what word is gonna come next (&lt;a href=&#34;../visual-world-paradigm&#34;&gt;demo&lt;/a&gt;), we can compensate for acoustic specs in the surrounding context (&lt;a href=&#34;../conjuring-words&#34;&gt;demo&lt;/a&gt; and another &lt;a href=&#34;../laurel-yanny&#34;&gt;demo&lt;/a&gt;), we can selectively attend to one talker while ignoring others (&lt;a href=&#34;../cocktail-party&#34;&gt;demo&lt;/a&gt;), we can adapt our voice and our ears to the listening situation at hand (&lt;a href=&#34;../lombard-speech&#34;&gt;demo&lt;/a&gt;), we can help our ears by &amp;rsquo;listening with our eyes&amp;rsquo; (&lt;a href=&#34;../manual-mcgurk&#34;&gt;demo&lt;/a&gt;), and so on.&lt;/p&gt;
+&lt;p&gt;What is a challenging process becomes remarkably smooth thanks to our brain&amp;rsquo;s exceptional toolbox for interpreting speech.&lt;/p&gt;
+&lt;h1 id=&#34;why-are-you-telling-me-all-this&#34;&gt;Why are you telling me all this?&lt;/h1&gt;
+&lt;p&gt;Because it underscores the need for research into human speech perception. The human brain is unique in its ability to recognize speech (almost) effortlessly; yet, how exactly it does so remains unclear. We know parts of the human toolbox for comprehending speech but we don&amp;rsquo;t have the full picture yet. By studying the intricacies of speech perception, we may be able to better understand this unique aspect of human nature. Also, it could inspire better AI speech recognition, and may even help those who struggle with spoken communication, due to aging and hearing loss.&lt;/p&gt;
+&lt;p&gt;So, all in all, I hope you&amp;rsquo;re now convinced that:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;What speech is like, then, is: not immediately transparent for the listener. Speech is fast, continuous, variable, and nonunique.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Anne Cutler, &lt;em&gt;Native Listening&lt;/em&gt;, 2012, p.39&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;relevant-lab-papers&#34;&gt;Relevant lab papers&lt;/h2&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-2018-jasa/&#34;&gt;Putting Laurel and Yanny in context&lt;/a&gt;.
+  &lt;em&gt;The Journal of the Acoustic Society of America, 144&lt;/em&gt;(6), EL503-EL508, doi:10.1121/1.5070144.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_3005418_7/component/file_3012156/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-2018-jasa/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://osf.io/63wdh/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1121/1.5070144&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/oded-ghitza/&#34;&gt;Oded Ghitza&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2018).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2018-lcn/&#34;&gt;Entrained theta oscillations guide perception of subsequent speech: Behavioral evidence from rate normalization&lt;/a&gt;.
+  &lt;em&gt;Language, Cognition and Neuroscience,33&lt;/em&gt;(8), 955-967, doi:10.1080/23273798.2018.1439179.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/rest/items/item_2538752_11/component/file_2630351/content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/bosker-etal-2018-lcn/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1080/23273798.2018.1439179&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+&lt;div class=&#34;pub-list-item view-citation&#34; style=&#34;margin-bottom: 1rem&#34;&gt;
+  &lt;i class=&#34;far fa-file-alt pub-icon&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+
+  
+  
+
+  &lt;span class=&#34;article-metadata li-cite-author&#34;&gt;
+    
+
+  &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/giulio-severijnen/&#34;&gt;Giulio Severijnen&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/hans-rutger-bosker/&#34;&gt;Hans Rutger Bosker&lt;/a&gt;&lt;/span&gt;, &lt;span &gt;
+      &lt;a href=&#34;https://hrbosker.github.io/author/james-m.-mcqueen/&#34;&gt;James M. McQueen&lt;/a&gt;&lt;/span&gt;
+  &lt;/span&gt;
+  (2024).
+  &lt;a href=&#34;https://hrbosker.github.io/publication/severijnen-etal-2024-jphon/&#34;&gt;Your “VOORnaam” is not my “VOORnaam”: An acoustic analysis of individual talker differences in word stress in Dutch&lt;/a&gt;.
+  &lt;em&gt;Journal of Phonetics, 103&lt;/em&gt;, 101296, doi:10.1016/j.wocn.2024.101296.
+  
+  &lt;p&gt;
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://pure.mpg.de/pubman/item/item_3562664_1/component/file_3562665/2024-01-15_Full%20Manuscript_Production_accepted.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  PDF
+&lt;/a&gt;
+
+
+
+&lt;a href=&#34;#&#34; class=&#34;btn btn-outline-primary btn-page-header btn-sm js-cite-modal&#34;
+        data-filename=&#34;/publication/severijnen-etal-2024-jphon/cite.bib&#34;&gt;
+  Cite
+&lt;/a&gt;
+
+
+
+  
+  
+    
+  
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://data.donders.ru.nl/login/reviewer-241214775/bbEj3LjTV3m6x6u0JQKatK2RGlMNST-jdqVIzFfHMLc&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  Dataset
+&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;a class=&#34;btn btn-outline-primary btn-page-header btn-sm&#34; href=&#34;https://doi.org/10.1016/j.wocn.2024.101296&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;
+  DOI
+&lt;/a&gt;
+
+
+&lt;/p&gt;
+
+  
+  
+&lt;/div&gt;
+
+
+
+&lt;/blockquote&gt;
+</description>
+    </item>
     
     <item>
       <title>Manual McGurk effect</title>
@@ -93,7 +825,7 @@
   &lt;p&gt;&lt;p&gt;This is Figure 1 from &lt;a href=&#34;https://hrbosker.github.io/publication/bosker-etal-2021-procroysocb&#34;&gt;Bosker &amp;amp; Peeters (2021)&lt;/a&gt;. In the bottom left panel, you see the proportion of &amp;lsquo;I hear stress on the first syllable&amp;rsquo; responses for when the beat gesture falls on the first syllable (blue line) or on the second syllable (red line). The blue line lies above the red line, indicating an overall bias to report more &amp;lsquo;stress on first syllable&amp;rsquo; responses when the gesture falls on the first vs. second syllable. The difference between the lines is sizable, averaging around 20%.&lt;/p&gt;
 &lt;figure  id=&#34;figure-figure-1-in-bosker--peeters-2021&#34;&gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://royalsocietypublishing.org/cms/asset/53082c59-4ac5-43d8-a411-9f5f5edda544/rspb20202419f01.jpg&#34; alt=&#34;Figure 1 in Bosker &amp;amp; Peeters (2021)&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;800&#34; /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://trs.silverchair-cdn.com/trs/content_public/journal/rspb/288/1943/10.1098_rspb.2020.2419/5/rspb20202419f01.png?Expires=1786956740&amp;amp;Signature=29yKNZcwJkXscBOGr~cR3orfhlMak4QHi3qPx0f~V88jT95z9FEA47o0qaYBH2By5cn4pIB6vbzPVrjDZN6temo7hru-r8dlfUq5lbrcFbQjW1p3PzsR9Dnf2Hu7vRLHGusz5pOdsv2VvjijWz549vIB1LMq51Ygv5TLLLFfsMRL77a0PF8NTOqPTbkA8VAvhhAFQq4Qkx2kmaIvcTquLtMDlbjAHOs6qPWve10DCyPK~XQERj3nM1hAxlNfLNkIlJISs1rO8pKLu16yiIGN1q~lsgkhY5U3lkEXNWKLXbIT05qQ5LR~Utuf02RPxwb0xfhv~GRjsFtmlCvekND-iA__&amp;amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA&#34; alt=&#34;Figure 1 in Bosker &amp;amp; Peeters (2021)&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;800&#34; /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;figcaption&gt;
       Figure 1 in Bosker &amp;amp; Peeters (2021)
     &lt;/figcaption&gt;&lt;/figure&gt;
