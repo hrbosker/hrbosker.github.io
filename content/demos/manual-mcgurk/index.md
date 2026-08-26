@@ -50,7 +50,7 @@ The audio in these videos is perfectly identical: it has been manipulated to be 
 > {{< spoiler text="*Really? Convince me...*" >}}
 This is Figure 1 from [Bosker & Peeters (2021)](/publication/bosker-etal-2021-procroysocb). In the bottom left panel, you see the proportion of 'I hear stress on the first syllable' responses for when the beat gesture falls on the first syllable (blue line) or on the second syllable (red line). The blue line lies above the red line, indicating an overall bias to report more 'stress on first syllable' responses when the gesture falls on the first vs. second syllable. The difference between the lines is sizable, averaging around 20%.
 
-{{< figure src="https://royalsocietypublishing.org/cms/asset/53082c59-4ac5-43d8-a411-9f5f5edda544/rspb20202419f01.jpg" caption="Figure 1 in Bosker & Peeters (2021)" width="800">}}
+{{< figure src="https://trs.silverchair-cdn.com/trs/content_public/journal/rspb/288/1943/10.1098_rspb.2020.2419/5/rspb20202419f01.png?Expires=1786956740&Signature=29yKNZcwJkXscBOGr~cR3orfhlMak4QHi3qPx0f~V88jT95z9FEA47o0qaYBH2By5cn4pIB6vbzPVrjDZN6temo7hru-r8dlfUq5lbrcFbQjW1p3PzsR9Dnf2Hu7vRLHGusz5pOdsv2VvjijWz549vIB1LMq51Ygv5TLLLFfsMRL77a0PF8NTOqPTbkA8VAvhhAFQq4Qkx2kmaIvcTquLtMDlbjAHOs6qPWve10DCyPK~XQERj3nM1hAxlNfLNkIlJISs1rO8pKLu16yiIGN1q~lsgkhY5U3lkEXNWKLXbIT05qQ5LR~Utuf02RPxwb0xfhv~GRjsFtmlCvekND-iA__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" caption="Figure 1 in Bosker & Peeters (2021)" width="800">}}
 
 {{< /spoiler >}}
 

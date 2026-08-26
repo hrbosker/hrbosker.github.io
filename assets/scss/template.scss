@@ -7,3 +7,8 @@
 .cta-group {
   justify-content: center;
 }
+
+// HRB: custom TOC for demo Ambig Speech
+.custom-toc #TableOfContents ul li:nth-child(1) {
+  display: none;
+}
