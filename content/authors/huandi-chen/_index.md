@@ -53,10 +53,10 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - BA/MA students
+  - alumni
 ---
 
-Huandi Chen is a CNS master student at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. She is doing a 'Capita Selecta' project with [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). Her research examines the role of beat gesture timing in guiding listeners’ word segmentation processes during speech perception.
+During her Cognitive Neuroscience master program at [Radboud University](https://www.ru.nl), Huandi Chen did a 'Capita Selecta' project with [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). Her research examined the role of beat gesture timing in guiding listeners’ word segmentation processes during speech perception.
 
 <br />
 <br />

@@ -10,7 +10,7 @@ role: Postdoctoral Researcher
 
 # Organizations/Affiliations
 organizations:
-  - name: Radboud University Nijmegen
+  - name: Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -20,7 +20,7 @@ education:
   courses:
     - course: PhD in Psychology
       institution: Max Planck Institute for Human Cognitive and Brain Sciences, University of Leipzig
-      year: thesis to be defended
+      year: 2024
     - course: MSc in Cognitive Neuroscience and Clinical Neuropsychology
       institution: University of Padova, *with distinction*
       year: 2015
@@ -69,9 +69,11 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Postdocs
+  - External collaborators
 ---
 
-Matteo Maran is a Postdoctoral Researcher at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He is a member of the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276; PI: Hans Rutger Bosker] that started in September 2022. He works on the audiovisual integration of gestural timing with spoken prosody and how this integration may be altered in Autism Spectrum Disorder (ASD).
+After a 3-year postdoc in the SPEAC group, Matteo Maran took up a research position at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain. Collaborations with the SPEAC team continue, specifically addressing the neural processing of gesture-speech synchrony.
+
+Personal website: https://sites.google.com/view/matteomaran/
 
 ORCID iD: [0000-0002-5867-3203](https://orcid.org/0000-0002-5867-3203).

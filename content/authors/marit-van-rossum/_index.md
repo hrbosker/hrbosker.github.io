@@ -24,7 +24,7 @@ education:
   courses:
     - course: BA in Psychology
       institution: Radboud University Nijmegen
-      year: 2023 - ongoing
+      year: 2023 - 2026
 
 
 # Social/Academic Networking
@@ -51,10 +51,10 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - BA/MA students
+  - alumni
 ---
 
-Marit van Rossum is a BA Psychology student, following the General Psychology Honours Programme at Radboud University, Nijmegen, The Netherlands. Under supervision of {{< mention "chengjia-ye" >}} and {{< mention "admin" >}}, she is writing her thesis on an experiment investigating the influence of beat gestures on lexical stress perception with different levels of background noise.
+During her BA Psychology, Marit van Rossum followed the General Psychology Honours Programme at Radboud University, Nijmegen, The Netherlands. Under supervision of {{< mention "chengjia-ye" >}} and {{< mention "admin" >}}, she wrote her thesis on an experiment investigating the influence of beat gestures on lexical stress perception with different levels of background noise.
 
 <br />
 <br />

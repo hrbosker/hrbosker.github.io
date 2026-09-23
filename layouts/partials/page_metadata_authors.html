@@ -1,0 +1,73 @@
+{{/* Display author list — reformatted to APA 7 style: Surname, F. M., with "&" before the final author. */}}
+
+{{- $taxonomy := "authors" }}
+{{ if .Param $taxonomy }}
+  {{- /* Common surname prefixes/particles — add more here as needed. */ -}}
+  {{- $prefixes := slice "van" "der" "den" "de" "von" "zu" "ten" "ter" "te" "la" "le" "du" "da" "das" "dos" "della" "delle" "di" "af" "al" "el" "van't" -}}
+
+  {{- $authors := .GetTerms $taxonomy -}}
+  {{- $total := len $authors -}}
+
+  {{ range $index, $value := $authors }}
+    {{- /* Highlight the author's name? */ -}}
+    {{- $highlight_name := .Page.Params.highlight_name | default false -}}
+
+    {{- /* Reformat "Firstname Middlename [prefix] Surname" into "[prefix] Surname, F. M." */ -}}
+    {{- $full_name := trim .LinkTitle " " -}}
+    {{- $parts := split $full_name " " -}}
+    {{- $apa_name := $full_name -}}
+    {{- if gt (len $parts) 1 -}}
+      {{- $last_index := sub (len $parts) 1 -}}
+
+      {{- /* Find the earliest word (before the final one) that is a known surname prefix. */ -}}
+      {{- $ss := newScratch -}}
+      {{- $ss.Set "surname_start" $last_index -}}
+      {{- range $i, $p := $parts -}}
+        {{- if lt $i $last_index -}}
+          {{- if in $prefixes (lower $p) -}}
+            {{- if eq ($ss.Get "surname_start") $last_index -}}
+              {{- $ss.Set "surname_start" $i -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+      {{- $surname_start := $ss.Get "surname_start" -}}
+
+      {{- $surname_parts := after $surname_start $parts -}}
+      {{- $surname := delimit $surname_parts " " -}}
+      {{- $given_names := first $surname_start $parts -}}
+
+      {{- $is := newScratch -}}
+      {{- range $given_names -}}
+        {{- $is.Add "initials" (printf "%s. " (substr . 0 1)) -}}
+      {{- end -}}
+      {{- $initials := trim ($is.Get "initials") " " -}}
+
+      {{- if $initials -}}
+        {{- $apa_name = printf "%s, %s" $surname $initials -}}
+      {{- else -}}
+        {{- $apa_name = $surname -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- /* Build the separator as an explicit string — avoids whitespace-trimming ambiguity. */ -}}
+    {{- $sep := ", " -}}
+    {{- if and (eq $index (sub $total 1)) (gt $total 1) -}}
+      {{- $sep = ", &amp; " -}}
+    {{- end -}}
+    {{- if gt $index 0 -}}{{ $sep | safeHTML }}{{- end -}}
+    <span {{ if $highlight_name }}class="author-highlighted"{{end}}>
+      {{/* Effectively check the page's `_build` option as `_build` is not exposed in Hugo's Page object. */}}
+      {{- if .RelPermalink -}}
+        <a href="{{.RelPermalink}}">{{ $apa_name }}</a>
+      {{- else -}}
+        {{ $apa_name }}
+      {{- end -}}
+    </span>
+    {{- if isset $.Params "author_notes" -}}
+      {{- with (index $.Params.author_notes $index) -}}
+        <i class="author-notes fas fa-info-circle" data-toggle="tooltip" title="{{.}}"></i>
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

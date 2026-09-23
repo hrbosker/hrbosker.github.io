@@ -52,10 +52,10 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - BA/MA students
+  - alumni
 ---
 
-I completed my BSc in Psychology at the University of Bucharest, where I focused on empathy and the theory of minds for my thesis. Currently, I am pursuing a Cognitive Neuroscience MSc, with a specialisation in perception, action and decision making. This academic year (2025-2026), I am writing my thesis under the supervision of Matteo Maran and Hans Rutger Bosker, exploring via EEG experiments (MMN paradigm) the neural basis of the manual McGurk effect.
+After a BSc in Psychology at the University of Bucharest, Arezu successfully graduated from the Cognitive Neuroscience MSc program at Radboud University in 2026. Her master's thesis, under supervision of Matteo Maran and Hans Rutger Bosker, explored via EEG experiments (MMN paradigm) the neural basis of lexical stress processing and the manual McGurk effect.
 
 <br />
 <br />

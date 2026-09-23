@@ -192,7 +192,7 @@ Because it underscores the need for research into human speech perception. The h
 
 So, all in all, I hope you're now convinced that:
 
-> What speech is like, then, is: not immediately transparent for the listener. Speech is fast, continuous, variable, and nonunique.
+> "What speech is like, then, is: not immediately transparent for the listener. Speech is fast, continuous, variable, and nonunique."
 
 > Anne Cutler, *Native Listening*, 2012, p.39
 
