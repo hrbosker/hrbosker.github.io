@@ -1,52 +1,75 @@
 {{/* Display author list — reformatted to APA 7 style: Surname, F. M., with "&" before the final author. */}}
+{{/* Iterates the RAW front-matter `authors:` list (not the `authors` taxonomy) so that order and       */}}
+{{/* duplicate entries (e.g. repeated "et al.") are preserved. Each entry is resolved against            */}}
+{{/* content/authors/<slug>; only pages backed by a REAL content file are linked — Hugo's auto-generated */}}
+{{/* taxonomy archive pages (which every author string gets, team member or not) are treated as text.    */}}
 
-{{- $taxonomy := "authors" }}
-{{ if .Param $taxonomy }}
+{{- $raw_authors := .Params.authors }}
+{{ if $raw_authors }}
   {{- /* Common surname prefixes/particles — add more here as needed. */ -}}
   {{- $prefixes := slice "van" "der" "den" "de" "von" "zu" "ten" "ter" "te" "la" "le" "du" "da" "das" "dos" "della" "delle" "di" "af" "al" "el" "van't" -}}
 
-  {{- $authors := .GetTerms $taxonomy -}}
-  {{- $total := len $authors -}}
+  {{- $total := len $raw_authors -}}
 
-  {{ range $index, $value := $authors }}
-    {{- /* Highlight the author's name? */ -}}
-    {{- $highlight_name := .Page.Params.highlight_name | default false -}}
+  {{ range $index, $entry := $raw_authors }}
+    {{- $candidate := site.GetPage (printf "/authors/%s" $entry) -}}
+    {{- /* Only a page backed by a real content file (e.g. content/authors/admin/_index.md) counts. */ -}}
+    {{- /* Hugo's auto-generated taxonomy archive pages have no .File and must not be linked.        */ -}}
+    {{- $author_page := "" -}}
+    {{- if and $candidate $candidate.File -}}
+      {{- $author_page = $candidate -}}
+    {{- end -}}
 
-    {{- /* Reformat "Firstname Middlename [prefix] Surname" into "[prefix] Surname, F. M." */ -}}
-    {{- $full_name := trim .LinkTitle " " -}}
-    {{- $parts := split $full_name " " -}}
+    {{- $full_name := $entry -}}
+    {{- $rel_permalink := "" -}}
+    {{- $highlight_name := false -}}
+    {{- if $author_page -}}
+      {{- $full_name = $author_page.LinkTitle -}}
+      {{- $rel_permalink = $author_page.RelPermalink -}}
+      {{- $highlight_name = $author_page.Params.highlight_name | default false -}}
+    {{- end -}}
+
+    {{- $full_name = trim $full_name " " -}}
+    {{- $is_et_al := in (slice "et al." "et al" "et. al." "et. al") (lower $full_name) -}}
     {{- $apa_name := $full_name -}}
-    {{- if gt (len $parts) 1 -}}
-      {{- $last_index := sub (len $parts) 1 -}}
 
-      {{- /* Find the earliest word (before the final one) that is a known surname prefix. */ -}}
-      {{- $ss := newScratch -}}
-      {{- $ss.Set "surname_start" $last_index -}}
-      {{- range $i, $p := $parts -}}
-        {{- if lt $i $last_index -}}
-          {{- if in $prefixes (lower $p) -}}
-            {{- if eq ($ss.Get "surname_start") $last_index -}}
-              {{- $ss.Set "surname_start" $i -}}
+    {{- if $is_et_al -}}
+      {{- $apa_name = "et al." -}}
+    {{- else -}}
+      {{- /* Reformat "Firstname Middlename [prefix] Surname" into "[prefix] Surname, F. M." */ -}}
+      {{- $parts := split $full_name " " -}}
+      {{- if gt (len $parts) 1 -}}
+        {{- $last_index := sub (len $parts) 1 -}}
+
+        {{- /* Find the earliest word (before the final one) that is a known surname prefix. */ -}}
+        {{- $ss := newScratch -}}
+        {{- $ss.Set "surname_start" $last_index -}}
+        {{- range $i, $p := $parts -}}
+          {{- if lt $i $last_index -}}
+            {{- if in $prefixes (lower $p) -}}
+              {{- if eq ($ss.Get "surname_start") $last_index -}}
+                {{- $ss.Set "surname_start" $i -}}
+              {{- end -}}
             {{- end -}}
           {{- end -}}
         {{- end -}}
-      {{- end -}}
-      {{- $surname_start := $ss.Get "surname_start" -}}
+        {{- $surname_start := $ss.Get "surname_start" -}}
 
-      {{- $surname_parts := after $surname_start $parts -}}
-      {{- $surname := delimit $surname_parts " " -}}
-      {{- $given_names := first $surname_start $parts -}}
+        {{- $surname_parts := after $surname_start $parts -}}
+        {{- $surname := delimit $surname_parts " " -}}
+        {{- $given_names := first $surname_start $parts -}}
 
-      {{- $is := newScratch -}}
-      {{- range $given_names -}}
-        {{- $is.Add "initials" (printf "%s. " (substr . 0 1)) -}}
-      {{- end -}}
-      {{- $initials := trim ($is.Get "initials") " " -}}
+        {{- $is := newScratch -}}
+        {{- range $given_names -}}
+          {{- $is.Add "initials" (printf "%s. " (substr . 0 1)) -}}
+        {{- end -}}
+        {{- $initials := trim ($is.Get "initials") " " -}}
 
-      {{- if $initials -}}
-        {{- $apa_name = printf "%s, %s" $surname $initials -}}
-      {{- else -}}
-        {{- $apa_name = $surname -}}
+        {{- if $initials -}}
+          {{- $apa_name = printf "%s, %s" $surname $initials -}}
+        {{- else -}}
+          {{- $apa_name = $surname -}}
+        {{- end -}}
       {{- end -}}
     {{- end -}}
 
@@ -57,9 +80,9 @@
     {{- end -}}
     {{- if gt $index 0 -}}{{ $sep | safeHTML }}{{- end -}}
     <span {{ if $highlight_name }}class="author-highlighted"{{end}}>
-      {{/* Effectively check the page's `_build` option as `_build` is not exposed in Hugo's Page object. */}}
-      {{- if .RelPermalink -}}
-        <a href="{{.RelPermalink}}">{{ $apa_name }}</a>
+      {{/* Only real team-member pages link; external collaborators and "et al." render as plain text. */}}
+      {{- if and $rel_permalink (not $is_et_al) -}}
+        <a href="{{$rel_permalink}}">{{ $apa_name }}</a>
       {{- else -}}
         {{ $apa_name }}
       {{- end -}}

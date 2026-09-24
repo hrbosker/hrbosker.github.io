@@ -4,11 +4,11 @@ authors:
   - Molly J. Henry
   - Jonas Obleser
   - Maria R. Crusey
-  - (...et al)
+  - et al.
   - admin
-  - (...et al.)
+  - et al.
   - giulio-severijnen
-  - (...et alii)
+  - et al.
   - Jonathan R. Peelle
 #author_notes:
 #  - 'Equal contribution'

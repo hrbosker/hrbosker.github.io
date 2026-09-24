@@ -3,7 +3,7 @@ title: 'Neural entrainment determines the words we hear'
 authors:
   - Anne Kösem
   - admin
-  - Atsuko  Takashima
+  - Atsuko Takashima
   - Antje S. Meyer
   - Ole Jensen
   - Peter Hagoort
