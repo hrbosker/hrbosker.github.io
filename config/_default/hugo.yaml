@@ -60,3 +60,17 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+
+# Prevent Hugo from generating/listing public archive pages for individual "authors"
+# taxonomy terms (e.g. /author/molly-j-henry/). These are auto-created for every author
+# string used in a publication's `authors:` list, including external collaborators with
+# no real profile page — this stops them from being built, linked in the sitemap, or
+# indexed by search engines. Real team-member profile pages under content/authors/ are
+# a different page kind and are unaffected.
+cascade:
+  - _target:
+      kind: term
+      path: /author/**
+    _build:
+      list: never
+      render: never
