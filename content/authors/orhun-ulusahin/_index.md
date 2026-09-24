@@ -65,6 +65,10 @@ email: ''
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - alumni
+
+_build:
+  render: always
+  list: always
 ---
 
 Orhun Uluşahin was a PhD student at the [Max Planck Institute for Psycholinguistics](https://www.mpi.nl) [MPI], Nijmegen, The Netherlands. His supervisors were [Prof. Antje S. Meyer](https://www.mpi.nl/people/meyer-antje), [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/), and [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). His project targeted the role of talker familiarity in speech perception and production, using *f*0 normalization and phonetic convergence as main paradigms. For instance, he tested whether familiarity with a talker modulates the extent to which interlocutors converge towards each other on a phonetic level. After his PhD, Orhun took up a postdoc position with [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) at the Donders Institute of Radboud University. 

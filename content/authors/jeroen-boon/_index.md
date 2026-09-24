@@ -52,6 +52,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - BA/MA students
+
+_build:
+  render: always
+  list: always
 ---
 
 Jeroen Boon is a BA Psychology student, who has recently written his thesis on the influence of head nods on perceived lexical stress. Under the supervision of {{<mention "admin" >}}, he is currently assisting with several ongoing projects, like setting up a databank of actors performing gestures for use in future research.

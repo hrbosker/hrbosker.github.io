@@ -54,6 +54,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - BA/MA students
+
+_build:
+  render: always
+  list: always
 ---
 
 Lorenzo Paladino is an MA student pursuing a double degree in Cognitive Neuroscience and Behavioral Science at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His thesis project, under the supervision of {{< mention "matteo-maran" >}} and {{< mention "admin" >}}, targets how beat gestures influence the neural response to target words in predictable sentences, using EEG.

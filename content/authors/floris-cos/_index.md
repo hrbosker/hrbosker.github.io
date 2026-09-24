@@ -60,6 +60,10 @@ email: ''
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PhD students
+
+_build:
+  render: always
+  list: always
 ---
 
 Floris Cos is a PhD student at the [Centre for Language Studies](https://www.ru.nl/en/cls) [CLS], Nijmegen, The Netherlands. His main supervisors are [Dr. Lieke van Maastricht](https://www.ru.nl/en/people/maastricht-l-van) and [Dr. Esther Janse](https://www.ru.nl/en/people/janse-e). [Dr. Matteo Maran]({{< ref "../matteo-maran" >}}) and [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}) serve as advisors on the project. Floris' project investigates how the perception of lexical stress is influenced by different sources of information in the speech signal, including auditory (acoustic emphasis), visual (beat gestures) and linguistic elements (syntactic structure). The project combines behavioral and neuroimaging studies, investigating both native speakers and language learners.

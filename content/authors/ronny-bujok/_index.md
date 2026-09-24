@@ -68,6 +68,10 @@ email: ''
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Postdocs
+
+_build:
+  render: always
+  list: always
 ---
 
 Ronny Bujok is a Postdoctoral Researcher at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He is a member of the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276; PI: [Hans Rutger Bosker]({{< ref "../admin" >}})] that started in September 2022. He performed his [PhD research](https://hdl.handle.net/21.11116/0000-0011-FA96-A) at the Max Planck Institute for Psycholinguistics, investigating how simple up-and-down hand gestures ('beat gestures') influence low-level speech perception. After his PhD, he took up a postdoc position with [Dr. Lieke van Maastricht](https://www.ru.nl/personen/maastricht-l-van) at the Centre for Language Studies, Radboud University, Nijmegen. After that, he started his current postdoc with the SPEAC group. Present research lines focus on individual differences in gesture-speech synchrony in production and perception.

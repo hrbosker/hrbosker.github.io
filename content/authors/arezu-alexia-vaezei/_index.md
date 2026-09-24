@@ -53,6 +53,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - alumni
+
+_build:
+  render: always
+  list: always
 ---
 
 After a BSc in Psychology at the University of Bucharest, Arezu successfully graduated from the Cognitive Neuroscience MSc program at Radboud University in 2026. Her master's thesis, under supervision of Matteo Maran and Hans Rutger Bosker, explored via EEG experiments (MMN paradigm) the neural basis of lexical stress processing and the manual McGurk effect.

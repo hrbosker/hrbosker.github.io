@@ -70,6 +70,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - External collaborators
+
+_build:
+  render: always
+  list: always
 ---
 
 After having been a postdoc in the SPEAC group for more than two years, Patrick Louis Rohrer took up an Assistant Professor position (Serra Húnter Fellow) at the Universitat Rovira i Virgili in Tarragona, Catalonia. He continues to collaborate with many of the SPEAC members, specifically investigating gesture-speech synchrony in language production and perception, adopting a cross-linguistic perspective.

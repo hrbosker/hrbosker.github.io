@@ -52,6 +52,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - alumni
+
+_build:
+  render: always
+  list: always
 ---
 
 During her BA Psychology, Marit van Rossum followed the General Psychology Honours Programme at Radboud University, Nijmegen, The Netherlands. Under supervision of {{< mention "chengjia-ye" >}} and {{< mention "admin" >}}, she wrote her thesis on an experiment investigating the influence of beat gestures on lexical stress perception with different levels of background noise.

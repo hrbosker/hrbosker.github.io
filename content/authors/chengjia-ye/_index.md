@@ -57,6 +57,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - PhD students
+
+_build:
+  render: always
+  list: always
 ---
 
 Chengjia Ye (Jason) is a PhD student at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. His supervisors are [Prof. James McQueen](https://www.ru.nl/english/people/mcqueen-j/) and [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). His research investigates how beat gestures affect speech perception, in particular testing such effects in more naturalistic listening conditions. This is part of the "HearingHands" project funded by the ERC [grant 101040276; PI: Hans Rutger Bosker] .

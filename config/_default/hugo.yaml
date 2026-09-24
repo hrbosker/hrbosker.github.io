@@ -61,16 +61,16 @@ security:
 sitemap:
   _merge: deep
 
-# Prevent Hugo from generating/listing public archive pages for individual "authors"
-# taxonomy terms (e.g. /author/molly-j-henry/). These are auto-created for every author
-# string used in a publication's `authors:` list, including external collaborators with
-# no real profile page — this stops them from being built, linked in the sitemap, or
-# indexed by search engines. Real team-member profile pages under content/authors/ are
-# a different page kind and are unaffected.
+# By default, don't render or list any "authors" taxonomy term page (e.g. auto-generated
+# ghost pages for external collaborators like /author/molly-j-henry/). Real team-member
+# profile pages must explicitly opt back in via `_build: {render: always, list: always}`
+# in their own front matter (content/authors/<slug>/_index.md) — a page's own front
+# matter always overrides an inherited cascade default, so this only suppresses pages
+# that DON'T have that override, i.e. the ghost ones.
 cascade:
   - _target:
       kind: term
-      path: /author/**
+      path: /authors/**
     _build:
-      list: never
       render: never
+      list: never

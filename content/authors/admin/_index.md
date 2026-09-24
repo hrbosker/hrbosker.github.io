@@ -70,6 +70,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - Principal Investigator
+
+_build:
+  render: always
+  list: always
 ---
 
 Hans Rutger Bosker is Assistant Professor at the Donders Center for Cognition [DCC], part of the [Donders Institute](https://www.ru.nl/donders/) at [Radboud University](https://www.ru.nl), Nijmegen, The Netherlands. He leads the **Speech Perception in Audiovisual Communication** [SPEAC] research group, funded by the ERC Starting Grant 'HearingHands' [101040276] that started in September 2022. This research grant investigates the contribution of simple up-and-down hand movements ('beat gestures') to audiovisual speech perception.

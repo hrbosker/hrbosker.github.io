@@ -70,6 +70,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - External collaborators
+
+_build:
+  render: always
+  list: always
 ---
 
 After a 3-year postdoc in the SPEAC group, Matteo Maran took up a research position at the Basque Center on Cognition, Brain and Language (BCBL), San Sebastian, Spain. Collaborations with the SPEAC team continue, specifically addressing the neural processing of gesture-speech synchrony.

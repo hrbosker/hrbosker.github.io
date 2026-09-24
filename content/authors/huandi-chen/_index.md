@@ -54,6 +54,10 @@ highlight_name: false
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
   - alumni
+
+_build:
+  render: always
+  list: always
 ---
 
 During her Cognitive Neuroscience master program at [Radboud University](https://www.ru.nl), Huandi Chen did a 'Capita Selecta' project with [Dr. Hans Rutger Bosker]({{< ref "../admin" >}}). Her research examined the role of beat gesture timing in guiding listeners’ word segmentation processes during speech perception.
