@@ -73,6 +73,4 @@ Eye-tracking can reveal the time-course of speech processing. It allows tracking
 
 > {{< cite page="/publication/bosker-etal-2019-jml" view="4" >}}
 
-> {{< cite page="/publication/bosker-etal-2018-jml" view="4" >}}
-
 > {{< cite page="/publication/bosker-etal-2014-jml" view="4" >}}
