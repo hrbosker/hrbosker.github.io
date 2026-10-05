@@ -5,12 +5,36 @@
     <link>https://hrbosker.github.io/news/</link>
       <atom:link href="https://hrbosker.github.io/news/index.xml" rel="self" type="application/rss+xml" />
     <description>Latest News</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Thu, 01 Oct 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://hrbosker.github.io/media/logo_hu4ee931c5040e3d0fbcac8149a377b250_283935_300x300_fit_lanczos_3.png</url>
       <title>Latest News</title>
       <link>https://hrbosker.github.io/news/</link>
     </image>
+    
+    <item>
+      <title>Who did it: was it &#34;SAsa&#34; or &#34;saSA&#34;?</title>
+      <link>https://hrbosker.github.io/news/26-10-01-citylab/</link>
+      <pubDate>Thu, 01 Oct 2026 00:00:00 +0000</pubDate>
+      <guid>https://hrbosker.github.io/news/26-10-01-citylab/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Our demo for the Donders Citylab is NOW LIVE. Watch the adventures of our two little friends &amp;ldquo;SAsa&amp;rdquo; and &amp;ldquo;saSA&amp;rdquo; right here, and decide: who dunnit?&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;citizen-science&#34;&gt;Citizen science&lt;/h2&gt;
+&lt;p&gt;At the &lt;a href=&#34;https://www.ru.nl/en/donders-institute/services/donders-citylab&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Donders Citylab&lt;/a&gt; sites, you can learn all about how humans think, see, feel, and hear. Through the Citylab, researchers from the Donders Institute are bringing their science out of the lab and into the community. Citylab sites are scattered all around the city of Nijmegen, such as inside a museum or a public library.&lt;/p&gt;
+&lt;img src=&#34;display.png&#34; width=75%&gt;
+&lt;h2 id=&#34;try-our-mini-tests&#34;&gt;Try our mini-tests&lt;/h2&gt;
+&lt;p&gt;One of the ways in which people can engage with science at the Citylab is through small mini-tests, presented on a touchscreen interface. These mini-tests are short, interactive, and quite fun. Their aim is to allow people to explore the mysteries of the human brain and behavior, while at the same time collecting data for real research. For example, you can learn all about the power of your imagination, or about how your expectations shape what you see (or don&amp;rsquo;t see).&lt;/p&gt;
+&lt;h2 id=&#34;meet-sasa-and-sasa&#34;&gt;Meet SAsa and saSA&lt;/h2&gt;
+&lt;p&gt;Our own mini-test is about &lt;strong&gt;how to listen with your eyes&lt;/strong&gt;. It&amp;rsquo;s a short 2-minute demo in Dutch, in which a narrator introduces you to two little friends: &lt;em&gt;SAsa and saSA&lt;/em&gt;. These friends find themselves in all sorts of extraordinary adventures, meeting fairies, wizards, and even a dragon. But watch closely! Because every now and then the narrator will ask you: &lt;strong&gt;&amp;ldquo;who dunnit, was it SAsa or saSA?&amp;rdquo;&lt;/strong&gt;&lt;/p&gt;
+&lt;img src=&#34;interface.jpg&#34; width=75%&gt;
+&lt;img src=&#34;kiosk.jpg&#34; width=50%&gt;
+&lt;img src=&#34;muzieum_setup.jpg&#34; width=75%&gt;
+&lt;h2 id=&#34;-watch-it-now&#34;&gt;▶ Watch it NOW!&lt;/h2&gt;
+&lt;p&gt;The demo with SAsa and saSA is now live at the various Donders Citylab sites. But you can also take a peak on your own device. Just &lt;strong&gt;click the banner below&lt;/strong&gt; to watch the adventures of SAsa and saSA yourself!&lt;/p&gt;
+&lt;p&gt;Keep in mind though: &lt;strong&gt;all instructions and video content are in Dutch!&lt;/strong&gt;&lt;/p&gt;
+&lt;a href=&#34;https://run.pavlovia.org/hrbosker/speac-demo?loc=speacwebsite&amp;lang=NL&amp;timeout=120000&amp;timeout_url=https%3A%2F%2Fhrbosker.github.io&#34;&gt;
+  &lt;img src=&#34;Sticker.png&#34; width=&#34;75%&#34;&gt;
+&lt;/a&gt;</description>
+    </item>
     
     <item>
       <title>Join us at Speech Prosody 2026</title>
