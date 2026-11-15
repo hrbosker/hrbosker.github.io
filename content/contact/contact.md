@@ -15,7 +15,7 @@ subtitle:
 content:
   # Contact (edit or remove options as required)
 
-  email: BothFirstNames.Surname@donders.ru.nl
+  email: BothFirstNamess.Surname@donders.ru.nl
   # phone: +31 (0)24 3521380
   address:
     street: '[Postal address] Postbus 9104'
